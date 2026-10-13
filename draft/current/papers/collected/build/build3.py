@@ -1,13 +1,10 @@
 import pymupdf as f, re, subprocess
-m=f.open('mich.pdf'); c=f.open('/workspace/combined2/mich_c.pdf')
-for i in range(3): m[i].set_cropbox(c[i].cropbox)
-m.save('mich_c.pdf')
 C='/workspace/chain/coe/z.pdf'
 B='/workspace/chain/cmb/z.pdf'
 P='/workspace/chain/pat/z.pdf'
-S='supp.pdf'; M='mich_c.pdf'
+S='supp.pdf'; M='mich.pdf'
 # segments: (file, from0, to0 inclusive)
-seg=[(C,0,32),(S,0,99),(B,0,40),(P,0,15),(M,0,2),(P,16,22),(P,24,27),(P,30,31)]
+seg=[(C,0,99),(S,0,99),(B,0,40),(P,0,15),(M,0,2),(P,16,22),(P,24,27),(P,30,31)]
 start=3; cmap={}; n=start
 for fi,a,b in seg:
     for i in range(a,min(b,len(f.open(fi))-1)+1): cmap[(fi,i)]=n; n+=1
@@ -33,6 +30,7 @@ ents.append((0,'4. Does everything have a centre? A philosophical note',phil))
 import pymupdf as _f
 _b=_f.open('back.pdf'); _r=[i for i in range(len(_b)) if _b[i].get_text().lstrip().startswith('References')][0]
 ents.append((0,'References',phil+_r))
+ents.append((0,'Fig. 114: CoE on the northern celestial hemisphere',phil+len(_b)-1))
 rows='\n'.join((r'\noindent\textbf{%s}\dotfill\textbf{%d}\par\smallskip' if l==0 else r'\noindent\hspace*{1.2em}%s\dotfill %d\par')%(t if '$' in t or '\\' in t else esc(t),pg) for l,t,pg in ents)
 open('ents.txt','w').write('\n'.join(map(str,ents)))
 s=open('/workspace/combined/c.tex').read()
