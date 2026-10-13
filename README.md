@@ -15,13 +15,13 @@ This repository is a public, timestamped record of the Center-of-Expansion (CoE)
 - **Optional central mass.** A mass $M_c$ at the CoE decelerates the shells. Its horizon radius $2GM_c/c^2$ is a free parameter (0 to 100 Gpc here) and may extend beyond our own shell.
 - **Superluminal bulk recession is allowed.** Our shell's recession from the CoE can exceed $c$ (in the runs, about 3.7c to 9c+). This is expansion of space; only *local* relative speeds between neighbouring matter must stay below $c$.
 - **Only relative motion is observable.** Observers measure relative velocity and relative acceleration, never the absolute motion of their shell. In this picture, the standard "accelerated expansion" is reinterpreted as the **relative acceleration of shells near the limit of our vision**.
-- **Expanding, not collapsing.** The model is expanding. In a collapsing model, sources near $90^\circ/270^\circ$ to the CoE axis would approach and appear blueshifted; no such blueshift band is seen. The angular shape of $A/A_{\rm all}$ (Hubble rate at each angle over the sky mean) also differs between the expanding and collapsing cases (`draft/models/newtonian/`).
+- **Expanding, not collapsing.** The model is expanding. In a collapsing model, sources near $90^\circ/270^\circ$ to the CoE axis would approach and appear blueshifted; no such blueshift band is seen. The angular shape of $A/A_{\rm all}$ (Hubble rate at each angle over the sky mean) also differs between the expanding and collapsing cases (`draft/current/models/newtonian/`).
 - **Hubble anisotropy.** The predicted directional Hubble variation is compared with the X-ray cluster anisotropy reported by Migkas et al. (2020, 2021).
 - **Structure from wrinkled shells.** A thin, decelerating shell is unstable to small wrinkles (thin-shell / Vishniac-type, Rayleigh–Taylor-like instability). The preferred wrinkle spacing is about $3\times$ the shell thickness. Crests and troughs seed **clumps and voids**, which keep growing gravitationally after the shell instability fades. Stacked across many shells, crests line up into walls and troughs into voids.
 
 ## 2. Key results so far
 
-**Exact GR ray tracing (Lemaître–Tolman–Bondi), `draft/models/ltb_exact/`**
+**Exact GR ray tracing (Lemaître–Tolman–Bondi), `draft/current/models/ltb_exact/`**
 - **Classical-limit check:** with the CoE 1 Gpc away, our speed 0.2c and short range, the exact code gives $H = 72.92,\ 67.68,\ 73.07$ km/s/Mpc at $0^\circ, 90^\circ, 180^\circ$, against classical $72.93,\ 67.68,\ 73.08$. The gap shrinks toward zero as range decreases.
 - **No-mass check:** $H = 70.00$ km/s/Mpc at every angle (isotropic).
 - **Sweep:** 56 runs, $D = 10$–$60$ Gpc and $2GM_c/c^2 = 0$–$100$ Gpc.
@@ -30,12 +30,12 @@ This repository is a public, timestamped record of the Center-of-Expansion (CoE)
   - Proper distance from us to the CoE is only 7–23 Gpc, much less than the coordinate distance $D$.
   - Three runs are invalid because our shell lies inside the central mass's horizon (D = 10 Gpc with 30 or 100 Gpc; D = 15 Gpc with 100 Gpc).
 
-**CMB-dipole and density-field studies, `draft/analyses/`**
+**CMB-dipole and density-field studies, `draft/current/analyses/`**
 - The shell model's CMB pattern around the sky ring (our motion Doppler factor times gravitational redshift) is divided into the Migkas best-fit curve. The leftover is 237× the $10^{-5}$ CMB level with no extra structure.
-- Point-mass clusters and voids (tidal kernel) were fitted to cancel that leftover, inside and outside our 14.3 Gpc visible sphere. For example, structure **inside** the visible sphere reaches below the 1× level: 7 masses give 0.62×, and 4 masses + 4 deep voids give 0.18× (`inside_visible/`).
+- Point-mass clusters and voids (tidal kernel) were fitted to cancel that leftover, inside and outside our 14.3 Gpc visible sphere. For example, structure **inside** the visible sphere reaches below the 1× level: 7 masses give 0.62×, and 4 masses + 4 deep voids give 0.18× (`draft/current/analyses/inside_visible/`).
 - Further studies: solution-space census, joint inside+outside networks with cosmic-web rules, sequential non-overlapping placement, Einasto-style checkerboard and radial blast-wave shells, and realistic cluster/void counts. Each folder has a `summary.md`.
 
-**Structure formation, `draft/wrinkle/`, `draft/papers/`**
+**Structure formation, `draft/current/wrinkle/`, `draft/current/papers/`**
 - Wrinkle growth (e-folds vs wavelength) is computed along the decelerating shell history. The predicted spacing band is $\lambda \approx 2\Delta$–$5\Delta$.
 - The pattern-formation paper (v5) traces flat density → wrinkle → clump/void, with density heat maps of where mass gathers.
 
@@ -66,44 +66,56 @@ $$\sigma = \sqrt{A\,k\,g_{\rm eff}},\qquad k = \frac{2\pi}{\lambda},\qquad \lamb
 where $g_{\rm eff}$ is the shell's deceleration and $\Delta$ its thickness.
 
 ## 4. Key figures
+All maps below are from the exact LTB sweep (after the 90° fix), with Planck (cyan) and SH0ES (orange, dashed ±1σ) contours and the midpoint (white dotted).
 
-| Anisotropy at R = 3 Gpc (exact LTB sweep, v1) | Sky-mean H at R = 14.3 Gpc (v1) |
+| Sky-mean H at R = 3 Gpc | H at 90° at R = 3 Gpc |
 |---|---|
-| ![](draft/models/ltb_exact/sweep/old_v1/map_anis_R3.png) | ![](draft/models/ltb_exact/sweep/old_v1/map_mean_R14.3.png) |
+| ![](draft/current/models/ltb_exact/sweep/map_mean_R3.png) | ![](draft/current/models/ltb_exact/sweep/map_H90_R3.png) |
+
+| Anisotropy at R = 3 Gpc | Sky-mean H at R = 14.3 Gpc |
+|---|---|
+| ![](draft/current/models/ltb_exact/sweep/map_anis_R3.png) | ![](draft/current/models/ltb_exact/sweep/map_mean_R14.3.png) |
+
+| Sky-mean H vs R/D | A/A_all vs angle (D = 20 Gpc, 2GM/c² = 100 Gpc, R = 3 Gpc) |
+|---|---|
+| ![](draft/current/models/ltb_exact/sweep/ratio_mean.png) | ![](draft/current/models/ltb_exact/sweep/AA_D20_m100_R3.png) |
 
 | A/A_all vs angle, exact vs classical (D = 20 Gpc) | Wrinkled thin shell | Density heat map |
 |---|---|---|
-| ![](draft/models/ltb_exact/ltbx_AA_D20_rs10.png) | ![](draft/wrinkle/wrinkle_shell_M1_d016.png) | ![](draft/papers/pattern_formation_v5/figs/shell_heat_1.png) |
+| ![](draft/current/models/ltb_exact/ltbx_AA_D20_rs10.png) | ![](draft/current/wrinkle/wrinkle_shell_M1_d016.png) | ![](draft/current/papers/pattern_formation_v5/figs/shell_heat_1.png) |
 
 ## 5. Repository layout
+Everything lives under `draft/`, split into **current** and **deprecated** material. Each half has an index listing every file with a one-line description:
+- **[`draft/current/INDEX.md`](draft/current/INDEX.md)**: the live work.
+- **[`draft/deprecated/INDEX.md`](draft/deprecated/INDEX.md)**: superseded material kept as a record, with the reason for each item.
 
 | Path | Contents |
 |---|---|
-| `draft/models/ltb_exact/` | **Current** exact LTB ray tracer (`ltbx.py`), production runs (`prod.py`), checks (`valid.py`, `conv.py`, `t90.py`), results (`ltbx_results.txt`) |
-| `draft/models/ltb_exact/sweep/` | 56-run D × mass sweep drivers (`run2.py`) and map plotting (`plots2.py`); `old_v1/` holds the first set of maps |
-| `draft/models/newtonian/` | Newtonian shell model, classical H(θ), A/A_all, Migkas comparisons, expanding-vs-collapsing tests, older redshift scripts |
-| `draft/wrinkle/` | Wrinkle instability (`wr.py`, `shell_fig.py`), figures, setup/shell PDFs |
-| `draft/analyses/` | CMB-residual cancellation, cluster/void networks, checkerboard, shell ensembles, reports and notes |
-| `draft/papers/` | Pattern-formation paper v5 (PDF + LaTeX + figures) and wrinkle PDFs |
+| `draft/current/models/ltb_exact/` | **Model of record:** exact LTB ray tracer (`ltbx.py`, with the fixed 90° tracer `trace2`), production runs (`prod.py`), checks (`valid.py`, `conv.py`, `t90.py`, `decomp.py`), results (`ltbx_results.txt`) |
+| `draft/current/models/ltb_exact/sweep/` | 56-run D × mass sweep (`run2.py`), maps (`plots2.py`): `map_*` (vs D and mass), `ratio_*` (vs R/D), `AA_*`, `HvsR_*`, `sweep_table.txt` |
+| `draft/current/models/newtonian/` | Newtonian shell model: velocity/acceleration vs angle, expanding-vs-collapsing tests, Migkas comparisons (not yet redone in exact GR) |
+| `draft/current/wrinkle/` | Wrinkle instability (`wr.py`, `shell_fig.py`), figures, setup/shell PDFs |
+| `draft/current/papers/` | Pattern-formation paper v5 (PDF + LaTeX + figures) and wrinkle PDFs |
+| `draft/current/analyses/` | CMB-residual cancellation, cluster/void networks, checkerboard, shell ensembles, reports and notes |
+| `draft/deprecated/` | Newtonian-era cosmological-redshift runs (`cosmoz*`, `classical14`, `rel14`, `ourframe14`, `radial180`, `ltb14`), cone-averaged plots, first sweep maps (`ltb_sweep_old_v1/`), and old/rejected analysis runs |
 
 ## 6. How to run
 Requires Python 3 with `numpy`, `scipy`, `matplotlib` (`pip install numpy scipy matplotlib`).
 ```bash
 # Exact LTB: checks and production curves
-cd draft/models/ltb_exact && python valid.py && python prod.py
+cd draft/current/models/ltb_exact && python valid.py && python prod.py
 # Exact LTB sweep and maps
-cd draft/models/ltb_exact/sweep && python run2.py && python plots2.py
+cd draft/current/models/ltb_exact/sweep && python run2.py && python plots2.py
 # Wrinkle figures
-cd draft/wrinkle && python wr.py && python shell_fig.py
+cd draft/current/wrinkle && python wr.py && python shell_fig.py
 # Classical H(θ)
-cd draft/models/newtonian && python classical14.py
+cd draft/deprecated/newtonian_redshift && python classical14.py   # superseded, kept for reference
 ```
 Large intermediate data (`*.pkl`, `*.npz`, `*.npy`) is not included; the scripts regenerate it. Some analysis scripts still contain absolute `/workspace/...` paths from the original environment.
 
 ## 7. Status and superseded items
-- The Newtonian/Doppler cosmological-redshift scripts (`cosmoz*`, `ourframe14*` in `draft/models/newtonian/`) are **superseded** by the exact LTB code, which is validated against the classical limit.
+- The Newtonian/Doppler cosmological-redshift scripts (`cosmoz*`, `classical14`, `rel14`, `ourframe14*`, now in `draft/deprecated/newtonian_redshift/`) are **superseded** by the exact LTB code, which is validated against the classical limit.
 - Earlier curves that read **low toward 180°** at 14.3 Gpc came from those older scripts and are **wrong**.
-- The sweep maps are being updated (Hubble-tension contours, $R/D$ axis); the v1 maps are shown above.
 - Open items: a finite visible-universe horizon growing from zero, and checking a reference DOI in the paper.
 
 ## 8. License and citation

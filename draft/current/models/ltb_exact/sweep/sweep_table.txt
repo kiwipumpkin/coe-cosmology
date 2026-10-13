@@ -1,0 +1,116 @@
+R=14.3 D=10 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 beyond | A/Aall 1.000 1.000 beyond | classical mean 70.0 anis 0.0% | valid 180/181
+R=14.3 D=15 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 beyond | A/Aall 1.000 1.000 beyond | classical mean 70.0 anis 0.0% | valid 180/181
+R=14.3 D=20 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 beyond | A/Aall 1.000 1.000 beyond | classical mean 70.0 anis 0.0% | valid 180/181
+R=14.3 D=30 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 beyond | A/Aall 1.000 1.000 beyond | classical mean 70.0 anis 0.0% | valid 180/181
+R=14.3 D=40 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 beyond | A/Aall 1.000 1.000 beyond | classical mean 70.0 anis 0.0% | valid 180/181
+R=14.3 D=50 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 beyond | A/Aall 1.000 1.000 beyond | classical mean 70.0 anis 0.0% | valid 180/181
+R=14.3 D=60 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 beyond | A/Aall 1.000 1.000 beyond | classical mean 70.0 anis 0.0% | valid 180/181
+R=14.3 D=10 m=0.1   exact: mean 69.9 anis 2.4% H 0/90/180 70.1 70.0 beyond | A/Aall 1.002 1.001 beyond | classical mean 69.9 anis 1.9% | valid 180/181
+R=14.3 D=15 m=0.1   exact: mean 70.0 anis 3.8% H 0/90/180 70.0 70.0 beyond | A/Aall 1.001 1.000 beyond | classical mean 70.0 anis 1.7% | valid 180/181
+R=14.3 D=20 m=0.1   exact: mean 70.0 anis 6.4% H 0/90/180 70.0 70.0 beyond | A/Aall 1.000 1.000 beyond | classical mean 70.0 anis 0.8% | valid 180/181
+R=14.3 D=30 m=0.1   exact: mean 70.0 anis 13.0% H 0/90/180 70.0 70.0 beyond | A/Aall 1.000 1.000 beyond | classical mean 70.0 anis 0.2% | valid 180/181
+R=14.3 D=40 m=0.1   exact: mean 70.0 anis 20.4% H 0/90/180 70.0 70.0 beyond | A/Aall 1.000 1.000 beyond | classical mean 70.0 anis 0.1% | valid 180/181
+R=14.3 D=50 m=0.1   exact: mean 70.0 anis 11.5% H 0/90/180 70.0 70.0 beyond | A/Aall 1.000 1.000 beyond | classical mean 70.0 anis 0.0% | valid 180/181
+R=14.3 D=60 m=0.1   exact: mean 70.0 anis 4.9% H 0/90/180 70.0 70.0 73.4 | A/Aall 1.000 1.000 1.049 | classical mean 70.0 anis 0.0% | valid 181/181
+R=14.3 D=10 m=0.3   exact: mean 69.8 anis 4.6% H 0/90/180 70.1 69.9 beyond | A/Aall 1.005 1.002 beyond | classical mean 69.7 anis 4.3% | valid 180/181
+R=14.3 D=15 m=0.3   exact: mean 69.9 anis 10.4% H 0/90/180 70.1 70.0 beyond | A/Aall 1.002 1.000 beyond | classical mean 69.9 anis 1.8% | valid 180/181
+R=14.3 D=20 m=0.3   exact: mean 70.0 anis 17.7% H 0/90/180 70.0 70.0 beyond | A/Aall 1.000 1.000 beyond | classical mean 70.0 anis 1.9% | valid 180/181
+R=14.3 D=30 m=0.3   exact: mean 70.1 anis 34.3% H 0/90/180 70.0 70.0 beyond | A/Aall 0.999 0.999 beyond | classical mean 70.0 anis 0.4% | valid 180/181
+R=14.3 D=40 m=0.3   exact: mean 70.1 anis 25.7% H 0/90/180 70.0 70.0 beyond | A/Aall 0.999 0.999 beyond | classical mean 70.0 anis 0.1% | valid 180/181
+R=14.3 D=50 m=0.3   exact: mean 70.0 anis 15.1% H 0/90/180 70.0 70.0 beyond | A/Aall 1.000 1.000 beyond | classical mean 70.0 anis 0.1% | valid 180/181
+R=14.3 D=60 m=0.3   exact: mean 70.0 anis 8.0% H 0/90/180 70.0 70.0 75.5 | A/Aall 1.000 1.000 1.079 | classical mean 70.0 anis 0.0% | valid 181/181
+R=14.3 D=10 m=1     exact: mean 69.8 anis 20.0% H 0/90/180 70.3 69.8 beyond | A/Aall 1.008 1.000 beyond | classical mean 69.2 anis 10.6% | valid 180/181
+R=14.3 D=15 m=1     exact: mean 70.2 anis 43.9% H 0/90/180 70.1 69.9 beyond | A/Aall 1.000 0.996 beyond | classical mean 69.6 anis 2.6% | valid 180/181
+R=14.3 D=20 m=1     exact: mean 70.4 anis 72.5% H 0/90/180 70.1 70.0 beyond | A/Aall 0.996 0.994 beyond | classical mean 69.9 anis 4.5% | valid 180/181
+R=14.3 D=30 m=1     exact: mean 70.3 anis 54.1% H 0/90/180 70.0 70.0 beyond | A/Aall 0.996 0.995 beyond | classical mean 70.0 anis 1.0% | valid 180/181
+R=14.3 D=40 m=1     exact: mean 70.2 anis 33.4% H 0/90/180 70.0 70.0 beyond | A/Aall 0.998 0.998 beyond | classical mean 70.0 anis 0.4% | valid 180/181
+R=14.3 D=50 m=1     exact: mean 70.1 anis 21.3% H 0/90/180 70.0 70.0 beyond | A/Aall 0.999 0.999 beyond | classical mean 70.0 anis 0.2% | valid 180/181
+R=14.3 D=60 m=1     exact: mean 70.0 anis 13.2% H 0/90/180 70.0 70.0 79.2 | A/Aall 1.000 0.999 1.131 | classical mean 70.0 anis 0.1% | valid 181/181
+R=14.3 D=10 m=3     exact: mean 71.8 anis 140.8% H 0/90/180 70.7 69.4 beyond | A/Aall 0.985 0.966 beyond | classical mean 68.1 anis 20.0% | valid 180/181
+R=14.3 D=15 m=3     exact: mean 71.1 anis 145.9% H 0/90/180 70.3 69.8 beyond | A/Aall 0.989 0.981 beyond | classical mean 69.1 anis 6.1% | valid 165/181
+R=14.3 D=20 m=3     exact: mean 71.4 anis 145.9% H 0/90/180 70.2 69.9 beyond | A/Aall 0.983 0.979 beyond | classical mean 69.7 anis 9.7% | valid 168/181
+R=14.3 D=30 m=3     exact: mean 70.9 anis 70.2% H 0/90/180 70.1 70.0 beyond | A/Aall 0.988 0.987 beyond | classical mean 69.9 anis 2.4% | valid 180/181
+R=14.3 D=40 m=3     exact: mean 70.4 anis 44.4% H 0/90/180 70.0 70.0 beyond | A/Aall 0.995 0.994 beyond | classical mean 70.0 anis 1.0% | valid 180/181
+R=14.3 D=50 m=3     exact: mean 70.2 anis 30.0% H 0/90/180 70.0 70.0 90.8 | A/Aall 0.998 0.997 1.293 | classical mean 70.0 anis 0.5% | valid 181/181
+R=14.3 D=60 m=3     exact: mean 70.1 anis 20.4% H 0/90/180 70.0 70.0 84.2 | A/Aall 0.999 0.999 1.201 | classical mean 70.0 anis 0.3% | valid 181/181
+R=14.3 D=10 m=10    exact: mean 70.8 anis 120.2% H 0/90/180 71.6 68.1 beyond | A/Aall 1.012 0.962 beyond | classical mean 65.5 anis 34.7% | valid 141/181
+R=14.3 D=15 m=10    exact: mean 70.1 anis 90.8% H 0/90/180 70.7 69.3 beyond | A/Aall 1.009 0.989 beyond | classical mean 67.6 anis 15.1% | valid 145/181
+R=14.3 D=20 m=10    exact: mean 70.4 anis 142.0% H 0/90/180 70.4 69.7 beyond | A/Aall 1.000 0.990 beyond | classical mean 69.1 anis 12.3% | valid 151/181
+R=14.3 D=30 m=10    exact: mean 72.7 anis 101.8% H 0/90/180 70.2 69.9 beyond | A/Aall 0.965 0.961 beyond | classical mean 69.8 anis 6.0% | valid 180/181
+R=14.3 D=40 m=10    exact: mean 71.1 anis 63.5% H 0/90/180 70.1 69.9 114.2 | A/Aall 0.986 0.984 1.606 | classical mean 69.9 anis 2.7% | valid 181/181
+R=14.3 D=50 m=10    exact: mean 70.5 anis 44.5% H 0/90/180 70.1 70.0 100.8 | A/Aall 0.993 0.992 1.428 | classical mean 69.9 anis 1.4% | valid 181/181
+R=14.3 D=60 m=10    exact: mean 70.3 anis 32.4% H 0/90/180 70.0 70.0 92.3 | A/Aall 0.996 0.996 1.314 | classical mean 70.0 anis 0.9% | valid 181/181
+R=14.3 D=10 m=30    exact: mean 68.1 anis 119.2% H 0/90/180 70.8 61.6 beyond | A/Aall 1.039 0.904 beyond | classical mean 61.2 anis 53.3% | valid 125/181 INVALID(observer inside core)
+R=14.3 D=15 m=30    exact: mean 69.8 anis 107.5% H 0/90/180 71.5 68.1 beyond | A/Aall 1.025 0.976 beyond | classical mean 64.7 anis 32.8% | valid 129/181
+R=14.3 D=20 m=30    exact: mean 69.5 anis 53.2% H 0/90/180 70.9 69.1 beyond | A/Aall 1.020 0.995 beyond | classical mean 67.4 anis 16.8% | valid 137/181
+R=14.3 D=30 m=30    exact: mean 69.8 anis 46.1% H 0/90/180 70.4 69.7 beyond | A/Aall 1.009 0.999 beyond | classical mean 69.3 anis 13.0% | valid 148/181
+R=14.3 D=40 m=30    exact: mean 73.0 anis 93.7% H 0/90/180 70.2 69.9 136.7 | A/Aall 0.961 0.957 1.872 | classical mean 69.7 anis 6.1% | valid 181/181
+R=14.3 D=50 m=30    exact: mean 71.5 anis 65.4% H 0/90/180 70.1 69.9 115.5 | A/Aall 0.981 0.979 1.616 | classical mean 69.9 anis 3.4% | valid 181/181
+R=14.3 D=60 m=30    exact: mean 70.8 anis 49.0% H 0/90/180 70.1 70.0 103.8 | A/Aall 0.990 0.988 1.466 | classical mean 69.9 anis 2.1% | valid 181/181
+R=14.3 D=10 m=100   exact: mean 71.5 anis 133.3% H 0/90/180 59.4 154.2 beyond | A/Aall 0.831 2.157 beyond | classical mean 53.6 anis 42.6% | valid 91/181 INVALID(observer inside core)
+R=14.3 D=15 m=100   exact: mean 67.2 anis 114.2% H 0/90/180 69.9 59.5 beyond | A/Aall 1.041 0.887 beyond | classical mean 58.5 anis 58.5% | valid 110/181 INVALID(observer inside core)
+R=14.3 D=20 m=100   exact: mean 68.9 anis 63.1% H 0/90/180 71.9 67.2 beyond | A/Aall 1.044 0.976 beyond | classical mean 62.9 anis 41.1% | valid 119/181
+R=14.3 D=30 m=100   exact: mean 69.3 anis 17.6% H 0/90/180 70.9 69.1 beyond | A/Aall 1.023 0.998 beyond | classical mean 68.1 anis 27.7% | valid 135/181
+R=14.3 D=40 m=100   exact: mean 69.6 anis 13.2% H 0/90/180 70.5 69.6 beyond | A/Aall 1.013 1.001 beyond | classical mean 69.2 anis 14.3% | valid 144/181
+R=14.3 D=50 m=100   exact: mean 74.9 anis 106.8% H 0/90/180 70.3 69.8 147.8 | A/Aall 0.939 0.932 1.973 | classical mean 69.5 anis 8.3% | valid 181/181
+R=14.3 D=60 m=100   exact: mean 72.6 anis 78.4% H 0/90/180 70.2 69.9 125.3 | A/Aall 0.966 0.962 1.725 | classical mean 69.7 anis 5.3% | valid 181/181
+R=3    D=10 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 70.0 | A/Aall 1.000 1.000 1.000 | classical mean 70.0 anis 0.0% | valid 181/181
+R=3    D=15 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 70.0 | A/Aall 1.000 1.000 1.000 | classical mean 70.0 anis 0.0% | valid 181/181
+R=3    D=20 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 70.0 | A/Aall 1.000 1.000 1.000 | classical mean 70.0 anis 0.0% | valid 181/181
+R=3    D=30 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 70.0 | A/Aall 1.000 1.000 1.000 | classical mean 70.0 anis 0.0% | valid 181/181
+R=3    D=40 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 70.0 | A/Aall 1.000 1.000 1.000 | classical mean 70.0 anis 0.0% | valid 181/181
+R=3    D=50 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 70.0 | A/Aall 1.000 1.000 1.000 | classical mean 70.0 anis 0.0% | valid 181/181
+R=3    D=60 m=0     exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 70.0 | A/Aall 1.000 1.000 1.000 | classical mean 70.0 anis 0.0% | valid 181/181
+R=3    D=10 m=0.1   exact: mean 69.9 anis 2.3% H 0/90/180 70.2 69.8 71.3 | A/Aall 1.004 0.998 1.019 | classical mean 69.9 anis 1.7% | valid 181/181
+R=3    D=15 m=0.1   exact: mean 70.0 anis 0.9% H 0/90/180 70.1 69.9 70.5 | A/Aall 1.002 0.999 1.007 | classical mean 70.0 anis 0.6% | valid 181/181
+R=3    D=20 m=0.1   exact: mean 70.0 anis 0.4% H 0/90/180 70.0 70.0 70.2 | A/Aall 1.001 1.000 1.004 | classical mean 70.0 anis 0.3% | valid 181/181
+R=3    D=30 m=0.1   exact: mean 70.0 anis 0.2% H 0/90/180 70.0 70.0 70.1 | A/Aall 1.000 1.000 1.001 | classical mean 70.0 anis 0.1% | valid 181/181
+R=3    D=40 m=0.1   exact: mean 70.0 anis 0.1% H 0/90/180 70.0 70.0 70.0 | A/Aall 1.000 1.000 1.001 | classical mean 70.0 anis 0.0% | valid 181/181
+R=3    D=50 m=0.1   exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 70.0 | A/Aall 1.000 1.000 1.000 | classical mean 70.0 anis 0.0% | valid 181/181
+R=3    D=60 m=0.1   exact: mean 70.0 anis 0.0% H 0/90/180 70.0 70.0 70.0 | A/Aall 1.000 1.000 1.000 | classical mean 70.0 anis 0.0% | valid 181/181
+R=3    D=10 m=0.3   exact: mean 69.8 anis 4.8% H 0/90/180 70.6 69.5 72.5 | A/Aall 1.011 0.996 1.038 | classical mean 69.8 anis 4.1% | valid 181/181
+R=3    D=15 m=0.3   exact: mean 69.9 anis 2.0% H 0/90/180 70.2 69.8 71.1 | A/Aall 1.004 0.998 1.016 | classical mean 69.9 anis 1.4% | valid 181/181
+R=3    D=20 m=0.3   exact: mean 70.0 anis 1.0% H 0/90/180 70.1 69.9 70.6 | A/Aall 1.002 0.999 1.009 | classical mean 70.0 anis 0.7% | valid 181/181
+R=3    D=30 m=0.3   exact: mean 70.0 anis 0.4% H 0/90/180 70.0 70.0 70.2 | A/Aall 1.001 1.000 1.003 | classical mean 70.0 anis 0.2% | valid 181/181
+R=3    D=40 m=0.3   exact: mean 70.0 anis 0.2% H 0/90/180 70.0 70.0 70.1 | A/Aall 1.000 1.000 1.002 | classical mean 70.0 anis 0.1% | valid 181/181
+R=3    D=50 m=0.3   exact: mean 70.0 anis 0.1% H 0/90/180 70.0 70.0 70.1 | A/Aall 1.000 1.000 1.001 | classical mean 70.0 anis 0.1% | valid 181/181
+R=3    D=60 m=0.3   exact: mean 70.0 anis 0.1% H 0/90/180 70.0 70.0 70.0 | A/Aall 1.000 1.000 1.001 | classical mean 70.0 anis 0.0% | valid 181/181
+R=3    D=10 m=1     exact: mean 69.5 anis 9.9% H 0/90/180 71.4 68.7 74.7 | A/Aall 1.028 0.989 1.075 | classical mean 69.4 anis 9.9% | valid 181/181
+R=3    D=15 m=1     exact: mean 69.8 anis 4.6% H 0/90/180 70.6 69.5 72.3 | A/Aall 1.011 0.995 1.036 | classical mean 69.8 anis 3.7% | valid 181/181
+R=3    D=20 m=1     exact: mean 69.9 anis 2.5% H 0/90/180 70.3 69.8 71.3 | A/Aall 1.005 0.998 1.020 | classical mean 69.9 anis 1.8% | valid 181/181
+R=3    D=30 m=1     exact: mean 70.0 anis 1.0% H 0/90/180 70.1 69.9 70.6 | A/Aall 1.002 0.999 1.008 | classical mean 70.0 anis 0.6% | valid 181/181
+R=3    D=40 m=1     exact: mean 70.0 anis 0.5% H 0/90/180 70.1 70.0 70.3 | A/Aall 1.001 1.000 1.004 | classical mean 70.0 anis 0.3% | valid 181/181
+R=3    D=50 m=1     exact: mean 70.0 anis 0.3% H 0/90/180 70.0 70.0 70.2 | A/Aall 1.001 1.000 1.002 | classical mean 70.0 anis 0.2% | valid 181/181
+R=3    D=60 m=1     exact: mean 70.0 anis 0.2% H 0/90/180 70.0 70.0 70.1 | A/Aall 1.000 1.000 1.002 | classical mean 70.0 anis 0.1% | valid 181/181
+R=3    D=10 m=3     exact: mean 68.8 anis 17.9% H 0/90/180 73.0 67.0 77.6 | A/Aall 1.062 0.974 1.128 | classical mean 68.5 anis 21.3% | valid 181/181
+R=3    D=15 m=3     exact: mean 69.5 anis 9.0% H 0/90/180 71.3 68.8 74.3 | A/Aall 1.026 0.989 1.068 | classical mean 69.5 anis 8.3% | valid 181/181
+R=3    D=20 m=3     exact: mean 69.8 anis 5.2% H 0/90/180 70.7 69.4 72.6 | A/Aall 1.013 0.994 1.041 | classical mean 69.8 anis 4.2% | valid 181/181
+R=3    D=30 m=3     exact: mean 69.9 anis 2.3% H 0/90/180 70.3 69.8 71.2 | A/Aall 1.005 0.998 1.018 | classical mean 69.9 anis 1.6% | valid 181/181
+R=3    D=40 m=3     exact: mean 70.0 anis 1.2% H 0/90/180 70.1 69.9 70.7 | A/Aall 1.002 0.999 1.010 | classical mean 70.0 anis 0.8% | valid 181/181
+R=3    D=50 m=3     exact: mean 70.0 anis 0.7% H 0/90/180 70.1 69.9 70.4 | A/Aall 1.001 0.999 1.006 | classical mean 70.0 anis 0.4% | valid 181/181
+R=3    D=60 m=3     exact: mean 70.0 anis 0.5% H 0/90/180 70.0 70.0 70.3 | A/Aall 1.001 1.000 1.004 | classical mean 70.0 anis 0.3% | valid 181/181
+R=3    D=10 m=10    exact: mean 66.6 anis 25.3% H 0/90/180 76.6 62.5 72.6 | A/Aall 1.150 0.938 1.089 | classical mean 65.8 anis 37.6% | valid 181/181
+R=3    D=15 m=10    exact: mean 68.8 anis 17.5% H 0/90/180 73.1 66.9 77.4 | A/Aall 1.062 0.973 1.124 | classical mean 68.6 anis 19.5% | valid 181/181
+R=3    D=20 m=10    exact: mean 69.4 anis 10.8% H 0/90/180 71.7 68.4 75.0 | A/Aall 1.033 0.986 1.080 | classical mean 69.3 anis 10.2% | valid 181/181
+R=3    D=30 m=10    exact: mean 69.8 anis 5.1% H 0/90/180 70.7 69.4 72.6 | A/Aall 1.013 0.994 1.040 | classical mean 69.8 anis 4.0% | valid 181/181
+R=3    D=40 m=10    exact: mean 69.9 anis 2.9% H 0/90/180 70.4 69.7 71.5 | A/Aall 1.007 0.997 1.023 | classical mean 69.9 anis 2.0% | valid 181/181
+R=3    D=50 m=10    exact: mean 69.9 anis 1.8% H 0/90/180 70.2 69.8 70.9 | A/Aall 1.004 0.998 1.014 | classical mean 70.0 anis 1.2% | valid 181/181
+R=3    D=60 m=10    exact: mean 70.0 anis 1.2% H 0/90/180 70.1 69.9 70.6 | A/Aall 1.002 0.999 1.010 | classical mean 70.0 anis 0.7% | valid 181/181
+R=3    D=10 m=30    exact: mean 56.8 anis 34.1% H 0/90/180 72.5 53.2 53.2 | A/Aall 1.277 0.936 0.936 | classical mean 52.9 anis 61.4% | valid 181/181 INVALID(observer inside core)
+R=3    D=15 m=30    exact: mean 67.3 anis 23.8% H 0/90/180 76.3 62.9 76.6 | A/Aall 1.134 0.934 1.138 | classical mean 66.4 anis 41.5% | valid 181/181
+R=3    D=20 m=30    exact: mean 68.6 anis 19.7% H 0/90/180 73.6 66.3 78.0 | A/Aall 1.073 0.966 1.137 | classical mean 68.3 anis 22.2% | valid 181/181
+R=3    D=30 m=30    exact: mean 69.5 anis 10.1% H 0/90/180 71.6 68.5 74.6 | A/Aall 1.030 0.987 1.075 | classical mean 69.4 anis 9.0% | valid 181/181
+R=3    D=40 m=30    exact: mean 69.7 anis 6.0% H 0/90/180 70.8 69.3 72.9 | A/Aall 1.016 0.993 1.046 | classical mean 69.7 anis 4.7% | valid 181/181
+R=3    D=50 m=30    exact: mean 69.9 anis 3.9% H 0/90/180 70.5 69.6 72.0 | A/Aall 1.009 0.996 1.030 | classical mean 69.9 anis 2.8% | valid 181/181
+R=3    D=60 m=30    exact: mean 69.9 anis 2.6% H 0/90/180 70.3 69.7 71.4 | A/Aall 1.006 0.997 1.021 | classical mean 69.9 anis 1.8% | valid 181/181
+R=3    D=10 m=100   exact: mean 53.1 anis 0.0% H 0/90/180 53.1 53.1 53.1 | A/Aall 1.000 1.000 1.000 | classical mean 46.7 anis 0.0% | valid 181/181 INVALID(observer inside core)
+R=3    D=15 m=100   exact: mean 55.6 anis 28.8% H 0/90/180 69.1 53.2 53.2 | A/Aall 1.244 0.956 0.956 | classical mean 51.2 anis 56.6% | valid 181/181 INVALID(observer inside core)
+R=3    D=20 m=100   exact: mean 66.4 anis 29.3% H 0/90/180 77.9 60.6 74.7 | A/Aall 1.173 0.912 1.126 | classical mean 65.3 anis 50.9% | valid 181/181
+R=3    D=30 m=100   exact: mean 68.6 anis 19.5% H 0/90/180 73.6 66.3 77.9 | A/Aall 1.072 0.966 1.136 | classical mean 68.3 anis 21.3% | valid 181/181
+R=3    D=40 m=100   exact: mean 69.3 anis 12.2% H 0/90/180 72.0 68.1 75.4 | A/Aall 1.039 0.983 1.089 | classical mean 69.2 anis 11.4% | valid 181/181
+R=3    D=50 m=100   exact: mean 69.6 anis 8.3% H 0/90/180 71.2 68.9 73.9 | A/Aall 1.024 0.990 1.062 | classical mean 69.6 anis 6.9% | valid 181/181
+R=3    D=60 m=100   exact: mean 69.7 anis 5.9% H 0/90/180 70.8 69.3 72.9 | A/Aall 1.016 0.993 1.045 | classical mean 69.7 anis 4.6% | valid 181/181
+1 9.9 11.1 12.8 14.1 15.0 15.8 | maxR180: 8.1 9.9 11.1 12.8 14.1 15.0 15.8
+m=10    proper dist to CoE: 9.2 11.2 12.5 14.2 15.5 16.4 17.2 | maxR180: 9.2 11.2 12.4 14.2 15.3 15.8 16.2
+m=30    proper dist to CoE: 10.0 13.1 14.5 16.4 17.6 18.6 19.4 | maxR180: 10.0 12.9 13.4 14.1 14.7 15.2 15.6
+m=100   proper dist to CoE: 10.0 15.0 18.0 20.2 21.5 22.5 23.3 | maxR180: 10.0 12.6 12.8 13.5 14.1 14.6 15.0
