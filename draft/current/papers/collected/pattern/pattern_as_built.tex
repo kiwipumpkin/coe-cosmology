@@ -1,0 +1,638 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=0.85in]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{pdflscape,afterpage,longtable}
+\usepackage{booktabs,array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=black,citecolor=black}
+\usepackage{url}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\setlist[itemize]{leftmargin=13.9pt,labelsep=0pt,labelwidth=13.9pt,align=left}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.6}
+\renewcommand{\floatpagefraction}{0.7}
+\setcounter{topnumber}{2}\setcounter{bottomnumber}{2}\setcounter{totalnumber}{3}
+\graphicspath{{img/}{figs/}}
+\newcommand{\credit}[1]{{\footnotesize #1}}
+\setlength{\textfloatsep}{12pt plus 3pt minus 3pt}
+\renewcommand{\textfraction}{0.12}
+\title{Spontaneous Pattern Formation:\\ Forcing Functions, Scale Selection and Common Mechanisms\\[-8pt]{\large Draft}}
+\author{}
+\date{}
+\usepackage{flafter}\usepackage{xurl}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}\setlength{\floatsep}{8pt plus 2pt minus 2pt}\setlength{\abovecaptionskip}{4pt}
+\AtBeginDocument{\setlength{\abovedisplayskip}{6pt plus 2pt minus 2pt}\setlength{\belowdisplayskip}{6pt plus 2pt minus 2pt}}
+\usepackage{framed}\setlength{\FrameSep}{5pt}
+\captionsetup{font=small}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\newcommand{\LEGEND}{\textbf{Classes} (how the scale is selected). \textbf{A} bulk finite-wavelength instability above a threshold. \textbf{B} equilibrium modulated phase: short-range cost vs.\ long-range gain gives a free-energy minimum at finite period. \textbf{C} coarsening: no equilibrium scale, $L\propto t^n$. \textbf{D} interfacial instability: long waves unstable, surface tension cuts off short ones. \textbf{E} fronts and waves invading an unstable, excitable or supersaturated state. ref.\ = forced linear mode (Chladni). \textbf{Tags} (what sustains it): \textbf{D} driven (open), \textbf{R} relaxing (closed transient), \textbf{E} equilibrium.}
+\renewcommand{\thepage}{\the\numexpr\value{page}+78\ifnum\value{page}>16 +3\fi\ifnum\value{page}>24 -1\fi\ifnum\value{page}>30 -2\fi\relax}\renewcommand{\thefigure}{\the\numexpr\value{figure}+74\ifnum\value{figure}>26 +4\fi\relax}
+\begin{document}
+\maketitle
+
+
+\begin{abstract}
+Spatial patterns arise spontaneously in fluids, chemical media, magnets, mixtures, growing crystals and colonies. For twenty examples this draft shows the pattern and gives its forcing function or control parameter in standard form, its threshold and its selected scale. The examples are classified by how the scale is selected and tagged by what sustains the pattern. All share a uniform state, one dimensionless drive, a wavenumber-dependent growth rate and two competing effects that fix the scale.
+\end{abstract}
+
+\section{Introduction}
+
+A uniform or disordered medium often organizes itself into cells, rolls, spots, stripes, fingers or bands with a well-defined spacing. The geometry is not written in by the boundaries, and where growth starts from a seed (a dendrite, a colony), the seed starts the growth but does not set the length scale. This draft shows a set of such patterns, gives for each the forcing function or control parameter in its standard form, and emphasizes what they have in common: a uniform state, a dimensionless drive, a growth rate that depends on wavenumber, and two competing effects that fix the scale.
+
+Section~\ref{sec:framework} gives the common framework, Section~\ref{sec:classes} the classes; Table~\ref{tab:summary} collects the forcing functions.
+
+\section{A common framework}\label{sec:framework}
+
+\paragraph{Growth rate versus wavenumber.} Every example starts from a uniform state and one dimensionless drive ($\mathrm{Ra}$, $\mathrm{Ma}$, $\Gamma$, $B/B_c$, $\mathrm{Ca}$, quench depth, \dots). A perturbation $\propto e^{i\mathbf{k}\cdot\mathbf{x}+\sigma(k)t}$ grows if $\sigma(k)>0$, and the shape of $\sigma(k)$ sorts the examples \cite{CH}: a band at finite $k_c$ that opens at a threshold (class A), near which
+\[
+\sigma(k)\approx\tau_0^{-1}\bigl[\epsilon-\xi_0^2(k-k_c)^2\bigr],\qquad \epsilon=R/R_c-1;
+\]
+a long-wave band pinned at $\sigma(0)=0$ by a conservation law (spinodal decomposition, class C); or a band $0<k<k_c$ with no threshold, cut off by surface tension (driven interfaces, class D).
+
+\paragraph{A scale from two competing effects.} The selected length always comes from one effect that penalizes long waves and one that penalizes short ones: confinement against dissipation (convection rolls of width $\approx d$); gravity against capillarity (Faraday, Rosensweig and Rayleigh–Taylor all give the capillary length $2\pi\sqrt{\sigma/g\Delta\rho}$ \cite{AR2009}); diffusion against capillarity (the Mullins–Sekerka length $2\pi\sqrt{d_0\ell}$ \cite{Langer1980}); local activation against lateral inhibition (Turing \cite{CH}); and wall or line tension against long-range dipolar energy (magnetic domains, ferrofluid labyrinths \cite{SA1995,AR2009}). For equilibrium modulated phases this competition is written as a free energy per mode \cite{SA1995,AR2009},
+\[
+F(q)=\tfrac12\bigl[b\,q^2-\mu^2G(q)\bigr],\qquad G(q)\approx G(0)-g_1|q|\ \Rightarrow\ q^*\neq0 .
+\]
+
+\paragraph{Universality near onset.} Just above a finite-$k$ threshold the slowly varying amplitude $A$ of the pattern obeys a universal Ginzburg–Landau equation \cite{CH,HK2015},
+\[
+\tau_0\,\partial_tA=\epsilon A+\xi_0^2\,\partial_x^2A-g|A|^2A ,
+\]
+so the amplitude grows as $\sqrt{\epsilon}$, and only a band of wavenumbers inside the unstable band is stable (the Busse balloon in convection). The model equation of this class is Swift–Hohenberg, $\partial_t\psi=\epsilon\psi-(k_c^2+\nabla^2)^2\psi-\psi^3$ \cite{Swift1977}. Where up–down symmetry is broken, hexagons appear through a subcritical, hysteretic onset: Bénard–Marangoni cells, Rosensweig spikes \cite{AR2009}, thin-film Rayleigh–Taylor drops \cite{vS2003} and low-frequency granular squares \cite{AT2006}. Localized states (oscillons, ferrofluid ``solitons'') live in the hysteresis windows.
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-009.jpg}
+\caption{Additional experimental BZ target and spiral patterns in a thin layer.}
+\end{figure}
+\paragraph{Why driven and equilibrium patterns look alike.} For a stationary finite-$k$ instability the lowest-order amplitude equation is a gradient flow, $\partial_tA=-\delta\mathcal{F}/\delta A^*$ \cite{CH}. Near onset, convection rolls and Turing stripes therefore behave as if they were minimizing a functional with the same $q$-dependence as an equilibrium modulated phase \cite{SA1995}, which is why stripes, hexagons, labyrinths and dislocation climb look the same in convection and in garnet films. Far from onset they differ: only gradient systems have a unique preferred wavenumber; driven systems show a band of states, persistent dynamics and chaos \cite{CH}.
+
+\paragraph{Interfaces.} Interfacial patterns (fingers, dendrites, billows) do not saturate at small amplitude. Their final scales, such as tip radius and finger width, are selected by surface tension acting as a singular perturbation, and dendrites need crystalline anisotropy to have any steady solution at all \cite{CH,Langer1980,vS2003}.
+
+\paragraph{Fronts.} A front into an unstable state moves at the linear spreading speed $v^*$ (pulled) or faster (pushed); for the Fisher–KPP equation $\partial_tu=D\partial_x^2u+f(u)$, $v^*=2\sqrt{Df'(0)}$, and the pattern left behind inherits its wavenumber from the front \cite{vS2003}. Examples: thin-film Rayleigh–Taylor drops, BZ waves, bacterial colonies, Liesegang bands.
+
+\paragraph{Coarsening.} When there is no equilibrium length (spinodal decomposition, foams, granular clusters), a single length grows as a power law, $L\propto t^{1/3}$ for conserved diffusive dynamics, and statistics collapse when scaled by $L$ \cite{Bray1994,vS2003}. Arresting coarsening with a long-range interaction, as chain connectivity does in block copolymers, turns class C into class B \cite{AR2009}.
+
+\paragraph{What sustains the pattern.} This is a separate question from how the scale is selected. Open driven systems need a flux; their full dynamics has no Lyapunov functional \cite{CH}. Closed systems relax and their patterns are transients: a closed BZ dish runs down within about 100 periods \cite{CH}, Liesegang bands freeze kinetically, and spinodal domains persist for long times only because coarsening is slow. True equilibrium patterns persist with no input \cite{AR2009}.
+
+\section{Classification}\label{sec:classes}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-002.jpg}
+\caption{Additional experimental Faraday surface showing organized peaks under vertical oscillation.}
+\end{figure}
+
+\begin{framed}\noindent \textbf{Classes.} Each pattern is labelled by \emph{how its length scale is selected} and \emph{what keeps it alive}.\\[2pt]
+\textbf{A Bulk finite-wavelength instability:} a uniform state becomes unstable above a threshold to a mode of finite wavenumber $k_c$ (Cross \& Hohenberg type I \cite{CH}).\\
+\textbf{B Equilibrium modulated phase:} a short-range cost and a long-range gain give a free-energy minimum at finite period \cite{SA1995,AR2009}.\\
+\textbf{C Coarsening:} phase separation or ripening with no equilibrium scale; a single length grows as $L\propto t^n$ \cite{Bray1994}.\\
+\textbf{D Interfacial instability:} a driven sharp interface is unstable at long wavelengths, with surface tension cutting off short ones (Mullins–Sekerka, Saffman–Taylor, Rayleigh–Taylor, Kelvin–Helmholtz) \cite{Langer1980}.\\
+\textbf{E Fronts and waves:} a front invades an unstable, excitable or supersaturated state and leaves structure behind it \cite{vS2003}.\\[2pt]
+Tags: \textbf{D}riven (open), \textbf{R}elaxing (closed transient), \textbf{E}quilibrium. Chladni figures are a forced linear response, not a self-organized pattern, and serve as the reference case.
+\end{framed}
+
+The classes follow the instability types of Cross and Hohenberg \cite{CH} (I$_s$, I$_o$ for A, II for C, III$_o$ for excitable media in E), the interface and front literature \cite{Langer1980,vS2003} and the modulated-phase picture \cite{SA1995,AR2009}. The tag replaces the test ``does the pattern collapse when the drive stops'', which fails for closed transients such as a BZ dish or a Liesegang tube. Each section heading gives the class and tag.
+
+\section{Reference case: Chladni figures (forced mode, D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-000.jpg}
+\caption{Experimental Chladni figures. Sand accumulates along the nodal lines of standing-wave modes on a vibrated plate.}
+\end{figure}
+
+A plate driven near one of its eigenfrequencies vibrates in a standing mode. Coarse sand is thrown off the moving regions and gathers along the nodal lines; fine powder instead collects at the antinodes, carried there by air streaming \cite{AT2006}. The figure is the forced linear response of the plate, selected by its shape and edges, with no threshold and no symmetry breaking, so it is the contrast case for everything that follows \cite{Rossing1982}.
+\[
+D\nabla^4w+\rho h\,\partial_t^2w=f(x,y)\cos\omega t,\qquad D=\frac{Eh^3}{12(1-\nu_P^2)} .
+\]
+\emph{Threshold and scale:} a figure appears when $\omega\approx\omega_n=k_n^2\sqrt{D/\rho h}$; the nodal spacing scales as $\omega^{-1/2}$. \emph{Class:} reference (forced mode), tag D; it shows the eigenmode structure that true instabilities inherit in finite containers.
+
+\section{Class A: bulk finite-wavelength instabilities}
+
+\subsection{Faraday waves (A, D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-001.jpg}
+\caption{Experimental polygonal Faraday-wave patterns (elliptical through hexagonal) on vertically oscillated liquid surfaces. \credit{X.\ Liu and X.\ Wang, \emph{Nat.\ Phys.}\ \textbf{20}, 287 (2024), Fig.~3, \href{https://doi.org/10.1038/s41567-023-02294-y}{doi:10.1038/s41567-023-02294-y}.}}
+\end{figure}
+
+Vertical shaking modulates the effective gravity and parametrically pumps surface waves at half the drive frequency. Above a threshold set by damping, standing waves fill the dish at once: squares near onset in low-viscosity fluids, hexagons at high viscosity, and quasipatterns with two-frequency forcing \cite{CH,Edwards1994}; shaped containers give polygons \cite{LiuWang2024}. For drive frequency $2\omega$ the surface mode $a(t)$ obeys a damped Mathieu equation \cite{CH},
+\[
+\ddot a+\gamma\dot a+\omega_s^2(q)\bigl[1+2\Delta\cos2\omega t\bigr]a=0,\qquad \omega_s^2=q\tanh(qh)\Bigl(g+\frac{\sigma q^2}{\rho}\Bigr).
+\]
+\emph{Threshold and scale:} $\Delta_c=\gamma/\omega_0$; the wavenumber is fixed by the subharmonic resonance $\omega_s(q_0)=\omega$. \emph{Class:} A, D; the parametric cousin of the granular patterns below.
+
+\subsection{Rayleigh–Bénard convection (A, D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-003.jpg}
+\caption{Experimental Rayleigh–Bénard convection cells visualized with aluminum powder in a thin layer of oil heated from below (Scott Camazine).}
+\end{figure}
+
+A fluid layer heated from below conducts heat until buoyancy beats viscosity and thermal diffusion; then rolls or hexagonal cells about one layer depth wide appear everywhere at once. Beyond onset the rolls are stable only inside the Busse balloon, and at Prandtl number $\approx1$ they give way to spiral-defect chaos \cite{CH,Morris1993}.
+\[
+\mathrm{Ra}=\frac{g\alpha\Delta T\,d^3}{\nu\kappa} .
+\]
+\emph{Threshold and scale:} $\mathrm{Ra}_c=1707.76$, $k_cd=3.117$ for rigid plates (657.5 and $\pi/\sqrt2$ for free–free surfaces); away from onset a band of wavenumbers is stable, not a unique one \cite{CH}. \emph{Class:} A, D; the parent of the Lorenz equations (Section~\ref{sec:chaos}).
+
+\subsection{Bénard–Marangoni convection (A, D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-004.jpg}
+\caption{Additional experimental visualization of organized Rayleigh–Bénard convection cells.}
+\end{figure}
+
+In a thin layer with a free surface, surface-tension gradients drive the flow: a warm spot has lower tension, the surroundings pull liquid away and upwelling brings more heat \cite{Pearson1958}. The free surface breaks the up–down symmetry, so hexagonal cells appear through a weakly subcritical onset and change to squares far above it \cite{CH,Eckert1998}.
+\[
+\mathrm{Ma}=\frac{\Delta T\,d\,|\partial\sigma/\partial T|}{\rho\nu\kappa} .
+\]
+\emph{Threshold and scale:} $\mathrm{Ma}_c\approx80$ (conducting bottom, insulating surface); cells $\approx3d$ across. \emph{Class:} A, D; with buoyancy, the two thresholds combine roughly as $\mathrm{Ra}/\mathrm{Ra}_{c0}+\mathrm{Ma}/\mathrm{Ma}_{c0}\approx1$ \cite{CH}.
+
+\subsection{Taylor–Couette vortices (A, D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-006.jpg}
+\caption{Experimental Taylor–Couette flow showing stacked vortices between rotating cylinders. \credit{The image's embedded label credits Kristiawan \emph{et al.}\ (2013); not independently verified.}}
+\end{figure}
+
+Fluid between a rotating inner cylinder and a fixed outer one is centrifugally unstable, because angular momentum falls outward (Rayleigh's criterion); viscosity sets a finite threshold. Stacked counter-rotating toroidal vortices, each about one gap high, fill the annulus, followed by wavy, modulated and turbulent vortex states \cite{CH,Andereck1986}.
+\[
+R_i=\frac{a(b-a)\Omega_i}{\nu}\qquad\Bigl(\text{or }\ \mathrm{Ta}=\frac{\Omega^2Rd^3}{\nu^2}\Bigr).
+\]
+\emph{Threshold and scale:} narrow gap $\mathrm{Ta}_c\approx1708$, axial period $\approx2d$; wavy vortices at $R_i/R_{ic}\approx1.1$--1.2 depending on radius ratio \cite{CH}. \emph{Class:} A, D; the rotating analogue of convection rolls.
+
+\subsection{Electroconvection in nematic liquid crystals (A, D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-007.jpg}
+\caption{Electroconvection pattern in a nematic liquid crystal. The right-hand panel shows the self-organized roll or defect pattern that appears above threshold under an applied electric field. \credit{Y.\ Sasaki \emph{et al.}, \emph{Nat.\ Commun.}\ \textbf{7}, 13238 (2016), \href{https://doi.org/10.1038/ncomms13238}{doi:10.1038/ncomms13238}, CC BY 4.0.}}
+\end{figure}
+
+In a thin nematic cell under an ac voltage, a bend fluctuation of the director deflects the current, the field pushes on the resulting space charge, and the flow increases the bend (Carr–Helfrich feedback). Above threshold, rolls with spacing of order the cell thickness $d$ appear: oblique rolls below the Lifshitz frequency, normal rolls above it, and a finer dielectric regime above the charge-relaxation cutoff \cite{CH,Kramer1995,Sasaki2016}.
+\[
+\varepsilon=\frac{V^2}{V_c^2}-1 .
+\]
+\emph{Threshold and scale:} $V_c$ is nearly independent of $d$; rolls $\sim d$ ($d=10$--100\,$\mu$m). \emph{Class:} A, D; the anisotropic analogue of Rayleigh–Bénard, with large aspect ratios and fast time scales.
+
+\subsection{Turing patterns (A, D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-014.jpg}
+\caption{Experimental ferrofluid peaks formed by the Rosensweig (normal-field) instability. Side view with the magnet beneath a glass plate. \credit{Photo: Gregory F.\ Maxwell, \href{https://commons.wikimedia.org/wiki/File:Ferrofluid_Magnet_under_glass_edit.jpg}{Wikimedia Commons}, CC BY-SA 3.0.}}
+\end{figure}
+
+Two reacting species form stationary spots or stripes when an activator is short-ranged and an inhibitor long-ranged \cite{Turing1952}. This was first realized in the CIMA reaction in an open gel reactor, where starch slows the activator; spots and stripes about 0.2\,mm apart appear whatever the reactor size \cite{Castets1990,Ouyang1991}.
+\[
+\partial_tu=D_u\nabla^2u+f(u,v),\quad \partial_tv=D_v\nabla^2v+g(u,v);\qquad D_vf_u+D_ug_v>2\sqrt{D_uD_v\det J},\ \ k_c^2=\sqrt{\frac{\det J}{D_uD_v}} .
+\]
+\emph{Threshold and scale:} the diffusivity ratio $D_v/D_u$ must exceed a kinetic threshold; the period is intrinsic. \emph{Class:} A, D; distinct from BZ waves (class E), which need no difference in diffusivities.
+
+\subsection{Langmuir circulation and cloud streets (A, D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-012.jpg}
+\caption{Satellite image of cloud streets: wind-aligned convective rolls in the atmospheric boundary layer, with the same roll geometry as Langmuir circulation.}
+\end{figure}
+
+Wind over waves organizes the upper ocean into wind-aligned counter-rotating roll pairs; floating material collects in lines (windrows) over the convergences \cite{Langmuir1938}. The Stokes drift $\mathbf{u}_s$ of the waves tilts and stretches wind-driven vorticity into downwind rolls (the Craik–Leibovich CL2 instability \cite{Craik1976}):
+\[
+\partial_t\bm{\omega}=\nabla\times\bigl[(\mathbf{u}+\mathbf{u}_s)\times\bm{\omega}\bigr]+\nu\nabla^2\bm{\omega},\qquad \mathrm{La}_t=(u_*/U_s)^{1/2}.
+\]
+\emph{Threshold and scale:} windrows appear above about 3\,m\,s$^{-1}$ of wind, 2--3 mixed-layer depths apart \cite{Thorpe2004}; open-ocean $\mathrm{La}_t\approx0.3$. Cloud streets (figure) share the geometry but are convective rolls \cite{Etling1993}. \emph{Class:} A, D; the vortex-force analogue of convection rolls. Not to be confused with Langmuir \emph{monolayers}, which form class-B stripe phases \cite{AR2009}.
+
+\subsection{Vibrated granular layers and oscillons (A, D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-013.jpg}
+\caption{Experimental view of a vibrated granular bed showing preferential pathways and surface organization under vibration.}
+\end{figure}
+
+A vibrated layer of grains leaves the plate each cycle when $\Gamma>1$ and, above a second threshold, forms standing waves at half the drive frequency. Below a crossover frequency $f^*$ the patterns are subcritical squares, above it supercritical stripes; oscillons, localized peaks that alternate with craters, live near $f^*$, and hexagons appear for $\Gamma>4$ \cite{Melo1995,Umbanhowar1996,AT2006}.
+\[
+\Gamma=\frac{A\omega^2}{g} .
+\]
+\emph{Threshold and scale:} $\Gamma\approx2.4$; $f^*\approx45$\,Hz with $f^*\propto d^{-1/2}$; the wavelength grows with layer depth and falls with $f$ \cite{AT2006}. \emph{Class:} A, D; parametric like Faraday waves, with inelastic collisions in place of viscosity.
+
+\section{Class B: equilibrium modulated phases}
+
+\subsection{Rosensweig instability (B, E)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-015.jpg}
+\caption{Close-up experimental view of the ordered spike lattice produced by the Rosensweig instability.}
+\end{figure}
+
+A ferrofluid in a vertical field forms a hexagonal lattice of spikes: a crest concentrates field lines and gains magnetic energy, while gravity and surface tension resist \cite{Cowley1967}. The lattice appears abruptly (subcritical), changes to squares at higher field, and persists with no energy input \cite{AR2009,Knieling2007}.
+\[
+\mu_0M_c^2=2\Bigl(1+\frac{1}{r_p}\Bigr)\sqrt{g\Delta\rho\,\sigma},\qquad r_p=\frac{\sqrt{\mu_c\mu_t}}{\mu_0} .
+\]
+\emph{Threshold and scale:} onset spacing $\lambda=2\pi\sqrt{\sigma/g\Delta\rho}$, about 1\,cm, the same as the Rayleigh–Taylor onset wavelength \cite{AR2009}. \emph{Class:} B, E; its onset dynamics is a class-A-like subcritical hexagon instability, the bridge between the classes.
+
+\subsection{Magnetic domain patterns (B, E)}
+
+
+Thin films with perpendicular anisotropy break into up and down stripes or labyrinths: domain walls cost energy, but alternating domains reduce the stray-field energy \cite{Kittel1946,SA1995}. A perpendicular field drives first-order transitions from stripes to bubbles to saturation \cite{AR2009}. In the Fe/Ni/Cu films of the figure the width falls sevenfold over less than one monolayer near the spin-reorientation transition, where the wall energy vanishes \cite{Kronseder2015}.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-020.jpg}
+\caption{Experimental magnetic domain patterns in a thin ferromagnetic film (labyrinthine stripes observed by real-time microscopy). Distinct from the free-surface peaks of a ferrofluid. \credit{M.\ Kronseder \emph{et al.}, \emph{Nat.\ Commun.}\ \textbf{6}, 6832 (2015), Fig.~1, \href{https://doi.org/10.1038/ncomms7832}{doi:10.1038/ncomms7832}, CC BY 4.0.}}
+\end{figure}
+\[
+\text{thick films: } w\propto\sqrt{\ell_c t},\ \ \ell_c=\frac{\sigma_w}{\mu_0M_s^2};\qquad \text{ultrathin films: } d^*=a\,\exp\Bigl(\frac{b\gamma}{\mu_0M^2}\Bigr).
+\]
+\emph{Threshold and scale:} none (an equilibrium state); the period is set by the wall-to-dipolar energy ratio and tuned reversibly by field and temperature. \emph{Class:} B, E; the same stripe and bubble phases occur in ferrofluid labyrinths, Langmuir monolayers and block copolymers \cite{SA1995}.
+
+\section{Class C: coarsening}
+
+\subsection{Soap films and foams (C, R)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-021.jpg}
+\caption{Experimental soap foam showing the cellular network and Plateau borders set locally by surface tension; the network coarsens as gas diffuses between cells.}
+\end{figure}
+
+Films meet three at a time at $120^\circ$ and their Plateau borders four at a time at $109.5^\circ$, a local equilibrium of surface tension. The foam as a whole is metastable: gas diffuses from small, high-pressure bubbles into large ones and the network coarsens \cite{Glazier1987,AT2006}.
+\[
+\Delta p=4\sigma H,\qquad \frac{dA_n}{dt}=\frac{\pi}{3}k_D(n-6).
+\]
+\emph{Threshold and scale:} none; the mean cell area grows $\propto t$ in 2D. \emph{Class:} C, R; the same scaling as spinodal domains and grain growth.
+
+\section{Class D: interfacial instabilities}
+
+\subsection{Kelvin–Helmholtz billows (D, D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-011.jpg}
+\caption{Kelvin–Helmholtz clouds: atmospheric manifestation of the shear-driven interfacial instability.}
+\end{figure}
+
+Shear across a density interface rolls it into billows, seen as rows of breaking-wave clouds. Gravity stabilizes long waves; for a continuous shear layer the billow spacing is set by the layer thickness $\delta$, and stratification suppresses billows when the Richardson number exceeds 1/4 \cite{Miles1961,Howard1961,Michalke1964}.
+\[
+\sigma^2=\frac{\rho_1\rho_2k^2U^2}{(\rho_1+\rho_2)^2}-gk\frac{\rho_2-\rho_1}{\rho_1+\rho_2},\qquad \mathrm{Ri}=\frac{N^2}{(\partial_zU)^2}<\frac14 .
+\]
+\emph{Threshold and scale:} $\lambda\approx7\delta$; billows then pair and merge. \emph{Class:} D, D; the archetype of open-flow, convectively unstable systems \cite{CH}.
+
+\subsection{Saffman–Taylor viscous fingering (D, D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-023.jpg}
+\caption{Experimental Saffman–Taylor viscous fingering: dyed water injected into glycerol in a Hele-Shaw cell.}
+\end{figure}
+
+A less viscous fluid pushed into a more viscous one in a Hele-Shaw cell advances in fingers that split at their tips \cite{SaffmanTaylor1958}. All long waves are unstable; surface tension cuts off short ones, and in a channel a single finger narrows toward half the channel width as $\mathrm{Ca}$ grows \cite{Homsy1987}.
+\[
+\sigma(k)=\frac{k}{\mu_1+\mu_2}\Bigl[(\mu_2-\mu_1)U-\frac{b^2\gamma}{12}k^2\Bigr],\qquad \lambda_m=\frac{\pi b}{\sqrt{\mathrm{Ca}}} .
+\]
+\emph{Threshold and scale:} none (any $\mu_2>\mu_1$); finger spacing $\propto b\,\mathrm{Ca}^{-1/2}$. \emph{Class:} D, D; the hydrodynamic analogue of solidification \cite{CH}.
+
+\subsection{Rayleigh–Taylor fingers (D, R)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-024.jpg}
+\caption{Numerical evolution of the Rayleigh–Taylor instability showing the development of descending fingers and rising bubbles. \credit{Simulation: Shengtai Li and Hui Li (Los Alamos National Laboratory), \href{https://commons.wikimedia.org/wiki/File:HD-Rayleigh-Taylor.gif}{Wikimedia Commons}.}}
+\end{figure}
+
+Heavy fluid above light fluid releases potential energy through falling spikes and rising bubbles; capillarity or viscosity sets the short-wave cutoff \cite{Sharp1984}. A hanging film breaks into hexagonal drops that spread from the edges as a front \cite{vS2003}.
+\[
+\sigma^2=Agk-\frac{\gamma k^3}{\rho_h+\rho_l},\qquad A=\frac{\rho_h-\rho_l}{\rho_h+\rho_l} .
+\]
+\emph{Threshold and scale:} none; $\lambda_c=2\pi\sqrt{\gamma/\Delta\rho g}$ and fastest $\lambda_m=\sqrt3\lambda_c$, the same capillary length as the Rosensweig spacing \cite{AR2009}. \emph{Class:} D, R (a one-shot release of potential energy).
+
+\subsection{Dendritic solidification (D, R / D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-025.jpg}
+\caption{Manganese-oxide ``dendrites'' on a rock surface: diffusion-limited branching grown from solution, shown for its dendritic morphology.}
+\end{figure}
+
+A seeded crystal growing into an undercooled melt sheds latent heat; a bump reaches colder liquid and grows faster (Mullins–Sekerka), while the Gibbs–Thomson effect stabilizes short waves \cite{MullinsSekerka1964,Langer1980}. The tip radius is selected by anisotropic surface tension acting as a singular perturbation (solvability): with isotropic surface tension there is no steady needle at all \cite{CH}. Sidebranches are tip noise amplified on the flanks \cite{vS2003}.
+\[
+\sigma=vk\Bigl[1-\tfrac12(1+\beta)\,d_0\ell k^2\Bigr],\quad \ell=\frac{2D}{v};\qquad \rho^2v=\frac{2Dd_0}{\sigma^*},\ \sigma^*\approx0.025 .
+\]
+\emph{Threshold and scale:} always unstable; $\lambda_s=2\pi\sqrt{d_0\ell}$ in the symmetric model ($\beta=1$), comparable to the measured tip radius \cite{Langer1980,Huang1981}. \emph{Class:} D; tag R for free growth, D for directional solidification. A front into a metastable melt, not class E.
+
+\subsection{Bacterial colonies (D on an E front, D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-010.jpg}
+\caption{Experimental bacterial colony patterns on Petri dishes showing branching and labyrinthine morphologies.}
+\end{figure}
+
+An expanding colony on nutrient-poor hard agar branches into a DLA-like fractal of dimension $\approx1.7$; richer or softer agar gives dense branching, compact disks or rings \cite{Matsushita1990,Witten1981,BenJacob1994}. Branching needs a \emph{pushed} front (nonlinear cell diffusion or cooperative growth) and slow cell spreading compared with nutrient diffusion; the front then has a Mullins–Sekerka-type instability, whereas a simple Fisher front stays flat \cite{vS2003}.
+\[
+\partial_t\beta=\delta\,\nabla\cdot(\beta^k\nabla\beta)+\alpha\beta^m,\qquad \partial_t\alpha=\nabla^2\alpha-\alpha\beta^m .
+\]
+\emph{Threshold and scale:} small $\delta$ and $k>0$ or $m>1$; branch width $\sim$ nutrient diffusion length. \emph{Class:} D on an E front, D; it links fronts to fingering and dendrites.
+
+\section{Class E: fronts and waves}
+
+\subsection{Belousov–Zhabotinsky waves (E, R in a dish / D in an open reactor)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-008.jpg}
+\caption{Experimental Belousov–Zhabotinsky spiral wave in a Petri dish (ferroin-catalyzed reaction).}
+\end{figure}
+
+In a thin unstirred layer of the BZ reagent, oxidation waves run across an excitable medium as blue rings on red; breaking a front leaves a pair of counter-rotating spirals \cite{Zaikin1970}. Targets and spirals are defects of the uniform oscillation (type III$_o$) \cite{CH}. A closed dish runs down within about 100 periods; an open, fed reactor sustains the waves \cite{CH}. With the Oregonator kinetics \cite{CH},
+\[
+\partial_tu_1=\eta^{-1}\Bigl[u_1(1-u_1)-bu_2\frac{u_1-a}{u_1+a}\Bigr]+D_1\nabla^2u_1,\qquad \partial_tu_2=u_1-u_2+D_2\nabla^2u_2 .
+\]
+\emph{Threshold and scale:} excitability (acid and bromate concentrations); wave speed $c\propto\sqrt{Dk}$ (Luther's law), spiral pitch $\approx$ period $\times$ speed, a few millimetres. \emph{Class:} E; the medium is linearly stable and is invaded by trigger waves.
+
+\subsection{River–ocean density fronts (E, D)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-022.jpg}
+\caption{Surface photograph of a river-plume front. Turbid freshwater on one side of a sharp boundary meets clearer seawater on the other. The interface is the visible signature of incomplete mixing maintained by the density difference.}
+\end{figure}
+
+Buoyant river water spreads over the sea as a thin layer; surface convergence sharpens the density contrast (frontogenesis) until instability or mixing arrests it, and the front is seen as a sharp colour line with foam \cite{ODonnell2008,HD}. Rotation organizes the plume into a bulge and coastal current on the deformation radius.
+\[
+R_d=\frac{\sqrt{g'h}}{f},\qquad \frac{D_g}{Dt}\,|\nabla_hb|^2=2\,\mathbf{Q}\cdot\nabla_hb,\quad Q_i=-\frac{\partial u_{gj}}{\partial x_i}\frac{\partial b}{\partial x_j}.
+\]
+\emph{Threshold and scale:} no wavelength-selecting instability; plume width $\sim R_d$ (a few km), front width set where frontogenesis is arrested \cite{McW}. \emph{Class:} E, D (discharge, tides); a sharpened front that can host class-D billows.
+
+\subsection{Liesegang rings (E + C, R)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-026.jpg}
+\caption{Experimental Liesegang rings: concentric precipitation bands in a gel and layered bands in a test tube.}
+\end{figure}
+
+Two reactants meeting by diffusion in a gel deposit discrete precipitation bands rather than a continuous front; each band depletes its neighbourhood, so the next forms farther away. Behind the front the product may phase-separate, linking the bands to spinodal decomposition \cite{Antal1999}. The bands are kinetically frozen in a closed system, not an equilibrium.
+\[
+\frac{x_{n+1}}{x_n}\to1+p,\qquad x_n\propto\sqrt{t_n}.
+\]
+\emph{Threshold and scale:} a nucleation (supersaturation) threshold; spacing grows geometrically, more densely for a stronger outer electrolyte. \emph{Class:} E (with C behind the front), R.
+
+\section{Self-similarity}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{romanesco.jpg}
+\caption{Romanesco broccoli: each bud is a cone of smaller spiralling buds, repeated over about four generations. It is a natural object that is geometrically self-similar over a limited range of scales. \credit{Photo: Jon Sullivan, \href{https://commons.wikimedia.org/wiki/File:Fractal_Broccoli.jpg}{Wikimedia Commons}, public domain.}}
+\end{figure}
+
+Branched patterns (dendrites, viscous fingers in porous media, bacterial colonies) are statistically self-similar over one to three decades, with fractal dimensions near the DLA value 1.71 \cite{Witten1981,Matsushita1990,Maloy1985}. Coarsening patterns (class C) are dynamically self-similar: a single length $L(t)$ grows and the structure factor collapses \cite{Bray1994},
+\[
+S(k,t)=L(t)^d\,f\bigl(kL(t)\bigr),\qquad L\propto t^{1/3}\ \text{(conserved)},\ t^{1/2}\ \text{(non-conserved)}.
+\]
+Classes A and B select one wavelength and are not self-similar.
+
+\section{Chaos}\label{sec:chaos}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-031.jpg}
+\caption{The Lorenz attractor. Trajectories remain bounded yet never repeat, illustrating sensitive dependence on initial conditions in a system derived from thermal convection.}
+\end{figure}
+
+Class-A patterns become chaotic as the drive increases. In small containers few modes are active: period doubling with Feigenbaum's ratio $\delta\approx4.669$ in a small convection cell \cite{Libchaber1982,Feigenbaum1978}, and chaos after two frequencies in Taylor–Couette flow \cite{Gollub1975}. The Lorenz equations, a truncation of Rayleigh–Bénard convection, and the logistic map are the standard models \cite{Lorenz1963}:
+\[
+\dot x=\sigma(y-x),\ \ \dot y=x(\rho-z)-y,\ \ \dot z=xy-\beta z;\qquad x_{n+1}=rx_n(1-x_n).
+\]
+Large containers give spatiotemporal chaos (spiral-defect chaos, defect turbulence) \cite{CH,Morris1993}, and the single selected wavelength is lost.
+
+\section{Summary: what the patterns share}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.24\textheight,keepaspectratio,height=0.42\textheight,keepaspectratio]{im-027a.png}
+\caption{Late-stage coarsening: the characteristic length grows as $L(t)\sim t^{1/3}$ for curvature-driven, conserved order-parameter dynamics. Statistics collapse when lengths are scaled by $L(t)$.}
+\end{figure}
+
+Every example starts from a uniform state and one dimensionless drive, and its length scale comes from a balance between an effect that suppresses long waves and one that suppresses short waves; the capillary length, a diffusion length or the layer depth recurs as the result. The shape of $\sigma(k)$, or of $F(q)$, sorts the examples into classes A--E. Near onset, classes A and B share gradient amplitude dynamics, hence the same stripes, hexagons, labyrinths and defects in rolls, Turing patterns, domains and ferrofluids. Far from onset, driven patterns develop bands of states and chaos, interfaces are selected by small surface tension, and fronts and coarsening add speed and time as variables. What sustains a pattern (flux, slow relaxation, or nothing) is a separate label.
+
+\clearpage
+\section{Wrinkled thin shells: supernova remnants and the CoE onion}\label{sec:shells}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.25\textheight,keepaspectratio]{tycho.jpg}
+\caption{Tycho's supernova remnant in X-rays. The outer shock is smooth; the shell of ejecta inside it is broken into wrinkles and clumps. \credit{NASA/CXC/Rutgers/J.\ Warren \& J.\ Hughes et al., public domain, \href{https://chandra.harvard.edu/photo/2005/tycho/}{Chandra} via \href{https://commons.wikimedia.org/wiki/File:Tycho-supernova-xray.jpg}{Wikimedia Commons}.}}
+\end{figure}
+
+A thin dense shell swept up by a blast wave and decelerating against the gas around it is unstable to wrinkling \cite{Vishniac1983,Michaut2012}. In the shell frame the deceleration acts as gravity pointing outward, so the dense shell sits on top of lighter gas: Rayleigh--Taylor with
+\[
+g_{\rm eff}=-\ddot R,\qquad \sigma=\sqrt{A\,k\,g_{\rm eff}},\qquad A=\frac{\rho_{\rm shell}-\rho_{\rm in}}{\rho_{\rm shell}+\rho_{\rm in}}\approx1 .
+\]
+In the Vishniac thin-shell instability the ram pressure pushes along the tilted shell and drives material from troughs into crests, so the wrinkle also modulates the surface density \cite{Vishniac1983}. The shell thickness $\Delta$ cuts off short waves and the shell size cuts off long ones:
+\[
+\lambda\approx3\Delta,\qquad \Delta\lesssim\lambda\lesssim\pi R,\qquad \ell_{\max}\approx\frac{2\pi R}{\Delta}.
+\]
+\emph{Threshold and scale:} needs strong compression ($\rho_{\rm shell}/\rho_0\gtrsim10$, nearly isothermal shell); spacing set by thickness. \emph{Class:} D, R; the same interface physics as Rayleigh--Taylor fingers and the same ``thickness sets spacing'' rule as Marangoni cells ($\approx3d$) and Kelvin--Helmholtz billows ($\approx7\times$ layer). Laser-driven shells reproduce the remnant clumps \cite{Michaut2012}.
+
+\paragraph{The CoE onion.} In the center-of-expansion (CoE) picture the visible universe is countless thin concentric shells moving out from one center. For a point mass $M$ at the CoE each shell obeys $\ddot r=-GM/r^2$, so every shell is a decelerating thin shell with $g_{\rm eff}=GM/r^2$, the forcing above. The sequence (Figs.~\ref{fig:ws1}--\ref{fig:ws3} for the wrinkle growth, Figs.~\ref{fig:pot}--\ref{fig:fc4} for clump and void):
+\begin{enumerate}[leftmargin=16pt,itemsep=1pt]
+\item Smooth thin shells: no preferred spot on the sky.
+\item A slight wrinkle seeds the pattern, crests about $3\Delta$ apart.
+\item Crests collect material (overdense), troughs thin out (underdense).
+\item Once seeded, gravity keeps growing the contrast even if the shell instability itself dies away (the dominoes keep falling). Overdensities cross $\delta_c=1.686$ and collapse into clumps; underdensities reach $\delta_v=-2.81$ and become voids. Growing linearly from recombination, this needs seeds of about $1.5\times10^{-3}$ (cluster) and $-2.5\times10^{-3}$ (void) \cite{Sheth2004}.
+\end{enumerate}
+Stacking many thin shells and letting their thickness go to zero gives a continuous 3D field: crests of neighbouring shells line up into walls and filaments with clumps at their joins, and troughs line up into voids. If the seed spacing survives, clump and void spacing traces $\approx3\Delta$.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{wrinkle_shell_M1_d016.png}
+\caption{Our shell wrinkling, $1\times$ mass, $\Delta/R=0.016$: a $0.01\Delta$ seed ripple at Vishniac spacing $\lambda=3\Delta$ grown by Rayleigh--Taylor e-folds in $g_{\rm eff}=GM/r^2$ (capped at $\Delta$). Shell drawn at start, mid and now.\label{fig:ws1}}
+\end{figure}
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{wrinkle_shell_M10_d016.png}
+\caption{\spaceskip=0.7\fontdimen2\font plus \fontdimen3\font minus \fontdimen4\font As Fig.~\ref{fig:ws1} for $10\times$ mass: stronger deceleration, faster growth; the ripple saturates at $\Delta$ by mid-run.\label{fig:ws2}}
+\end{figure}
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{wrinkle_shell_M10_d030.png}
+\caption{As Fig.~\ref{fig:ws2} with a thicker shell, $\Delta/R=0.03$: wider spacing (lower $\ell$).\label{fig:ws3}}
+\end{figure}
+
+
+\paragraph{Where the mass gathers.} Figs.~\ref{fig:sh1}--\ref{fig:sh3} show the same shell as a heat map of mass density: as the wrinkle grows, material moves into the crests (hot) and out of the troughs (cold).
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{shell_heat_1.png}
+\caption{Flat shell: uniform density. Colour: density relative to the unwrinkled mean. Schematic.\label{fig:sh1}}
+\end{figure}
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{shell_heat_2.png}
+\caption{Wrinkled shell: slight gathering at the crests. Colour: density relative to the unwrinkled mean. Schematic.\label{fig:sh2}}
+\end{figure}
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{shell_heat_3.png}
+\caption{Concentrated: crests dense (hot), troughs thinned (cold). Colour: density relative to the unwrinkled mean. Schematic.\label{fig:sh3}}
+\end{figure}
+\subsection{Potential geometry of clumps and voids}
+Relative to the mean, an overdensity is a potential well and an underdensity a potential hill (Fig.~\ref{fig:pot}). Two overdensities merge into one wider well, two underdensities into one wider hill. A clump next to a void forms a potential dipole: the steepest slope runs between them, so matter flows down the gradient out of the void and into the clump, deepening both.
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.80\textheight,keepaspectratio]{potential_geometry.jpg}
+\caption{Equal-radius spherical density contrasts ($R=1$, $|\Delta M|=1$, $G=1$): 2D equipotential maps (left) and 3D potential surfaces (right; height is potential, not spatial curvature) for over+over, under+under and over+under pairs.\label{fig:pot}}
+\end{figure}
+
+\subsection{From flat density to clump and void}
+Figs.~\ref{fig:fc1}--\ref{fig:fc4} follow one patch of a thin shell. A flat shell carries a seed of about $10^{-3}$; the crest becomes a shallow well and the trough a shallow hill; the dipole drains the trough into the crest; linear growth ($\delta\propto a$) carries the $+1.5\times10^{-3}$ seed to $\delta_c=1.686$ (clump) and the $-2.5\times10^{-3}$ seed to $\delta_v=-2.81$ (void) by today. The growth continues after the shell instability has stopped.
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{flat_to_clump_1.png}
+\caption{Flat density at recombination: the seed is too small to see. Graphs: density along the shell and potential. Schematic.\label{fig:fc1}}
+\end{figure}
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{flat_to_clump_2.png}
+\caption{\spaceskip=0.85\fontdimen2\font plus \fontdimen3\font minus \fontdimen4\font Slight perturbation: crest above, trough below the mean; a shallow well and hill appear. Schematic.\label{fig:fc2}}
+\end{figure}
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{flat_to_clump_3.png}
+\caption{Potential dipole: matter drains down the gradient from trough to crest (arrow). Schematic.\label{fig:fc3}}
+\end{figure}
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{flat_to_clump_4.png}
+\caption{Clump and void: the crest reaches $\delta_c=1.686$, the trough $\delta_v=-2.81$; bottom graph shows linear growth of the seeds. Schematic.\label{fig:fc4}}
+\end{figure}
+\clearpage
+\begingroup\footnotesize\fontsize{9}{10.2}\selectfont
+\begin{thebibliography}{99}
+\setlength{\itemsep}{0pt plus 0.5pt}
+\bibitem{CH} M. C. Cross, P. C. Hohenberg, Pattern formation outside of equilibrium, Rev. Mod. Phys. 65, 851 (1993). \url{https://doi.org/10.1103/RevModPhys.65.851}
+\bibitem{AR2009} D. Andelman, R. E. Rosensweig, Modulated phases: review and recent results, J. Phys. Chem. B 113, 3785 (2009). \url{https://doi.org/10.1021/jp807770n}
+\bibitem{Langer1980} J. S. Langer, Instabilities and pattern formation in crystal growth, Rev. Mod. Phys. 52, 1 (1980). \url{https://doi.org/10.1103/RevModPhys.52.1}
+\bibitem{SA1995} M. Seul, D. Andelman, Domain shapes and patterns: the phenomenology of modulated phases, Science 267, 476 (1995). \url{https://doi.org/10.1126/science.267.5197.476}
+\bibitem{HK2015} P. C. Hohenberg, A. P. Krekhov, An introduction to the Ginzburg–Landau theory of phase transitions and nonequilibrium patterns, Phys. Rep. 572, 1 (2015); arXiv:1410.7285. \url{https://doi.org/10.1016/j.physrep.2015.01.001}, \url{https://arxiv.org/abs/1410.7285}
+\bibitem{Swift1977} J. Swift, P. C. Hohenberg, Hydrodynamic fluctuations at the convective instability, Phys. Rev. A 15, 319 (1977). \url{https://doi.org/10.1103/PhysRevA.15.319}
+\bibitem{vS2003} W. van Saarloos, Front propagation into unstable states, Phys. Rep. 386, 29 (2003); arXiv:cond-mat/0308540. \url{https://doi.org/10.1016/j.physrep.2003.08.001}, \url{https://arxiv.org/abs/cond-mat/0308540}
+\bibitem{AT2006} I. S. Aranson, L. S. Tsimring, Patterns and collective behavior in granular media: theoretical concepts, Rev. Mod. Phys. 78, 641 (2006); arXiv:cond-mat/0507419. \url{https://doi.org/10.1103/RevModPhys.78.641}, \url{https://arxiv.org/abs/cond-mat/0507419}
+\bibitem{Bray1994} A. J. Bray, Theory of phase-ordering kinetics, Adv. Phys. 43, 357 (1994); arXiv:cond-mat/9501089. \url{https://arxiv.org/abs/cond-mat/9501089}
+\bibitem{Rossing1982} T. D. Rossing, Chladni's law for vibrating plates, Am. J. Phys. 50, 271 (1982). \url{https://doi.org/10.1119/1.12866}
+\bibitem{Edwards1994} W. S. Edwards, S. Fauve, Patterns and quasi-patterns in the Faraday experiment, J. Fluid Mech. 278, 123 (1994). \url{https://doi.org/10.1017/S0022112094003642}
+\bibitem{LiuWang2024} X. Liu, X. Wang, Polygonal patterns of Faraday water waves analogous to collective excitations in Bose–Einstein condensates, Nat. Phys. 20, 287 (2024). \url{https://doi.org/10.1038/s41567-023-02294-y}
+\bibitem{Morris1993} S. W. Morris, E. Bodenschatz, D. S. Cannell, G. Ahlers, Spiral defect chaos in large aspect ratio Rayleigh–Bénard convection, Phys. Rev. Lett. 71, 2026 (1993). \url{https://doi.org/10.1103/PhysRevLett.71.2026}
+\bibitem{Pearson1958} J. R. A. Pearson, On convection cells induced by surface tension, J. Fluid Mech. 4, 489 (1958). \url{https://doi.org/10.1017/S0022112058000616}
+\bibitem{Eckert1998} K. Eckert, M. Bestehorn, A. Thess, Square cells in surface-tension-driven Bénard convection: experiment and theory, J. Fluid Mech. 356, 155 (1998). \url{https://doi.org/10.1017/S0022112097007842}
+\bibitem{Andereck1986} C. D. Andereck, S. S. Liu, H. L. Swinney, Flow regimes in a circular Couette system with independently rotating cylinders, J. Fluid Mech. 164, 155 (1986). \url{https://doi.org/10.1017/S0022112086002513}
+\bibitem{Kramer1995} L. Kramer, W. Pesch, Convection instabilities in nematic liquid crystals, Ann. Rev. Fluid Mech. 27, 515 (1995). \url{https://doi.org/10.1146/annurev.fl.27.010195.002503}
+\bibitem{Sasaki2016} Y. Sasaki, V. S. R. Jampani, C. Tanaka, N. Sakurai, S. Sakane, K. V. Le, F. Araoka, H. Orihara, Large-scale self-organization of reconfigurable topological defect networks in nematic liquid crystals, Nat. Commun. 7, 13238 (2016). \url{https://doi.org/10.1038/ncomms13238}
+\bibitem{Turing1952} A. M. Turing, The chemical basis of morphogenesis, Phil. Trans. R. Soc. B 237, 37 (1952). \url{https://doi.org/10.1098/rstb.1952.0012}
+\bibitem{Castets1990} V. Castets, E. Dulos, J. Boissonade, P. De Kepper, Experimental evidence of a sustained standing Turing-type nonequilibrium chemical pattern, Phys. Rev. Lett. 64, 2953 (1990). \url{https://doi.org/10.1103/PhysRevLett.64.2953}
+\bibitem{Ouyang1991} Q. Ouyang, H. L. Swinney, Transition from a uniform state to hexagonal and striped Turing patterns, Nature 352, 610 (1991). \url{https://doi.org/10.1038/352610a0}
+\bibitem{Langmuir1938} I. Langmuir, Surface motion of water induced by wind, Science 87, 119 (1938). \url{https://doi.org/10.1126/science.87.2250.119}
+\bibitem{Craik1976} A. D. D. Craik, S. Leibovich, A rational model for Langmuir circulations, J. Fluid Mech. 73, 401 (1976). \url{https://doi.org/10.1017/S0022112076001420}
+\bibitem{Thorpe2004} S. A. Thorpe, Langmuir circulation, Ann. Rev. Fluid Mech. 36, 55 (2004). \url{https://doi.org/10.1146/annurev.fluid.36.052203.071431}
+\bibitem{Etling1993} D. Etling, R. A. Brown, Roll vortices in the planetary boundary layer: a review, Boundary-Layer Meteorol. 65, 215 (1993). \url{https://doi.org/10.1007/BF00705527}
+\bibitem{Melo1995} F. Melo, P. B. Umbanhowar, H. L. Swinney, Hexagons, kinks, and disorder in oscillated granular layers, Phys. Rev. Lett. 75, 3838 (1995). \url{https://doi.org/10.1103/PhysRevLett.75.3838}
+\bibitem{Umbanhowar1996} P. B. Umbanhowar, F. Melo, H. L. Swinney, Localized excitations in a vertically vibrated granular layer, Nature 382, 793 (1996). \url{https://doi.org/10.1038/382793a0}
+\bibitem{Cowley1967} M. D. Cowley, R. E. Rosensweig, The interfacial stability of a ferromagnetic fluid, J. Fluid Mech. 30, 671 (1967). \url{https://doi.org/10.1017/S0022112067001697}
+\bibitem{Knieling2007} H. Knieling, R. Richter, I. Rehberg, G. Matthies, A. Lange, Growth of surface undulations at the Rosensweig instability, Phys. Rev. E 76, 066301 (2007); arXiv:0801.0140. \url{https://arxiv.org/abs/0801.0140}
+\bibitem{Kittel1946} C. Kittel, Theory of the structure of ferromagnetic domains in films and small particles, Phys. Rev. 70, 965 (1946). \url{https://doi.org/10.1103/PhysRev.70.965}
+\bibitem{Kronseder2015} M. Kronseder, T. N. G. Meier, M. Zimmermann, M. Buchner, M. Vogel, C. H. Back, Real-time observation of domain fluctuations in a two-dimensional magnetic model system, Nat. Commun. 6, 6832 (2015). \url{https://doi.org/10.1038/ncomms7832}
+\bibitem{Glazier1987} J. A. Glazier, S. P. Gross, J. Stavans, Dynamics of two-dimensional soap froths, Phys. Rev. A 36, 306 (1987). \url{https://doi.org/10.1103/PhysRevA.36.306}
+\bibitem{Miles1961} J. W. Miles, On the stability of heterogeneous shear flows, J. Fluid Mech. 10, 496 (1961). \url{https://doi.org/10.1017/S0022112061000305}
+\bibitem{Howard1961} L. N. Howard, Note on a paper of John W. Miles, J. Fluid Mech. 10, 509 (1961). \url{https://doi.org/10.1017/S0022112061000317}
+\bibitem{Michalke1964} A. Michalke, On the inviscid instability of the hyperbolic-tangent velocity profile, J. Fluid Mech. 19, 543 (1964). \url{https://doi.org/10.1017/S0022112064000908}
+\bibitem{SaffmanTaylor1958} P. G. Saffman, G. I. Taylor, The penetration of a fluid into a porous medium or Hele-Shaw cell containing a more viscous liquid, Proc. R. Soc. Lond. A 245, 312 (1958). \url{https://doi.org/10.1098/rspa.1958.0085}
+\bibitem{Homsy1987} G. M. Homsy, Viscous fingering in porous media, Ann. Rev. Fluid Mech. 19, 271 (1987). \url{https://doi.org/10.1146/annurev.fl.19.010187.001415}
+\bibitem{Sharp1984} D. H. Sharp, An overview of Rayleigh–Taylor instability, Physica D 12, 3 (1984). \url{https://doi.org/10.1016/0167-2789(84)90510-4}
+\bibitem{MullinsSekerka1964} W. W. Mullins, R. F. Sekerka, Stability of a planar interface during solidification of a dilute binary alloy, J. Appl. Phys. 35, 444 (1964). \url{https://doi.org/10.1063/1.1713333}
+\bibitem{Huang1981} S.-C. Huang, M. E. Glicksman, Fundamentals of dendritic solidification I. Steady-state tip growth, Acta Metall. 29, 701 (1981). \url{https://doi.org/10.1016/0001-6160(81)90115-2}
+\bibitem{Matsushita1990} M. Matsushita, H. Fujikawa, Diffusion-limited growth in bacterial colony formation, Physica A 168, 498 (1990). \url{https://doi.org/10.1016/0378-4371(90)90402-E}
+\bibitem{Witten1981} T. A. Witten, L. M. Sander, Diffusion-limited aggregation, a kinetic critical phenomenon, Phys. Rev. Lett. 47, 1400 (1981). \url{https://doi.org/10.1103/PhysRevLett.47.1400}
+\bibitem{BenJacob1994} E. Ben-Jacob, O. Schochet, A. Tenenbaum, I. Cohen, A. Czirók, T. Vicsek, Generic modelling of cooperative growth patterns in bacterial colonies, Nature 368, 46 (1994). \url{https://doi.org/10.1038/368046a0}
+\bibitem{Zaikin1970} A. N. Zaikin, A. M. Zhabotinsky, Concentration wave propagation in two-dimensional liquid-phase self-oscillating system, Nature 225, 535 (1970). \url{https://doi.org/10.1038/225535b0}
+\bibitem{ODonnell2008} J. O'Donnell, S. G. Ackleson, E. R. Levine, On the spatial scales of a river plume, J. Geophys. Res. Oceans 113, C04017 (2008). \url{https://doi.org/10.1029/2007JC004440}
+\bibitem{HD} A. R. Horner-Devine, R. D. Hetland, D. G. MacDonald, Mixing and Transport in Coastal River Plumes, Ann. Rev. Fluid Mech. 47, 569 (2015). \url{https://doi.org/10.1146/annurev-fluid-010313-141408}
+\bibitem{McW} J. C. McWilliams, Oceanic Frontogenesis, Ann. Rev. Mar. Sci. 13, 227 (2021). \url{https://doi.org/10.1146/annurev-marine-032320-120725}
+\bibitem{Antal1999} T. Antal, M. Droz, J. Magnin, Z. Rácz, Formation of Liesegang patterns: a spinodal decomposition scenario, Phys. Rev. Lett. 83, 2880 (1999). \url{https://doi.org/10.1103/PhysRevLett.83.2880}
+\bibitem{Maloy1985} K. J. Måløy, J. Feder, T. Jøssang, Viscous fingering fractals in porous media, Phys. Rev. Lett. 55, 2688 (1985). \url{https://doi.org/10.1103/PhysRevLett.55.2688}
+\bibitem{Libchaber1982} A. Libchaber, C. Laroche, S. Fauve, Period doubling cascade in mercury, a quantitative measurement, J. Physique Lett. 43, 211 (1982). \url{https://doi.org/10.1051/jphyslet:01982004307021100}
+\bibitem{Feigenbaum1978} M. J. Feigenbaum, Quantitative universality for a class of nonlinear transformations, J. Stat. Phys. 19, 25 (1978). \url{https://doi.org/10.1007/BF01020332}
+\bibitem{Gollub1975} J. P. Gollub, H. L. Swinney, Onset of turbulence in a rotating fluid, Phys. Rev. Lett. 35, 927 (1975). \url{https://doi.org/10.1103/PhysRevLett.35.927}
+\bibitem{Lorenz1963} E. N. Lorenz, Deterministic nonperiodic flow, J. Atmos. Sci. 20, 130 (1963). \url{https://doi.org/10.1175/1520-0469(1963)020<0130:DNF>2.0.CO;2}
+\bibitem{Vishniac1983} E. T. Vishniac, The dynamic and gravitational instabilities of spherical shocks, Astrophys. J. 274, 152 (1983). \url{https://doi.org/10.1086/161433}
+\bibitem{Michaut2012} C. Michaut, C. Cavet, S. Bouquet, B. Pfister, B. Loupias, Rayleigh--Taylor and Vishniac instabilities in laboratory and astrophysical shells, Astrophys. J. 759, 78 (2012).
+\bibitem{Sheth2004} R. K. Sheth, R. van de Weygaert, A hierarchy of voids: much ado about nothing, Mon. Not. R. Astron. Soc. 350, 517 (2004). \url{https://doi.org/10.1111/j.1365-2966.2004.07661.x}
+\end{thebibliography}
+\endgroup
+
+\begin{landscape}
+\appendix
+\section{Summary Table}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.25}
+\setlength{\LTpre}{0pt}\setlength{\LTpost}{0pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{62pt}>{\centering\arraybackslash}p{30pt}>{\raggedright\arraybackslash}p{62pt}>{\raggedright\arraybackslash}p{168pt}>{\raggedright\arraybackslash}p{48pt}>{\raggedright\arraybackslash}p{312pt}@{}}
+\caption{Phenomena, class$\cdot$tag, key control parameter, forcing function, and geometry.}\label{tab:summary}\\[5pt]
+\toprule
+Phenomenon & Class & Key control & Forcing function & Geometry & How the geometry changes with the control parameter / forcing\\[5pt]
+\midrule
+\endfirsthead
+\multicolumn{6}{@{}l}{\normalsize Table 1 (continued)}\\[2pt]
+\toprule
+Phenomenon & Class & Key control & Forcing function & Geometry & How the geometry changes with the control parameter / forcing\\[5pt]
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{@{}p{\linewidth}@{}}{\scriptsize\LEGEND}\\[5pt]
+\bottomrule
+\endfoot
+\midrule
+\multicolumn{6}{@{}p{\linewidth}@{}}{\scriptsize\LEGEND}\\[5pt]
+\bottomrule
+\endlastfoot
+Chladni & ref.$\cdot$D & drive frequency $\omega$ & $D\nabla^4w+\rho h\,\partial_t^2w=f\cos\omega t$, \ $\omega_n=k_n^2\sqrt{D/\rho h}$ & nodal lines & Higher frequency excites higher modes with more nodal lines; spacing $\propto\omega^{-1/2}$. Coarse sand marks nodes, fine powder antinodes. Amplitude only sharpens the lines.\\[5pt]
+Faraday waves & A$\cdot$D & forcing $\Delta$ & $\ddot a+\gamma\dot a+\omega_s^2(q)[1+2\Delta\cos2\omega t]a=0$, \ $\omega_s(q_0)=\omega$, \ $\Delta_c=\gamma/\omega_0$ & standing waves & Wavelength from the subharmonic resonance ($\lambda\propto f^{-2/3}$ for capillary waves). Squares near onset (low viscosity), hexagons (high viscosity); quasipatterns with two-frequency forcing; larger $\Delta$ gives defects and chaos.\\[5pt]
+Rayleigh–Bénard & A$\cdot$D & Rayleigh number & $\mathrm{Ra}=\dfrac{g\alpha\Delta T\,d^3}{\nu\kappa}$, \ $\mathrm{Ra}_c=1707.76$, $k_cd=3.117$ & rolls / hexagons & Rolls of width $\approx d$ at onset, then a stable band (Busse balloon) bounded by cross-roll, zigzag, Eckhaus and skewed-varicose instabilities; hexagons with broken up–down symmetry; spiral-defect chaos near $\mathrm{Pr}\approx1$.\\[5pt]
+Bénard–Marangoni & A$\cdot$D & Marangoni number & $\mathrm{Ma}=\dfrac{\Delta T\,d\,|\partial\sigma/\partial T|}{\rho\nu\kappa}$, \ $\mathrm{Ma}_c\approx80$ & hexagons & Hexagons $\approx3d$ across from a weakly subcritical onset; thinner layers give smaller cells; squares far above onset.\\[5pt]
+Taylor–Couette & A$\cdot$D & $R_i$ or Ta & $R_i=\dfrac{a(b-a)\Omega_i}{\nu}$, \ narrow gap $\mathrm{Ta}_c\approx1708$ & toroidal rolls & Axial period $\approx2d$ at onset; wavy vortices at $R_i/R_{ic}\approx1.1$--1.2, then modulated waves and turbulent vortices; counter-rotation gives spirals.\\[5pt]
+Electro\-convection & A$\cdot$D & $\varepsilon$, frequency & $\varepsilon=V^2/V_c^2-1$ & rolls & Rolls $\sim d$; oblique below the Lifshitz frequency, normal above; finer dielectric rolls above the cutoff; larger $\varepsilon$ gives defect turbulence and dynamic scattering.\\[5pt]
+Turing (CIMA) & A$\cdot$D & $D_{\mathrm{inh}}/D_{\mathrm{act}}$ & $D_vf_u+D_ug_v>2\sqrt{D_uD_v\det J}$, \ $k_c^2=\sqrt{\det J/D_uD_v}$ & spots / stripes & Intrinsic period, independent of reactor size; feed concentrations move the pattern between hexagonal spots, stripes and mixed states.\\[5pt]
+Langmuir circulation & A$\cdot$D & Stokes drift, $\mathrm{La}_t$ & $\partial_t\bm{\omega}=\nabla\times[(\mathbf{u}+\mathbf{u}_s)\times\bm{\omega}]+\nu\nabla^2\bm{\omega}$ & roll pairs & Windrows 2--3 mixed-layer depths apart; smaller $\mathrm{La}_t$ gives stronger, more regular cells; Y-junctions as the wind changes.\\[5pt]
+Granular layers & A$\cdot$D & $\Gamma$, $f$, depth & $\Gamma=A\omega^2/g$, \ onset $\Gamma\approx2.4$ & squares / stripes / oscillons & Squares subcritical for $f<f^*\approx45$\,Hz ($f^*\propto d^{-1/2}$), stripes supercritical above; oscillons near $f^*$; hexagons for $\Gamma>4$, chaos for $\Gamma>7$. Wavelength grows with depth, falls with $f$.\\[5pt]
+Rosensweig & B$\cdot$E & $B/B_c$ & $\mu_0M_c^2=2(1+1/r_p)\sqrt{g\Delta\rho\sigma}$, \ $\lambda=2\pi\sqrt{\sigma/g\Delta\rho}$ & hexagonal spikes & Spacing near the capillary length, weakly field dependent. Subcritical hexagons, then squares, both hysteretic; taller spikes at higher field.\\[5pt]
+Magnetic domains & B$\cdot$E & Bond number, $t$, $H$, $T$ & thick: $w\propto\sqrt{\ell_ct}$; ultrathin: $d^*=a\exp(b\gamma/\mu_0M^2)$ & stripes / bubbles & Ultrathin: width $\propto\exp(b\gamma/\mu_0M^2)$, falling steeply as the anisotropy (wall energy) $\to0$. A perpendicular field takes stripes to bubbles to saturation by first-order transitions; history dependent.\\[5pt]
+Spinodal & C$\cdot$R & quench depth $F''(\phi_0)$ & $\partial_t\phi=\nabla\cdot M\nabla(F'-\varepsilon^2\nabla^2\phi)$, \ $k_m=\sqrt{-F''/2}/\varepsilon$ & bi\-con\-tin\-u\-ous & Transient; coarsens toward full demixing. Initial scale shrinks for deeper quenches; then $L\propto t^{1/3}$ (diffusive) or $\propto t$ (viscous); off-critical mixtures form droplets.\\[5pt]
+Soap foam & C$\cdot$R & gas, liquid fraction & $\Delta p=4\sigma H$, \ $dA_n/dt=\tfrac{\pi}{3}k_D(n-6)$ & cellular network & $120^\circ$ junctions fixed (local equilibrium); mean area $\propto t$ in 2D; wetter foams unjam near 36\% liquid.\\[5pt]
+Kelvin–Helmholtz & D$\cdot$D & velocity jump, Ri & $\sigma^2=\dfrac{\rho_1\rho_2k^2U^2}{(\rho_1+\rho_2)^2}-gk\dfrac{\rho_2-\rho_1}{\rho_1+\rho_2}$, \ $\mathrm{Ri}<\tfrac14$ & billows & Wavelength $\approx7\times$ shear-layer thickness; no billows for $\mathrm{Ri}>1/4$; downstream pairing doubles the wavelength.\\[5pt]
+Saffman–Taylor & D$\cdot$D & capillary number & $\sigma(k)=\dfrac{k}{\mu_1+\mu_2}\Bigl[(\mu_2-\mu_1)U-\dfrac{b^2\gamma}{12}k^2\Bigr]$ & fingers & $\lambda_m=\pi b/\sqrt{\mathrm{Ca}}$: faster injection, narrower fingers, more tip splitting; channel finger tends to half width; radial cells give dense branching.\\[5pt]
+Rayleigh–Taylor & D$\cdot$R & Atwood number & $\sigma^2=Agk-\dfrac{\gamma k^3}{\rho_h+\rho_l}$ & bubbles / spikes & $\lambda_m=\sqrt3\,\lambda_c$, $\lambda_c=2\pi\sqrt{\gamma/\Delta\rho g}$; larger $A$ more asymmetric; mixing zone $h\approx\alpha Agt^2$; thin films give hexagonal drops spreading as a front.\\[5pt]
+Dendrites & D$\cdot$R/D & undercooling $\Delta$ & $\sigma=vk[1-\tfrac12(1+\beta)d_0\ell k^2]$,\newline $\rho^2v=2Dd_0/\sigma^*$ & dendrites & Tip radius $\rho\propto V^{-1/2}$ via solvability ($\sigma^*$ depends on anisotropy); finer sidebranches at larger undercooling; anisotropy sets the arm symmetry; directional growth goes planar $\to$ cells $\to$ dendrites.\\[5pt]
+Bacterial colonies & D on E$\cdot$D & nutrient, agar & $\partial_t\beta=\delta\nabla\cdot(\beta^k\nabla\beta)+\alpha\beta^m$, \ $\partial_t\alpha=\nabla^2\alpha-\alpha\beta^m$ & branching fronts & Low nutrient/hard agar: DLA-like branches; more nutrient: dense branching; soft agar: compact disks or rings. Branch width $\sim$ nutrient diffusion length.\\[5pt]
+BZ waves & E$\cdot$R/D & excitability (acid, bromate) & Oregonator: $\partial_tu_1=\eta^{-1}\bigl[u_1(1-u_1)-bu_2\tfrac{u_1-a}{u_1+a}\bigr]$\newline$\phantom{\partial_tu_1}+D_1\nabla^2u_1$, \ $\partial_tu_2=u_1-u_2+D_2\nabla^2u_2$ & targets / spirals & Speed $c\propto\sqrt{Dk}$ (Luther); higher excitability gives tighter spirals, then meandering and breakup; a closed dish runs down in $\sim100$ periods.\\[5pt]
+River–ocean fronts & E$\cdot$D & discharge, $R_d$ & $R_d=\sqrt{g'h}/f$, \ $\tfrac{D_g}{Dt}|\nabla_hb|^2=2\mathbf{Q}\cdot\nabla_hb$ & density front & Plume and bulge scale with $R_d$; larger discharge or buoyancy gives a wider bulge; wind and tides broaden or detach the front; front width set where frontogenesis is arrested.\\[5pt]
+Liesegang rings & E$\cdot$R & concentrations & $x_{n+1}/x_n\to1+p$, \ $x_n\propto\sqrt{t_n}$ & bands / rings & Spacing grows geometrically; stronger outer electrolyte lowers $p$ (Matalon–Packter); bands in tubes, rings in plates, shells in 3D; kinetically frozen.\\[5pt]
+Thin-shell wrinkling & D$\cdot$R & deceleration $g_{\rm eff}$, $\Delta/R$ & $\sigma=\sqrt{Akg_{\rm eff}}$, \ $g_{\rm eff}=-\ddot R$, \ $\lambda\approx3\Delta$ & wrinkles / clumps & Thinner shells give finer wrinkles ($\ell_{\max}\approx2\pi R/\Delta$); stronger deceleration grows them faster; crests become clumps, troughs voids.\\[5pt]
+\end{longtable}
+\end{landscape}
+
+\end{document}

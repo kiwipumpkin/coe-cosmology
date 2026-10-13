@@ -5,6 +5,15 @@
 Everything here is the live work. Model of record: exact LTB (`models/ltb_exact`). Items marked NOTE are kept current because they are not clearly superseded.
 
 
+## Packet provenance (start here)
+
+- [`FIGURE_MANIFEST.md`](FIGURE_MANIFEST.md) — figure-by-figure map of the collected-papers packet (Figs. 1–115, tables, key numbers) to scripts, input data and plotted points, with status a–e.
+- [`papers/collected/`](papers/collected/) — the packet PDF ([`CoE_collected_papers.pdf`](papers/collected/CoE_collected_papers.pdf)), all TeX sources and the build scripts (`build/build3.py`, `build/genrefs.py`, …).
+- [`figure_sources/`](figure_sources/) — scripts and inputs that were not yet in the repo (`src/`, mirroring the original layout), plotted data points (`plotdata/`), `PATHMAP.json` and `rebuild_layout.py` to rerun any figure.
+- [`data/original/chris_model.xlsx`](data/original/chris_model.xlsx) — the author's original spreadsheet model, unchanged.
+- [`data/original/chris_taylor_sedov_geometry.xlsx`](data/original/chris_taylor_sedov_geometry.xlsx) — the author's second (Taylor–Sedov / viewing-geometry) spreadsheet, unchanged.
+
+
 ## `analyses/`
 
 _CMB-residual cancellation studies (Newtonian tidal kernel) — top-level fits and contact sheets_

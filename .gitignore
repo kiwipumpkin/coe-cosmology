@@ -11,3 +11,7 @@ __pycache__/
 *.synctex.gz
 .env*
 _tmp*/
+
+# figure provenance: data needed to reproduce packet figures is tracked
+!draft/current/figure_sources/**
+!draft/current/data/original/**

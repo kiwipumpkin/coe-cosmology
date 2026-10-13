@@ -1,0 +1,57 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=0.45in]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{pdflscape,afterpage,longtable}
+\usepackage{booktabs,array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=black,citecolor=black}
+\usepackage{url}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\setlist[itemize]{leftmargin=13.9pt,labelsep=0pt,labelwidth=13.9pt,align=left}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.6}
+\renewcommand{\floatpagefraction}{0.7}
+\setcounter{topnumber}{2}\setcounter{bottomnumber}{2}\setcounter{totalnumber}{3}
+\graphicspath{{img/}{figs/}}
+\newcommand{\credit}[1]{{\footnotesize #1}}
+\setlength{\textfloatsep}{12pt plus 3pt minus 3pt}
+\renewcommand{\textfraction}{0.12}
+\title{Spontaneous Pattern Formation:\\ Forcing Functions, Scale Selection and Common Mechanisms\\[-8pt]{\large Draft}}
+\author{}
+\date{}
+\usepackage{flafter}\usepackage{xurl}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}\setlength{\floatsep}{8pt plus 2pt minus 2pt}\setlength{\abovecaptionskip}{4pt}
+\AtBeginDocument{\setlength{\abovedisplayskip}{6pt plus 2pt minus 2pt}\setlength{\belowdisplayskip}{6pt plus 2pt minus 2pt}}
+\usepackage{framed}\setlength{\FrameSep}{5pt}
+\captionsetup{font=small}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\newcommand{\LEGEND}{\textbf{Classes} (how the scale is selected). \textbf{A} bulk finite-wavelength instability above a threshold. \textbf{B} equilibrium modulated phase: short-range cost vs.\ long-range gain gives a free-energy minimum at finite period. \textbf{C} coarsening: no equilibrium scale, $L\propto t^n$. \textbf{D} interfacial instability: long waves unstable, surface tension cuts off short ones. \textbf{E} fronts and waves invading an unstable, excitable or supersaturated state. ref.\ = forced linear mode (Chladni). \textbf{Tags} (what sustains it): \textbf{D} driven (open), \textbf{R} relaxing (closed transient), \textbf{E} equilibrium.}
+
+\graphicspath{{/workspace/pattern_formation/v5/}}\pagestyle{empty}
+\captionsetup{font=small}
+\begin{document}\setcounter{figure}{100}
+\begin{landscape}
+\noindent\textbf{Inserted figures --- wrinkled thin shells.} Michaut et al.\ (2012) followed the Vishniac instability numerically in a thin, dense, radiatively cooled supernova-remnant shell. Fig.~101 shows how the perturbation is set up; Fig.~102 shows the density of the rippled shell at the start and the sectors used to track how mass moves from troughs into crests. Fig.~103 follows the shell in time.\par\medskip
+\noindent\begin{minipage}[t]{0.49\linewidth}\centering
+\includegraphics[width=\linewidth,height=0.66\textwidth,keepaspectratio]{michaut2012_fig2.png}
+\captionof{figure}{Set-up of the perturbation: the thin dense shell (2), of thickness $h=R_s-R_i$, lies between the hot cavity (1) and the ambient gas (3) and moves out at $V_s$; both faces carry a sinusoidal ripple of amplitude $A$ and wavelength $\lambda$. This is the seed ripple of step 2 below, imposed on a shell whose thickness sets the scale of the instability. Reproduced from Michaut et al.\ (2012), ApJ 759, 78, \href{https://doi.org/10.1088/0004-637X/759/2/78}{doi:10.1088/0004-637X/759/2/78}.}\end{minipage}\hfill
+\begin{minipage}[t]{0.49\linewidth}\centering
+\includegraphics[width=\linewidth,height=0.66\textwidth,keepaspectratio]{michaut2012_fig3.png}
+\captionof{figure}{Density of the rippled shell at the start, with the angular sectors used to track mass: Region~$\mathcal A$ (initially a bulge) and Region~$\mathcal B$ (initially a hollow), repeated each wavelength ($n=0,1,\dots$). Comparing the mass in $\mathcal A$ and $\mathcal B$ measures how much material moves from troughs into crests. Reproduced from Michaut et al.\ (2012), ApJ 759, 78, \href{https://doi.org/10.1088/0004-637X/759/2/78}{doi:10.1088/0004-637X/759/2/78}.}\end{minipage}
+\end{landscape}
+\newpage
+\begin{center}\includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{/workspace/combined2/michaut2012_fig6_crop.png}
+\captionof{figure}{Density in the perturbed shell at $t=3.0$, 4.3, 5.5, 6.8, 8.1 and 9.3\,kyr (left to right, top to bottom); arrows show the flow along the shell. Material slides along the tilted shell and piles up in dense knots, and the flow reverses from one snapshot to the next: the Vishniac overstable oscillation. In this run the shell thickens and the oscillation is eventually damped rather than fragmenting the shell. Reproduced from Michaut et al.\ (2012), ApJ 759, 78, \href{https://doi.org/10.1088/0004-637X/759/2/78}{doi:10.1088/0004-637X/759/2/78}.}\end{center}
+\newpage
+\begin{landscape}\centering
+\includegraphics[width=\linewidth,height=0.8\textwidth,keepaspectratio]{wedge_filmstrip.png}
+\captionof{figure}{Wedge evolution storyboard (7 frames): flat concentric shells ripple, the ripples fade and leave a density pattern, seeds of voids and clusters form, and gravity gathers them into filaments and a cosmic-web-like pattern. Illustrative toy model (Zel'dovich approximation, schematic units).}
+\end{landscape}
+\end{document}

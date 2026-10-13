@@ -87,6 +87,7 @@ All maps below are from the exact LTB sweep (after the 90° fix), with Planck (c
 ## 5. Repository layout
 Everything lives under `draft/`, split into **current** and **deprecated** material. Each half has an index listing every file with a one-line description:
 - **[`draft/current/INDEX.md`](draft/current/INDEX.md)**: the live work.
+- **[`draft/current/FIGURE_MANIFEST.md`](draft/current/FIGURE_MANIFEST.md)**: for every figure (1–115), table and key number in the collected-papers packet, the script, input data and plotted data points that produce it, with reproducibility status. The packet itself is in [`draft/current/papers/collected/`](draft/current/papers/collected/); the author's original spreadsheets are in [`draft/current/data/original/`](draft/current/data/original/).
 - **[`draft/deprecated/INDEX.md`](draft/deprecated/INDEX.md)**: superseded material kept as a record, with the reason for each item.
 
 | Path | Contents |

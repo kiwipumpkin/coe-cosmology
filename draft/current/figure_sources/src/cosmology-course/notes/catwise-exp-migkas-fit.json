@@ -1,0 +1,122 @@
+{
+ "formula": "rho=rho(D)*exp(-(r-D)/L); L=d/arcsinh(delta/2), delta=0.031; A/A_all=a_f(ell-l0)/<a_f>; Ob=0; free {D,mc,l0}; L fixed",
+ "delta_target": 0.031,
+ "D_CatWISE": 0.01554,
+ "D_Earth_Gpc_density_plot": 58.2,
+ "Omega_m": 0.3,
+ "R_vision_Gpc": 14.30048287260589,
+ "density_params": {
+  "d=14.3005": {
+   "d_Gpc": 14.30048287260589,
+   "D_Gpc": 58.2,
+   "L_Gpc": 922.6487386323013,
+   "L_over_D": 15.85307111052064,
+   "delta_target": 0.031,
+   "delta_check": 0.031,
+   "D_CatWISE": 0.01554,
+   "Omega_m": 0.3,
+   "rho_D_over_rho_crit": 0.3,
+   "rho_0_over_rho_crit": 0.3195333770944958,
+   "drho_dr_at_D_over_rho_crit_per_Gpc": -0.00032515082656993426,
+   "rho_prime_over_rho_at_D": -0.0010838360885664475,
+   "L_approx_2d_over_delta": 922.6117982326381,
+   "rho_to_0_at_infinity": true,
+   "note_rho_choice": "rho(D)=Omega_m*rho_crit with Omega_m=0.3 (not Omega_s=0.049)"
+  },
+  "d=3": {
+   "d_Gpc": 3.0,
+   "D_Gpc": 58.2,
+   "L_Gpc": 193.55613656929037,
+   "L_over_D": 3.3257068139053327,
+   "delta_target": 0.031,
+   "delta_check": 0.031,
+   "D_CatWISE": 0.01554,
+   "Omega_m": 0.3,
+   "rho_D_over_rho_crit": 0.3,
+   "rho_0_over_rho_crit": 0.40523633309834567,
+   "drho_dr_at_D_over_rho_crit_per_Gpc": -0.0015499379421256645,
+   "rho_prime_over_rho_at_D": -0.0051664598070855485,
+   "L_approx_2d_over_delta": 193.5483870967742,
+   "rho_to_0_at_infinity": true,
+   "note_rho_choice": "rho(D)=Omega_m*rho_crit with Omega_m=0.3 (not Omega_s=0.049)"
+  }
+ },
+ "migkas_fits": {
+  "d14.3": {
+   "D_Gpc": 45.99056277928336,
+   "DR": 3.2160146750976653,
+   "L_Gpc_fixed": 922.6487386323013,
+   "LD": 20.061697071641667,
+   "mc": 4.530911980413648,
+   "Ob": 0.0,
+   "l0": 20.9229393549521,
+   "chi2": 10.572265211558566,
+   "chi2_red": 0.15547448840527303,
+   "R2_unweighted": 0.716036731924234,
+   "R2_weighted": 0.7635485327187777,
+   "A_min": 0.9204508892805614,
+   "A_max": 1.1166605957428057,
+   "A_amp": 0.19620970646224434,
+   "vrmin": 0.06137607262086986,
+   "Ht": 0.139408319110109,
+   "contrast_Rvis": 0.03100000000000006,
+   "contrast_analytic_R3": 0.006503027990051527,
+   "contrast_analytic_R14p3": 0.031,
+   "contrast_analytic_at_d": 0.031,
+   "d_used_for_L_Gpc": 14.30048287260589,
+   "age_Gyr": 1.9471856340669174,
+   "free_params": [
+    "D",
+    "mc",
+    "l0"
+   ],
+   "fixed_L_rule": "L = d / arcsinh(delta/2), delta=0.031"
+  },
+  "d3": {
+   "D_Gpc": 45.48334755366166,
+   "DR": 3.1805462765729327,
+   "L_Gpc_fixed": 193.55613656929037,
+   "LD": 4.2555384988084075,
+   "mc": 3.3092716468029004,
+   "Ob": 0.0,
+   "l0": 20.839934475803844,
+   "chi2": 10.489236748823922,
+   "chi2_red": 0.1542534816003518,
+   "R2_unweighted": 0.7183793247110067,
+   "R2_weighted": 0.7654054859304931,
+   "A_min": 0.9200365432442902,
+   "A_max": 1.116278379583888,
+   "A_amp": 0.1962418363395978,
+   "vrmin": 0.2302601842899819,
+   "Ht": 0.4608485574141272,
+   "contrast_Rvis": 0.14790021094030925,
+   "contrast_analytic_R3": 0.031,
+   "contrast_analytic_R14p3": 0.14790021094030903,
+   "contrast_analytic_at_d": 0.031,
+   "d_used_for_L_Gpc": 3.0,
+   "age_Gyr": 6.43690201707755,
+   "free_params": [
+    "D",
+    "mc",
+    "l0"
+   ],
+   "fixed_L_rule": "L = d / arcsinh(delta/2), delta=0.031"
+  }
+ },
+ "ptshell_wls_geometry_only": {
+  "D": 58.19699837268826,
+  "R2_unweighted": 0.5456268309812682,
+  "R2_weighted": 0.5807290671992491,
+  "chi2": 18.7465256529584,
+  "l0": 15.1629523788697
+ },
+ "free_exp_wls_comparison": {
+  "D_Gpc": 27.95388837552518,
+  "L_Gpc": 6.072715534614713,
+  "LD": 0.21724045875248016,
+  "R2_unweighted": 0.7589233227942257,
+  "chi2": 8.47533016653482
+ },
+ "note": "Primary CatWISE L uses d=vision\u224814.3 Gpc so delta(R_vis)=0.031 by construction. Secondary d=3 Gpc. Density plot uses D=58.2 Gpc. Migkas refit frees D,mc,l0 with L fixed; best fits use large mc and young age to recover A amplitude despite nearly flat rho.",
+ "caveat_migkas": "CatWISE L >> D \u21d2 density almost flat; Migkas R^2~0.72 comes from large mc (pathological Ht/age), not from the 3% density contrast."
+}

@@ -1,0 +1,17 @@
+(a) no mass, D=20, R=1,5,14.3
+  R=1.0 H: [70. 70. 70. 70. 70. 70. 70. 70. 70. 70. 70. 70. 70.]
+  R=5.0 H: [70. 70. 70. 70. 70. 70. 70. 70. 70. 70. 70. 70. 70.]
+  R=14.3 H: [70. 70. 70. 70. 70. 70. 70. 70. 70. 70. 70. 70. nan]
+(b) small D=1 Gpc, small mass; cosmological vs classical vs local-limit (H_r cos^2+H_perp sin^2)
+ rs=0.001 Gpc: v_obs=0.226c  local-limit H 0/90/180: 72.999 67.674 72.999
+   R=0.025 cosmo 0/90/180 72.919 67.676 73.074 | classical 72.925 67.675 73.076 | max|diff| 0.0053  anis(cosmo,class) 5.3989 5.4007
+   R=0.050 cosmo 0/90/180 72.843 67.677 73.154 | classical 72.854 67.680 73.158 | max|diff| 0.0101  anis(cosmo,class) 5.4762 5.4772
+   R=0.100 cosmo 0/90/180 72.702 67.681 73.323 | classical 72.721 67.700 73.332 | max|diff| 0.0189  anis(cosmo,class) 5.6415 5.6322
+   R=0.200 cosmo 0/90/180 72.454 67.689 73.711 | classical 72.486 67.776 73.737 | max|diff| 0.0873  anis(cosmo,class) 6.0219 6.0103
+   R=0.500 cosmo 0/90/180 71.908 67.712 75.337 | classical 71.964 68.202 75.549 | max|diff| 0.4898  anis(cosmo,class) 7.6328 7.8865
+ rs=0.01 Gpc: v_obs=0.192c  local-limit H 0/90/180: 82.543 57.492 82.543
+   R=0.025 cosmo 0/90/180 82.318 57.511 82.690 | classical 82.353 57.500 82.723 | max|diff| 0.0356  anis(cosmo,class) 25.1794 25.2230
+   R=0.050 cosmo 0/90/180 82.090 57.529 82.819 | classical 82.159 57.524 82.889 | max|diff| 0.0701  anis(cosmo,class) 25.2898 25.3651
+   R=0.100 cosmo 0/90/180 81.638 57.576 82.982 | classical 81.766 57.617 83.137 | max|diff| 0.1553  anis(cosmo,class) 25.4054 25.5205
+   R=0.200 cosmo 0/90/180 80.778 57.826 82.279 | classical 81.001 57.976 82.647 | max|diff| 0.3686  anis(cosmo,class) 24.4529 24.9067
+   R=0.500 cosmo 0/90/180 78.692 59.718 67.779 | classical 79.078 60.040 67.661 | max|diff| 0.4809  anis(cosmo,class) 20.8611 21.6392

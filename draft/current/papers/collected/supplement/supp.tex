@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.7in]{geometry}\usepackage{amsmath,amssymb,bm,graphicx,hyperref,setspace,caption,placeins,float}
+\graphicspath{{/workspace/cosmo_preprint/figs/}{/workspace/cosmo_preprint/}}
+\hypersetup{colorlinks=true,linkcolor=blue}\singlespacing\captionsetup{font=small,labelfont=bf}
+\renewcommand{\theequation}{S\arabic{equation}}
+\pagestyle{plain}
+\begin{document}\setcounter{figure}{32}\setcounter{page}{36}
+\section*{Supplement: Exact relativistic (LTB) calculation of \(A/A_{\mathrm{all}}\)}
+
+This supplement accompanies the Migkas comparison section of the paper and replaces its Newtonian anisotropy curves with an exact general-relativistic calculation. Only statements are given; derivations are omitted.
+
+\paragraph{Model.} All shells start at the CoE in a simultaneous bang at \(t=0\). We are an off-centre observer on the shell with label \(r=D\) in a Lema\^itre--Tolman--Bondi (LTB) dust universe,
+\begin{equation}
+ds^{2}=-c^{2}dt^{2}+\frac{R'^{2}}{1+2E(r)/c^{2}}\,dr^{2}+R^{2}\,d\Omega^{2},
+\end{equation}
+where \(r\) labels each shell, \(R(t,r)\) is its areal (proper) radius from the CoE, \(R'=\partial R/\partial r\), \(E(r)\) is the shell's energy per unit mass and \(d\Omega\) is the solid-angle element. Each shell obeys
+\begin{equation}
+\dot R^{2}=\frac{2GM(r)}{R}+2E(r),\qquad R(0,r)=0,
+\end{equation}
+with \(M(r)\) the mass enclosed. The central mass is smoothed over a core \(r_c=0.1\,\mathrm{Gpc}\), \(M(r)=M_c\,r^{3}/(r^{2}+r_c^{2})^{3/2}\). It is quoted as \(2GM_c/c^{2}\) and is not scaled with \(D\); its Schwarzschild radius may exceed \(D\). \(E(r)\) is tuned so that with no mass the model is Milne with \(H_0=70\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\) and age \(t_0=13.97\,\mathrm{Gyr}\). Bulk recession of our shell faster than \(c\) is allowed; only local relative speeds stay below \(c\).
+
+\paragraph{Light rays and redshift.} Null geodesics are traced backward from our shell, in our frame, with conserved angular momentum \(J\) about the CoE. Along each ray
+\begin{equation}
+\frac{d\ln(1+z)}{dt}=H_r\cos^{2}\psi+H_\perp\sin^{2}\psi,\qquad H_r=\frac{\dot R'}{R'},\quad H_\perp=\frac{\dot R}{R},
+\end{equation}
+where \(\psi\) is the angle between the ray and the local radial direction. The direction-dependent Hubble rate is
+\begin{equation}
+H(\theta)=\frac{c\,\ln(1+z)}{R_{\rm obs}},
+\end{equation}
+with \(R_{\rm obs}\) today's proper distance along the ray and \(\theta\) measured from the direction pointing away from the CoE (\(0^\circ\)). Rays that reach the CoE or the bang are rejected (horizon): our visible region starts at zero size and grows, and we never see light from the far side of the CoE. Finally
+\begin{equation}
+\frac{A}{A_{\rm all}}(\theta)=\frac{H(\theta)}{\langle H\rangle},\qquad \langle H\rangle=\frac{\int_0^{\pi}H(\theta)\,|\sin\theta|\,d\theta}{\int_0^{\pi}|\sin\theta|\,d\theta},
+\end{equation}
+the raw per-angle value over the full-sky \(|\sin\theta|\)-weighted mean, with no cone averaging.
+
+\paragraph{Validation.} (i) With no mass the code returns \(H=70.00\) at every angle. (ii) In the classical limit (\(D=1\,\mathrm{Gpc}\), \(R_{\rm obs}=0.025\,\mathrm{Gpc}\)) the exact values at \(0^\circ/90^\circ/180^\circ\) are \(72.919/67.677/73.074\) against the classical \(72.924/67.675/73.076\). (iii) Locally the result reduces to \(H(\theta)=H_r\cos^{2}\theta+H_\perp\sin^{2}\theta\). Figure~\ref{fig:ltbgrid}(a) compares exact and classical curves for one case.
+
+\paragraph{Results.} At \(R_{\rm obs}=3\,\mathrm{Gpc}\) (Fig.~\ref{fig:ltbgrid}b--e) the curves share one shape. The bump at \(0^\circ\) grows with mass and as we move closer to the CoE (smaller \(D\)): for \(2GM_c/c^{2}=100\,\mathrm{Gpc}\) it is \(1.17\) at \(D=20\) and \(1.02\) at \(D=60\). The minimum sits near \(120^\circ\) for weak mass and deepens and moves toward \(\sim105^\circ\) as mass grows or \(D\) falls. The rise at \(180^\circ\) is usually the largest feature, about \(1.02\)--\(1.14\). At \(R_{\rm obs}=14.3\,\mathrm{Gpc}\) the curves are nearly flat until the edge of the region from which light can reach us, then dip and spike.
+
+The sky-mean \(H\) never reaches Planck (\(67.4\pm0.5\)) or SH0ES (\(73.04\pm1.04\)). At \(3\,\mathrm{Gpc}\), however, individual directions span both values when \(2GM_c/c^{2}\gtrsim(0.3\text{--}1)\,D\): \(90^\circ\) reads like Planck and \(0^\circ\), \(180^\circ\) like SH0ES (Fig.~\ref{fig:ltbgrid}f). By \(14.3\,\mathrm{Gpc}\) this spread is gone.
+
+\begin{figure}[p]\centering
+\begin{minipage}[t]{0.495\linewidth}\centering\textbf{(a)}\\[-1pt]\includegraphics[width=\linewidth,height=0.29\textheight,keepaspectratio]{LTB_AA_D40_m10_R3.png}\end{minipage}\hfill\begin{minipage}[t]{0.495\linewidth}\centering\textbf{(b)}\\[-1pt]\includegraphics[width=\linewidth,height=0.29\textheight,keepaspectratio]{LTB_fam_D20_R3.png}\end{minipage}\\[2pt]
+\begin{minipage}[t]{0.495\linewidth}\centering\textbf{(c)}\\[-1pt]\includegraphics[width=\linewidth,height=0.29\textheight,keepaspectratio]{LTB_fam_D40_R3.png}\end{minipage}\hfill\begin{minipage}[t]{0.495\linewidth}\centering\textbf{(d)}\\[-1pt]\includegraphics[width=\linewidth,height=0.29\textheight,keepaspectratio]{LTB_fam_m10_R3.png}\end{minipage}\\[2pt]
+\begin{minipage}[t]{0.495\linewidth}\centering\textbf{(e)}\\[-1pt]\includegraphics[width=\linewidth,height=0.29\textheight,keepaspectratio]{LTB_fam_m100_R3.png}\end{minipage}\hfill\begin{minipage}[t]{0.495\linewidth}\centering\textbf{(f)}\\[-1pt]\includegraphics[width=\linewidth,height=0.29\textheight,keepaspectratio]{/home/box/agent-data/agents/554cb790-4639-4be9-839d-4d1f6ae1db27/attachments/679ce9e4bbb6f9466cef4ceea9b0c3f443d9cceb5474d9e2cfd8fb7bd075f009.png}\end{minipage}
+\caption{Exact GR (LTB) results at \(R_{\rm obs}=3\,\mathrm{Gpc}\). (a) Exact versus classical \(A/A_{\rm all}(\theta)\) for \(D=40\), \(2GM_c/c^{2}=10\,\mathrm{Gpc}\); black dashed: no mass. (b) \(D=20\) fixed, mass varied. (c) \(D=40\) fixed, mass varied. (d) \(2GM_c/c^{2}=10\,\mathrm{Gpc}\) fixed, \(D\) varied. (e) \(2GM_c/c^{2}=100\,\mathrm{Gpc}\) fixed, \(D\) varied. (f) \(H\) at \(90^\circ\) over \(D\) and mass, with Hubble-tension contours (Planck cyan, SH0ES orange, dashed \(\pm1\sigma\); midpoint white dotted).}\label{fig:ltbgrid}
+\end{figure}
+\FloatBarrier
+\clearpage
+\end{document}

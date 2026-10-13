@@ -1,0 +1,923 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{placeins}
+\usepackage{float}
+\usepackage{flafter}
+\graphicspath{{figs/}}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\onehalfspacing
+\captionsetup{font=small,labelfont=bf}
+
+% Main body through Fig.~12 (temp anisotropy): at most one float per page.
+% From SR panels (p16) through appendix: up to two floats per page; appendix also uses multi-image non-floats.
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.07}
+\renewcommand{\floatpagefraction}{0.8}
+\setcounter{topnumber}{1}
+\setcounter{bottomnumber}{1}
+\setcounter{totalnumber}{1}
+\setcounter{dbltopnumber}{1}
+\makeatletter
+% Only one float on a float-only page (totalnumber applies to text pages).
+\setlength{\@fpsep}{\textheight}
+\makeatother
+\setlength{\textfloatsep}{10pt plus 2pt minus 2pt}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+
+\title{Apparent acceleration from an off-centre finite geometry:\\ morphology, CMB null test, and redshift-dependent cancellation}
+\author{Chris Alameddin}
+\date{Draft preprint --- \today}
+
+\usepackage{array}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Type~Ia supernovae established apparent late-time acceleration, yet the distance modulus \(\mu=5\log_{10}(D_L/10\,\mathrm{pc})\) alone does not specify the underlying geometry. We pose the inverse problem: can non-accelerating expansion in a finite, off-centre geometry appear accelerated to an observer who is not at the Centre of Expansion (CoE)? From observables we construct a candidate CoE-plus-thick-shell geometry, derive prior angular morphology (amplitude and \(\varphi(\theta)\) rings), and only then compare to the independent Migkas et al.\ cluster anisotropy---morphology out-of-sample, amplitude partly construction-motivated. Extrapolating the same pure geometry to last scattering (\(z_\star\approx1100\)) overshoots the \(\sim10^{-5}\) CMB isotropy level, so geometry alone is incomplete. Special-relativistic Doppler plus central-mass gravitational redshift cancel \(95.9\%\) of the geometric RMS while preserving low-\(z\) morphology (Fix Point~2): the CMB is addressed qualitatively by redshift-dependent cancellation, leaving a new inverse problem in the higher multipoles. Residual multipoles (\(m=3\)--\(5\) after SR; \(m=6\) and \(m=1\) after a four-clump sketch), an independent CatWISE/Secrest matter dipole (\(\mathcal{D}\approx0.0155\); CoE end \(\sim195^\circ\) vs anti-CoE end \(\ell_0=15.2^\circ\)), and redshift-dependent cancellation \(A(z,\theta)\) complete the chronological programme. Apparent acceleration remains an off-centre sampling artefact---no dark energy required.
+\end{abstract}
+
+\begin{figure}[t]
+\centering
+\begin{minipage}[c]{0.49\linewidth}\centering\includegraphics[width=\linewidth]{Fig01a_geometry_top_test.png}\end{minipage}\hfill
+\begin{minipage}[c]{0.49\linewidth}\centering\includegraphics[width=\linewidth]{Fig01a_geometry_bot_test.png}\end{minipage}
+\caption{Hubble velocity vectors: Centre of Expansion (CoE), observer, and galaxy; $\vec{V}_H=\vec{V}_g-\vec{V}_O$.}
+\label{fig:01}
+\end{figure}
+
+
+\section{Introduction: the inverse problem of apparent acceleration}
+\label{sec:intro}
+
+\subsection{Motivating observation and the boxed question}
+
+In 1998--99, Type~Ia supernovae established that the late universe appears to accelerate~\cite{riess1998,perlmutter1999}. The operational observable is minimal: the distance modulus
+\begin{equation}
+\mu = 5\log_{10}\bigl(D_L/10\,\mathrm{pc}\bigr)
+\end{equation}
+depends only on luminosity distance. It does not, by itself, specify whether the physical expansion is accelerating, whether dark energy is required, or where the observer sits relative to any preferred centre.
+
+\begin{quote}
+\textbf{Question.} Can non-accelerating expansion in a finite geometry appear accelerated to an off-centre observer?
+\end{quote}
+We distinguish \emph{physical} expansion (the true radial motion of matter relative to a Centre of Expansion) from \emph{inferred} expansion (what an off-centre observer reconstructs from \(\mu\) and redshifts under homogeneous--isotropic assumptions). Figure~\ref{fig:01} shows the kinematic picture: local Hubble velocity as free-fall relative to the CoE minus the observer's own motion.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.52\linewidth]{Fig01b_geometry.png}
+\caption{Hubble-bubble scale: observer inside a thick ordinary-matter shell at distance $D$ from the CoE, with vision sphere of radius $R$.}
+\label{fig:02}
+\end{figure}
+
+
+\subsection{Forward versus inverse}
+
+The standard route is forward: assume FLRW (or \(\Lambda\)CDM), predict \(D_L(z)\), and fit \(H_0\), \(\Omega_m\), \(w\). We take the inverse route instead~\cite{ellis1987}: start from observables, propose a candidate finite geometry consistent with them, then generate new observables that the same geometry must confront. Ellis and Stoeger framed this as the cosmological fitting problem; here the candidate is an off-centre CoE plus thick ordinary-matter shell (the donut-universe configuration of Fig.~\ref{fig:02}), not a new dark-energy parameter.
+
+\subsection{Degrees of freedom}
+
+The finite-visibility, off-centre setup has a controlled set of degrees of freedom: shell distance scale \(D\), observer offset \(d\) from the CoE (with \(d=D\) when the observer sits mid-shell), enclosed volume \(V(D)\), total mass \(M_{\mathrm{tot}}\), radial density \(\rho(r)\) or an equivalent mass distribution, and sky angle \(\theta\) from the CoE--anti-CoE axis. Lines of sight sample radii in the annulus
+\begin{equation}
+D-d \le r \le D+d.
+\end{equation}
+Symmetry is axial about the CoE axis, not spherical about the observer. The vision radius \(R\approx14.3\,\mathrm{Gpc}\) is fixed at the Migkas sample depth and is not fitted; \(A/A_{\mathrm{all}}\) depends only on \(D/R\); the shell rule with that vision radius requires \(D\gtrsim14.7\,\mathrm{Gpc}\) so the observer remains mid-shell.
+
+\subsection{Parameter discipline and Fix Points}
+
+We name two Fix Points later: Fix Point~1 freezes the geometry (and its prior angular predictions) before the Migkas comparison; Fix Point~2 requires that special-relativistic and gravitational corrections cancel last-scattering anisotropy without destroying the low-\(z\) morphology. No silent geometric degrees of freedom are introduced between those points.
+
+\subsection{Roadmap}
+
+The chronology is deliberate: apparent acceleration as inverse problem \(\to\) off-centre geometric solution and prior rings \(\to\) out-of-sample Migkas morphology \(\to\) CMB null test of pure geometry \(\to\) physical completion (SR\,+\,central mass) \(\to\) residual multipoles \(\to\) independent matter dipole \(\to\) redshift evolution of \(A(z,\theta)\).
+
+\section{Off-centre geometric solution and prior angular predictions}
+\label{sec:geometry}
+
+\subsection{Ray geometry and local Hubble velocity}
+
+Local Hubble velocity is free-fall toward the CoE minus our own motion,
+\begin{equation}
+\vec{V}_H = \vec{V}_g - \vec{V}_O.
+\end{equation}
+The observer sits inside a thick shell at comoving distance \(D\) from the CoE. Sky anisotropy is an off-centre sampling of radial structure, not a direction-dependent scale factor \(a(t,\theta)\).
+
+\subsection{Amplitude \(A(\theta)/A_{\mathrm{all}}\) and morphology}
+
+Along a line of sight at angle \(\theta\) from the CoE axis, the sampled expansion rate (or equivalently the normalisation \(A\) of an \(L_X\)--\(T\) scaling when distances enter through \(D_L\)) differs from the all-sky mean. Writing \(A(\theta)/A_{\mathrm{all}}\) for that ratio, the geometry predicts both an overall amplitude and an angular morphology. Amplitude is partly tied to how the construction is normalised (density\,--\,distance degeneracy); morphology---where maxima, minima, and rings sit on the sky---is fixed by the ray geometry once \(D\), \(d\), and the radial mass profile are chosen.
+
+\subsection{Phase rings \(\varphi(\theta)\)}
+
+Off-centre placement produces closed curves of constant phase on the celestial sphere: the \(\varphi(\theta)\) rings. At low redshift those rings appear as a preferred locus of nearby sources---a ``blue'' ring when coloured by \(z\).
+
+\clearpage
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\linewidth]{FigApp_313_clusters_sky.jpg}
+\caption{Sky distribution of the 313 clusters in Galactic coordinates, with the colorbar indicating their redshift (blue\,=\,low \(z\)). The low-redshift ``blue'' ring on the celestial sphere, together with the longitude dependence of \(A/A_{\mathrm{all}}\), is the observable geometry pinned before Migkas et al.\ published. There are two clusters at \(z>0.3\); the scale is set so the colour contrast is optimal.}
+\label{fig:03}
+\end{figure}
+
+
+\subsection{Prior low-\(z\) rings (before Migkas maps)}
+
+Figure~\ref{fig:03} illustrates that prior morphology on a cluster sky (Galactic coordinates, redshift colourbar). In this narrative the ring and the longitude dependence of \(A/A_{\mathrm{all}}\) are geometric predictions of the off-centre shell, not discoveries extracted from a newly released catalogue.
+
+\begin{quote}
+\textbf{Fix Point~1.} The CoE-plus-shell geometry---and with it the predicted amplitude shape and \(\varphi(\theta)\) rings---is fixed before the Migkas comparison. Migkas et al.\ do not redefine the geometric degrees of freedom.
+\end{quote}
+
+\section{Migkas comparison --- out-of-sample angular morphology}
+\label{sec:migkas}
+
+\subsection{The Migkas dataset}
+
+Migkas et al.~\cite{migkas2020} test sky isotropy with the X-ray luminosity--temperature (\(L_X\)--\(T\)) scaling of galaxy clusters. Measured \(L_X\) depends on luminosity distance; \(T\) does not. Directional variation in the fitted normalisation \(A\) of \(L_X\propto A\,T^{B}\) therefore traces an apparent directional Hubble / distance scale. They report \(A\) in sliding sky cones relative to the all-sky fit \(A_{\mathrm{all}}\): the plotted quantity is \(A/A_{\mathrm{all}}\) (their Fig.~6; our Figs.~\ref{fig:04}--\ref{fig:06}). Under the usual conversion with \(A\times H_0^{2}\) held fixed, \(H/H_{\mathrm{ref}}=1/\sqrt{A/A_{\mathrm{all}}}\), so troughs in \(A/A_{\mathrm{all}}\) are high-\(H_0\) / short-\(D_L\) directions---provided the variation is cosmological rather than cluster or X-ray systematics.
+
+\subsection{Coordinate placement and fits}
+
+We place the already-fixed geometry on the Galactic sky and compare to Migkas \(A/A_{\mathrm{all}}\) versus Galactic longitude \(\ell\). Fits are realised in Newtonian gravity and in relativistic LTB about the CoE. The LTB origin is the CoE, not the observer: we sit at radial coordinate \(r=D\), sampling a radial mass-multiplier \(\beta(r)\).
+
+\begin{table}[t]
+\centering
+\caption{{Local vs global \(\sigma\) (Migkas \(A/A_{\mathrm{all}}\), \(\chi^2_{\mathrm{null}}=45.14\)).}}
+\label{tab:fits}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Model & \(R^2\) & Local \(\sigma\) & Global \(\sigma\) \\
+\midrule
+Point mass at CoE & \(0.521\) & \(4.4\) & \(4.1\) \\
+Exponential, \(L\) free & \(0.759\) & \(5.3\) & \(5.1\) \\
+Exponential, CatWISE 3\% lock & \(0.716\) & \(5.4\) & \(5.1\) \\
+Soft core \(1/(1+(r/L)^{0.3})\), lock & \(0.743\) & \(5.4\) & \(5.1\) \\
+Exponential (lock) + rotation \& phase & \(0.845\) & \(5.5\) & \(5.3\) \\
+Soft core + rotation \& phase & \(0.870\) & \(5.4\) & \(5.1\) \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+{\footnotesize Local: axis angle \(\ell_0\) taken as given. Global: \(\ell_0\) counted as one fitted parameter; for the free-\(L\) row the global \(\sigma\) counts both \(L\) and \(\ell_0\) (four parameters). \(R^2\) is unweighted.\par}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{Fig02_Achart.png}
+\caption{Migkas \(A/A_{\mathrm{all}}\) versus Galactic longitude \(\ell\): top, Migkas points with \(A_F\) and Newtonian/relativistic CoE+shell curves; bottom, Migkas--$A_F$ residuals (connect-the-dots) with cumulative Fourier multipole curves \(M\le 5\)--\(7\) and \(R^2\) in the legend (not model--$A_F$).}
+\label{fig:04}
+\end{figure}
+
+
+Figure~\ref{fig:04} shows Migkas \(A/A_{\mathrm{all}}\) versus Galactic longitude with the Newtonian and relativistic shell-plus-core curves (top) and Migkas--$A_F$ residuals as connect-the-dots with cumulative multipole curves \(M\le 5\)--\(7\) (bottom).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{Fig03_migkas_slices.png}
+\caption{Migkas \(A(\ell)\) in redshift slices, with the CoE model recomputed at each slice's median sampling distance (fit parameters held fixed). The \(D\)--core-mass degeneracy is shown explicitly.}
+\label{fig:05}
+\end{figure}
+
+
+Figure~\ref{fig:05} shows the same \(A(\ell)\) pattern in three redshift slices (\(0.03\)--\(0.07\), \(z>0.07\), and all-\(z\)). Fit parameters are held fixed; the model is recomputed at each slice's median sampling distance, so that the \(A(\ell)\) maxima and minima move with that distance. The \(D\)--core-mass degeneracy is shown explicitly.
+
+\subsection{Einstein and Friedmann scaffolding}
+
+Einstein's equation is \(G_{\mu\nu}=8\pi G\,T_{\mu\nu}\). For concentric dust shells about the CoE the Lema\^itre--Tolman--Bondi line element~\cite{lemaitre1933,tolman1934,bondi1947} is
+\begin{equation}
+\mathrm{d}s^{2} = -\mathrm{d}t^{2} + \frac{(R')^{2}}{1+2E(r)}\,\mathrm{d}r^{2} + R(t,r)^{2}\,\mathrm{d}\Omega^{2},
+\end{equation}
+with areal radius \(R(t,r)\). Each shell obeys
+\begin{equation}
+\dot{R}^{2} = 2E(r) + \frac{2GM(r)}{R},
+\end{equation}
+and the interior mass uses a background density scale \(\nu\) and radial mass multiplier \(\beta(r)\),
+\begin{equation}
+M(r) = \frac{4\pi}{3}\, R^{3}\, \nu\, \beta(r),
+\end{equation}
+so that \(\beta=1\) recovers critical-density normalisation. Including radiation on the same scaffolding,
+\begin{equation}
+H_a^{2} \propto \frac{\nu_m \beta_m(r)}{a^{3}} + \frac{\nu_r \beta_r(r)}{a^{4}} - \frac{k(r)}{a^{2}}.
+\end{equation}
+Curvature \(k(r)\) follows from \(E(r)\) and introduces no angular dependence into the metric coefficients.
+
+For the CatWISE-locked fits to Migkas \(A(\ell)\) (Table~\ref{tab:fits}),
+\begin{equation}
+\begin{aligned}
+D &\approx 58.2\,\mathrm{Gpc},\quad
+D{-}d \approx 43.9\,\mathrm{Gpc},\\
+D{+}d &\approx 72.5\,\mathrm{Gpc},\quad
+\ell_0 = 15.2^\circ.
+\end{aligned}
+\end{equation}
+The free-\(L\) exponential gives \(D\approx27.95\,\mathrm{Gpc}\), \(L\approx6.07\,\mathrm{Gpc}\), \(\ell_0\approx18.6^\circ\); an earlier, superseded LTB shell fit gave \(D\approx32.9\,\mathrm{Gpc}\). In all cases \(D\) lies above the shell-rule bound \(D\gtrsim14.7\,\mathrm{Gpc}\) (vision radius \(R\approx14.3\,\mathrm{Gpc}\)), and the observer sits mid-shell.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{Fig04_amp_full.png}
+\caption{Full Migkas \(A/A_{\mathrm{all}}\) amplitude profile (top) with Newtonian and relativistic fits; bottom: Migkas--$A_F$ residual bars (green: same sign as \(M\le 7\); red: opposite; \(\alpha\approx 0.45\)) with cumulative multipole curves \(M\le 5\)--\(7\).}
+\label{fig:06}
+\end{figure}
+
+
+Figure~\ref{fig:06} confirms that both the Newtonian (earlier shell fit, \(\Omega_s=0.049\)) and relativistic LTB curves follow the Migkas longitude dependence; the bottom panel shows Migkas--$A_F$ residual bars with cumulative multipole curves \(M\le 5\)--\(7\).
+
+\subsection{Sky orientation}
+
+Starting from an untilted, no-roll configuration, we apply a \(+15^\circ\) tilt, then a radial gradient, then an \(+80.8^\circ\) roll about the CoE axis.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.70\textheight,keepaspectratio]{Fig05_sky_orientation_four_row.jpg}
+\caption{Sky-orientation sequence: untilted configuration through \(+15^\circ\) tilt, radial gradient, and \(+80.8^\circ\) roll about the CoE axis.}
+\label{fig:07}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.82\textheight,keepaspectratio]{Fig06_overlay_stack.png}
+\caption{Predicted MAX/MIN bands overlaid on Migkas Fig.~8 for $+15^\circ$ tilt alone, tilt with gradient, and tilt with gradient plus $+80.8^\circ$ roll. Each highlight band is $18^\circ$ end-to-end ($\pm 9^\circ = 5\%$ of $360^\circ$): two MAX and two MIN (cyan / green / magenta / blue). Migkas MAX markers include $(17^\circ,-9^\circ)$ and $(185^\circ,0^\circ)$; the CoE axis is tilted $+15^\circ$ with anti-CoE near $(0^\circ,+15^\circ)$.}
+\label{fig:08}
+\end{figure}
+
+
+Figure~\ref{fig:07} shows that sequence; Figure~\ref{fig:08} overlays the predicted MAX/MIN bands on Migkas Fig.~8.
+
+\subsection{Epistemic status}
+
+Amplitude is partly construction-motivated (density--distance trade in the Migkas normalisation). Morphology---ring locus, MAX/MIN placement, longitude shape across redshift slices---is out-of-sample relative to Fix Point~1: no new morphological degree of freedom was opened to absorb the Migkas maps. The geometric \(R^{2}\) versus Migkas (geometry only, no sine) is \(0.521\) (\(4.1\sigma\) global) for the point-mass row of Table~\ref{tab:fits}; with rotation and the one-cycle phase factor, \(R^{2}\) rises to \(0.85\)--\(0.87\) (\(0.845\) exponential locked, \(0.870\) soft core). The point mass with no rotation gives weighted \(R^{2}=0.534\) (unweighted \(0.521\)).
+
+\section{CMB null test --- the purely geometric model}
+\label{sec:cmbnull}
+
+With Fix Point~1 held, we extrapolate the \emph{same} geometry to the last-scattering surface at \(z_\star\approx1100\). Off-centre placement implies a geometric multipole on the CMB sky of several percent---orders of magnitude above the Planck isotropy floor of \(\sim10^{-5}\)~\cite{planck2020}.
+
+In the donut-universe picture the CoE is fixed while thick shells expand; the sphere of events visible to us grows at \(c\). Recombination is a spherical surface of fixed physical radius around the CoE. Figure~\ref{fig:09} shows the time sequence (frames A--D). Figure~\ref{fig:10} shows the two-emitter baseline: if opposite plates share the observer's bulk velocity, the kinematic sky is flat before gravitational multipoles are included.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.62\linewidth]{Fig07_storyboard.png}
+\caption{Geometric extrapolation of the same CoE+shell to last scattering (frames A--D): shells expand while the visible sphere grows at \(c\), with recombination as a spherical surface about the CoE. Used here as the setup for the CMB null test (Sec.~\ref{sec:cmbnull}), not as a completed cosmology.}
+\label{fig:09}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.55\linewidth]{Fig08_title_test.png}\\[2pt]
+\begin{minipage}[c]{0.49\linewidth}\centering\includegraphics[width=\linewidth]{Fig08_top_test.png}\end{minipage}\hfill
+\begin{minipage}[c]{0.49\linewidth}\centering\includegraphics[width=\linewidth]{Fig08_bot_test.png}\end{minipage}
+\caption{Two-emitter geometric baseline: opposite plates or shells sharing the observer's bulk velocity yield a flat kinematic sky before gravitational multipoles. Part of the pure-geometry extrapolation, which overshoots the CMB floor until SR and central-mass corrections are added (Sec.~\ref{sec:sr}).}
+\label{fig:10}
+\end{figure}
+
+
+\subsection{Gravitational multipole from the geometry}
+
+On the emission sphere the Newtonian today's-field residual splits into a kinematic Doppler piece and a static gravitational piece,
+\begin{equation}
+\Bigl(\frac{\Delta T}{T}\Bigr)_{\mathrm{Doppler}}
+=
+-\,\hat{\mathbf{n}}\cdot\frac{\mathbf{V}_{\mathrm{emit}}-\mathbf{V}_{\mathrm{obs}}}{c},
+\qquad
+\Bigl(\frac{\Delta T}{T}\Bigr)_{\mathrm{static}}
+=
+\frac{\Phi_{\mathrm{emit}}-\Phi_{\mathrm{obs}}}{c^{2}}.
+\end{equation}
+The Migkas fit is carried by the shear in \(\mathbf{V}\). For the Sedov--Taylor / shell-plus-core flow~\cite{sedov1946,taylor1950} written \(\vec{V}=h(q)\,\vec{q}\) with \(q=s/D\), \(\beta\equiv h'/h|_{q=1}\) and \(\gamma\equiv h''/h|_{q=1}\), the line-of-sight amplitude \(a_f\) expands (with \(\varepsilon=R/D\), \(\mu=\cos\psi\), \(\psi=\ell-\ell_0\)) as
+\begin{equation}
+\frac{a_f}{\langle a_f\rangle}
+=
+1+a_1\cos\psi+a_2\cos 2\psi+a_3\cos 3\psi+\cdots,
+\end{equation}
+where even harmonics are fixed by \(\beta\) and odd harmonics by the \(\varepsilon Q\) tidal corrections. Pure geometry contributes only \(\cos m\psi\) terms; the fitted sine rotation \(A=a_f[1-\mathrm{Amp}\sin(\psi+\varphi)]\) then mixes sine parts into the odd multipoles. Axisymmetric Legendre coefficients about the CoE axis are
+\begin{equation}
+a_\ell
+=
+\frac{2\ell+1}{2}
+\int_{-1}^{1}
+f(\mu)\,P_\ell(\mu)\,\mathrm{d}\mu,
+\qquad
+\mu=\cos\theta.
+\end{equation}
+
+\subsection{Concentric-cell electromagnetic multipoles (even)}
+
+For concentric shells about the CoE with equal rest-frame temperature and shared bulk velocity, the kinematic sky is isotropic; anisotropy appears only from relative motion. The first-order electromagnetic Doppler from a hit on the emitting surface is
+\begin{equation}
+\frac{\Delta T}{T}
+\approx
+-\,\hat{\mathbf{n}}\cdot(\boldsymbol\beta_{\mathrm{em}}-\boldsymbol\beta_{\mathrm{obs}}),
+\qquad
+\boldsymbol\beta_{\mathrm{em}}
+=
+\beta_{\mathrm{rec}}\,\frac{r_{\mathrm{hit}}}{R_{\mathrm{out}}}\,\hat{\mathbf{e}}_r.
+\end{equation}
+Axisymmetry about the CoE--anti-CoE axis makes the demeaned electromagnetic pattern even under \(\phi\to360^\circ-\phi\), selecting even multipoles once the monopole is removed. Odd electromagnetic multipoles require breaking that reflection symmetry.
+
+\begin{quote}
+\textbf{Null-test verdict.} The purely geometric CoE-plus-shell model, extrapolated to \(z_\star\approx1100\) without additional photon-propagation physics, produces a last-scattering anisotropy far above \(\sim10^{-5}\). Geometry alone is therefore incomplete rather than final. Section~\ref{sec:sr} supplies the physical completion, which addresses the CMB qualitatively through redshift-dependent cancellation and leaves the higher multipoles as an open inverse problem.
+\end{quote}
+
+\section{Physical completion --- motion, gravity, and photon propagation}
+\label{sec:sr}
+
+\subsection{What must be added}
+
+The Migkas \(A/A_{\mathrm{all}}\) sky pattern is fitted by an off-centre CoE plus thick shell. That geometry alone overshoots the CMB isotropy floor. We ask whether two standard effects---special-relativistic Doppler between a moving emitter and a moving observer, plus gravitational redshift from a central mass at the preferred origin---can cancel most of that geometric anisotropy without inventing a free ``kill function.'' We build a multiplicative correction \(S_{\mathrm{model}}\) from those effects, apply it to the geometric pattern \(G\), measure the residual \(R\), and read leftover multipoles as a fingerprint. Numbers are from existing fits; no new optimisation is reported here.
+
+Distinguish the physical three-velocity \(\beta=V/c\) with \(|\beta|<1\) from any effective Newtonian shell speed \(\beta_E\) that may formally exceed unity when Newtonian kinematics are extrapolated carelessly: only subluminal \(\beta\) enters the SR formulae below.
+
+\subsection{Composite anisotropy and the exact redshift}
+
+A useful bookkeeping split is
+\begin{equation}
+\Delta_{\mathrm{obs}} \approx \Delta_{\mathrm{geom}} + \Delta_{\mathrm{SR}} + \Delta_{\mathrm{grav}},
+\end{equation}
+but this linear decomposition is only approximate. The exact photon redshift between emitter and observer four-velocities and null tangent is
+\begin{equation}
+1+z = \frac{(u\cdot k)_e}{(u\cdot k)_o}.
+\end{equation}
+Morphology at low \(z\) must survive the high-\(z\) cancellation (Fix Point~2).
+
+\subsection{Kinematics and light travel}
+
+We work in units with \(c=1\), and set the observer's radial offset from the preferred centre \(O\) in the reference configuration to \(d_1=1\). Figure~\ref{fig:12} shows the exact photon intercept between two radially moving objects; the light-travel root \(t_{f}\) and arrival direction \(\hat{\mathbf{n}}\) enter \(D_{\mathrm{motion}}\) below.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.85\linewidth,height=0.42\textheight,keepaspectratio]{Fig_SR_photon_intercept.png}
+\caption{Illustration of exact photon intercept paths between two objects moving radially away from the centre \(O\) at frozen speeds (\(c=1\)), for the speeds drawn in the figure---not the run~2 fit values. A photon sent from object~1 reaches object~2 at \(t=1.169\); the return reaches object~1 at \(t=2.337\). The light-travel root \(t_{f}\) and arrival direction \(\hat{\mathbf{n}}\) enter \(D_{\mathrm{motion}}\) [Eqs.~\eqref{eq:tf}--\eqref{eq:Dmotion}]. In the fit, the observer is at \(0.469\,c\) and emitters span \(0.205\,c\)--\(0.648\,c\).}
+\label{fig:12}
+\end{figure}
+
+
+Angles are measured from the fitted shell axis,
+\begin{equation}
+\label{eq:theta}
+\theta=\ell-\phi,
+\end{equation}
+with \(\phi\) free in the fit (it returns to \(\ell_0\)). The central mass sits at \(O\); the observer is at \((d_1,0)=(1,0)\). The emitter (a last-scattering parcel in direction \(\theta\)) sits at reference distance \(q\) from the observer:
+\begin{equation}
+\label{eq:xe0}
+\mathbf{x}_{e0}=(1+q\cos\theta,\ q\sin\theta),
+\qquad
+r_{e0}=\sqrt{1+q^{2}+2q\cos\theta}.
+\end{equation}
+Thus \(\theta=0\) points away from \(O\) and \(\theta=180^\circ\) toward \(O\). A common expansion scale \(s\) maps reference radii to present radii, \(r_o=s\) and \(r_e=s\,r_{e0}\). Velocities are radial from \(O\) (outward positive). Their magnitudes follow energy conservation in the central mass \(\mu\equiv GM/c^{2}\) (measured in units of \(d_1\)):
+\begin{equation}
+\label{eq:v2}
+v^{2}=\beta_{1}^{2} r_{0}^{2}+2\mu\Bigl(\frac{1}{r}-\frac{1}{r_{0}}\Bigr),
+\end{equation}
+applied separately at the observer (\(r_{0}=1\), \(r=r_o=s\)) and at the emitter (\(r_{0}=r_{e0}\), \(r=r_e=s\,r_{e0}\)). The corresponding velocity vectors are
+\begin{equation}
+\label{eq:beta}
+\boldsymbol{\beta}_{o}=v_{o}\,\hat{\mathbf{x}},
+\qquad
+\boldsymbol{\beta}_{e}=v_{e}\,\mathbf{x}_{e}/r_{e}.
+\end{equation}
+With \(\mathbf{d}=\mathbf{x}_{o}-\mathbf{x}_{e}\), the positive light-travel root \(t_{f}\) of
+\begin{equation}
+\label{eq:tf}
+(v_{o}^{2}-1)\,t_{f}^{2}+2\,d_{x}\,v_{o}\,t_{f}+|\mathbf{d}|^{2}=0
+\end{equation}
+defines the photon arrival direction
+\begin{equation}
+\label{eq:nhat}
+\hat{\mathbf{n}}=\frac{\mathbf{d}+v_{o}t_{f}\,\hat{\mathbf{x}}}{t_{f}}.
+\end{equation}
+
+\subsection{Temperature pattern from the same kinematics}
+
+Figure~\ref{fig:13} illustrates how the fractional blackbody-temperature anisotropy grows with expansion speed for the same intercept geometry, at the three speeds drawn (not the run~2 values). The shallow local minimum near \(180^{\circ}\) (inward) appears at every speed shown.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{Fig_SR_temperature_anisotropy.png}
+\caption{Illustration of fractional blackbody-temperature anisotropy \((T_{\mathrm{obs}}-\bar{T})/\bar{T}\) (percent) against emitter angle \(\theta\) (\(0^{\circ}\) outward, \(180^{\circ}\) inward), for the pedagogical speeds \(v(d_{1})=0.01c\), \(0.203c\), and \(0.278c\) shown---not the run~2 fit. The SR sky pattern grows with expansion speed; a shallow local minimum near \(180^{\circ}\) appears in every case. In the fit the observer is at \(0.469\,c\) and emitters span \(0.205\,c\)--\(0.648\,c\), so the percent-level swings here are not the fitted anisotropy.}
+\label{fig:13}
+\end{figure}
+
+
+The special-relativistic Doppler factor between emitter and observer is
+\begin{equation}
+\label{eq:Dmotion}
+D_{\mathrm{motion}}
+=
+\frac{\gamma_{o}\bigl(1-\boldsymbol{\beta}_{o}\cdot\hat{\mathbf{n}}\bigr)}
+{\gamma_{e}\bigl(1-\boldsymbol{\beta}_{e}\cdot\hat{\mathbf{n}}\bigr)},
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^{2}}},
+\end{equation}
+and the gravitational redshift between the same radii is
+\begin{equation}
+\label{eq:Dgrav}
+D_{\mathrm{grav}}
+=
+\sqrt{\frac{1-2\mu/r_{e}}{1-2\mu/r_{o}}}.
+\end{equation}
+Their product is the model correction,
+\begin{equation}
+\label{eq:Smodel}
+S_{\mathrm{model}}=D_{\mathrm{motion}}\,D_{\mathrm{grav}}.
+\end{equation}
+Applying it to the geometry and re-normalising gives the residual
+\begin{equation}
+\label{eq:R}
+R(\ell)=\frac{G\,S_{\mathrm{model}}}{\langle G\,S_{\mathrm{model}}\rangle}-1.
+\end{equation}
+(Here \(R(\ell)\) is the residual, not the vision radius.) The objective minimised is \(\mathrm{RMS}(R)\). Parameter points with \(v^{2}\notin(0,1)\) or \(2\mu/r\ge1\) anywhere on the sky are rejected.
+
+\subsection{Geometric input}
+
+The target is the normalised Migkas shell curve from the weighted least-squares (WLS) fit: \(D = 58.2\,\mathrm{Gpc}\), fixed vision radius \(R = 14.3\,\mathrm{Gpc}\), shell axis \(\ell_0 = 15.16^\circ\) (\(\approx15.2^\circ\)), on 71 bins (Table~\ref{tab:fits}). Let \(A/A_{\mathrm{all}}(\ell)\) be that full-precision WLS curve on a \(1^\circ\) grid \(\ell=0,\ldots,359\). Define
+\begin{equation}
+\label{eq:G}
+G(\ell)=\frac{A/A_{\mathrm{all}}(\ell)}{\langle A/A_{\mathrm{all}}\rangle},
+\qquad
+\mathrm{RMS}(G-1)=5.75\times10^{-2},
+\end{equation}
+where \(\langle\cdot\rangle\) denotes the mean over the \(360\) longitude samples. A factor that would cancel \(G\) exactly (up to an overall scale) is
+\begin{equation}
+\label{eq:Sreq}
+S_{\mathrm{req}}(\ell)=\frac{1/G(\ell)}{\langle 1/G\rangle}.
+\end{equation}
+\suppressfloats[t]%
+Figure~\ref{fig:SRp1} shows that geometric input before any SR or mass correction. The remainder of this section constructs a physical \(S_{\mathrm{model}}\) and compares it to \(S_{\mathrm{req}}\).
+
+% From here (current p16 / SR panels) through the appendix: up to two floats per page.
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{2}
+\makeatletter
+\setlength{\@fpsep}{8pt}
+\makeatother
+
+\suppressfloats[t]
+
+\subsection{Required inverse versus physical correction}
+
+Figure~\ref{fig:SRp2} compares \(S_{\mathrm{req}}\) to the SR-plus-mass model \(S=D_{\mathrm{motion}}D_{\mathrm{grav}}\), with the Doppler and gravitational factors shown separately. The Doppler term carries most of the longitude structure; the gravitational factor is smoother and smaller.
+
+
+
+\subsection{Fitted parameters (run with \(1\le s\le3\))}
+
+The run used below is the existing run~2 of the cancellation pipeline:
+\begin{equation}
+\label{eq:params}
+\beta_{1}=0.5866,\quad
+q=0.2303,\quad
+\mu=0.09332,\quad
+s=3.000\ \text{(upper bound)},\quad
+\phi=15.2^{\circ}.
+\end{equation}
+Here \(\beta_{1}\) is the free-expansion speed at unit reference radius, \(q\) is the emitter distance from the observer in units of \(d_{1}\), \(\mu\) is the central-mass length, \(s\) is the common expansion scale, and \(\phi\) coincides with the shell axis \(\ell_{0}\). At this point the present observer speed is \(v_{o}=0.469\,c\); emitter speeds range from \(0.205\,c\) to \(0.648\,c\); the largest \(2\mu/r\) on the sky is \(0.081\). Starting from \(\mathrm{RMS}(G-1)=5.75\times10^{-2}\), one obtains
+\begin{equation}
+\label{eq:rmsR}
+\mathrm{RMS}(R)=2.37\times10^{-3}
+\qquad\bigl(\max|R|=3.76\times10^{-3}\bigr),
+\end{equation}
+which removes \(95.9\%\) of the starting RMS by amplitude and \(99.83\%\) of the variance. Equivalently, the starting anisotropy is about \(5{,}750\) times the CMB \(10^{-5}\) level; after SR plus mass it is about \(237\) times that level. Parameter \(s\) sits on its imposed ceiling (a run with \(s\le50\) reaches \(s=50\) with a slightly lower RMS of \(2.15\times10^{-3}\)). Because the intercept geometry is scale-free, \(s\) is only weakly constrained; the physical content is carried by \(\beta_{1}\), \(q\), \(\mu\), and \(\phi\). Figure~\ref{fig:SRp3} shows the residual \(R\) after that correction, with the cosine series through \(m=12\) overlaid.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.36\textheight,keepaspectratio]{Fig_SR_panel1_migkas_fit.png}
+\caption{Migkas \(A/A_{\mathrm{all}}\) bins and the WLS shell geometry (\(D=58.2\,\mathrm{Gpc}\), fixed \(R=14.3\,\mathrm{Gpc}\), \(\ell_{0}=15.2^{\circ}\)) before any SR or mass correction.}
+\label{fig:SRp1}
+\end{figure}
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.36\textheight,keepaspectratio]{Fig_SR_panel2_S_correction.png}
+\caption{Required inverse \(S_{\mathrm{req}}\) versus the SR-plus-mass model \(S=D_{\mathrm{motion}}D_{\mathrm{grav}}\), with the separate Doppler and gravitational factors.}
+\label{fig:SRp2}
+\end{figure}
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.36\textheight,keepaspectratio]{Fig_SR_panel3_residual.png}
+\caption{Residual \(R\) after SR plus central mass [Eq.~\eqref{eq:rmsR}], with the cosine series through \(m=12\) overlaid.}
+\label{fig:SRp3}
+\end{figure}
+
+
+\begin{quote}
+\textbf{Fix Point~2.} Special-relativistic Doppler and central-mass gravitational redshift cancel most of the geometric last-scattering anisotropy while the low-redshift Migkas morphology (Fix Point~1) remains intact. No new geometric degree of freedom is opened to force the cancellation.
+\end{quote}
+
+\subsection{Fourier analysis of the residual}
+
+The residual is expanded about the shell axis \(\phi=15.2^{\circ}\):
+\begin{equation}
+\label{eq:fourier}
+R(\ell)=a_{0}+\sum_{m=1}^{M}\Bigl[c_{m}\cos\bigl(m(\ell-\phi)\bigr)+s_{m}\sin\bigl(m(\ell-\phi)\bigr)\Bigr].
+\end{equation}
+Every sine coefficient satisfies \(|s_{m}|\sim10^{-8}\)--\(10^{-12}\), so \(R\) is a pure cosine series about \(\ell_{0}\). Through \(M=12\),
+\begin{equation}
+\label{eq:leftover}
+\mathrm{RMS}\Bigl(R-\sum_{m=1}^{12}c_{m}\cos\bigl(m(\ell-\phi)\bigr)\Bigr)=1.83\times10^{-6}
+\end{equation}
+on the full-precision geometry curve (below the CMB \(10^{-5}\) level). This Fourier step diagnoses the residual after the physical SR-plus-mass correction; it does not replace that correction. Modes \(m=1\) and \(m=2\) of \(\ln G\) are matched almost exactly by \(\ln(1/S_{\mathrm{model}})\), which is why SR plus mass removes \(95.9\%\) of the starting RMS. Modes \(m=3\), \(4\), and \(5\) together carry about \(92\%\) of the leftover variance: the shell geometry's multipole spectrum falls faster with \(m\) than the relativistic Doppler pattern of a point-mass-plus-Hubble flow. Modes \(m\ge7\) are almost absent from \(\ln G\) and are the geometric high-\(m\) Doppler tail. Figure~\ref{fig:SRp4} shows the longitude harmonics \(m=1\)--\(12\) of that residual.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.36\textheight,keepaspectratio]{Fig_SR_panel4_modes.png}
+\caption{Longitude harmonics \(m=1\)--\(12\) of the post-SR residual (cosines about \(\phi=15.2^{\circ}\)).}
+\label{fig:SRp4}
+\end{figure}
+
+
+\subsection{Leftover after removing \(m=1\)--\(12\)}
+
+Figure~\ref{fig:SRp5} shows what remains after subtracting the \(m=1\)--\(12\) cosine series on the full-precision geometry curve (RMS \(1.83\times10^{-6}\)), compared with \(\pm10^{-5}\). Reaching the CMB amplitude still requires accounting for the \(m=3\)--\(5\) mismatch by additional physics, not by the SR-plus-mass model alone.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.36\textheight,keepaspectratio]{Fig_SR_panel5_leftover_full.png}
+\caption{Leftover after removing \(m=1\)--\(12\) on the full-precision geometry curve (RMS \(1.83\times10^{-6}\)), compared with \(\pm10^{-5}\).}
+\label{fig:SRp5}
+\end{figure}
+
+
+Figure~\ref{fig:SRp6} repeats the same removal on the four-decimal Migkas CSV: the leftover is then dominated by rounding noise (RMS \(2.79\times10^{-5}\)).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.36\textheight,keepaspectratio]{Fig_SR_panel6_leftover_rounded.png}
+\caption{Same removal on the four-decimal Migkas CSV: leftover is dominated by rounding noise (RMS \(2.79\times10^{-5}\)).}
+\label{fig:SRp6}
+\end{figure}
+
+
+\subsection{Error reduction in CMB units}
+
+Figure~\ref{fig:SRwf} summarises the RMS drop after each analysis step in units of the CMB \(10^{-5}\) floor, and the linear share of the starting \(5{,}751\times\) removed by SR plus mass versus the Fourier diagnostic.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.36\textheight,keepaspectratio]{Fig_SR_waterfall.png}
+\caption{Anisotropy left after each analysis step in CMB units, and the linear share of the starting \(5{,}751\times\) removed by SR plus mass versus Fourier modes.}
+\label{fig:SRwf}
+\end{figure}
+
+
+\subsection{Exploratory four-clump sketch}
+
+As an existence check that off-axis mass can source the leftover multipoles, consider four equal clumps at distance \(D\,R_{\mathrm{vis}}\) with \(R_{\mathrm{vis}}=14.3\,\mathrm{Gpc}\), longitudes \(\alpha_{i}\), and masses \(M_{i}\). With the observer at the origin and a dust direction \(\hat{\mathbf{n}}=(\cos\ell,\sin\ell)\), the radial tidal acceleration (observer common mode subtracted) is
+\begin{equation}
+\label{eq:ar}
+a_{r}(\ell)
+=
+\sum_{i=1}^{4}GM_{i}
+\Biggl[
+\frac{(\mathbf{X}_{i}-\hat{\mathbf{n}})\cdot\hat{\mathbf{n}}}{|\mathbf{X}_{i}-\hat{\mathbf{n}}|^{3}}
+-
+\frac{\mathbf{X}_{i}\cdot\hat{\mathbf{n}}}{|\mathbf{X}_{i}|^{3}}
+\Biggr],
+\qquad
+\mathbf{X}_{i}=D R_{\mathrm{vis}}(\cos\alpha_{i},\sin\alpha_{i}),
+\end{equation}
+and the corresponding Doppler imprint over a cosmic age \(t=13.8\,\mathrm{Gyr}\) is
+\begin{equation}
+\label{eq:dTT}
+\frac{\Delta T}{T}(\ell)\approx\frac{a_{r}(\ell)\,t}{c}.
+\end{equation}
+Two mirror pairs about \(\phi=15.2^{\circ}\) give the best-fit longitudes \(\{75^{\circ},162^{\circ},228^{\circ},315^{\circ}\}\) at \(D=1.715\) (\(r=24.5\,\mathrm{Gpc}\)) with equal masses \(M=7.7\times10^{51}\,\mathrm{kg}\). Figure~\ref{fig:14} shows where those masses sit relative to the post-SR residual. It is exploratory only and is not part of the SR treatment proper.
+
+
+
+\subsection{Residual left after the four clumps}
+
+Figure~\ref{fig:clumpres} shows only the leftover after subtracting the four-clump model from the post-SR residual. Starting geometry RMS is \(5.75\times10^{-2}\); after SR plus central mass it is \(2.37\times10^{-3}\) (\(95.9\%\) of the starting RMS removed). After the four clumps it falls to \(8.34\times10^{-4}\)---a further \(2.7\%\) of the starting RMS, \(98.5\%\) removed in total (\(99.98\%\) by variance), and \(88\%\) of the post-SR variance. The maximum absolute residual is \(2.0\times10^{-3}\) near \(\ell\approx195^{\circ}\), about \(83\) times the CMB \(10^{-5}\) level. That leftover is mostly \(m=6\) (\(\sim53\%\) of its variance) plus an \(m=1\) dipole (\(\sim32\%\)), with smaller \(m=5\) and \(m=9\). The clumps remove \(m=3\) and \(m=4\) almost completely but raise \(m=1\) from about \(1.8\times10^{-4}\) to \(6.7\times10^{-4}\), so they trade low-order power for a larger dipole.
+
+
+
+\section{Residual multipoles and limits}
+\label{sec:rheology}
+
+\subsection{What remains after SR plus central mass}
+
+The SR-plus-central-mass treatment describes radial expansion slowed by the central mass. Real matter is not a smooth shell: voids, filaments, and clumps, plus shear and rotation, sit on top of the primary flow. The multipole residuals of Sec.~\ref{sec:sr} are the fingerprint those secondary motions would have to reproduce. No new fits are reported in this section.
+
+\subsection{Decomposing the motion}
+
+At any point, the velocity field \(\mathbf{v}(\mathbf{x})\) can be split into its primary expansion and a perturbation,
+\begin{equation}
+\label{eq:vsplit}
+\mathbf{v}=\mathbf{v}_{0}(r)\,\hat{\mathbf{r}}+\delta\mathbf{v}(\mathbf{x}),
+\end{equation}
+where \(\mathbf{v}_{0}\) is the radial CoE flow used in the SR fit. The local velocity gradient separates uniquely into three parts:
+\begin{equation}
+\label{eq:gradv}
+\frac{\partial v_{i}}{\partial x_{j}}=\frac{1}{3}\,\Theta\,\delta_{ij}+\sigma_{ij}+\omega_{ij}.
+\end{equation}
+Here \(\Theta=\nabla\cdot\mathbf{v}\) is the expansion rate, \(\sigma_{ij}\) is the trace-free symmetric shear, and \(\omega_{ij}\) is the antisymmetric vorticity. The primary CoE flow carries only \(\Theta\). Voids, threads and clumps are made by \(\sigma_{ij}\) together with spatial changes in \(\Theta\); rotation is carried by \(\omega_{ij}\).
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.36\textheight,keepaspectratio]{Fig_SR_4clumps.png}
+\caption{Exploratory four-clump placement [Eqs.~\eqref{eq:ar}--\eqref{eq:dTT}]: post-SR residual compared with the tidal pull of four equal masses of \(7.7\times10^{51}\,\mathrm{kg}\) at \(24.5\,\mathrm{Gpc}\), at \(\ell=75^{\circ}\), \(162^{\circ}\), \(228^{\circ}\), and \(315^{\circ}\).}
+\label{fig:14}
+\end{figure}
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.36\textheight,keepaspectratio]{Fig_SR_4clumps_leftover.png}
+\caption{Residual after the four clumps only (no repeat of Fig.~\ref{fig:14}): RMS \(8.34\times10^{-4}\), \(\max|\Delta T/T|=2.0\times10^{-3}\) near \(195^{\circ}\), \(\sim83\times\) the CMB \(10^{-5}\) floor; \(98.5\%\) of starting RMS removed in total (\(99.98\%\) by variance), \(88\%\) of post-SR variance. Leftover multipoles (\(m=6\) dominant, then \(m=1\), with smaller \(m=5\) and \(m=9\)) are the fingerprint still to be explained.}
+\label{fig:clumpres}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{Fig_SR_z_optB_legbelow.png}
+\caption{Schematic of relative amplitudes versus redshift in four regions: low \(z\), where the Migkas anisotropy persists; intermediate \(z\), the matter-dipole regime; a transition with partial cancellation; and high \(z\), strong cancellation down to the \(10^{-5}\) CMB floor. The geometric multipole \(G\) falls with \(z\) while the SR-plus-mass correction \(C\) rises in importance relative to geometry (\(C/G\) rises), not in absolute amplitude; the residual is \(|\mathrm{geometry}-\mathrm{correction}|\). Markers indicate the Migkas, CatWISE, and CMB regimes. Illustrative, not to scale; region boundaries schematic.}
+\label{fig:zschem}
+\end{figure}
+
+\subsection{The medium is dust, not an elastic solid}
+
+If the matter shell behaved like a constant-density elastic solid at the mean cosmic density, \(\rho\approx8.5\times10^{-27}\,\mathrm{kg\,m^{-3}}\), the residual harmonics would be standing normal modes. Their frequencies would be
+\begin{equation}
+\label{eq:fell}
+f_{\ell}\simeq\frac{\sqrt{\ell(\ell+1)}}{2\pi R}\sqrt{\frac{K}{\rho}},
+\end{equation}
+where \(K\) is the bulk modulus. Even with a radiation-fluid sound speed \(c/\sqrt{3}\), the \(m=3\) mode on the \(R=14.3\,\mathrm{Gpc}\) scale would have a period of roughly \(50\) to \(100\) billion years. After recombination the matter is pressureless dust with \(K\to0\), so there are no restoring oscillations. The appropriate picture is a velocity ripple: matter flows slowly under gravity, and such gravitational flows grow monotonically rather than oscillating.
+
+\subsection{Voids, threads, clumps, and rotation}
+
+Through the Doppler factor \(D_{\mathrm{motion}}\), peculiar velocities change the observed temperature by \(\Delta T/T\approx\delta\mathbf{v}\cdot\hat{\mathbf{n}}/c\). The dominant residual modes \(m=3\) to \(5\) have angular wavelengths \(\lambda_{m}=2\pi R/m\approx18\)--\(30\,\mathrm{Gpc}\) at \(R=14.3\,\mathrm{Gpc}\). Treated as velocity ripples in a shell holding an assumed shell fraction \(\Omega_{s}=0.049\) (earlier shell fit) of the critical mass, they need about \(7\times10^{64}\,\mathrm{J}\), roughly \(0.002\%\) of the shell's kinetic energy. The clumps are not proposed as real objects. Four positive point masses (about \(7.5\)--\(7.8\times10^{51}\,\mathrm{kg}\) each at \(24.5\,\mathrm{Gpc}\); Figs.~\ref{fig:14} and~\ref{fig:clumpres}), each standing for the centre of gravity of accumulated matter in a chaotic web of filaments and voids, reduce the post-SR residual to \(8.34\times10^{-4}\) without rotation or rheology. Nothing requires them to be symmetric. Adding further positive points either drives \(D\) or the masses to unphysical values or rearranges them into near-uniform rings that shift power to higher multipoles; none reaches \(10^{-5}\). The remaining residual is therefore posed as a statistical problem for the cosmic web rather than a list of objects.
+
+If the shell rotates, vorticity \(\omega_{ij}\) is non-zero. In the Fourier analysis about \(\phi=15.2^{\circ}\) [Eq.~\eqref{eq:fourier}], rotation shows up as non-zero sine coefficients \(s_{m}\). In the present SR fit, \(|s_{m}|\sim10^{-8}\), so the residual is axisymmetric: the current model contains no rotation, and the residual itself does not require any. Adding the one-cycle phase factor of Migkas et al.\ raised the geometry fit from \(R^{2}=0.521\) to \(0.845\)--\(0.870\) (Table~\ref{tab:fits}). A rotating model refit to the Migkas data and run through the same SR pipeline would predict specific \(s_{m}\) that the residual could confirm or rule out.
+
+
+Table~\ref{tab:rheology} lists construction degrees of freedom versus the sky observables they set and the Migkas-qualified data used here. Secondary motions map onto multipoles in a simple way: a bulk flow gives \(m=1\), large-scale shear gives \(m=2\), horizon-scale voids, threads and clumps give \(m=3\)--\(6\), smaller structures give \(m\ge7\), and rotation gives sine terms \(s_m\) that break the axisymmetry. The polar shapes of the \(m=1\)--\(12\) harmonics about the shell axis are collected on their own appendix page (Fig.~\ref{fig:modesheet}).
+
+\FloatBarrier
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.38\textheight,keepaspectratio]{Fig_SR_z_nearfar.png}
+\caption{Same cancellation presentation as the earlier central-mass plus motion spectral factor, at near (\(d_{\mathrm{near}}=3\,\mathrm{Gpc}\)) and far (\(d_{\mathrm{far}}=14.3\,\mathrm{Gpc}\)) distances: supplied geometry \(G\), required normalised inverse \(1/G\), and the spectral factor. Cancellation is weak at low \(z\) and strong at \(d_{\mathrm{far}}\) (illustrative). The green curve is that illustrative spectral factor, not \(\gamma(1-\boldsymbol{\beta}\cdot\hat{\mathbf{n}})\) evaluated on Newtonian \(|\beta_E|\approx12.7\) shell speeds; true SR ratios are those of Sec.~\ref{sec:sr}.}
+\label{fig:znearfar}
+\end{figure}
+
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Construction degrees of freedom, the sky observable each sets, and the Migkas-qualified datum used in this paper. Geometry is Fix Point~1 before Migkas; amplitude partly construction-motivated, morphology out-of-sample.}
+\label{tab:rheology}
+\begin{tabular}{@{}p{0.18\linewidth}p{0.38\linewidth}p{0.36\linewidth}@{}}
+\toprule
+DoF & Observable (what that DoF sets on the sky) & Migkas-qualified observation \\
+\midrule
+\(D\) & Overall distance/Hubble scale via \(D/R\) (\(R=14.3\,\mathrm{Gpc}\) fixed); annulus \(D{-}d\ldots D{+}d\) & CatWISE lock: \(D\approx58.2\,\mathrm{Gpc}\); free-\(L\): \(D\approx27.95\,\mathrm{Gpc}\) \\
+\(d\) & Near/far sampling asymmetry along lines of sight & Redshift-slice \(A(\ell)\) at each slice median distance (Fig.~\ref{fig:05}) \\
+\(V(D)\) & Enclosed-volume / density scale for mass budget & CatWISE lock, Table~\ref{tab:fits} \\
+\(M_{\mathrm{tot}}\) & Overall amplitude of \(A/A_{\mathrm{all}}\) (density--distance degeneracy) & \(R^{2}\) and \(\sigma\) rows in Table~\ref{tab:fits} \\
+\(\rho(r)\) & Angular morphology and \(\varphi(\theta)\) rings (Fix Point~1) & Sky MAX/MIN bands vs Migkas Fig.~8 (Fig.~\ref{fig:08}); cluster blue-ring morphology (Fig.~\ref{fig:03}) \\
+\(\theta\) & Directional \(A(\theta)/A_{\mathrm{all}}\) shape along the axis & Migkas \(A/A_{\mathrm{all}}\) vs \(\ell\) (71 bins / sliding cones; Figs.~\ref{fig:04},~\ref{fig:06}) \\
+\(\ell_0\) & Preferred axis on the Galactic sky & \(\ell_0\approx15.2^{\circ}\) (CatWISE lock); \(18.6^{\circ}\) free-\(L\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth,height=0.28\textheight,keepaspectratio]{Fig_SR_migkas_cmb_sidebyside.png}
+\caption{Side-by-side contrast of a low-\(z\) directional sky and a high-\(z\) microwave sky: Migkas et al.\ \(H_0\) anisotropy map (left) and the WMAP 9-year CMB temperature map (right; NASA/WMAP Science Team). The pair illustrates the observational tension that the \(z\)-dependent cancellation is meant to address, not a quantitative prediction from the schematic above.}
+\label{fig:migkascmb}
+\end{figure}
+
+
+\subsection{LTB as the eventual exact class}
+
+Phenomenological Newtonian-plus-SR bookkeeping is not itself an LTB solution. LTB (and related exact inhomogeneous dust cosmologies) remain the natural exact class in which to embed the same off-centre shell once residual multipoles are under control; we do not claim that the present phenomenological fit \emph{is} LTB. Figure~\ref{fig:A1} (placed after the redshift-evolution figures to preserve float order) shows LTB shell-evolution branches.
+
+\subsection{Caveats}
+
+This is a qualitative map, not a solved model. The kinetic-energy estimate assumes velocity ripples in a uniform shell with an assumed shell fraction \(\Omega_{s}=0.049\) (earlier shell fit). The clump sketch assumes a steady tidal pull over \(13.8\) billion years, so its masses are uncertain by a factor of a few. Rotation has not been fitted. A full treatment would solve the continuity, Euler and Poisson equations for pressureless matter on the CoE background and compare the resulting \(c_{m}\) and \(s_{m}\) with the residual fingerprint.
+
+\section{Independent signed matter-dipole constraint}
+\label{sec:matterdipole}
+
+An independent probe of large-scale anisotropy is the dipole in the number counts of distant quasars. Secrest et al.~\cite{secrest2021}, using a CatWISE2020 sample of \(\sim1.36\times10^{6}\) quasars (with Sarkar and collaborators), report a dipole amplitude
+\begin{equation}
+\mathcal{D}\approx0.0155
+\end{equation}
+whose direction is broadly related to the CMB dipole but whose amplitude exceeds the purely kinematic expectation. We use this only as a signed axial constraint on the CoE geometry---not as a new fit target for \(\mathcal{D}\).
+
+\subsection{Hemisphere counts and density contrast}
+
+Write \(N_{\mathrm{high}}\) and \(N_{\mathrm{low}}\) for source counts in opposite hemispheres along a candidate axis. For a pure dipole, the hemisphere-averaged \(\langle\cos\theta\rangle\) factor is \(1/2\), so the fractional count asymmetry relates to \(\mathcal{D}\) but is not identical to a local density contrast:
+\begin{equation}
+\frac{\Delta N}{N}\;\neq\;\frac{\Delta\rho_m}{\rho_m}.
+\end{equation}
+Number-count dipoles mix density, magnification, and selection; they must not be read as raw \(\Delta\rho_m/\rho_m\) at the shell.
+
+\subsection{Signed axis: CoE versus antipode}
+
+The geometry's preferred axis has a CoE end and an anti-CoE end. The shell axis \(\ell_0=15.2^\circ\) (CatWISE lock; \(18.6\)--\(19.9^\circ\) in free-\(L\)/stretched fits) marks the anti-CoE end; the CoE end lies near \(195^\circ\). The observational question is which end is the high-count hemisphere. Great-circle separations between the CatWISE dipole direction, the CMB dipole, and the CoE/anti-CoE ends diagnose whether the matter dipole prefers the CoE or the antipode.
+
+\begin{table}[t]
+\centering
+\caption{Signed matter-dipole checklist (text-only constraint; not a fit to \(\mathcal{D}\)).}
+\label{tab:matterdipole}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Quantity & Value / note \\
+\midrule
+CatWISE/Secrest dipole \(\mathcal{D}\) & \(\approx0.0155\) \\
+Hemisphere factor \(\langle\cos\theta\rangle\) & \(1/2\) for a pure dipole \\
+\(\Delta N/N\) vs \(\Delta\rho_m/\rho_m\) & not interchangeable \\
+CoE-end longitude (Migkas-oriented) & \(\sim195^\circ\) \\
+Anti-CoE / \(\ell_0\) end & \(15.2^\circ\) \\
+Model \(\rho(D-d)\) vs \(\rho(D+d)\) & predicted by geometry; \emph{not} fitted to \(\mathcal{D}\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The model density contrast between the near and far sides of the shell, \(\rho(D-d)\) versus \(\rho(D+d)\), is fixed by the already-chosen mass distribution (Fix Point~1). It is \emph{not} adjusted to reproduce \(\mathcal{D}=0.0155\). Whether the high-count end coincides with the denser side is then a genuine prediction / consistency check. The original CoE spreadsheet already had \(\rho(r)\) among its DoFs \((D,d,V(D),M_{\mathrm{tot}},\rho(r),\theta)\); off-centre, non-uniform \(\rho(r)\) implies a denser side of the sky, which CatWISE~\cite{secrest2021} measured at \(\sim3\%\). Existence and sign were predicted; the amplitude is from data (a \(3\%\) lock). With it (\(D=58.2\), \(D\pm d=43.9/72.5\,\mathrm{Gpc}\)) four laws fit Migkas \(A/A_{\mathrm{all}}\): soft core+tail \(R^2=0.743\) (\(5.1\sigma\)), exponential \(0.716\) (\(5.4\sigma\) local, \(5.1\sigma\) global), power law \(0.72\) (\(5.0\sigma\); not in Table~\ref{tab:fits}) at \(\ell_0=15.2^\circ\); stretched exp.\ \(0.745\) (\(5.0\sigma\), \(\ell_0=19.9^\circ\)). The morphology is insensitive to the law.
+
+\subsection{Observational caveat}
+
+The CatWISE dipole result is debated: later reassessments emphasise partial-sky mode coupling and higher multipoles that can inflate the apparent dipole significance. We therefore treat \(\mathcal{D}\approx0.0155\) and the signed-axis comparison as an independent external constraint with acknowledged systematic uncertainty, not as a definitive rejection or confirmation of the CoE picture.
+
+\section{Redshift evolution of \(A(z,\theta)\)}
+\label{sec:zcancel}
+
+The SR-plus-central-mass cancellation of Sec.~\ref{sec:sr} is not a single number at one redshift. Both the geometric gravitational multipole and the relativistic (Doppler plus central-mass) correction change with distance, so their relative sizes change with \(z\). Multipoles \(a_\ell(z)\) therefore evolve: at low \(z\) the geometric anisotropy is large compared with the relativistic correction, so a Migkas-scale directional Hubble anisotropy can persist; at intermediate \(z\) a matter-dipole regime is natural; through a transition region the cancellation is partial; at high \(z\), approaching last scattering, the relativistic correction grows in importance relative to the geometric term (\(C/G\) rises, not its absolute amplitude) and can cancel most of the geometric multipole, leaving a residual near the CMB \(10^{-5}\) floor.
+
+Figure~\ref{fig:zschem} is a schematic of that hierarchy, with residual \(|\mathrm{geometry}-\mathrm{correction}|\) (illustrative, not to scale; region boundaries schematic). Figure~\ref{fig:znearfar} shows the same cancellation presentation used earlier for the central-mass plus motion spectral factor, now at a near distance (\(d_{\mathrm{near}}=3\,\mathrm{Gpc}\)) and a far distance (\(d_{\mathrm{far}}=14.3\,\mathrm{Gpc}\), numerically equal to \(R\)): at low \(z\) the spectral factor is too weak to track \(1/G\); at high \(z\) it closely follows \(1/G\) (illustrative).
+
+
+
+
+\paragraph{Caveat on the green spectral factor.}
+The green curve in Fig.~\ref{fig:znearfar} is the same illustrative spectral factor as in the earlier central-mass plot, not a raw insertion of Newtonian shell speeds into the special-relativistic Doppler factor \(\gamma(1-\boldsymbol{\beta}\cdot\hat{\mathbf{n}})\). Absolute CoE-frame speeds from the Newtonian shell geometry reach \(|\beta_E|\approx12.7\), which cannot be fed unmodified into that formula. The quantitative SR temperature ratios remain those of Sec.~\ref{sec:sr}, with subluminal \(\beta\) from the fitted kinematics. Likewise, schematic comparisons of \(G\) versus \(1/G\) must not be confused with a claim that the physical correction equals \(1/G\) at every \(z\).
+
+Figure~\ref{fig:migkascmb} places the low-\(z\) Migkas \(H_0\) anisotropy map beside a WMAP 9-year CMB temperature map to contrast a strongly directional late-time sky with the nearly isotropic high-\(z\) microwave sky. This section does not introduce a new fit; it frames the coexistence problem already quantified in Sec.~\ref{sec:sr}.
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.88\linewidth,height=0.34\textheight,keepaspectratio]{FigA1_ltb_shell.png}
+\caption{LTB shell-evolution solutions: flat matter-plus-radiation track and dust branches at \(E=0\), \(E>0\), and \(E<0\).}
+\label{fig:A1}
+\end{figure}
+
+
+\section{Discussion and conclusions}
+\label{sec:conclusions}
+
+\subsection{Chronology recapitulated}
+
+We began from apparent SN~Ia acceleration as an inverse problem, constructed an off-centre finite geometry with prior angular morphology (Fix Point~1), compared morphology out-of-sample to Migkas et al., showed that pure geometry alone overshoots the CMB floor, completed the photon physics with SR Doppler and central mass (Fix Point~2; \(95.9\%\) RMS cancellation), mapped residual multipoles, confronted an independent signed matter dipole, and framed the redshift hierarchy \(A(z,\theta)\). Apparent late-time acceleration remains an off-centre sampling artefact: neither dark energy nor outward shell acceleration is required. A contracting CoE geometry can share the average appearance of acceleration while differing in angular signature.
+
+\subsection{Fitted versus predicted}
+
+\FloatBarrier
+\begin{table}[t]
+\centering
+\caption{Prediction ledger: each claim, where it came from, how it is tested, and the outcome.}
+\label{tab:ledger}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.17\linewidth}>{\raggedright\arraybackslash}p{0.22\linewidth}>{\raggedright\arraybackslash}p{0.27\linewidth}>{\raggedright\arraybackslash}p{0.26\linewidth}@{}}
+\toprule
+Claim & Origin & Test & Outcome \\
+\midrule
+Migkas \(A(\ell)\) curve & Shape a priori (Fix Point~1); orientation and scale fitted & Migkas et al.\ cluster anisotropy & Fit, not an out-of-sample pass: \(R^{2}\approx0.52\)--\(0.87\), \(4.1\)--\(5.3\sigma\) global \\
+\(\varphi(\theta)\) rings & Prior geometry & Celestial-sphere rings (Fig.~3) & Observed \\
+Density gradient sign & \(\rho(r)\) DoF, before CatWISE & Secrest et al.\ dipole, longitude only, axisymmetry assumed & Sign check passed at hemisphere level (\(\Delta\ell\approx43^\circ\); chance \(\sim1\) in \(4\)); competes with kinematic reading \\
+CMB isotropy & SR + central mass (Fix Point~2) & Planck \(\sim10^{-5}\) floor & Addressed qualitatively: \(95.9\%\) cancelled, residual \(2.37\times10^{-3}\); four-clump sketch \(8.34\times10^{-4}\) (\(\sim83\times\) floor). Open inverse problem \\
+\(A(z,\theta)\) hierarchy & Redshift-dependent cancellation & Binned anisotropy vs \(z\) & Open \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The CatWISE-locked fits give \(D\approx58.2\,\mathrm{Gpc}\), \(D{\pm}d\approx43.9/72.5\,\mathrm{Gpc}\), \(\ell_0=15.2^\circ\); the free-\(L\) exponential gives \(D\approx27.95\,\mathrm{Gpc}\); an earlier, superseded LTB shell fit gave \(D\approx32.9\,\mathrm{Gpc}\). Special-relativistic Doppler plus central-mass gravitational redshift cancel \(95.9\%\) of the geometric RMS (residual \(2.37\times10^{-3}\)); leftover \(m=3\)--\(5\) multipoles after SR (\(m=6\) and \(m=1\) after the four-clump sketch) are the fingerprint of what remains. The open problem is whether those leftovers can be brought to the \(10^{-5}\) level by additional physics without spoiling the Migkas anisotropy. We frame it as a ladder, each rung scored by a Bayes factor \(\ln B\) against a \(\Lambda\)CDM random-fluctuation baseline. Rung~0 is the off-centre bound of Alnes and Amarzguioui and of Foreman et al.: an observer \(\sim58\,\mathrm{Gpc}\) from the CoE needs an explicit dipole budget, including the extra \(m=1\) the clumps introduce. Rung~1, mass points, must predict number counts, lensing and flows. Rung~2, rotation, needs a spin-handedness or CMB-parity test. Rung~3, rheology, must fit \(A(z,\theta)\) with one law. The end goal is \(\sim10^{-5}\) on every ring plus one new dataset predicted in advance; the next step is to find further multipole signals to fit against the geometry. The goal is coexistence of both datasets under one off-centre shell geometry---a logical alternative to the homogeneous--isotropic cosmological principle, not a new concordance constant.
+
+\paragraph{The model universe at a glance.}
+\begin{center}\footnotesize
+\begin{tabular}{@{}p{0.24\linewidth}p{0.70\linewidth}@{}}
+\toprule
+Distances & CoE--observer distance \(D\approx58.2\,\mathrm{Gpc}\) (CatWISE lock; free-\(L\): \(27.95\,\mathrm{Gpc}\)); lines of sight sample the annulus \(D{-}d\ldots D{+}d\approx43.9\ldots72.5\,\mathrm{Gpc}\); vision radius \(R=14.3\,\mathrm{Gpc}\) fixed (shell rule \(D\gtrsim14.7\,\mathrm{Gpc}\), observer mid-shell). \\
+Masses & \(M_{\mathrm{tot}}\) sets the amplitude of \(A/A_{\mathrm{all}}\) through the density--distance degeneracy and is not quoted separately; \(\rho(r)\) sets the morphology (exponential, \(L\approx6.07\,\mathrm{Gpc}\) free-\(L\), or soft core). The CMB sketch adds four equal clumps of \(7.7\times10^{51}\,\mathrm{kg}\) at \(24.5\,\mathrm{Gpc}\), \(\ell=75^\circ,162^\circ,228^\circ,315^\circ\). \\
+\(V(D)\), expansion & \(V(D)\) is the enclosed-volume/density scale of the mass budget (CatWISE lock); expansion is radial from the CoE with a common scale \(s\), velocities from energy conservation in the central mass. \\
+Viewing angle & \(\theta=\ell-\phi\) from the CoE axis, axis at \(\ell_0\approx15.2^\circ\) (\(18.6^\circ\) free-\(L\)); \(\theta=0\) points away from the CoE. \\
+Age & \(t=13.8\,\mathrm{Gyr}\) for the clump Doppler imprint. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\FloatBarrier
+\clearpage
+\appendix
+\renewcommand{\thefigure}{A\arabic{figure}}
+\setcounter{figure}{0}
+\captionsetup{skip=2pt,font=footnotesize,labelfont=bf}
+
+\begingroup
+\footnotesize
+\setlength{\itemsep}{0.1em}
+\setlength{\parsep}{0pt}
+\begin{thebibliography}{99}
+\bibitem{riess1998}
+A.~G.~Riess et al., \textit{Astron.\ J.} \textbf{116}, 1009 (1998).
+\bibitem{perlmutter1999}
+S.~Perlmutter et al., \textit{Astrophys.\ J.} \textbf{517}, 565 (1999).
+\bibitem{ellis1987}
+G.~F.~R.~Ellis and W.~R.~Stoeger, \textit{Class.\ Quantum Grav.} \textbf{4}, 1697 (1987).
+\bibitem{hubble1929}
+E.~Hubble, \textit{Proc.\ Natl.\ Acad.\ Sci.\ USA} \textbf{15}, 168 (1929).
+\bibitem{migkas2020}
+K.~Migkas et al., \textit{Astron.\ Astrophys.} \textbf{636}, A15 (2020); arXiv:2004.03305.
+\bibitem{sedov1946}
+L.~I.~Sedov, \textit{J.\ Appl.\ Math.\ Mech.} \textbf{10}, 241 (1946).
+\bibitem{taylor1950}
+G.~I.~Taylor, \textit{Proc.\ R.\ Soc.\ Lond.\ A} \textbf{201}, 159 (1950).
+\bibitem{lemaitre1933}
+G.~Lema\^itre, \textit{Ann.\ Soc.\ Sci.\ Bruxelles} \textbf{A53}, 51 (1933).
+\bibitem{tolman1934}
+R.~C.~Tolman, \textit{Proc.\ Natl.\ Acad.\ Sci.\ USA} \textbf{20}, 169 (1934).
+\bibitem{bondi1947}
+H.~Bondi, \textit{Mon.\ Not.\ R.\ Astron.\ Soc.} \textbf{107}, 410 (1947).
+\bibitem{planck2020}
+Planck Collaboration, \textit{Astron.\ Astrophys.} \textbf{641}, A7 (2020).
+\bibitem{secrest2021}
+N.~J.~Secrest, S.~von Hausegger, M.~Rameez, R.~Mohayaee, S.~Sarkar, and J.~Colin, \textit{Astrophys.\ J.\ Lett.} \textbf{908}, L51 (2021); arXiv:2009.14826.
+\end{thebibliography}
+\endgroup
+
+\section*{Appendix}
+Appendix captions use the earlier spreadsheet parametrisation (\(D/L\), \(d/D\), \(\alpha\), \(\kappa\), Amp, \(\varphi\)), superseded by Table~\ref{tab:fits}.
+\noindent\textbf{Appendix contents.}
+Supporting material for the chronological body (Secs.~\ref{sec:intro}--\ref{sec:conclusions}); the fit-path figures and the heatmap, level-set and Amp$\times\varphi$ sweeps are combined into multi-panel figures.
+Figure~\ref{fig:Afit} gathers the \(A/A_{\mathrm{all}}\) and \(B/B_{\mathrm{all}}\) fit path: sine rotation, a multiplicative \(2\ell\) correction, then the coupled \(A\)/\(B\) solutions; Migkas reports both the normalisation \(A\) and the slope \(B\) of \(L_X\)--\(T\) versus Galactic longitude, with \(A/A_{\mathrm{all}}\) the main-text directional Hubble proxy and \(B/B_{\mathrm{all}}\) the second feature on the same bins.
+Figure~\ref{fig:Aheat} gathers the sheet-parameter \(R^2\) heatmaps; Figure~\ref{fig:Alev} gathers the matching one-parameter level sets (\(D/L\), \(\alpha\), $\kappa$, $d/D$).
+Figure~\ref{fig:Aamp} shows the Amp$\times\varphi$ heatmaps; Figure~\ref{fig:Aampphi} shows the Amp$\times\varphi$ level-set families on Migkas axes.
+Figure~\ref{fig:modesheet} is the \(m=1\)--\(12\) harmonics sheet on its own page.
+Figure~\ref{fig:A3ncp} places the CoE on the NCP-centered sky.
+
+\clearpage
+\vspace*{-0.42in}
+\begin{center}
+\makebox[\linewidth][c]{\includegraphics[width=6.9in]{FigApp_fitpath_2x3.png}}
+\captionof{figure}{\(A/A_{\mathrm{all}}\) and \(B/B_{\mathrm{all}}\) fit path versus Migkas (fit over residual where stacked). (a) Axisymmetric AF before/after sine rotation: \(R^2\) from \(0.307\) to \(0.553\) (earlier AF model); bottom residual is the rotation correction itself. (b) Amp\(\times\sin\) before/after a multiplicative \(2\ell\) correction (\(\varepsilon=-0.043\), \(\psi=176^\circ\)): \(R^2\) from \(0.746\) to \(0.875\); bottom isolates the \(2\ell\) residual. (c) Best \(A\) + associated \(B\) with \(A\)-tuned \(2\ell\) on both (\(\mathrm{Amp}_A=-0.06\), \(\varphi=11.5^\circ\), \(\mathrm{Amp}_B=+0.06\)): \(A\) improves (\(R^2=0.876\)); the same \(2\ell\) hurts \(B\) (\(0.789\to 0.663\)). (d) Best \(B\) + associated \(A\) with \(B\)-tuned \(2\ell\) on both (\(\mathrm{Amp}_B=-0.06\), \(\varphi=184.9^\circ\), \(\mathrm{Amp}_A=+0.06\)): \(B\) holds \(R^2\approx 0.79\); \(A\) gets only a mild lift. (e, f) Sheet sine-rotation scatter after phase \(\varphi\approx 0.35\,\mathrm{rad}\): Model \(A\) versus Migkas \(A\) (\(R^2\approx 0.74\)) and Model \(B\) versus Migkas \(B\) (\(R^2\approx 0.73\)).}
+\label{fig:Afit}
+\end{center}
+
+\clearpage
+\captionsetup{skip=2pt,font=footnotesize,labelfont=bf}
+\vspace*{-0.42in}
+\begin{center}
+\makebox[\linewidth][c]{\includegraphics[width=5.95in]{FigApp_heat_2x2.png}}
+\captionof{figure}{\(R^2\) heatmaps (circle baseline, star best). (a) $D/L\times d/D$, $R^2_A$: best (6.75, 0.78), 0.786. (b) Same, $R^2_B$: (10.0, 0.26), 0.742. (c) $D/L\times\alpha$, $R^2_A$: (3.25, 2.0), 0.679. (d) $\kappa\times\alpha$, $R^2_A$: (0.4, 0.5), 0.668. Best fits in (a)--(c) lie on the grid edge.}
+\label{fig:Aheat}
+
+\vspace{0.2em}
+\makebox[\linewidth][c]{\includegraphics[width=5.95in]{FigApp_level_2x2.png}}
+\captionof{figure}{One-at-a-time level sets of $A/A_{\mathrm{all}}$ vs.\ Migkas, others at baseline ($D/L=5.9$, $d/D=0.1$, $\alpha=1$, $\kappa=0.2306$): vary (a) $D/L$, (b) $\alpha$, (c) $\kappa$, (d) $d/D$ with $\alpha$ held at 1.3.}
+\label{fig:Alev}
+\end{center}
+
+\clearpage
+\vspace*{-0.42in}
+\begin{center}
+\makebox[\linewidth][c]{\includegraphics[width=6.9in]{FigApp_heat_Amp_phi_1x2.png}}
+\captionof{figure}{Amp$\times\varphi$ \(R^2\) heatmaps (sheet AF/AN). (a) $A/A_{\mathrm{all}}$: your Amp$=-0.06$, $\varphi=0.35$\,rad ($20^\circ$), $R^2=0.712$; dense best Amp$=-0.050$, $\varphi=35.0^\circ$, $R^2=0.737$. (b) $B/B_{\mathrm{all}}$ (sheet AN$\times$Amp$_B\times\sin$): best Amp$_B=-0.06$, $\varphi=185^\circ$, $R^2=0.790$; reference Amp$_B=+0.06$ (opp.\ Amp$_A$) and $\varphi\sim12^\circ$--$20^\circ$ (A sheet).}
+\label{fig:Aamp}
+
+\vspace{0.2em}
+\makebox[\linewidth][c]{\includegraphics[width=6.9in]{FigApp_level_Amp_phi_AB.jpg}}
+\captionof{figure}{Level-set curve families on Migkas Fig.~6 axes: $\varphi$ and Amp$_A$ sweeps for $A/A_{\mathrm{all}}$ (top) and $B/B_{\mathrm{all}}$ (bottom). Starred curves mark Amp$_A=-0.06$, $\varphi=20^\circ$.}
+\label{fig:Aampphi}
+\end{center}
+
+\clearpage
+\begin{center}
+\includegraphics[width=0.92\linewidth,height=0.82\textheight,keepaspectratio]{Fig_SR_modes_sheet.png}
+\captionof{figure}{Polar shapes of longitude harmonics \(m=1\)--\(12\) about the shell axis (illustration of the multipole basis used in Sec.~\ref{sec:sr} and Sec.~\ref{sec:rheology}).}
+\label{fig:modesheet}
+\end{center}
+\clearpage
+
+
+
+
+\clearpage
+\section*{Acknowledgments}
+Luke for the problem, Gideon for the question, Dr.~Rindler for the guidance. I'm probably wrong, but at least it was fun.
+
+\vspace{0.8em}
+\captionsetup{skip=2pt,font=footnotesize,labelfont=bf}
+\begin{center}
+\includegraphics[width=\linewidth,height=0.72\textheight,keepaspectratio]{coe_ncp_hemisphere_path.png}
+\captionof{figure}{CoE on the northern celestial hemisphere (NCP-centered): fixed ICRS direction from Galactic $(l,b)=(180^\circ,-15^\circ)$; nearest bright star $\approx$ Aldebaran ($\sim 5.3^\circ$). Uses the earlier rounded axis.}
+\label{fig:A3ncp}
+\end{center}
+
+
+
+
+\end{document}
