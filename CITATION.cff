@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use these ideas, please cite this repository."
+title: "CoE Cosmology: Center-of-Expansion shell cosmology (draft)"
+authors:
+  - alias: kiwipumpkin
+date-released: 2026-10-13
+repository-code: "https://github.com/kiwipumpkin/coe-cosmology"
+url: "https://github.com/kiwipumpkin/coe-cosmology"
+license: MIT
+type: software
