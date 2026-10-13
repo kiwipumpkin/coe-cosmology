@@ -1,0 +1,26 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+     6s smooth CCCCVVVV      warm_inside0   left=6.875 viol=1.1e-05 inside=8/8
+    15s smooth CCCCVVVV      warm_inside8   left=6.568 viol=9.1e-06 inside=8/8
+    41s smooth CCCCVVVV      warm_inside4   left=3.860 viol=1.2e-05 inside=8/8
+    42s smooth CCCCVVVV      cold2          left=11.688 viol=3.6e-05 inside=4/8
+    46s smooth CCCCVVVV      mixed1         left=3.660 viol=4.6e-04 inside=6/8
+    53s smooth CCCCVVVV      mixed9         left=5.311 viol=8.1e-06 inside=5/8
+    54s smooth CCCCVVVV      cold3          left=15.373 viol=1.8e-07 inside=5/8
+    61s smooth CCCCVVVV      cold6          left=26.309 viol=5.0e-06 inside=2/8
+    83s smooth CCCCVVVV      cold11         left=7.278 viol=1.2e-05 inside=3/8
+   116s smooth CCCCVVVV      mixed5         left=5.636 viol=9.6e-05 inside=3/8
+   131s smooth CCCCCCCC      cold3          left=12.593 viol=8.3e-05 inside=3/8
+   174s smooth CCCCVVVV      cold10         left=20.525 viol=3.0e-06 inside=2/8
+   177s smooth CCCCCCCC      warm_inside4   left=11.121 viol=1.1e-06 inside=8/8
+   199s smooth CCCCCCCC      warm_inside0   left=11.723 viol=1.4e-06 inside=8/8
+   231s smooth CCCCCCCC      cold2          left=42.818 viol=6.0e-05 inside=4/8
+   231s smooth CCCCVVVV      cold7          left=17.895 viol=1.4e-06 inside=5/8
+   234s smooth CCCCCCCC      cold1          left=80.842 viol=4.0e-06 inside=0/8
+   270s smooth CCCCCCCC      cold11         left=6.131 viol=5.0e-05 inside=3/8
+   278s smooth CCCCCCCC      cold7          left=30.823 viol=6.8e-04 inside=4/8
+   279s smooth CCCCCCCC      warm_inside8   left=9.334 viol=1.0e-06 inside=8/8
+   331s smooth CCCCCCCC      cold6          left=13.171 viol=4.1e-07 inside=5/8
+   334s smooth CCCCCCCC      cold5          left=23.005 viol=0.0e+00 inside=4/8
+   334s smooth CCCCCCCC      cold10         left=7.436 viol=1.2e-05 inside=6/8
+   362s smooth CCCCCCCC      cold9          left=10.410 viol=2.9e-09 inside=4/8
+done 361.89357805252075

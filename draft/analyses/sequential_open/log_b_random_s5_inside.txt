@@ -1,0 +1,9 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+random s5 voids=2400 objs=16800 t=63s ckpt
+random s5 voids=3500 objs=24500 t=124s ckpt
+random s5 voids=4300 objs=30100 t=192s ckpt
+random s5 voids=4800 objs=33600 t=253s ckpt
+random s5 voids=5200 objs=36400 t=320s ckpt
+random s5 voids=5500 objs=38500 t=402s ckpt
+random s5 voids=5700 objs=39900 t=490s ckpt
+DONE {'rule': 'random', 'seed': 5, 'Rv': 1.5, 'n_obj': 41104, 'n_void': 5872, 'n_clu': 35232, 'void_vol_frac': 0.29549512077192425, 'net_kg': 1.0799977465752441e+36, 'min_gap_gpc': 0.02000516600809285, 'final_left': 2606.251051657856, 'min_left': 239.72599005591843, 'argmin': 83, 'web_rms': 2590.0448793063815, 'final_amps': [3063.0663315733377, 1028.3320550202682, 403.0067083389617, 538.801843033832, 795.8417040007837, 437.8081306065341], 'where_all': {'n': 41104, 'inside_us': 1405, 'in_core': 0, 'beyond_42_9': 0}, 'where_voids': {'n': 5872, 'inside_us': 212, 'in_core': 0, 'beyond_42_9': 0}, 'where_clusters': {'n': 35232, 'inside_us': 1193, 'in_core': 0, 'beyond_42_9': 0}}

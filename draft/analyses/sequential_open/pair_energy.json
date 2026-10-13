@@ -1,0 +1,222 @@
+{
+ "del": {
+  "before": {
+   "cc": {
+    "n": 82803,
+    "total_J": -2.130845780564122e+69,
+    "median_J": -1.8578831766913634e+64
+   },
+   "cv": {
+    "n": 41467,
+    "total_J": 4.744777481985667e+69,
+    "median_J": 1.2253153054973816e+65
+   },
+   "vv": {
+    "n": 1977,
+    "total_J": -6.932397512813833e+68,
+    "median_J": -3.576724479938714e+65
+   },
+   "total_J": 1.9206919501401603e+69,
+   "force": {
+    "clusters": {
+     "n": 9092,
+     "median_absF_N": 3.8281231738679466e+39,
+     "mean_F_radial_N": -5.21598575540325e+37,
+     "mean_F_toward_ring_N": 1.9660286505202569e+37,
+     "frac_toward_ring": 0.5037395512538495
+    },
+    "voids": {
+     "n": 1469,
+     "median_absF_N": 1.042988762383709e+40,
+     "mean_F_radial_N": 3.104044869904081e+38,
+     "mean_F_toward_ring_N": 7.734312198456346e+37,
+     "frac_toward_ring": 0.49353301565690944
+    },
+    "moved": {
+     "n": 600,
+     "median_absF_N": 4.173084886642037e+39,
+     "mean_F_radial_N": 1.6148568493201457e+38,
+     "mean_F_toward_ring_N": 6.180381339895587e+36,
+     "frac_toward_ring": 0.435
+    },
+    "not moved": {
+     "n": 9961,
+     "median_absF_N": 4.4469869447652814e+39,
+     "mean_F_radial_N": -1.1559546677197343e+37,
+     "mean_F_toward_ring_N": 2.8979032456248177e+37,
+     "frac_toward_ring": 0.5063748619616505
+    },
+    "within 3 Gpc of ring": {
+     "n": 137,
+     "median_absF_N": 3.7998775082447285e+39,
+     "mean_F_toward_ring_N": 7.050853359853399e+38,
+     "frac_toward_ring": 0.5109489051094891
+    }
+   }
+  },
+  "after": {
+   "cc": {
+    "n": 83017,
+    "total_J": -2.1356635880000054e+69,
+    "median_J": -1.8601996340811056e+64
+   },
+   "cv": {
+    "n": 41301,
+    "total_J": 4.7129933019726006e+69,
+    "median_J": 1.2197653364305821e+65
+   },
+   "vv": {
+    "n": 2010,
+    "total_J": -7.159606870956485e+68,
+    "median_J": -3.6146037204483983e+65
+   },
+   "total_J": 1.8613690268769458e+69,
+   "force": {
+    "clusters": {
+     "n": 9083,
+     "median_absF_N": 3.8573010398630925e+39,
+     "mean_F_radial_N": -6.197040609582421e+37,
+     "mean_F_toward_ring_N": 4.581147570046332e+37,
+     "frac_toward_ring": 0.5099636683915006
+    },
+    "voids": {
+     "n": 1469,
+     "median_absF_N": 1.0393740504128816e+40,
+     "mean_F_radial_N": 2.986624183389107e+38,
+     "mean_F_toward_ring_N": -5.295717784926142e+37,
+     "frac_toward_ring": 0.4901293396868618
+    },
+    "moved": {
+     "n": 591,
+     "median_absF_N": 3.358633663568971e+39,
+     "mean_F_radial_N": 6.4445740941244065e+37,
+     "mean_F_toward_ring_N": -4.541322757441477e+37,
+     "frac_toward_ring": 0.5025380710659898
+    },
+    "not moved": {
+     "n": 9961,
+     "median_absF_N": 4.4696403617732837e+39,
+     "mean_F_radial_N": -1.6286471129885217e+37,
+     "mean_F_toward_ring_N": 3.6658042066381117e+37,
+     "frac_toward_ring": 0.5074791687581568
+    },
+    "within 3 Gpc of ring": {
+     "n": 163,
+     "median_absF_N": 3.195502000570019e+39,
+     "mean_F_toward_ring_N": -3.2018842878586844e+37,
+     "frac_toward_ring": 0.48466257668711654
+    }
+   }
+  }
+ },
+ "r6": {
+  "before": {
+   "cc": {
+    "n": 764371,
+    "total_J": -8.830573015309654e+69,
+    "median_J": -9.017680468154529e+63
+   },
+   "cv": {
+    "n": 251373,
+    "total_J": 1.6351465279497883e+70,
+    "median_J": 5.374076096338319e+64
+   },
+   "vv": {
+    "n": 18507,
+    "total_J": -6.386898728998926e+69,
+    "median_J": -3.2824395800543254e+65
+   },
+   "total_J": 1.1339935351893044e+69,
+   "force": {
+    "clusters": {
+     "n": 9092,
+     "median_absF_N": 4.394584071767437e+39,
+     "mean_F_radial_N": -4.503325372742305e+37,
+     "mean_F_toward_ring_N": -5.047043071868325e+36,
+     "frac_toward_ring": 0.49758029036515616
+    },
+    "voids": {
+     "n": 1469,
+     "median_absF_N": 1.250811396788075e+40,
+     "mean_F_radial_N": 3.478412825634774e+38,
+     "mean_F_toward_ring_N": 8.377804416638795e+37,
+     "frac_toward_ring": 0.4765146358066712
+    },
+    "moved": {
+     "n": 600,
+     "median_absF_N": 4.6659551579147864e+39,
+     "mean_F_radial_N": 2.8607249291970892e+38,
+     "mean_F_toward_ring_N": -1.488334637801133e+38,
+     "frac_toward_ring": 0.4116666666666667
+    },
+    "not moved": {
+     "n": 9961,
+     "median_absF_N": 5.0641064505590455e+39,
+     "mean_F_radial_N": -7.038148233692154e+36,
+     "mean_F_toward_ring_N": 1.671341326564252e+37,
+     "frac_toward_ring": 0.49964862965565704
+    },
+    "within 3 Gpc of ring": {
+     "n": 137,
+     "median_absF_N": 4.466114179424537e+39,
+     "mean_F_toward_ring_N": 4.287754961348503e+38,
+     "frac_toward_ring": 0.45985401459854014
+    }
+   }
+  },
+  "after": {
+   "cc": {
+    "n": 764013,
+    "total_J": -8.844199469260871e+69,
+    "median_J": -9.022818457916156e+63
+   },
+   "cv": {
+    "n": 251172,
+    "total_J": 1.629471513870392e+70,
+    "median_J": 5.37204728311318e+64
+   },
+   "vv": {
+    "n": 18520,
+    "total_J": -6.3460108190008665e+69,
+    "median_J": -3.2671814215214005e+65
+   },
+   "total_J": 1.104504850442181e+69,
+   "force": {
+    "clusters": {
+     "n": 9083,
+     "median_absF_N": 4.349313374005823e+39,
+     "mean_F_radial_N": -6.42223214452354e+37,
+     "mean_F_toward_ring_N": 3.600814636400114e+37,
+     "frac_toward_ring": 0.5056699328415721
+    },
+    "voids": {
+     "n": 1469,
+     "median_absF_N": 1.2396712754293964e+40,
+     "mean_F_radial_N": 4.310711000425615e+38,
+     "mean_F_toward_ring_N": -2.0945563443853343e+38,
+     "frac_toward_ring": 0.4676650782845473
+    },
+    "moved": {
+     "n": 591,
+     "median_absF_N": 3.518376015855723e+39,
+     "mean_F_radial_N": 1.867663907437445e+38,
+     "mean_F_toward_ring_N": -1.8893798534080245e+38,
+     "frac_toward_ring": 0.47377326565143824
+    },
+    "not moved": {
+     "n": 9961,
+     "median_absF_N": 5.0897225190596617e+39,
+     "mean_F_radial_N": -6.070358061851551e+36,
+     "mean_F_toward_ring_N": 1.31547049262555e+37,
+     "frac_toward_ring": 0.5019576347756249
+    },
+    "within 3 Gpc of ring": {
+     "n": 163,
+     "median_absF_N": 3.272486971974333e+39,
+     "mean_F_toward_ring_N": -2.0919904183855755e+38,
+     "frac_toward_ring": 0.43558282208588955
+    }
+   }
+  }
+ }
+}

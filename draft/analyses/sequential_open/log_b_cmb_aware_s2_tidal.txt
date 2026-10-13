@@ -1,0 +1,6 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+cmb_aware s2 voids=1100 objs=7700 t=69s ckpt
+cmb_aware s2 voids=1500 objs=10500 t=136s ckpt
+cmb_aware s2 voids=1800 objs=12600 t=215s ckpt
+cmb_aware s2 voids=2100 objs=14700 t=278s ckpt
+DONE {'rule': 'cmb_aware', 'seed': 2, 'Rv': 1.5, 'n_obj': 16884, 'n_void': 2412, 'n_clu': 14472, 'void_vol_frac': 0.33948495564905756, 'net_kg': 4.153837486827862e+36, 'min_gap_gpc': 0.020052813968026217, 'final_left': 638.8612270373039, 'min_left': 42.471445296037125, 'argmin': 14480, 'web_rms': 654.309025312225, 'final_amps': [757.0018261007762, 46.249778461475465, 160.19968142248098, 138.10391735411628, 86.54983329021063, 35.89916913368162], 'where_all': {'n': 16884, 'inside_us': 1673, 'in_core': 0, 'beyond_42_9': 0}, 'where_voids': {'n': 2412, 'inside_us': 239, 'in_core': 0, 'beyond_42_9': 0}, 'where_clusters': {'n': 14472, 'inside_us': 1434, 'in_core': 0, 'beyond_42_9': 0}}

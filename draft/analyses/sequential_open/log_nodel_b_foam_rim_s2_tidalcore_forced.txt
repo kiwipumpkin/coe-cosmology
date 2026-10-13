@@ -1,0 +1,64 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+  stage1 forced chunk 0 left=351.09
+  stage1 forced chunk 40 left=119.84
+  stage1 forced chunk 80 left=55.10
+  stage1 forced chunk 120 left=46.14
+  stage1 forced chunk 160 left=13.03
+  stage1 forced chunk 200 left=12.43
+resumed b_foam_rim_s2_tidalcore 221
+  b_foam_rim_s2_tidalcore edited=245 left=10.83 t=4s
+  b_foam_rim_s2_tidalcore edited=269 left=9.11 t=9s
+  b_foam_rim_s2_tidalcore edited=293 left=7.48 t=13s
+  b_foam_rim_s2_tidalcore edited=317 left=6.83 t=17s
+  b_foam_rim_s2_tidalcore edited=341 left=5.45 t=30s
+  b_foam_rim_s2_tidalcore edited=365 left=4.87 t=34s
+  b_foam_rim_s2_tidalcore edited=389 left=4.60 t=38s
+  b_foam_rim_s2_tidalcore edited=413 left=4.46 t=40s
+  b_foam_rim_s2_tidalcore edited=437 left=4.37 t=44s
+  b_foam_rim_s2_tidalcore edited=461 left=4.15 t=52s
+  b_foam_rim_s2_tidalcore edited=485 left=4.09 t=55s
+  b_foam_rim_s2_tidalcore edited=509 left=3.81 t=60s
+  b_foam_rim_s2_tidalcore edited=533 left=3.69 t=63s
+  b_foam_rim_s2_tidalcore edited=557 left=3.62 t=66s
+  b_foam_rim_s2_tidalcore edited=581 left=3.50 t=73s
+  b_foam_rim_s2_tidalcore edited=605 left=3.31 t=76s
+  b_foam_rim_s2_tidalcore edited=629 left=3.17 t=79s
+  b_foam_rim_s2_tidalcore edited=653 left=3.14 t=83s
+  b_foam_rim_s2_tidalcore edited=677 left=3.10 t=86s
+  b_foam_rim_s2_tidalcore edited=701 left=3.06 t=329s
+  b_foam_rim_s2_tidalcore edited=725 left=3.04 t=334s
+  b_foam_rim_s2_tidalcore edited=749 left=3.02 t=338s
+  b_foam_rim_s2_tidalcore edited=773 left=2.82 t=341s
+  b_foam_rim_s2_tidalcore edited=797 left=2.81 t=343s
+  b_foam_rim_s2_tidalcore edited=821 left=2.78 t=351s
+  b_foam_rim_s2_tidalcore edited=845 left=2.77 t=354s
+  b_foam_rim_s2_tidalcore edited=869 left=2.77 t=357s
+  b_foam_rim_s2_tidalcore edited=893 left=2.76 t=361s
+  b_foam_rim_s2_tidalcore edited=917 left=2.68 t=364s
+  b_foam_rim_s2_tidalcore edited=941 left=2.61 t=372s
+  b_foam_rim_s2_tidalcore edited=965 left=2.61 t=375s
+  b_foam_rim_s2_tidalcore edited=989 left=2.60 t=378s
+  b_foam_rim_s2_tidalcore edited=1013 left=2.60 t=381s
+  b_foam_rim_s2_tidalcore edited=1037 left=2.59 t=384s
+  b_foam_rim_s2_tidalcore edited=1061 left=2.58 t=392s
+  b_foam_rim_s2_tidalcore edited=1085 left=2.58 t=395s
+  b_foam_rim_s2_tidalcore edited=1109 left=2.57 t=399s
+  b_foam_rim_s2_tidalcore edited=1133 left=2.53 t=402s
+  b_foam_rim_s2_tidalcore edited=1157 left=2.53 t=405s
+  b_foam_rim_s2_tidalcore edited=1181 left=2.52 t=412s
+  b_foam_rim_s2_tidalcore edited=1205 left=2.52 t=415s
+  b_foam_rim_s2_tidalcore edited=1229 left=2.51 t=418s
+  b_foam_rim_s2_tidalcore edited=1253 left=2.51 t=421s
+  b_foam_rim_s2_tidalcore edited=1277 left=2.51 t=423s
+  b_foam_rim_s2_tidalcore edited=1301 left=2.51 t=431s
+  b_foam_rim_s2_tidalcore edited=1325 left=2.51 t=435s
+  b_foam_rim_s2_tidalcore edited=1349 left=2.51 t=439s
+  b_foam_rim_s2_tidalcore edited=1349 left=2.51 t=442s
+  b_foam_rim_s2_tidalcore edited=1373 left=2.51 t=445s
+  b_foam_rim_s2_tidalcore edited=1397 left=2.50 t=451s
+  b_foam_rim_s2_tidalcore edited=1421 left=2.50 t=453s
+  b_foam_rim_s2_tidalcore edited=1445 left=2.50 t=455s
+  b_foam_rim_s2_tidalcore edited=1469 left=2.50 t=459s
+  b_foam_rim_s2_tidalcore edited=1493 left=2.50 t=461s
+plateau
+DONE b_foam_rim_s2_tidalcore edited 1190 del 0 left 2.500

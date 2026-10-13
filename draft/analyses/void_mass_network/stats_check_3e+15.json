@@ -1,0 +1,42 @@
+{
+ "Mmin": 3000000000000000.0,
+ "n_voids_inside": 71806,
+ "n_clusters": 129010,
+ "merge_lam": 0.15,
+ "spacing_Mpc": 772.487471441888,
+ "clusters_per_void_mean": 7.891652508146952,
+ "clusters_per_void_target": 8.0,
+ "voids_per_cluster_mean": 4.4995194170994495,
+ "voids_per_cluster_target": 4.5,
+ "voids_per_cluster_hist": {
+  "4": 85183,
+  "5": 29447,
+  "6": 9933,
+  "7": 3118,
+  "8": 983,
+  "9": 264,
+  "10": 57,
+  "11": 21,
+  "12": 2,
+  "13": 1,
+  "14": 1
+ },
+ "dist_over_Rv_median": 1.3109840844949476,
+ "dist_over_Rv_p16_84": [
+  1.1504124673846472,
+  1.4908682130705266
+ ],
+ "hamaus_wall_peak_over_Rv": 1.09,
+ "angular_Rbar_median": 0.3385606748716496,
+ "angular_Rbar_iso_median": 0.3247449013224871,
+ "mass_vs_voidR_slope": 0.251124158437666,
+ "void_volume_fraction": 0.7700047800275832,
+ "void_volfrac_target": 0.77,
+ "void_core_density": 0.19999999999999996,
+ "cluster_mass_fraction": 0.0003363439364100718,
+ "cluster_mass_fraction_tinker": 0.000336841651905701,
+ "net_cell_contrast_rms": 0.010288750538077015,
+ "lcdm_sigma_at_cell_median": 0.00994602506654131,
+ "Reff_median_Mpc": 479.02336431290615,
+ "Rv_core_median_Mpc": 298.98061475361635
+}

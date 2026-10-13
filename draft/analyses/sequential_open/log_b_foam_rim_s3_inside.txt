@@ -1,0 +1,9 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+foam_rim s3 voids=2300 objs=16100 t=62s ckpt
+foam_rim s3 voids=3800 objs=26600 t=125s ckpt
+foam_rim s3 voids=4400 objs=30800 t=187s ckpt
+foam_rim s3 voids=4900 objs=34300 t=253s ckpt
+foam_rim s3 voids=5400 objs=37800 t=328s ckpt
+foam_rim s3 voids=5700 objs=39900 t=395s ckpt
+foam_rim s3 voids=6100 objs=42700 t=457s ckpt
+DONE {'rule': 'foam_rim', 'seed': 3, 'Rv': 1.5, 'n_obj': 42861, 'n_void': 6123, 'n_clu': 36738, 'void_vol_frac': 0.3081261281482446, 'net_kg': -1.5535352200736204e+37, 'min_gap_gpc': 0.020016803802320793, 'final_left': 741.956382772066, 'min_left': 218.32534340468308, 'argmin': 2511, 'web_rms': 660.8237287652768, 'final_amps': [170.81175870786774, 304.62781576784886, 262.5903656159478, 128.217854115385, 563.4161542317659, 138.19647347776478], 'where_all': {'n': 42861, 'inside_us': 1547, 'in_core': 0, 'beyond_42_9': 0}, 'where_voids': {'n': 6123, 'inside_us': 221, 'in_core': 0, 'beyond_42_9': 0}, 'where_clusters': {'n': 36738, 'inside_us': 1326, 'in_core': 0, 'beyond_42_9': 0}}

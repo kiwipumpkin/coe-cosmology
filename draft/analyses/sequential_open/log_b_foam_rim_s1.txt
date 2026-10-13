@@ -1,0 +1,20 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+foam_rim s1 voids=2500 objs=17500 t=63s ckpt
+foam_rim s1 voids=4000 objs=28000 t=129s ckpt
+foam_rim s1 voids=4900 objs=34300 t=190s ckpt
+foam_rim s1 voids=5600 objs=39200 t=253s ckpt
+foam_rim s1 voids=6300 objs=44100 t=316s ckpt
+foam_rim s1 voids=7000 objs=49000 t=379s ckpt
+foam_rim s1 voids=7500 objs=52500 t=441s ckpt
+foam_rim s1 voids=8100 objs=56700 t=512s ckpt
+foam_rim s1 voids=8600 objs=60200 t=581s ckpt
+foam_rim s1 voids=9100 objs=63700 t=650s ckpt
+foam_rim s1 voids=9600 objs=67200 t=714s ckpt
+foam_rim s1 voids=10000 objs=70000 t=787s ckpt
+foam_rim s1 voids=10400 objs=72800 t=851s ckpt
+foam_rim s1 voids=10800 objs=75600 t=919s ckpt
+foam_rim s1 voids=11400 objs=79800 t=980s ckpt
+foam_rim s1 voids=12000 objs=84000 t=1056s ckpt
+foam_rim s1 voids=12600 objs=88200 t=1124s ckpt
+foam_rim s1 voids=13100 objs=91700 t=1191s ckpt
+DONE {'rule': 'foam_rim', 'seed': 1, 'Rv': 1.5, 'n_obj': 93646, 'n_void': 13378, 'n_clu': 80268, 'void_vol_frac': 0.297477947684013, 'net_kg': 1.4953814952580304e+37, 'min_gap_gpc': 0.02000001119696579, 'final_left': 837.9269252800332, 'min_left': 231.63801140464255, 'argmin': 6192, 'web_rms': 761.1947545766112, 'final_amps': [397.82394660385717, 161.5102357677866, 351.6394419291483, 426.3449399350239, 125.38196019043862, 203.72973458117684], 'where_all': {'n': 93646, 'inside_us': 1463, 'in_core': 51024, 'beyond_42_9': 43209}, 'where_voids': {'n': 13378, 'inside_us': 209, 'in_core': 7269, 'beyond_42_9': 6178}, 'where_clusters': {'n': 80268, 'inside_us': 1254, 'in_core': 43755, 'beyond_42_9': 37031}}

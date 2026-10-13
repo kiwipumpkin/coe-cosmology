@@ -1,0 +1,17 @@
+residual multipoles m=1..12 (x floor): [18.0, 27.3, 200.1, 184.7, 172.9, 80.8, 28.4, 10.4, 4.6, 2.2, 1.0, 0.5]
+Useful (m=3-6) signal per 1e52 kg point mass vs distance from us; amplitude in x floor (median over random directions / best direction)
+d_Gpc   m1    m3-6 median   m3-6 best(max over dirs)
+  2.0    22543        2.2        3.6
+  4.0     5846       17.3       30.7
+  5.0     3883       32.9       63.8
+  6.0     2836       54.3      119.4
+  7.0     2217       80.5      209.7
+  8.0     1816      108.5      355.0
+ 10.0     1310      148.0      984.3
+ 12.0      939      126.1     3040.6
+ 13.5      694       69.0    11266.3
+ 15.2      407        5.3     9030.0
+ 17.0      254       50.4     2231.6
+ 20.0      136       69.3      649.8
+ 25.0       56       46.4      176.7
+ 30.0       27       26.4       70.5

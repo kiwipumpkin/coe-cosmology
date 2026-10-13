@@ -1,0 +1,4 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+resumed b_foam_rim_s3_tidalcore 3598
+plateau
+DONE b_foam_rim_s3_tidalcore edited 3557 of 17367 left 12.232

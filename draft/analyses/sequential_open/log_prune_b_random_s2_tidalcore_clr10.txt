@@ -1,0 +1,6 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+minedit2/b_random_s2_tidalcore_clr10.json start 0.903
+ pass 0 undone 5 left 0.932
+ pass 1 undone 1 left 0.977
+ pass 2 undone 0 left 0.977
+DONE b_random_s2_tidalcore_clr10_pruned edited 4277 deleted 4070 left 0.977

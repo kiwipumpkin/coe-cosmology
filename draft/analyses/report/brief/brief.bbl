@@ -1,0 +1,243 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{17}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Clampitt}\ and\ \citenamefont
+  {Jain}(2015)}]{ClampittJain2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Clampitt}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Jain}},\ }\bibfield  {title} {\bibinfo {title} {Lensing measurements of the
+  mass distribution in {SDSS} voids},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {MNRAS}\ }\textbf {\bibinfo {volume} {454}},\ \bibinfo
+  {pages} {3357} (\bibinfo {year} {2015})},\ \Eprint
+  {https://arxiv.org/abs/1404.1834} {arXiv:1404.1834} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tinker}\ \emph {et~al.}(2008)\citenamefont {Tinker}
+  \emph {et~al.}}]{Tinker2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Tinker}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {Toward a
+  halo mass function for precision cosmology: The limits of universality},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {ApJ}\ }\textbf
+  {\bibinfo {volume} {688}},\ \bibinfo {pages} {709} (\bibinfo {year}
+  {2008})},\ \Eprint {https://arxiv.org/abs/0803.2706} {arXiv:0803.2706}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rykoff}\ \emph {et~al.}(2014)\citenamefont {Rykoff}
+  \emph {et~al.}}]{Rykoff2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~S.}\ \bibnamefont
+  {Rykoff}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title}
+  {{redMaPPer}. {I}. algorithm and {SDSS DR8} catalog},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {ApJ}\ }\textbf {\bibinfo {volume}
+  {785}},\ \bibinfo {pages} {104} (\bibinfo {year} {2014})},\ \Eprint
+  {https://arxiv.org/abs/1303.3562} {arXiv:1303.3562} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Simet}\ \emph {et~al.}(2017)\citenamefont {Simet}
+  \emph {et~al.}}]{Simet2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Simet}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {Weak lensing
+  measurement of the mass--richness relation of {SDSS redMaPPer} clusters},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {MNRAS}\ }\textbf
+  {\bibinfo {volume} {466}},\ \bibinfo {pages} {3103} (\bibinfo {year}
+  {2017})},\ \Eprint {https://arxiv.org/abs/1603.06953} {arXiv:1603.06953}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Liivam\"agi}\ \emph {et~al.}(2012)\citenamefont
+  {Liivam\"agi}, \citenamefont {Tempel},\ and\ \citenamefont
+  {Saar}}]{Liivamagi2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~J.}\ \bibnamefont
+  {Liivam\"agi}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Tempel}},\ and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Saar}},\
+  }\bibfield  {title} {\bibinfo {title} {{SDSS DR7} superclusters. {The}
+  catalogues},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {A\&A}\ }\textbf {\bibinfo {volume} {539}},\ \bibinfo {pages} {A80} (\bibinfo
+  {year} {2012})},\ \Eprint {https://arxiv.org/abs/1012.1989} {arXiv:1012.1989}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mao}\ \emph {et~al.}(2017)\citenamefont {Mao} \emph
+  {et~al.}}]{Mao2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont
+  {Mao}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {A cosmic void
+  catalog of {SDSS DR12 BOSS} galaxies},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {ApJ}\ }\textbf {\bibinfo {volume} {835}},\ \bibinfo
+  {pages} {161} (\bibinfo {year} {2017})},\ \Eprint
+  {https://arxiv.org/abs/1602.02771} {arXiv:1602.02771} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hamaus}\ \emph {et~al.}(2014)\citenamefont {Hamaus},
+  \citenamefont {Sutter},\ and\ \citenamefont {Wandelt}}]{Hamaus2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Hamaus}}, \bibinfo {author} {\bibfnamefont {P.~M.}\ \bibnamefont {Sutter}},\
+  and\ \bibinfo {author} {\bibfnamefont {B.~D.}\ \bibnamefont {Wandelt}},\
+  }\bibfield  {title} {\bibinfo {title} {Universal density profile for cosmic
+  voids},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {PRL}\
+  }\textbf {\bibinfo {volume} {112}},\ \bibinfo {pages} {251302} (\bibinfo
+  {year} {2014})},\ \Eprint {https://arxiv.org/abs/1403.5499} {arXiv:1403.5499}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Szapudi}\ \emph {et~al.}(2015)\citenamefont {Szapudi}
+  \emph {et~al.}}]{Szapudi2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Szapudi}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {Detection
+  of a supervoid aligned with the cold spot of the cosmic microwave
+  background},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {MNRAS}\ }\textbf {\bibinfo {volume} {450}},\ \bibinfo {pages} {288}
+  (\bibinfo {year} {2015})},\ \Eprint {https://arxiv.org/abs/1405.1566}
+  {arXiv:1405.1566} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kov\'acs}\ and\ \citenamefont
+  {Garc\'ia-Bellido}(2016)}]{Kovacs2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Kov\'acs}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Garc\'ia-Bellido}},\ }\bibfield  {title} {\bibinfo {title} {Cosmic
+  troublemakers: the cold spot, the eridanus supervoid, and the great walls},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {MNRAS}\ }\textbf
+  {\bibinfo {volume} {462}},\ \bibinfo {pages} {1882} (\bibinfo {year}
+  {2016})},\ \Eprint {https://arxiv.org/abs/1511.09008} {arXiv:1511.09008}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Keenan}\ \emph {et~al.}(2013)\citenamefont {Keenan},
+  \citenamefont {Barger},\ and\ \citenamefont {Cowie}}]{Keenan2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~C.}\ \bibnamefont
+  {Keenan}}, \bibinfo {author} {\bibfnamefont {A.~J.}\ \bibnamefont {Barger}},\
+  and\ \bibinfo {author} {\bibfnamefont {L.~L.}\ \bibnamefont {Cowie}},\
+  }\bibfield  {title} {\bibinfo {title} {Evidence for a $\sim$300 megaparsec
+  scale under-density in the local galaxy distribution},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {ApJ}\ }\textbf {\bibinfo {volume}
+  {775}},\ \bibinfo {pages} {62} (\bibinfo {year} {2013})},\ \Eprint
+  {https://arxiv.org/abs/1304.2884} {arXiv:1304.2884} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Whitbourn}\ and\ \citenamefont
+  {Shanks}(2014)}]{Whitbourn2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont
+  {Whitbourn}}\ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Shanks}},\ }\bibfield  {title} {\bibinfo {title} {The local hole revealed by
+  galaxy counts and redshifts},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+   {journal} {MNRAS}\ }\textbf {\bibinfo {volume} {437}},\ \bibinfo {pages}
+  {2146} (\bibinfo {year} {2014})},\ \Eprint {https://arxiv.org/abs/1307.4405}
+  {arXiv:1307.4405} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kenworthy}\ \emph {et~al.}(2019)\citenamefont
+  {Kenworthy}, \citenamefont {Scolnic},\ and\ \citenamefont
+  {Riess}}]{Kenworthy2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.~D.}\ \bibnamefont
+  {Kenworthy}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Scolnic}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Riess}},\ }\bibfield
+   {title} {\bibinfo {title} {The local perspective on the {Hubble} tension:
+  Local structure does not impact measurement of the {Hubble} constant},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {ApJ}\ }\textbf
+  {\bibinfo {volume} {875}},\ \bibinfo {pages} {145} (\bibinfo {year}
+  {2019})},\ \Eprint {https://arxiv.org/abs/1901.08681} {arXiv:1901.08681}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Carrick}\ \emph {et~al.}(2015)\citenamefont
+  {Carrick}, \citenamefont {Turnbull}, \citenamefont {Lavaux},\ and\
+  \citenamefont {Hudson}}]{Carrick2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Carrick}}, \bibinfo {author} {\bibfnamefont {S.~J.}\ \bibnamefont
+  {Turnbull}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Lavaux}},\
+  and\ \bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont {Hudson}},\
+  }\bibfield  {title} {\bibinfo {title} {Cosmological parameters from the
+  comparison of peculiar velocities with predictions from the {2M++} density
+  field},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {MNRAS}\
+  }\textbf {\bibinfo {volume} {450}},\ \bibinfo {pages} {317} (\bibinfo {year}
+  {2015})},\ \Eprint {https://arxiv.org/abs/1504.04627} {arXiv:1504.04627}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Scrimgeour}\ \emph {et~al.}(2012)\citenamefont
+  {Scrimgeour} \emph {et~al.}}]{Scrimgeour2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~I.}\ \bibnamefont
+  {Scrimgeour}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {The
+  {WiggleZ} dark energy survey: the transition to large-scale cosmic
+  homogeneity},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {MNRAS}\ }\textbf {\bibinfo {volume} {425}},\ \bibinfo {pages} {116}
+  (\bibinfo {year} {2012})},\ \Eprint {https://arxiv.org/abs/1205.6812}
+  {arXiv:1205.6812} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Secrest}\ \emph {et~al.}(2021)\citenamefont
+  {Secrest}, \citenamefont {von Hausegger}, \citenamefont {Rameez},
+  \citenamefont {Mohayaee}, \citenamefont {Sarkar},\ and\ \citenamefont
+  {Colin}}]{Secrest2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~J.}\ \bibnamefont
+  {Secrest}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {von
+  Hausegger}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Rameez}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Mohayaee}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Sarkar}},\ and\ \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Colin}},\ }\bibfield  {title} {\bibinfo
+  {title} {A test of the cosmological principle with quasars},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {ApJL}\ }\textbf {\bibinfo
+  {volume} {908}},\ \bibinfo {pages} {L51} (\bibinfo {year} {2021})},\ \Eprint
+  {https://arxiv.org/abs/2009.14826} {arXiv:2009.14826} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Migkas}\ \emph {et~al.}(2020)\citenamefont {Migkas},
+  \citenamefont {Schellenberger}, \citenamefont {Reiprich}, \citenamefont
+  {Pacaud}, \citenamefont {Ramos-Ceja},\ and\ \citenamefont
+  {Lovisari}}]{Migkas2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Migkas}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Schellenberger}}, \bibinfo {author} {\bibfnamefont {T.~H.}\ \bibnamefont
+  {Reiprich}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Pacaud}},
+  \bibinfo {author} {\bibfnamefont {M.~E.}\ \bibnamefont {Ramos-Ceja}},\ and\
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Lovisari}},\ }\bibfield
+  {title} {\bibinfo {title} {Probing cosmic isotropy with a new {X}-ray galaxy
+  cluster sample through the {$L_X$--$T$} scaling relation},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {A\&A}\ }\textbf {\bibinfo
+  {volume} {636}},\ \bibinfo {pages} {A15} (\bibinfo {year} {2020})},\ \Eprint
+  {https://arxiv.org/abs/2004.03305} {arXiv:2004.03305} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Eisenstein}\ and\ \citenamefont
+  {Hu}(1998)}]{EisensteinHu1998}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~J.}\ \bibnamefont
+  {Eisenstein}}\ and\ \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Hu}},\ }\bibfield  {title} {\bibinfo {title} {Baryonic features in the
+  matter transfer function},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {ApJ}\ }\textbf {\bibinfo {volume} {496}},\ \bibinfo {pages} {605}
+  (\bibinfo {year} {1998})}\BibitemShut {NoStop}%
+\end{thebibliography}%

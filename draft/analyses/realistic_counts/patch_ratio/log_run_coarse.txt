@@ -1,0 +1,15 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+{"cfg": "in20", "B": 0.01, "left": 146.88907138399526, "left_lower": 146.88907069657375, "method": "dual", "vol_active": 11008.0, "vol_at_bound": 10912.0, "sec": 1}
+{"cfg": "in20", "B": 0.02, "left": 70.28229523934871, "left_lower": 70.28228644959609, "method": "dual", "vol_active": 10976.0, "vol_at_bound": 10736.0, "sec": 3}
+{"cfg": "in20", "B": 0.025, "left": 42.697361425268504, "left_lower": 42.69731793504622, "method": "dual", "vol_active": 10944.0, "vol_at_bound": 10720.0, "sec": 3}
+{"cfg": "in20", "B": 0.03, "left": 24.533309237917095, "left_lower": 24.51187588694314, "method": "dual", "vol_active": 10928.0, "vol_at_bound": 10112.0, "sec": 4}
+{"cfg": "in20", "B": 0.0325, "left": 18.84983138693873, "left_lower": 17.988764956716082, "method": "dual", "vol_active": 10912.0, "vol_at_bound": 9136.0, "sec": 4}
+{"cfg": "in20", "B": 0.035, "left": 20.248797890279516, "left_lower": 12.701809395478843, "method": "dual", "vol_active": 5680.0, "vol_at_bound": 400.0, "sec": 4}
+{"cfg": "in20", "B": 0.04, "left": 13.331302447635608, "left_lower": 3.061329689185482, "method": "dual", "vol_active": 4960.0, "vol_at_bound": 224.0, "sec": 4}
+{"cfg": "in20", "B": 0.05, "left": 5.702259042348041, "left_lower": 0.0014070235631442596, "method": "dual", "vol_active": 3888.0, "vol_at_bound": 64.0, "sec": 5}
+{"cfg": "in20", "B": 0.07, "left": 2.2188418842080484, "left_lower": 0.0014070235631442596, "method": "dual", "vol_active": 2752.0, "vol_at_bound": 0.0, "sec": 5}
+{"cfg": "in20", "B": 0.1, "left": 0.33990378409112615, "left_lower": 0.0014070235631442596, "method": "lsq", "vol_active": 1664.0, "vol_at_bound": 0.0, "sec": 4}
+{"cfg": "in10", "B": 0.01, "left": 138.87737211798296, "left_lower": 138.87737182760011, "method": "dual", "vol_active": 11056.0, "vol_at_bound": 11040.0, "sec": 10}
+{"cfg": "in10", "B": 0.02, "left": 56.16892349271563, "left_lower": 56.16891805769539, "method": "dual", "vol_active": 11052.0, "vol_at_bound": 10998.0, "sec": 26}
+{"cfg": "in10", "B": 0.025, "left": 28.061329484767935, "left_lower": 28.061228959792878, "method": "dual", "vol_active": 11054.0, "vol_at_bound": 10992.0, "sec": 27}
+{"cfg": "in10", "B": 0.0325, "left": 5.812759840752515, "left_lower": 0.0014070235631442596, "method": "lsq", "vol_active": 5858.0, "vol_at_bound": 912.0, "sec": 32}

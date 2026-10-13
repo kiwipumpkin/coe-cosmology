@@ -1,0 +1,16 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+DONE wave s2 A=0.15 lam=0.15 cells=5,356,968 left=237.02 own=15.58 coherent=19.84 near=10.44 t=136s
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+DONE lattice s2 A=0.15 lam=0.12 cells=5,356,968 left=237.42 own=2.30 coherent=0.00 near=2.30 t=131s
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+DONE wave s3 A=0.15 lam=0.15 cells=5,356,968 left=236.68 own=17.67 coherent=19.84 near=9.12 t=124s
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+DONE lattice s3 A=0.15 lam=0.12 cells=5,356,968 left=237.29 own=2.16 coherent=0.00 near=2.16 t=145s
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+DONE wave s4 A=0.15 lam=0.15 cells=5,356,968 left=236.52 own=16.86 coherent=19.84 near=8.20 t=136s
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+DONE lattice s4 A=0.15 lam=0.12 cells=5,356,968 left=237.22 own=2.24 coherent=0.00 near=2.24 t=130s
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+DONE wave s5 A=0.15 lam=0.15 cells=5,356,968 left=236.74 own=16.64 coherent=19.84 near=9.60 t=119s
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+DONE lattice s5 A=0.15 lam=0.12 cells=5,356,968 left=237.14 own=2.29 coherent=0.00 near=2.29 t=135s

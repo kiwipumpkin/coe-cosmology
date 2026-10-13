@@ -1,0 +1,114 @@
+# best leftover by N  (core open | walled/earlier)  and bodies in the core in that best layout
+
+## out: outside, masses + deep voids
+N= 4 CCCC                   open   33.687  walled/earlier   35.600  nowall43 33.700  in-core 2/4  depths [0.4, 0.4]  start=warm0
+N= 6 CCCCVV                 open   15.491  walled/earlier   15.900  nowall43 14.200  in-core 2/6  depths [2.2, 0.5]  start=warm0
+N= 8 CCCCVVVV               open    2.966  walled/earlier    4.460  nowall43 2.970  in-core 1/8  depths [11.5]  start=warm0
+N= 9 CCCCCVVVV              open   14.660  walled/earlier    2.960  nowall43 nan  in-core 1/9  depths [10.8]  start=core4of96
+N=10 CCCCCCVVVV             open    0.455  walled/earlier    1.260  nowall43 0.460  in-core 3/10  depths [4.6, 5.9, 1.3]  start=core5of107
+N=11 CCCCCCVVVVV            open    0.241  walled/earlier    0.580  nowall43 0.250  in-core 4/11  depths [2.8, 0.1, 1.2, 2.6]  start=warm0
+N=12 CCCCCCVVVVVV           open    0.069  walled/earlier    0.720  nowall43 0.074  in-core 2/12  depths [3.1, 4.8]  start=warm0
+
+## asym: outside, no mirror layouts
+N=10 CCCCCCVVVV             open    1.243  walled/earlier    2.300  in-core 4/10  depths [3.6, 0.7, 0.9, 0.6]  start=warm0
+N=11 CCCCCCVVVVV            open    0.365  walled/earlier    1.250  in-core 5/11  depths [5.6, 1.8, 1.8, 2.6, 12.4]  start=warm4
+N=12 CCCCCCVVVVVV           open    0.335  walled/earlier    0.730  in-core 3/12  depths [5.9, 5.3, 12.8]  start=warm0
+
+## ep: giant partners (+ ordinary bodies)
+N= 1 free_1p                open  209.152  walled/earlier  209.152  in-core 0/1  depths []  start=cold4
+N= 2 free_2p                open  160.432  walled/earlier  160.432  in-core 0/2  depths []  start=warm3
+N= 3 free_3p                open   40.314  walled/earlier  105.808  in-core 1/3  depths [9.6]  start=core2
+N= 6 free_2p+CCCC           open    8.682  walled/earlier   10.445  in-core 3/6  depths [4.1, 4.2, 6.4]  start=cold7
+N=10 free_2p+CCCCVVVV       open    0.168  walled/earlier    1.230  in-core 3/10  depths [7.0, 6.9, 12.7]  start=warm0
+N=11 free_2p+CCCCCVVVV      open    0.080  walled/earlier      nan  in-core 3/11  depths [9.5, 8.8, 11.7]  start=warm6
+N=12 free_2p+CCCCCCVVVV     open    0.494  walled/earlier      nan  in-core 2/12  depths [0.3, 10.8]  start=cold1
+
+## ao: all open (inside, shell, core)
+N= 4 CCCC                   open    7.274  walled/earlier    7.274  in-core 0/4  depths []  start=warm0
+N= 6 CCCCCC                 open    1.396  walled/earlier    1.405  in-core 0/6  depths []  start=warm0
+N= 7 CCCCCCC                open   13.674  walled/earlier      nan  in-core 3/7  depths [2.4, 5.3, 0.3]  start=cold1
+N= 8 CCCCVVVV               open    0.176  walled/earlier    0.177  in-core 0/8  depths []  start=warm4
+
+# where bodies go: pooled over feasible fits with leftover < 2x  (and < 1.5 x best of their class)
+out: 13 fits, 144 bodies; in core 38 (26%)  masses in core 24/78  voids 14/66
+   core bodies: depth median 3.1 max 39.5 Gpc; distance from us median 23.7 max 66.2 Gpc; lon median 196
+   core bodies |M| median 1.28e+52 kg; deeper than 10 Gpc: 4; farther than 50 Gpc from us: 3
+asym: 6 fits, 66 bodies; in core 22 (33%)  masses in core 18/36  voids 4/30
+   core bodies: depth median 4.4 max 16.5 Gpc; distance from us median 25.1 max 32.0 Gpc; lon median 182
+   core bodies |M| median 1.22e+52 kg; deeper than 10 Gpc: 4; farther than 50 Gpc from us: 0
+ep: 16 fits, 169 bodies; in core 48 (28%)  masses in core 18/73  voids 15/64  partners 15/32
+   core bodies: depth median 6.4 max 26.6 Gpc; distance from us median 26.5 max 88.3 Gpc; lon median 195
+   core bodies |M| median 1.60e+52 kg; deeper than 10 Gpc: 12; farther than 50 Gpc from us: 1
+ao: 7 fits, 54 bodies; in core 2 (4%)  masses in core 1/42  voids 1/12
+   core bodies: depth median 16.4 max 21.2 Gpc; distance from us median 31.3 max 36.7 Gpc; lon median 200
+   core bodies |M| median 1.82e+52 kg; deeper than 10 Gpc: 2; farther than 50 Gpc from us: 0
+
+# effect of the core bodies in the overall best layout per scenario (remove them, no refit)
+out best CCCCCCVVVVVV 0.069x (check 0.069, recon 0.069); core bodies 2: without them 196.57x; their own pattern rms 193.39x, m1-6 [64.56, 168.65, 148.37, 109.8, 72.7, 44.29]
+asym best CCCCCCVVVVVV 0.335x (check 0.335, recon 0.335); core bodies 3: without them 214.95x; their own pattern rms 215.15x, m1-6 [48.97, 207.37, 163.32, 113.33, 71.78, 42.23]
+ep best free_2p+CCCCCVVVV 0.080x (check 0.080, recon 0.080); core bodies 3: without them 174.48x; their own pattern rms 174.48x, m1-6 [88.92, 86.03, 94.54, 135.18, 109.16, 68.91]
+ao best CCCCVVVV 0.176x (check 0.176, recon 0.176); core bodies 0: without them 0.18x; their own pattern rms 0.00x, m1-6 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+# best layouts body by body (lon deg, lat deg, dist Gpc, core depth Gpc, mass kg / radius Gpc, own ring rms x)
+## out CCCCCCVVVVVV 0.069x
+  C lon  313.9 lat  -29.5 d   32.6 core  -33.8  M +2.00e+52  own     65.9
+  C lon  171.0 lat  +28.4 d   17.0 core   -1.8  M +9.04e+51  own    185.2
+  C lon   86.2 lat  -14.4 d   28.3 core  -28.4  M +2.00e+52  own    180.6
+  C lon  224.4 lat  +20.8 d   24.4 core   +3.1  M +9.94e+51  own    108.5
+  C lon   59.6 lat  -38.1 d   23.6 core  -30.2  M +2.00e+52  own    132.7
+  C lon  158.1 lat  +22.3 d   22.8 core   -0.2  M +8.75e+51  own    105.3
+  V lon  196.0 lat  -24.1 d   22.0 core   +4.8  M -1.63e+52 R 4.00  own    191.2
+  V lon  256.2 lat  +31.8 d   20.3 core   -9.3  M -1.61e+52 R 4.00  own    179.5
+  V lon  127.8 lat  +31.1 d   23.0 core  -11.2  M -1.50e+52 R 3.91  own    118.4
+  V lon  272.8 lat  -19.2 d   27.7 core  -15.3  M -1.47e+52 R 3.89  own    118.2
+  V lon    8.8 lat  +23.8 d   35.7 core  -48.0  M -1.54e+52 R 4.00  own     47.3
+  V lon   86.0 lat  -31.3 d   17.8 core  -21.5  M -1.02e+52 R 3.45  own    180.0
+## asym CCCCCCVVVVVV 0.335x
+  C lon   82.4 lat  -12.6 d   33.8 core  -33.6  M +1.51e+52  own     76.0
+  C lon  308.0 lat  +20.4 d   32.8 core  -32.6  M +1.96e+52  own     87.5
+  C lon  216.6 lat  -24.6 d   16.9 core   -0.9  M +6.60e+51  own    139.3
+  C lon  230.9 lat  -22.1 d   22.2 core   -0.1  M +1.24e+52  own    161.1
+  C lon  162.9 lat   +4.3 d   27.5 core   +5.9  M +1.72e+52  own    222.9
+  C lon  179.2 lat  -15.6 d   22.2 core   +5.3  M +6.53e+51  own    131.3
+  V lon  125.3 lat  -29.5 d   23.6 core  -11.9  M -1.60e+52 R 4.00  own    125.0
+  V lon  266.0 lat  +33.6 d   20.0 core  -12.2  M -1.54e+52 R 3.95  own    177.6
+  V lon    2.3 lat   +9.6 d   34.0 core  -47.5  M -1.54e+52 R 4.00  own     80.3
+  V lon  184.7 lat   -0.0 d   28.0 core  +12.8  M -1.65e+52 R 4.00  own    201.3
+  V lon   35.2 lat   +0.0 d   35.3 core  -48.3  M -7.05e+51 R 3.08  own     34.7
+  V lon   25.7 lat   -0.0 d   32.7 core  -46.6  M -7.06e+51 R 3.08  own     46.7
+## ep free_2p+CCCCCVVVV 0.080x delta_us=-0.007
+  P lon  262.0 lat   -2.6 d   37.0 core  -11.5  M -6.85e+52 R 10.29  own    283.8
+  P lon  224.6 lat   +4.7 d   31.9 core   +9.5  M +3.11e+52 R 10.98  own    219.5
+  C lon  100.2 lat  +19.6 d   29.1 core  -23.3  M +2.00e+52  own    135.4
+  C lon  152.3 lat  -27.9 d   21.6 core   -3.3  M +1.21e+52  own    123.8
+  C lon   79.8 lat  +13.4 d   30.6 core  -32.3  M +2.00e+52  own    140.6
+  C lon  168.7 lat   +1.0 d   28.4 core   +8.8  M +2.00e+52  own    229.4
+  C lon   58.3 lat  +20.8 d   31.2 core  -38.8  M +2.00e+52  own    103.3
+  V lon  196.3 lat   -8.0 d   26.5 core  +11.7  M -1.32e+52 R 3.72  own    183.9
+  V lon  283.1 lat  -33.6 d   16.6 core  -16.2  M -3.22e+51 R 2.35  own     72.7
+  V lon   10.1 lat  +16.8 d   34.6 core  -47.9  M -1.54e+52 R 4.00  own     64.4
+  V lon  344.8 lat  +22.5 d   34.3 core  -44.1  M -1.55e+52 R 4.00  own     56.0
+## ao CCCCVVVV 0.176x
+  C lon  262.2 lat   -0.1 d    5.7 core  -12.3  M +1.61e+52  own   4147.3
+  C lon  195.1 lat   +4.7 d    7.4 core   -7.0  M +1.02e+52  own   1859.6
+  C lon  128.3 lat  -21.2 d    6.2 core  -12.3  M +1.98e+52  own   4152.6
+  C lon   16.1 lat  +33.3 d    4.8 core  -18.4  M +1.75e+52  own   4968.7
+  V lon  225.4 lat   +4.3 d    6.9 core   -8.5  M -6.50e+51 R 2.96  own   1274.0
+  V lon   82.2 lat  -20.0 d    5.1 core  -16.4  M -9.36e+51 R 3.35  own   2709.4
+  V lon  164.9 lat   -7.1 d    7.0 core   -8.5  M -6.50e+51 R 2.96  own   1257.4
+  V lon  308.2 lat  -39.4 d    6.3 core  -16.5  M -1.60e+52 R 4.00  own   2621.3
+
+# core-seeded starts: bodies in the core at the end, and how those fits scored vs warm/cold (median of class-best ratio)
+out: warm: n=18 median left/best 1.02, wins 5, mean share of bodies ending in core 31%; cold: n=21 median left/best 9.72, wins 0, mean share of bodies ending in core 17%; core: n=37 median left/best 10.14, wins 2, mean share of bodies ending in core 21%
+asym: warm: n=6 median left/best 1.03, wins 3, mean share of bodies ending in core 33%; cold: n=6 median left/best 36.00, wins 0, mean share of bodies ending in core 27%; core: n=12 median left/best 24.27, wins 0, mean share of bodies ending in core 40%
+ep: warm: n=25 median left/best 1.76, wins 3, mean share of bodies ending in core 17%; cold: n=24 median left/best 2.67, wins 3, mean share of bodies ending in core 20%; core: n=17 median left/best 3.66, wins 2, mean share of bodies ending in core 34%
+ao: warm: n=10 median left/best 1.00, wins 5, mean share of bodies ending in core 0%; cold: n=12 median left/best 21.99, wins 1, mean share of bodies ending in core 6%; core: n=26 median left/best 18.19, wins 0, mean share of bodies ending in core 23%
+
+# one 2e52 kg mass on the us-CoE line: its ring pattern by mode (x floor); target m3..m5 = 200,185,173
+  d= 20 Gpc (core depth +5.7): m1..m6 [627.48, 1035.98, 862.26, 690.92, 541.45, 418.09]
+  d= 30 Gpc (core depth +15.7): m1..m6 [76.95, 204.74, 118.79, 65.13, 34.61, 18.04]
+  d= 45 Gpc (core depth +30.7): m1..m6 [12.98, 53.32, 20.95, 7.72, 2.75, 0.96]
+  d= 60 Gpc (core depth +42.1): m1..m6 [3.91, 21.6, 6.4, 1.77, 0.47, 0.12]
+  d= 80 Gpc (core depth +22.1): m1..m6 [1.2, 8.92, 1.99, 0.41, 0.08, 0.02]
+  d=100 Gpc (core depth +2.1): m1..m6 [0.49, 4.52, 0.81, 0.13, 0.02, 0.0]
+start amps m1..12 [18.0, 27.3, 200.1, 184.7, 172.9, 80.8, 28.4, 10.4, 4.6, 2.2, 1.0, 0.5]

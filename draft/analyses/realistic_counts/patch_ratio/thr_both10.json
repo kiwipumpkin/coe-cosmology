@@ -1,0 +1,6 @@
+{
+ "cfg": "both10",
+ "B_below": 0.05,
+ "B_star": 0.055,
+ "note": "dual: 3.6x at 0.050 (certified lower bound), feasible at 0.055; bisection cut for time"
+}

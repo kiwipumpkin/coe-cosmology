@@ -1,0 +1,13 @@
+post-SR residual (nothing added)              RMS=2.373e-03 (237x)  m1..8 x floor: [ 18  27 200 185 173  81  28  10]
+4 points (fit)                                RMS=8.340e-04 (83x)  m1..8 x floor: [67  6  0  6 30 86 17  4]
+50% of mass moved to links                    RMS=1.414e-03 (141x)  m1..8 x floor: [ 62  13  92 101 100  83   6   2]
+100% of mass moved to links                   RMS=2.378e-03 (238x)  m1..8 x floor: [ 58  33 185 195 171  80  28   9]
+each point → ±10° arc                         RMS=8.629e-04 (86x)  m1..8 x floor: [67  5  9 20 48 85  6  0]
+each point → ±20° arc                         RMS=1.118e-03 (112x)  m1..8 x floor: [66  3 35 59 93 83 17  9]
+each point → radial ±0.3R                     RMS=1.049e-03 (105x)  m1..8 x floor: [77 11 37 40 19 88 44 15]
+refit: nodes + links (all positive)           RMS=1.742e-04 (17x)  m1..8 x floor: [ 0  1  2  3 10 20  2  8]
+refit: links only (positive)                  RMS=6.149e-04 (61x)  m1..8 x floor: [ 1  1  3 11  1 81  1 11]
+web refit D Gpc 39.0067285325064 node kg 3.4999636544490096e+53 7.811971385441869e+52 offs 160.3079993822485 70.35851302089944 links kg [1.15716041e+54 9.01416319e+40 1.15716090e+54 1.97435897e+54]
+links-only D Gpc 25.190084157692123 offs 146.87500054074638 63.9275328206023 links kg [3.15356086e+54 2.51923876e+54 3.15356101e+54 4.86614792e+54]
+4pt total 3.060973991619723e+52
+saved

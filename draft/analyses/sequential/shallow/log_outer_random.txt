@@ -1,0 +1,6 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+random 0 {'units': 1684, 'left': 135.30478094462305, 'outer_rms': 0.0, 'min_gap': 0.020880338818275224}
+random 1 {'units': 1721, 'left': 135.30478094462305, 'outer_rms': 0.0, 'min_gap': 0.020607435867991963}
+random 2 {'units': 1700, 'left': 135.30478094462305, 'outer_rms': 0.0, 'min_gap': 0.02041102706306397}
+random 3 {'units': 1676, 'left': 135.30478094462305, 'outer_rms': 0.0, 'min_gap': 0.020954301819977594}
+random 4 {'units': 1715, 'left': 135.30478094462305, 'outer_rms': 0.0, 'min_gap': 0.02207472281395173}

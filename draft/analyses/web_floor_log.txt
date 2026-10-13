@@ -1,0 +1,6 @@
+12 1e+52 rms=4.43e-06 (0.4x) net=1.7e+48 at cap: 5
+24 1e+52 rms=2.07e-07 (0.0x) net=-2.9e+45 at cap: 1
+36 1e+52 rms=4.66e-08 (0.0x) net=-3.1e+45 at cap: 0
+12 1e+53 rms=1.22e-07 (0.0x) net=-9.4e+45 at cap: 0
+24 1e+53 rms=3.78e-08 (0.0x) net=3.5e+46 at cap: 0
+36 1e+53 rms=2.40e-08 (0.0x) net=-4.4e+46 at cap: 0

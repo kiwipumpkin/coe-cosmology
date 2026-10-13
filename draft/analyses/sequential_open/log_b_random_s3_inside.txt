@@ -1,0 +1,13 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+random s3 voids=1800 objs=12600 t=62s ckpt
+random s3 voids=2900 objs=20300 t=126s ckpt
+random s3 voids=3600 objs=25200 t=194s ckpt
+random s3 voids=4100 objs=28700 t=255s ckpt
+random s3 voids=4600 objs=32200 t=319s ckpt
+random s3 voids=5000 objs=35000 t=399s ckpt
+random s3 voids=5300 objs=37100 t=485s ckpt
+random s3 voids=5500 objs=38500 t=546s ckpt
+random s3 voids=5700 objs=39900 t=639s ckpt
+random s3 voids=5800 objs=40600 t=704s ckpt
+random s3 voids=5900 objs=41300 t=801s ckpt
+DONE {'rule': 'random', 'seed': 3, 'Rv': 1.5, 'n_obj': 41587, 'n_void': 5941, 'n_clu': 35646, 'void_vol_frac': 0.2989673897319486, 'net_kg': -4.070760737091305e+36, 'min_gap_gpc': 0.020011399731666407, 'final_left': 2234.2327687313614, 'min_left': 237.01325051074588, 'argmin': 21, 'web_rms': 2217.6773086294434, 'final_amps': [2007.1744351775533, 907.2741584524291, 1322.2533345832262, 733.8602737388888, 342.1313442182803, 526.8238203434072], 'where_all': {'n': 41587, 'inside_us': 1468, 'in_core': 0, 'beyond_42_9': 0}, 'where_voids': {'n': 5941, 'inside_us': 212, 'in_core': 0, 'beyond_42_9': 0}, 'where_clusters': {'n': 35646, 'inside_us': 1256, 'in_core': 0, 'beyond_42_9': 0}}

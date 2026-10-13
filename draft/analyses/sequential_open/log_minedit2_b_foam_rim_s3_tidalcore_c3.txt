@@ -1,0 +1,22 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+  b_foam_rim_s3_tidalcore edited=261 left=101.97 t=9s
+  b_foam_rim_s3_tidalcore edited=285 left=48.77 t=16s
+  b_foam_rim_s3_tidalcore edited=309 left=29.42 t=22s
+  b_foam_rim_s3_tidalcore edited=333 left=17.63 t=28s
+  b_foam_rim_s3_tidalcore edited=357 left=11.93 t=44s
+  b_foam_rim_s3_tidalcore edited=381 left=8.70 t=49s
+  b_foam_rim_s3_tidalcore edited=405 left=3.41 t=54s
+  b_foam_rim_s3_tidalcore edited=429 left=2.42 t=59s
+  b_foam_rim_s3_tidalcore edited=453 left=2.20 t=63s
+  b_foam_rim_s3_tidalcore edited=477 left=1.85 t=72s
+  b_foam_rim_s3_tidalcore edited=501 left=1.64 t=76s
+  b_foam_rim_s3_tidalcore edited=525 left=1.41 t=80s
+  b_foam_rim_s3_tidalcore edited=549 left=1.35 t=86s
+  b_foam_rim_s3_tidalcore edited=573 left=1.32 t=91s
+  b_foam_rim_s3_tidalcore edited=597 left=1.27 t=101s
+  b_foam_rim_s3_tidalcore edited=621 left=1.26 t=106s
+  b_foam_rim_s3_tidalcore edited=645 left=1.17 t=111s
+  b_foam_rim_s3_tidalcore edited=669 left=1.17 t=114s
+  b_foam_rim_s3_tidalcore edited=693 left=1.01 t=119s
+  b_foam_rim_s3_tidalcore edited=717 left=0.93 t=126s
+DONE b_foam_rim_s3_tidalcore edited 672 del 241 left 0.933

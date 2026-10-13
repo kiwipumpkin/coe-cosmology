@@ -1,0 +1,4 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+random s2 voids=1800 objs=12600 t=65s ckpt
+random s2 voids=2100 objs=14700 t=137s ckpt
+DONE {'rule': 'random', 'seed': 2, 'Rv': 1.5, 'n_obj': 14987, 'n_void': 2141, 'n_clu': 12846, 'void_vol_frac': 0.30134216005167175, 'net_kg': 4.2369142365644193e+36, 'min_gap_gpc': 0.020008489219526887, 'final_left': 1743.943437226478, 'min_left': 304.9477890668168, 'argmin': 7, 'web_rms': 1673.9310109051712, 'final_amps': [496.8211935655349, 1181.2064365981296, 725.0518548291864, 1089.4135926496676, 793.099927768942, 541.8551445694278], 'where_all': {'n': 14987, 'inside_us': 1542, 'in_core': 0, 'beyond_42_9': 0}, 'where_voids': {'n': 2141, 'inside_us': 220, 'in_core': 0, 'beyond_42_9': 0}, 'where_clusters': {'n': 12846, 'inside_us': 1322, 'in_core': 0, 'beyond_42_9': 0}}

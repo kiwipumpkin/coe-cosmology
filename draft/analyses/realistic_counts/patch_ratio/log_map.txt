@@ -1,0 +1,93 @@
+/workspace/clump_scan/realistic_counts/patch_ratio/map.py:12: DeprecationWarning: `axes` should not be `None` if `s` is not `None` (Deprecated in NumPy 2.0). In a future version of NumPy, this will raise an error and `s[i]` will correspond to the size along the transformed axis specified by `axes[i]`. To retain current behaviour, pass a sequence [0, ..., k-1] to `axes` for an array of dimension k.
+  c=np.fft.irfftn(np.abs(np.fft.rfftn(F,s=(2*n,)*3))**2,s=(2*n,)*3); cw=np.fft.irfftn(np.abs(np.fft.rfftn(W,s=(2*n,)*3))**2,s=(2*n,)*3)
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+{
+"lobes": [
+{
+"lon": 15,
+"sign": 1,
+"rel_ratio": 1.1298427033312528,
+"df": 0.02711152629922486,
+"mean_delta": 0.03307606208505434,
+"vol": 702.0,
+"frac_cells_at_bound": 0.9971509971509972
+},
+{
+"lon": 75,
+"sign": -1,
+"rel_ratio": 0.8801306170531378,
+"df": -0.027109614953247617,
+"mean_delta": -0.03307373024296211,
+"vol": 596.0,
+"frac_cells_at_bound": 0.9966442953020134
+},
+{
+"lon": 128,
+"sign": 1,
+"rel_ratio": 1.1296946312664176,
+"df": 0.02708137279203936,
+"mean_delta": 0.03303927480628803,
+"vol": 553.0,
+"frac_cells_at_bound": 0.9945750452079566
+},
+{
+"lon": 162,
+"sign": -1,
+"rel_ratio": 0.8799542635446224,
+"df": -0.027149873213647185,
+"mean_delta": -0.033122845320649574,
+"vol": 749.0,
+"frac_cells_at_bound": 0.9986648865153538
+},
+{
+"lon": 195,
+"sign": 1,
+"rel_ratio": 1.1298368192707986,
+"df": 0.027110591685254797,
+"mean_delta": 0.03307492185601086,
+"vol": 821.0,
+"frac_cells_at_bound": 0.9963459196102314
+},
+{
+"lon": 228,
+"sign": -1,
+"rel_ratio": 0.8799579233103805,
+"df": -0.027149038212730573,
+"mean_delta": -0.03312182661953131,
+"vol": 745.0,
+"frac_cells_at_bound": 0.9986577181208054
+},
+{
+"lon": 263,
+"sign": 1,
+"rel_ratio": 1.129981882776491,
+"df": 0.027140496267602728,
+"mean_delta": 0.03311140544647534,
+"vol": 530.0,
+"frac_cells_at_bound": 0.9981132075471698
+},
+{
+"lon": 315,
+"sign": -1,
+"rel_ratio": 0.8799965906683973,
+"df": -0.027140174179789055,
+"mean_delta": -0.03311101249934266,
+"vol": 631.0,
+"frac_cells_at_bound": 0.9968304278922345
+}
+],
+"m": {
+"1": 2.5378586459801417e-05,
+"2": 0.013822432073356554,
+"3": 0.25232837100249383,
+"4": 0.19756167917474468,
+"5": 0.29198650375093405,
+"6": 0.0911620366649552,
+"7": 0.01387348083496825,
+"8": 0.0022779627740495477,
+"9": 0.0010220483720858075,
+"10": 0.0026388008552067793
+},
+"half": 2.5,
+"zero": 5.5
+}

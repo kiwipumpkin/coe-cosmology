@@ -1,0 +1,43 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+inside-only {4: 7.274, 6: 2.204, 8: 0.178, 10: 0.06, 11: 0.051, 12: 0.025}
+outside-only {4: 33.861, 6: 14.208, 8: 2.911, 10: 0.726, 11: 0.174, 12: 0.094}
+smooth N=4 best 7.282 CCCC (warm_inside4) runs=24 below1x=0 inside 4/4 (masses 4/4)
+smooth N=6 best 1.414 CCCCCC (warm_inside0) runs=36 below1x=0 inside 6/6 (masses 6/6)
+smooth N=8 best 0.288 CCCCVVVV (warm_inside4) runs=36 below1x=8 inside 8/8 (masses 4/4)
+smooth N=10 best 0.152 CCCCCCCCCC (warm_inside4) runs=24 below1x=9 inside 10/10 (masses 10/10)
+smooth N=11 best 0.090 CCCCCCVVVVV (warm_outside0) runs=24 below1x=18 inside 0/11 (masses 0/6)
+smooth N=12 best 0.073 CCCCCCVVVVVV (warm_outside0) runs=24 below1x=19 inside 0/12 (masses 0/6)
+open N=4 best 7.274 CCCC (warm_inside0) runs=16 below1x=0 inside 4/4 (masses 4/4)
+open N=6 best 1.405 CCCCCC (warm_inside0) runs=24 below1x=0 inside 6/6 (masses 6/6)
+open N=8 best 0.177 CCCCVVVV (warm_inside0) runs=24 below1x=6 inside 8/8 (masses 4/4)
+open N=10 best 0.059 CCCCCCCCCC (warm_inside0) runs=16 below1x=6 inside 10/10 (masses 10/10)
+open N=11 best 0.048 CCCCCCCCCCC (warm_inside0) runs=16 below1x=12 inside 11/11 (masses 11/11)
+open N=12 best 0.025 CCCCCCCCCCCC (warm_inside0) runs=16 below1x=13 inside 12/12 (masses 12/12)
+asym smooth N=8 best 3.660 CCCCVVVV odd 0.0125 runs=24
+smooth C in fits<2x: 576 inside sphere 61% median d inside 6.9 median d outside 27.0
+smooth V in fits<2x: 172 inside sphere 42% median d inside 8.1 median d outside 26.6
+objects inside old wall: 11%
+
+MAP N=8 CCCCVVVV left=0.288 masses 6.78e+52 voids -3.36e+52 net 3.4e+52
+ bounds: mass at density cap 1 mass floor 0 void Rv=4 0 d>=42.9 0 ring margin 0 near us 0
+  V d=5.4 l=80 b=-7 M=-5.95e+51 Rv=2.88 INSIDE inside_wall=-16.8
+  C d=5.5 l=16 b=+37 M=1.53e+52 Rv=0.00 INSIDE inside_wall=-18.8
+  V d=6.2 l=308 b=-37 M=-1.43e+52 Rv=3.86 INSIDE inside_wall=-16.5
+  C d=6.5 l=262 b=+23 M=1.67e+52 Rv=0.00 INSIDE inside_wall=-12.3
+  V d=7.3 l=165 b=-2 M=-4.91e+51 Rv=2.69 INSIDE inside_wall=-8.2
+  V d=7.9 l=226 b=-23 M=-8.44e+51 Rv=3.23 INSIDE inside_wall=-8.3
+  C d=8.5 l=128 b=-35 M=2.00e+52 Rv=0.00 INSIDE inside_wall=-12.2
+  C d=10.3 l=195 b=+30 M=1.58e+52 Rv=0.00 INSIDE inside_wall=-5.6
+ top modes [0.   0.   0.   0.   0.   0.01 0.03 0.1  0.21 0.22 0.07 0.16]
+smooth 4 warm_inside:7.282(4/4 in) mixed:68.765(1/4 in) cold:53.724(2/4 in)
+smooth 6 warm_inside:1.414(6/6 in) mixed:11.354(1/6 in) cold:4.800(4/6 in)
+smooth 8 warm_inside:0.288(8/8 in) mixed:0.647(7/8 in) cold:1.574(6/8 in)
+smooth 10 warm_inside:0.152(10/10 in) warm_outside:0.548(0/10 in) cold:0.502(7/10 in)
+smooth 11 warm_inside:0.148(11/11 in) warm_outside:0.090(0/11 in) cold:0.246(7/11 in)
+smooth 12 warm_inside:0.176(12/12 in) warm_outside:0.073(0/12 in) cold:0.128(7/12 in)
+open 4 warm_inside:7.274(4/4 in) mixed:27.503(0/4 in) cold:13.278(3/4 in)
+open 6 warm_inside:1.405(6/6 in) mixed:8.596(4/6 in) cold:5.376(4/6 in)
+open 8 warm_inside:0.177(8/8 in) mixed:0.565(7/8 in) cold:0.546(5/8 in)
+open 10 warm_inside:0.059(10/10 in) warm_outside:0.642(0/10 in) cold:0.065(7/10 in)
+open 11 warm_inside:0.048(11/11 in) warm_outside:0.089(0/11 in) cold:0.164(3/11 in)
+open 12 warm_inside:0.025(12/12 in) warm_outside:0.072(0/12 in) cold:0.167(4/12 in)

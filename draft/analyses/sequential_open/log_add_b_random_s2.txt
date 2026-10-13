@@ -1,0 +1,5 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+     9s b_random_s2 N=4 left=843.67 inside=1 core=1 m1-5=481.34 13+=498.28
+   137s b_random_s2 N=8 left=580.87 inside=2 core=1 m1-5=126.65 13+=426.43
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+   258s b_random_s2 N=16 left=346.23 inside=6 core=1 m1-5=110.16 13+=289.48

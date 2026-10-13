@@ -1,0 +1,88 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+seq_core loaded BASE0 237.25774727436274 BASE4 88.80904794577542 S_MAX_G 42.900000000000006
+=== Scenario A: local dipole/residual fix, then outer fills ===
+BASE0=237.26 BASE4=88.81 S_local=4.0 S_outer=2.5
+Local unit: R_v=2.284 Gpc R_c=0.183 Gpc
+Outer unit: R_v=1.428 Gpc R_c=0.114 Gpc
+
+Local greedy seed=1
+  greedy step 1: left=231.61×  best-scaled=225.89× (a=0.587)  objs=7
+  greedy step 2: left=230.28×  best-scaled=225.03× (a=0.606)  objs=14
+  greedy step 3: left=230.04×  best-scaled=224.88× (a=0.610)  objs=21
+  greedy step 4: left=228.97×  best-scaled=224.24× (a=0.626)  objs=28
+  greedy step 5: left=224.82×  best-scaled=221.12× (a=0.679)  objs=35
+  greedy step 6: left=222.68×  best-scaled=219.69× (a=0.711)  objs=42
+  greedy step 7: left=221.06×  best-scaled=217.49× (a=0.706)  objs=49
+  greedy step 8: left=220.58×  best-scaled=217.12× (a=0.711)  objs=56
+  greedy step 9: left=219.60×  best-scaled=216.42× (a=0.723)  objs=63
+  greedy step 10: left=219.36×  best-scaled=216.23× (a=0.726)  objs=70
+  greedy step 11: left=218.61×  best-scaled=215.67× (a=0.735)  objs=77
+  greedy step 12: left=217.21×  best-scaled=214.58× (a=0.750)  objs=84
+  -> units=12 left=217.21× margin=0.3609 ok=True
+
+Local greedy seed=2
+  greedy step 1: left=230.81×  best-scaled=220.72× (a=4.458)  objs=7
+  greedy step 2: left=226.01×  best-scaled=213.76× (a=3.482)  objs=14
+  greedy step 3: left=225.55×  best-scaled=211.67× (a=3.661)  objs=21
+  greedy step 4: left=224.83×  best-scaled=209.30× (a=3.771)  objs=28
+  greedy step 5: left=222.47×  best-scaled=209.19× (a=3.091)  objs=35
+  greedy step 6: left=222.07×  best-scaled=210.88× (a=2.780)  objs=42
+  greedy step 7: left=220.02×  best-scaled=206.02× (a=2.908)  objs=49
+  greedy step 8: left=217.86×  best-scaled=200.34× (a=3.062)  objs=56
+  greedy step 9: left=216.57×  best-scaled=204.13× (a=2.489)  objs=63
+  greedy step 10: left=206.92×  best-scaled=201.05× (a=1.636)  objs=70
+  greedy step 11: left=206.80×  best-scaled=200.84× (a=1.639)  objs=77
+  greedy step 12: left=206.39×  best-scaled=200.20× (a=1.651)  objs=84
+  -> units=12 left=206.39× margin=0.4710 ok=True
+
+Local greedy seed=3
+  greedy step 1: left=235.96×  best-scaled=235.85× (a=1.390)  objs=7
+  greedy step 2: left=234.66×  best-scaled=233.59× (a=2.159)  objs=14
+  greedy step 3: left=231.85×  best-scaled=230.43× (a=1.831)  objs=21
+  greedy step 4: left=231.25×  best-scaled=229.41× (a=1.928)  objs=28
+  greedy step 5: left=231.11×  best-scaled=229.14× (a=1.960)  objs=35
+  greedy step 6: left=223.44×  best-scaled=221.82× (a=1.469)  objs=42
+  greedy step 7: left=223.36×  best-scaled=221.72× (a=1.470)  objs=49
+  greedy step 8: left=222.15×  best-scaled=220.07× (a=1.520)  objs=56
+  greedy step 9: left=221.72×  best-scaled=219.38× (a=1.552)  objs=63
+  greedy step 10: left=219.02×  best-scaled=215.19× (a=1.690)  objs=70
+  greedy step 11: left=218.78×  best-scaled=214.79× (a=1.702)  objs=77
+  greedy step 12: left=216.47×  best-scaled=213.97× (a=1.471)  objs=84
+  -> units=12 left=216.47× margin=0.2013 ok=True
+
+Local greedy seed=7
+  greedy step 1: left=236.44×  best-scaled=224.52× (a=29.736)  objs=7
+  greedy step 2: left=231.71×  best-scaled=228.73× (a=2.427)  objs=14
+  greedy step 3: left=229.96×  best-scaled=229.02× (a=1.503)  objs=21
+  greedy step 4: left=226.17×  best-scaled=225.29× (a=1.367)  objs=28
+  greedy step 5: left=226.06×  best-scaled=225.15× (a=1.372)  objs=35
+  greedy step 6: left=225.73×  best-scaled=224.74× (a=1.384)  objs=42
+  greedy step 7: left=225.63×  best-scaled=224.61× (a=1.391)  objs=49
+  greedy step 8: left=222.73×  best-scaled=221.72× (a=1.336)  objs=56
+  greedy step 9: left=222.25×  best-scaled=221.08× (a=1.360)  objs=63
+  greedy step 10: left=221.87×  best-scaled=220.55× (a=1.383)  objs=70
+  greedy step 11: left=221.79×  best-scaled=220.44× (a=1.385)  objs=77
+  greedy step 12: left=219.02×  best-scaled=216.97× (a=1.453)  objs=84
+  -> units=12 left=219.02× margin=0.2614 ok=True
+
+Local greedy seed=11
+  greedy step 1: left=235.29×  best-scaled=230.83× (a=5.929)  objs=7
+  greedy step 2: left=233.60×  best-scaled=221.80× (a=7.708)  objs=14
+  greedy step 3: left=233.54×  best-scaled=221.73× (a=7.602)  objs=21
+  greedy step 4: left=229.10×  best-scaled=220.09× (a=3.545)  objs=28
+  greedy step 5: left=228.98×  best-scaled=219.67× (a=3.584)  objs=35
+  greedy step 6: left=227.39×  best-scaled=213.60× (a=4.081)  objs=42
+  greedy step 7: left=226.49×  best-scaled=210.66× (a=4.205)  objs=49
+  greedy step 8: left=224.66×  best-scaled=211.71× (a=3.355)  objs=56
+  greedy step 9: left=223.50×  best-scaled=210.13× (a=3.237)  objs=63
+  greedy step 10: left=222.97×  best-scaled=208.92× (a=3.256)  objs=70
+  greedy step 11: left=222.06×  best-scaled=210.47× (a=2.828)  objs=77
+  greedy step 12: left=221.52×  best-scaled=209.16× (a=2.869)  objs=84
+  -> units=12 left=221.52× margin=0.4565 ok=True
+
+FROZEN local (seed 2): left=206.39× best-scaled=200.20× (a=1.651)
+  units=12 objs=84 net_mass=8.308e+35
+
+Outer empty (control): left=206.39×
+
+Outer random non-overlap:

@@ -1,0 +1,77 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+over_1p        left= 212.69 (ok 24/24, med 212.7) d_us=+0.003 Msph=3.02e+51 Mpart=-2.34e+51 Mord=0.00e+00 net=6.8e+50 modes=[4, 3, 5]
+     P l=124 b=-14 d=17.0 dCoE=55.3 R=2.1 delta=-0.74 M=-2.34e+51
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 0, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 0, 'partner_touch_shell_out': 0, 'ord_mass_cap': 0, 'ord_void_cap': 0}
+over_2p        left= 189.58 (ok 24/24, med 197.7) d_us=+0.005 Msph=5.04e+51 Mpart=-4.20e+51 Mord=0.00e+00 net=8.4e+50 modes=[4, 2, 3]
+     P l=266 b=+14 d=16.6 dCoE=55.1 R=1.9 delta=-0.89 M=-2.10e+51
+     P l=125 b=-14 d=16.6 dCoE=55.1 R=1.9 delta=-0.89 M=-2.10e+51
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 0, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 0, 'partner_touch_shell_out': 0, 'ord_mass_cap': 0, 'ord_void_cap': 0}
+over_3p        left= 152.75 (ok 24/24, med 174.4) d_us=+0.300 Msph=3.13e+53 Mpart=-3.14e+53 Mord=0.00e+00 net=-8.0e+50 modes=[4, 2, 7]
+     P l=195 b=-61 d=44.3 dCoE=53.7 R=9.8 delta=-0.90 M=-3.07e+53
+     P l=124 b=-13 d=18.8 dCoE=55.3 R=2.5 delta=-0.52 M=-3.07e+51
+     P l=267 b=-13 d=18.8 dCoE=55.3 R=2.6 delta=-0.51 M=-3.07e+51
+     bounds {'delta_us_at_bound': True, 'partner_delta_at_bound': 1, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 1, 'partner_touch_shell_out': 0, 'ord_mass_cap': 0, 'ord_void_cap': 0}
+under_1p       left= 209.15 (ok 24/24, med 209.2) d_us=-0.003 Msph=-3.36e+51 Mpart=3.97e+51 Mord=0.00e+00 net=6.2e+50 modes=[4, 5, 3]
+     P l=74 b=-16 d=19.3 dCoE=69.7 R=2.8 delta=+0.53 M=3.97e+51
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 0, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 0, 'partner_touch_shell_out': 1, 'ord_mass_cap': 0, 'ord_void_cap': 0}
+under_2p       left= 170.05 (ok 24/24, med 191.2) d_us=-0.009 Msph=-8.99e+51 Mpart=9.49e+51 Mord=0.00e+00 net=5.1e+50 modes=[5, 6, 4]
+     P l=319 b=+17 d=19.7 dCoE=70.6 R=1.9 delta=+2.00 M=4.75e+51
+     P l=72 b=-17 d=19.7 dCoE=70.6 R=1.9 delta=+2.00 M=4.75e+51
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 2, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 0, 'partner_touch_shell_out': 2, 'ord_mass_cap': 0, 'ord_void_cap': 0}
+under_3p       left= 138.51 (ok 24/24, med 142.7) d_us=-0.019 Msph=-1.93e+52 Mpart=1.89e+52 Mord=0.00e+00 net=-4.2e+50 modes=[3, 4, 2]
+     P l=231 b=-16 d=17.5 dCoE=45.8 R=1.9 delta=+2.00 M=4.83e+51
+     P l=311 b=-22 d=21.9 dCoE=70.0 R=2.5 delta=+2.00 M=1.12e+52
+     P l=165 b=+14 d=16.1 dCoE=45.5 R=1.6 delta=+2.00 M=2.91e+51
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 3, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 2, 'partner_touch_shell_out': 1, 'ord_mass_cap': 0, 'ord_void_cap': 0}
+free_1p        left= 209.15 (ok 24/24, med 212.7) d_us=-0.003 Msph=-3.36e+51 Mpart=3.98e+51 Mord=0.00e+00 net=6.2e+50 modes=[4, 5, 3]
+     P l=74 b=+16 d=19.3 dCoE=69.7 R=2.5 delta=+0.71 M=3.98e+51
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 0, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 0, 'partner_touch_shell_out': 0, 'ord_mass_cap': 0, 'ord_void_cap': 0}
+free_2p        left= 160.43 (ok 24/24, med 191.0) d_us=-0.002 Msph=-2.19e+51 Mpart=2.94e+51 Mord=0.00e+00 net=7.4e+50 modes=[4, 5, 6]
+     P l=125 b=+16 d=18.9 dCoE=55.1 R=4.0 delta=-0.21 M=-4.70e+51
+     P l=315 b=+19 d=20.7 dCoE=70.3 R=2.2 delta=+2.00 M=7.64e+51
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 1, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 0, 'partner_touch_shell_out': 1, 'ord_mass_cap': 0, 'ord_void_cap': 0}
+free_3p        left= 105.81 (ok 24/24, med 144.0) d_us=-0.017 Msph=-1.77e+52 Mpart=1.79e+52 Mord=0.00e+00 net=2.3e+50 modes=[4, 6, 8]
+     P l=310 b=-24 d=21.8 dCoE=69.6 R=2.9 delta=+2.00 M=1.68e+52
+     P l=231 b=-17 d=17.2 dCoE=46.2 R=1.8 delta=+1.99 M=4.47e+51
+     P l=123 b=-0 d=21.1 dCoE=55.7 R=3.0 delta=-0.34 M=-3.37e+51
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 1, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 0, 'partner_touch_shell_out': 1, 'ord_mass_cap': 0, 'ord_void_cap': 0}
+over_2p+4C     left=  17.84 (ok 16/16, med 19.2) d_us=+0.300 Msph=3.13e+53 Mpart=-3.93e+53 Mord=8.00e+52 net=-2.0e+49 modes=[11, 10, 7]
+     P l=206 b=-67 d=30.1 dCoE=54.4 R=10.5 delta=-0.90 M=-3.72e+53
+     P l=271 b=+29 d=20.4 dCoE=57.2 R=5.0 delta=-0.47 M=-2.09e+52
+     bounds {'delta_us_at_bound': True, 'partner_delta_at_bound': 1, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 1, 'partner_touch_shell_out': 0, 'ord_mass_cap': 4, 'ord_void_cap': 0}
+over_3p+4C     left=  10.94 (ok 16/16, med 16.2) d_us=+0.300 Msph=3.13e+53 Mpart=-3.93e+53 Mord=8.00e+52 net=-5.6e+50 modes=[12, 11, 8]
+     P l=195 b=+67 d=31.6 dCoE=54.5 R=10.6 delta=-0.90 M=-3.83e+53
+     P l=268 b=-23 d=16.8 dCoE=56.0 R=2.5 delta=-0.90 M=-5.34e+51
+     P l=123 b=+23 d=16.9 dCoE=56.0 R=2.6 delta=-0.90 M=-5.37e+51
+     bounds {'delta_us_at_bound': True, 'partner_delta_at_bound': 3, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 2, 'partner_touch_CoE': 1, 'partner_touch_shell_out': 0, 'ord_mass_cap': 4, 'ord_void_cap': 0}
+over_2p+4C4V   left=   1.57 (ok 16/16, med 4.1) d_us=+0.212 Msph=2.21e+53 Mpart=-2.60e+53 Mord=3.89e+52 net=-1.7e+49 modes=[10, 11, 12]
+     P l=276 b=+0 d=27.1 dCoE=60.1 R=3.8 delta=-0.46 M=-8.98e+51
+     P l=190 b=+66 d=25.7 dCoE=53.1 R=9.2 delta=-0.90 M=-2.51e+53
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 1, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 1, 'partner_touch_shell_out': 0, 'ord_mass_cap': 4, 'ord_void_cap': 2}
+under_2p+4C    left=  10.45 (ok 16/16, med 21.0) d_us=-0.184 Msph=-1.92e+53 Mpart=1.12e+53 Mord=8.00e+52 net=4.8e+49 modes=[9, 10, 7]
+     P l=78 b=+43 d=21.0 dCoE=68.2 R=4.3 delta=+2.00 M=5.43e+52
+     P l=305 b=+39 d=18.6 dCoE=65.7 R=4.3 delta=+2.00 M=5.78e+52
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 2, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 1, 'partner_touch_CoE': 0, 'partner_touch_shell_out': 1, 'ord_mass_cap': 4, 'ord_void_cap': 0}
+under_3p+4C    left=   7.83 (ok 16/16, med 12.7) d_us=-0.124 Msph=-1.30e+53 Mpart=6.35e+52 Mord=6.60e+52 net=-4.1e+49 modes=[10, 11, 9]
+     P l=234 b=+23 d=18.9 dCoE=46.5 R=2.6 delta=+2.00 M=1.20e+52
+     P l=300 b=+34 d=17.6 dCoE=64.2 R=3.3 delta=+2.00 M=2.62e+52
+     P l=90 b=-33 d=17.6 dCoE=64.4 R=3.3 delta=+2.00 M=2.53e+52
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 3, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 2, 'partner_touch_CoE': 1, 'partner_touch_shell_out': 0, 'ord_mass_cap': 3, 'ord_void_cap': 0}
+under_2p+4C4V  left=   1.23 (ok 16/16, med 3.2) d_us=-0.025 Msph=-2.56e+52 Mpart=3.34e+52 Mord=-7.78e+51 net=-1.0e+49 modes=[11, 10, 12]
+     P l=297 b=+23 d=28.3 dCoE=69.3 R=3.2 delta=+1.98 M=2.31e+52
+     P l=159 b=-24 d=18.7 dCoE=46.3 R=2.4 delta=+2.00 M=1.03e+52
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 1, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 1, 'partner_touch_shell_out': 1, 'ord_mass_cap': 1, 'ord_void_cap': 4}
+free_2p+4C     left=  13.30 (ok 32/32, med 19.5) d_us=-0.092 Msph=-9.60e+52 Mpart=1.61e+52 Mord=8.00e+52 net=1.6e+49 modes=[10, 11, 9]
+     P l=301 b=+0 d=26.6 dCoE=70.1 R=2.4 delta=+1.72 M=8.00e+51
+     P l=90 b=-0 d=26.7 dCoE=70.2 R=2.3 delta=+1.97 M=8.06e+51
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 0, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 0, 'partner_touch_shell_out': 1, 'ord_mass_cap': 4, 'ord_void_cap': 0}
+free_3p+4C     left=   3.55 (ok 17/17, med 7.8) d_us=-0.223 Msph=-2.33e+53 Mpart=1.53e+53 Mord=8.00e+52 net=2.5e+49 modes=[12, 8, 10]
+     P l=302 b=+43 d=24.0 dCoE=67.6 R=4.9 delta=+2.00 M=8.29e+52
+     P l=75 b=+49 d=20.1 dCoE=67.6 R=4.9 delta=+2.00 M=8.13e+52
+     P l=123 b=-30 d=18.2 dCoE=56.2 R=3.9 delta=-0.55 M=-1.16e+52
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 2, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 1, 'partner_touch_CoE': 0, 'partner_touch_shell_out': 2, 'ord_mass_cap': 4, 'ord_void_cap': 0}
+free_2p+4C4V   left=   1.23 (ok 16/16, med 3.0) d_us=-0.025 Msph=-2.57e+52 Mpart=3.34e+52 Mord=-7.75e+51 net=-1.0e+49 modes=[11, 10, 12]
+     P l=297 b=+23 d=28.3 dCoE=69.3 R=3.2 delta=+1.99 M=2.31e+52
+     P l=159 b=-24 d=18.7 dCoE=46.3 R=2.4 delta=+2.00 M=1.03e+52
+     bounds {'delta_us_at_bound': False, 'partner_delta_at_bound': 0, 'partner_R_at_15': 0, 'partner_R_at_1': 0, 'partner_touch_sphere': 0, 'partner_touch_CoE': 1, 'partner_touch_shell_out': 1, 'ord_mass_cap': 1, 'ord_void_cap': 4}
+BEST free_2p+4C4V

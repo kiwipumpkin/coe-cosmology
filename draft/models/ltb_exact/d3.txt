@@ -1,0 +1,5 @@
+D=60 rs=100 R=6: H_cosmo=71.3 | same but neighbours' separation speed taken NOW=78.2 | classical (areal, Euclid)=76.0 | t_emit=3.99 Gyr, emitter CoE areal now=18.23 Gpc; mean ratio Rdot'(t_pass)/Rdot'(now)=0.912
+D=60 rs=100 R=8: H_cosmo=70.2 | same but neighbours' separation speed taken NOW=77.6 | classical (areal, Euclid)=76.3 | t_emit=2.49 Gyr, emitter CoE areal now=15.35 Gpc; mean ratio Rdot'(t_pass)/Rdot'(now)=0.904
+D=60 rs=100 R=10: H_cosmo=75.6 | same but neighbours' separation speed taken NOW=71.5 | classical (areal, Euclid)=75.0 | t_emit=0.94 Gyr, emitter CoE areal now=13.34 Gpc; mean ratio Rdot'(t_pass)/Rdot'(now)=1.057
+D=60 rs=100 R=12: H_cosmo=87.1 | same but neighbours' separation speed taken NOW=67.3 | classical (areal, Euclid)=73.9 | t_emit=0.22 Gyr, emitter CoE areal now=11.34 Gpc; mean ratio Rdot'(t_pass)/Rdot'(now)=1.293
+D=60 rs=100 R=14.3: H_cosmo=125.3 | same but neighbours' separation speed taken NOW=64.0 | classical (areal, Euclid)=72.6 | t_emit=0.01 Gyr, emitter CoE areal now=9.04 Gpc; mean ratio Rdot'(t_pass)/Rdot'(now)=1.958

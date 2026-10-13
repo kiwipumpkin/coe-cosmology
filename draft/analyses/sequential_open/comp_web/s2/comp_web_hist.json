@@ -1,0 +1,34 @@
+{
+ "(a) triangle area, whole slab": {
+  "before_n": 1240,
+  "after_n": 1281,
+  "before_median": 1.5760301531188974,
+  "after_median": 1.5563580179372625,
+  "before_mean": 2.083038049802395,
+  "after_mean": 2.0137330119255616
+ },
+ "(b) triangle area, 0\u20133 Gpc from the CMB ring": {
+  "before_n": 171,
+  "after_n": 216,
+  "before_median": 2.3892772403865603,
+  "after_median": 1.8702047748348603,
+  "before_mean": 3.0136493051455235,
+  "after_mean": 2.455971309707876
+ },
+ "(c) connections per node": {
+  "before_n": 635,
+  "after_n": 655,
+  "before_median": 6.0,
+  "after_median": 6.0,
+  "before_mean": 5.902362204724409,
+  "after_mean": 5.908396946564886
+ },
+ "(d) link length": {
+  "before_n": 1874,
+  "after_n": 1935,
+  "before_median": 2.16536727332701,
+  "after_median": 2.148573233174996,
+  "before_mean": 2.4242142674388893,
+  "after_mean": 2.374719765203363
+ }
+}

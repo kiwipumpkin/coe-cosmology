@@ -1,0 +1,12 @@
+reloc b_random_s1_tidalcore
+forced b_random_s1_tidalcore
+reloc b_random_s2_tidalcore
+forced b_random_s2_tidalcore
+reloc b_random_s3_tidalcore
+forced b_random_s3_tidalcore
+reloc b_foam_rim_s1_tidalcore
+forced b_foam_rim_s1_tidalcore
+reloc b_foam_rim_s2_tidalcore
+forced b_foam_rim_s2_tidalcore
+reloc b_foam_rim_s3_tidalcore
+forced b_foam_rim_s3_tidalcore

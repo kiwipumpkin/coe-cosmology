@@ -1,0 +1,50 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+    28s free_2p+4C     # 2 left=13.30 ok=True d_us=-0.092 net=1.6e+49
+    30s free_2p+4C     # 0 left=17.43 ok=True d_us=-0.300 net=7.8e+50
+    39s free_2p+4C     # 3 left=22.06 ok=True d_us=-0.124 net=-3.8e+48
+    44s free_2p+4C     # 4 left=16.22 ok=True d_us=+0.300 net=-2.1e+48
+    94s free_2p+4C     # 6 left=17.19 ok=True d_us=-0.300 net=6.2e+50
+   102s free_2p+4C     # 1 left=21.85 ok=True d_us=+0.148 net=1.2e+50
+   116s free_2p+4C     # 5 left=144.70 ok=True d_us=-0.046 net=9.6e+49
+   130s free_2p+4C     # 9 left=18.00 ok=True d_us=+0.145 net=-5.7e+50
+   160s free_2p+4C     #10 left=17.52 ok=True d_us=-0.300 net=7.8e+50
+   189s free_2p+4C     #11 left=34.81 ok=True d_us=-0.053 net=-2.1e+49
+   226s free_2p+4C     # 7 left=20.09 ok=True d_us=-0.300 net=3.6e+49
+   261s free_2p+4C     #13 left=49.84 ok=True d_us=-0.034 net=-4.4e+49
+   274s free_2p+4C     # 8 left=21.31 ok=True d_us=-0.174 net=-1.6e+49
+   289s free_2p+4C     #15 left=83.61 ok=True d_us=+0.021 net=-2.4e+49
+   292s free_2p+4C     #14 left=17.43 ok=True d_us=-0.300 net=7.8e+50
+   316s free_2p+4C     #12 left=17.32 ok=True d_us=-0.300 net=7.5e+50
+   321s free_3p+4C     # 0 left=7.83 ok=True d_us=-0.124 net=-3.7e+49
+   338s free_3p+4C     # 2 left=6.83 ok=True d_us=-0.146 net=-1.2e+50
+   356s free_3p+4C     # 1 left=8.62 ok=True d_us=+0.300 net=-2.5e+50
+   379s free_3p+4C     # 3 left=4.86 ok=True d_us=-0.300 net=4.2e+50
+   380s free_3p+4C     # 5 left=21.85 ok=True d_us=-0.136 net=1.8e+48
+   382s free_3p+4C     # 4 left=8.28 ok=True d_us=+0.190 net=-2.0e+50
+   422s free_3p+4C     # 8 left=4.96 ok=True d_us=-0.300 net=4.4e+50
+   498s free_3p+4C     # 7 left=24.53 ok=True d_us=-0.150 net=8.4e+47
+   500s free_3p+4C     # 6 left=7.83 ok=True d_us=-0.124 net=-3.7e+49
+   542s free_3p+4C     #11 left=23.87 ok=True d_us=-0.094 net=5.4e+47
+   543s free_3p+4C     #10 left=3.60 ok=True d_us=-0.222 net=3.5e+49
+   563s free_3p+4C     # 9 left=41.11 ok=True d_us=+0.300 net=-1.5e+49
+   580s free_3p+4C     #13 left=14.07 ok=True d_us=-0.227 net=7.5e+49
+   590s free_3p+4C     #12 left=3.55 ok=True d_us=-0.223 net=2.5e+49
+   624s free_3p+4C     #15 left=3.60 ok=True d_us=-0.222 net=3.5e+49
+   719s free_2p+4C4V   # 0 left=6.55 ok=True d_us=-0.127 net=-8.3e+49
+   749s free_3p+4C     #14 left=15.39 ok=True d_us=-0.241 net=1.0e+50
+   994s free_2p+4C4V   # 1 left=2.11 ok=True d_us=-0.118 net=5.1e+50
+  1065s free_2p+4C4V   # 2 left=1.23 ok=True d_us=-0.025 net=-1.0e+49
+  1123s free_2p+4C4V   # 3 left=3.17 ok=True d_us=+0.030 net=-3.6e+49
+  1337s free_2p+4C4V   # 4 left=1.75 ok=True d_us=+0.260 net=-1.8e+49
+  1366s free_2p+4C4V   # 6 left=2.73 ok=True d_us=+0.289 net=-2.4e+49
+  1682s free_2p+4C4V   # 7 left=18.66 ok=True d_us=-0.300 net=1.8e+49
+  1721s free_2p+4C4V   # 5 left=6.95 ok=True d_us=-0.300 net=2.5e+49
+  1776s free_2p+4C4V   # 8 left=2.22 ok=True d_us=-0.107 net=-2.8e+49
+  1870s free_2p+4C4V   #10 left=2.61 ok=True d_us=+0.032 net=-5.8e+50
+  1894s free_2p+4C4V   # 9 left=8.16 ok=True d_us=+0.211 net=-6.0e+49
+  2019s free_2p+4C4V   #13 left=5.53 ok=True d_us=-0.223 net=-5.8e+49
+  2074s free_2p+4C4V   #11 left=10.80 ok=True d_us=+0.300 net=-5.5e+50
+  2177s free_2p+4C4V   #12 left=2.21 ok=True d_us=-0.108 net=-2.7e+49
+  2284s free_2p+4C4V   #14 left=2.74 ok=True d_us=-0.023 net=-2.4e+49
+  2299s free_2p+4C4V   #15 left=6.96 ok=True d_us=-0.209 net=3.3e+49
+done 2298.9318041801453

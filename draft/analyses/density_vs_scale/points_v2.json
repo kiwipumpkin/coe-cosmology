@@ -1,0 +1,298 @@
+[
+ {
+  "name": "Coma R200",
+  "R": 2.84,
+  "d": 645,
+  "group": "def",
+  "sign": 1,
+  "label": "Coma"
+ },
+ {
+  "name": "Perseus R200",
+  "R": 1.79,
+  "d": 645,
+  "group": "def",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "Virgo zero-velocity",
+  "R": 7.2,
+  "d": 11.54363956201535,
+  "group": "mass",
+  "sign": 1,
+  "label": "Virgo"
+ },
+ {
+  "name": "Shapley core",
+  "R": 11.4,
+  "d": 20,
+  "group": "mass",
+  "sign": 1,
+  "label": "Shapley core"
+ },
+ {
+  "name": "Corona Borealis SC",
+  "R": 17.857142857142858,
+  "d": 36.988198272374966,
+  "group": "mass",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "Saraswati",
+  "R": 36.6,
+  "d": 1.62,
+  "group": "mass",
+  "sign": 1,
+  "label": "Saraswati"
+ },
+ {
+  "name": "Shapley whole",
+  "R": 43.711882027798126,
+  "d": 0.8018018018018018,
+  "group": "mass",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "Sloan Great Wall",
+  "R": 79.42976098416109,
+  "d": 1.0020020020020022,
+  "group": "mass",
+  "sign": 1,
+  "label": "Sloan Great Wall"
+ },
+ {
+  "name": "BOSS Great Wall A",
+  "R": 36.08336359201349,
+  "d": 2.7370704037370706,
+  "group": "mass",
+  "sign": 1,
+  "label": "BOSS Great Wall"
+ },
+ {
+  "name": "BOSS Great Wall B",
+  "R": 36.67034156227202,
+  "d": 0.8650086400763908,
+  "group": "mass",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "BOSS Great Wall C",
+  "R": 23.651093844602862,
+  "d": 3.423615534726646,
+  "group": "mass",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "BOSS Great Wall D",
+  "R": 21.171784800469684,
+  "d": 1.642906933335976,
+  "group": "mass",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "Horologium-Reticulum SC",
+  "R": 35,
+  "d": 1.4,
+  "group": "gal",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "Vela SC",
+  "R": 50,
+  "d": 0.635,
+  "group": "gal",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "2M++ max R=10h-1",
+  "R": 14.285714285714286,
+  "d": 6.309633561027207,
+  "group": "tpp",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "2M++ min R=10h-1",
+  "R": 14.285714285714286,
+  "d": 0.7498191481082845,
+  "group": "tpp_min",
+  "sign": -1,
+  "label": null
+ },
+ {
+  "name": "2M++ max R=20h-1",
+  "R": 28.571428571428573,
+  "d": 1.9299736467265212,
+  "group": "tpp",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "2M++ min R=20h-1",
+  "R": 28.571428571428573,
+  "d": 0.5882493699245658,
+  "group": "tpp_min",
+  "sign": -1,
+  "label": null
+ },
+ {
+  "name": "2M++ max R=30h-1",
+  "R": 42.85714285714286,
+  "d": 1.0293318696004619,
+  "group": "tpp",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "2M++ min R=30h-1",
+  "R": 42.85714285714286,
+  "d": 0.4454843955915032,
+  "group": "tpp_min",
+  "sign": -1,
+  "label": null
+ },
+ {
+  "name": "2M++ max R=50h-1",
+  "R": 71.42857142857143,
+  "d": 0.34606279827836317,
+  "group": "tpp",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "2M++ min R=50h-1",
+  "R": 71.42857142857143,
+  "d": 0.2336975614508589,
+  "group": "tpp_min",
+  "sign": -1,
+  "label": null
+ },
+ {
+  "name": "2M++ max R=70h-1",
+  "R": 100.0,
+  "d": 0.20795818612176176,
+  "group": "tpp",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "2M++ min R=70h-1",
+  "R": 100.0,
+  "d": 0.12698292607127376,
+  "group": "tpp_min",
+  "sign": -1,
+  "label": null
+ },
+ {
+  "name": "2M++ max R=100h-1",
+  "R": 142.85714285714286,
+  "d": 0.08194029765370081,
+  "group": "tpp",
+  "sign": 1,
+  "label": null
+ },
+ {
+  "name": "2M++ min R=100h-1",
+  "R": 142.85714285714286,
+  "d": 0.040527284497776275,
+  "group": "tpp_min",
+  "sign": -1,
+  "label": null
+ },
+ {
+  "name": "Local Void",
+  "R": 23,
+  "d": 0.8,
+  "group": "void_gal",
+  "sign": -1,
+  "label": "Local Void"
+ },
+ {
+  "name": "Bootes void",
+  "R": 44,
+  "d": 0.75,
+  "group": "void_gal",
+  "sign": -1,
+  "label": "Bo\u00f6tes"
+ },
+ {
+  "name": "BOSS largest void (central min)",
+  "R": 91.5,
+  "d": 0.89,
+  "group": "void_gal",
+  "sign": -1,
+  "label": null
+ },
+ {
+  "name": "SDSS voids lensing",
+  "R": 40,
+  "d": 0.4,
+  "group": "void_mass",
+  "sign": -1,
+  "label": null
+ },
+ {
+  "name": "Eridanus (Szapudi15)",
+  "R": 314.2857142857143,
+  "d": 0.14,
+  "group": "void_mass",
+  "sign": -1,
+  "label": "Eridanus"
+ },
+ {
+  "name": "Eridanus (Kovacs&GB16, central)",
+  "R": 278.5714285714286,
+  "d": 0.25,
+  "group": "void_mass",
+  "sign": -1,
+  "label": null
+ },
+ {
+  "name": "Local Hole: Boehringer20 (100)",
+  "R": 100,
+  "d": 0.3,
+  "group": "disputed",
+  "sign": -1,
+  "label": null
+ },
+ {
+  "name": "Local Hole: Boehringer20 (140)",
+  "R": 140,
+  "d": 0.2,
+  "group": "disputed",
+  "sign": -1,
+  "label": null
+ },
+ {
+  "name": "Local Hole: Whitbourn&Shanks14",
+  "R": 214.2857142857143,
+  "d": 0.15,
+  "group": "disputed",
+  "sign": -1,
+  "label": null
+ },
+ {
+  "name": "Local Hole: Keenan13",
+  "R": 300,
+  "d": 0.33,
+  "group": "disputed",
+  "sign": -1,
+  "label": "Local Hole claims"
+ },
+ {
+  "name": "Local Hole: Wong22",
+  "R": 321.2142857142857,
+  "d": 0.21,
+  "group": "disputed",
+  "sign": -1,
+  "label": null
+ }
+]

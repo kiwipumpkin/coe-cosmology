@@ -1,0 +1,2 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+DONE {'rule': 'cmb_aware', 'seed': 1, 'n_void': 2524, 'cap': 2524, 'hit_cap': True, 'void_vol_frac': 0.31540348462033735, 'final': 192.95444162828628, 'min': 185.2910856449142, 'argmin': 2078, 'min_gap': inf, 'where_voids': {'n': 2524, 'inside_us': 0, 'in_core': 324, 'beyond_42_9': 0}, 'final_amps': [30.609437272928883, 98.78781441160784, 103.60451979216037, 138.6818468133329, 45.522347517689745, 64.02873278089618]}

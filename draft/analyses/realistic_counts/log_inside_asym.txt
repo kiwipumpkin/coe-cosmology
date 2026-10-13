@@ -1,0 +1,6 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+CCCCCCC valid 10 best 13.925
+CCCCCCCC valid 10 best 15.335
+CCCCCCVV valid 10 best 3.233
+CCCCVVVV valid 10 best 3.548
+CCCCCCCCCC valid 10 best 5.748

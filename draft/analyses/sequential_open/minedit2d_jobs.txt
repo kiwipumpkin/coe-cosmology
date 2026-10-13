@@ -1,0 +1,6 @@
+6 b_random_s1_tidalcore
+8 b_random_s1_tidalcore
+6 b_random_s2_tidalcore
+8 b_random_s2_tidalcore
+6 b_random_s3_tidalcore
+8 b_random_s3_tidalcore

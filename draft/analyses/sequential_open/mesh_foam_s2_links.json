@@ -1,0 +1,20 @@
+{
+ "before": {
+  "nodes": 1133,
+  "links": 2218,
+  "cc": 1051,
+  "cv": 1139,
+  "vv": 28,
+  "moved_nodes": 193,
+  "links_moved": 471
+ },
+ "after": {
+  "nodes": 1136,
+  "links": 2316,
+  "cc": 1154,
+  "cv": 1130,
+  "vv": 32,
+  "moved_nodes": 195,
+  "links_moved": 579
+ }
+}

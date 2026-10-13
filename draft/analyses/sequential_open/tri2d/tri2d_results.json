@@ -1,0 +1,176 @@
+{
+ "_setup": {
+  "lattice": "triangular, periodic box 44x46 sites = 2024 (box 44.0 a x 39.8 a)",
+  "units": "energies in G*M_c^2/a per node; M_c=1.40e50 kg; case A |M_v|=M_c; case B M_v=-8.39e50 kg (= -5.993 M_c)",
+  "all_pairs": "2D-periodic Ewald sum of 1/r with neutralizing uniform background (k=0 term); includes self-image terms (constant at fixed composition)",
+  "MC": "nonlocal Kawasaki swaps (random cluster <-> random void), geometric anneal; NN: T 3->0.01 (x scale), 60 steps x 40N attempts; all pairs: T 5->0.01, 40 x 15N attempts; B temperatures scaled by ((1-Mv/Mc)/2)^2=12.23; NN result replaced by the best of 6 longer anneals (T 3->0.05, 300 steps x 400N attempts)",
+  "triangle_area_a2": 0.4330127018922193,
+  "link_length_a": 1.0,
+  "connections_per_node": 6,
+  "J_unit_a=1.89 Gpc (3D mean spacing)": 2.2429870645834605e+64,
+  "J_unit_a=2.03 Gpc (2D-matched)": 2.0882983015087394e+64,
+  "J_unit_a=171 Mpc": 2.479090966118561e+65
+ },
+ "A | random 50/50": {
+  "n_clusters": 1012,
+  "like_links_per_node": 2.9822134387351777,
+  "unlike_links_per_node": 3.0177865612648223,
+  "cc_per_node": 1.4911067193675889,
+  "vv_per_node": 1.4911067193675889,
+  "U_nn_per_node": 0.017786561264822136,
+  "U_all_per_node": 0.04950047817704833
+ },
+ "A | alternating rows (= best alternation)": {
+  "n_clusters": 1012,
+  "like_links_per_node": 2.0,
+  "unlike_links_per_node": 4.0,
+  "cc_per_node": 1.0,
+  "vv_per_node": 1.0,
+  "U_nn_per_node": 1.0,
+  "U_all_per_node": 0.702237106022817
+ },
+ "A | double-row stripes": {
+  "n_clusters": 1056,
+  "like_links_per_node": 4.086956521739131,
+  "unlike_links_per_node": 1.9130434782608696,
+  "cc_per_node": 2.1739130434782608,
+  "vv_per_node": 1.9130434782608696,
+  "U_nn_per_node": -1.0869565217391304,
+  "U_all_per_node": -0.20441869244982458
+ },
+ "A | small clumps": {
+  "n_clusters": 1012,
+  "like_links_per_node": 4.701581027667984,
+  "unlike_links_per_node": 1.2984189723320159,
+  "cc_per_node": 2.350790513833992,
+  "vv_per_node": 2.350790513833992,
+  "U_nn_per_node": -1.7015810276679841,
+  "U_all_per_node": -2.4634224638604767
+ },
+ "A | big clumps": {
+  "n_clusters": 1012,
+  "like_links_per_node": 5.608695652173913,
+  "unlike_links_per_node": 0.391304347826087,
+  "cc_per_node": 2.8043478260869565,
+  "vv_per_node": 2.8043478260869565,
+  "U_nn_per_node": -2.608695652173913,
+  "U_all_per_node": -11.669241645302776
+ },
+ "A | phase separation, row interface": {
+  "n_clusters": 1012,
+  "like_links_per_node": 5.826086956521739,
+  "unlike_links_per_node": 0.17391304347826086,
+  "cc_per_node": 2.9130434782608696,
+  "vv_per_node": 2.9130434782608696,
+  "U_nn_per_node": -2.8260869565217392,
+  "U_all_per_node": -17.570548979320844
+ },
+ "A | phase separation, column interface": {
+  "n_clusters": 1012,
+  "like_links_per_node": 5.818181818181818,
+  "unlike_links_per_node": 0.18181818181818182,
+  "cc_per_node": 2.909090909090909,
+  "vv_per_node": 2.909090909090909,
+  "U_nn_per_node": -2.8181818181818183,
+  "U_all_per_node": -19.58485518644787
+ },
+ "A | MC anneal, nearest-neighbour links [A]": {
+  "n_clusters": 1012,
+  "like_links_per_node": 5.826086956521739,
+  "unlike_links_per_node": 0.17391304347826086,
+  "cc_per_node": 2.9130434782608696,
+  "vv_per_node": 2.9130434782608696,
+  "U_nn_per_node": -2.8260869565217392,
+  "U_all_per_node": -17.57054897932084
+ },
+ "A | MC anneal, all pairs (Ewald) [A]": {
+  "n_clusters": 1012,
+  "like_links_per_node": 5.818181818181818,
+  "unlike_links_per_node": 0.18181818181818182,
+  "cc_per_node": 2.909090909090909,
+  "vv_per_node": 2.909090909090909,
+  "U_nn_per_node": -2.8181818181818183,
+  "U_all_per_node": -19.58485518644787
+ },
+ "B | random 50/50": {
+  "n_clusters": 1012,
+  "like_links_per_node": 2.9822134387351777,
+  "unlike_links_per_node": 3.0177865612648223,
+  "cc_per_node": 1.4911067193675889,
+  "vv_per_node": 1.4911067193675889,
+  "U_nn_per_node": -18.479025898402835,
+  "U_all_per_node": 13.73449674137822
+ },
+ "B | alternating rows (= best alternation)": {
+  "n_clusters": 1012,
+  "like_links_per_node": 2.0,
+  "unlike_links_per_node": 4.0,
+  "cc_per_node": 1.0,
+  "vv_per_node": 1.0,
+  "U_nn_per_node": -6.471454081632653,
+  "U_all_per_node": 21.714210342515102
+ },
+ "B | double-row stripes": {
+  "n_clusters": 1056,
+  "like_links_per_node": 4.086956521739131,
+  "unlike_links_per_node": 1.9130434782608696,
+  "cc_per_node": 2.1739130434782608,
+  "vv_per_node": 1.9130434782608696,
+  "U_nn_per_node": -29.707502218278613,
+  "U_all_per_node": 9.031322329486022
+ },
+ "B | small clumps": {
+  "n_clusters": 1012,
+  "like_links_per_node": 4.701581027667984,
+  "unlike_links_per_node": 1.2984189723320159,
+  "cc_per_node": 2.350790513833992,
+  "vv_per_node": 2.350790513833992,
+  "U_nn_per_node": -39.49831660381544,
+  "U_all_per_node": -16.986018277619063
+ },
+ "B | big clumps": {
+  "n_clusters": 1012,
+  "like_links_per_node": 5.608695652173913,
+  "unlike_links_per_node": 0.391304347826087,
+  "cc_per_node": 2.8043478260869565,
+  "vv_per_node": 2.8043478260869565,
+  "U_nn_per_node": -50.58780445874002,
+  "U_all_per_node": -129.52727519191419
+ },
+ "B | phase separation, row interface": {
+  "n_clusters": 1012,
+  "like_links_per_node": 5.826086956521739,
+  "unlike_links_per_node": 0.17391304347826086,
+  "cc_per_node": 2.9130434782608696,
+  "vv_per_node": 2.9130434782608696,
+  "U_nn_per_node": -53.245415927240444,
+  "U_all_per_node": -201.67083262206208
+ },
+ "B | phase separation, column interface": {
+  "n_clusters": 1012,
+  "like_links_per_node": 5.818181818181818,
+  "unlike_links_per_node": 0.18181818181818182,
+  "cc_per_node": 2.909090909090909,
+  "vv_per_node": 2.909090909090909,
+  "U_nn_per_node": -53.14877551020408,
+  "U_all_per_node": -226.2957516968714
+ },
+ "B | MC anneal, nearest-neighbour links [B]": {
+  "n_clusters": 1012,
+  "like_links_per_node": 5.826086956521739,
+  "unlike_links_per_node": 0.17391304347826086,
+  "cc_per_node": 2.9130434782608696,
+  "vv_per_node": 2.9130434782608696,
+  "U_nn_per_node": -53.2454159272405,
+  "U_all_per_node": -201.67083262206236
+ },
+ "B | MC anneal, all pairs (Ewald) [B]": {
+  "n_clusters": 1012,
+  "like_links_per_node": 5.818181818181818,
+  "unlike_links_per_node": 0.18181818181818182,
+  "cc_per_node": 2.909090909090909,
+  "vv_per_node": 2.909090909090909,
+  "U_nn_per_node": -53.14877551020408,
+  "U_all_per_node": -226.2957516968714
+ }
+}

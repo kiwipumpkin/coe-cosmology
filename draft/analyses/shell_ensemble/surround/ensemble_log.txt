@@ -1,0 +1,25 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+grad_bare_N200_a med=237.3 p5=236.7 min=234.2 best_med=233.6 best_min=168.5 f<237=0.464 f35=0.034/0.248 back=0.59 near=0.282 beyond=0.452 E[rms2]=5.654e+04 pred=5.654e+04 minD=14.30 t=3s
+grad_bare_N200_b med=240.3 p5=227.2 min=210.2 best_med=233.6 best_min=168.4 f<237=0.363 f35=0.009/0.097 back=0.59 near=0.279 beyond=0.454 E[rms2]=1.155e+05 pred=1.152e+05 minD=14.30 t=6s
+grad_bare_N200_c med=990.5 p5=450.8 min=262.7 best_med=233.2 best_min=169.8 f<237=0.000 f35=0.000/0.000 back=0.59 near=0.279 beyond=0.455 E[rms2]=2.181e+07 pred=2.181e+07 minD=14.30 t=9s
+grad_bare_N500_a med=237.2 p5=236.1 min=233.5 best_med=233.6 best_min=183.3 f<237=0.516 f35=0.020/0.242 back=0.59 near=0.282 beyond=0.453 E[rms2]=6.287e+04 pred=6.28e+04 minD=14.30 t=17s
+grad_bare_N500_b med=249.1 p5=224.3 min=204.9 best_med=233.7 best_min=175.4 f<237=0.243 f35=0.004/0.049 back=0.59 near=0.282 beyond=0.454 E[rms2]=1.386e+05 pred=1.382e+05 minD=14.30 t=24s
+grad_bare_N500_c med=2010.9 p5=890.1 min=558.1 best_med=233.6 best_min=178.4 f<237=0.000 f35=0.000/0.000 back=0.59 near=0.281 beyond=0.453 E[rms2]=1.545e+08 pred=1.545e+08 minD=14.30 t=31s
+grad_buf_N200_a med=237.3 p5=236.6 min=232.8 best_med=233.0 best_min=158.7 f<237=0.506 f35=0.038/0.291 back=0.59 near=0.280 beyond=0.453 E[rms2]=5.63e+04 pred=5.63e+04 minD=14.46 t=34s
+grad_buf_N200_b med=239.1 p5=227.7 min=214.8 best_med=232.8 best_min=169.6 f<237=0.382 f35=0.015/0.116 back=0.59 near=0.275 beyond=0.459 E[rms2]=5.851e+04 pred=5.831e+04 minD=14.75 t=37s
+grad_buf_N200_c med=658.4 p5=374.7 min=224.4 best_med=232.0 best_min=170.5 f<237=0.001 f35=0.000/0.000 back=0.60 near=0.260 beyond=0.465 E[rms2]=5.698e+05 pred=5.659e+05 minD=15.73 t=40s
+grad_buf_N500_a med=237.3 p5=236.2 min=234.6 best_med=233.4 best_min=176.8 f<237=0.489 f35=0.020/0.248 back=0.59 near=0.278 beyond=0.454 E[rms2]=5.632e+04 pred=5.631e+04 minD=14.44 t=48s
+grad_buf_N500_b med=244.2 p5=224.0 min=203.8 best_med=233.5 best_min=172.0 f<237=0.296 f35=0.009/0.065 back=0.59 near=0.276 beyond=0.457 E[rms2]=6.221e+04 pred=6.216e+04 minD=14.76 t=55s
+grad_buf_N500_c med=1096.9 p5=629.2 min=441.1 best_med=232.1 best_min=163.3 f<237=0.000 f35=0.000/0.000 back=0.59 near=0.261 beyond=0.464 E[rms2]=1.45e+06 pred=1.445e+06 minD=15.72 t=63s
+unif_bare_N200_a med=237.3 p5=236.7 min=233.9 best_med=233.3 best_min=165.0 f<237=0.494 f35=0.027/0.255 back=0.59 near=0.283 beyond=0.452 E[rms2]=5.633e+04 pred=5.632e+04 minD=14.30 t=66s
+unif_bare_N200_b med=239.9 p5=226.4 min=213.1 best_med=233.5 best_min=153.1 f<237=0.367 f35=0.013/0.106 back=0.59 near=0.281 beyond=0.454 E[rms2]=8.319e+04 pred=8.258e+04 minD=14.30 t=69s
+unif_bare_N200_c med=1010.3 p5=467.1 min=279.2 best_med=232.9 best_min=171.5 f<237=0.000 f35=0.000/0.000 back=0.59 near=0.281 beyond=0.453 E[rms2]=1.052e+07 pred=1.051e+07 minD=14.30 t=72s
+unif_bare_N500_a med=237.3 p5=236.3 min=233.6 best_med=234.1 best_min=173.7 f<237=0.491 f35=0.029/0.248 back=0.59 near=0.281 beyond=0.455 E[rms2]=5.633e+04 pred=5.634e+04 minD=14.30 t=80s
+unif_bare_N500_b med=248.7 p5=223.0 min=199.5 best_med=233.5 best_min=181.0 f<237=0.268 f35=0.002/0.038 back=0.59 near=0.281 beyond=0.454 E[rms2]=1.702e+05 pred=1.708e+05 minD=14.30 t=88s
+unif_bare_N500_c med=2001.2 p5=923.4 min=502.8 best_med=234.0 best_min=175.8 f<237=0.000 f35=0.000/0.000 back=0.59 near=0.281 beyond=0.453 E[rms2]=4.508e+07 pred=4.507e+07 minD=14.30 t=96s
+unif_buf_N200_a med=237.3 p5=236.7 min=235.1 best_med=233.1 best_min=179.5 f<237=0.491 f35=0.025/0.243 back=0.59 near=0.280 beyond=0.455 E[rms2]=5.63e+04 pred=5.63e+04 minD=14.46 t=99s
+unif_buf_N200_b med=239.0 p5=226.8 min=215.4 best_med=232.7 best_min=175.9 f<237=0.395 f35=0.012/0.116 back=0.59 near=0.276 beyond=0.457 E[rms2]=5.854e+04 pred=5.832e+04 minD=14.79 t=102s
+unif_buf_N200_c med=663.3 p5=376.2 min=266.8 best_med=232.1 best_min=172.3 f<237=0.000 f35=0.000/0.000 back=0.59 near=0.260 beyond=0.463 E[rms2]=5.92e+05 pred=5.896e+05 minD=15.76 t=105s
+unif_buf_N500_a med=237.3 p5=236.2 min=232.5 best_med=233.7 best_min=166.5 f<237=0.465 f35=0.038/0.221 back=0.59 near=0.278 beyond=0.455 E[rms2]=5.632e+04 pred=5.631e+04 minD=14.45 t=113s
+unif_buf_N500_b med=243.5 p5=223.2 min=197.7 best_med=233.2 best_min=160.2 f<237=0.317 f35=0.003/0.060 back=0.59 near=0.274 beyond=0.456 E[rms2]=6.179e+04 pred=6.174e+04 minD=14.76 t=121s
+unif_buf_N500_c med=1093.1 p5=643.0 min=412.2 best_med=232.2 best_min=150.1 f<237=0.000 f35=0.000/0.000 back=0.59 near=0.260 beyond=0.465 E[rms2]=1.404e+06 pred=1.405e+06 minD=15.74 t=129s

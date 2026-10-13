@@ -1,0 +1,8 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+foam 1 1000 0s
+foam 1 2000 1s
+foam 1 3000 2s
+foam 1 4000 3s
+foam 1 5000 6s
+foam 1 6000 9s
+DONE {'rule': 'foam', 'seed': 1, 'n_void': 6000, 'void_vol_frac': 0.3153740394368099, 'final': 350.4278868709902, 'min': 237.25774727436274, 'start': 237.25774727436274, 'min_gap': inf, 'n_near_ring': 48}

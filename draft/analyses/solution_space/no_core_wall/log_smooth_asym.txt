@@ -1,0 +1,5 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+   248s smooth CCCCCCVVVVVV  warm1   left=1.50 viol=0.0e+00 maxdepth=+0.4
+   454s smooth CCCCCCVVVVVV  warm0   left=1.72 viol=0.0e+00 maxdepth=+1.1
+   582s smooth CCCCCCVVVVVV  warm2   left=0.40 viol=0.0e+00 maxdepth=+11.2
+   769s smooth CCCCCCVVVVVV  warm3   left=0.98 viol=1.1e-04 maxdepth=+11.1

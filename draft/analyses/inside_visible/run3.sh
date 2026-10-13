@@ -1,0 +1,6 @@
+cd /workspace/clump_scan/inside_visible
+NP=7 python3 -u fit_in.py cap2e52 16 2e52 CCVVVVV CCCVVVV CCCCVVV CCCCCVV CCCCCCV CVVVVVVV CCVVVVVV CCCVVVVV CCCCVVVV CCCCCVVV CCCCCCVV CCCCCCCV 
+MASS="C CC CCC CCCC CCCCC CCCCCC CCCCCCC CCCCCCCC CCCCCCCCC CCCCCCCCCC"
+NP=7 python3 -u fit_in.py cap1e53 16 1e53 $MASS CCCCV CCCCVV
+COMP=none NP=7 python3 -u fit_in.py nocomp 16 2e52 $MASS
+COMP=surround NP=7 python3 -u fit_in.py surrcomp 16 2e52 $MASS

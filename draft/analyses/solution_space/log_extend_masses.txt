@@ -1,0 +1,14 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+masses start CCCCCCCC stored 12.99 re-encoded 12.99
+N=9 CCCCCCCCC left=11.21x (mass-add 11.210073813488751, void-add None) top modes m=[10, 11, 12] caps M:0 V:0 t=14s
+N=10 CCCCCCCCCC left=9.72x (mass-add 9.724947577596383, void-add None) top modes m=[10, 12, 7] caps M:0 V:0 t=18s
+N=11 CCCCCCCCCCC left=8.43x (mass-add 8.431979538890443, void-add None) top modes m=[10, 12, 7] caps M:0 V:0 t=54s
+N=12 CCCCCCCCCCCC left=7.69x (mass-add 7.689267309947733, void-add None) top modes m=[10, 12, 7] caps M:0 V:0 t=101s
+N=13 CCCCCCCCCCCCC left=7.11x (mass-add 7.112687122388125, void-add None) top modes m=[10, 12, 7] caps M:0 V:0 t=119s
+N=14 CCCCCCCCCCCCCC left=6.29x (mass-add 6.289315651437295, void-add None) top modes m=[10, 12, 11] caps M:0 V:0 t=185s
+N=15 CCCCCCCCCCCCCCC left=5.67x (mass-add 5.67241224813796, void-add None) top modes m=[10, 12, 7] caps M:0 V:0 t=199s
+N=16 CCCCCCCCCCCCCCCC left=5.26x (mass-add 5.258003247997146, void-add None) top modes m=[10, 12, 7] caps M:0 V:0 t=213s
+N=17 CCCCCCCCCCCCCCCCC left=4.89x (mass-add 4.8943703395311475, void-add None) top modes m=[10, 12, 7] caps M:0 V:0 t=291s
+N=18 CCCCCCCCCCCCCCCCCC left=4.60x (mass-add 4.597497238399941, void-add None) top modes m=[10, 11, 7] caps M:0 V:0 t=414s
+N=19 CCCCCCCCCCCCCCCCCCC left=4.29x (mass-add 4.288550696007693, void-add None) top modes m=[10, 11, 7] caps M:0 V:0 t=480s
+N=20 CCCCCCCCCCCCCCCCCCCC left=4.14x (mass-add 4.13811778439658, void-add None) top modes m=[10, 11, 7] caps M:0 V:0 t=561s

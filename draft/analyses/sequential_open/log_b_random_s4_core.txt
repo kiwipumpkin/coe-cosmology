@@ -1,0 +1,28 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+random s4 voids=2600 objs=18200 t=62s ckpt
+random s4 voids=4000 objs=28000 t=126s ckpt
+random s4 voids=5000 objs=35000 t=187s ckpt
+random s4 voids=5900 objs=41300 t=249s ckpt
+random s4 voids=6500 objs=45500 t=319s ckpt
+random s4 voids=7000 objs=49000 t=382s ckpt
+random s4 voids=7500 objs=52500 t=449s ckpt
+random s4 voids=8100 objs=56700 t=517s ckpt
+random s4 voids=8500 objs=59500 t=579s ckpt
+random s4 voids=8900 objs=62300 t=647s ckpt
+random s4 voids=9300 objs=65100 t=721s ckpt
+random s4 voids=9700 objs=67900 t=793s ckpt
+random s4 voids=10100 objs=70700 t=870s ckpt
+random s4 voids=10500 objs=73500 t=948s ckpt
+random s4 voids=10800 objs=75600 t=1022s ckpt
+random s4 voids=11100 objs=77700 t=1103s ckpt
+random s4 voids=11400 objs=79800 t=1186s ckpt
+random s4 voids=11600 objs=81200 t=1270s ckpt
+random s4 voids=11800 objs=82600 t=1350s ckpt
+random s4 voids=12000 objs=84000 t=1449s ckpt
+random s4 voids=12200 objs=85400 t=1558s ckpt
+random s4 voids=12300 objs=86100 t=1621s ckpt
+random s4 voids=12400 objs=86800 t=1691s ckpt
+random s4 voids=12500 objs=87500 t=1761s ckpt
+random s4 voids=12600 objs=88200 t=1849s ckpt
+random s4 voids=12700 objs=88900 t=1935s ckpt
+DONE {'rule': 'random', 'seed': 4, 'Rv': 1.5, 'n_obj': 88977, 'n_void': 12711, 'n_clu': 76266, 'void_vol_frac': 0.2881498839190741, 'net_kg': 9.719979719177197e+36, 'min_gap_gpc': 0.020003037136184065, 'final_left': 934.1904516668786, 'min_left': 236.4690521709367, 'argmin': 19, 'web_rms': 936.7195856385082, 'final_amps': [301.385029593194, 713.076611520426, 106.93337733531679, 418.94089162315464, 41.601036467706244, 430.00319542655006], 'where_all': {'n': 88977, 'inside_us': 0, 'in_core': 49382, 'beyond_42_9': 41960}, 'where_voids': {'n': 12711, 'inside_us': 0, 'in_core': 6925, 'beyond_42_9': 5907}, 'where_clusters': {'n': 76266, 'inside_us': 0, 'in_core': 42457, 'beyond_42_9': 36053}}

@@ -1,0 +1,23 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+  stage1 reloc chunk 0 left=219.49
+  stage1 reloc chunk 40 left=53.03
+  stage1 reloc chunk 80 left=14.02
+  stage1 reloc chunk 120 left=6.96
+  stage1 reloc chunk 160 left=4.91
+  stage1 reloc chunk 200 left=3.75
+resumed b_foam_rim_s3_tidalcore 237
+  b_foam_rim_s3_tidalcore edited=261 left=2.28 t=3s
+  b_foam_rim_s3_tidalcore edited=285 left=1.94 t=7s
+  b_foam_rim_s3_tidalcore edited=309 left=1.81 t=10s
+  b_foam_rim_s3_tidalcore edited=333 left=1.61 t=13s
+  b_foam_rim_s3_tidalcore edited=357 left=1.44 t=20s
+  b_foam_rim_s3_tidalcore edited=381 left=1.42 t=24s
+  b_foam_rim_s3_tidalcore edited=405 left=1.35 t=27s
+  b_foam_rim_s3_tidalcore edited=429 left=1.25 t=31s
+  b_foam_rim_s3_tidalcore edited=453 left=1.18 t=34s
+  b_foam_rim_s3_tidalcore edited=477 left=1.04 t=42s
+  b_foam_rim_s3_tidalcore edited=501 left=1.04 t=45s
+  b_foam_rim_s3_tidalcore edited=525 left=1.00 t=48s
+  b_foam_rim_s3_tidalcore edited=549 left=1.00 t=51s
+  b_foam_rim_s3_tidalcore edited=573 left=1.00 t=54s
+DONE b_foam_rim_s3_tidalcore edited 489 del 0 left 0.995

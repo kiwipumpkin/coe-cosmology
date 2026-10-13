@@ -1,0 +1,31 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+random s1 voids=2000 objs=14000 t=62s ckpt
+random s1 voids=3200 objs=22400 t=125s ckpt
+random s1 voids=4000 objs=28000 t=187s ckpt
+random s1 voids=4700 objs=32900 t=247s ckpt
+random s1 voids=5400 objs=37800 t=310s ckpt
+random s1 voids=6000 objs=42000 t=371s ckpt
+random s1 voids=6600 objs=46200 t=442s ckpt
+random s1 voids=7200 objs=50400 t=509s ckpt
+random s1 voids=7600 objs=53200 t=572s ckpt
+random s1 voids=8000 objs=56000 t=645s ckpt
+random s1 voids=8400 objs=58800 t=718s ckpt
+random s1 voids=8800 objs=61600 t=791s ckpt
+random s1 voids=9100 objs=63700 t=853s ckpt
+random s1 voids=9400 objs=65800 t=917s ckpt
+random s1 voids=9700 objs=67900 t=993s ckpt
+random s1 voids=10000 objs=70000 t=1082s ckpt
+random s1 voids=10200 objs=71400 t=1155s ckpt
+random s1 voids=10500 objs=73500 t=1242s ckpt
+random s1 voids=10800 objs=75600 t=1332s ckpt
+random s1 voids=11000 objs=77000 t=1411s ckpt
+random s1 voids=11200 objs=78400 t=1494s ckpt
+random s1 voids=11400 objs=79800 t=1581s ckpt
+random s1 voids=11600 objs=81200 t=1669s ckpt
+random s1 voids=11800 objs=82600 t=1774s ckpt
+random s1 voids=12000 objs=84000 t=1897s ckpt
+random s1 voids=12100 objs=84700 t=1969s ckpt
+random s1 voids=12200 objs=85400 t=2047s ckpt
+random s1 voids=12300 objs=86100 t=2119s ckpt
+random s1 voids=12400 objs=86800 t=2195s ckpt
+DONE {'rule': 'random', 'seed': 1, 'Rv': 1.5, 'n_obj': 87241, 'n_void': 12463, 'n_clu': 74778, 'void_vol_frac': 0.28252788948811425, 'net_kg': -1.0301516967333098e+37, 'min_gap_gpc': 0.020002376691706097, 'final_left': 1302.16449696963, 'min_left': 224.37750667988965, 'argmin': 2227, 'web_rms': 1254.9713908056224, 'final_amps': [419.51942401329757, 263.75598829908915, 512.1510679511342, 280.5365557813951, 529.5804153851178, 153.96047625109912], 'where_all': {'n': 87241, 'inside_us': 0, 'in_core': 48589, 'beyond_42_9': 41225}, 'where_voids': {'n': 12463, 'inside_us': 0, 'in_core': 6801, 'beyond_42_9': 5795}, 'where_clusters': {'n': 74778, 'inside_us': 0, 'in_core': 41788, 'beyond_42_9': 35430}}

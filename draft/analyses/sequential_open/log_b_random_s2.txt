@@ -1,0 +1,34 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+random s2 voids=2600 objs=18200 t=64s ckpt
+random s2 voids=3600 objs=25200 t=128s ckpt
+random s2 voids=4300 objs=30100 t=193s ckpt
+random s2 voids=4800 objs=33600 t=254s ckpt
+random s2 voids=5300 objs=37100 t=316s ckpt
+random s2 voids=5700 objs=39900 t=385s ckpt
+random s2 voids=6100 objs=42700 t=449s ckpt
+random s2 voids=6500 objs=45500 t=523s ckpt
+random s2 voids=6900 objs=48300 t=592s ckpt
+random s2 voids=7300 objs=51100 t=660s ckpt
+random s2 voids=7700 objs=53900 t=742s ckpt
+random s2 voids=8000 objs=56000 t=810s ckpt
+random s2 voids=8300 objs=58100 t=880s ckpt
+random s2 voids=8600 objs=60200 t=950s ckpt
+random s2 voids=8900 objs=62300 t=1021s ckpt
+random s2 voids=9200 objs=64400 t=1095s ckpt
+random s2 voids=9500 objs=66500 t=1171s ckpt
+random s2 voids=9800 objs=68600 t=1259s ckpt
+random s2 voids=10000 objs=70000 t=1323s ckpt
+random s2 voids=10300 objs=72100 t=1413s ckpt
+random s2 voids=10500 objs=73500 t=1479s ckpt
+random s2 voids=10700 objs=74900 t=1543s ckpt
+random s2 voids=10900 objs=76300 t=1624s ckpt
+random s2 voids=11100 objs=77700 t=1715s ckpt
+random s2 voids=11300 objs=79100 t=1806s ckpt
+random s2 voids=11500 objs=80500 t=1903s ckpt
+random s2 voids=11700 objs=81900 t=2006s ckpt
+random s2 voids=11900 objs=83300 t=2131s ckpt
+random s2 voids=12100 objs=84700 t=2220s ckpt
+random s2 voids=12300 objs=86100 t=2310s ckpt
+random s2 voids=12500 objs=87500 t=2432s ckpt
+random s2 voids=12600 objs=88200 t=2514s ckpt
+DONE {'rule': 'random', 'seed': 2, 'Rv': 1.5, 'n_obj': 88228, 'n_void': 12604, 'n_clu': 75624, 'void_vol_frac': 0.28026700946399313, 'net_kg': 2.5089178420440287e+37, 'min_gap_gpc': 0.020009252416472056, 'final_left': 1980.1411090873191, 'min_left': 237.28591152288482, 'argmin': 1, 'web_rms': 1973.1233309165268, 'final_amps': [2036.1939983808095, 1184.9714774527372, 435.889772493072, 556.9219897856955, 877.7661420941681, 311.9167291417057], 'where_all': {'n': 88228, 'inside_us': 1346, 'in_core': 48525, 'beyond_42_9': 41063}, 'where_voids': {'n': 12604, 'inside_us': 201, 'in_core': 6767, 'beyond_42_9': 5771}, 'where_clusters': {'n': 75624, 'inside_us': 1145, 'in_core': 41758, 'beyond_42_9': 35292}}

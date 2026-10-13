@@ -1,0 +1,5 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+seed 0 left 135.77 voids 33 gap 0.02317911432248998
+seed 1 left 136.45 voids 28 gap 0.13207804643523868
+seed 2 left 136.88 voids 36 gap 0.1688500069165535
+seed 3 left 135.3 voids 30 gap 0.09570735860507806

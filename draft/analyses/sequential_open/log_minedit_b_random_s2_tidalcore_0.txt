@@ -1,0 +1,13 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+resumed b_random_s2_tidalcore 1102
+  b_random_s2_tidalcore edited=1126 left=91.27 t=1824s
+  b_random_s2_tidalcore edited=1150 left=91.18 t=1829s
+  b_random_s2_tidalcore edited=1174 left=91.17 t=1832s
+  b_random_s2_tidalcore edited=1198 left=90.95 t=1836s
+  b_random_s2_tidalcore edited=1222 left=90.95 t=1838s
+  b_random_s2_tidalcore edited=1246 left=90.86 t=1842s
+  b_random_s2_tidalcore edited=1270 left=90.86 t=1844s
+  b_random_s2_tidalcore edited=1294 left=90.81 t=1847s
+  b_random_s2_tidalcore edited=1318 left=90.81 t=1848s
+plateau
+DONE b_random_s2_tidalcore edited 1318 of 16905 left 90.806

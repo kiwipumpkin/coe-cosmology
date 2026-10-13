@@ -1,0 +1,623 @@
+\documentclass[aps,prd,twocolumn,nofootinbib,superscriptaddress,floatfix]{revtex4-2}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{placeins}
+\usepackage[font=small]{caption}
+\usepackage{subcaption}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\sisetup{range-phrase=--,range-units=single,separate-uncertainty=true}
+\DeclareSIUnit\Gpc{Gpc}
+\DeclareSIUnit\Mpc{Mpc}
+\setcounter{dbltopnumber}{3}\setcounter{topnumber}{3}\setcounter{totalnumber}{6}
+\renewcommand{\dbltopfraction}{0.95}\renewcommand{\topfraction}{0.95}\renewcommand{\textfraction}{0.05}
+\renewcommand{\dblfloatpagefraction}{0.75}\renewcommand{\floatpagefraction}{0.75}
+\newcommand{\fl}{\ensuremath{\times}}
+\begin{document}
+\title{Reading the CMB fingerprint of the CoE shell model:\\ what arrangements of masses and voids cancel the leftover residual?}
+\author{Chris Alameddin}
+\date{October 11, 2026}
+\begin{abstract}
+In the center-of-explosion (CoE) shell model, the shell's gravity imprints a pattern on the cosmic microwave background around the galactic ring that is 5,751 times the $10^{-5}$ level at which the CMB is flat. Special relativity plus the central mass cancel 95.9\% of it, leaving a residual of 237 times that level. We treat this residual as a fingerprint and pose an inverse problem: which arrangements of added masses and voids cancel it? Using a Newtonian tidal and velocity kernel, we fit compact masses, deep voids, giant partner regions and smooth density fields under several sets of placement rules. Outside our visible sphere, 11 bodies (6 masses and 5 voids) reach the flat target; inside it, 4 to 8 bodies suffice; removing all placement walls brings this to 8. Opening the CoE core completely brings the outside count to 10, but the fits use only its near edge. Sequential, one-at-a-time growth never gets below $27\times$, but editing a filled web does reach the target: in a random web that obeys published void and cluster size laws and keeps every void balanced by its own clusters, moving or resizing 12\% of the bodies, with no deletions and no decrease in any of seven disorder measures, brings the leftover from $789\times$ to $1.00\times$ without forming a ring. In every edited web that reaches the target, the large-scale pattern (modes $m=1$--12) is cancelled to 0.02--0.1$\times$, and what is left is chaotic, asymmetric fine-scale ripple with an rms at the $10^{-5}$ limit, statistically like Gaussian noise. A smooth field reaches $1\times$ with only about 1\% rms density contrast, but at gigaparsec scales this is roughly $8\sigma$ even against the most generous extrapolation of observed structure. We summarize which solutions exist, how unique they are, and what they would require of the real universe.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+In the CoE shell model the matter of the universe sits in a thick shell, \SIrange{43.9}{72.5}{\Gpc} from a center of explosion (CoE). We are inside the shell, \SI{58.2}{\Gpc} from the CoE, and our visible universe is a sphere of radius \SI{14.3}{\Gpc} around us (Fig.~\ref{fig:geom}). The visible sphere exactly spans the shell: its near edge touches the inner edge of the shell in the direction of the CoE ($\ell\approx\ang{195}$) and its far edge touches the outer edge in the opposite direction ($\ell\approx\ang{15}$). The us--CoE line is the symmetry axis of the problem. The cosmic microwave background (CMB) we analyze is the ring of sightlines in the galactic plane at the edge of the visible sphere.
+The logic of this brief starts from Fig.~\ref{fig:waterfall}. On its own, the shell's gravity imprints a strong direction-dependent pattern on the ring: 5,751 times the $10^{-5}$ level at which the CMB is observed to be flat. Our motion relative to the CoE (special relativity: Doppler shift and aberration) and the redshift from the central mass produce a pattern of almost the same shape and opposite sign. Fitting these (speed parameter $\beta_1=0.587$, distance ratio $q=0.230$, mass parameter $\mu=0.0933$, with the axis free; it settles at $\ell=\ang{15.16}$) removes 95.9\% of the starting anisotropy, a reduction by a factor of 24. What is left has an rms of 237 times the floor.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig1_geometry.pdf}
+\caption{Geometry of the model, side view (looking face-on at the plane of the CMB ring). (a) To scale: the CoE (red), the matter shell (grey, \SIrange{43.9}{72.5}{\Gpc} from the CoE), and our visible sphere (blue, radius \SI{14.3}{\Gpc}) \SI{58.2}{\Gpc} from the CoE. (b) Zoom on our sphere: us ($+$), the CMB ring with galactic longitudes, and the us--CoE axis ($\ell=\ang{195}$ toward the CoE, \ang{15} away). Our sphere just touches both edges of the shell.}
+\label{fig:geom}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_waterfall.pdf}
+\caption{The starting logic, step by step. (a) rms anisotropy around the ring after each step, in units of the $10^{-5}$ CMB level (purple dashed line). The shell alone predicts 5,751\fl; adding special relativity and the central mass brings this to 237\fl, the fingerprint. Solving for its modes $m=1$--5, 1--6 and 1--12 would leave 61\fl, 22\fl\ and 0.18\fl. (b) How placing masses and voids does this, using real fitted layouts outside our sphere (side view: the plane of the CMB ring, seen face-on; bodies are drawn at their position projected onto that plane). Top: the layout; red dots are masses (size grows with mass), blue circles are voids drawn to size, black rings mark the bodies added in that step, and the pink area is the CoE interior, where no body may sit. Bottom: the leftover around the ring, each panel on its own vertical scale; the green band is $\pm1\times$. Step~1: no bodies, 237\fl. Step~2: the best 4 masses, 36\fl. Step~3: the best 4 masses plus 4 voids, 4.5\fl\ (the masses are refitted, so they move). Step~4: 2 masses and 1 void added to step~3 one at a time, refitting all bodies each time (3.0\fl, 1.3\fl, then 0.58\fl), below the CMB level. What remains at step~4 is short waves beyond the solved range, mostly $m=13$--19 (97\% of it).}
+\label{fig:waterfall}
+\end{figure*}
+
+We call this leftover the \emph{fingerprint}. It is a specific shape around the sky, and any structure the model adds must cancel that shape rather than merely reduce its size. The question of this brief is an inverse problem: \emph{what arrangement of masses and voids, placed where, cancels the fingerprint down to the flat target ($1\times$)?} We report every scenario we have run, how many bodies each needs, what the best layouts look like, and how the required structure compares with what is observed.
+
+
+
+\section{The fingerprint}
+\paragraph*{Gravity against special relativity.} Both large patterns can be broken into waves around the ring. We solve for the residual with modes $m=1$--12, where $m$ counts the number of waves in one full turn and the fingerprint is $R(\ell)=\sum_m c_m\cos m(\ell-\varphi)$ with $\varphi=\ang{15.16}$. Figure~\ref{fig:source} compares, mode by mode, the gravitational multipoles of the shell, $(\ln G)_m$, with the multipoles of special relativity plus the central mass, $(\ln 1/S)_m$. For $m=1$ and 2 they agree to within a few percent and cancel; these modes are where the fit is anchored. For $m=3$--6 they no longer match: at $m=3$ the shell's pattern is about 10\% larger, and from $m=4$ on it falls off faster than the Doppler pattern. This mismatch is what remains. For $m\geq7$ the shell contributes almost nothing and only the tail of the Doppler pattern is left. The difference $c_m=(\ln G)_m-(\ln 1/S)_m$ is the fingerprint (Fig.~\ref{fig:source}b, Table~\ref{tab:modes}).
+
+\paragraph*{The fingerprint mode by mode.} Figure~\ref{fig:fp} draws each mode around the sky. Modes $m=3$, 4 and 5, with amplitudes of 200, 185 and 173 times the floor, carry 92\% of the fingerprint's variance; $m=6$ (81\fl) carries most of the rest. Their sum, a three-lobed shape with an rms of $2.373\times10^{-3}$ (237\fl), is the pattern every scenario below tries to cancel. Modes above 12 are negligible in the fingerprint itself, but they become important once a fit has removed the large ones (Sec.~\ref{sec:examples}).
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig2_source.pdf}
+\caption{Where the fingerprint comes from. (a) The size of each mode of the shell's gravitational pattern, $|(\ln G)_m|$ (dark), and of the special-relativity plus central-mass pattern, $|(\ln 1/S)_m|$ (orange), on a log scale. They nearly cancel at $m=1$--2 and part ways from $m=3$ on. (b) What is left, $|c_m|$: the fingerprint, with the big modes $m=3$--5 in red. The green line is the $10^{-5}$ flat level.}
+\label{fig:source}
+\end{figure*}
+
+\begin{figure*}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.84\textheight,keepaspectratio]{figures/fig3_modes_polar.pdf}
+\caption{The fingerprint: the modes we must solve for. Each small panel draws one mode $c_m\cos m(\ell-\varphi)$ around the sky as radius $=1+$ (scaled mode); the dotted circle is zero and the dashed line is the symmetry axis at $\ell=\ang{15.16}$. Each small panel has its own scale; the numbers give the size, in absolute units and in units of the $10^{-5}$ floor. Bottom left: the sum of $m=1$--12, the full fingerprint; the green circle is the $\pm1\times$ CMB band, thinner than the line at this scale. Bottom right: $m=1$--6 overlaid on one common scale, showing how $m=3$--5 dominate.}
+\label{fig:fp}
+\end{figure*}
+
+\begin{table*}[tp]
+\caption{The modes of the fingerprint. $c_m$: amplitude (absolute and in units of the $10^{-5}$ floor); peak: longitude of the first maximum; \% of var.: share of the fingerprint's variance; $(\ln G)_m$ and $(\ln 1/S)_m$: the shell-gravity and special-relativity plus central-mass multipoles whose difference is $c_m$.}
+\label{tab:modes}
+\footnotesize
+\begin{ruledtabular}
+\begin{tabular}{rrrrrrrrl}
+$m$ & period (\si{\degree}) & $c_m$ & $|c_m|$ (\fl) & peak (\si{\degree}) & \% of var. & $(\ln G)_m$ shell & $(\ln 1/S)_m$ SR + mass & origin\\
+\midrule
+\input{figures/table_modes.tex}
+\end{tabular}
+\end{ruledtabular}
+\end{table*}
+
+\section{Method}
+\paragraph*{Geometry and density.} We are at the origin. The CMB ring is the set of 360 in-plane sightlines at radius $R_\mathrm{vis}=\SI{14.3}{\Gpc}$, one per degree of galactic longitude $\ell$. The CoE lies at $(-56.17,-15.22,0)\,\si{\Gpc}$, \SI{58.2}{\Gpc} from us, in the direction $\ell\approx\ang{195}$. The shell spans \SIrange{43.9}{72.5}{\Gpc} from the CoE. The matter density depends on the distance $r$ from the CoE as
+\begin{equation}
+\rho(r)=\SI{2.9e-27}{\kilo\gram\per\cubic\meter}\;\exp\!\left[-\frac{r-\SI{58.2}{\Gpc}}{\SI{922.65}{\Gpc}}\right].
+\end{equation}
+
+\paragraph*{Kernel.} A body of mass $M$ at position $\mathbf{x}$ changes the signal at ring point $\hat n$ by the line-of-sight difference between its pull at the ring point and its pull on us,
+\begin{equation}
+\Delta(\hat n)\propto\left[\mathbf{g}_M(R_\mathrm{vis}\hat n)-\mathbf{g}_M(\mathbf{0})\right]\cdot\hat n ,
+\end{equation}
+with the ring mean removed. This tidal-plus-velocity kernel is plain Newtonian; it is valid for sources inside and outside the ring (checked against an independent calculation for 200 interior positions, correlation $\geq0.99999999$). The \emph{leftover} of a layout is $\mathrm{rms}_\ell(R-\Delta)/10^{-5}$, where $R$ is the starting residual; the start is 237\fl\ and the target is 1\fl.
+
+\paragraph*{Bodies.} \emph{Compact masses} are point masses of \SIrange{e49}{2e52}{\kilo\gram} with a $\delta=+100$ core. \emph{Deep voids} are uncompensated spheres with $\delta=-0.7$ and radius \SIrange{0.5}{4}{\Gpc}. \emph{Shallow voids} follow a compensated profile (mean $\delta\approx-0.35$ inside, compensation out to three radii, net zero) \cite{ClampittJain2015}. \emph{Giant partners} are uniform spheres of radius \SIrange{1}{15}{\Gpc} and $\delta$ between $-0.9$ and $+2$, paired with a uniform contrast $\delta_\mathrm{us}$ of our own sphere.
+
+\paragraph*{Placement rules.} ``Outside'' bodies lie between our sphere and \SI{43}{\Gpc} from us and may not enter the CoE interior (the ``wall''). ``Inside'' bodies lie wholly within our sphere, at least \SI{0.1}{\Gpc} from the ring and clear of us. In the \emph{no-wall} runs the CoE-interior exclusion is removed; its \emph{smooth-density limit} replaces the wall by a mass cap that scales with the local density, $M\le\SI{2e52}{\kilo\gram}\,\rho(\mathbf{x})/\rho(\SI{58.2}{\Gpc})$, and requires each mass to draw its material from a non-overlapping supply sphere $V=M/\rho(\mathbf{x})$. The \emph{all-open} runs also remove the visible-sphere exclusion: bodies may sit anywhere \SIrange{0.5}{43}{\Gpc} from us but may not straddle the ring. Cores never overlap.
+
+\paragraph*{Net mass.} Every fit has zero net mass. Outside fits remove or add the net mass smoothly over the surrounding shell region; inside and all-open fits remove it smoothly over our sphere with the same density shape (whose uniform part produces no signal). We also test no compensation, compensation drawn from outside, and, for partners, strict balance by the partners themselves.
+
+\paragraph*{No-mirror rule.} The problem is nearly symmetric about the plane through us, the CoE and the galactic pole ($\ell\to2\times\ang{15.16}-\ell$), and the best fits use mirror pairs. In the no-mirror runs two bodies of the same kind are forbidden if one lies within \ang{20} of the other's mirror image \emph{and} their distances agree within 15\% \emph{and} their sizes within 25\%; no body may lie within \ang{10} of the mirror plane.
+
+\paragraph*{Fitting.} Each body has four free numbers (distance, longitude, latitude, and mass or radius). All are fitted together by bounded least squares (trust-region reflective) from many random starts: 40--100 per body class outside, 12--40 inside, plus warm starts that add one body to the best $N-1$ layout. Sequential runs instead place one body at a time and never refit earlier ones. Field solutions (Sec.~\ref{sec:fields}) solve a regularized linear inverse problem for a continuous $\delta(\mathbf{x})$.
+
+\section{Fitting a few bodies: results and limits}\label{sec:results}
+\subsection{Leftover versus number of bodies}
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig2_overview.pdf}
+\caption{Best leftover (in units of the $10^{-5}$ floor, log scale) against the number of added bodies, for all point-body scenarios. Solid lines: inside our sphere; dashed: outside; dash-dot: all open; stars: giant partners. Green: the flat target ($1\times$). Dotted: the start (237\fl).}
+\label{fig:overview}
+\end{figure*}
+
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=0.97\textwidth]{figures/fig3_families.pdf}
+\caption{The same curves by family. (a) Outside our sphere with the CoE wall in place. (b) The effect of removing the CoE wall and then the visible-sphere exclusion. (c) Inside our sphere, compared with all open. (d) Inside variants: a larger mass cap helps most; compensating from outside hurts most.}
+\label{fig:families}
+\end{figure*}
+
+\begin{table}[tbp]
+\caption{Fewest bodies that reach the flat target, and the best value reached (in units of the floor).}
+\label{tab:key}
+\footnotesize
+\begin{ruledtabular}
+\begin{tabular}{lcc}
+Scenario & first $N<1\times$ & best (at $N$)\\
+\midrule
+Outside: masses only & -- & 4.14 (20)\\
+Outside: masses + deep voids & 11 (0.58) & 0.58 (11)\\
+Outside: deep voids only & -- & 85.3 (8)\\
+Outside: no-mirror layouts & 12 (0.73) & 0.73 (12)\\
+Giant partners + bodies & -- & 1.23 (10)\\
+No wall: smooth-density limit & 10 (0.73) & 0.094 (12)\\
+No wall: fully open & 10 (0.46) & 0.074 (12)\\
+Core open: masses + deep voids & 10 (0.46) & 0.069 (12)\\
+Core open: no-mirror layouts & 11 (0.37) & 0.34 (12)\\
+Core open: giant partners + bodies & 10 (0.17) & 0.080 (11)\\
+Core open: all open & 8 (0.18) & 0.18 (8)\\
+All bodies in the core & -- & 143 (12)\\
+Inside: masses only & 7 (0.62) & 0.025 (12)\\
+Inside: masses + deep voids & 8 (0.18) & 0.18 (8)\\
+Inside: deep voids only & 8 (0.70) & 0.70 (8)\\
+Inside: masses, cap \SI{e53}{\kilo\gram} & 4 (0.47) & 0.012 (10)\\
+Inside: no compensation & 7 (0.61) & 0.087 (8)\\
+Inside: compensation from outside & -- & 6.35 (8)\\
+All open (smooth limit) & 8 (0.29) & 0.073 (12)\\
+Seq.\ A: deep voids + clusters & -- & 27.4 (48)\\
+Seq.\ A: shallow voids & -- & 135 (30)\\
+Seq.\ B: CMB-aware growth & -- & 37.2\\
+Seq.\ B: foam rule & -- & 222\\
+Seq.\ B: random & -- & 213\\
+Seq.\ B: shallow voids & -- & 163\\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+Figure~\ref{fig:overview} collects the best leftover against the number of added bodies $N$ for every point-body scenario, and Fig.~\ref{fig:families} splits them into families. Table~\ref{tab:key} lists the first $N$ that reaches the flat target and the best value reached.
+
+Three facts stand out. First, masses alone never reach the target from outside (they stall near 4\fl\ at $N=20$), and voids alone stall near 85\fl; the outside solutions need both, and reach $1\times$ at $N=11$ (6 masses and 5 voids). Second, bodies inside our sphere are far more effective: 7 masses or 4 masses plus 4 voids suffice, and with a looser mass cap of \SI{e53}{\kilo\gram} only 4 masses are needed. Third, each wall that is removed saves bodies: without the CoE-interior wall the target is reached at $N=10$, and with everything open at $N=8$, where all 8 bodies move inside our sphere. Sequential placement, which never revisits earlier choices, never reaches the target (Sec.~\ref{sec:seq}); editing a few percent of such grown webs afterwards does (Secs.~\ref{sec:minedit} and \ref{sec:compweb}).
+
+\subsection{Example universes and what is left}\label{sec:examples}
+Figure~\ref{fig:ex1} and, in Appendix~\ref{app:examples}, Figs.~\ref{fig:ex2} and \ref{fig:ex3} show one representative layout per scenario, nine in all, numbered 1--9 from the largest to the smallest leftover; Fig.~\ref{fig:ex4} continues with examples 10--13, the core-open reruns (Sec.~\ref{sec:coreopen}), again from largest to smallest. Each is shown at the first $N$ that reaches $1\times$ (or the best $N$ otherwise), with the mode-by-mode leftover and the residual that remains around the ring. The starting residual is not repeated; it is in Fig.~\ref{fig:fp}. Two patterns recur. The successful fits remove $m=3$--5 almost completely (by factors of $10^4$), and what remains is spread over $m\gtrsim8$, often dominated by modes above 12. The remaining residual is also concentrated near $\ell\approx\ang{180}$--\ang{240}, around the CoE direction.
+
+\begin{figure*}[p]
+\centering
+\includegraphics[width=\textwidth]{figures/fig5_examples_outside.pdf}
+\caption{Example universes 1--3. Left: side view, looking face-on at the plane of the CMB ring (the galactic plane) (us: $+$; black circle: our \SI{14.3}{\Gpc} sphere; grey dashed: the CoE-interior wall, where it applies; red: masses, sized by mass; blue: voids at their true radius; P1, P2: giant partners; bodies off the plane are projected). Middle: leftover by mode (dashed outline: start; grey bar: all modes above 12 combined; green: $1\times$). Right: residual around the ring after the fit; the green band is $\pm1\times$. Figures~\ref{fig:ex1}, \ref{fig:ex2} and \ref{fig:ex3} (the last two in Appendix~\ref{app:examples}) are one sequence of nine example universes, numbered 1--9 from the largest to the smallest remaining leftover; Fig.~\ref{fig:ex4} continues with the core-open examples 10--13. This figure: 1, sequential placement in the near region (48 bodies: 24 masses and 24 voids, 27.40\fl), where large residuals remain in every mode; 2, giant partners plus ordinary bodies (10 bodies, 1.23\fl); 3, outside, masses and deep voids with mirror layouts forbidden (12 bodies, 0.73\fl).}
+\label{fig:ex1}
+\end{figure*}
+
+\subsection{Symmetry, walls and partners}
+The best unrestricted fits are close to mirror images across the plane through us and the CoE. The old 0.58\fl\ outside layout has five exact mirror pairs and one body on the axis. Forbidding mirror layouts costs one body: the target is reached at $N=12$ (7 masses and 5 voids, 0.73\fl). A stricter rule that forbids mirror angles alone, regardless of distance and size, stalls at 4.5\fl.
+
+Removing the CoE-interior wall gains one body ($N=10$ instead of 11) and lowers the floor at $N=12$ to about 0.07--0.09\fl. Opening our visible sphere as well gains two more ($N=8$). With the no-mirror rule applied at those $N$, the open solutions rise to 0.54\fl\ ($N=11$, no wall) and 3.7\fl\ ($N=8$, all open).
+
+If our own sphere were on average over- or underdense, its net mass would have to sit in giant partner regions. A uniform contrast of our sphere mostly produces an $m=1$ pattern (515\fl\ per unit $\delta_\mathrm{us}$). The best partner fit (2 partners plus 4 masses and 4 voids, $\delta_\mathrm{us}=-0.025$) reaches 1.23\fl; a layout with a giant \SI{9.2}{\Gpc} partner void and $\delta_\mathrm{us}=+0.21$ reaches 1.57\fl. Partners help, but do not beat ordinary bodies.
+
+\subsection{CoE core fully open}\label{sec:coreopen}
+We reran the outside, no-mirror, giant-partner and all-open fits with the CoE interior fully open: no wall and no smooth-density mass cap, with the reach extended along every direction to the far side of the core, up to \SI{102}{\Gpc} from us toward $\ell=\ang{195}$. The mass and radius bounds are unchanged, and of the 214 fits, many started with a third, half or all of their bodies inside the core (Fig.~\ref{fig:coreopen}, examples 10--13 in Fig.~\ref{fig:ex4}). Outside our sphere the target is now reached at $N=10$ (0.46\fl) and the leftover falls to 0.069\fl\ at $N=12$; the no-mirror fits reach it at $N=11$ (0.37\fl), and giant partners plus ordinary bodies reach it for the first time, at $N=10$ (0.17\fl). The all-open result is unchanged: 0.18\fl\ with 8 bodies, as in the earlier all-open run without the density limit, and none of them in the core. Almost all of this gain was already present with the wall removed at the old \SI{43}{\Gpc} reach (0.46, 0.25 and 0.074\fl\ at $N=10$, 11 and 12).
+
+The fits use the core, but only its near edge. Bodies settle a median 3--6\,Gpc inside the edge, about \SI{25}{\Gpc} from us around $\ell\approx\ang{195}$; core-seeded starts move their bodies back out to the edge or leave them parked where they do nothing. With every body forced into the core, the leftover never drops below 143\fl\ (12 bodies). The reason is how fast the needed pull fades with distance. The ring responds to how much a body's pull changes across it, so a distant body pulls almost uniformly and leaves mainly a weak two-lobed ($m=2$) stretch. Table~\ref{tab:coredist} gives the pattern of one \SI{2e52}{\kilo\gram} mass on the us--CoE line: from \SI{20}{\Gpc} to the CoE at \SI{60}{\Gpc} the $m=3$--5 modes, which must cancel 200, 185 and 173\fl, weaken by a factor of 100--1000.
+
+\begin{figure*}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{figures/fig_examples_core_open.pdf}
+\caption{Examples 10--13: the same scenarios rerun with the CoE core fully open (Sec.~\ref{sec:coreopen}), at the first $N$ that reaches $1\times$, ordered from the largest to the smallest leftover; panels as in Fig.~\ref{fig:ex1}, and the grey dashed circle is now the edge of the open core rather than a wall. 10, masses and deep voids (10 bodies, 0.46\fl; 3 bodies 1--6\,Gpc inside the core edge); 11, no mirror layouts (11 bodies, 0.37\fl; 5 in the core, 4 of them within 6\,Gpc of the edge); 12, all open (8 bodies, 0.18\fl; none in the core; all eight sit inside our sphere, as in examples 8 and 9); 13, giant partners plus ordinary bodies (10 bodies, 0.17\fl; 3 in the core, 7--13\,Gpc deep).}
+\label{fig:ex4}
+\end{figure*}
+
+\begin{figure*}[tbp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_core_open_best_vs_N.pdf}
+\caption{Best leftover against the number of added bodies with the CoE core fully open (solid), compared with the same scenarios in the earlier runs (dotted: CoE wall in place; for all open, reach limited to \SI{43}{\Gpc}). Green: the flat target ($1\times$); dotted grey: the start (237\fl).}
+\label{fig:coreopen}
+\end{figure*}
+
+\begin{table}[tbp]
+\caption{Ring pattern of one \SI{2e52}{\kilo\gram} mass on the us--CoE line, by mode (units of the floor). The fingerprint's $m=3$, 4, 5 amplitudes are 200, 185 and 173\fl.}
+\label{tab:coredist}
+\footnotesize
+\begin{ruledtabular}
+\begin{tabular}{lccc}
+distance from us & $m=3$ & $m=4$ & $m=5$\\
+\midrule
+\SI{20}{\Gpc} (near edge of the core) & 862 & 691 & 541\\
+\SI{60}{\Gpc} (at the CoE) & 6.4 & 1.8 & 0.47\\
+\SI{100}{\Gpc} (far edge of the core) & 0.81 & 0.13 & 0.02\\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\subsection{Field solutions}\label{sec:fields}
+Instead of individual bodies, one can solve directly for a smooth density contrast $\delta(\mathbf{x})$ inside our sphere with zero net mass (Fig.~\ref{fig:smooth}). The smallest such field that reaches $1\times$ has an rms contrast of 1.0--1.4\% and peaks of 5--7\%, depending on the smoothing scale (1--\SI{4}{\Gpc}); it moves only \SIrange{2e51}{5e51}{\kilo\gram}. It sits just inside the ring and alternates in eight lobes, the same $m=3$--5 pattern turned inside out: an inside deficit acts like an outside excess. The leftover falls from 237\fl\ to 1\fl\ over a narrow range of field strength (Fig.~\ref{fig:smooth}b).
+
+Translated into real objects (Fig.~\ref{fig:counts}a), these fields correspond to a rearrangement of very many ordinary clusters and voids rather than a few giant bodies. If every lobe must be built from a mix of clusters and voids, the local cluster-to-void ratio must differ from the cosmic mean by about $\pm6.5\%$ inside our sphere (Fig.~\ref{fig:counts}b). Forbidding mirror layouts raises the required contrast to about 1.6 times the inside value (Sec.~\ref{sec:patch}; this supersedes the stalled no-mirror curve in Fig.~\ref{fig:counts}b).
+
+\begin{figure*}[tp]
+\centering
+\begin{subfigure}[b]{0.38\textwidth}\includegraphics[width=\textwidth]{figures/fig8a_smooth_field_side.pdf}\caption{}\end{subfigure}\hfill
+\begin{subfigure}[b]{0.56\textwidth}\includegraphics[width=\textwidth]{figures/fig8b_smooth_tradeoff.png}\caption{}\end{subfigure}
+\caption{Smooth-field solution. (a) The weakest field that reaches $1\times$ at \SI{2}{\Gpc} smoothing, side view: a slice through the ring plane (red: overdense, blue: underdense; dashed: our \SI{14.3}{\Gpc} sphere). (b) Leftover against the rms density contrast of the field for several smoothing scales; shaded strips mark what standard cosmology expects at the same scales.}
+\label{fig:smooth}
+\end{figure*}
+
+\begin{figure*}[tp]
+\centering
+\begin{subfigure}[b]{0.52\textwidth}\includegraphics[width=\textwidth]{figures/fig9a_realistic_counts.png}\caption{}\end{subfigure}\hfill
+\begin{subfigure}[b]{0.46\textwidth}\includegraphics[width=\textwidth]{figures/fig9b_mixed_ratio.png}\caption{}\end{subfigure}
+\caption{(a) Number of extra rich clusters and voids that each $1\times$ field corresponds to, compared with how many each region holds anyway. (b) Leftover against how far the local cluster-to-void ratio may differ from the cosmic mean; inside our sphere about $\pm6.5\%$ suffices. The no-mirror curve is from a stalled solver and is superseded (Sec.~\ref{sec:patch}).}
+\label{fig:counts}
+\end{figure*}
+
+\subsection{Over:under patch ratio}\label{sec:patch}
+Real domains are not purely over- or underdense; each is a fine mix of small overdense and underdense patches. We therefore let every domain (\SIrange{0.5}{2}{\Gpc}) consist of patches of fixed contrast and vary only the volume fraction of overdense patches, so a domain's net contrast is set by its over:under patch ratio. With \SI{50}{\Mpc} patches at the observed extreme contrasts ($+0.83$ and $-0.39$), the cosmic mean ratio is 0.47:1. Solving for the residual with modes $m=1$--12 (the box-constrained problem solved exactly through its dual), each 0.5--\SI{1}{\Gpc} domain needs only about a $\pm12$--13\% shift in its over:under ratio to reach $1\times$ (Fig.~\ref{fig:patch}a); typical $\pm0.3$ patches need about twice that, and forbidding mirror layouts raises it to about $\pm20\%$ (1.6 times the inside contrast).
+
+Taken one domain at a time, that shift is ordinary: it is about 1--2$\sigma$ of the random scatter in the number of patches per domain ($0.9\sigma$ for \SI{0.5}{\Gpc} domains, $2.6\sigma$ for \SI{1}{\Gpc} domains) (Fig.~\ref{fig:patch}b). The difficulty is coherence. Thousands of domains must all shift the same way, in the same eight lobes, with the $m=3$--5 pattern of the smooth field (Fig.~\ref{fig:patchmap}): ratios of 1.13:1 and 0.88:1 relative to the mean, alternating around the ring and organised over about \SI{5}{\Gpc}. Random patch placement, propagated through the same kernel, produces only 1/6 to 1/13 of the needed CMB pattern, and a $\Lambda$CDM density field about 1/20. The needed pattern is therefore far beyond chance (formally 40--130$\sigma$; these numbers mean ``not by chance'' rather than a precise probability).
+
+\begin{figure*}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{figures/fig_patch_ratio.pdf}
+\caption{Domains built from a fine mix of over- and underdense patches. (a, top) Best leftover against how far the over:under patch ratio of each domain may move from the cosmic mean. Open circles mark the first shift that reaches $1\times$: $+12.7\%$ / $-11.8\%$ for \SI{0.5}{\Gpc} domains and observed-extreme \SI{50}{\Mpc} patches, $+17\%$ / $-15\%$ for \SI{2}{\Gpc} domains, about $+24\%$ for typical $\pm0.3$ patches, and $+22\%$ / $-19\%$ with mirror layouts forbidden (\SI{1}{\Gpc} domains). (b, bottom) The required shift in one domain divided by the random scatter of that domain's patch count, inside our sphere with mirror layouts allowed. This counts one domain only; the coherence over thousands of domains is not included.}
+\label{fig:patch}
+\end{figure*}
+
+\begin{figure}[tp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_patch_map.pdf}
+\caption{The required over:under patch ratio, side view (the plane of the CMB ring, seen face-on; dashed: the ring), for \SI{1}{\Gpc} domains and \SI{50}{\Mpc} patches, as a percentage of the cosmic mean. Labels give each lobe's mean ratio relative to the mean. Every domain sits at the allowed limit, in the same eight lobes as the smooth field.}
+\label{fig:patchmap}
+\end{figure}
+
+\section{Comparison with observed structure}
+How unusual would the required structure be? Figure~\ref{fig:dvs} compares the density contrast of the most extreme observed over- and underdense regions with their size: rich clusters \cite{Tinker2008,Rykoff2014,Simet2017}, superclusters \cite{Liivamagi2012}, voids \cite{ClampittJain2015,Mao2017,Hamaus2014}, the Eridanus supervoid behind the Cold Spot \cite{Szapudi2015,Kovacs2016}, the disputed local hole \cite{Keenan2013,Whitbourn2014,Kenworthy2019}, and the densest and emptiest spheres in the 2M++ reconstruction \cite{Carrick2015}. Overdense extremes fall roughly as $|\delta|\propto R^{-1.8}$; at \SI{1}{\Gpc} the required peak contrast is about 19 times the fitted trend of observed extremes. Typical regions (Fig.~\ref{fig:dist}) are far narrower than the extremes: the 2M++ spread falls as $\sigma\approx8.6\,(R/\si{\Mpc})^{-1.0}$ over \SIrange{20}{80}{\Mpc}, and nothing in any catalog reaches \SI{1}{\Gpc}. The homogeneity scale is about \SI{100}{\Mpc} \cite{Scrimgeour2012}; the quasar dipole \cite{Secrest2021} and the cluster anisotropy toward $\ell\approx\ang{280}$ \cite{Migkas2020} are the strongest observed hints of Gpc-scale variation.
+
+Table~\ref{tab:rare} gives the rarity of the required peak contrast if Gaussian statistics hold at Gpc scales. Even with the generous width extrapolated from 2M++, the \SI{1}{\Gpc} field is an $8\sigma$ event; against linear $\Lambda$CDM \cite{EisensteinHu1998} it is $25\sigma$ or more.
+
+\begin{figure*}[tp]
+\centering
+\begin{subfigure}[b]{0.5\textwidth}\includegraphics[width=\textwidth]{figures/fig10_density_vs_scale_v2.png}\caption{}\label{fig:dvs}\end{subfigure}\hfill
+\begin{subfigure}[b]{0.46\textwidth}\includegraphics[width=\textwidth]{figures/fig11a_heatmap.png}\caption{}\end{subfigure}
+\caption{(a) Density contrast of the most extreme observed regions against their radius, with power-law fits, the standard-cosmology band and the required model markers. (b) The same axes with typical regions (2M++) as a heat map under the extremes.}
+\label{fig:dist}
+\end{figure*}
+
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig11b_hist.png}
+\caption{How common each density contrast is, for 2M++ spheres of 10 to \SI{150}{\Mpc}. The distribution narrows and becomes symmetric as the spheres grow.}
+\label{fig:hist}
+\end{figure*}
+
+
+
+\begin{table}[tbp]
+\caption{Rarity of the required peak contrast $|\delta|$ for one region of radius $R$. ``2M++ trend'' extrapolates the observed spread; $\Lambda$CDM uses linear theory at $z=0$.}
+\label{tab:rare}
+\footnotesize
+\begin{ruledtabular}
+\begin{tabular}{lcccc}
+$R$ & peak $|\delta|$ & width used & $\sigma$ & peak in $\sigma$\\
+\midrule
+\SI{1}{\Gpc} & 0.068 & 2M++ trend & 0.0085 & 8.0 (6.0--10.5)\\
+\SI{1}{\Gpc} & 0.068 & $\Lambda$CDM & 0.0028 & 24.5\\
+\SI{2}{\Gpc} & 0.055 & 2M++ trend & 0.0043 & 12.9\\
+\SI{2}{\Gpc} & 0.055 & $\Lambda$CDM & 0.00079 & 69\\
+\SI{4}{\Gpc} & 0.059 & 2M++ trend & 0.0021 & 28\\
+\SI{4}{\Gpc} & 0.059 & $\Lambda$CDM & 0.00022 & 267\\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\FloatBarrier
+% New material (Oct 10-11): mostly figure pages, so let float pages form as soon as they are at least half full.
+\renewcommand{\dblfloatpagefraction}{0.5}\renewcommand{\floatpagefraction}{0.5}
+
+\section{Growing and editing filled webs}\label{sec:webs}
+\subsection{Sequential growth}\label{sec:seq}
+The fits of Sec.~\ref{sec:results} place a handful of bodies by solving for all of them together. A more natural way to build a universe is to grow it one body at a time, placing each where it best lowers the leftover and never revisiting earlier choices (Fig.~\ref{fig:seq}; A, the near region fixed pair by pair; B, growth from empty until the region is full). None of these runs reaches the target: the best ends at 27.4\fl, and the foam and random growth rules end at 213--222\fl\ (Table~\ref{tab:key}). Their final universes are kept in Appendix~\ref{app:seq} (Figs.~\ref{fig:sequniv} and \ref{fig:sequniv2}). The filled B-growth webs, about 17,000 bodies each, are the starting point for the edits below.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig4_sequential.pdf}
+\caption{Sequential placement, one body at a time with no refitting (log scale in bodies placed). A: the near region fixed pair by pair. B: growth from empty until the region is full, under three placement rules. None reaches the flat target (green); the dotted lines mark the start (237\fl) and the four-clump result (89\fl).}
+\label{fig:seq}
+\end{figure}
+
+\subsection{Editing a filled web: from ring backstop to entropy rule}\label{sec:minedit}
+The fits above place a handful of bodies in otherwise empty space. Here we pose the inverse problem the other way round: start from a universe already filled with ordinary voids and clusters, and ask how few of them must be moved or resized for the leftover to reach $1\times$. This and the following sections summarize the work of October 10--11.
+
+\paragraph*{Method.} The modelled region is our \SI{14.3}{\Gpc} sphere plus the shell out to \SI{30}{\Gpc} from us, including the part of the CoE core inside \SI{30}{\Gpc} (about the depth to which bodies still shape the ring, Table~\ref{tab:coredist}). The starting webs are the open-region versions of the sequential growth runs (B in Fig.~\ref{fig:seq}) (random and foam rules, seeds 1--3, about 17,000 bodies each; voids $R=\SI{1.5}{\Gpc}$, $\delta=-0.70$, each paid back by six $\delta=+100$ clusters). No body may straddle the ring sphere, come within \SI{0.5}{\Gpc} of us or overlap another. Each edited body has four free numbers, its position and a mass factor $a$ (radius scales as $a^{1/3}$; voids stay $\geq\SI{0.5}{\Gpc}$). Each round we rank bodies by how much the leftover would drop if they were nudged (a linearized step, capped at \SI{5}{\Gpc}), fit a batch of them jointly by bounded least squares, and keep the round only if the leftover falls. A fine-scale pass handles bodies within \SI{6}{\Gpc} of the ring, which mainly set the short waves ($m\geq13$), by trying starts pushed 2--8\,Gpc away. Every five rounds the most recent edits are refitted together. Runs stop at $1\times$ or when the last 300 edits gain less than 1\%.
+
+\paragraph*{The ring rule.} Left free, the fitter piles bodies onto the CMB ring, because a body right at the ring has enormous leverage on the short waves. Our first fix was a hard \emph{backstop}: every body surface stays at least \SI{3}{\Gpc} from the ring. That is a judgment call, not physics, and it produces an artificial pile-up just outside \SI{3}{\Gpc}. We replaced it with an \emph{entropy rule}: no edit may make the web more ordered than it started. We measure disorder seven ways, and none may decrease: three volume-weighted position entropies $H=-\sum_b p_b\ln(p_b/w_b)$ (radial shells around us, distance from the ring circle, and sky direction; $w_b$ is the volume share of bin $b$, so $H=0$ means uniform in volume) and four Shannon entropies $S=-\sum p\ln p$ of the nearest cluster--cluster, cluster--void and void--void distances and of the number of neighbours within \SI{3}{\Gpc}. This rules out forming a ring, a pile-up, a hole or a regular pattern.
+
+\paragraph*{Results.} Allowing deletion reaches 0.87--1.00\fl, but only by deleting the bodies nearest the ring, so we forbid it from here on. With move and resize only, under the \SI{3}{\Gpc} backstop, two foam webs reach the target: foam seed 3 needs 489 edits (2.8\% of the web; 2,164\fl\ to 0.995\fl, Fig.~\ref{fig:nodel}) and foam seed 1 needs 614 (3.6\%; 0.95\fl). Bodies near the ring move a median of about \SI{2}{\Gpc}, the others under \SI{1}{\Gpc}, and most masses change by less than a factor of 2. Under the entropy rule none of the six grown webs quite reaches $1\times$ (Table~\ref{tab:entropy}). The best, foam seed 2, goes from 1,223\fl\ to 2.40\fl\ with 638 edits (3.8\%, Fig.~\ref{fig:entrun}). Solving for the residual with modes $m=1$--12 leaves only 0.01--0.1\fl\ in every run; everything left is short-wave ripple ($m\geq13$) from bodies near the ring. In plain words, the smooth large-scale pattern is gone, and what remains is chaotic, asymmetric fine-scale texture, at the CMB limit in the two backstop runs and a few times above it in the entropy-rule runs (Sec.~\ref{sec:noise}). There is no pile-up at the ring: the edits partly refill the gap the growth rule left there, and the density within \SI{3}{\Gpc} of the ring stays well below the average (Fig.~\ref{fig:ringdens}). These runs are superseded by the compensated web of Sec.~\ref{sec:compweb}, which reaches $1\times$ under the same entropy rule.
+
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=0.7\textwidth]{figures/new/nodel_run_foam_s3_reloc.png}
+\caption{Foam web, seed 3, edited by moving and resizing only (no deletion) under the \SI{3}{\Gpc} ring backstop. Top: side views before (as grown, 17,367 bodies, 2,164\fl) and after (489 bodies edited, 1.00\fl), slab $|z|<\SI{1.5}{\Gpc}$. Pale blue: voids; red dots: clusters; green: bodies that are moved (shown at their old place before and their new place after, all $z$); bodies that are only resized keep their red or blue colour. Dark blue circle: our sphere and the CMB ring; red dotted: $\pm\SI{3}{\Gpc}$ from the ring; pink: the CoE core cap inside \SI{30}{\Gpc}; arrow: direction to the CoE; dotted grey: the \SI{30}{\Gpc} edge of the model. Bottom: residual around the ring before (grey) and after (dark blue), on a symmetric log scale; the pale mint band is $\pm1\times$. The leftover (dark blue) is no longer the smooth large-scale pattern: the $m=1$--12 part is cancelled to about 0.1\fl, and what remains is chaotic, asymmetric fine-scale ripple at the CMB limit, the noise-like texture the model predicts (Fig.~\ref{fig:noiserows}).}
+\label{fig:nodel}
+\end{figure*}
+
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=0.7\textwidth]{figures/new/entropy_run_b_foam_rim_s2.png}
+\caption{Foam web, seed 2, edited by moving and resizing under the entropy rule instead of the ring backstop: 1,223\fl\ to 2.40\fl\ with 638 edits (3.8\%). Panels and colours as in Fig.~\ref{fig:nodel}. Solving for the residual with modes $m=1$--12 leaves 0.01\fl; what remains (dark blue) is short-wave ripple. The symmetric share of the leftover drops from 66\% to 29\%. The leftover is no longer the smooth large-scale pattern: the $m=1$--12 part is cancelled to 0.01\fl, and what remains is chaotic, asymmetric fine-scale ripple, here still 2.4 times the CMB limit, the same noise-like texture as in the runs that reach it (Fig.~\ref{fig:noiserows}).}
+\label{fig:entrun}
+\end{figure*}
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/new/entropy_ring_density.png}
+\caption{Bodies per \si{\Gpc\cubed} against the distance of their centre from the CMB ring, foam seed 2, before (grey) and after the 638 entropy-rule edits (green, dashed). Red dotted: the uniform-in-volume average. The edits partly refill the gap left by the growth rule near the ring but stay far below average: no ring forms.}
+\label{fig:ringdens}
+\end{figure}
+
+\begin{table}[tbp]
+\caption{Move and resize under the entropy rule, for the six grown webs. Edits as a share of the web; leftover in units of the floor; ``after $m\leq12$'' is what remains after solving for the residual with modes $m=1$--12. All seven entropy measures ended at or above their starting values.}
+\label{tab:entropy}
+\footnotesize
+\begin{ruledtabular}
+\begin{tabular}{lrcc}
+web & edits & leftover & after $m\leq12$\\
+\midrule
+random, seed 1 & 825 (4.9\%) & 2,569 $\to$ 13.0 & 0.02\\
+random, seed 2 & 897 (5.3\%) & 2,106 $\to$ 6.41 & 0.02\\
+random, seed 3 & 964 (5.6\%) & 2,222 $\to$ 18.3 & 0.04\\
+foam, seed 1 & 856 (5.0\%) & 794 $\to$ 6.29 & 0.02\\
+foam, seed 2 & 638 (3.8\%) & 1,223 $\to$ 2.40 & 0.01\\
+foam, seed 3 & 665 (3.8\%) & 2,164 $\to$ 6.05 & 0.01\\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\section{Network rules: crystal analogy and the compensation rule}\label{sec:crystal}
+The entropy-rule edits of Sec.~\ref{sec:minedit} come close but stall above $1\times$. Before building a better starting web we ask what an ordered reference looks like and how voids and clusters should be paired.
+
+\paragraph*{Lattice reference.} Einasto et al.\ found a roughly regular network of superclusters and voids with a step of about $120\,h^{-1}$\,Mpc \cite{Einasto1997Nature,Einasto1997II}, \SI{171}{\Mpc} for $h=0.7$. As a perfectly ordered reference we put clusters on a face-centred cubic (FCC) lattice with that cell edge and voids in its tetrahedral holes, so each void sits inside a pyramid of four clusters (the fluorite arrangement; Fig.~\ref{fig:fcc}a). We then built a ladder from perfect to random: thermal jitter (5, 15 and 30\% of the spacing), point defects (3\% and 10\% vacancies, interstitials and voids in the wrong holes), a polycrystal of ten randomly oriented grains with disordered boundaries, and fully random points. Each structure and the foam web are tetrahedralized in 3D and placed on a chart of disorder (Shannon entropy of the spread of tetrahedron volumes, 0.1-dex bins) against link energy per node, both scaled by each structure's own spacing.
+
+\paragraph*{Results.} Disorder rises steadily from perfect through defects, jitter and polycrystal to random (Fig.~\ref{fig:fcc}b). The foam web lies \emph{past} random: its cells are more uneven than random points, because the foam rule makes both very small and very large cells, and it is the least bound structure, because its clusters sit on void rims and cluster--void pairs repel when voids count as negative mass. The edits make it about 4\% more bound and slightly more even, a small step toward the lattice. If the real web is a defective crystal, it should fall between the polycrystal and random points, which is a testable target for the generator.
+
+\paragraph*{Compensation rule.} On a 2D triangular lattice with equal numbers of clusters and voids, the lowest-energy arrangement with voids as bare negative masses is full segregation, clusters on one side and voids on the other; this is an artifact of ignoring where a void's missing matter goes. We therefore balance every void with its own clusters: its missing mass $M_\mathrm{def}=|\delta_v|\rho\frac43\pi R^3$ sits in clusters placed \numrange{1}{1.3} void radii from its centre (the compensating ridge \cite{Hamaus2014,ClampittJain2015}), so each void plus its wall has zero net mass. The number of clusters per void then grows in proportion to the missing mass (Fig.~\ref{fig:comprule}): $N=0.92+M_\mathrm{def}/\SI{2.10e50}{\kilo\gram}$ in the 2D test and $N=0.49+M_\mathrm{def}/\SI{1.48e50}{\kilo\gram}$ in the 3D web of Sec.~\ref{sec:compweb}, about 4.5 clusters per void. Annealed to its lowest energy, the balanced 2D layout looks like the cosmic web: clusters slide to the outer edge of their walls and bunch into knots where two or three voids meet, and the runaway collapse of unbalanced negative-mass pairs disappears.
+
+\begin{figure*}[tp]
+\centering
+\begin{subfigure}[b]{0.355\textwidth}\includegraphics[width=\textwidth]{figures/new/fcc_cell.png}\caption{}\end{subfigure}\hfill
+\begin{subfigure}[b]{0.6\textwidth}\includegraphics[width=\textwidth]{figures/new/entropy_energy_ladder.png}\caption{}\end{subfigure}
+\caption{(a) One FCC cell, \SI{171}{\Mpc} on a side (the Einasto period). Red: clusters at the corners and face centres; blue: a void in a tetrahedral hole, with its four-cluster pyramid; purple: an empty octahedral hole and its six-cluster octahedron, for comparison. (b) From perfect crystal to random, with the foam web (seed 2) before (grey star) and after the edits (blue star), for lattices with the web's mix of one void per six clusters. Horizontal: disorder (spread of tetrahedron sizes); vertical: link energy per node in units of $GM_c^2$ over the spacing (up is less bound). Black: perfect; blue diamonds: defects; green: jitter; purple: polycrystal; orange: random; grey line: perfect to jitter to random.}
+\label{fig:fcc}
+\end{figure*}
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/new/comp_clusters_per_void.png}
+\caption{Compensation rule in the 2D test: clusters around each void against the void's missing mass (in units of the median cluster, \SI{1.40e50}{\kilo\gram}). Each dot is one void, coloured by its radius (purple, small, to yellow, large); dashed: the straight-line fit $N=0.9+M_\mathrm{def}/\SI{2.10e50}{\kilo\gram}$. The same rule in the 3D web gives $N=0.49+M_\mathrm{def}/\SI{1.48e50}{\kilo\gram}$.}
+\label{fig:comprule}
+\end{figure}
+
+\section{A compensated random web reaches the CMB level}\label{sec:compweb}
+\paragraph*{Generator.} We built a new random web that respects both the compensation rule and published size and abundance laws, using only their \emph{shapes} rescaled to the Gpc body scale. Void radii follow the volume-conserving void size function of Jennings, Li and Hu \cite{Jennings2013}, built on the two-barrier excursion set of Sheth and van de Weygaert \cite{ShethvdW2004}, scaled to a median of \SI{1.5}{\Gpc} (1.36--2.14\,Gpc for 5--95\%). Void depths are shallow, $\delta_v$ uniform in $[-0.45,-0.25]$ \cite{ClampittJain2015}. Cluster masses follow the Tinker et al.\ mass function \cite{Tinker2008}, scaled to a median of \SI{1.40e50}{\kilo\gram}, with contrasts log-uniform in 30--300 (median radius \SI{0.155}{\Gpc}). Each void's clusters are placed in its wall until they hold exactly its missing mass. Voids go in uniformly in volume, largest first, until they fill 29\% of the volume, under all the placement rules of Sec.~\ref{sec:minedit}. Each seed has about 9,000 bodies (seed 3: 1,645 voids and 7,417 clusters).
+
+\paragraph*{Edits that keep the balance exact.} An edit never separates a void from its clusters. A \emph{group} edit moves a void together with all its wall clusters and rescales them together (four numbers: shift and mass factor, with masses re-weighted by the local density), so the group's net mass stays exactly zero. A \emph{cluster} edit slides one cluster within its own wall, between the void edge and 1.3 void radii, without changing its mass. The search and the entropy rule are as in Sec.~\ref{sec:minedit}, with moves capped at \SI{5}{\Gpc} for groups and \SI{2}{\Gpc} for clusters.
+
+\paragraph*{Results.} Seed 3 reaches the CMB level: 789\fl\ to 0.998\fl\ with 1,099 bodies edited (12.1\% of the web), no deletions and no ring (Table~\ref{tab:compweb}, Fig.~\ref{fig:compmesh}). The edits are 191 groups moved or resized and 133 single clusters slid in their walls. The typical move is \SI{0.6}{\Gpc} (90\% under \SI{2.3}{\Gpc}, largest \SI{6.5}{\Gpc}) and the median mass factor is 1.02. Solving for the residual with modes $m=1$--12 now leaves 0.02\fl\ (from 640\fl), and the short waves fall from 461\fl\ to 1.00\fl. The symmetric share drops from 67\% to 35\%. Compensation stays exact (largest group net mass $4\times10^{-16}$ of its deficit), and none of the seven entropy measures decreased. Bodies centred 0--3\,Gpc from the ring go from 151 to 160 (0.060 to \SI{0.063}{\per\Gpc\cubed}, against a web average of 0.080), so the region near the ring stays below average. The changes sit mostly inside about \SI{20}{\Gpc}, and the histograms barely move (Fig.~\ref{fig:comphist}): the median triangle goes from 1.45 to \SI{1.38}{\Gpc\squared} over the slab and from 1.84 to \SI{1.59}{\Gpc\squared} near the ring, connections per node stay at 6, and the median link goes from 2.09 to \SI{2.05}{\Gpc}. A modest rearrangement of a realistic, balanced web is therefore enough to flatten the CMB ring without making the web more ordered. Seeds 2 and 1 stalled at 1.18\fl\ and 7.40\fl. The random starts begin very high (789--1,260\fl) because some bodies land right next to the ring, and most of the edits go to clearing those.
+
+\begin{table}[tbp]
+\caption{Compensated random web, move and resize under the entropy rule. Units: group (void plus its clusters) / single cluster.}
+\label{tab:compweb}
+\footnotesize
+\begin{ruledtabular}
+\begin{tabular}{lcccc}
+seed & leftover & bodies edited & units & stop\\
+\midrule
+3 & 789 $\to$ \textbf{0.998} & 1,099 (12.1\%) & 191 / 133 & reached $1\times$\\
+2 & 1,077 $\to$ 1.18 & 1,927 (21.3\%) & 483 / 563 & plateau\\
+1 & 1,260 $\to$ 7.40 & 2,538 (27.7\%) & 1,122 total & plateau\\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=0.78\textwidth]{figures/new/comp_web_mesh_before_after.png}
+\caption{Compensated random web, seed 3, before and after the move and resize edits under the entropy rule (789\fl\ to 0.998\fl). Full Delaunay triangulation of the slab $|z|<\SI{1.5}{\Gpc}$. Left: before; green dots are the bodies that will move. Right: after, each triangle filled by its area change against the local before-area: blue, compressed; red, expanded; white, no change (symmetric log scale). Red dots: clusters; blue dots: void centres; black circle: our sphere and the CMB ring; pink: CoE core cap; arrow: from us toward the CoE. Bottom: residual around the ring before (grey) and after (dark blue); pale mint band, $\pm1\times$. The leftover (dark blue) is no longer the smooth large-scale pattern: the $m=1$--12 part is cancelled to 0.02\fl, and what remains is chaotic, asymmetric fine-scale ripple at the CMB limit, the noise-like texture the model predicts (shown enlarged in Fig.~\ref{fig:noiserows}).}
+\label{fig:compmesh}
+\end{figure*}
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.92\columnwidth]{figures/new/comp_web_hist.png}
+\caption{Histograms of the triangulation of Fig.~\ref{fig:compmesh}, before (grey fill) and after the edits (dark blue line): (a) triangle area, whole slab; (b) triangle area, 0--3\,Gpc from the ring; (c) connections per node; (d) link length.}
+\label{fig:comphist}
+\end{figure}
+
+\section{What is left: chaotic, noise-like texture}\label{sec:noise}
+The model predicts that once the large-scale pattern is cancelled, what is left of the residual is not a structured pattern but asymmetric, noise-like texture at the $10^{-5}$ limit. Figures~\ref{fig:noiserows} and \ref{fig:noisehist} show the leftover on its own, without the much larger `before' curve, for the three web runs that reach the target (compensated web seed 3, 0.998\fl; foam seeds 3 and 1 edited without deletions, 0.995\fl\ and 0.95\fl) and, for contrast, compensated seed 2, which stalled just above at 1.18\fl. All numbers come from the saved final residuals; nothing was rerun.
+
+\emph{The large scales are cancelled.} In every example the modes $m=1$--12, which carry the fingerprint, hold between 0.0003\% and 1.1\% of the leftover power (0.002--0.10\fl), and no low mode stands out (red bars in Fig.~\ref{fig:noiserows}).
+
+\emph{What is left is chaotic fine texture at the limit.} The leftover rms is 1.00\fl, 0.995\fl\ and 0.95\fl\ (1.18\fl\ for the contrast case), spread over many fine modes: 10--90\% of the power lies between $m=46$ and 89 for compensated seed 3 and between $m=50$ and 96 for seed 2. The foam webs are narrower, $m\approx29$--41, so their ripple looks more regular, with a beating envelope. The largest single mode carries only 13\%, 17\%, 24\% and 6\% of the power, and neighbouring points stop being correlated within 2--3\,degrees. Because the rms sits at the limit, 25--41\% of the ring lies outside the $\pm1\times$ band, with peaks of 2.4--3.5\fl; Gaussian noise with an rms of 1 would be outside 32\% of the time.
+
+\emph{There is no symmetric pattern, and the statistics look like noise.} Of the leftover power, 43\%, 43\%, 33\% and 41\% is mirror-symmetric about the CoE axis. Rings of Gaussian noise with the same mode amplitudes and random phases give 31--70\% (5--95\% range), so every example sits inside or at the low edge of the noise range, never on the symmetric side. The residual values follow a Gaussian of the same rms (Kolmogorov--Smirnov $p=0.86$, 0.32, 0.44 and 0.75; skewness within $\pm0.03$); only foam seed 1 is slightly heavy-tailed (excess kurtosis 0.9; Fig.~\ref{fig:noisehist}). In plain words: every example cancels the large scales and leaves an asymmetric, chaotic, noise-like texture at the CMB limit, as the model predicts. One caveat: this texture comes from bodies near the ring that the kernel treats as points, so its exact spectrum depends on that simplification (Sec.~\ref{sec:caveats}).
+
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/new/noise_examples_rows.png}
+\caption{The leftover after editing, shown alone (Sec.~\ref{sec:noise}). Each row is one edited random web. Left: residual around the ring in units of $10^{-5}$, with the pale green $\pm1\times$ band. Right: amplitude of each mode $m$ (number of waves around the ring); red, $m=1$--12, the large scales of the fingerprint; blue, $m\geq13$, fine texture. The top three rows reach the CMB level (compensated web seed 3, 0.998\fl; foam seeds 3 and 1 with no deletions, 0.995\fl\ and 0.95\fl); the bottom row (compensated seed 2, 1.18\fl) stalled just above and is shown for contrast. In every row the large scales are gone (the red bars are barely visible) and what is left is irregular fine ripple spread over many modes, with no dominant low mode.}
+\label{fig:noiserows}
+\end{figure*}
+
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/new/noise_examples_hist.png}
+\caption{Is the leftover noise-like? Histograms of the residual values of Fig.~\ref{fig:noiserows}, divided by their rms, against a Gaussian with the same rms (black line). Each panel lists the symmetric share (the part of the leftover power that is mirror-symmetric about the CoE axis) with, in brackets, the 5--95\% range for 2,000 Gaussian-noise rings with the same mode amplitudes and random phases; the Kolmogorov--Smirnov $p$-value against a Gaussian (above 0.05 means consistent with one); and the correlation length (where the autocorrelation first crosses zero). All four look like Gaussian noise, and none is mirror-symmetric.}
+\label{fig:noisehist}
+\end{figure*}
+
+\section{Structure diagnostics of the edited webs}\label{sec:diag}
+Two diagnostics check that the edits leave an ordinary-looking web: the shape of its mesh and the pair forces between its bodies. Both use the entropy-rule foam web, seed 2 (Fig.~\ref{fig:entrun}); the same mesh test for the compensated web is Fig.~\ref{fig:comphist}.
+
+\subsection{Mesh, area and energy of an edited web}\label{sec:mesh}
+\paragraph*{Method.} To see what the edits do to the shape of the web, we join the bodies in the side-view slab ($|z|<\SI{1.5}{\Gpc}$, projected onto the ring plane) by their full Delaunay triangulation: every node is linked to its neighbours with non-crossing links until only triangles remain, so there are no gaps. Each triangle after the edits is coloured by its area minus the area of the before-triangle that contains its centre. We then compare histograms of triangle area (for the whole slab and for the band 0--3\,Gpc from the ring), of connections per node and of link length. Area entropy is $S=-\sum_i p_i\ln p_i$ with $p_i=A_i/\sum A$, and the toy energy is $U=-G\sum_{\langle ij\rangle}m_im_j/r_{ij}$ over the links, with clusters at $+M$ and voids at minus their missing mass, plus a wall term and an entropy term $T_\mathrm{eff}\Delta S$ with $k_BT_\mathrm{eff}=\langle\frac12Mv^2\rangle$.
+
+\paragraph*{Results (foam seed 2).} The triangles change almost only inside about \SI{20}{\Gpc}, around our sphere (Fig.~\ref{fig:trimesh}). Over the whole slab the median triangle grows slightly, from 0.59 to \SI{0.66}{\Gpc\squared} (Fig.~\ref{fig:trihist}a). Near the ring most spots are compressed, because large gap triangles get split, but the population evens out: the median goes from 0.79 to \SI{1.35}{\Gpc\squared} and the area entropy rises from 4.70 to 5.03. Connections per node do not change (mean 5.94, as expected for a triangulation), and the median link grows from 1.77 to \SI{1.87}{\Gpc} (Fig.~\ref{fig:trihist}b); the spike near \SI{1.7}{\Gpc} is the foam rule, which puts each cluster on a void rim. The energy rises near the ring (about $+23\%$) and falls farther out (about $-14\%$ at 3--6\,Gpc); overall the edited web is about 3\% more bound. The entropy term is negligible next to gravity. (An earlier non-crossing mesh with a long-link cutoff left gaps; it gave the same trend near the ring, median cell 0.60 to \SI{1.20}{\Gpc\squared}.)
+
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=0.78\textwidth]{figures/new/tri_foam_s2_mesh_coloured.png}
+\caption{Full Delaunay triangulation of the side-view slab, foam seed 2, before (left) and after the entropy-rule edits (right). After, each triangle is filled by its area change against the local before-area: blue, compressed (smaller); red, expanded (bigger); white, no change (symmetric log scale). Red dots: clusters; blue dots: void centres; grey: links; black circle: our sphere and the CMB ring; pink: CoE core cap; arrow: from us toward the CoE. Bottom: residual around the ring before (grey) and after (dark blue); pale mint band, $\pm1\times$. The leftover (dark blue) is no longer the smooth large-scale pattern: the $m=1$--12 part is cancelled to 0.01\fl, and what remains is chaotic, asymmetric fine-scale ripple (2.4 times the CMB limit in this run).}
+\label{fig:trimesh}
+\end{figure*}
+
+\begin{figure*}[tp]
+\centering
+\begin{subfigure}[t]{0.44\textwidth}\includegraphics[width=\textwidth]{figures/new/tri_foam_s2_area_hist_stacked.png}\caption{}\end{subfigure}\hfill
+\begin{subfigure}[t]{0.44\textwidth}\includegraphics[width=\textwidth]{figures/new/tri_foam_s2_conn_hist.png}\caption{}\end{subfigure}
+\caption{Histograms of the triangulation of Fig.~\ref{fig:trimesh}, before (grey) and after (dark blue). (a) Triangle areas on log bins, whole slab (top) and triangles centred 0--3\,Gpc from the ring (bottom). (b) Connections per node, link lengths (3D separation), and median link length by link type.}
+\label{fig:trihist}
+\end{figure*}
+
+\subsection{Pair energies and forces}\label{sec:forces}
+\paragraph*{Method.} For every pair of 3D Delaunay neighbours in foam seed 2 we compute $U_{ij}=-Gm_im_j/r_\mathrm{eff}$ and the net force on each body $\mathbf F_i=\sum_j Gm_im_j(\mathbf x_j-\mathbf x_i)/(|\mathbf x_j-\mathbf x_i|\,r_\mathrm{eff}^2)$, with clusters at $+M$, voids at minus their missing mass, and $r_\mathrm{eff}=\max(r_{ij},R_i+R_j)$ so that touching bodies do not blow up. Force statistics use bodies within \SI{26}{\Gpc} of us, away from the one-sided edge.
+
+\paragraph*{Results.} Cluster--void repulsion dominates, about $+4.7\times10^{69}$\,J in total, roughly twice the cluster--cluster attraction ($-2.1\times10^{69}$\,J); void--void pairs are few but individually strong ($-0.7\times10^{69}$\,J), so the net pair energy is positive, about $+1.9\times10^{69}$\,J (Fig.~\ref{fig:pairE}). The edits change each total by only 1--3\%. The two peaks in the cluster--void panel come from the foam rule, which puts clusters right on void rims. The moved bodies end about 20\% closer to force balance (median net force $4.2\times10^{39}$ to $3.4\times10^{39}$\,N), below that of the bodies that were not moved, and they are not pushed toward the ring: about half feel a push toward it and half away (Fig.~\ref{fig:arrows}). Voids feel larger forces than clusters because their missing mass is about six times a cluster's mass. This is a static snapshot of pairwise forces with no expansion, so it shows balance at one moment, not long-term stability.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\columnwidth]{figures/new/energy_hist_by_type.png}
+\caption{Pair energies $|U_{ij}|$ by link type for foam seed 2 (3D Delaunay neighbours, contact-softened), before (grey) and after the edits (dark blue): cluster--cluster (attract), cluster--void (repel) and void--void (attract).}
+\label{fig:pairE}
+\end{figure}
+
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/new/net_force_arrows.png}
+\caption{Net pair force on each body in the slab, foam seed 2, before and after the edits. Each body is drawn as an arrow about its own size pointing along its in-plane net force (red: clusters; blue: voids, about \SI{3}{\Gpc}; green: moved bodies, at the old spot before and the new spot after). Black circle: our sphere and the ring; pink: CoE core cap; thick dark-red arrow: from us toward the CoE. Bottom: residual around the ring before (grey) and after (dark blue); pale mint band, $\pm1\times$. The leftover (dark blue) is no longer the smooth large-scale pattern: the $m=1$--12 part is cancelled to 0.01\fl, and what remains is chaotic, asymmetric fine-scale ripple (2.4 times the CMB limit in this run).}
+\label{fig:arrows}
+\end{figure*}
+
+\section{Concentric shell models}\label{sec:shells}
+In the CoE picture the matter left the centre as concentric shells. We built simple shell models to see how the spacing of the shells and the mass they carry shape the density profile, a wave tied to the shells, and the structure each shell grows.
+
+\paragraph*{Method.} Twelve shells start at radius 3 (figure units), the first one 1 unit wide. Their spacing is constant (outer radius $R=15$), widening by a factor $q=1.097$ per shell ($R=24$) or narrowing by $q=0.954$ ($R=12.37$). In the first set every shell holds the same mass; in the second, mass rises outward geometrically so that the outermost shell holds three times the innermost, with the same total. Each shell's density is its mass over its volume, shown relative to the innermost equal-mass shell on one logarithmic colour scale for all cases. A wave $\cos\phi$ puts exactly one cycle in each shell, so its crests sit on the shell boundaries. A smooth fit to the shell densities, $\rho_\mathrm{fit}=A\,x^{-n}+C$ with $x=r/R$ (with $C\,x^{p}$ in place of $C$ when mass rises outward, so the curve can turn up again), is multiplied by the wave; the dashed curves are $\pm\rho_\mathrm{fit}$. For structure, the innermost shell is smooth and each shell outward gets slightly clumpier, with rms $\sigma_i=0.8\,(i/11)\,(\rho_i/\rho_{i,\mathrm{const}})^{1/3}$ relative to the same shell in the constant case, so thinned shells soften and concentrated shells sharpen. Typical clump spacing is 0.6 of the shell width. Each shell's clumpy field is lognormal and rescaled so that its mean is exactly the shell density. Under each density step we draw the 16--84\% and 2.5--97.5\% ranges of the clumpy density and its full minimum-to-maximum range. (An earlier version grew $10^{-5}$ ripples from recombination with linear growth set by each shell's density; it is replaced by this rule, which ties the colours to actual density.)
+
+\paragraph*{Results.} With equal mass the fitted density falls as $r^{-2.00}$ for constant spacing ($C=0$) and faster, $r^{-2.55}$, for widening spacing, so the density-times-wave envelope dies out by about 0.7\,$R$ (Figs.~\ref{fig:shellsA}, \ref{fig:shellsB}). Narrowing spacing levels off ($C=0.058$), and the wave keeps a steady amplitude at large radius. With mass rising outward the constant-spacing profile flattens, the widening profile still falls steeply, only shifted up, because the extra outer mass cannot keep up with the growing shell volumes, and the narrowing profile bottoms out near 0.8\,$R$ and rises toward the edge, so its envelope turns slightly upward (Figs.~\ref{fig:shellsE}, \ref{fig:shellsF}). In the structure maps (Figs.~\ref{fig:shellsC}, \ref{fig:shellsD}, \ref{fig:shellsG}, \ref{fig:shellsH}) clumpiness climbs steadily for constant spacing, widening shells spread their clumps into large faint blobs (outer-shell rms 0.43, densest spot only about 9 times the emptiest), and narrowing shells give the clumpiest outer shells with small sharp knots (rms 1.15, densest to emptiest about 1,400 times). With mass rising outward the outer shells are a little clumpier (rms 0.50, 0.89 and 1.38 for widening, constant and narrowing; extremes up to about 3,300 times), and clump sizes do not change because they follow the spacing.
+
+\paragraph*{Interfaces between shells.} Where density changes at a shell boundary the gravitational potential changes too, so there is a pull across the interface. Before recombination pressure pushed matter from the dense side to the thin side, much like a concentration gradient evening out. After recombination there is almost no pressure, and gravity runs the other way from osmosis: the denser side pulls matter toward itself and the contrast sharpens. Random motions of a few hundred km/s smear each boundary by only about 1--10\,Mpc, tiny next to shells hundreds of Mpc to Gpc wide. We therefore expect each boundary to drain the thinner shell slowly into the denser one and leave a wall or filament at the interface rather than a blended zone; structure lined up along shell edges would be an observable. This is a qualitative expectation and was not modelled.
+
+\begin{figure*}[tp]
+\centering
+\begin{subfigure}[t]{0.47\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/shells_constant.png}\caption{constant spacing}\end{subfigure}\hfill
+\begin{subfigure}[t]{0.47\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/shells_widening.png}\caption{widening spacing}\end{subfigure}
+\caption{Equal-mass concentric shells, (a) constant and (b) widening spacing. Top: the shell wedge, its flat edge on the radius axis of the panels below so each shell boundary (grey lines) drops straight into its density step; colour is shell density relative to the innermost shell (dark red, dense, to dark blue, thin; one log scale for every shell figure). Panels: shell density with the smooth fit (dashed); the wave with one cycle per shell; the smooth density fit times the wave, with $\pm$ the fit dashed.}
+\label{fig:shellsA}
+\end{figure*}
+
+\begin{figure*}[tp]
+\centering
+\begin{subfigure}[t]{0.45\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/shells_narrowing.png}\caption{narrowing spacing}\end{subfigure}\hfill
+\begin{subfigure}[t]{0.47\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/shells_compare_density.png}\caption{the three density profiles}\end{subfigure}
+\caption{(a) Equal-mass shells with narrowing spacing; panels and colours as in Fig.~\ref{fig:shellsA}. The fit levels off, so the density-times-wave envelope keeps a steady amplitude at large radius. (b) Shell density against radius for the three spacings (grey: constant; blue: widening; red: narrowing).}
+\label{fig:shellsB}
+\end{figure*}
+
+\begin{figure*}[tp]
+\centering
+\begin{subfigure}[t]{0.47\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/structure_constant.png}\caption{constant spacing}\end{subfigure}\hfill
+\begin{subfigure}[t]{0.47\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/structure_widening.png}\caption{widening spacing}\end{subfigure}
+\caption{Structure in equal-mass shells, (a) constant and (b) widening spacing. Top: the wedge filled with each shell's clumpy density (one log colour scale for all structure figures; red, dense; blue, empty); the innermost shell is smooth and each shell's clumps average exactly to its density. Panels: shell density (bar) with the mean of the clumpy field (white dot), the 16--84\% (dark band) and 2.5--97.5\% (light band) ranges and the minimum-to-maximum whisker; clumpiness, rms$(\rho/\rho_\mathrm{shell}-1)$; typical clump spacing.}
+\label{fig:shellsC}
+\end{figure*}
+
+\begin{figure*}[tp]
+\centering
+\begin{subfigure}[t]{0.45\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/structure_narrowing.png}\caption{narrowing spacing}\end{subfigure}\hfill
+\begin{subfigure}[t]{0.47\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/structure_compare.png}\caption{clumpiness and clump spacing compared}\end{subfigure}
+\caption{(a) Structure in equal-mass shells with narrowing spacing; panels and colours as in Fig.~\ref{fig:shellsC}. Concentration makes the outer shells the clumpiest, with small sharp knots. (b) Clumpiness and typical clump spacing against radius for the three spacings (grey: constant; blue: widening; red: narrowing).}
+\label{fig:shellsD}
+\end{figure*}
+
+\begin{figure*}[tp]
+\centering
+\begin{subfigure}[t]{0.47\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/shells_massout_constant.png}\caption{constant spacing}\end{subfigure}\hfill
+\begin{subfigure}[t]{0.47\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/shells_massout_widening.png}\caption{widening spacing}\end{subfigure}
+\caption{Shells with mass rising outward (outermost shell three times the innermost, same total as the equal-mass case), (a) constant and (b) widening spacing. Panels and colour scale as in Fig.~\ref{fig:shellsA}, so the colours compare directly; densities are relative to the innermost equal-mass shell.}
+\label{fig:shellsE}
+\end{figure*}
+
+\begin{figure*}[tp]
+\centering
+\begin{subfigure}[t]{0.45\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/shells_massout_narrowing.png}\caption{narrowing spacing}\end{subfigure}\hfill
+\begin{subfigure}[t]{0.47\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/shells_massout_compare_density.png}\caption{the three density profiles}\end{subfigure}
+\caption{(a) Shells with mass rising outward, narrowing spacing; panels as in Fig.~\ref{fig:shellsA}. The density bottoms out near $0.8R$ and rises toward the edge, so the envelope turns slightly upward. (b) Shell density against radius for the three spacings with mass rising outward (thick) and equal mass (dotted); grey: constant; blue: widening; red: narrowing.}
+\label{fig:shellsF}
+\end{figure*}
+
+\begin{figure*}[tp]
+\centering
+\begin{subfigure}[t]{0.47\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/structure_massout_constant.png}\caption{constant spacing}\end{subfigure}\hfill
+\begin{subfigure}[t]{0.47\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/structure_massout_widening.png}\caption{widening spacing}\end{subfigure}
+\caption{Structure in shells with mass rising outward, (a) constant and (b) widening spacing. Panels, bands, whiskers and colour scale as in Fig.~\ref{fig:shellsC}.}
+\label{fig:shellsG}
+\end{figure*}
+
+\begin{figure*}[tp]
+\centering
+\begin{subfigure}[t]{0.45\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/structure_massout_narrowing.png}\caption{narrowing spacing}\end{subfigure}\hfill
+\begin{subfigure}[t]{0.47\textwidth}\vspace{0pt}\includegraphics[width=\textwidth]{figures/new/structure_massout_compare.png}\caption{clumpiness and clump spacing compared}\end{subfigure}
+\caption{(a) Structure in shells with mass rising outward, narrowing spacing; panels as in Fig.~\ref{fig:shellsC}. The outermost shell spans about 3,300 times from its emptiest to its densest spot. (b) Clumpiness and typical clump spacing against radius for the three spacings with mass rising outward (grey: constant; blue: widening; red: narrowing).}
+\label{fig:shellsH}
+\end{figure*}
+
+\FloatBarrier
+\section{Caveats}\label{sec:caveats}
+\emph{Missing physics.} The kernel includes only the Newtonian tidal and velocity effect. For bodies between us and the ring, the time-varying potentials crossed by CMB photons (integrated Sachs--Wolfe \cite{SachsWolfe1967} and Rees--Sciama \cite{ReesSciama1968} effects), gravitational lensing of the ring, and the potential difference between the ring and us (Sachs--Wolfe term \cite{SachsWolfe1967}) are left out. For \SIrange{e52}{e53}{\kilo\gram} bodies a few Gpc away they are probably not small, so the inside results describe what the tidal model alone says.
+
+\emph{Overfitting.} Each body adds four parameters, while the ring offers 360 samples dominated by about a dozen modes. Above about five bodies many different layouts fit almost equally well, and successful fits push the error into modes above 12. Reaching $1\times$ with 8--12 bodies is thus partly a statement about the number of free parameters.
+
+\emph{Non-uniqueness.} Below about 5 bodies the answer is nearly unique (a backbone of four masses near \SI{20}{\Gpc} at $\ell\approx\ang{75}/\ang{315}$ and \ang{162}/\ang{228}); beyond that the examples shown are illustrations, not unique answers. The smooth field is the minimum-norm solution; many other fields also work.
+
+\emph{Ring-plane only.} Only the in-plane ring is constrained, so nothing is known about structure far above or below the galactic plane; a full-sky fit would need more structure.
+
+\emph{Point bodies near the ring.} In the web runs every void and cluster is a point mass for the kernel and a Gpc-scale stand-in for a whole region; near the ring this exaggerates the short waves, which is why the starting leftovers of filled webs are so high and why a ring rule is needed. The entropy rule is itself a choice of seven measures, and the toy energies, pair forces and shell structure rule are illustrations, not dynamics.
+
+\emph{Extrapolation.} The comparison with observed structure extrapolates the 2M++ spread from \SI{80}{\Mpc} to \SIrange{1}{4}{\Gpc}, a factor of 12--50 in radius, and assumes Gaussian tails.
+
+\emph{Faster-than-light recession.} The model expects the outer parts of the shell to recede faster than light. Spreading the shell's outer edge (\SI{72.5}{\Gpc}) over an age of \SI{13.8}{Gyr} gives an average edge speed of about $17c$ in Newtonian terms; a Sedov--Taylor scaling ($R\propto t^{2/5}$) puts today's edge speed at two fifths of that, about $7c$. This is expected for expanding space: it is a recession velocity, not motion through space, so it does not conflict with relativity, but the Newtonian kernel used here does not treat it. The next stage of model development is a full relativistic Lema\^itre--Tolman--Bondi (LTB) treatment, in which the energy function $E(r)$ must satisfy $2E/c^2>-1$, grow as $E\propto r^2$ near the centre, avoid shell crossing, and match the local Hubble constant $H_0$ where we sit.
+
+\section{Conclusions}
+The CoE shell model leaves a specific fingerprint in the CMB ring: a 237\fl\ pattern dominated by three to five waves around the sky. Treated as an inverse problem, this fingerprint can be cancelled to the flat target by a small number of deliberately placed bodies: 11 outside our visible sphere, 4 to 8 inside it, and 8 when no placement wall is imposed. With the CoE core fully open, 10 outside bodies suffice, all within a few Gpc of the core's near edge; the deep core contributes almost nothing because the $m=3$--5 pull fades rapidly with distance. Both masses and voids are needed outside; inside, masses alone suffice. Requiring that the layout not be a mirror image costs about one body.
+
+The solutions are not unique, and above a handful of bodies the fits are as much a measure of freedom as of physics. Sequential growth that never revisits earlier choices fails by a wide margin. Coordination can, however, be added afterwards and modestly: a realistic random web, with every void balanced by its own clusters, reaches the CMB level ($789\times$ to $0.998\times$) when 12\% of its bodies are moved or resized by a median of \SI{0.6}{\Gpc}, without deletions, without forming a ring and without becoming more ordered. What it leaves is what the model predicts: the large-scale pattern is cancelled ($m=1$--12 down to 0.02\fl), and the rest is chaotic, asymmetric fine-scale ripple at the $10^{-5}$ limit with the statistics of Gaussian noise, as in the two foam webs that reach the target.
+
+The smooth-field solutions show what the cancellation would demand of the real universe: a coherent pattern of about 1\% rms and 5--7\% peaks on gigaparsec scales, arranged in the same three-to-five-lobe shape as the fingerprint. That is about an $8\sigma$ fluctuation at \SI{1}{\Gpc} even against the most generous extrapolation of observed structure. A fuller treatment would add the line-of-sight effects listed above, fit the whole sky rather than the ring alone, and replace the Newtonian kernel with a relativistic LTB model that handles the faster-than-light recession the model expects.
+
+\clearpage
+\bibliography{refs}
+
+\clearpage
+\onecolumngrid
+\appendix
+\section{Sequential-placement universes}\label{app:seq}
+The final universes of the six sequential-placement runs of Fig.~\ref{fig:seq} (Sec.~\ref{sec:seq}), kept for reference. They are superseded by the edited webs of Secs.~\ref{sec:minedit} and \ref{sec:compweb}.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth,height=0.7\textheight,keepaspectratio]{figures/fig_seq_universes_a.pdf}
+\caption{Sequential-placement universes 1--3: the final universe of each curve of Fig.~\ref{fig:seq}. Figures~\ref{fig:sequniv} and \ref{fig:sequniv2} are one sequence of six runs, numbered 1--6 from the largest to the smallest final leftover; each row's titles, bars and residual curve have the colour of its curve in Fig.~\ref{fig:seq}. Left: side view, looking face-on at the plane of the CMB ring (us: $+$; black circle: our \SI{14.3}{\Gpc} sphere and the CMB ring; grey dashed: the CoE-interior wall; blue: voids at their true radius; red dots: clusters). The A runs fill only the near region and all their bodies are shown, projected onto the plane; the B runs fill the whole region out to \SI{42.9}{\Gpc} in three dimensions, so only bodies centred within \SI{1.5}{\Gpc} of the ring plane are drawn. Middle: leftover by mode (dashed outline: start; grey bar: all modes above 12 combined; green: $1\times$). Right: residual around the ring after placement, each on its own vertical scale; the green band is $\pm1\times$. The B layouts were not saved by the original runs and were regenerated with the same code and random seed; they reproduce the saved final leftovers. This figure: 1, B growth with random placement (5,782 voids and 34,692 clusters, 1,045\fl); 2, B growth with the foam rule (5,974 voids and 35,844 clusters, 610\fl); 3, B growth, CMB-aware (6,469 voids and 38,814 clusters, 169\fl).}
+\label{fig:sequniv}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth,height=0.7\textheight,keepaspectratio]{figures/fig_seq_universes_b.pdf}
+\caption{Sequential-placement universes 4--6 of the sequence begun in Fig.~\ref{fig:sequniv} (largest to smallest final leftover; panels as in Fig.~\ref{fig:sequniv}): 4, B growth, CMB-aware, with shallow voids (6,000 voids, 163\fl); 5, A near region fixed first, shallow voids (30 voids, 135\fl); 6, A near region fixed first, deep voids and clusters (24 of each, 27.4\fl; the same layout as example 1 in Fig.~\ref{fig:ex1}).}
+\label{fig:sequniv2}
+\end{figure}
+
+\FloatBarrier
+
+\section{Further example universes}\label{app:examples}
+Examples 4--9 of the fitted layouts of Sec.~\ref{sec:examples}, continuing Fig.~\ref{fig:ex1}; the core-open examples 10--13 are in Fig.~\ref{fig:ex4}.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth,height=0.7\textheight,keepaspectratio]{figures/fig6_examples_open_inside.pdf}
+\caption{Examples 4--6 of the sequence begun in Fig.~\ref{fig:ex1} (largest to smallest leftover; panels as in Fig.~\ref{fig:ex1}): 4, outside with no CoE wall and the smooth-density limit (10 bodies, 0.73\fl; 0.726 against 0.734 for example~3); 5, inside our sphere, 7 masses (0.62\fl); 6, outside, masses and deep voids (11 bodies, 0.58\fl).}
+\label{fig:ex2}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth,height=0.7\textheight,keepaspectratio]{figures/fig7_examples_more.pdf}
+\caption{Examples 7--9 of the sequence begun in Fig.~\ref{fig:ex1} (largest to smallest leftover; panels as in Fig.~\ref{fig:ex1}): 7, inside our sphere, 4 masses with a \SI{e53}{\kilo\gram} cap (0.47\fl); 8, all open, where the eight bodies move inside our sphere (0.29\fl); 9, inside our sphere, 4 masses and 4 voids (0.18\fl).}
+\label{fig:ex3}
+\end{figure}
+
+\FloatBarrier
+
+\clearpage
+\section{Figure numbering in this version}\label{app:map}
+The figures were renumbered when the brief was reordered to follow the argument. The table maps each earlier figure number to its number here.
+
+\input{figmap.tex}
+\end{document}

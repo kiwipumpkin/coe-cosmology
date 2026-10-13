@@ -1,0 +1,32 @@
+{
+ "before": {
+  "nodes": 1133,
+  "links": 3367,
+  "triangles": 2235,
+  "moved_nodes": 193,
+  "links_touching_moved": 791,
+  "total_area": 2685.3305977349205,
+  "median_area": 0.5922755826576974
+ },
+ "after": {
+  "nodes": 1136,
+  "links": 3376,
+  "triangles": 2241,
+  "moved_nodes": 195,
+  "links_touching_moved": 825,
+  "total_area": 2685.3305977349205,
+  "median_area": 0.6624815088149332
+ },
+ "grid": {
+  "covered_0_3_before": 1.0,
+  "covered_0_3_after": 1.0,
+  "covered_6up_before": 0.9629361167488161,
+  "covered_6up_after": 0.9629361167488161,
+  "frac_grew": 0.1763864469410257,
+  "frac_shrank": 0.2737878833030366,
+  "mean_change": -0.48442913083373806,
+  "ring_0_3_mean_change": -2.1349935422960566,
+  "ring_3_6_mean_change": -0.08682876845420764,
+  "ring_6up_mean_change": -0.06401506378071355
+ }
+}

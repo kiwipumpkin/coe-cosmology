@@ -1,0 +1,4 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+b_foam_rim_s2_tidalcore shrink/delete only left 20.41 m13 20.40 changed 16967 near-ring changed 248
+b_foam_rim_s2_tidalcore grow to x2 left 28.99 m13 28.96 changed 8301 near-ring changed 249
+b_foam_rim_s2_tidalcore grow to x10 left 41.54 m13 41.49 changed 8194 near-ring changed 249

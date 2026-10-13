@@ -1,0 +1,6 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+foam 0 {'units': 4537, 'left': 135.30478094462305, 'outer_rms': 0.0, 'min_gap': 0.020005196179138096}
+foam 1 {'units': 4537, 'left': 135.30478094462305, 'outer_rms': 0.0, 'min_gap': 0.02023302392997195}
+foam 2 {'units': 4544, 'left': 135.30478094462305, 'outer_rms': 0.0, 'min_gap': 0.02000713674572463}
+foam 3 {'units': 4525, 'left': 135.30478094462305, 'outer_rms': 0.0, 'min_gap': 0.020162724081798977}
+foam 4 {'units': 4537, 'left': 135.30478094462305, 'outer_rms': 0.0, 'min_gap': 0.02009465892100959}

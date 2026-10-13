@@ -1,0 +1,16 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+s0.1_tube_a 10/150 t=243s foam med=240.72 helped=0.000 rmsw=32.3 | unstr med=267.96 helped=0.000 rmsw=106.8
+s0.1_tube_a 20/150 t=488s foam med=240.58 helped=0.000 rmsw=32.4 | unstr med=266.11 helped=0.000 rmsw=110.5
+s0.1_tube_a 30/150 t=713s foam med=239.83 helped=0.000 rmsw=31.1 | unstr med=273.03 helped=0.000 rmsw=118.2
+s0.1_tube_a 40/150 t=942s foam med=239.81 helped=0.025 rmsw=31.2 | unstr med=268.83 helped=0.000 rmsw=114.9
+s0.1_tube_a 50/150 t=1171s foam med=239.63 helped=0.060 rmsw=31.1 | unstr med=268.83 helped=0.000 rmsw=111.8
+s0.1_tube_a 60/150 t=1411s foam med=239.81 helped=0.067 rmsw=31.1 | unstr med=269.11 helped=0.000 rmsw=110.9
+s0.1_tube_a 70/150 t=1647s foam med=239.64 helped=0.071 rmsw=31.0 | unstr med=268.46 helped=0.000 rmsw=111.3
+s0.1_tube_a 80/150 t=1882s foam med=239.63 helped=0.087 rmsw=31.0 | unstr med=268.77 helped=0.000 rmsw=112.2
+s0.1_tube_a 90/150 t=2115s foam med=239.71 helped=0.078 rmsw=31.1 | unstr med=269.11 helped=0.000 rmsw=112.3
+s0.1_tube_a 100/150 t=2343s foam med=239.64 helped=0.090 rmsw=31.1 | unstr med=269.50 helped=0.000 rmsw=116.9
+s0.1_tube_a 110/150 t=2582s foam med=239.54 helped=0.091 rmsw=31.1 | unstr med=270.05 helped=0.000 rmsw=116.9
+s0.1_tube_a 120/150 t=2815s foam med=239.59 helped=0.083 rmsw=31.1 | unstr med=268.77 helped=0.000 rmsw=113.6
+s0.1_tube_a 130/150 t=3062s foam med=239.59 helped=0.077 rmsw=31.1 | unstr med=267.58 helped=0.000 rmsw=113.2
+s0.1_tube_a 140/150 t=3297s foam med=239.54 helped=0.093 rmsw=31.1 | unstr med=267.32 helped=0.000 rmsw=114.2
+s0.1_tube_a 150/150 t=3531s foam med=239.51 helped=0.093 rmsw=31.0 | unstr med=267.58 helped=0.000 rmsw=114.9

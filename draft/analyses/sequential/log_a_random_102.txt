@@ -1,0 +1,11 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+random Rv=1.5 1/10: units=3957 voidfrac=0.310 left=28.73 (frozen 27.40) outer_rms=8.20 gap=0.020 t=105s
+random Rv=1.5 2/10: units=3963 voidfrac=0.310 left=31.05 (frozen 27.40) outer_rms=13.94 gap=0.020 t=228s
+random Rv=1.5 3/10: units=3798 voidfrac=0.297 left=29.73 (frozen 27.40) outer_rms=11.47 gap=0.020 t=304s
+random Rv=1.5 4/10: units=3923 voidfrac=0.307 left=29.53 (frozen 27.40) outer_rms=11.01 gap=0.020 t=412s
+random Rv=1.5 5/10: units=3949 voidfrac=0.309 left=28.71 (frozen 27.40) outer_rms=8.40 gap=0.020 t=560s
+random Rv=1.5 6/10: units=3850 voidfrac=0.301 left=28.66 (frozen 27.40) outer_rms=7.94 gap=0.020 t=676s
+random Rv=1.5 7/10: units=3934 voidfrac=0.308 left=30.38 (frozen 27.40) outer_rms=12.59 gap=0.020 t=835s
+random Rv=1.5 8/10: units=3890 voidfrac=0.304 left=28.44 (frozen 27.40) outer_rms=8.24 gap=0.020 t=952s
+random Rv=1.5 9/10: units=3907 voidfrac=0.306 left=30.17 (frozen 27.40) outer_rms=12.62 gap=0.020 t=1049s
+random Rv=1.5 10/10: units=3927 voidfrac=0.307 left=28.61 (frozen 27.40) outer_rms=8.46 gap=0.020 t=1166s

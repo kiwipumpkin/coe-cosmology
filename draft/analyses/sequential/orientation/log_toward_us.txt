@@ -1,0 +1,4 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+same side of ring plane: 0.4375  cluster closer to plane: 0.75
+toward_us 0 111.6 24 0.029999999999998694
+toward_us 1 114.04 24 0.029999999999999083

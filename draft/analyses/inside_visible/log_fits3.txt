@@ -1,0 +1,13 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+cap2e52 CCVVVVV best=1.89 med=7.6 feas=16/16 t/fit=30.0s
+cap2e52 CCCVVVV best=2.67 med=7.1 feas=16/16 t/fit=30.9s
+cap2e52 CCCCVVV best=2.37 med=5.0 feas=16/16 t/fit=24.9s
+cap2e52 CCCCCVV best=1.39 med=4.0 feas=16/16 t/fit=22.0s
+cap2e52 CCCCCCV best=1.08 med=3.8 feas=16/16 t/fit=23.7s
+cap2e52 CVVVVVVV best=1.64 med=3.4 feas=16/16 t/fit=38.9s
+cap2e52 CCVVVVVV best=1.79 med=2.5 feas=16/16 t/fit=38.3s
+cap2e52 CCCVVVVV best=1.06 med=6.3 feas=16/16 t/fit=38.4s
+cap2e52 CCCCVVVV best=0.18 med=3.3 feas=16/16 t/fit=36.6s
+cap2e52 CCCCCVVV best=1.46 med=3.3 feas=16/16 t/fit=30.0s
+cap2e52 CCCCCCVV best=0.59 med=3.2 feas=16/16 t/fit=29.4s
+cap2e52 CCCCCCCV best=0.59 med=0.9 feas=16/16 t/fit=21.5s

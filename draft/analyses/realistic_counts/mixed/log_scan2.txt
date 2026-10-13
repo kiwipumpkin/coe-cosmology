@@ -1,0 +1,9 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+{"case": "inside_mirror", "X": 0.055, "F": 1.0, "lam": 0.0, "maxit": "1500", "left": 15.5495471360244, "M_abs": 1.0819288516450515e+52, "peak": 0.030029999999999998, "vol_active": 6110.25, "vol_at_bound": 1481.0}
+{"case": "inside_mirror", "X": 0.05, "F": 1.0, "lam": 0.0, "maxit": "1500", "left": 25.989443712661483, "M_abs": 1.1655348602015239e+52, "peak": 0.0273, "vol_active": 6934.75, "vol_at_bound": 1864.5}
+{"case": "both_nomirror", "X": 0.6, "F": 1.0, "lam": 0.0, "maxit": "1500", "left": 0.0014070235631442596, "M_abs": 7.673261082342614e+51, "peak": 0.3231111382311326, "vol_active": 3387.094, "vol_at_bound": 0.43199999999999994}
+{"case": "both_nomirror", "X": 0.7, "F": 1.0, "lam": 0.0, "maxit": "1500", "left": 0.0014070235631442596, "M_abs": 7.506329616898301e+51, "peak": 0.36644341327836466, "vol_active": 3291.3619999999996, "vol_at_bound": 0.0}
+{"case": "both_nomirror", "X": 0.2, "F": 1.0, "lam": 0.0, "maxit": "1500", "left": 4.810626419683595, "M_abs": 1.1301490551965087e+52, "peak": 0.10919999999999996, "vol_active": 5445.552, "vol_at_bound": 15.207999999999995}
+{"case": "both_nomirror", "X": 0.8, "F": 1.0, "lam": 0.0, "maxit": "1500", "left": 0.0014070235631442596, "M_abs": 7.404069566545312e+51, "peak": 0.40345141704468473, "vol_active": 3235.9139999999998, "vol_at_bound": 0.0}
+{"case": "inside_mirror", "X": 0.06, "F": 1.0, "lam": 0.0, "maxit": "1500", "left": 4.8641737001822, "M_abs": 1.2331372182634497e+52, "peak": 0.03276, "vol_active": 6565.25, "vol_at_bound": 1200.5}
+{"case": "inside_mirror", "X": 0.065, "F": 1.0, "lam": 0.0, "maxit": "1500", "left": 0.3942641595702151, "M_abs": 9.202494135913279e+51, "peak": 0.03548999999879818, "vol_active": 5075.25, "vol_at_bound": 604.75}

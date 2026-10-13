@@ -1,0 +1,99 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+tasks 96
+    95s strict m N=32 from_prev2 left=  43.978 ok=True soft=3.429 {'cont': 0.22312170485577398, 'net': 0.8088581322979598, 'trend': 3.42918324230388} in=1 core=2 t=95
+   121s strict m N=32 from_prev0 left=  27.416 ok=True soft=3.168 {'cont': 0.061825427659900824, 'net': 0.9012732760142799, 'trend': 3.168061367651095} in=3 core=1 t=121
+   130s strict m N=32 from_prev1 left=  28.073 ok=True soft=3.349 {'cont': 0.24579977543265863, 'net': 0.8608588978427762, 'trend': 3.3488251877841395} in=4 core=2 t=130
+   131s strict m N=32 cold0      left=  66.699 ok=True soft=3.217 {'cont': 0.7756852407264023, 'net': 1.2163244194916016, 'trend': 3.2166134525386876} in=20 core=1 t=131
+   133s strict m N=32 from_prev3 left=  93.039 ok=True soft=3.396 {'cont': 1.6279118803112185, 'net': 2.1275710270084334, 'trend': 3.395979713229494} in=0 core=5 t=133
+   138s strict m N=32 from_prev4 left=  96.585 ok=True soft=3.241 {'cont': 0.5282939588472124, 'net': 1.6723990361234677, 'trend': 3.240583157489675} in=9 core=0 t=138
+   139s strict m N=32 cold1      left= 157.749 ok=True soft=6.645 {'cont': 0.7873530628484461, 'net': 6.645391011878955, 'trend': 3.2200268529094203} in=2 core=0 t=139
+   206s strict m N=32 cold2      left=  44.750 ok=True soft=3.123 {'cont': 0.16896111346977236, 'net': 0.824095566982719, 'trend': 3.1229134534268512} in=9 core=15 t=111
+   270s strict n N=32 cold0      left= 168.002 ok=True soft=6.645 {'cont': 0.8056223147345087, 'net': 6.645391011605602, 'trend': 3.188708036566617} in=2 core=0 t=131
+   280s strict n N=32 from_prev0 left=  23.379 ok=True soft=3.115 {'cont': 1.7453075170058867, 'net': 0.9529170756767036, 'trend': 3.1147876232417633} in=29 core=0 t=159
+   282s strict n N=32 from_prev1 left=  41.658 ok=True soft=3.326 {'cont': 0.7995756673135641, 'net': 0.8008520935904112, 'trend': 3.3263733682660197} in=20 core=0 t=152
+   290s strict n N=32 from_prev2 left= 118.696 ok=True soft=3.385 {'cont': 0.5230159207719779, 'net': 1.3054876918425042, 'trend': 3.384617180061786} in=2 core=1 t=159
+   294s strict n N=32 from_prev4 left=  58.993 ok=True soft=2.939 {'cont': 2.1616843453804178, 'net': 1.6119863590479668, 'trend': 2.938939267779478} in=30 core=0 t=156
+   297s strict n N=32 from_prev3 left=  43.387 ok=True soft=14.836 {'cont': 0.6353063572478693, 'net': 14.836227423018032, 'trend': 2.857806309543146} in=16 core=0 t=164
+   341s strict m N=24 from_prev0 left=   9.186 ok=True soft=3.127 {'cont': 0.7790834236127382, 'net': 0.7034368807205305, 'trend': 3.127189565858939} in=19 core=0 t=61
+   346s strict m N=24 from_prev1 left=  30.021 ok=True soft=3.280 {'cont': 0.3828710121720764, 'net': 0.8885238716208063, 'trend': 3.2796804602802507} in=8 core=0 t=64
+   356s strict m N=24 from_prev2 left=  44.412 ok=True soft=3.445 {'cont': 0.9740435807485066, 'net': 3.349146301735349, 'trend': 3.4447157335529592} in=9 core=0 t=66
+   356s strict m N=24 from_prev4 left=  44.463 ok=True soft=2.891 {'cont': 0.43961633555629487, 'net': 0.8971414625552605, 'trend': 2.89118322077729} in=16 core=0 t=60
+   356s strict n N=32 cold1      left= 131.410 ok=True soft=3.766 {'cont': 3.766158956845697, 'net': 0.6892600897260234, 'trend': 3.0891354257334114} in=32 core=0 t=150
+   361s strict m N=24 from_prev3 left= 143.899 ok=False soft=15.065 {'cont': 0.881514644423675, 'net': 15.06450379182698, 'trend': 2.967003606710083} in=4 core=0 t=67
+   369s strict m N=24 cold2      left=  38.683 ok=False soft=6.614 {'cont': 0.8223101890571816, 'net': 6.614063520604043, 'trend': 3.3571584768422498} in=2 core=0 t=13
+   395s strict n N=32 cold2      left=  99.841 ok=True soft=6.645 {'cont': 1.3506124364375802, 'net': 6.645391005960053, 'trend': 3.459302035931675} in=10 core=3 t=125
+   408s strict m N=24 cold0      left= 103.093 ok=True soft=3.141 {'cont': 2.2014890961756084, 'net': 0.9385743482336724, 'trend': 3.140726810214901} in=23 core=0 t=67
+   413s strict m N=24 cold1      left=  40.125 ok=True soft=3.533 {'cont': 0.9999928642526548, 'net': 1.3367970846989663, 'trend': 3.5325102278596208} in=0 core=5 t=67
+   425s strict n N=24 from_prev0 left=  43.363 ok=True soft=2.854 {'cont': 1.1894663055894727, 'net': 1.0561839637372008, 'trend': 2.8538104875987518} in=20 core=0 t=69
+   426s strict n N=24 from_prev1 left=  35.199 ok=True soft=3.089 {'cont': 0.1660499479289085, 'net': 1.2097821583090758, 'trend': 3.0894645242345753} in=4 core=1 t=69
+   430s strict n N=24 from_prev2 left=  93.993 ok=True soft=3.105 {'cont': 1.3091288485337393, 'net': 1.2999585287194804, 'trend': 3.1050885827340777} in=20 core=1 t=69
+   439s strict n N=24 from_prev3 left=  80.921 ok=True soft=3.245 {'cont': 0.7776223269881148, 'net': 2.617401223606032, 'trend': 3.2449196355097665} in=4 core=1 t=70
+   457s strict m N=20 from_prev1 left=  46.434 ok=True soft=3.174 {'cont': 0.8822479126960838, 'net': 0.9147893425379692, 'trend': 3.1743778390810666} in=8 core=3 t=27
+   458s strict m N=20 from_prev0 left=  44.228 ok=True soft=3.096 {'cont': 0.11104713409015218, 'net': 0.809982108811702, 'trend': 3.0958153341969465} in=10 core=1 t=33
+   465s strict n N=24 from_prev4 left=  85.573 ok=False soft=14.523 {'cont': 1.1988154999811547, 'net': 14.522726980156838, 'trend': 3.2445791064366944} in=0 core=2 t=70
+   469s strict n N=24 cold2      left=  63.601 ok=True soft=2.962 {'cont': 1.8376274764625273, 'net': 0.9869064075809584, 'trend': 2.9619916150279892} in=22 core=1 t=44
+   476s strict n N=24 cold0      left=  36.242 ok=True soft=2.877 {'cont': 2.394042946315169, 'net': 0.9998956932093419, 'trend': 2.8766141670816685} in=23 core=0 t=68
+   479s strict m N=20 from_prev2 left= 152.981 ok=True soft=2.914 {'cont': 0.3090442137153211, 'net': 0.9947257724877867, 'trend': 2.9139284484981904} in=8 core=0 t=40
+   479s strict n N=24 cold1      left= 160.641 ok=True soft=6.645 {'cont': 0.8182246310365606, 'net': 6.645391007228895, 'trend': 2.86162764808333} in=1 core=1 t=66
+   492s strict m N=20 from_prev4 left=  71.475 ok=True soft=2.554 {'cont': 0.22854631464601627, 'net': 0.8000274305127867, 'trend': 2.5536380860976853} in=11 core=4 t=33
+   500s strict m N=20 from_prev3 left=  42.564 ok=True soft=3.024 {'cont': 0.9361446255256498, 'net': 0.9985940457107849, 'trend': 3.0242065129215154} in=16 core=1 t=43
+   501s strict m N=20 cold1      left=  66.679 ok=True soft=2.919 {'cont': 2.224785645501486, 'net': 0.8819054031143784, 'trend': 2.9189392137950234} in=19 core=0 t=32
+   509s strict m N=20 cold0      left=  67.986 ok=True soft=3.451 {'cont': 0.6765416141102385, 'net': 1.3004360203930094, 'trend': 3.451388785211702} in=13 core=0 t=44
+   519s strict m N=20 cold2      left= 138.231 ok=True soft=6.645 {'cont': 1.2209429156224236, 'net': 6.645391011368691, 'trend': 3.069735327225764} in=1 core=0 t=43
+   521s strict n N=20 from_prev1 left= 182.038 ok=True soft=3.173 {'cont': 0.46052602733365233, 'net': 0.9786422465840354, 'trend': 3.1730789582218946} in=4 core=9 t=42
+   527s strict n N=20 from_prev0 left= 174.242 ok=True soft=3.219 {'cont': 0.3948194036632998, 'net': 0.9980972224828409, 'trend': 3.2187355638832167} in=1 core=0 t=48
+   536s strict n N=20 from_prev2 left= 158.314 ok=True soft=6.645 {'cont': 0.766710174902835, 'net': 6.645391013172145, 'trend': 3.141397661758042} in=4 core=0 t=44
+   542s strict n N=20 from_prev4 left=  56.814 ok=True soft=6.645 {'cont': 0.8694969565779933, 'net': 6.645390983378319, 'trend': 3.01675981346301} in=12 core=4 t=41
+   545s strict n N=20 from_prev3 left=  79.747 ok=True soft=14.826 {'cont': 1.1655545474260895, 'net': 14.825974204633864, 'trend': 3.2220370973090082} in=0 core=6 t=45
+   550s strict n N=20 cold0      left=  99.770 ok=True soft=3.987 {'cont': 0.8113469087322516, 'net': 3.9871441588367738, 'trend': 2.9674466921095166} in=14 core=0 t=41
+   554s strict m N=16 from_prev0 left=  78.657 ok=True soft=2.883 {'cont': 0.20786774882407066, 'net': 0.8086666163311816, 'trend': 2.8833988268510335} in=3 core=3 t=28
+   555s strict m N=16 from_prev4 left=  79.171 ok=True soft=6.645 {'cont': 0.7199966331495713, 'net': 6.645330809613958, 'trend': 3.039840988065837} in=0 core=3 t=6
+   558s strict m N=16 from_prev1 left=  70.309 ok=True soft=3.341 {'cont': 0.5729175759401417, 'net': 0.8528267514659547, 'trend': 3.3406513156371456} in=1 core=3 t=22
+   558s strict m N=16 from_prev3 left= 135.234 ok=False soft=6.645 {'cont': 1.078492255079472, 'net': 6.645388267193088, 'trend': 3.015422068496606} in=0 core=3 t=13
+   559s strict n N=20 cold1      left=  84.060 ok=True soft=2.872 {'cont': 1.2124900623859616, 'net': 1.52082269795691, 'trend': 2.87211671194464} in=17 core=0 t=40
+   559s strict n N=20 cold2      left= 131.562 ok=True soft=2.960 {'cont': 0.5925507433165385, 'net': 1.3920755587219023, 'trend': 2.960422171331044} in=12 core=0 t=38
+   567s strict m N=16 from_prev2 left= 103.634 ok=True soft=2.924 {'cont': 1.9580542372549463, 'net': 1.1131171485117444, 'trend': 2.9240042200209797} in=15 core=1 t=25
+   569s strict n N=16 from_prev1 left=  95.705 ok=True soft=3.069 {'cont': 0.23963759704741017, 'net': 0.8753765969178866, 'trend': 3.0690229896190697} in=5 core=0 t=10
+   575s strict m N=16 cold1      left=  77.771 ok=True soft=4.026 {'cont': 0.8101262038249506, 'net': 4.026484866407946, 'trend': 3.4074467689909147} in=5 core=0 t=19
+   577s strict n N=16 from_prev0 left=  98.220 ok=True soft=3.058 {'cont': 0.5229648774257875, 'net': 0.9979696519314025, 'trend': 3.0577517886334724} in=1 core=3 t=19
+   580s strict m N=16 cold0      left= 208.300 ok=True soft=3.259 {'cont': 1.1637941482270246, 'net': 1.3791296154682795, 'trend': 3.259069880577529} in=0 core=10 t=26
+   581s strict m N=16 cold2      left= 150.396 ok=True soft=6.645 {'cont': 0.08739402006668673, 'net': 6.645391007753956, 'trend': 2.8853594120702355} in=1 core=0 t=23
+   582s strict n N=16 from_prev2 left= 112.805 ok=True soft=2.641 {'cont': 0.41600751452910467, 'net': 0.8854278034864098, 'trend': 2.6407714149960273} in=1 core=2 t=23
+   591s strict m N=12 from_prev0 left=  90.310 ok=True soft=3.370 {'cont': 0.2532884046933447, 'net': 0.8002104343181496, 'trend': 3.370057023343727} in=0 core=0 t=10
+   592s strict n N=16 from_prev4 left=  74.493 ok=True soft=6.645 {'cont': 0.9946779639967178, 'net': 6.645391001525152, 'trend': 3.1900185505220446} in=0 core=1 t=24
+   594s strict n N=16 from_prev3 left= 103.992 ok=True soft=3.143 {'cont': 0.6714258607205201, 'net': 0.8447726118948428, 'trend': 3.14298808204644} in=0 core=6 t=27
+   595s strict m N=12 from_prev1 left= 112.464 ok=True soft=3.062 {'cont': 0.5978864722821333, 'net': 0.9995228705818195, 'trend': 3.061676874098861} in=1 core=1 t=12
+   597s strict n N=16 cold1      left= 108.544 ok=True soft=3.091 {'cont': 3.0910412792125728, 'net': 1.8062201035227265, 'trend': 2.817788954223585} in=16 core=0 t=20
+   598s strict m N=12 from_prev2 left= 151.465 ok=True soft=2.508 {'cont': 0.04493443803285406, 'net': 0.8817306403891827, 'trend': 2.508251788677769} in=2 core=0 t=8
+   599s strict n N=16 cold0      left= 105.230 ok=True soft=6.645 {'cont': 0.4733046547630253, 'net': 6.645391003866694, 'trend': 2.545177770840234} in=9 core=1 t=24
+   600s strict m N=12 from_prev4 left=  76.437 ok=True soft=6.645 {'cont': 0.7166848504838053, 'net': 6.645391012089348, 'trend': 3.270946425098567} in=0 core=1 t=6
+   602s strict m N=12 from_prev3 left=  32.752 ok=True soft=3.149 {'cont': 1.8668597553845092, 'net': 1.494114303266762, 'trend': 3.1492407571463197} in=11 core=0 t=9
+   605s strict m N=12 cold0      left= 196.478 ok=True soft=3.072 {'cont': 0.7629241578154666, 'net': 0.9115201210725441, 'trend': 3.0721852755622723} in=0 core=0 t=10
+   608s strict m N=12 cold2      left=  96.323 ok=True soft=2.527 {'cont': 1.2255582705309918, 'net': 0.9792171168796289, 'trend': 2.5269869987197926} in=10 core=2 t=10
+   610s strict n N=16 cold2      left=  94.280 ok=True soft=3.364 {'cont': 1.7061981439809182, 'net': 2.721941477923524, 'trend': 3.363996003509172} in=6 core=5 t=30
+   616s strict m N=12 cold1      left=  91.771 ok=True soft=6.645 {'cont': 0.6934145373708749, 'net': 6.6453910141038515, 'trend': 2.692585827976104} in=7 core=0 t=19
+   617s strict n N=12 from_prev1 left=  59.650 ok=True soft=3.240 {'cont': 0.45763781552315963, 'net': 1.1235718802184267, 'trend': 3.239950677575103} in=0 core=3 t=17
+   619s strict n N=12 from_prev3 left= 127.417 ok=True soft=3.168 {'cont': 0.6260058794533927, 'net': 1.2559453606616318, 'trend': 3.1682272448725115} in=0 core=3 t=15
+   620s strict n N=12 from_prev0 left=  43.782 ok=True soft=3.120 {'cont': 1.6634816871767966, 'net': 0.9998351158899197, 'trend': 3.1196921235836785} in=11 core=1 t=21
+   620s strict n N=12 from_prev2 left= 104.976 ok=True soft=3.294 {'cont': 0.30709911684555324, 'net': 0.8095431558346945, 'trend': 3.294136129667483} in=0 core=0 t=18
+   625s strict n N=12 from_prev4 left=  70.733 ok=True soft=3.335 {'cont': 1.9414470318540775, 'net': 1.5299287948545923, 'trend': 3.3351612471713037} in=11 core=0 t=16
+   625s strict m N= 8 from_prev2 left=  23.172 ok=True soft=3.295 {'cont': 2.4277482302676052, 'net': 1.3862381826233392, 'trend': 3.2952006590951415} in=8 core=0 t=5
+   625s strict m N= 8 from_prev0 left=   7.365 ok=True soft=3.345 {'cont': 2.4277482343826957, 'net': 0.6438780159798392, 'trend': 3.345174492911293} in=8 core=0 t=6
+   627s strict n N=12 cold1      left= 162.667 ok=True soft=2.933 {'cont': 0.4635194257901936, 'net': 1.3395149253983842, 'trend': 2.9333446370246876} in=2 core=0 t=10
+   629s strict m N= 8 cold0      left= 150.881 ok=True soft=6.645 {'cont': 0.5026184412152389, 'net': 6.645391012734175, 'trend': 2.7976198358438746} in=0 core=5 t=4
+   630s strict n N=12 cold0      left= 132.415 ok=True soft=6.645 {'cont': 0.3920598075206433, 'net': 6.645391010521104, 'trend': 2.644408721523698} in=7 core=0 t=19
+   630s strict m N= 8 from_prev4 left=   9.474 ok=True soft=3.320 {'cont': 2.4277482212510186, 'net': 0.4250162755054505, 'trend': 3.3197965667003233} in=8 core=0 t=5
+   630s strict m N= 8 from_prev3 left=   7.817 ok=True soft=3.319 {'cont': 2.4277482244027064, 'net': 0.42999869571178023, 'trend': 3.3185192411593136} in=8 core=0 t=6
+   631s strict m N= 8 cold2      left= 166.547 ok=True soft=6.645 {'cont': 1.3693204454343848, 'net': 6.645391013803605, 'trend': 3.108297647211787} in=7 core=0 t=2
+   632s strict n N=12 cold2      left= 176.692 ok=True soft=2.752 {'cont': 1.0624556884397338, 'net': 0.9891538936757205, 'trend': 2.7518623670485844} in=0 core=0 t=16
+   634s strict m N= 8 from_prev1 left=  52.269 ok=True soft=3.315 {'cont': 0.7474873585421027, 'net': 2.102379443352887, 'trend': 3.315339371466992} in=5 core=1 t=14
+   636s strict m N= 8 cold1      left=  98.945 ok=True soft=6.645 {'cont': 1.3669996491021799, 'net': 6.645390992795465, 'trend': 2.8869776781026912} in=7 core=0 t=9
+   639s strict n N= 8 cold0      left= 173.809 ok=True soft=6.645 {'cont': 1.6064019037080781, 'net': 6.645390995889709, 'trend': 2.8889186762799235} in=1 core=0 t=5
+   640s strict n N= 8 from_prev0 left=  23.906 ok=True soft=3.221 {'cont': 2.4277482177934813, 'net': 0.5114733645061288, 'trend': 3.220668370236955} in=8 core=0 t=10
+   640s strict n N= 8 from_prev2 left=  23.282 ok=True soft=3.079 {'cont': 2.427748228585604, 'net': 0.7928231214990856, 'trend': 3.079084336660669} in=8 core=0 t=9
+   640s strict n N= 8 from_prev3 left=  30.927 ok=True soft=3.230 {'cont': 2.4277482059421924, 'net': 0.5901096495561784, 'trend': 3.2300750215276968} in=8 core=0 t=9
+   641s strict n N= 8 cold1      left= 176.310 ok=True soft=2.796 {'cont': 2.4277479432786633, 'net': 0.6796126608134349, 'trend': 2.7963614950138633} in=8 core=0 t=5
+   641s strict n N= 8 from_prev1 left=  22.945 ok=True soft=3.289 {'cont': 2.427748071998179, 'net': 0.7739214902221616, 'trend': 3.289251600946437} in=8 core=0 t=11
+   643s strict n N= 8 from_prev4 left=  34.762 ok=True soft=3.234 {'cont': 2.4277479337744365, 'net': 1.3142728352216237, 'trend': 3.233866296297176} in=8 core=0 t=10
+   646s strict n N= 8 cold2      left= 159.995 ok=True soft=2.956 {'cont': 0.9946858749109095, 'net': 1.1572028492216102, 'trend': 2.956011353735834} in=0 core=2 t=6
+done 645.5763235092163

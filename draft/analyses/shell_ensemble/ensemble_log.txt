@@ -1,0 +1,14 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+bare_N200_a med=237.3 p5=237.1 best_med=234.6 best_p5=214.4 f<237=0.521 f35=0.025/0.222 E[rms2]=5.63e+04 pred=5.63e+04 minD=14.30 t=3s
+bare_N200_b med=237.4 p5=232.5 best_med=234.5 best_p5=215.0 f<237=0.474 f35=0.015/0.145 E[rms2]=6.093e+04 pred=6.08e+04 minD=14.31 t=6s
+bare_N200_c med=326.3 p5=240.5 best_med=234.3 best_p5=214.9 f<237=0.036 f35=0.000/0.000 E[rms2]=1.819e+06 pred=1.82e+06 minD=14.30 t=8s
+bare_N500_a med=237.3 p5=236.9 best_med=232.9 best_p5=212.1 f<237=0.509 f35=0.034/0.233 E[rms2]=5.629e+04 pred=5.63e+04 minD=14.30 t=17s
+bare_N500_b med=237.8 p5=229.1 best_med=233.6 best_p5=212.1 f<237=0.438 f35=0.017/0.131 E[rms2]=6.962e+04 pred=6.963e+04 minD=14.30 t=29s
+bare_N500_c med=525.1 p5=289.3 best_med=233.8 best_p5=214.2 f<237=0.006 f35=0.000/0.000 E[rms2]=4.448e+06 pred=4.449e+06 minD=14.30 t=39s
+buf_N200_a med=237.3 p5=237.1 best_med=234.2 best_p5=214.2 f<237=0.509 f35=0.020/0.198 E[rms2]=5.629e+04 pred=5.629e+04 minD=14.46 t=43s
+buf_N200_b med=237.3 p5=232.8 best_med=234.0 best_p5=214.9 f<237=0.454 f35=0.017/0.145 E[rms2]=5.666e+04 pred=5.669e+04 minD=14.81 t=47s
+buf_N200_c med=289.3 p5=234.4 best_med=233.7 best_p5=212.7 f<237=0.077 f35=0.000/0.000 E[rms2]=1.378e+05 pred=1.383e+05 minD=15.81 t=50s
+buf_N500_a med=237.3 p5=236.8 best_med=233.5 best_p5=213.2 f<237=0.489 f35=0.042/0.218 E[rms2]=5.629e+04 pred=5.629e+04 minD=14.47 t=60s
+buf_N500_b med=237.5 p5=229.9 best_med=233.3 best_p5=211.4 f<237=0.463 f35=0.022/0.148 E[rms2]=5.706e+04 pred=5.725e+04 minD=14.78 t=70s
+buf_N500_c med=399.2 p5=264.5 best_med=232.8 best_p5=211.2 f<237=0.015 f35=0.000/0.000 E[rms2]=2.586e+05 pred=2.575e+05 minD=15.75 t=86s
+CoE@15.2 bare_N500_c med=556.1 p5=287.9 best_med=233.3

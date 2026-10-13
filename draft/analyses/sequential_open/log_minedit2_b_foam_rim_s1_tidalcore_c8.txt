@@ -1,0 +1,12 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+  b_foam_rim_s1_tidalcore edited=2475 left=11.40 t=10s
+  b_foam_rim_s1_tidalcore edited=2499 left=6.05 t=15s
+  b_foam_rim_s1_tidalcore edited=2523 left=4.59 t=20s
+  b_foam_rim_s1_tidalcore edited=2547 left=3.82 t=25s
+  b_foam_rim_s1_tidalcore edited=2571 left=3.54 t=43s
+  b_foam_rim_s1_tidalcore edited=2595 left=2.05 t=47s
+  b_foam_rim_s1_tidalcore edited=2619 left=1.80 t=50s
+  b_foam_rim_s1_tidalcore edited=2643 left=1.40 t=741s
+  b_foam_rim_s1_tidalcore edited=2667 left=1.32 t=746s
+  b_foam_rim_s1_tidalcore edited=2691 left=0.72 t=759s
+DONE b_foam_rim_s1_tidalcore edited 2691 del 2457 left 0.722

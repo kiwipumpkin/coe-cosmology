@@ -1,0 +1,6 @@
+{
+ "cfg": "in05",
+ "B_below": 0.03,
+ "B_star": 0.0325,
+ "note": "from dual scan: certified >1x (9.1x) at 0.030, dual-feasible at 0.0325; bisection cut for time"
+}

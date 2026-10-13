@@ -1,0 +1,25 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+{"cfg": "in20", "B": 0.03, "left": 55.0246871558105, "vol_active": 4496.0, "vol_at_bound": 224.0}
+{"cfg": "in20", "B": 0.01, "left": 147.02494745630187, "vol_active": 10064.0, "vol_at_bound": 6624.0}
+{"cfg": "in20", "B": 0.02, "left": 70.83755683056592, "vol_active": 10000.0, "vol_at_bound": 4944.0}
+{"cfg": "in20", "B": 0.035, "left": 51.02501862607386, "vol_active": 3744.0, "vol_at_bound": 80.0}
+{"cfg": "in20", "B": 0.04, "left": 37.17585463486416, "vol_active": 3696.0, "vol_at_bound": 80.0}
+{"cfg": "in20", "B": 0.1, "left": 0.33990378409112615, "vol_active": 1664.0, "vol_at_bound": 0.0}
+{"cfg": "in20", "B": 0.05, "left": 16.55902660000888, "vol_active": 10400.0, "vol_at_bound": 704.0}
+{"cfg": "in20", "B": 0.07, "left": 10.512878568198342, "vol_active": 9968.0, "vol_at_bound": 48.0}
+{"cfg": "in10", "B": 0.02, "left": 57.15506039022538, "vol_active": 9562.0, "vol_at_bound": 4190.0}
+{"cfg": "in10", "B": 0.01, "left": 139.46591558854539, "vol_active": 9636.0, "vol_at_bound": 4926.0}
+{"cfg": "in10", "B": 0.035, "left": 0.0014070235631442596, "vol_active": 5818.0, "vol_at_bound": 668.0}
+{"cfg": "in10", "B": 0.04, "left": 0.0014070235631442596, "vol_active": 3886.0, "vol_at_bound": 180.0}
+{"cfg": "in10", "B": 0.07, "left": 0.0014070235631442596, "vol_active": 10346.0, "vol_at_bound": 42.0}
+{"cfg": "in10", "B": 0.1, "left": 0.0014070235631442596, "vol_active": 1030.0, "vol_at_bound": 0.0}
+{"cfg": "in10", "B": 0.05, "left": 0.0014070235631442596, "vol_active": 10636.0, "vol_at_bound": 806.0}
+{"cfg": "in10", "B": 0.03, "left": 9.715412344724628, "vol_active": 8404.0, "vol_at_bound": 2688.0}
+{"cfg": "both10", "B": 0.05, "left": 81.55966491997347, "vol_active": 40072.0, "vol_at_bound": 2758.0}
+{"cfg": "both10", "B": 0.1, "left": 5.17094133628678, "vol_active": 2174.0, "vol_at_bound": 18.0}
+{"cfg": "both10", "B": 0.15, "left": 4.076299426806683, "vol_active": 1098.0, "vol_at_bound": 0.0}
+{"cfg": "both10", "B": 0.3, "left": 0.2381646829285462, "vol_active": 290.0, "vol_at_bound": 0.0}
+{"cfg": "both10", "B": 0.4, "left": 0.2381646829285462, "vol_active": 192.0, "vol_at_bound": 0.0}
+{"cfg": "both10", "B": 0.6, "left": 0.2381646829285462, "vol_active": 90.0, "vol_at_bound": 0.0}
+{"cfg": "both10", "B": 0.2, "left": 2.274094957151888, "vol_active": 620.0, "vol_at_bound": 0.0}
+{"cfg": "both10", "B": 0.25, "left": 0.0014070235631442596, "vol_active": 422.0, "vol_at_bound": 0.0}

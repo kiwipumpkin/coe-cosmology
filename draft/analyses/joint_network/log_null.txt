@@ -1,0 +1,13 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+cont m 12 2s fit=0.865 null min=253.83 med=601.0 frac<=fit=0.0000 ok=1.00 soft_med=0.000 fit_soft=0.005
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+cont n 20 4s fit=0.974 null min=246.54 med=513.2 frac<=fit=0.0000 ok=1.00 soft_med=0.000 fit_soft=0.000
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+web m 24 201s fit=17.429 null min=305.85 med=2055.9 frac<=fit=0.0000 ok=1.00 soft_med=0.165 fit_soft=0.121
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+loose m 24 101s fit=3.263 null min=251.93 med=631.9 frac<=fit=0.0000 ok=1.00 soft_med=0.372 fit_soft=0.452
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+strict m 24 239s fit=44.463 null min=226.20 med=360.9 frac<=fit=0.0000 ok=0.99 soft_med=0.396 fit_soft=0.459
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+web n 24 229s fit=52.491 null min=332.96 med=1134.4 frac<=fit=0.0000 ok=0.99 soft_med=0.183 fit_soft=0.208
+NULLDONE

@@ -1,0 +1,44 @@
+{
+ "seqB_random": {
+  "left": 1044.9760798019133,
+  "n": "5,782 voids + 34,692 clusters",
+  "check": [
+   1044.9760798019133,
+   1044.9760798019133
+  ]
+ },
+ "seqB_foam_rim": {
+  "left": 609.7961085826342,
+  "n": "5,974 voids + 35,844 clusters",
+  "check": [
+   609.7961085826342,
+   609.7961085826342
+  ]
+ },
+ "seqB_cmb_aware": {
+  "left": 168.8028876236583,
+  "n": "6,469 voids + 38,814 clusters",
+  "check": [
+   168.8028876236583,
+   168.8028876236583
+  ]
+ },
+ "seqB_shallow": {
+  "left": 162.91677080470893,
+  "n": "6,000 shallow voids",
+  "check": [
+   162.91677080470893,
+   162.91677080470893
+  ]
+ },
+ "seqA_shallow": {
+  "left": 135.30478094462305,
+  "n": "30 shallow voids",
+  "check": null
+ },
+ "seqA_deep": {
+  "left": 27.39934353021529,
+  "n": "24 deep voids + 24 clusters",
+  "check": null
+ }
+}

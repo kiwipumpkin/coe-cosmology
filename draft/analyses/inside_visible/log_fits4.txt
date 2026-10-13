@@ -1,0 +1,31 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+cap1e53 C best=222.56 med=236.9 feas=12/12 t/fit=0.2s
+cap1e53 CC best=197.34 med=213.2 feas=12/12 t/fit=1.2s
+cap1e53 CCC best=155.92 med=162.4 feas=12/12 t/fit=2.7s
+cap1e53 CCCC best=0.47 med=0.7 feas=12/12 t/fit=5.3s
+cap1e53 CCCCC best=0.43 med=0.5 feas=12/12 t/fit=9.1s
+cap1e53 CCCCCC best=0.09 med=0.5 feas=12/12 t/fit=11.0s
+cap1e53 CCCCCCC best=0.09 med=0.4 feas=12/12 t/fit=15.6s
+cap1e53 CCCCCCCC best=0.02 med=0.2 feas=12/12 t/fit=20.3s
+cap1e53 CCCCCCCCC best=0.03 med=0.2 feas=12/12 t/fit=27.7s
+cap1e53 CCCCCCCCCC best=0.01 med=0.2 feas=12/12 t/fit=31.7s
+cap1e53 CCCCV best=0.48 med=2.6 feas=12/12 t/fit=10.0s
+cap1e53 CCCCVV best=0.44 med=1.6 feas=12/12 t/fit=12.1s
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+nocomp C best=222.56 med=236.9 feas=12/12 t/fit=0.2s
+nocomp CC best=197.40 med=212.3 feas=12/12 t/fit=0.9s
+nocomp CCC best=153.74 med=162.4 feas=12/12 t/fit=2.8s
+nocomp CCCC best=7.27 med=7.3 feas=12/12 t/fit=3.1s
+nocomp CCCCC best=5.98 med=6.4 feas=12/12 t/fit=8.2s
+nocomp CCCCCC best=4.25 med=4.9 feas=12/12 t/fit=12.4s
+nocomp CCCCCCC best=0.61 med=3.0 feas=12/12 t/fit=16.5s
+nocomp CCCCCCCC best=0.09 med=3.1 feas=12/12 t/fit=19.1s
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+surrcomp C best=222.56 med=236.4 feas=12/12 t/fit=0.2s
+surrcomp CC best=197.56 med=208.6 feas=12/12 t/fit=1.3s
+surrcomp CCC best=162.46 med=162.6 feas=12/12 t/fit=4.4s
+surrcomp CCCC best=15.41 med=15.4 feas=12/12 t/fit=4.6s
+surrcomp CCCCC best=13.35 med=15.2 feas=12/12 t/fit=8.5s
+surrcomp CCCCCC best=12.31 med=13.2 feas=12/12 t/fit=13.6s
+surrcomp CCCCCCC best=9.27 med=11.2 feas=12/12 t/fit=18.3s
+surrcomp CCCCCCCC best=6.35 med=11.1 feas=12/12 t/fit=21.8s

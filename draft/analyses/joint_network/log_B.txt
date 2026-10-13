@@ -1,0 +1,408 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+tasks 192
+     0s loose  m N=32 from_cont2 left= 123.648 ok=True soft=6.350 {'cont': 0.047037359815310764, 'net': 6.34980398796858, 'trend': 1.7832493729419423} in=3 core=0 t=0
+    23s loose  m N=32 warm_r1    left=   3.534 ok=True soft=4.670 {'cont': 0.7068987438369434, 'net': 4.669975951122439, 'trend': 1.6222548639329073} in=0 core=4 t=23
+    41s loose  m N=32 from_cont0 left=   0.915 ok=True soft=5.817 {'cont': 0.41367575045453336, 'net': 5.816901306133556, 'trend': 1.3173982363118757} in=9 core=3 t=41
+    45s loose  m N=32 cold0      left=   8.396 ok=True soft=6.215 {'cont': 0.6472985290241077, 'net': 6.214606636873978, 'trend': 1.328537734450928} in=7 core=0 t=45
+    49s loose  m N=32 from_cont1 left=   5.812 ok=True soft=5.883 {'cont': 0.32404322621496706, 'net': 5.883230347477912, 'trend': 1.360500032318734} in=1 core=3 t=48
+    52s loose  m N=32 warm_r3    left=   0.422 ok=True soft=4.700 {'cont': 2.7930610280359187, 'net': 4.699794191827988, 'trend': 2.166847062059891} in=10 core=1 t=52
+    53s loose  m N=32 cold2      left=  42.589 ok=True soft=2.012 {'cont': 1.1403282890998923, 'net': 1.955335866407868, 'trend': 2.0118661558287174} in=27 core=1 t=53
+    56s loose  m N=32 cold4      left=  22.483 ok=True soft=5.816 {'cont': 0.8758225027973479, 'net': 5.81614408517396, 'trend': 1.6486848660869322} in=19 core=2 t=56
+    89s web    m N=32 from_cont1 left=  45.565 ok=True soft=0.804 {'cont': 0.2703024744111916, 'net': 0.8040712226176986} in=1 core=2 t=48
+    96s web    m N=32 cold0      left=  26.175 ok=True soft=2.619 {'cont': 2.6189192760384046, 'net': 0.8067384849822729} in=31 core=0 t=48
+   103s web    m N=32 from_cont0 left=  68.115 ok=True soft=1.296 {'cont': 0.5242432871907787, 'net': 1.296120527030093} in=8 core=0 t=80
+   107s web    m N=32 from_cont2 left=  28.931 ok=True soft=0.869 {'cont': 0.033274131650068775, 'net': 0.8691334271266319} in=3 core=0 t=62
+   108s web    m N=32 cold2      left=  29.853 ok=True soft=0.815 {'cont': 0.3115734612260077, 'net': 0.8145266185712708} in=5 core=1 t=55
+   114s web    m N=32 warm_r1    left=  82.344 ok=True soft=15.088 {'cont': 2.068550875783381, 'net': 15.088246939521586} in=10 core=0 t=62
+   120s web    m N=32 warm_r3    left=  28.009 ok=True soft=14.657 {'cont': 0.288653054445311, 'net': 14.657055929637819} in=10 core=0 t=63
+   144s web    m N=32 cold4      left=  43.727 ok=True soft=6.645 {'cont': 0.3608643870928099, 'net': 6.64538793355571} in=13 core=0 t=55
+   152s loose  n N=32 from_cont0 left=   5.906 ok=True soft=5.883 {'cont': 0.3360645322813936, 'net': 5.88255531363074, 'trend': 1.6260752127450835} in=10 core=1 t=56
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+  File "/workspace/clump_scan/joint_network/run_jn.py", line 27, in job
+    p=fit(m,np.array(p0),nfev=600); r=rec(m,p,tag); r["secs"]=time.time()-t0; return r
+  File "/workspace/clump_scan/joint_network/jn_fast.py", line 235, in fit
+    r=least_squares(lambda q:m.fun(q,w),p,jac=lambda q:m.jac(q,w),bounds=(m.lo,m.hi),method="trf",x_scale="jac",max_nfev=nfev,xtol=1e-9,ftol=1e-9)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/_lib/_util.py", line 662, in inner
+    return func(*args, **kwargs)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/least_squares.py", line 1019, in least_squares
+    result = trf(vector_fun.fun, vector_fun.jac, x0, f0, J0, lb, ub, ftol, xtol,
+                 gtol, max_nfev, x_scale, loss_function, tr_solver,
+                 tr_options.copy(), verbose, callback=callback_wrapped)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/trf.py", line 124, in trf
+    return trf_bounds(
+        fun, jac, x0, f0, J0, lb, ub, ftol, xtol, gtol, max_nfev, x_scale,
+        loss_function, tr_solver, tr_options, verbose, callback=callback)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/trf.py", line 303, in trf_bounds
+    U, s, V = svd(J_augmented, full_matrices=False)
+              ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/linalg/_decomp_svd.py", line 207, in svd
+    _format_emit_errors_warnings(err_lst, lapack_driver)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/linalg/_decomp_svd.py", line 26, in _format_emit_errors_warnings
+    raise LinAlgError(f"SVD did not converge for slice = {num}.")
+numpy.linalg.LinAlgError: SVD did not converge for slice = 0.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/clump_scan/joint_network/run_jn.py", line 56, in <module>
+    for r in pool.imap_unordered(job,tasks):
+             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 873, in next
+    raise value
+numpy.linalg.LinAlgError: SVD did not converge for slice = 0.
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+tasks 175
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+  File "/workspace/clump_scan/joint_network/run_jn.py", line 27, in job
+    p=fit(m,np.array(p0),nfev=600); r=rec(m,p,tag); r["secs"]=time.time()-t0; return r
+  File "/workspace/clump_scan/joint_network/jn_fast.py", line 235, in fit
+    r=least_squares(lambda q:m.fun(q,w),p,jac=lambda q:m.jac(q,w),bounds=(m.lo,m.hi),method="trf",x_scale="jac",max_nfev=nfev,xtol=1e-9,ftol=1e-9)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/_lib/_util.py", line 662, in inner
+    return func(*args, **kwargs)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/least_squares.py", line 1019, in least_squares
+    result = trf(vector_fun.fun, vector_fun.jac, x0, f0, J0, lb, ub, ftol, xtol,
+                 gtol, max_nfev, x_scale, loss_function, tr_solver,
+                 tr_options.copy(), verbose, callback=callback_wrapped)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/trf.py", line 124, in trf
+    return trf_bounds(
+        fun, jac, x0, f0, J0, lb, ub, ftol, xtol, gtol, max_nfev, x_scale,
+        loss_function, tr_solver, tr_options, verbose, callback=callback)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/trf.py", line 303, in trf_bounds
+    U, s, V = svd(J_augmented, full_matrices=False)
+              ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/linalg/_decomp_svd.py", line 207, in svd
+    _format_emit_errors_warnings(err_lst, lapack_driver)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/linalg/_decomp_svd.py", line 26, in _format_emit_errors_warnings
+    raise LinAlgError(f"SVD did not converge for slice = {num}.")
+numpy.linalg.LinAlgError: SVD did not converge for slice = 0.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/clump_scan/joint_network/run_jn.py", line 60, in <module>
+    for r in pool.imap_unordered(job,tasks):
+             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 873, in next
+    raise value
+numpy.linalg.LinAlgError: SVD did not converge for slice = 0.
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+tasks 175
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+  File "/workspace/clump_scan/joint_network/run_jn.py", line 27, in job
+    p=fit(m,np.array(p0),nfev=600); r=rec(m,p,tag); r["secs"]=time.time()-t0; return r
+  File "/workspace/clump_scan/joint_network/jn_fast.py", line 235, in fit
+    r=least_squares(lambda q:m.fun(q,w),p,jac=lambda q:m.jac(q,w),bounds=(m.lo,m.hi),method="trf",x_scale="jac",max_nfev=nfev,xtol=1e-9,ftol=1e-9)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/_lib/_util.py", line 662, in inner
+    return func(*args, **kwargs)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/least_squares.py", line 1019, in least_squares
+    result = trf(vector_fun.fun, vector_fun.jac, x0, f0, J0, lb, ub, ftol, xtol,
+                 gtol, max_nfev, x_scale, loss_function, tr_solver,
+                 tr_options.copy(), verbose, callback=callback_wrapped)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/trf.py", line 124, in trf
+    return trf_bounds(
+        fun, jac, x0, f0, J0, lb, ub, ftol, xtol, gtol, max_nfev, x_scale,
+        loss_function, tr_solver, tr_options, verbose, callback=callback)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/trf.py", line 303, in trf_bounds
+    U, s, V = svd(J_augmented, full_matrices=False)
+              ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/linalg/_decomp_svd.py", line 207, in svd
+    _format_emit_errors_warnings(err_lst, lapack_driver)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/linalg/_decomp_svd.py", line 26, in _format_emit_errors_warnings
+    raise LinAlgError(f"SVD did not converge for slice = {num}.")
+numpy.linalg.LinAlgError: SVD did not converge for slice = 0.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/clump_scan/joint_network/run_jn.py", line 60, in <module>
+    for r in pool.imap_unordered(job,tasks):
+             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 873, in next
+    raise value
+numpy.linalg.LinAlgError: SVD did not converge for slice = 0.
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+tasks 175
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+  File "/workspace/clump_scan/joint_network/run_jn.py", line 27, in job
+    p=fit(m,np.array(p0),nfev=600); r=rec(m,p,tag); r["secs"]=time.time()-t0; return r
+  File "/workspace/clump_scan/joint_network/jn_fast.py", line 235, in fit
+    r=least_squares(lambda q:m.fun(q,w),p,jac=lambda q:m.jac(q,w),bounds=(m.lo,m.hi),method="trf",x_scale="jac",max_nfev=nfev,xtol=1e-9,ftol=1e-9)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/_lib/_util.py", line 662, in inner
+    return func(*args, **kwargs)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/least_squares.py", line 1019, in least_squares
+    result = trf(vector_fun.fun, vector_fun.jac, x0, f0, J0, lb, ub, ftol, xtol,
+                 gtol, max_nfev, x_scale, loss_function, tr_solver,
+                 tr_options.copy(), verbose, callback=callback_wrapped)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/trf.py", line 124, in trf
+    return trf_bounds(
+        fun, jac, x0, f0, J0, lb, ub, ftol, xtol, gtol, max_nfev, x_scale,
+        loss_function, tr_solver, tr_options, verbose, callback=callback)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/trf.py", line 303, in trf_bounds
+    U, s, V = svd(J_augmented, full_matrices=False)
+              ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/linalg/_decomp_svd.py", line 207, in svd
+    _format_emit_errors_warnings(err_lst, lapack_driver)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/linalg/_decomp_svd.py", line 26, in _format_emit_errors_warnings
+    raise LinAlgError(f"SVD did not converge for slice = {num}.")
+numpy.linalg.LinAlgError: SVD did not converge for slice = 0.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/clump_scan/joint_network/run_jn.py", line 60, in <module>
+    for r in pool.imap_unordered(job,tasks):
+             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 873, in next
+    raise value
+numpy.linalg.LinAlgError: SVD did not converge for slice = 0.
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+tasks 175
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+  File "/workspace/clump_scan/joint_network/run_jn.py", line 27, in job
+    p=fit(m,np.array(p0),nfev=600); r=rec(m,p,tag); r["secs"]=time.time()-t0; return r
+  File "/workspace/clump_scan/joint_network/jn_fast.py", line 235, in fit
+    r=least_squares(lambda q:m.fun(q,w),p,jac=lambda q:m.jac(q,w),bounds=(m.lo,m.hi),method="trf",x_scale="jac",max_nfev=nfev,xtol=1e-9,ftol=1e-9)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/_lib/_util.py", line 662, in inner
+    return func(*args, **kwargs)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/least_squares.py", line 1019, in least_squares
+    result = trf(vector_fun.fun, vector_fun.jac, x0, f0, J0, lb, ub, ftol, xtol,
+                 gtol, max_nfev, x_scale, loss_function, tr_solver,
+                 tr_options.copy(), verbose, callback=callback_wrapped)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/trf.py", line 124, in trf
+    return trf_bounds(
+        fun, jac, x0, f0, J0, lb, ub, ftol, xtol, gtol, max_nfev, x_scale,
+        loss_function, tr_solver, tr_options, verbose, callback=callback)
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/optimize/_lsq/trf.py", line 303, in trf_bounds
+    U, s, V = svd(J_augmented, full_matrices=False)
+              ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/linalg/_decomp_svd.py", line 207, in svd
+    _format_emit_errors_warnings(err_lst, lapack_driver)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/box/.local/lib/python3.13/site-packages/scipy/linalg/_decomp_svd.py", line 26, in _format_emit_errors_warnings
+    raise LinAlgError(f"SVD did not converge for slice = {num}.")
+numpy.linalg.LinAlgError: SVD did not converge for slice = 0.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/clump_scan/joint_network/run_jn.py", line 60, in <module>
+    for r in pool.imap_unordered(job,tasks):
+             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 873, in next
+    raise value
+numpy.linalg.LinAlgError: SVD did not converge for slice = 0.
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+tasks 175
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+tasks 175
+fit error loose False 32 from_cont2 LinAlgError('SVD did not converge for slice = 0.')
+   103s loose  n N=32 from_cont2 left=  60.928 ok=True soft=18.582 {'cont': 0.0, 'net': 18.5815521520882, 'trend': 2.2649865084926466} in=4 core=3 t=103
+   132s loose  n N=32 cold0      left=   2.217 ok=True soft=6.215 {'cont': 2.018771690103441, 'net': 6.21460807944653, 'trend': 1.4723198978433447} in=26 core=2 t=132
+   132s loose  n N=32 cold4      left=  11.651 ok=True soft=1.983 {'cont': 1.9543183099402848, 'net': 1.9831707377261143, 'trend': 1.4735518768704114} in=30 core=2 t=132
+   134s loose  n N=32 from_cont1 left=   1.901 ok=True soft=5.767 {'cont': 0.20359165057780193, 'net': 5.767389388034206, 'trend': 1.3237466559197095} in=17 core=2 t=134
+   153s loose  n N=32 warm_r3    left=   9.511 ok=True soft=5.459 {'cont': 3.389081379970744, 'net': 5.4590906753534805, 'trend': 2.0029123868501353} in=11 core=3 t=153
+   168s loose  n N=32 cold2      left= 105.635 ok=True soft=9.948 {'cont': 9.947921548502512, 'net': 8.487182746496282, 'trend': 2.2572958406184016} in=0 core=20 t=168
+   174s loose  n N=32 warm_r1    left=   4.526 ok=True soft=5.300 {'cont': 3.679593203072793, 'net': 5.300009965149417, 'trend': 1.9636194588101463} in=10 core=2 t=174
+   225s web    n N=32 from_cont1 left=  31.087 ok=True soft=14.822 {'cont': 0.8753492069210288, 'net': 14.821826251498843} in=16 core=1 t=93
+   242s web    n N=32 from_cont2 left=  99.069 ok=True soft=6.645 {'cont': 1.0896408328267486, 'net': 6.645382956774441} in=2 core=2 t=110
+   253s web    n N=32 from_cont0 left= 114.081 ok=False soft=15.125 {'cont': 0.6482718107537656, 'net': 15.125453951760381} in=4 core=10 t=150
+   282s loose  m N=24 from_cont0 left=   8.063 ok=True soft=5.798 {'cont': 0.0, 'net': 5.797685442650571, 'trend': 1.2294334529194892} in=12 core=2 t=39
+   293s loose  m N=24 from_cont1 left=   3.263 ok=True soft=4.530 {'cont': 0.5526719033082947, 'net': 4.529545703893248, 'trend': 1.3578333123826671} in=8 core=0 t=40
+   301s web    n N=32 warm_r3    left=  40.826 ok=True soft=6.645 {'cont': 0.9434669066376109, 'net': 6.645383169626621} in=15 core=4 t=127
+   306s web    n N=32 cold0      left=  28.646 ok=True soft=1.739 {'cont': 1.7387177806335583, 'net': 0.9116202515375095} in=29 core=0 t=172
+   319s web    n N=32 warm_r1    left=  73.058 ok=True soft=15.016 {'cont': 0.31831033326841074, 'net': 15.015685577732647} in=12 core=0 t=165
+   322s web    n N=32 cold4      left=  48.156 ok=True soft=0.862 {'cont': 0.8620637228174279, 'net': 0.8009120910759755} in=20 core=0 t=96
+   329s web    n N=32 cold2      left= 114.922 ok=True soft=1.002 {'cont': 0.3013734945849814, 'net': 1.0019113742383863} in=2 core=0 t=160
+   334s loose  m N=24 from_cont2 left=   4.960 ok=True soft=6.217 {'cont': 0.6142552635791816, 'net': 6.2172671668244375, 'trend': 1.5686129263656667} in=9 core=4 t=52
+   338s loose  m N=24 cold0      left=  26.213 ok=True soft=6.215 {'cont': 5.335120465178717, 'net': 6.214605454267649, 'trend': 0.7765796592152969} in=1 core=2 t=45
+   349s loose  m N=24 warm_r1    left=   0.606 ok=True soft=4.468 {'cont': 4.086190515406988, 'net': 4.467829128496791, 'trend': 2.0888060205593977} in=11 core=1 t=47
+   360s loose  m N=24 cold2      left=  12.292 ok=True soft=5.369 {'cont': 2.0433842211865243, 'net': 5.3694347945902505, 'trend': 1.981014436410451} in=20 core=0 t=54
+   369s loose  m N=24 cold4      left=   3.937 ok=True soft=6.215 {'cont': 0.5182597620240661, 'net': 6.214608092969067, 'trend': 1.1672273817203282} in=17 core=0 t=47
+   373s loose  m N=24 warm_r3    left=   1.618 ok=True soft=5.272 {'cont': 4.3268000235241475, 'net': 5.271588425753293, 'trend': 2.1527833736322046} in=10 core=0 t=54
+   379s web    m N=24 from_cont0 left=  92.901 ok=True soft=6.645 {'cont': 0.46893737205990527, 'net': 6.645390949924267} in=12 core=0 t=51
+   381s web    m N=24 from_cont2 left= 117.355 ok=True soft=14.946 {'cont': 0.8910553184499046, 'net': 14.946193859811899} in=10 core=2 t=43
+   394s web    m N=24 from_cont1 left=  69.684 ok=True soft=14.854 {'cont': 1.1254613762712342, 'net': 14.853598525149781} in=3 core=2 t=60
+   394s web    m N=24 cold0      left=  30.206 ok=True soft=0.887 {'cont': 0.2289710329239869, 'net': 0.887233919590875} in=8 core=0 t=46
+   416s web    m N=24 warm_r3    left= 110.251 ok=True soft=15.400 {'cont': 2.9396086545011615, 'net': 15.400436922647664} in=14 core=0 t=43
+   420s web    m N=24 cold4      left=  17.429 ok=True soft=0.748 {'cont': 0.7478676827999431, 'net': 0.6443724143467875} in=19 core=0 t=41
+   423s web    m N=24 cold2      left=  80.771 ok=True soft=6.645 {'cont': 0.5288402951308021, 'net': 6.644599736218418} in=16 core=0 t=54
+   424s web    m N=24 warm_r1    left=  52.204 ok=True soft=2.726 {'cont': 1.1371486910401538, 'net': 2.7258917179912503} in=10 core=0 t=64
+   427s loose  n N=24 from_cont0 left=   6.902 ok=True soft=1.444 {'cont': 0.04518302837294916, 'net': 0.9880085120141017, 'trend': 1.443872929134586} in=5 core=1 t=46
+   447s loose  n N=24 cold0      left=  96.480 ok=True soft=6.152 {'cont': 4.820087524484977, 'net': 6.151516044421965, 'trend': 1.4454558097077985} in=1 core=3 t=31
+   451s loose  n N=24 from_cont2 left=   5.055 ok=True soft=6.215 {'cont': 0.0, 'net': 6.214507603291058, 'trend': 1.703231088791159} in=9 core=2 t=57
+   467s loose  n N=24 warm_r1    left=   7.104 ok=True soft=4.922 {'cont': 3.028717072652085, 'net': 4.921665185446538, 'trend': 1.7583827772377836} in=12 core=1 t=47
+   467s loose  n N=24 from_cont1 left=   7.308 ok=True soft=5.777 {'cont': 0.0, 'net': 5.7767891946090195, 'trend': 1.5938878254756577} in=8 core=2 t=74
+   476s loose  n N=24 warm_r3    left=   7.316 ok=True soft=4.770 {'cont': 0.3211128417683893, 'net': 4.769864201393744, 'trend': 1.7124881168100567} in=0 core=3 t=52
+   488s loose  n N=24 cold4      left=  21.749 ok=True soft=5.709 {'cont': 0.38528293043003536, 'net': 5.70861637941276, 'trend': 1.298099826331387} in=13 core=2 t=61
+   492s loose  n N=24 cold2      left=  75.414 ok=True soft=6.215 {'cont': 2.864835386766681, 'net': 6.214608086191544, 'trend': 1.6530502716252715} in=23 core=0 t=69
+   515s web    n N=24 from_cont1 left=  60.757 ok=True soft=14.499 {'cont': 0.7213881485049785, 'net': 14.498939468400662} in=4 core=3 t=64
+   516s web    n N=24 from_cont0 left=  53.469 ok=True soft=1.421 {'cont': 0.0, 'net': 1.4212804945894555} in=4 core=1 t=69
+   522s web    n N=24 warm_r1    left= 121.374 ok=True soft=15.459 {'cont': 3.3447236630216985, 'net': 15.459375110603474} in=10 core=0 t=46
+   527s web    n N=24 cold4      left= 165.978 ok=True soft=0.801 {'cont': 0.14611440362393754, 'net': 0.801168146269263} in=3 core=0 t=12
+   527s loose  m N=20 from_cont2 left= 132.922 ok=True soft=4.400 {'cont': 1.015489459349651, 'net': 4.399804894115723, 'trend': 1.7686164587544129} in=10 core=0 t=0
+   534s web    n N=24 cold0      left=  52.491 ok=True soft=1.421 {'cont': 1.4205828411896422, 'net': 0.9685095668859477} in=21 core=0 t=67
+   536s loose  m N=20 from_cont0 left=   8.895 ok=True soft=5.947 {'cont': 0.12772518486762996, 'net': 5.9465236956805105, 'trend': 1.566782413641191} in=0 core=5 t=19
+   546s web    n N=24 from_cont2 left=  47.324 ok=True soft=6.645 {'cont': 0.3505331900745383, 'net': 6.645390954331212} in=10 core=0 t=79
+   547s loose  m N=20 cold0      left=   3.371 ok=True soft=2.467 {'cont': 0.3106424012521085, 'net': 2.466619484737713, 'trend': 1.21719103898887} in=10 core=5 t=19
+   554s loose  m N=20 warm_r1    left=   7.183 ok=True soft=5.814 {'cont': 0.10751242555910645, 'net': 5.8144937246019195, 'trend': 1.645484119107877} in=0 core=4 t=20
+   557s loose  m N=20 from_cont1 left=   2.614 ok=True soft=6.215 {'cont': 2.3119965720268736, 'net': 6.2146080791374985, 'trend': 1.5351661151633844} in=19 core=0 t=34
+   561s loose  m N=20 cold4      left=   4.816 ok=True soft=6.215 {'cont': 0.2478809840074621, 'net': 6.214607070709078, 'trend': 1.2811456356985955} in=4 core=8 t=15
+   561s web    n N=24 warm_r3    left=  82.234 ok=True soft=14.679 {'cont': 0.532334067243694, 'net': 14.679168377545917} in=2 core=1 t=69
+   562s web    n N=24 cold2      left=  86.187 ok=True soft=1.515 {'cont': 1.5147141796540269, 'net': 1.0206172578615251} in=21 core=1 t=73
+   568s loose  m N=20 cold2      left=   2.565 ok=True soft=1.990 {'cont': 1.0265691005562532, 'net': 1.990061733376806, 'trend': 1.3133928934827446} in=16 core=2 t=32
+   577s loose  m N=20 warm_r3    left=   4.646 ok=True soft=5.809 {'cont': 3.7132135480370114, 'net': 5.809444753282146, 'trend': 2.1218807219666074} in=11 core=4 t=31
+   579s web    m N=20 warm_r1    left=  96.630 ok=True soft=15.036 {'cont': 0.30177939344409854, 'net': 15.03627664246411} in=0 core=3 t=17
+   584s web    m N=20 cold0      left=  91.433 ok=True soft=6.645 {'cont': 0.2259558657932632, 'net': 6.645387658863938} in=1 core=0 t=23
+   593s web    m N=20 from_cont0 left=  73.453 ok=True soft=14.054 {'cont': 1.049816654207596, 'net': 14.054225219444126} in=0 core=3 t=39
+   595s web    m N=20 from_cont2 left=  32.640 ok=True soft=0.825 {'cont': 0.19879988927164338, 'net': 0.8246521662446746} in=10 core=2 t=34
+   603s web    m N=20 from_cont1 left=  25.189 ok=True soft=6.645 {'cont': 3.2580959949648918, 'net': 6.645391011408181} in=19 core=0 t=46
+   608s loose  n N=20 from_cont0 left=   6.169 ok=True soft=5.868 {'cont': 0.5965909649967045, 'net': 5.868397494923255, 'trend': 1.553325270201968} in=0 core=4 t=23
+   610s web    m N=20 cold2      left= 154.924 ok=True soft=0.982 {'cont': 0.08897995846206454, 'net': 0.9816917562818457} in=8 core=0 t=42
+   612s web    m N=20 warm_r3    left= 133.569 ok=True soft=14.871 {'cont': 0.7859201157387428, 'net': 14.87123565934447} in=9 core=0 t=35
+   615s web    m N=20 cold4      left= 133.546 ok=True soft=0.826 {'cont': 0.26529956677470545, 'net': 0.8261318197833436} in=9 core=0 t=36
+   617s loose  n N=20 from_cont1 left=   7.051 ok=True soft=4.634 {'cont': 0.677928164523264, 'net': 4.633638365584097, 'trend': 1.2537272411458837} in=0 core=4 t=23
+   636s loose  n N=20 cold2      left=  76.081 ok=True soft=4.150 {'cont': 4.150065298010082, 'net': 2.3940871859248958, 'trend': 1.1727488818388387} in=2 core=2 t=26
+   639s loose  n N=20 cold0      left=  40.862 ok=True soft=1.727 {'cont': 1.727434497054827, 'net': 1.561921085701882, 'trend': 1.190662002773264} in=6 core=3 t=36
+   639s loose  n N=20 from_cont2 left=  10.417 ok=True soft=5.618 {'cont': 0.012137702890945512, 'net': 5.617822195830606, 'trend': 1.7266842482271465} in=8 core=2 t=44
+   648s web    n N=20 from_cont0 left= 114.499 ok=False soft=14.447 {'cont': 1.2676435948150495, 'net': 14.446628890626043} in=0 core=1 t=31
+   648s loose  n N=20 cold4      left=  10.215 ok=True soft=6.215 {'cont': 1.1236669966755644, 'net': 6.2146071986086895, 'trend': 1.2618632922516215} in=12 core=4 t=33
+   659s loose  n N=20 warm_r1    left=  13.451 ok=True soft=5.778 {'cont': 5.200371380292433, 'net': 5.778368833785589, 'trend': 2.311144916299077} in=7 core=1 t=51
+   664s loose  n N=20 warm_r3    left=   4.801 ok=True soft=4.722 {'cont': 3.730962104676363, 'net': 4.722489696560953, 'trend': 1.9395462943687853} in=7 core=2 t=51
+   678s web    n N=20 from_cont1 left=  60.311 ok=True soft=13.952 {'cont': 1.3236131329663394, 'net': 13.952201565562714} in=0 core=8 t=42
+   680s web    n N=20 cold0      left= 158.172 ok=True soft=6.645 {'cont': 0.0894139604373895, 'net': 6.645391013020477} in=4 core=0 t=41
+   683s web    n N=20 cold2      left= 173.006 ok=True soft=0.998 {'cont': 0.4191023073936927, 'net': 0.9977416405590309} in=1 core=0 t=35
+   685s web    n N=20 from_cont2 left=  81.983 ok=True soft=15.113 {'cont': 0.3607471871794038, 'net': 15.11329388524922} in=7 core=1 t=46
+   690s web    n N=20 warm_r3    left=  87.491 ok=False soft=14.537 {'cont': 1.0984592604670615, 'net': 14.537187535478889} in=9 core=1 t=32
+   691s loose  m N=16 from_cont0 left=   4.762 ok=True soft=4.556 {'cont': 0.7459089016438978, 'net': 4.556176889393345, 'trend': 1.2772853582608867} in=0 core=2 t=13
+   694s web    n N=20 warm_r1    left= 150.835 ok=True soft=6.645 {'cont': 0.464077735601923, 'net': 6.645335449989743} in=1 core=3 t=47
+   696s loose  m N=16 from_cont1 left=   3.126 ok=True soft=6.197 {'cont': 0.0, 'net': 6.1966455800856695, 'trend': 1.8366941401613226} in=0 core=3 t=15
+   700s loose  m N=16 cold0      left=   2.121 ok=True soft=6.215 {'cont': 1.2389490291920433, 'net': 6.214604984664529, 'trend': 0.9549999112708356} in=14 core=1 t=16
+   700s loose  m N=16 from_cont2 left=   6.520 ok=True soft=5.818 {'cont': 0.12340423759279151, 'net': 5.818328309250621, 'trend': 1.0662237203167915} in=0 core=3 t=17
+   704s loose  m N=16 cold2      left= 122.336 ok=True soft=3.412 {'cont': 0.9876920152031601, 'net': 3.411667428535937, 'trend': 1.3231833213745743} in=0 core=0 t=13
+   706s web    n N=20 cold4      left= 182.591 ok=True soft=0.959 {'cont': 0.11161669683283619, 'net': 0.9586311430008951} in=4 core=9 t=42
+   710s loose  m N=16 warm_r3    left=   5.876 ok=True soft=6.161 {'cont': 0.19855205233204853, 'net': 6.160913020741286, 'trend': 1.476123653304784} in=0 core=2 t=15
+   714s web    m N=16 from_cont0 left=  64.045 ok=True soft=0.808 {'cont': 0.37773783881908485, 'net': 0.8078516016790502} in=1 core=3 t=14
+   716s loose  m N=16 cold4      left= 124.133 ok=True soft=6.215 {'cont': 2.0039188295264796, 'net': 6.214608090344369, 'trend': 1.658638784284602} in=15 core=0 t=20
+   719s loose  m N=16 warm_r1    left=   3.820 ok=True soft=5.601 {'cont': 0.48028574927166945, 'net': 5.601484375965679, 'trend': 1.4193633156662013} in=0 core=2 t=28
+   719s web    m N=16 warm_r1    left=  85.665 ok=True soft=6.645 {'cont': 1.628656725823345, 'net': 6.645388325168029} in=0 core=4 t=10
+   724s web    m N=16 from_cont1 left=  50.585 ok=True soft=6.645 {'cont': 0.2925621224933064, 'net': 6.6453910118328166} in=0 core=6 t=23
+   728s web    m N=16 cold0      left= 107.925 ok=True soft=1.944 {'cont': 1.943806143719364, 'net': 0.9986982650602748} in=15 core=1 t=22
+   728s web    m N=16 from_cont2 left=  61.339 ok=True soft=6.645 {'cont': 1.0333479082870527, 'net': 6.645349517797552} in=0 core=0 t=24
+   733s web    m N=16 warm_r3    left=  25.778 ok=True soft=6.645 {'cont': 0.18896687237086618, 'net': 6.645391010850662} in=0 core=3 t=17
+   734s web    m N=16 cold2      left=  26.759 ok=True soft=0.992 {'cont': 0.013680423213259057, 'net': 0.9923144277713766} in=3 core=3 t=20
+   740s web    m N=16 cold4      left=  71.261 ok=True soft=6.645 {'cont': 0.07225599677618232, 'net': 6.6453909982935375} in=6 core=1 t=22
+   742s loose  n N=16 from_cont0 left=   5.267 ok=True soft=6.215 {'cont': 0.29198127682962505, 'net': 6.214607473391212, 'trend': 1.4948843548254613} in=0 core=2 t=23
+   748s loose  n N=16 from_cont1 left=   5.638 ok=True soft=2.237 {'cont': 0.5770050153633473, 'net': 2.2368711605313316, 'trend': 1.393867155612679} in=0 core=2 t=24
+   751s loose  n N=16 cold0      left=  84.587 ok=True soft=6.215 {'cont': 2.534350717722805, 'net': 6.214608064210571, 'trend': 2.085336580172508} in=15 core=0 t=23
+   753s loose  n N=16 from_cont2 left=   7.308 ok=True soft=5.903 {'cont': 0.2785897656781604, 'net': 5.90267824395422, 'trend': 1.4174649876933016} in=0 core=2 t=25
+   759s loose  n N=16 warm_r3    left=   7.056 ok=True soft=5.580 {'cont': 0.6678088130700537, 'net': 5.580432926323399, 'trend': 1.334252445742051} in=0 core=2 t=18
+   762s loose  n N=16 cold2      left=   4.811 ok=True soft=5.868 {'cont': 0.08967883770700479, 'net': 5.868215161466616, 'trend': 1.7938778995906675} in=0 core=4 t=28
+   762s loose  n N=16 warm_r1    left=   3.876 ok=True soft=5.629 {'cont': 0.07257773466145956, 'net': 5.628548824418406, 'trend': 1.678953178559707} in=0 core=2 t=29
+   765s loose  n N=16 cold4      left=  14.561 ok=True soft=6.024 {'cont': 2.393500782489435, 'net': 6.024438867009863, 'trend': 0.8710191708134891} in=6 core=1 t=23
+   773s web    n N=16 from_cont0 left=  80.480 ok=True soft=6.645 {'cont': 0.4283798648895967, 'net': 6.645391008511634} in=0 core=3 t=26
+   776s web    n N=16 from_cont1 left=  76.200 ok=True soft=0.989 {'cont': 0.6548343429281074, 'net': 0.989189852001352} in=2 core=2 t=25
+   777s web    n N=16 from_cont2 left=  50.026 ok=True soft=6.645 {'cont': 0.30972722389256524, 'net': 6.645291132512876} in=1 core=1 t=24
+   784s web    n N=16 warm_r1    left=  89.179 ok=True soft=6.645 {'cont': 0.7574240506098011, 'net': 6.645380362465723} in=0 core=4 t=22
+   784s web    n N=16 cold2      left=  28.353 ok=True soft=6.645 {'cont': 0.04316503010725909, 'net': 6.645391012023636} in=5 core=0 t=22
+   784s loose  m N=12 from_cont0 left=   4.882 ok=True soft=6.215 {'cont': 0.0, 'net': 6.214599602069719, 'trend': 1.488205059403184} in=0 core=3 t=8
+   785s web    n N=16 cold0      left=  93.520 ok=True soft=0.941 {'cont': 0.032723546322146024, 'net': 0.9414968111313253} in=6 core=0 t=26
+   786s loose  m N=12 cold2      left=  91.972 ok=True soft=5.639 {'cont': 0.9263167354033259, 'net': 5.639375696139478, 'trend': 0.5563865381006203} in=0 core=1 t=1
+   786s loose  m N=12 from_cont1 left=   5.223 ok=True soft=6.215 {'cont': 0.0, 'net': 6.214598578076461, 'trend': 1.49616781814805} in=0 core=2 t=9
+   787s web    n N=16 warm_r3    left=  87.777 ok=True soft=6.645 {'cont': 0.3001630795185012, 'net': 6.645391012091984} in=0 core=1 t=21
+   787s web    n N=16 cold4      left= 172.698 ok=True soft=0.619 {'cont': 0.12153491706638676, 'net': 0.6189337698536995} in=0 core=0 t=14
+   792s loose  m N=12 cold4      left=   2.943 ok=True soft=1.298 {'cont': 1.1305063019494517, 'net': 0.6304436393730055, 'trend': 1.297688303907695} in=11 core=0 t=5
+   793s loose  m N=12 from_cont2 left=   4.821 ok=True soft=6.215 {'cont': 0.0, 'net': 6.214598605985201, 'trend': 1.4954188619007662} in=0 core=3 t=9
+   793s loose  m N=12 warm_r1    left=   6.094 ok=True soft=5.929 {'cont': 0.6459371281668758, 'net': 5.928831044473255, 'trend': 1.137354112402658} in=0 core=3 t=9
+   794s loose  m N=12 warm_r3    left=   5.701 ok=True soft=6.215 {'cont': 0.0, 'net': 6.214599736614338, 'trend': 1.4927852021188706} in=0 core=2 t=9
+   797s web    m N=12 from_cont1 left=  66.159 ok=True soft=6.645 {'cont': 0.4514897383956137, 'net': 6.645391012170623} in=0 core=0 t=9
+   797s loose  m N=12 cold0      left=  26.845 ok=True soft=5.569 {'cont': 0.7884439691785672, 'net': 5.569423944622064, 'trend': 1.0738503882104982} in=6 core=0 t=13
+   798s web    m N=12 from_cont0 left=  61.330 ok=True soft=6.645 {'cont': 0.14309124114822802, 'net': 6.6453910121383455} in=0 core=1 t=11
+   800s web    m N=12 warm_r1    left=  70.187 ok=True soft=6.645 {'cont': 0.5973832534189367, 'net': 6.645391011866482} in=0 core=0 t=7
+   804s web    m N=12 cold0      left= 186.647 ok=True soft=0.800 {'cont': 0.24351451070644137, 'net': 0.8002865649996161} in=0 core=10 t=11
+   805s web    m N=12 from_cont2 left=  66.662 ok=True soft=6.645 {'cont': 0.6862046351664111, 'net': 6.645391012203017} in=0 core=1 t=13
+   806s web    m N=12 cold2      left=  80.669 ok=True soft=0.998 {'cont': 0.45898810712745053, 'net': 0.9980989412860921} in=1 core=1 t=12
+   810s web    m N=12 warm_r3    left=  80.074 ok=True soft=0.800 {'cont': 0.13256034880844791, 'net': 0.8000462249884283} in=0 core=0 t=13
+   812s loose  n N=12 from_cont1 left=   8.052 ok=True soft=5.739 {'cont': 0.6880911999713517, 'net': 5.739393509415179, 'trend': 1.4477156282960504} in=0 core=3 t=12
+   812s loose  n N=12 from_cont0 left=   6.173 ok=True soft=2.153 {'cont': 0.5794330591722903, 'net': 2.152722524188658, 'trend': 1.499070459163741} in=0 core=3 t=15
+   813s web    m N=12 cold4      left= 130.525 ok=True soft=0.816 {'cont': 0.0, 'net': 0.8155949717554337} in=2 core=0 t=16
+   818s loose  n N=12 from_cont2 left=   7.329 ok=True soft=5.773 {'cont': 0.4654992583903699, 'net': 5.773489260451818, 'trend': 1.4756982872409217} in=0 core=3 t=14
+   820s loose  n N=12 cold0      left=   6.557 ok=True soft=2.551 {'cont': 1.8549414740671075, 'net': 2.5510244463029665, 'trend': 2.3047793209191} in=11 core=0 t=15
+   822s loose  n N=12 warm_r1    left=   7.870 ok=True soft=5.835 {'cont': 0.3049149248268739, 'net': 5.834594704735962, 'trend': 1.2384936435867733} in=0 core=3 t=16
+   827s loose  n N=12 cold4      left=  14.379 ok=True soft=6.215 {'cont': 2.2192029016025083, 'net': 6.214608092912613, 'trend': 0.9681807100843725} in=11 core=0 t=15
+   827s web    n N=12 from_cont2 left=  53.548 ok=False soft=18.634 {'cont': 0.5133335925910074, 'net': 18.633967084712182} in=0 core=3 t=7
+   828s loose  n N=12 warm_r3    left=   6.403 ok=True soft=5.793 {'cont': 0.17892971144676717, 'net': 5.793162309702599, 'trend': 1.5231877621298056} in=0 core=2 t=15
+   829s web    n N=12 from_cont0 left=  48.487 ok=True soft=0.990 {'cont': 0.2054822966871892, 'net': 0.9900783386091622} in=0 core=4 t=16
+   829s loose  n N=12 cold2      left= 154.951 ok=True soft=2.234 {'cont': 1.456357493584202, 'net': 2.2336789740533707, 'trend': 1.3712565003933732} in=6 core=6 t=20
+   836s loose  m N= 8 from_cont0 left=   5.453 ok=True soft=6.215 {'cont': 0.4020059351997314, 'net': 6.21460062155438, 'trend': 1.6074046468906493} in=5 core=2 t=7
+   837s web    n N=12 cold0      left=  43.501 ok=True soft=1.661 {'cont': 1.6610230481968216, 'net': 0.999732035376848} in=11 core=1 t=15
+   838s web    n N=12 from_cont1 left=  76.752 ok=True soft=6.645 {'cont': 0.14470849501984384, 'net': 6.645391011844903} in=0 core=0 t=20
+   842s web    n N=12 cold2      left=  80.609 ok=True soft=1.441 {'cont': 0.3432452056758091, 'net': 1.4407742709044187} in=3 core=5 t=15
+   842s loose  m N= 8 from_cont1 left=   0.179 ok=True soft=1.917 {'cont': 1.9169226108398725, 'net': 0.1862576545439206, 'trend': 1.6859330578268952} in=8 core=0 t=6
+   843s loose  m N= 8 cold0      left= 140.521 ok=True soft=2.772 {'cont': 0.28993518783824546, 'net': 2.7715208752894323, 'trend': 0.7244183484244662} in=6 core=0 t=5
+   844s web    n N=12 warm_r1    left=  79.694 ok=True soft=0.805 {'cont': 0.23734933457115814, 'net': 0.804638813636738} in=0 core=0 t=17
+   846s loose  m N= 8 from_cont2 left=   4.286 ok=True soft=1.917 {'cont': 1.9169225202885571, 'net': 0.9882135797177828, 'trend': 1.4627960950378038} in=8 core=0 t=10
+   847s web    n N=12 warm_r3    left=  72.927 ok=True soft=6.645 {'cont': 0.19184000792885136, 'net': 6.645391011624898} in=0 core=1 t=19
+   847s web    n N=12 cold4      left=  34.381 ok=True soft=6.645 {'cont': 0.4825330993675012, 'net': 6.645369310950993} in=6 core=0 t=18
+   849s loose  m N= 8 cold4      left=  26.437 ok=True soft=1.917 {'cont': 1.9169222302894329, 'net': 0.7321390255237287, 'trend': 1.6443844869730913} in=8 core=0 t=5
+   849s loose  m N= 8 warm_r1    left=   3.705 ok=True soft=6.637 {'cont': 1.4816040457501218, 'net': 6.637177010803754, 'trend': 1.4102731281573178} in=5 core=1 t=7
+   851s loose  m N= 8 warm_r3    left=   1.413 ok=True soft=1.917 {'cont': 1.9169226106174877, 'net': 0.19742760523050076, 'trend': 1.6878261637624385} in=8 core=0 t=8
+   852s web    m N= 8 from_cont1 left=  10.233 ok=True soft=2.428 {'cont': 2.4277482350719906, 'net': 0.8459371824909014} in=8 core=0 t=5
+   852s web    m N= 8 from_cont2 left=  28.008 ok=True soft=2.428 {'cont': 2.427748222701231, 'net': 2.07507585061621} in=8 core=0 t=5
+   853s loose  m N= 8 cold2      left=  87.968 ok=True soft=6.215 {'cont': 0.8420421673992879, 'net': 6.214606422760298, 'trend': 1.7943268831578716} in=7 core=0 t=11
+   856s web    m N= 8 warm_r3    left=  29.557 ok=True soft=2.428 {'cont': 2.4277482283705254, 'net': 1.5945204591928412} in=8 core=0 t=5
+   857s web    m N= 8 cold4      left= 171.227 ok=True soft=2.428 {'cont': 2.4277479479677835, 'net': 0.6732073872715162} in=8 core=0 t=5
+   857s web    m N= 8 cold0      left=  48.644 ok=True soft=2.093 {'cont': 0.757143026764574, 'net': 2.093473325855682} in=5 core=1 t=9
+   858s web    m N= 8 from_cont0 left=  40.855 ok=True soft=6.645 {'cont': 0.7376792161208705, 'net': 6.644691007945193} in=5 core=1 t=11
+   859s web    m N= 8 cold2      left= 173.177 ok=True soft=0.915 {'cont': 0.18764432123525074, 'net': 0.9147378342617127} in=0 core=1 t=8
+   861s loose  n N= 8 cold0      left=  82.135 ok=True soft=5.829 {'cont': 2.3067150520155137, 'net': 5.828583975753109, 'trend': 1.459564319110099} in=8 core=0 t=4
+   861s loose  n N= 8 from_cont0 left=  21.767 ok=True soft=5.850 {'cont': 0.0, 'net': 5.849735055814851, 'trend': 1.4959087042689863} in=0 core=3 t=8
+   861s web    m N= 8 warm_r1    left=  64.122 ok=True soft=1.257 {'cont': 1.25704652547484, 'net': 1.2493475590128447} in=6 core=0 t=12
+   866s loose  n N= 8 from_cont1 left=  10.578 ok=True soft=6.214 {'cont': 0.8191575836242941, 'net': 6.21381981400693, 'trend': 1.5996137734528872} in=5 core=2 t=10
+   867s loose  n N= 8 cold2      left= 119.842 ok=True soft=4.793 {'cont': 1.0971140253203782, 'net': 4.7934559783121715, 'trend': 1.467810694205038} in=0 core=0 t=8
+   870s loose  n N= 8 from_cont2 left=  18.198 ok=True soft=1.917 {'cont': 1.916922538106797, 'net': 0.3422681178021219, 'trend': 1.5654474235817375} in=8 core=0 t=13
+   872s web    n N= 8 from_cont0 left= 145.203 ok=True soft=1.089 {'cont': 0.7644281302076583, 'net': 1.088505089883331} in=0 core=1 t=10
+   873s loose  n N= 8 warm_r1    left=  25.520 ok=True soft=1.917 {'cont': 1.9169192467499685, 'net': 0.8952113019354205, 'trend': 1.5575083685246027} in=8 core=0 t=15
+   874s loose  n N= 8 cold4      left=  62.437 ok=True soft=5.563 {'cont': 0.7778456799716129, 'net': 5.563466104692929, 'trend': 0.8079884215160433} in=6 core=1 t=13
+   874s loose  n N= 8 warm_r3    left=  18.773 ok=True soft=1.917 {'cont': 1.9169188636162753, 'net': 1.083267852284549, 'trend': 1.3845180278294684} in=8 core=0 t=13
+   880s web    n N= 8 cold0      left= 155.994 ok=True soft=0.669 {'cont': 0.25130306491999865, 'net': 0.6685430875830708} in=0 core=0 t=10
+   880s web    n N= 8 from_cont2 left=  25.753 ok=True soft=2.428 {'cont': 2.4277482286134413, 'net': 0.44583399800828466} in=8 core=0 t=13
+   880s web    n N= 8 from_cont1 left=  69.723 ok=True soft=6.645 {'cont': 0.8485110810422665, 'net': 6.645338958805963} in=5 core=2 t=14
+   882s web    n N= 8 cold2      left=  61.664 ok=True soft=1.630 {'cont': 1.6300086956551183, 'net': 1.2940815800235614} in=7 core=0 t=9
+   884s web    n N= 8 warm_r3    left=  26.558 ok=True soft=2.428 {'cont': 2.4277482340805356, 'net': 1.2769597378014819} in=8 core=0 t=10
+   884s web    n N= 8 warm_r1    left=  22.432 ok=True soft=2.428 {'cont': 2.4277482135070345, 'net': 1.0986087397835536} in=8 core=0 t=13
+   885s web    n N= 8 cold4      left= 157.354 ok=True soft=0.996 {'cont': 0.5468661556623761, 'net': 0.9961591314061485} in=6 core=0 t=11
+done 885.1914367675781

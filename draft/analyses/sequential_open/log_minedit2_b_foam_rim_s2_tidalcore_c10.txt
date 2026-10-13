@@ -1,0 +1,20 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+  b_foam_rim_s2_tidalcore edited=4083 left=7.26 t=9s
+  b_foam_rim_s2_tidalcore edited=4107 left=3.75 t=14s
+  b_foam_rim_s2_tidalcore edited=4131 left=2.95 t=19s
+  b_foam_rim_s2_tidalcore edited=4155 left=1.82 t=23s
+  b_foam_rim_s2_tidalcore edited=4179 left=1.62 t=720s
+  b_foam_rim_s2_tidalcore edited=4203 left=1.55 t=726s
+  b_foam_rim_s2_tidalcore edited=4227 left=1.43 t=731s
+  b_foam_rim_s2_tidalcore edited=4251 left=1.38 t=735s
+  b_foam_rim_s2_tidalcore edited=4275 left=1.36 t=739s
+  b_foam_rim_s2_tidalcore edited=4299 left=1.34 t=749s
+  b_foam_rim_s2_tidalcore edited=4323 left=1.32 t=753s
+  b_foam_rim_s2_tidalcore edited=4347 left=1.23 t=757s
+  b_foam_rim_s2_tidalcore edited=4371 left=1.22 t=761s
+  b_foam_rim_s2_tidalcore edited=4395 left=1.18 t=764s
+  b_foam_rim_s2_tidalcore edited=4419 left=1.11 t=774s
+  b_foam_rim_s2_tidalcore edited=4443 left=1.02 t=777s
+  b_foam_rim_s2_tidalcore edited=4467 left=1.01 t=781s
+  b_foam_rim_s2_tidalcore edited=4491 left=1.00 t=785s
+DONE b_foam_rim_s2_tidalcore edited 4491 del 4059 left 0.998

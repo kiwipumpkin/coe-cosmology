@@ -1,0 +1,13 @@
+{'check_holes (tetra 4th, 5th / octa 6th, 7th nearest cluster, units d)': {'FCC': (np.float64(0.6124), np.float64(1.1726), np.float64(0.7071), np.float64(1.2247)), 'HCP': (np.float64(0.6124), np.float64(1.0206), np.float64(0.7071), np.float64(1.2247))}}
+{'check_holes (tetra 4th, 5th / octa 6th, 7th nearest cluster, units d)': {'FCC': (np.float64(0.6124), np.float64(1.1726), np.float64(0.7071), np.float64(1.2247)), 'HCP': (np.float64(0.6124), np.float64(1.0206), np.float64(0.7071), np.float64(1.2247))}, 'Madelung check (unit charges, -E/N * a_ws)': {'FCC': 0.8958737982996863, 'HCP': 0.8958381684179229}}
+clusters only {'FCC': (1.6209938630148288, 0.0), 'HCP': (1.6209293943142284, 0.0), 'lower energy (more bound)': 'HCP', 'HCP - FCC': -6.446870060039522e-05}
+web ratio: 1/12 of tetra holes, real masses (void = -5.99 cluster) {'FCC': (2.9815571407558545, 0.09521768876698793), 'HCP': (2.485016779043496, 0.09203658920707958), 'lower energy (more bound)': 'HCP', 'HCP - FCC': -0.4965403617123587}
+web ratio: 1/6 of octa holes, real masses {'FCC': (3.138764047369908, 0.09429121842665818), 'HCP': (3.1192153133541973, 0.07770264667020091), 'lower energy (more bound)': 'HCP', 'HCP - FCC': -0.019548734015710778}
+all tetra holes, compensated (void = -0.5 cluster) {'FCC': (0.6856918827150413, 0.0), 'HCP': (0.6475555573113991, 0.0), 'lower energy (more bound)': 'HCP', 'HCP - FCC': -0.0381363254036422}
+all octa holes, compensated (void = -1 cluster; FCC = rock-salt, HCP = NiAs pattern) {'FCC': (1.2357154356304765, 0.0), 'HCP': (1.2223519479820844, 0.0), 'lower energy (more bound)': 'HCP', 'HCP - FCC': -0.013363487648392125}
+all tetra holes, real masses + background {'FCC': (46.31077318550634, 0.0), 'HCP': (40.5955187406922, 0.0), 'lower energy (more bound)': 'HCP', 'HCP - FCC': -5.715254444814143}
+all octa holes, real masses + background {'FCC': (27.61003807656172, 0.0), 'HCP': (27.16848577752266, 0.0), 'lower energy (more bound)': 'HCP', 'HCP - FCC': -0.44155229903906346}
+
+real	0m41.190s
+user	2m54.312s
+sys	0m0.654s

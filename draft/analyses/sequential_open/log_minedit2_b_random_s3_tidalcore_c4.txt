@@ -1,0 +1,23 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+  b_random_s3_tidalcore edited=571 left=45.16 t=9s
+  b_random_s3_tidalcore edited=595 left=23.77 t=15s
+  b_random_s3_tidalcore edited=619 left=16.74 t=21s
+  b_random_s3_tidalcore edited=643 left=9.56 t=26s
+  b_random_s3_tidalcore edited=667 left=3.47 t=40s
+  b_random_s3_tidalcore edited=691 left=2.72 t=43s
+  b_random_s3_tidalcore edited=715 left=2.02 t=48s
+  b_random_s3_tidalcore edited=739 left=1.50 t=52s
+  b_random_s3_tidalcore edited=763 left=1.45 t=55s
+  b_random_s3_tidalcore edited=787 left=1.28 t=62s
+  b_random_s3_tidalcore edited=811 left=1.20 t=65s
+  b_random_s3_tidalcore edited=835 left=1.17 t=68s
+  b_random_s3_tidalcore edited=859 left=1.16 t=72s
+  b_random_s3_tidalcore edited=883 left=1.13 t=75s
+  b_random_s3_tidalcore edited=907 left=1.09 t=83s
+  b_random_s3_tidalcore edited=931 left=1.09 t=86s
+  b_random_s3_tidalcore edited=955 left=1.09 t=89s
+  b_random_s3_tidalcore edited=979 left=1.06 t=93s
+  b_random_s3_tidalcore edited=1003 left=1.06 t=96s
+  b_random_s3_tidalcore edited=1027 left=1.06 t=104s
+  b_random_s3_tidalcore edited=1051 left=0.93 t=107s
+DONE b_random_s3_tidalcore edited 993 del 547 left 0.927

@@ -1,0 +1,20 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+inside 4 CCCC left 7.274 top m [(7, 6.161), (6, 4.906), (10, 4.241)] m1-6 max 4.906 13+ 0.691
+inside 6 CCCCCC left 2.204 top m [(7, 1.658), (10, 1.51), (6, 1.153)] m1-6 max 1.153 13+ 0.741
+inside 8 CCCCVVVV left 0.178 top m [(10, 0.139), (9, 0.121), (12, 0.107)] m1-6 max 0.003 13+ 0.121
+inside 10 CCCCCCCCCC left 0.060 top m [(11, 0.034), (10, 0.03), (9, 0.016)] m1-6 max 0.001 13+ 0.067
+inside 11 CCCCCCCCCCC left 0.051 top m [(11, 0.027), (12, 0.026), (10, 0.01)] m1-6 max 0.000 13+ 0.060
+inside 12 CCCCCCCCCCCC left 0.025 top m [(11, 0.015), (10, 0.012), (12, 0.008)] m1-6 max 0.000 13+ 0.028
+outside 4 CCCC left 33.861 top m [(6, 24.977), (9, 22.073), (10, 18.19)] m1-6 max 24.977 13+ 17.591
+outside 6 CCCCCV left 14.208 top m [(8, 9.655), (9, 9.503), (10, 5.737)] m1-6 max 1.049 13+ 13.078
+outside 8 CCCCCVVV left 2.911 top m [(9, 2.283), (8, 1.721), (12, 1.232)] m1-6 max 0.593 13+ 1.686
+outside 10 CCCCCCVVVV left 0.726 top m [(10, 0.494), (9, 0.372), (11, 0.357)] m1-6 max 0.063 13+ 0.643
+outside 11 CCCCCCVVVVV left 0.174 top m [(12, 0.071), (11, 0.03), (10, 0.022)] m1-6 max 0.001 13+ 0.232
+outside 12 CCCCCCVVVVVV left 0.094 top m [(12, 0.016), (11, 0.007), (10, 0.004)] m1-6 max 0.000 13+ 0.131
+all_open 4 CCCC left 7.282 top m [(7, 6.169), (6, 4.926), (10, 4.237)] m1-6 max 4.926 13+ 0.689
+all_open 6 CCCCCC left 1.414 top m [(12, 1.016), (8, 0.933), (7, 0.925)] m1-6 max 0.525 13+ 0.499
+all_open 8 CCCCVVVV left 0.288 top m [(10, 0.221), (9, 0.207), (12, 0.159)] m1-6 max 0.006 13+ 0.185
+all_open 10 CCCCCCCCCC left 0.152 top m [(12, 0.097), (10, 0.063), (11, 0.035)] m1-6 max 0.002 13+ 0.174
+all_open 11 CCCCCCVVVVV left 0.090 top m [(12, 0.026), (11, 0.009), (10, 0.005)] m1-6 max 0.000 13+ 0.124
+all_open 12 CCCCCCVVVVVV left 0.073 top m [(12, 0.011), (11, 0.007), (10, 0.003)] m1-6 max 0.000 13+ 0.102
+start amps [ 18.   27.3 200.1 184.7 172.9  80.8  28.4  10.4   4.6   2.2   1.    0.5]

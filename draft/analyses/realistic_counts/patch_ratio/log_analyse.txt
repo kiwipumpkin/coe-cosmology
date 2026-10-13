@@ -1,0 +1,79 @@
+/workspace/clump_scan/realistic_counts/patch_ratio/analyse.py:62: DeprecationWarning: `axes` should not be `None` if `s` is not `None` (Deprecated in NumPy 2.0). In a future version of NumPy, this will raise an error and `s[i]` will correspond to the size along the transformed axis specified by `axes[i]`. To retain current behaviour, pass a sequence [0, ..., k-1] to `axes` for an array of dimension k.
+  f=np.fft.irfftn(np.fft.rfftn(rng.normal(size=(n,n,n)))*np.sqrt(P/H**3),s=(n,n,n)); Y.append(g.A@f[g.mask])
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+in05 {
+"extreme 50 Mpc": {
+"cmb_rms_random_over_floor": 34.114175039906854,
+"needed_over_floor": 237.25774727019066,
+"chi": 68.81723470431402,
+"dof": 40,
+"n_sigma": NaN
+},
+"typical \u00b10.3, 50 Mpc": {
+"cmb_rms_random_over_floor": 17.988078680126712,
+"needed_over_floor": 237.25774727019066,
+"chi": 130.51105858565114,
+"dof": 40,
+"n_sigma": NaN
+},
+"extreme 30 Mpc": {
+"cmb_rms_random_over_floor": 29.94893556702697,
+"needed_over_floor": 237.25774727019066,
+"chi": 78.38820131724539,
+"dof": 40,
+"n_sigma": NaN
+},
+"extreme 100 Mpc": {
+"cmb_rms_random_over_floor": 41.54168827270131,
+"needed_over_floor": 237.25774727019066,
+"chi": 56.5129461049865,
+"dof": 40,
+"n_sigma": NaN
+},
+"LCDM": {
+"cmb_rms_random_over_floor": 11.583442931183486,
+"needed_over_floor": 237.25774727019066,
+"chi": 216.68844885498095,
+"dof": 40,
+"n_sigma": NaN,
+"note": "inner region only, 300 realizations"
+}
+}
+both10 {
+"extreme 50 Mpc": {
+"cmb_rms_random_over_floor": 27.462890124274015,
+"needed_over_floor": 237.25774727019066,
+"chi": 105.03029643338738,
+"dof": 40,
+"n_sigma": NaN
+},
+"typical \u00b10.3, 50 Mpc": {
+"cmb_rms_random_over_floor": 14.480919669352344,
+"needed_over_floor": 237.25774727019066,
+"chi": 199.18869495386525,
+"dof": 40,
+"n_sigma": NaN
+},
+"extreme 30 Mpc": {
+"cmb_rms_random_over_floor": 24.10975278909953,
+"needed_over_floor": 237.25774727019066,
+"chi": 119.63770495291656,
+"dof": 40,
+"n_sigma": NaN
+},
+"extreme 100 Mpc": {
+"cmb_rms_random_over_floor": 33.442251476855695,
+"needed_over_floor": 237.25774727019066,
+"chi": 86.25123498835856,
+"dof": 40,
+"n_sigma": NaN
+},
+"LCDM": {
+"cmb_rms_random_over_floor": 9.003511412322672,
+"needed_over_floor": 237.25774727019066,
+"chi": 925703.5258217773,
+"dof": 36,
+"n_sigma": NaN,
+"note": "inner region only, 300 realizations"
+}
+}

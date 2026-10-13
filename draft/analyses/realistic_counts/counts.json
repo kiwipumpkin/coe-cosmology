@@ -1,0 +1,319 @@
+{
+ "scenarios": [
+  {
+   "geom": "inside",
+   "sym": "mirror",
+   "kind": "field",
+   "label": "inside, smooth field",
+   "M_plus": 3.485904478233618e+51,
+   "M_minus": 3.4859044781866135e+51,
+   "left": 0.9999999999999998,
+   "n_clusters": 1752591.4923245944,
+   "n_superclusters": 65114.32074693665,
+   "n_voids": 1043781.7107241374,
+   "n_supervoids": 6104.467569942996,
+   "nat_cluster_equiv": 150829562.59426847,
+   "nat_void_equiv": 170674663.8743978,
+   "frac_of_natural_cluster_mass": 0.011619681594112061,
+   "frac_of_natural_void_deficit": 0.006115621891555462,
+   "reach": true,
+   "peak_delta": 0.05493213757439383,
+   "rms_delta": [
+    0.012439698166354797
+   ],
+   "mean_delta_over": [
+    0.021560157873872915
+   ],
+   "mean_delta_under": [
+    -0.021348882796733634
+   ],
+   "dmin": -0.05362505879549203,
+   "dmax": 0.05493213757439383
+  },
+  {
+   "geom": "outside",
+   "sym": "mirror",
+   "kind": "field",
+   "label": "outside, smooth field",
+   "M_plus": 7.721346568729495e+52,
+   "M_minus": 7.72134656872749e+52,
+   "left": 0.9999999999998853,
+   "n_clusters": 38820244.186674185,
+   "n_superclusters": 1442294.9343961237,
+   "n_voids": 23119968.95219823,
+   "n_supervoids": 135215.15009960148,
+   "nat_cluster_equiv": 1106083459.0246353,
+   "nat_void_equiv": 1227659862.9561946,
+   "frac_of_natural_cluster_mass": 0.035097029857861346,
+   "frac_of_natural_void_deficit": 0.018832552606652415,
+   "reach": true,
+   "peak_delta": 0.26274052805657555,
+   "rms_delta": [
+    0.03685868444570816
+   ],
+   "mean_delta_over": [
+    0.06027878689128955
+   ],
+   "mean_delta_under": [
+    -0.028510972181098524
+   ],
+   "dmin": -0.20887889869653295,
+   "dmax": 0.26274052805657555
+  },
+  {
+   "geom": "both",
+   "sym": "mirror",
+   "kind": "field",
+   "label": "both, smooth field",
+   "M_plus": 5.8821459798216156e+51,
+   "M_minus": 5.882145979999992e+51,
+   "left": 1.0,
+   "n_clusters": 2957338.3508404302,
+   "n_superclusters": 109874.47946493614,
+   "n_voids": 1761286.470169542,
+   "n_supervoids": 10300.732450150132,
+   "nat_cluster_equiv": 1256913021.6189039,
+   "nat_void_equiv": 1398334526.8305924,
+   "frac_of_natural_cluster_mass": 0.002352858391928646,
+   "frac_of_natural_void_deficit": 0.001259560167023553,
+   "reach": true,
+   "peak_delta": 0.05464461401707226,
+   "rms_delta": [
+    0.006364057785585394,
+    0.0024504372249673795
+   ],
+   "mean_delta_over": [
+    0.019973220654303667,
+    0.011191985905213107
+   ],
+   "mean_delta_under": [
+    -0.017546427537536206,
+    -0.013319326014568976
+   ],
+   "dmin": -0.033693170856688694,
+   "dmax": 0.05464461401707226
+  },
+  {
+   "geom": "both",
+   "sym": "no-mirror",
+   "kind": "field",
+   "label": "both, staggered field (dense side inside, empty side outside)",
+   "M_plus": 2.7130316350650573e+52,
+   "M_minus": 2.7130316350665024e+52,
+   "left": 0.9999999999999905,
+   "n_clusters": 13640179.160709187,
+   "n_superclusters": 506775.82585891185,
+   "n_voids": 8123609.866589178,
+   "n_supervoids": 47510.23367429829,
+   "nat_cluster_equiv": 1256913021.6189039,
+   "nat_void_equiv": 1398334526.8305924,
+   "frac_of_natural_cluster_mass": 0.010852126540260229,
+   "frac_of_natural_void_deficit": 0.005809489582583517,
+   "reach": true,
+   "peak_delta": 0.1690735098769244,
+   "rms_delta": [
+    0.04816978132043079,
+    0.021758749629358948
+   ],
+   "mean_delta_over": [
+    0.03731172622862027,
+    0.03622688531222466
+   ],
+   "mean_delta_under": [
+    -0.05406716212507887,
+    -0.021948966100887313
+   ],
+   "dmin": -0.1690735098769244,
+   "dmax": 0.1299319198636371
+  },
+  {
+   "geom": "inside",
+   "sym": "no-mirror",
+   "kind": "field",
+   "label": "inside, one-sided field",
+   "reach": false
+  },
+  {
+   "geom": "inside",
+   "sym": "no-mirror",
+   "kind": "field",
+   "label": "inside, staggered field (dense side near ring, empty side nearer us)",
+   "M_plus": 3.320691920568088e+52,
+   "M_minus": 3.320691920608367e+52,
+   "left": 0.9999999999998168,
+   "n_clusters": 16695283.662986869,
+   "n_superclusters": 620282.6272715229,
+   "n_voids": 9943122.410180027,
+   "n_supervoids": 58151.49630741061,
+   "nat_cluster_equiv": 150829562.59426847,
+   "nat_void_equiv": 170674663.8743978,
+   "frac_of_natural_cluster_mass": 0.11068973068560294,
+   "frac_of_natural_void_deficit": 0.05825775299312924,
+   "reach": true,
+   "peak_delta": 1.5904710417459216,
+   "rms_delta": [
+    0.21213959024728174,
+    0.3641017663666933
+   ],
+   "mean_delta_over": [
+    0.17936966612013047,
+    0.229006916385713
+   ],
+   "mean_delta_under": [
+    -0.17113618379282372,
+    -0.3435346406764531
+   ],
+   "dmin": -1.5904710417459216,
+   "dmax": 0.5544260979042716
+  },
+  {
+   "geom": "outside",
+   "sym": "no-mirror",
+   "kind": "field",
+   "label": "outside, one-sided field",
+   "M_plus": 1.6030048122936818e+56,
+   "M_minus": 1.6030048121663744e+56,
+   "left": 0.9999996888331545,
+   "n_clusters": 80593504891.58783,
+   "n_superclusters": 2994303778.497815,
+   "n_voids": 47998650439.56809,
+   "n_supervoids": 280715979.2118762,
+   "nat_cluster_equiv": 1106083459.0246353,
+   "nat_void_equiv": 1227659862.9561946,
+   "frac_of_natural_cluster_mass": 72.86385510425826,
+   "frac_of_natural_void_deficit": 39.09767834552133,
+   "reach": true,
+   "peak_delta": 822.912679843662,
+   "rms_delta": [
+    149.44077448648503
+   ],
+   "mean_delta_over": [
+    103.31720719066321
+   ],
+   "mean_delta_under": [
+    -101.77212005205952
+   ],
+   "dmin": -822.912679843662,
+   "dmax": 700.219633673879
+  },
+  {
+   "geom": "inside",
+   "sym": "mirror",
+   "kind": "points",
+   "label": "inside, 4 masses + 4 voids (0.18x)",
+   "M_plus": 5.4e+52,
+   "M_minus": 5.4e+52,
+   "left": 0.18,
+   "n_clusters": 27149321.266968325,
+   "n_superclusters": 1008683.210423568,
+   "n_voids": 16169178.682837686,
+   "n_supervoids": 94564.0509772095,
+   "nat_cluster_equiv": 150829562.59426847,
+   "nat_void_equiv": 170674663.8743978,
+   "frac_of_natural_cluster_mass": 0.18,
+   "frac_of_natural_void_deficit": 0.09473684210526316,
+   "reach": true,
+   "core_delta": 100,
+   "void_delta": -0.7,
+   "void_R_gpc": "3.5-4"
+  },
+  {
+   "geom": "outside",
+   "sym": "mirror",
+   "kind": "points",
+   "label": "outside, 6 masses + 5 voids (0.58x)",
+   "M_plus": 6.77e+52,
+   "M_minus": 6.76e+52,
+   "left": 0.58,
+   "n_clusters": 34037204.62543992,
+   "n_superclusters": 1264589.8767717695,
+   "n_voids": 20241416.277033843,
+   "n_supervoids": 118380.18233443263,
+   "nat_cluster_equiv": 1106083459.0246353,
+   "nat_void_equiv": 1227659862.9561946,
+   "frac_of_natural_cluster_mass": 0.030772727272727275,
+   "frac_of_natural_void_deficit": 0.01648780487804878,
+   "reach": true,
+   "core_delta": 100,
+   "void_delta": -0.7,
+   "void_R_gpc": "3.5-4"
+  },
+  {
+   "geom": "outside",
+   "sym": "no-mirror",
+   "kind": "points",
+   "label": "outside, 7 masses + 5 voids, no mirror (0.73x)",
+   "M_plus": 5.82e+52,
+   "M_minus": 5.81e+52,
+   "left": 0.73,
+   "n_clusters": 29260935.143288087,
+   "n_superclusters": 1087136.3490120678,
+   "n_voids": 17396838.54579388,
+   "n_supervoids": 101743.91410696058,
+   "nat_cluster_equiv": 1106083459.0246353,
+   "nat_void_equiv": 1227659862.9561946,
+   "frac_of_natural_cluster_mass": 0.026454545454545456,
+   "frac_of_natural_void_deficit": 0.014170731707317074,
+   "reach": true,
+   "core_delta": 100,
+   "void_delta": -0.7,
+   "void_R_gpc": "2.3-4"
+  },
+  {
+   "geom": "inside",
+   "sym": "no-mirror",
+   "kind": "points",
+   "label": "inside, 6 masses + 2 voids, no mirror (3.2x, does not reach 1x)",
+   "M_plus": 7.718823704091996e+52,
+   "M_minus": 1.9370391120069843e+52,
+   "left": 3.2327759298834096,
+   "n_clusters": 38807560.10101556,
+   "n_superclusters": 1441823.6804698245,
+   "n_voids": 5800061.392164106,
+   "n_supervoids": 33921.16024679205,
+   "nat_cluster_equiv": 150829562.59426847,
+   "nat_void_equiv": 170674663.8743978,
+   "frac_of_natural_cluster_mass": 0.2572941234697332,
+   "frac_of_natural_void_deficit": 0.033983142315912006,
+   "reach": true
+  }
+ ],
+ "feasibility": {
+  "2e52kg_in_R0.8Gpc_delta": 109.44913307547394,
+  "2e52kg_in_R1Gpc_delta": 56.03795613464266,
+  "2e52kg_in_R2Gpc_delta": 7.004744516830333,
+  "2e52kg_in_R3Gpc_delta": 2.0754798568386175,
+  "void_fill_needed_for_delta-0.7_with_delta-0.4_voids": 1.7499999999999998,
+  "void_fill_needed_for_delta-0.7_with_supervoids_-0.2": 3.4999999999999996
+ },
+ "constants": {
+  "rich_cluster_kg": 1.989e+45,
+  "supercluster_excess_kg": 5.353514308751528e+46,
+  "void_deficit_kg": 3.339687256800295e+45,
+  "supervoid_deficit_kg": 5.710415262668297e+47,
+  "rho_kg_per_mpc3": 8.520382651509969e+40
+ },
+ "natural": {
+  "inside": {
+   "V": 12200.0,
+   "clu_mass": 3e+53,
+   "void_def": 5.7e+53,
+   "n_clu": 660000000.0,
+   "n_void": 98000000.0
+  },
+  "outside": {
+   "V": 88200.0,
+   "clu_mass": 2.2e+54,
+   "void_def": 4.1e+54,
+   "n_clu": 4800000000.0,
+   "n_void": 710000000.0
+  },
+  "both": {
+   "V": 100400.0,
+   "clu_mass": 2.5e+54,
+   "void_def": 4.67e+54,
+   "n_clu": 5460000000.0,
+   "n_void": 808000000.0
+  }
+ }
+}

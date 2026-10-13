@@ -1,0 +1,30 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+random s3 voids=2000 objs=14000 t=62s ckpt
+random s3 voids=3200 objs=22400 t=123s ckpt
+random s3 voids=4100 objs=28700 t=193s ckpt
+random s3 voids=4900 objs=34300 t=259s ckpt
+random s3 voids=5300 objs=37100 t=326s ckpt
+random s3 voids=5900 objs=41300 t=397s ckpt
+random s3 voids=6500 objs=45500 t=468s ckpt
+random s3 voids=7000 objs=49000 t=533s ckpt
+random s3 voids=7500 objs=52500 t=607s ckpt
+random s3 voids=8000 objs=56000 t=682s ckpt
+random s3 voids=8400 objs=58800 t=751s ckpt
+random s3 voids=8800 objs=61600 t=824s ckpt
+random s3 voids=9200 objs=64400 t=892s ckpt
+random s3 voids=9600 objs=67200 t=961s ckpt
+random s3 voids=10000 objs=70000 t=1038s ckpt
+random s3 voids=10400 objs=72800 t=1124s ckpt
+random s3 voids=10700 objs=74900 t=1202s ckpt
+random s3 voids=11000 objs=77000 t=1282s ckpt
+random s3 voids=11300 objs=79100 t=1365s ckpt
+random s3 voids=11500 objs=80500 t=1435s ckpt
+random s3 voids=11700 objs=81900 t=1525s ckpt
+random s3 voids=11800 objs=82600 t=1594s ckpt
+random s3 voids=11900 objs=83300 t=1662s ckpt
+random s3 voids=12100 objs=84700 t=1777s ckpt
+random s3 voids=12200 objs=85400 t=1872s ckpt
+random s3 voids=12300 objs=86100 t=1948s ckpt
+random s3 voids=12400 objs=86800 t=2037s ckpt
+random s3 voids=12500 objs=87500 t=2125s ckpt
+DONE {'rule': 'random', 'seed': 3, 'Rv': 1.5, 'n_obj': 87549, 'n_void': 12507, 'n_clu': 75042, 'void_vol_frac': 0.283525340112962, 'net_kg': -8.889212221811625e+36, 'min_gap_gpc': 0.020015108312503943, 'final_left': 1267.8096540215383, 'min_left': 243.5862038477307, 'argmin': 52, 'web_rms': 1191.5670478618779, 'final_amps': [587.2659458620494, 509.7576779977611, 854.1133101691793, 261.434213183409, 555.6285882648641, 573.9253318081402], 'where_all': {'n': 87549, 'inside_us': 0, 'in_core': 48519, 'beyond_42_9': 41422}, 'where_voids': {'n': 12507, 'inside_us': 0, 'in_core': 6792, 'beyond_42_9': 5802}, 'where_clusters': {'n': 75042, 'inside_us': 0, 'in_core': 41727, 'beyond_42_9': 35620}}

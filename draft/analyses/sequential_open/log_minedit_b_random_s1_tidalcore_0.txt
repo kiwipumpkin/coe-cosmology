@@ -1,0 +1,4 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+resumed b_random_s1_tidalcore 2974
+plateau
+DONE b_random_s1_tidalcore edited 2973 of 16877 left 38.626

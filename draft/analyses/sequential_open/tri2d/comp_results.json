@@ -1,0 +1,71 @@
+{
+ "a_Gpc": 2.113319565915686,
+ "n_nodes": 1868,
+ "n_voids": 397,
+ "n_clusters": 1471,
+ "clusters_per_void": 3.7052896725440805,
+ "placed (random angles)": {
+  "U_all_per_node_J": 1.1925845342257753e+65,
+  "U_all_per_node_GMc2_over_a": 5.945190480795428,
+  "U_link_per_node_J": 9.747926275226121e+64,
+  "U_link_per_node_GMc2_over_a": 4.859469231386031,
+  "tri_area_median_over_lattice": 0.7446115146353796,
+  "tri_area_mean_over_lattice": 0.9999999999999998,
+  "tri_area_cv": 0.8716360630734671,
+  "link_median_over_a": 1.0388133103816,
+  "link_mean_over_a": 1.0641394238442123,
+  "mean_degree": 6.0,
+  "deg_void": 6.478589420654912,
+  "deg_cluster": 5.8708361658735555,
+  "links_cc_cv_vv": [
+   3166,
+   2304,
+   134
+  ],
+  "wall_r_over_R_mean": 1.1514624543255807,
+  "frac_wall_outer_quarter": 0.2610469068660775
+ },
+ "annealed (constrained ground state)": {
+  "U_all_per_node_J": -1.715604652361731e+65,
+  "U_all_per_node_GMc2_over_a": -8.552514438442621,
+  "U_link_per_node_J": -1.8396133529466371e+65,
+  "U_link_per_node_GMc2_over_a": -9.170714092299294,
+  "tri_area_median_over_lattice": 0.18067086431323065,
+  "tri_area_mean_over_lattice": 0.9999999999999998,
+  "tri_area_cv": 1.9815689052338827,
+  "link_median_over_a": 0.5125873275471607,
+  "link_mean_over_a": 0.8790028908637991,
+  "mean_degree": 6.0,
+  "deg_void": 8.181360201511335,
+  "deg_cluster": 5.411284840244732,
+  "links_cc_cv_vv": [
+   3012,
+   1936,
+   656
+  ],
+  "wall_r_over_R_mean": 1.2125984500767155,
+  "frac_wall_outer_quarter": 0.5356900067980965
+ },
+ "relation": {
+  "linear_fit": "N = 0.92 + M_def / 2.10e+50 kg",
+  "linear_slope_per_1p4e50": 0.6655820577581198,
+  "linear_intercept": 0.9198839538828425,
+  "effective_Mc_kg": 2.1034220854985485e+50,
+  "mean_Mc_untrimmed_expected_kg": 2.21e+50,
+  "fit": "log10 N = 0.665 log10(M_def/1.4e50 kg) + 0.166",
+  "slope": 0.6651211087194075,
+  "intercept": 0.1658449259030444,
+  "median_Mc_kg": 1.020539428176221e+50,
+  "frac_voids_fully_compensated": 1.0,
+  "min_held": 0.9999999999999999,
+  "N_range": [
+   1,
+   45
+  ],
+  "R_range": [
+   0.7506346716460733,
+   2.969964643292535
+  ],
+  "rule": "N = ceil(M_def / M_c) with M_def=|delta_v| rho 4/3 pi R^3, M_c = delta_c rho 4/3 pi r_c^3 (excess mass), rho=2.886e-27 kg/m^3"
+ }
+}

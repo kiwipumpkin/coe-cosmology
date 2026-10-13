@@ -1,0 +1,72 @@
+{
+ "cc": {
+  "candidates": 1677,
+  "kept": 1669,
+  "removed_crossing": 7,
+  "removed_through_body": 1,
+  "removed_frac": 0.004770423375074495
+ },
+ "cc2": {
+  "candidates": 2690,
+  "kept": 2430,
+  "removed_crossing": 101,
+  "removed_through_body": 159,
+  "removed_frac": 0.09665427509293678
+ },
+ "cv": {
+  "candidates": 6879,
+  "kept": 6873,
+  "removed_crossing": 6,
+  "removed_through_body": 0,
+  "removed_frac": 0.0008722197993894509
+ },
+ "vv": {
+  "candidates": 6187,
+  "kept": 5630,
+  "removed_crossing": 542,
+  "removed_through_body": 15,
+  "removed_frac": 0.09002747696783575
+ }
+}
+before {'filaments_per_cluster_direct': 2.19, 'filaments_per_cluster_all': 5.71, 'voids_per_cluster': 4.51, 'clusters_per_void': 8.47, 'neighbour_voids_per_void': 15.22}
+  len med {'length_cc_Mpc': 378.2, 'length_cc_over_Rv': 0.8, 'length_cc2_Mpc': 762.4, 'length_cc2_over_Rv': 1.6, 'length_cv_Mpc': 645.7, 'length_cv_over_Rv': 1.3, 'length_vv_Mpc': 980.4, 'length_vv_over_Rv': 2.0}
+  ang med {'filaments_at_cluster': 98.2, 'void_links_at_cluster': 99.7, 'wall_links_at_void': 92.4, 'cluster_links_at_void': 90.4}
+after {'filaments_per_cluster_direct': 2.18, 'filaments_per_cluster_all': 5.36, 'voids_per_cluster': 4.5, 'clusters_per_void': 8.46, 'neighbour_voids_per_void': 13.83}
+  len med {'length_cc_Mpc': 377.4, 'length_cc_over_Rv': 0.8, 'length_cc2_Mpc': 730.5, 'length_cc2_over_Rv': 1.5, 'length_cv_Mpc': 645.6, 'length_cv_over_Rv': 1.3, 'length_vv_Mpc': 955.3, 'length_vv_over_Rv': 2.0}
+  ang med {'filaments_at_cluster': 99.8, 'void_links_at_cluster': 99.7, 'wall_links_at_void': 92.7, 'cluster_links_at_void': 90.4}
+{
+ "cc": {
+  "candidates": 1677,
+  "kept": 1642,
+  "removed_crossing": 34,
+  "removed_through_body": 1,
+  "removed_frac": 0.020870602265951055
+ },
+ "cc2": {
+  "candidates": 2690,
+  "kept": 2073,
+  "removed_crossing": 458,
+  "removed_through_body": 159,
+  "removed_frac": 0.229368029739777
+ },
+ "cv": {
+  "candidates": 6879,
+  "kept": 6762,
+  "removed_crossing": 117,
+  "removed_through_body": 0,
+  "removed_frac": 0.017008286088094238
+ },
+ "vv": {
+  "candidates": 6187,
+  "kept": 4304,
+  "removed_crossing": 1868,
+  "removed_through_body": 15,
+  "removed_frac": 0.30434782608695654
+ }
+}
+before {'filaments_per_cluster_direct': 2.19, 'filaments_per_cluster_all': 5.71, 'voids_per_cluster': 4.51, 'clusters_per_void': 8.47, 'neighbour_voids_per_void': 15.22}
+  len med {'length_cc_Mpc': 378.2, 'length_cc_over_Rv': 0.8, 'length_cc2_Mpc': 762.4, 'length_cc2_over_Rv': 1.6, 'length_cv_Mpc': 645.7, 'length_cv_over_Rv': 1.3, 'length_vv_Mpc': 980.4, 'length_vv_over_Rv': 2.0}
+  ang med {'filaments_at_cluster': 98.2, 'void_links_at_cluster': 99.7, 'wall_links_at_void': 92.4, 'cluster_links_at_void': 90.4}
+after {'filaments_per_cluster_direct': 2.15, 'filaments_per_cluster_all': 4.87, 'voids_per_cluster': 4.43, 'clusters_per_void': 8.32, 'neighbour_voids_per_void': 10.59}
+  len med {'length_cc_Mpc': 373.6, 'length_cc_over_Rv': 0.8, 'length_cc2_Mpc': 696.0, 'length_cc2_over_Rv': 1.4, 'length_cv_Mpc': 644.7, 'length_cv_over_Rv': 1.3, 'length_vv_Mpc': 887.7, 'length_vv_over_Rv': 1.8}
+  ang med {'filaments_at_cluster': 101.8, 'void_links_at_cluster': 99.5, 'wall_links_at_void': 93.2, 'cluster_links_at_void': 90.6}

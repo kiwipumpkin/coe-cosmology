@@ -1,0 +1,9 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+  b_random_s1_tidalcore edited=2628 left=7.08 t=8s
+  b_random_s1_tidalcore edited=2652 left=4.90 t=13s
+  b_random_s1_tidalcore edited=2676 left=2.98 t=18s
+  b_random_s1_tidalcore edited=2700 left=2.10 t=23s
+  b_random_s1_tidalcore edited=2724 left=1.31 t=36s
+  b_random_s1_tidalcore edited=2748 left=1.06 t=40s
+  b_random_s1_tidalcore edited=2772 left=0.84 t=44s
+DONE b_random_s1_tidalcore edited 2772 del 2606 left 0.839

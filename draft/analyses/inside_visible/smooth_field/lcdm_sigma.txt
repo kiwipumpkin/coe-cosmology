@@ -1,0 +1,6 @@
+check sigma8 TH(8/h Mpc)= 0.8099999999999999
+R=0.3 Gpc  sigma_Gauss=5.77e-03  sigma_tophat=2.15e-02
+R=0.5 Gpc  sigma_Gauss=2.23e-03  sigma_tophat=9.25e-03
+R=1 Gpc  sigma_Gauss=5.89e-04  sigma_tophat=2.77e-03
+R=2 Gpc  sigma_Gauss=1.51e-04  sigma_tophat=7.93e-04
+R=4 Gpc  sigma_Gauss=3.85e-05  sigma_tophat=2.21e-04

@@ -1,0 +1,10 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+    11s b_random_s2              CCCCCCVVVVVV  cold2  left=797.7 ok=True t=11
+    55s b_random_s2              CCCCCCVVVVVV  warm0  left=928.0 ok=True t=54
+   126s b_random_s2              CCCCCCVVVVVV  cold4  left=349.0 ok=True t=71
+   213s b_foam_rim_s3            CCCCCCVVVVVV  warm0  left=407.1 ok=True t=87
+   244s b_random_s2              CCCCCCVVVVVV  warm1  left=491.5 ok=True t=244
+   335s b_foam_rim_s3            CCCCCCVVVVVV  cold2  left=313.0 ok=True t=90
+   365s b_foam_rim_s3            CCCCCCVVVVVV  warm1  left=395.0 ok=True t=151
+   378s b_foam_rim_s3            CCCCCCVVVVVV  cold4  left=505.9 ok=True t=13
+   393s b_random_s2              CCCCCCVVVVVV  cold3  left=482.0 ok=True t=382

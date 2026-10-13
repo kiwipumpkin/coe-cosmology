@@ -1,0 +1,22 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+   130s smooth CCCCCCVVVVVV  warm1   left=1.50 viol=0.0e+00 maxdepth=+0.4
+   212s smooth CCCCCCVVVVVV  warm4   left=0.34 viol=1.7e-06 maxdepth=+12.8
+   214s smooth CCCCCCVVVVVV  warm3   left=0.98 viol=1.1e-04 maxdepth=+11.1
+   218s smooth CCCCCCVVVVVV  warm2   left=0.40 viol=0.0e+00 maxdepth=+11.2
+   254s smooth CCCCCCVVVVVV  cold1   left=4.75 viol=5.6e-06 maxdepth=+5.7
+   263s smooth CCCCCCVVVVVV  warm5   left=2.50 viol=5.5e-06 maxdepth=-0.3
+   266s smooth CCCCCCVVVVVV  warm0   left=1.72 viol=0.0e+00 maxdepth=+1.1
+   267s smooth CCCCCCVVVVV   warm0   left=2.13 viol=4.4e-04 maxdepth=+6.5
+   292s smooth CCCCCCVVVVVV  cold0   left=2.97 viol=0.0e+00 maxdepth=+7.9
+   297s smooth CCCCCCVVVVV   warm2   left=1.10 viol=5.3e-05 maxdepth=+2.4
+   358s smooth CCCCCCVVVVV   warm1   left=1.08 viol=0.0e+00 maxdepth=+2.9
+   370s smooth CCCCCCVVVVV   warm3   left=0.54 viol=0.0e+00 maxdepth=+16.5
+   379s smooth CCCCCCVVVVV   warm4   left=0.58 viol=2.6e-06 maxdepth=+8.1
+   409s smooth CCCCCCVVVVV   cold1   left=3.46 viol=4.1e-06 maxdepth=+8.5
+   446s smooth CCCCCCVVVVV   warm5   left=1.02 viol=2.6e-05 maxdepth=+7.9
+   478s smooth CCCCCCVVVVV   cold2   left=2.12 viol=8.1e-07 maxdepth=+17.4
+   480s smooth CCCCCCVVVVVV  cold2   left=3.96 viol=8.2e-06 maxdepth=+9.1
+   501s smooth CCCCCCVVVVV   cold3   left=2.15 viol=8.5e-05 maxdepth=+6.6
+   519s smooth CCCCCCVVVVVV  cold3   left=3.28 viol=9.0e-07 maxdepth=+6.1
+   588s smooth CCCCCCVVVVV   cold0   left=5.81 viol=0.0e+00 maxdepth=+2.2
+done 588.4111993312836

@@ -1,0 +1,10 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+foam_rim s5 voids=2500 objs=17500 t=62s ckpt
+foam_rim s5 voids=4100 objs=28700 t=124s ckpt
+foam_rim s5 voids=5300 objs=37100 t=190s ckpt
+foam_rim s5 voids=6200 objs=43400 t=257s ckpt
+foam_rim s5 voids=6900 objs=48300 t=322s ckpt
+foam_rim s5 voids=7600 objs=53200 t=390s ckpt
+foam_rim s5 voids=8400 objs=58800 t=459s ckpt
+foam_rim s5 voids=9000 objs=63000 t=526s ckpt
+foam_rim s5 voids=9600 objs=67200 t=591s ckpt

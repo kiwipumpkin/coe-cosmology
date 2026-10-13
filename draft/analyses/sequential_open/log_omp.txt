@@ -1,0 +1,8 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+DONE b_cmb_aware_s1_inside stalled N 171 live 170 left 5.352 masses 135 voids 35 inside 35 core 3 nearring 167 traj [(1, 324.49744711908045), (2, 295.35750719290957), (4, 246.6909884139564), (8, 206.76398261716983), (12, 178.72255151645447), (16, 154.37480138423214), (24, 113.16318882515735), (32, 91.06068729566337), (48, 65.24926243994517), (64, 49.0185182674097), (96, 30.160886740450948), (128, 17.58036201157251)] t 389
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15

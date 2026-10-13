@@ -1,0 +1,63 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+  stage1 reloc chunk 0 left=459.62
+  stage1 reloc chunk 40 left=54.05
+  stage1 reloc chunk 80 left=22.47
+  stage1 reloc chunk 120 left=19.55
+  stage1 reloc chunk 160 left=10.59
+  stage1 reloc chunk 200 left=6.56
+  stage1 reloc chunk 240 left=6.02
+resumed b_random_s3_tidalcore 257
+  b_random_s3_tidalcore edited=281 left=4.47 t=5s
+  b_random_s3_tidalcore edited=305 left=4.35 t=8s
+  b_random_s3_tidalcore edited=329 left=4.02 t=12s
+  b_random_s3_tidalcore edited=353 left=3.68 t=16s
+  b_random_s3_tidalcore edited=377 left=3.57 t=24s
+  b_random_s3_tidalcore edited=401 left=3.25 t=28s
+  b_random_s3_tidalcore edited=425 left=3.06 t=32s
+  b_random_s3_tidalcore edited=449 left=2.83 t=35s
+  b_random_s3_tidalcore edited=473 left=2.72 t=39s
+  b_random_s3_tidalcore edited=497 left=2.51 t=47s
+  b_random_s3_tidalcore edited=521 left=2.47 t=50s
+  b_random_s3_tidalcore edited=545 left=2.44 t=54s
+  b_random_s3_tidalcore edited=569 left=2.40 t=58s
+  b_random_s3_tidalcore edited=593 left=2.38 t=61s
+  b_random_s3_tidalcore edited=617 left=2.33 t=70s
+  b_random_s3_tidalcore edited=641 left=2.31 t=73s
+  b_random_s3_tidalcore edited=665 left=2.30 t=76s
+  b_random_s3_tidalcore edited=689 left=2.28 t=78s
+  b_random_s3_tidalcore edited=713 left=2.26 t=82s
+  b_random_s3_tidalcore edited=737 left=2.21 t=89s
+  b_random_s3_tidalcore edited=761 left=2.20 t=93s
+  b_random_s3_tidalcore edited=785 left=2.19 t=96s
+  b_random_s3_tidalcore edited=809 left=2.13 t=100s
+  b_random_s3_tidalcore edited=833 left=2.12 t=103s
+  b_random_s3_tidalcore edited=857 left=2.06 t=112s
+  b_random_s3_tidalcore edited=881 left=2.05 t=115s
+  b_random_s3_tidalcore edited=905 left=2.02 t=118s
+  b_random_s3_tidalcore edited=929 left=2.01 t=121s
+  b_random_s3_tidalcore edited=953 left=2.01 t=123s
+  b_random_s3_tidalcore edited=977 left=1.99 t=130s
+  b_random_s3_tidalcore edited=1001 left=1.98 t=132s
+  b_random_s3_tidalcore edited=1025 left=1.98 t=135s
+  b_random_s3_tidalcore edited=1049 left=1.98 t=138s
+  b_random_s3_tidalcore edited=1073 left=1.96 t=141s
+  b_random_s3_tidalcore edited=1097 left=1.93 t=148s
+  b_random_s3_tidalcore edited=1121 left=1.92 t=150s
+  b_random_s3_tidalcore edited=1145 left=1.92 t=152s
+  b_random_s3_tidalcore edited=1169 left=1.92 t=155s
+  b_random_s3_tidalcore edited=1193 left=1.92 t=158s
+  b_random_s3_tidalcore edited=1217 left=1.91 t=167s
+  b_random_s3_tidalcore edited=1241 left=1.91 t=170s
+  b_random_s3_tidalcore edited=1265 left=1.91 t=174s
+  b_random_s3_tidalcore edited=1289 left=1.91 t=176s
+  b_random_s3_tidalcore edited=1313 left=1.91 t=180s
+  b_random_s3_tidalcore edited=1337 left=1.91 t=187s
+  b_random_s3_tidalcore edited=1361 left=1.91 t=191s
+  b_random_s3_tidalcore edited=1385 left=1.90 t=194s
+  b_random_s3_tidalcore edited=1409 left=1.90 t=198s
+  b_random_s3_tidalcore edited=1433 left=1.90 t=203s
+  b_random_s3_tidalcore edited=1457 left=1.90 t=210s
+  b_random_s3_tidalcore edited=1481 left=1.90 t=214s
+  b_random_s3_tidalcore edited=1505 left=1.90 t=217s
+plateau
+DONE b_random_s3_tidalcore edited 1307 del 0 left 1.898

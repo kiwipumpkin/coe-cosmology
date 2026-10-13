@@ -1,0 +1,16 @@
+SSSSSSSS 146s best=142.9 med=237.3 feas=100/100
+CCCCCCCC 689s best=13.0 med=20.5 feas=100/100
+CCCCCCVV 995s best=7.6 med=16.5 feas=100/100
+CVVVVVVV 1222s best=37.5 med=54.2 feas=100/100
+CCVVVVVV 1237s best=7.8 med=43.7 feas=100/100
+CCCCCVVV 1312s best=5.0 med=19.2 feas=100/100
+CSSSSSSS 184s best=138.1 med=208.8 feas=100/100
+CCCCVVVV 1350s best=4.5 med=22.3 feas=100/100
+CCCCCCCV 834s best=12.3 med=18.5 feas=100/100
+CCCVVVVV 1589s best=6.8 med=33.4 feas=100/100
+VVVVVVVV 1758s best=85.3 med=87.3 feas=100/100
+CCCCCCC 479s best=16.7 med=22.9 feas=100/100
+SSSSSSS 25s best=191.1 med=237.3 feas=100/100
+CCSSSSSS 923s best=90.7 med=170.5 feas=100/100
+CCCCCSSS 1121s best=23.5 med=90.6 feas=100/100
+CCCCCCSS 1207s best=19.4 med=73.3 feas=100/100

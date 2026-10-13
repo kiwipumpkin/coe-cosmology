@@ -1,0 +1,24 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+random s5 voids=2500 objs=17500 t=61s ckpt
+random s5 voids=3900 objs=27300 t=124s ckpt
+random s5 voids=5000 objs=35000 t=190s ckpt
+random s5 voids=5900 objs=41300 t=252s ckpt
+random s5 voids=6700 objs=46900 t=318s ckpt
+random s5 voids=7400 objs=51800 t=383s ckpt
+random s5 voids=8000 objs=56000 t=446s ckpt
+random s5 voids=8600 objs=60200 t=515s ckpt
+random s5 voids=9100 objs=63700 t=578s ckpt
+random s5 voids=9600 objs=67200 t=644s ckpt
+random s5 voids=10000 objs=70000 t=706s ckpt
+random s5 voids=10400 objs=72800 t=777s ckpt
+random s5 voids=10700 objs=74900 t=841s ckpt
+random s5 voids=11000 objs=77000 t=916s ckpt
+random s5 voids=11300 objs=79100 t=994s ckpt
+random s5 voids=11500 objs=80500 t=1062s ckpt
+random s5 voids=11700 objs=81900 t=1138s ckpt
+random s5 voids=11900 objs=83300 t=1230s ckpt
+random s5 voids=12100 objs=84700 t=1330s ckpt
+random s5 voids=12200 objs=85400 t=1397s ckpt
+random s5 voids=12400 objs=86800 t=1526s ckpt
+random s5 voids=12500 objs=87500 t=1609s ckpt
+DONE {'rule': 'random', 'seed': 5, 'Rv': 1.5, 'n_obj': 88172, 'n_void': 12596, 'n_clu': 75576, 'void_vol_frac': 0.28554291069504034, 'net_kg': 1.8443038441515708e+37, 'min_gap_gpc': 0.02000336743820627, 'final_left': 1237.6070773544402, 'min_left': 234.90543688871344, 'argmin': 161, 'web_rms': 1247.5619850731136, 'final_amps': [221.00238531794824, 1198.0616436480411, 444.09264455491456, 88.85125731644683, 431.03111471686464, 61.229362841543114], 'where_all': {'n': 88172, 'inside_us': 0, 'in_core': 49273, 'beyond_42_9': 41735}, 'where_voids': {'n': 12596, 'inside_us': 0, 'in_core': 6887, 'beyond_42_9': 5896}, 'where_clusters': {'n': 75576, 'inside_us': 0, 'in_core': 42386, 'beyond_42_9': 35839}}

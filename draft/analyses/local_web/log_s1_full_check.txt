@@ -1,0 +1,11 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+s1_full_check 10/100 t=186s foam med=379.88 helped=0.000 rmsw=302.3 | unstr med=1252.70 helped=0.000 rmsw=1277.6
+s1_full_check 20/100 t=362s foam med=396.31 helped=0.000 rmsw=311.9 | unstr med=1256.60 helped=0.000 rmsw=1268.8
+s1_full_check 30/100 t=543s foam med=396.31 helped=0.000 rmsw=311.9 | unstr med=1251.16 helped=0.000 rmsw=1250.4
+s1_full_check 40/100 t=779s foam med=397.98 helped=0.000 rmsw=311.9 | unstr med=1251.16 helped=0.000 rmsw=1248.1
+s1_full_check 50/100 t=1041s foam med=399.65 helped=0.000 rmsw=314.8 | unstr med=1256.60 helped=0.000 rmsw=1250.4
+s1_full_check 60/100 t=1365s foam med=399.65 helped=0.000 rmsw=314.8 | unstr med=1295.73 helped=0.000 rmsw=1292.6
+s1_full_check 70/100 t=1652s foam med=402.05 helped=0.000 rmsw=322.1 | unstr med=1256.85 helped=0.000 rmsw=1263.6
+s1_full_check 80/100 t=1964s foam med=403.59 helped=0.000 rmsw=329.4 | unstr med=1256.85 helped=0.000 rmsw=1250.3
+s1_full_check 90/100 t=2256s foam med=404.24 helped=0.000 rmsw=322.1 | unstr med=1259.07 helped=0.000 rmsw=1251.7
+s1_full_check 100/100 t=2475s foam med=405.36 helped=0.000 rmsw=329.4 | unstr med=1252.09 helped=0.000 rmsw=1247.6

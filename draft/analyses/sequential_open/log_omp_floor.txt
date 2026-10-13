@@ -1,0 +1,33 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+  lattice_s1 N=25 left=19.40 t=0s
+  none_s0 N=25 left=19.30 t=0s
+  wave_s1 N=25 left=21.38 t=0s
+  lattice_s1 N=50 left=15.81 t=1s
+  none_s0 N=50 left=18.22 t=1s
+  wave_s1 N=50 left=48.62 t=1s
+  lattice_s1 N=75 left=22.76 t=2s
+  none_s0 N=75 left=79.46 t=2s
+  wave_s1 N=75 left=33.73 t=2s
+  none_s0 N=100 left=16.86 t=4s
+  lattice_s1 N=100 left=80.25 t=5s
+  wave_s1 N=100 left=22.15 t=5s
+  none_s0 N=125 left=18.26 t=8s
+  wave_s1 N=125 left=51.45 t=9s
+  lattice_s1 N=125 left=16.28 t=10s
+  wave_s1 N=150 left=44.00 t=15s
+  none_s0 N=150 left=29.60 t=16s
+  lattice_s1 N=150 left=13.68 t=18s
+  wave_s1 N=175 left=20.85 t=26s
+  none_s0 N=175 left=18.96 t=31s
+  lattice_s1 N=175 left=32.52 t=34s
+  wave_s1 N=200 left=24.68 t=41s
+  none_s0 N=200 left=15.66 t=54s
+  lattice_s1 N=200 left=11.96 t=58s
+  wave_s1 N=225 left=68.33 t=70s
+  none_s0 N=225 left=14.82 t=87s
+  lattice_s1 N=225 left=9.31 t=89s
+  wave_s1 N=250 left=27.16 t=118s
+  none_s0 N=250 left=31.43 t=128s
+  lattice_s1 N=250 left=15.11 t=135s

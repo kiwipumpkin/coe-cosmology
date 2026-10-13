@@ -1,0 +1,29 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+foam_rim s3 voids=2500 objs=17500 t=63s ckpt
+foam_rim s3 voids=4100 objs=28700 t=129s ckpt
+foam_rim s3 voids=4700 objs=32900 t=195s ckpt
+foam_rim s3 voids=5300 objs=37100 t=260s ckpt
+foam_rim s3 voids=5800 objs=40600 t=325s ckpt
+foam_rim s3 voids=6200 objs=43400 t=395s ckpt
+foam_rim s3 voids=6800 objs=47600 t=458s ckpt
+foam_rim s3 voids=7300 objs=51100 t=531s ckpt
+foam_rim s3 voids=7600 objs=53200 t=618s ckpt
+foam_rim s3 voids=7900 objs=55300 t=702s ckpt
+foam_rim s3 voids=8100 objs=56700 t=770s ckpt
+foam_rim s3 voids=8300 objs=58100 t=840s ckpt
+foam_rim s3 voids=8500 objs=59500 t=905s ckpt
+foam_rim s3 voids=8800 objs=61600 t=978s ckpt
+foam_rim s3 voids=9100 objs=63700 t=1045s ckpt
+foam_rim s3 voids=9400 objs=65800 t=1118s ckpt
+foam_rim s3 voids=9700 objs=67900 t=1184s ckpt
+foam_rim s3 voids=10000 objs=70000 t=1260s ckpt
+foam_rim s3 voids=10300 objs=72100 t=1329s ckpt
+foam_rim s3 voids=10700 objs=74900 t=1410s ckpt
+foam_rim s3 voids=11000 objs=77000 t=1477s ckpt
+foam_rim s3 voids=11400 objs=79800 t=1549s ckpt
+foam_rim s3 voids=11700 objs=81900 t=1615s ckpt
+foam_rim s3 voids=12000 objs=84000 t=1689s ckpt
+foam_rim s3 voids=12300 objs=86100 t=1768s ckpt
+foam_rim s3 voids=12600 objs=88200 t=1841s ckpt
+foam_rim s3 voids=12900 objs=90300 t=1917s ckpt
+DONE {'rule': 'foam_rim', 'seed': 3, 'Rv': 1.5, 'n_obj': 91539, 'n_void': 13077, 'n_clu': 78462, 'void_vol_frac': 0.2964468595712164, 'net_kg': -1.7279963945203906e+37, 'min_gap_gpc': 0.020004831045711935, 'final_left': 630.052221879863, 'min_left': 233.82103996697487, 'argmin': 134, 'web_rms': 598.3818766539985, 'final_amps': [99.72827457740178, 239.1795934326883, 225.6163071520733, 49.9637130041059, 380.9616241667802, 262.19281634760955], 'where_all': {'n': 91539, 'inside_us': 0, 'in_core': 50043, 'beyond_42_9': 42119}, 'where_voids': {'n': 13077, 'inside_us': 0, 'in_core': 7134, 'beyond_42_9': 6045}, 'where_clusters': {'n': 78462, 'inside_us': 0, 'in_core': 42909, 'beyond_42_9': 36074}}

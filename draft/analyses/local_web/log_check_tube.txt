@@ -1,0 +1,11 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+0.5 0 {'foam_power_3s': 1.005, 'foam_power_6s': 0.994, 'foam_proj_6s': 0.997, 'unstr_power_3s': 0.919, 'unstr_power_6s': 0.956, 'unstr_proj_6s': 0.958, 'foam_rms_12s': 146.379, 'unstr_rms_12s': 607.624}
+0.5 1 {'foam_power_3s': 1.015, 'foam_power_6s': 1.006, 'foam_proj_6s': 1.003, 'unstr_power_3s': 0.933, 'unstr_power_6s': 1.051, 'unstr_proj_6s': 1.004, 'foam_rms_12s': 152.595, 'unstr_rms_12s': 509.907}
+0.5 2 {'foam_power_3s': 1.011, 'foam_power_6s': 1.0, 'foam_proj_6s': 1.0, 'unstr_power_3s': 0.81, 'unstr_power_6s': 0.956, 'unstr_proj_6s': 0.967, 'foam_rms_12s': 201.046, 'unstr_rms_12s': 541.658}
+0.5 3 {'foam_power_3s': 0.996, 'foam_power_6s': 1.002, 'foam_proj_6s': 1.001, 'unstr_power_3s': 0.994, 'unstr_power_6s': 0.999, 'unstr_proj_6s': 0.98, 'foam_rms_12s': 149.744, 'unstr_rms_12s': 505.908}
+0.5 4 {'foam_power_3s': 1.007, 'foam_power_6s': 1.0, 'foam_proj_6s': 1.0, 'unstr_power_3s': 0.987, 'unstr_power_6s': 1.004, 'unstr_proj_6s': 1.0, 'foam_rms_12s': 177.051, 'unstr_rms_12s': 1527.416}
+0.25 0 {'foam_power_3s': 1.006, 'foam_power_6s': 0.998, 'foam_proj_6s': 0.999, 'unstr_power_3s': 0.87, 'unstr_power_6s': 0.946, 'unstr_proj_6s': 0.946, 'foam_rms_12s': 69.062, 'unstr_rms_12s': 316.278}
+0.25 1 {'foam_power_3s': 1.007, 'foam_power_6s': 0.999, 'foam_proj_6s': 0.999, 'unstr_power_3s': 0.858, 'unstr_power_6s': 0.92, 'unstr_proj_6s': 0.94, 'foam_rms_12s': 74.163, 'unstr_rms_12s': 355.06}
+0.25 2 {'foam_power_3s': 0.99, 'foam_power_6s': 0.998, 'foam_proj_6s': 0.999, 'unstr_power_3s': 0.903, 'unstr_power_6s': 0.94, 'unstr_proj_6s': 0.955, 'foam_rms_12s': 67.975, 'unstr_rms_12s': 490.96}
+0.25 3 {'foam_power_3s': 1.019, 'foam_power_6s': 1.0, 'foam_proj_6s': 1.0, 'unstr_power_3s': 0.825, 'unstr_power_6s': 0.948, 'unstr_proj_6s': 0.943, 'foam_rms_12s': 78.249, 'unstr_rms_12s': 232.591}
+0.25 4 {'foam_power_3s': 1.016, 'foam_power_6s': 0.999, 'foam_proj_6s': 0.999, 'unstr_power_3s': 0.981, 'unstr_power_6s': 1.003, 'unstr_proj_6s': 0.987, 'foam_rms_12s': 76.221, 'unstr_rms_12s': 460.95}

@@ -1,0 +1,41 @@
+{
+ "n": 96,
+ "offset_gpc_median": 7.943077084704678,
+ "offset_gpc_p10_p90": [
+  2.596165391783644,
+  25.100911298112294
+ ],
+ "offset_in_Rv_median": 4.7587032477312565,
+ "frac_cluster_nearer_us": 0.8645833333333334,
+ "frac_cos_radial_neg": 0.9270833333333334,
+ "median_cos_radial": -0.5122912654715277,
+ "frac_cluster_toward_coe": 0.8125,
+ "median_cos_coe": 0.24875181748755332,
+ "median_abs_cos_tangential": 0.17935619155682775,
+ "median_abs_cos_vertical": 0.9303657835988344,
+ "frac_mostly_tangential": 0.125,
+ "frac_mostly_radial": 0.15625,
+ "frac_mostly_vertical": 0.71875,
+ "median_void_dist": 20.891847995985593,
+ "median_clu_dist": 19.44152501916959,
+ "median_void_ring_dist": 9.852165761223945,
+ "median_clu_ring_dist": 6.565916421638532,
+ "frac_clu_closer_to_ring": 0.8645833333333334,
+ "median_abs_z_void": 8.08792692074816,
+ "median_abs_z_clu": 5.0089316195895,
+ "median_azimuth_sep_deg": 4.846248318077965,
+ "void_angle_from_coe": [
+  43.13076912147966,
+  68.42785434665278,
+  147.499232526399
+ ],
+ "clu_angle_from_coe": [
+  32.7384042358883,
+  63.367135691552754,
+  141.769887021787
+ ],
+ "frac_void_in_coe_hemisphere": 0.59375,
+ "frac_clu_in_coe_hemisphere": 0.5729166666666666,
+ "frac_partner_is_nearest_void": 0.4166666666666667,
+ "mass_ratio": 1.0
+}

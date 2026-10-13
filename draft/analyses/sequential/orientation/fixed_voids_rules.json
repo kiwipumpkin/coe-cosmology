@@ -1,0 +1,54 @@
+{
+ "0": {
+  "as fitted": 38.174052922472306,
+  "toward_us": 3841333.1841240013,
+  "away_from_us": 321.2871440198353,
+  "toward_CoE": 433.6139139707608,
+  "away_from_CoE": 300.6263078162565,
+  "tangential": 301.32028482739935,
+  "toward_ring_plane": 248.04259743487154,
+  "away_from_ring_plane": 315.41369703803946,
+  "random (median of 200)": 494.18381567567894,
+  "voids only (clusters removed)": 408.93417613972696,
+  "clusters only (voids removed)": 332.9599118381685
+ },
+ "1": {
+  "as fitted": 44.99814593413954,
+  "toward_us": 2184.090393127602,
+  "away_from_us": 297.17199137216346,
+  "toward_CoE": 381.4725337668015,
+  "away_from_CoE": 268.3855715317299,
+  "tangential": 279.1004867822994,
+  "toward_ring_plane": 333.231881928382,
+  "away_from_ring_plane": 293.2817911289916,
+  "random (median of 200)": 365.46246151025287,
+  "voids only (clusters removed)": 347.1527556310419,
+  "clusters only (voids removed)": 244.1138270447183
+ },
+ "2": {
+  "as fitted": 29.124356558363573,
+  "toward_us": 12764.567943641881,
+  "away_from_us": 334.656288539902,
+  "toward_CoE": 449.85697061254467,
+  "away_from_CoE": 299.245549603686,
+  "tangential": 311.20423867809995,
+  "toward_ring_plane": 285.9463336823191,
+  "away_from_ring_plane": 334.6430707807041,
+  "random (median of 200)": 412.2499079620332,
+  "voids only (clusters removed)": 397.175073214133,
+  "clusters only (voids removed)": 300.49442919938633
+ },
+ "3": {
+  "as fitted": 27.39934353021529,
+  "toward_us": 24190.68682973217,
+  "away_from_us": 271.7902711732899,
+  "toward_CoE": 699.6845025305727,
+  "away_from_CoE": 271.9511379636753,
+  "tangential": 252.4594518447082,
+  "toward_ring_plane": 411.2708060967385,
+  "away_from_ring_plane": 273.1712431048483,
+  "random (median of 200)": 482.3624431093156,
+  "voids only (clusters removed)": 341.7812244470641,
+  "clusters only (voids removed)": 245.52161744948634
+ }
+}

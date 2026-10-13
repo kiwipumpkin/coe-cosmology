@@ -1,0 +1,13 @@
+*.pkl
+*.npy
+*.npz
+*.h5
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+.env*
+_tmp*/

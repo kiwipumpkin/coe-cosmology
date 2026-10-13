@@ -1,0 +1,6 @@
+b_random_s2_tidalcore
+b_foam_rim_s3_tidalcore
+b_random_s1_tidalcore
+b_foam_rim_s1_tidalcore
+b_random_s3_tidalcore
+b_foam_rim_s2_tidalcore

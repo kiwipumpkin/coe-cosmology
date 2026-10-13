@@ -1,0 +1,17 @@
+foam_rim 1 1.5
+foam_rim 2 1.5
+foam_rim 3 1.5
+alternate 1 1.5
+alternate 2 1.5
+alternate 3 1.5
+coe_bias 1 1.5
+coe_bias 2 1.5
+coe_bias 3 1.5
+random 1 1.5
+random 2 1.5
+random 3 1.5
+cmb_aware 1 1.5
+cmb_aware 2 1.5
+cmb_aware 3 1.5
+foam_rim 1 1.0
+random 1 1.0

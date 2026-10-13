@@ -1,0 +1,6 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+seed 0 left 25.93 voids 48 where {'n': 48, 'inside_us': 12, 'in_core': 4, 'beyond_42_9': 0}
+seed 1 left 16.56 voids 48 where {'n': 48, 'inside_us': 9, 'in_core': 6, 'beyond_42_9': 0}
+seed 2 left 16.79 voids 48 where {'n': 48, 'inside_us': 14, 'in_core': 7, 'beyond_42_9': 0}
+seed 3 left 19.57 voids 48 where {'n': 48, 'inside_us': 13, 'in_core': 8, 'beyond_42_9': 0}
+DONE A shallow best 1 16.563253541637042

@@ -1,0 +1,195 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+tasks 192
+    12s free   m N=32 cold2      left= 137.932 ok=True soft=0.000 {} in=8 core=0 t=12
+    19s free   m N=32 cold4      left=   0.986 ok=True soft=0.000 {} in=31 core=0 t=19
+    20s free   m N=32 warm_r3    left=   1.425 ok=True soft=0.000 {} in=7 core=2 t=20
+    20s free   m N=32 warm_r5    left=   0.174 ok=True soft=0.000 {} in=0 core=4 t=20
+    21s free   m N=32 warm0      left=   0.167 ok=True soft=0.000 {} in=12 core=5 t=21
+    21s free   m N=32 warm_r1    left=   2.320 ok=True soft=0.000 {} in=10 core=2 t=21
+    31s free   m N=32 cold7      left=   0.814 ok=True soft=0.000 {} in=32 core=0 t=19
+    37s free   m N=32 cold6      left=   9.146 ok=True soft=0.000 {} in=30 core=0 t=37
+    41s cont   m N=32 warm0      left=   3.968 ok=True soft=20.290 {'cont': 20.289648386431367} in=12 core=2 t=22
+    42s cont   m N=32 warm_r1    left=   6.811 ok=True soft=3.083 {'cont': 3.082935402443786} in=12 core=3 t=22
+    43s cont   m N=32 warm_r3    left=   6.398 ok=True soft=21.364 {'cont': 21.364014733139154} in=11 core=3 t=22
+    45s cont   m N=32 cold6      left= 123.648 ok=True soft=0.558 {'cont': 0.5578629835813015} in=3 core=0 t=9
+    48s cont   m N=32 cold4      left=  11.549 ok=True soft=3.767 {'cont': 3.7666086598867583} in=32 core=0 t=27
+    50s cont   m N=32 cold2      left=  33.774 ok=True soft=1.021 {'cont': 1.021118111281383} in=1 core=2 t=30
+    53s cont   m N=32 warm_r5    left=   5.305 ok=True soft=22.241 {'cont': 22.240528018627188} in=11 core=7 t=22
+    67s free   n N=32 cold2      left=   3.344 ok=True soft=0.000 {} in=31 core=0 t=21
+    69s cont   m N=32 cold7      left=   4.406 ok=True soft=0.095 {'cont': 0.09518192050306229} in=9 core=4 t=28
+    72s free   n N=32 warm0      left=  11.940 ok=True soft=0.000 {} in=12 core=3 t=30
+    88s free   n N=32 cold4      left=  20.077 ok=True soft=0.000 {} in=27 core=2 t=38
+    96s free   n N=32 warm_r1    left=  20.087 ok=True soft=0.000 {} in=11 core=3 t=53
+   100s free   n N=32 warm_r5    left=   7.099 ok=True soft=0.000 {} in=11 core=1 t=47
+   100s free   n N=32 warm_r3    left=  18.810 ok=True soft=0.000 {} in=12 core=0 t=52
+   106s free   n N=32 cold6      left=   1.582 ok=True soft=0.000 {} in=20 core=2 t=39
+   109s free   n N=32 cold7      left=   5.997 ok=True soft=0.000 {} in=30 core=1 t=40
+   114s cont   n N=32 warm0      left=  14.471 ok=True soft=1.115 {'cont': 1.1148279895039042} in=12 core=0 t=42
+   120s cont   n N=32 cold4      left= 157.283 ok=True soft=0.993 {'cont': 0.992696956563295} in=1 core=0 t=20
+   131s cont   n N=32 cold6      left=   0.907 ok=True soft=0.622 {'cont': 0.6223860317988321} in=17 core=2 t=23
+   132s cont   n N=32 warm_r3    left=   4.884 ok=True soft=0.680 {'cont': 0.6803461496732115} in=10 core=2 t=32
+   132s free   m N=24 warm0      left=   0.034 ok=True soft=0.000 {} in=12 core=1 t=12
+   141s cont   n N=32 warm_r1    left=  19.127 ok=True soft=1.327 {'cont': 1.3273214122028851} in=10 core=2 t=53
+   142s free   m N=24 cold2      left=  34.728 ok=True soft=0.000 {} in=0 core=3 t=11
+   143s free   m N=24 warm_r1    left=   0.119 ok=True soft=0.000 {} in=0 core=3 t=11
+   143s free   m N=24 warm_r3    left=   3.157 ok=True soft=0.000 {} in=10 core=2 t=11
+   144s free   m N=24 cold7      left= 129.876 ok=True soft=0.000 {} in=4 core=0 t=1
+   145s cont   n N=32 cold2      left=  41.903 ok=True soft=1.001 {'cont': 1.0012741829606984} in=23 core=1 t=49
+   146s free   m N=24 cold6      left=  65.194 ok=True soft=0.000 {} in=6 core=0 t=3
+   148s cont   m N=24 cold2      left=  99.177 ok=True soft=2.676 {'cont': 2.676079516178318} in=3 core=0 t=2
+   150s free   m N=24 cold4      left=  44.300 ok=True soft=0.000 {} in=20 core=2 t=9
+   154s free   m N=24 warm_r5    left=   4.535 ok=True soft=0.000 {} in=10 core=3 t=12
+   156s cont   n N=32 cold7      left=  60.928 ok=True soft=0.089 {'cont': 0.08858257059970964} in=4 core=3 t=42
+   156s cont   m N=24 warm0      left=   2.248 ok=True soft=20.158 {'cont': 20.157802894644387} in=12 core=4 t=12
+   162s cont   m N=24 warm_r1    left=   2.193 ok=True soft=1.090 {'cont': 1.0903444453698905} in=9 core=4 t=17
+   164s cont   n N=32 warm_r5    left=   8.567 ok=True soft=5.614 {'cont': 5.6138261781266285} in=10 core=2 t=58
+   165s cont   m N=24 cold4      left=   6.014 ok=True soft=0.322 {'cont': 0.32154016742083713} in=12 core=3 t=15
+   166s cont   m N=24 warm_r3    left=   1.251 ok=True soft=0.534 {'cont': 0.5344903249072508} in=8 core=3 t=18
+   166s cont   m N=24 warm_r5    left=   4.731 ok=True soft=19.597 {'cont': 19.597284509557454} in=10 core=1 t=13
+   167s cont   m N=24 cold7      left= 102.622 ok=True soft=2.793 {'cont': 2.792510162940256} in=24 core=0 t=11
+   171s free   n N=24 cold4      left=   8.725 ok=True soft=0.000 {} in=23 core=0 t=5
+   173s cont   m N=24 cold6      left=  22.265 ok=True soft=3.017 {'cont': 3.017337989308495} in=24 core=0 t=17
+   175s free   n N=24 warm0      left=   7.038 ok=True soft=0.000 {} in=12 core=3 t=12
+   176s free   n N=24 cold2      left=   2.678 ok=True soft=0.000 {} in=20 core=1 t=11
+   184s free   n N=24 warm_r1    left=   1.867 ok=True soft=0.000 {} in=0 core=5 t=20
+   187s free   n N=24 cold7      left= 107.148 ok=True soft=0.000 {} in=10 core=2 t=15
+   190s free   n N=24 warm_r5    left=  13.006 ok=True soft=0.000 {} in=10 core=1 t=23
+   193s cont   n N=24 warm_r1    left=   4.309 ok=True soft=0.483 {'cont': 0.483025154114459} in=8 core=2 t=17
+   194s free   n N=24 cold6      left=   2.114 ok=True soft=0.000 {} in=12 core=4 t=22
+   197s free   n N=24 warm_r3    left=  18.682 ok=True soft=0.000 {} in=12 core=1 t=30
+   197s cont   n N=24 warm0      left=  13.616 ok=True soft=1.647 {'cont': 1.6472944523871929} in=12 core=5 t=22
+   206s free   m N=20 warm0      left=   0.069 ok=True soft=0.000 {} in=10 core=1 t=9
+   207s cont   n N=24 cold2      left=   3.690 ok=True soft=0.520 {'cont': 0.5204297383847379} in=9 core=2 t=23
+   209s cont   n N=24 warm_r3    left=   9.503 ok=True soft=0.691 {'cont': 0.6914615557270483} in=10 core=2 t=21
+   210s free   m N=20 cold2      left= 151.879 ok=True soft=0.000 {} in=20 core=0 t=2
+   210s cont   n N=24 cold4      left=   2.424 ok=True soft=1.370 {'cont': 1.3700390995837721} in=18 core=0 t=20
+   214s free   m N=20 cold4      left= 138.627 ok=True soft=0.000 {} in=4 core=0 t=5
+   214s free   m N=20 warm_r1    left=   0.164 ok=True soft=0.000 {} in=0 core=4 t=9
+   215s cont   n N=24 warm_r5    left=   9.244 ok=True soft=1.907 {'cont': 1.9071636913636187} in=10 core=3 t=23
+   216s free   m N=20 cold6      left=  96.953 ok=True soft=0.000 {} in=1 core=0 t=2
+   217s cont   n N=24 cold6      left=   4.702 ok=True soft=0.272 {'cont': 0.2724591160647205} in=5 core=1 t=24
+   218s cont   n N=24 cold7      left=  25.675 ok=True soft=0.105 {'cont': 0.10487996810746632} in=1 core=4 t=21
+   221s free   m N=20 warm_r3    left=   0.158 ok=True soft=0.000 {} in=0 core=3 t=12
+   222s free   m N=20 cold7      left=   2.594 ok=True soft=0.000 {} in=18 core=2 t=7
+   222s free   m N=20 warm_r5    left=   0.223 ok=True soft=0.000 {} in=0 core=3 t=12
+   226s cont   m N=20 warm0      left=   4.738 ok=True soft=20.395 {'cont': 20.395398443809967} in=10 core=1 t=11
+   226s cont   m N=20 cold6      left= 132.922 ok=True soft=1.526 {'cont': 1.5263150831156418} in=10 core=0 t=4
+   227s cont   m N=20 cold7      left= 187.081 ok=True soft=1.974 {'cont': 1.9740599055673667} in=0 core=0 t=1
+   228s cont   m N=20 warm_r1    left=   1.325 ok=True soft=0.018 {'cont': 0.017788270338084444} in=0 core=6 t=11
+   228s cont   m N=20 warm_r3    left=   4.960 ok=True soft=20.415 {'cont': 20.414848611888523} in=10 core=1 t=10
+   229s cont   m N=20 cold2      left=   2.789 ok=True soft=2.821 {'cont': 2.820693365751528} in=19 core=0 t=12
+   231s cont   m N=20 warm_r5    left=   5.608 ok=True soft=19.690 {'cont': 19.68950287126313} in=10 core=1 t=9
+   237s cont   m N=20 cold4      left= 134.970 ok=True soft=2.569 {'cont': 2.568959287004487} in=16 core=0 t=16
+   240s free   n N=20 cold4      left=  26.028 ok=True soft=0.000 {} in=18 core=0 t=11
+   243s free   n N=20 cold2      left=   7.789 ok=True soft=0.000 {} in=13 core=1 t=15
+   243s free   n N=20 warm_r1    left=   6.883 ok=True soft=0.000 {} in=0 core=5 t=15
+   244s free   n N=20 warm_r3    left=   6.478 ok=True soft=0.000 {} in=0 core=4 t=16
+   245s free   n N=20 warm_r5    left=   6.819 ok=True soft=0.000 {} in=0 core=3 t=15
+   249s free   n N=20 warm0      left=   6.489 ok=True soft=0.000 {} in=10 core=0 t=22
+   252s free   n N=20 cold6      left=   8.149 ok=True soft=0.000 {} in=18 core=1 t=15
+   255s cont   n N=20 warm_r3    left=   0.974 ok=True soft=0.000 {'cont': 0.00044689689817495326} in=0 core=4 t=10
+   257s free   n N=20 cold7      left=   2.350 ok=True soft=0.000 {} in=14 core=0 t=17
+   257s cont   n N=20 warm0      left=  13.951 ok=True soft=1.562 {'cont': 1.5617047344994237} in=10 core=1 t=15
+   258s cont   n N=20 warm_r1    left=   5.784 ok=True soft=0.076 {'cont': 0.07634294142008063} in=0 core=4 t=16
+   260s cont   n N=20 cold7      left= 163.987 ok=True soft=1.918 {'cont': 1.9179414977393152} in=0 core=0 t=3
+   262s cont   n N=20 cold2      left= 113.135 ok=True soft=1.749 {'cont': 1.7494954849720696} in=7 core=10 t=18
+   263s free   m N=16 warm0      left=   0.108 ok=True soft=0.000 {} in=0 core=3 t=6
+   264s free   m N=16 cold4      left= 159.661 ok=True soft=0.000 {} in=0 core=0 t=1
+   265s free   m N=16 warm_r1    left=   0.193 ok=True soft=0.000 {} in=0 core=2 t=6
+   266s free   m N=16 cold2      left=  17.295 ok=True soft=0.000 {} in=15 core=0 t=6
+   266s cont   n N=20 cold4      left= 120.385 ok=True soft=1.851 {'cont': 1.851241664900915} in=15 core=3 t=18
+   267s cont   n N=20 warm_r5    left=   7.895 ok=True soft=0.475 {'cont': 0.47539496343339727} in=8 core=2 t=15
+   267s free   m N=16 cold7      left=  94.679 ok=True soft=0.000 {} in=0 core=0 t=2
+   268s free   m N=16 warm_r3    left=   0.147 ok=True soft=0.000 {} in=0 core=4 t=6
+   271s free   m N=16 warm_r5    left=   0.119 ok=True soft=0.000 {} in=0 core=3 t=6
+   271s free   m N=16 cold6      left=  15.570 ok=True soft=0.000 {} in=16 core=0 t=6
+   272s cont   m N=16 warm0      left=   0.933 ok=True soft=0.024 {'cont': 0.023576951574646954} in=0 core=2 t=6
+   275s cont   n N=20 cold6      left=  54.141 ok=True soft=0.414 {'cont': 0.41359402947296564} in=8 core=2 t=20
+   275s cont   m N=16 warm_r3    left=   0.881 ok=True soft=0.039 {'cont': 0.038670337068531624} in=0 core=3 t=7
+   276s cont   m N=16 warm_r1    left=   2.393 ok=True soft=0.617 {'cont': 0.617494556584046} in=0 core=1 t=10
+   280s cont   m N=16 cold2      left=  11.180 ok=True soft=0.746 {'cont': 0.7457559749069359} in=6 core=1 t=13
+   280s cont   m N=16 cold4      left=  13.379 ok=True soft=1.365 {'cont': 1.3651013261363107} in=14 core=0 t=9
+   280s cont   m N=16 warm_r5    left=   0.493 ok=True soft=1.011 {'cont': 1.010566496056301} in=0 core=3 t=9
+   282s cont   m N=16 cold6      left=  10.925 ok=True soft=3.091 {'cont': 3.09099967237875} in=16 core=0 t=10
+   282s free   n N=16 warm0      left=   4.388 ok=True soft=0.000 {} in=0 core=4 t=7
+   283s cont   m N=16 cold7      left=  99.305 ok=True soft=0.351 {'cont': 0.35093817544446804} in=7 core=0 t=9
+   284s free   n N=16 cold2      left= 235.760 ok=True soft=0.000 {} in=0 core=1 t=3
+   285s free   n N=16 warm_r1    left=   2.079 ok=True soft=0.000 {} in=0 core=3 t=8
+   289s free   n N=16 warm_r3    left=   2.223 ok=True soft=0.000 {} in=0 core=2 t=9
+   290s free   n N=16 cold4      left=  57.669 ok=True soft=0.000 {} in=1 core=5 t=9
+   291s free   n N=16 cold7      left=   1.896 ok=True soft=0.000 {} in=11 core=0 t=8
+   292s cont   n N=16 cold4      left= 175.356 ok=False soft=1.505 {'cont': 1.504625090701478} in=10 core=0 t=1
+   293s free   n N=16 warm_r5    left=   5.501 ok=True soft=0.000 {} in=0 core=5 t=11
+   294s cont   n N=16 warm0      left=   5.194 ok=True soft=0.069 {'cont': 0.06874654942858893} in=0 core=2 t=10
+   294s free   n N=16 cold6      left=  28.520 ok=True soft=0.000 {} in=9 core=4 t=12
+   295s cont   n N=16 warm_r1    left=   2.123 ok=True soft=0.419 {'cont': 0.418770880875328} in=0 core=4 t=11
+   299s free   m N=12 warm0      left=   0.073 ok=True soft=0.000 {} in=0 core=2 t=4
+   299s cont   n N=16 cold2      left=  10.056 ok=True soft=0.870 {'cont': 0.8695399386605733} in=5 core=2 t=10
+   299s free   m N=12 warm_r1    left=   0.091 ok=True soft=0.000 {} in=0 core=2 t=4
+   300s cont   n N=16 warm_r3    left=   2.508 ok=True soft=0.004 {'cont': 0.004479133182015704} in=0 core=4 t=11
+   302s free   m N=12 warm_r3    left=   0.070 ok=True soft=0.000 {} in=0 core=3 t=2
+   302s free   m N=12 cold2      left=   1.958 ok=True soft=0.000 {} in=9 core=1 t=4
+   303s free   m N=12 cold4      left=  14.474 ok=True soft=0.000 {} in=9 core=0 t=4
+   304s cont   n N=16 warm_r5    left=   5.613 ok=True soft=0.648 {'cont': 0.6484935169871031} in=0 core=4 t=11
+   305s free   m N=12 warm_r5    left=   0.378 ok=True soft=0.000 {} in=0 core=2 t=4
+   306s free   m N=12 cold6      left=  80.019 ok=True soft=0.000 {} in=11 core=0 t=4
+   307s cont   n N=16 cold6      left= 106.575 ok=True soft=0.609 {'cont': 0.6092115007371225} in=6 core=0 t=13
+   307s cont   n N=16 cold7      left=  38.685 ok=True soft=0.751 {'cont': 0.751017340348409} in=10 core=2 t=13
+   307s cont   m N=12 cold4      left= 153.314 ok=True soft=1.279 {'cont': 1.2785626428245052} in=0 core=0 t=1
+   307s free   m N=12 cold7      left=   1.377 ok=True soft=0.000 {} in=9 core=1 t=5
+   308s cont   m N=12 warm0      left=   0.950 ok=True soft=0.034 {'cont': 0.033789813958405135} in=0 core=2 t=4
+   308s cont   m N=12 warm_r1    left=   0.767 ok=True soft=0.031 {'cont': 0.03067419671982735} in=0 core=2 t=4
+   310s cont   m N=12 warm_r3    left=   1.271 ok=True soft=0.018 {'cont': 0.017689999585542904} in=0 core=3 t=5
+   312s cont   m N=12 warm_r5    left=   0.865 ok=True soft=0.016 {'cont': 0.01552005075887447} in=0 core=2 t=5
+   312s cont   m N=12 cold2      left=   4.670 ok=True soft=0.821 {'cont': 0.8208956641316529} in=0 core=2 t=8
+   314s cont   m N=12 cold6      left=   3.902 ok=True soft=2.370 {'cont': 2.369514926969642} in=12 core=0 t=7
+   314s cont   m N=12 cold7      left=   3.767 ok=True soft=2.813 {'cont': 2.8134105176786575} in=12 core=0 t=7
+   315s free   n N=12 cold6      left= 154.033 ok=True soft=0.000 {} in=0 core=0 t=1
+   315s free   n N=12 warm_r1    left=   7.044 ok=True soft=0.000 {} in=0 core=3 t=7
+   315s free   n N=12 warm0      left=   5.351 ok=True soft=0.000 {} in=0 core=2 t=8
+   316s free   n N=12 cold4      left=   7.110 ok=True soft=0.000 {} in=11 core=0 t=4
+   317s cont   n N=12 cold2      left= 146.174 ok=True soft=1.118 {'cont': 1.11815789678655} in=10 core=0 t=1
+   318s free   n N=12 cold2      left=  45.505 ok=True soft=0.000 {} in=8 core=3 t=8
+   318s free   n N=12 warm_r3    left=   3.290 ok=True soft=0.000 {} in=0 core=2 t=7
+   321s cont   n N=12 cold4      left=  25.473 ok=True soft=0.054 {'cont': 0.053852740486319606} in=0 core=3 t=3
+   321s free   n N=12 warm_r5    left=   6.251 ok=True soft=0.000 {} in=0 core=3 t=7
+   323s cont   n N=12 warm_r1    left=   6.461 ok=True soft=0.284 {'cont': 0.28448913417373456} in=0 core=2 t=7
+   323s cont   n N=12 warm0      left=   5.318 ok=True soft=0.060 {'cont': 0.059528009587848874} in=0 core=2 t=8
+   323s free   m N= 8 warm0      left=   0.177 ok=True soft=0.000 {} in=8 core=0 t=0
+   324s free   n N=12 cold7      left=  98.246 ok=True soft=0.000 {} in=8 core=0 t=10
+   326s cont   n N=12 warm_r3    left=   6.668 ok=True soft=0.270 {'cont': 0.2697279863105626} in=0 core=2 t=8
+   326s cont   n N=12 cold6      left=  55.026 ok=True soft=1.645 {'cont': 1.6450495637137095} in=11 core=0 t=5
+   326s cont   n N=12 cold7      left=  49.760 ok=True soft=1.282 {'cont': 1.2822525308793753} in=10 core=0 t=5
+   326s free   m N= 8 cold2      left= 149.893 ok=True soft=0.000 {} in=8 core=0 t=3
+   326s free   m N= 8 cold4      left=  83.572 ok=True soft=0.000 {} in=0 core=0 t=1
+   326s cont   m N= 8 warm0      left=   0.177 ok=True soft=2.428 {'cont': 2.4277482346083668} in=8 core=0 t=0
+   326s cont   n N=12 warm_r5    left=   6.760 ok=True soft=0.270 {'cont': 0.26953275107108265} in=0 core=2 t=8
+   327s free   m N= 8 cold7      left= 133.882 ok=True soft=0.000 {} in=6 core=0 t=0
+   327s cont   m N= 8 cold2      left= 155.603 ok=True soft=2.789 {'cont': 2.7893463729707517} in=0 core=0 t=0
+   327s free   m N= 8 warm_r1    left=   1.327 ok=True soft=0.000 {} in=8 core=0 t=4
+   327s free   m N= 8 cold6      left= 194.230 ok=True soft=0.000 {} in=0 core=0 t=1
+   328s free   m N= 8 warm_r3    left=   0.603 ok=True soft=0.000 {} in=8 core=0 t=4
+   329s cont   m N= 8 cold7      left= 192.122 ok=True soft=2.035 {'cont': 2.0347768254592427} in=4 core=0 t=0
+   330s cont   m N= 8 cold4      left= 121.839 ok=True soft=1.833 {'cont': 1.8330482104079842} in=5 core=0 t=3
+   330s free   m N= 8 warm_r5    left=   1.269 ok=True soft=0.000 {} in=8 core=0 t=4
+   330s cont   m N= 8 warm_r3    left=   5.334 ok=True soft=2.428 {'cont': 2.4277479486032805} in=8 core=0 t=4
+   331s cont   m N= 8 warm_r5    left=   4.491 ok=True soft=2.428 {'cont': 2.427748158503764} in=8 core=0 t=4
+   332s cont   m N= 8 cold6      left= 125.672 ok=True soft=0.897 {'cont': 0.8968183052082224} in=7 core=0 t=5
+   334s free   n N= 8 cold4      left=  89.323 ok=True soft=0.000 {} in=0 core=3 t=3
+   334s cont   m N= 8 warm_r1    left=   3.360 ok=True soft=2.001 {'cont': 2.0009597027666333} in=5 core=2 t=8
+   335s free   n N= 8 cold2      left=  63.745 ok=True soft=0.000 {} in=3 core=3 t=4
+   335s free   n N= 8 cold6      left= 213.110 ok=False soft=0.000 {} in=3 core=0 t=1
+   336s free   n N= 8 warm0      left=  33.619 ok=True soft=0.000 {} in=8 core=0 t=7
+   336s cont   n N= 8 cold2      left= 179.491 ok=True soft=1.616 {'cont': 1.6155686587046039} in=0 core=3 t=0
+   336s free   n N= 8 warm_r3    left=  10.430 ok=True soft=0.000 {} in=5 core=2 t=5
+   336s free   n N= 8 cold7      left= 176.603 ok=True soft=0.000 {} in=1 core=0 t=2
+   337s free   n N= 8 warm_r1    left=  19.848 ok=True soft=0.000 {} in=8 core=0 t=7
+   337s free   n N= 8 warm_r5    left=  11.043 ok=True soft=0.000 {} in=5 core=1 t=5
+   339s cont   n N= 8 cold4      left= 114.760 ok=True soft=2.428 {'cont': 2.427744682678153} in=8 core=0 t=3
+   340s cont   n N= 8 cold7      left= 171.590 ok=True soft=2.596 {'cont': 2.5962019342865066} in=8 core=0 t=3
+   341s cont   n N= 8 warm_r3    left=  11.997 ok=True soft=0.975 {'cont': 0.9754661943237208} in=5 core=2 t=5
+   342s cont   n N= 8 cold6      left=  22.715 ok=True soft=0.345 {'cont': 0.34532951639409737} in=0 core=3 t=5
+   342s cont   n N= 8 warm_r1    left=  21.120 ok=True soft=2.428 {'cont': 2.427748169322591} in=8 core=0 t=7
+   343s cont   n N= 8 warm_r5    left=  18.655 ok=True soft=2.428 {'cont': 2.427745840285712} in=8 core=0 t=7
+   343s cont   n N= 8 warm0      left=  29.872 ok=True soft=2.428 {'cont': 2.4277481877496596} in=8 core=0 t=8
+done 343.04706025123596

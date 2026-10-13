@@ -1,0 +1,24 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+random s5 voids=2500 objs=17500 t=62s ckpt
+random s5 voids=3900 objs=27300 t=128s ckpt
+random s5 voids=5000 objs=35000 t=189s ckpt
+random s5 voids=5800 objs=40600 t=251s ckpt
+random s5 voids=6600 objs=46200 t=318s ckpt
+random s5 voids=7200 objs=50400 t=379s ckpt
+random s5 voids=7900 objs=55300 t=449s ckpt
+random s5 voids=8500 objs=59500 t=517s ckpt
+random s5 voids=9100 objs=63700 t=592s ckpt
+random s5 voids=9600 objs=67200 t=662s ckpt
+random s5 voids=10000 objs=70000 t=725s ckpt
+random s5 voids=10400 objs=72800 t=794s ckpt
+random s5 voids=10800 objs=75600 t=873s ckpt
+random s5 voids=11100 objs=77700 t=947s ckpt
+random s5 voids=11400 objs=79800 t=1026s ckpt
+random s5 voids=11600 objs=81200 t=1093s ckpt
+random s5 voids=11800 objs=82600 t=1162s ckpt
+random s5 voids=12000 objs=84000 t=1245s ckpt
+random s5 voids=12200 objs=85400 t=1337s ckpt
+random s5 voids=12400 objs=86800 t=1453s ckpt
+random s5 voids=12500 objs=87500 t=1519s ckpt
+random s5 voids=12600 objs=88200 t=1606s ckpt
+DONE {'rule': 'random', 'seed': 5, 'Rv': 1.5, 'n_obj': 88732, 'n_void': 12676, 'n_clu': 76056, 'void_vol_frac': 0.2818680269728322, 'net_kg': -3.9876839873547476e+36, 'min_gap_gpc': 0.020000126942240043, 'final_left': 3050.0923734397247, 'min_left': 229.6219188571716, 'argmin': 104, 'web_rms': 3003.222606283316, 'final_amps': [2679.5892037215676, 1432.9868766733384, 1555.8742200592308, 446.3994391287112, 859.6619380918185, 630.4870258656006], 'where_all': {'n': 88732, 'inside_us': 1482, 'in_core': 48356, 'beyond_42_9': 41247}, 'where_voids': {'n': 12676, 'inside_us': 207, 'in_core': 6798, 'beyond_42_9': 5796}, 'where_clusters': {'n': 76056, 'inside_us': 1275, 'in_core': 41558, 'beyond_42_9': 35451}}

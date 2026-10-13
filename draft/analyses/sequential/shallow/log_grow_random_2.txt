@@ -1,0 +1,7 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+random 2 1000 0s
+random 2 2000 0s
+random 2 3000 0s
+random 2 4000 1s
+random 2 5000 3s
+DONE {'rule': 'random', 'seed': 2, 'n_void': 5771, 'void_vol_frac': 0.30333726359830504, 'final': 423.80350883978394, 'min': 237.25774727436274, 'start': 237.25774727436274, 'min_gap': inf, 'n_near_ring': 56}

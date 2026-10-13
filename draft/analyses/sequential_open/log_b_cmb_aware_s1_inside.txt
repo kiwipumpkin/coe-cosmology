@@ -1,0 +1,27 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+cmb_aware s1 voids=1100 objs=7700 t=61s ckpt
+cmb_aware s1 voids=1800 objs=12600 t=126s ckpt
+cmb_aware s1 voids=2100 objs=14700 t=190s ckpt
+cmb_aware s1 voids=2400 objs=16800 t=266s ckpt
+cmb_aware s1 voids=2700 objs=18900 t=359s ckpt
+cmb_aware s1 voids=2900 objs=20300 t=420s ckpt
+cmb_aware s1 voids=3200 objs=22400 t=504s ckpt
+cmb_aware s1 voids=3400 objs=23800 t=618s ckpt
+cmb_aware s1 voids=3600 objs=25200 t=741s ckpt
+cmb_aware s1 voids=3700 objs=25900 t=824s ckpt
+cmb_aware s1 voids=3800 objs=26600 t=896s ckpt
+cmb_aware s1 voids=4000 objs=28000 t=998s ckpt
+cmb_aware s1 voids=4200 objs=29400 t=1082s ckpt
+cmb_aware s1 voids=4400 objs=30800 t=1183s ckpt
+cmb_aware s1 voids=4600 objs=32200 t=1273s ckpt
+cmb_aware s1 voids=4800 objs=33600 t=1354s ckpt
+cmb_aware s1 voids=5000 objs=35000 t=1421s ckpt
+cmb_aware s1 voids=5200 objs=36400 t=1500s ckpt
+cmb_aware s1 voids=5400 objs=37800 t=1576s ckpt
+cmb_aware s1 voids=5600 objs=39200 t=1656s ckpt
+cmb_aware s1 voids=5800 objs=40600 t=1737s ckpt
+cmb_aware s1 voids=6000 objs=42000 t=1817s ckpt
+cmb_aware s1 voids=6200 objs=43400 t=1894s ckpt
+cmb_aware s1 voids=6400 objs=44800 t=1974s ckpt
+cmb_aware s1 voids=6600 objs=46200 t=2047s ckpt
+DONE {'rule': 'cmb_aware', 'seed': 1, 'Rv': 1.5, 'n_obj': 47110, 'n_void': 6730, 'n_clu': 40380, 'void_vol_frac': 0.33867203044874833, 'net_kg': 1.0218440217596541e+37, 'min_gap_gpc': 0.020100454343176644, 'final_left': 369.81417338450876, 'min_left': 36.250870801778284, 'argmin': 44953, 'web_rms': 433.4896283220161, 'final_amps': [184.29889589956116, 49.53829565580778, 93.1298694515154, 69.54051191059642, 3.2389825132971173, 77.21357738815068], 'where_all': {'n': 47110, 'inside_us': 1645, 'in_core': 0, 'beyond_42_9': 0}, 'where_voids': {'n': 6730, 'inside_us': 235, 'in_core': 0, 'beyond_42_9': 0}, 'where_clusters': {'n': 40380, 'inside_us': 1410, 'in_core': 0, 'beyond_42_9': 0}}

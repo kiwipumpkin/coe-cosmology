@@ -1,0 +1,9 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+HCP_AB alone jitter 0.00: helped/hurt vs 237.3 = 1/0  med=102.6 min=102.6 p95=102.6  tuned med=102.6
+HCP_AB alone jitter 0.10: helped/hurt vs 237.3 = 666/334  med=214.8 min=109.1 p95=334.2  tuned med=172.5
+HCP_AB alone jitter 0.25: helped/hurt vs 237.3 = 112/888  med=342.0 min=151.3 p95=817.6  tuned med=214.0
+HCP_AB alone jitter 0.50: helped/hurt vs 237.3 = 51/949  med=416.2 min=186.6 p95=1157.8  tuned med=229.0
+BCC_CsCl with4 jitter 0.00: helped/hurt vs 88.8 = 1/0  med=39.3 min=39.3 p95=39.3  tuned med=39.3
+BCC_CsCl with4 jitter 0.10: helped/hurt vs 88.8 = 881/119  med=69.6 min=42.6 p95=102.6  tuned med=66.5
+BCC_CsCl with4 jitter 0.25: helped/hurt vs 88.8 = 178/822  med=116.8 min=56.1 p95=266.7  tuned med=84.5
+BCC_CsCl with4 jitter 0.50: helped/hurt vs 88.8 = 16/984  med=150.8 min=68.8 p95=355.9  tuned med=87.8

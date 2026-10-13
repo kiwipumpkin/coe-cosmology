@@ -1,0 +1,152 @@
+{
+ "L=0|s=1": {
+  "frac_pos": 0.423,
+  "flip_deg_from_CoE": [
+   54.4,
+   124.9
+  ]
+ },
+ "L=0|s=7": {
+  "frac_pos": 0.422,
+  "flip_deg_from_CoE": [
+   51.8,
+   122.6
+  ]
+ },
+ "L=0|s=14": {
+  "frac_pos": 0.419,
+  "flip_deg_from_CoE": [
+   48.7,
+   120.1
+  ]
+ },
+ "L=2|s=1": {
+  "frac_pos": 0.423,
+  "flip_deg_from_CoE": [
+   54.4,
+   124.9
+  ]
+ },
+ "L=2|s=7": {
+  "frac_pos": 0.422,
+  "flip_deg_from_CoE": [
+   51.8,
+   122.6
+  ]
+ },
+ "L=2|s=14": {
+  "frac_pos": 0.419,
+  "flip_deg_from_CoE": [
+   48.7,
+   120.1
+  ]
+ },
+ "L=4|s=1": {
+  "frac_pos": 0.423,
+  "flip_deg_from_CoE": [
+   54.4,
+   124.9
+  ]
+ },
+ "L=4|s=7": {
+  "frac_pos": 0.421,
+  "flip_deg_from_CoE": [
+   51.8,
+   122.6
+  ]
+ },
+ "L=4|s=14": {
+  "frac_pos": 0.419,
+  "flip_deg_from_CoE": [
+   48.6,
+   120.1
+  ]
+ },
+ "L=6.07|s=1": {
+  "frac_pos": 0.42,
+  "flip_deg_from_CoE": [
+   54.1,
+   125.1
+  ]
+ },
+ "L=6.07|s=7": {
+  "frac_pos": 0.419,
+  "flip_deg_from_CoE": [
+   51.5,
+   122.8
+  ]
+ },
+ "L=6.07|s=14": {
+  "frac_pos": 0.416,
+  "flip_deg_from_CoE": [
+   48.3,
+   120.2
+  ]
+ },
+ "L=10|s=1": {
+  "frac_pos": 0.39,
+  "flip_deg_from_CoE": [
+   52.0,
+   127.2
+  ]
+ },
+ "L=10|s=7": {
+  "frac_pos": 0.389,
+  "flip_deg_from_CoE": [
+   49.2,
+   124.8
+  ]
+ },
+ "L=10|s=14": {
+  "frac_pos": 0.386,
+  "flip_deg_from_CoE": [
+   45.8,
+   122.0
+  ]
+ },
+ "L=20|s=1": {
+  "frac_pos": 0.253,
+  "flip_deg_from_CoE": [
+   41.2,
+   137.8
+  ]
+ },
+ "L=20|s=7": {
+  "frac_pos": 0.253,
+  "flip_deg_from_CoE": [
+   38.2,
+   135.1
+  ]
+ },
+ "L=20|s=14": {
+  "frac_pos": 0.252,
+  "flip_deg_from_CoE": [
+   34.3,
+   132.1
+  ]
+ },
+ "L=50|s=1": {
+  "frac_pos": 0.0,
+  "flip_deg_from_CoE": []
+ },
+ "L=50|s=7": {
+  "frac_pos": 0.0,
+  "flip_deg_from_CoE": []
+ },
+ "L=50|s=14": {
+  "frac_pos": 0.0,
+  "flip_deg_from_CoE": []
+ },
+ "L=922.65|s=1": {
+  "frac_pos": 0.0,
+  "flip_deg_from_CoE": []
+ },
+ "L=922.65|s=7": {
+  "frac_pos": 0.0,
+  "flip_deg_from_CoE": []
+ },
+ "L=922.65|s=14": {
+  "frac_pos": 0.0,
+  "flip_deg_from_CoE": []
+ }
+}

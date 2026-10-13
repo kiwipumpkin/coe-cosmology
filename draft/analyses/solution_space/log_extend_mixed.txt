@@ -1,0 +1,5 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+mixed start CCCCVVVV stored 4.46 re-encoded 4.46
+N=9 CCCCVVVVC left=2.96x (mass-add 2.956392245121635, void-add 3.698391661655084) top modes m=[10, 9, 12] caps M:1 V:2 t=53s
+N=10 CCCCVVVVCC left=1.26x (mass-add 1.2629236374207329, void-add 1.2984648550907327) top modes m=[10, 12, 11] caps M:0 V:2 t=82s
+N=11 CCCCVVVVCCV left=0.58x (mass-add 0.588388420352894, void-add 0.5822412229371297) top modes m=[12, 11, 10] caps M:0 V:3 t=114s

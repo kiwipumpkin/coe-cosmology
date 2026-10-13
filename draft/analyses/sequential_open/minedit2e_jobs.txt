@@ -1,0 +1,15 @@
+3 b_random_s1_tidalcore
+4 b_random_s1_tidalcore
+5 b_random_s1_tidalcore
+3 b_random_s2_tidalcore
+4 b_random_s2_tidalcore
+5 b_random_s2_tidalcore
+3 b_random_s3_tidalcore
+4 b_random_s3_tidalcore
+5 b_random_s3_tidalcore
+4 b_foam_rim_s1_tidalcore
+6 b_foam_rim_s1_tidalcore
+4 b_foam_rim_s2_tidalcore
+6 b_foam_rim_s2_tidalcore
+4 b_foam_rim_s3_tidalcore
+6 b_foam_rim_s3_tidalcore

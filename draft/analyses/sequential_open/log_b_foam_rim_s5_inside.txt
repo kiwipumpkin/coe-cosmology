@@ -1,0 +1,6 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+foam_rim s5 voids=2400 objs=16800 t=62s ckpt
+foam_rim s5 voids=4000 objs=28000 t=126s ckpt
+foam_rim s5 voids=5000 objs=35000 t=187s ckpt
+foam_rim s5 voids=5700 objs=39900 t=260s ckpt
+DONE {'rule': 'foam_rim', 'seed': 5, 'Rv': 1.5, 'n_obj': 42742, 'n_void': 6106, 'n_clu': 36636, 'void_vol_frac': 0.30727064159287626, 'net_kg': 9.221519220757854e+36, 'min_gap_gpc': 0.020048614888416305, 'final_left': 1074.6087107076314, 'min_left': 234.16598703224358, 'argmin': 568, 'web_rms': 1023.823733704935, 'final_amps': [950.8443896491631, 426.6128763796621, 522.8974420138894, 346.0893474904825, 122.96664180608613, 257.90668214817487], 'where_all': {'n': 42742, 'inside_us': 1435, 'in_core': 0, 'beyond_42_9': 0}, 'where_voids': {'n': 6106, 'inside_us': 205, 'in_core': 0, 'beyond_42_9': 0}, 'where_clusters': {'n': 36636, 'inside_us': 1230, 'in_core': 0, 'beyond_42_9': 0}}

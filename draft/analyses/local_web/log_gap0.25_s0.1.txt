@@ -1,0 +1,5 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+gap0.25_s0.1 10/40 t=395s foam med=237.33 helped=0.200 rmsw=1.4 | unstr med=237.51 helped=0.500 rmsw=30.6
+gap0.25_s0.1 20/40 t=795s foam med=237.32 helped=0.200 rmsw=1.4 | unstr med=236.99 helped=0.550 rmsw=30.8
+gap0.25_s0.1 30/40 t=1201s foam med=237.34 helped=0.167 rmsw=1.4 | unstr med=237.79 helped=0.467 rmsw=31.9
+gap0.25_s0.1 40/40 t=1620s foam med=237.32 helped=0.250 rmsw=1.4 | unstr med=237.58 helped=0.475 rmsw=31.9

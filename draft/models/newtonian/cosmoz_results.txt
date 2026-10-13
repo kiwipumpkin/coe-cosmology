@@ -1,0 +1,80 @@
+D=20 M=0x  horizon (max present distance reachable, min over angles)=3.54 Gpc  shell-crossing=False (out to r=0.00 Gpc)  infall now out to r=0.00 Gpc  max rel speed within 100 Mpc=0.053c  our speed now=4.67c
+   R=1.00 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 78.8 (0° 78.8 180° 78.8)
+   R=3.00 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 101.4 (0° 101.4 180° 101.4)
+   R=3.45 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 107.6 (0° 107.6 180° 107.6)
+D=20 M=1x  horizon (max present distance reachable, min over angles)=3.46 Gpc  shell-crossing=False (out to r=0.00 Gpc)  infall now out to r=6.92 Gpc  max rel speed within 100 Mpc=13683520568280.969c  our speed now=4.37c
+   R=1.00 Gpc  ln-based H: 0° 76.7 45° 71.8 90° 66.2 135° 71.6 180° 77.6 mean 69.9 anis 16% | cones75 0:71.1 45:70.2 90:69.3 135:70.2 180:71.0 | cz-based mean 78.7 (0° 87.4 180° 88.6)
+   R=3.00 Gpc  ln-based H: 0° 73.5 45° 71.0 90° 68.0 135° 70.7 180° 74.4 mean 69.9 anis 9% | cones75 0:70.6 45:70.1 90:69.6 135:70.1 180:70.5 | cz-based mean 101.3 (0° 108.6 180° 110.5)
+   R=3.40 Gpc  ln-based H: 0° 72.9 45° 70.8 90° 68.4 135° 70.6 180° 73.5 mean 70.0 anis 7% | cones75 0:70.5 45:70.1 90:69.7 135:70.1 180:70.4 | cz-based mean 106.8 (0° 113.4 180° 114.8)
+D=20 M=4x  horizon (max present distance reachable, min over angles)=3.29 Gpc  shell-crossing=True (out to r=-347524925278673920.00 Gpc)  infall now out to r=11.00 Gpc  max rel speed within 100 Mpc=43869127660700.812c  our speed now=3.57c
+   R=1.00 Gpc  ln-based H: 0° 90.9 45° 75.0 90° 56.5 135° 74.1 180° 93.0 mean 68.5 anis 53% | cones75 0:72.7 45:69.5 90:66.5 135:69.4 180:72.0 | cz-based mean 77.2 (0° 106.2 180° 109.0)
+   R=3.00 Gpc  ln-based H: 0° 81.1 45° 72.6 90° 63.4 135° 71.5 180° 83.3 mean 69.3 anis 29% | cones75 0:71.5 45:69.9 90:68.2 135:69.7 180:70.9 | cz-based mean 100.3 (0° 125.0 180° 130.0)
+   R=3.20 Gpc  ln-based H: 0° 80.2 45° 72.3 90° 64.2 135° 71.2 180° 82.2 mean 69.4 anis 26% | cones75 0:71.3 45:70.0 90:68.4 135:69.8 180:70.8 | cz-based mean 103.1 (0° 126.9 180° 131.6)
+D=20 M=10x  horizon (max present distance reachable, min over angles)=3.05 Gpc  shell-crossing=True (out to r=-166389141109867520.00 Gpc)  infall now out to r=14.92 Gpc  max rel speed within 100 Mpc=78937371672799.234c  our speed now=2.29c
+   R=1.00 Gpc  ln-based H: 0° 107.6 45° 77.5 90° 41.4 135° 75.6 180° 110.4 mean 64.7 anis 107% | cones75 0:73.0 45:66.8 90:61.0 135:66.2 180:71.4 | cz-based mean 73.1 (0° 129.5 180° 133.4)
+   R=3.00 Gpc  ln-based H: 0° 90.1 45° 73.6 90° 57.7 135° 71.0 180° 92.7 mean 67.6 anis 52% | cones75 0:71.6 45:68.9 90:65.7 135:68.3 180:70.2 | cz-based mean 97.6 (0° 146.2 180° 152.6)
+   R=3.00 Gpc  ln-based H: 0° 90.1 45° 73.6 90° 57.7 135° 71.0 180° 92.7 mean 67.6 anis 52% | cones75 0:71.6 45:68.9 90:65.7 135:68.3 180:70.2 | cz-based mean 97.6 (0° 146.2 180° 152.6)
+D=30 M=0x  horizon (max present distance reachable, min over angles)=3.54 Gpc  shell-crossing=False (out to r=0.00 Gpc)  infall now out to r=0.00 Gpc  max rel speed within 100 Mpc=0.053c  our speed now=7.00c
+   R=1.00 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 78.8 (0° 78.8 180° 78.8)
+   R=3.00 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 101.4 (0° 101.4 180° 101.4)
+   R=3.45 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 107.6 (0° 107.6 180° 107.6)
+D=30 M=1x  horizon (max present distance reachable, min over angles)=3.46 Gpc  shell-crossing=False (out to r=0.00 Gpc)  infall now out to r=10.38 Gpc  max rel speed within 100 Mpc=30787921278528.762c  our speed now=6.55c
+   R=1.00 Gpc  ln-based H: 0° 76.9 45° 71.8 90° 66.2 135° 71.6 180° 77.5 mean 69.9 anis 16% | cones75 0:71.1 45:70.2 90:69.3 135:70.2 180:71.0 | cz-based mean 78.7 (0° 87.6 180° 88.4)
+   R=3.00 Gpc  ln-based H: 0° 73.6 45° 71.0 90° 68.0 135° 70.8 180° 74.2 mean 69.9 anis 9% | cones75 0:70.6 45:70.1 90:69.6 135:70.1 180:70.5 | cz-based mean 101.3 (0° 108.9 180° 110.1)
+   R=3.40 Gpc  ln-based H: 0° 73.0 45° 70.7 90° 68.4 135° 70.6 180° 73.4 mean 70.0 anis 7% | cones75 0:70.5 45:70.1 90:69.7 135:70.1 180:70.4 | cz-based mean 106.8 (0° 113.6 180° 114.5)
+D=30 M=4x  horizon (max present distance reachable, min over angles)=3.29 Gpc  shell-crossing=False (out to r=0.00 Gpc)  infall now out to r=16.50 Gpc  max rel speed within 100 Mpc=98705537236496.609c  our speed now=5.36c
+   R=1.00 Gpc  ln-based H: 0° 91.2 45° 74.9 90° 56.4 135° 74.3 180° 92.6 mean 68.5 anis 53% | cones75 0:72.6 45:69.5 90:66.5 135:69.4 180:72.2 | cz-based mean 77.2 (0° 106.6 180° 108.5)
+   R=3.00 Gpc  ln-based H: 0° 81.4 45° 72.5 90° 63.4 135° 71.7 180° 82.9 mean 69.3 anis 28% | cones75 0:71.4 45:69.9 90:68.3 135:69.8 180:71.0 | cz-based mean 100.3 (0° 125.8 180° 129.1)
+   R=3.20 Gpc  ln-based H: 0° 80.5 45° 72.2 90° 64.2 135° 71.5 180° 81.8 mean 69.4 anis 25% | cones75 0:71.2 45:69.9 90:68.4 135:69.8 180:70.9 | cz-based mean 103.1 (0° 127.6 180° 130.7)
+D=30 M=10x  horizon (max present distance reachable, min over angles)=3.06 Gpc  shell-crossing=True (out to r=-92685713435056768.00 Gpc)  infall now out to r=22.39 Gpc  max rel speed within 100 Mpc=177609086263985.625c  our speed now=3.43c
+   R=1.00 Gpc  ln-based H: 0° 108.1 45° 77.2 90° 41.4 135° 76.0 180° 109.9 mean 64.7 anis 106% | cones75 0:72.8 45:66.7 90:61.0 135:66.3 180:71.7 | cz-based mean 73.1 (0° 130.1 180° 132.8)
+   R=3.00 Gpc  ln-based H: 0° 90.5 45° 73.2 90° 57.8 135° 71.5 180° 92.2 mean 67.6 anis 51% | cones75 0:71.3 45:68.8 90:65.7 135:68.4 180:70.4 | cz-based mean 97.6 (0° 147.3 180° 151.6)
+   R=3.00 Gpc  ln-based H: 0° 90.5 45° 73.2 90° 57.8 135° 71.5 180° 92.2 mean 67.6 anis 51% | cones75 0:71.3 45:68.8 90:65.7 135:68.4 180:70.4 | cz-based mean 97.6 (0° 147.3 180° 151.6)
+D=40 M=0x  horizon (max present distance reachable, min over angles)=3.54 Gpc  shell-crossing=False (out to r=0.00 Gpc)  infall now out to r=0.00 Gpc  max rel speed within 100 Mpc=0.053c  our speed now=9.34c
+   R=1.00 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 78.8 (0° 78.8 180° 78.8)
+   R=3.00 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 101.4 (0° 101.4 180° 101.4)
+   R=3.45 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 107.6 (0° 107.6 180° 107.6)
+D=40 M=1x  horizon (max present distance reachable, min over angles)=3.46 Gpc  shell-crossing=False (out to r=0.00 Gpc)  infall now out to r=13.84 Gpc  max rel speed within 100 Mpc=54734082272875.539c  our speed now=8.73c
+   R=1.00 Gpc  ln-based H: 0° 76.9 45° 71.8 90° 66.2 135° 71.6 180° 77.4 mean 69.9 anis 16% | cones75 0:71.1 45:70.2 90:69.3 135:70.2 180:71.0 | cz-based mean 78.7 (0° 87.7 180° 88.3)
+   R=3.00 Gpc  ln-based H: 0° 73.7 45° 70.9 90° 68.0 135° 70.8 180° 74.2 mean 69.9 anis 9% | cones75 0:70.6 45:70.1 90:69.6 135:70.1 180:70.5 | cz-based mean 101.3 (0° 109.0 180° 109.9)
+   R=3.40 Gpc  ln-based H: 0° 73.0 45° 70.7 90° 68.4 135° 70.6 180° 73.3 mean 70.0 anis 7% | cones75 0:70.5 45:70.1 90:69.7 135:70.1 180:70.4 | cz-based mean 106.8 (0° 113.7 180° 114.4)
+D=40 M=4x  horizon (max present distance reachable, min over angles)=3.29 Gpc  shell-crossing=True (out to r=-2900215910467421184.00 Gpc)  infall now out to r=22.01 Gpc  max rel speed within 100 Mpc=175476510642606.125c  our speed now=7.15c
+   R=1.00 Gpc  ln-based H: 0° 91.4 45° 74.8 90° 56.4 135° 74.4 180° 92.4 mean 68.5 anis 53% | cones75 0:72.6 45:69.5 90:66.5 135:69.4 180:72.2 | cz-based mean 77.2 (0° 106.9 180° 108.3)
+   R=3.00 Gpc  ln-based H: 0° 81.6 45° 72.4 90° 63.4 135° 71.8 180° 82.7 mean 69.3 anis 28% | cones75 0:71.4 45:69.9 90:68.3 135:69.8 180:71.1 | cz-based mean 100.3 (0° 126.2 180° 128.6)
+   R=3.20 Gpc  ln-based H: 0° 80.7 45° 72.1 90° 64.3 135° 71.6 180° 81.7 mean 69.4 anis 25% | cones75 0:71.2 45:69.9 90:68.4 135:69.9 180:71.0 | cz-based mean 103.1 (0° 127.9 180° 130.3)
+D=40 M=10x  horizon (max present distance reachable, min over angles)=3.06 Gpc  shell-crossing=True (out to r=-185921271019545760.00 Gpc)  infall now out to r=29.85 Gpc  max rel speed within 100 Mpc=315749486691656.750c  our speed now=4.58c
+   R=1.00 Gpc  ln-based H: 0° 108.3 45° 77.1 90° 41.3 135° 76.2 180° 109.7 mean 64.7 anis 106% | cones75 0:72.6 45:66.6 90:61.0 135:66.4 180:71.8 | cz-based mean 73.1 (0° 130.4 180° 132.4)
+   R=3.00 Gpc  ln-based H: 0° 90.7 45° 73.0 90° 57.9 135° 71.7 180° 92.0 mean 67.6 anis 51% | cones75 0:71.2 45:68.8 90:65.7 135:68.5 180:70.6 | cz-based mean 97.6 (0° 147.8 180° 151.0)
+   R=3.00 Gpc  ln-based H: 0° 90.7 45° 73.0 90° 57.9 135° 71.7 180° 92.0 mean 67.6 anis 51% | cones75 0:71.2 45:68.8 90:65.7 135:68.5 180:70.6 | cz-based mean 97.6 (0° 147.8 180° 151.0)
+D=50 M=0x  horizon (max present distance reachable, min over angles)=3.54 Gpc  shell-crossing=False (out to r=0.00 Gpc)  infall now out to r=0.00 Gpc  max rel speed within 100 Mpc=0.053c  our speed now=11.67c
+   R=1.00 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 78.8 (0° 78.8 180° 78.8)
+   R=3.00 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 101.4 (0° 101.4 180° 101.4)
+   R=3.45 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 107.6 (0° 107.6 180° 107.6)
+D=50 M=1x  horizon (max present distance reachable, min over angles)=3.46 Gpc  shell-crossing=False (out to r=0.00 Gpc)  infall now out to r=17.30 Gpc  max rel speed within 100 Mpc=85522003551320.375c  our speed now=10.92c
+   R=1.00 Gpc  ln-based H: 0° 77.0 45° 71.7 90° 66.2 135° 71.7 180° 77.3 mean 69.9 anis 16% | cones75 0:71.1 45:70.2 90:69.3 135:70.2 180:71.0 | cz-based mean 78.7 (0° 87.8 180° 88.2)
+   R=3.00 Gpc  ln-based H: 0° 73.7 45° 70.9 90° 68.0 135° 70.8 180° 74.1 mean 69.9 anis 9% | cones75 0:70.6 45:70.1 90:69.6 135:70.1 180:70.5 | cz-based mean 101.3 (0° 109.1 180° 109.8)
+   R=3.40 Gpc  ln-based H: 0° 73.1 45° 70.7 90° 68.4 135° 70.7 180° 73.3 mean 70.0 anis 7% | cones75 0:70.5 45:70.1 90:69.7 135:70.1 180:70.4 | cz-based mean 106.8 (0° 113.8 180° 114.3)
+D=50 M=4x  horizon (max present distance reachable, min over angles)=3.29 Gpc  shell-crossing=True (out to r=-2917907419544500224.00 Gpc)  infall now out to r=27.51 Gpc  max rel speed within 100 Mpc=274182047879038.812c  our speed now=8.93c
+   R=1.00 Gpc  ln-based H: 0° 91.5 45° 74.8 90° 56.4 135° 74.4 180° 92.3 mean 68.5 anis 52% | cones75 0:72.5 45:69.5 90:66.5 135:69.4 180:72.3 | cz-based mean 77.2 (0° 107.0 180° 108.1)
+   R=3.00 Gpc  ln-based H: 0° 81.7 45° 72.4 90° 63.4 135° 71.9 180° 82.6 mean 69.3 anis 28% | cones75 0:71.3 45:69.9 90:68.3 135:69.8 180:71.1 | cz-based mean 100.3 (0° 126.4 180° 128.4)
+   R=3.20 Gpc  ln-based H: 0° 80.8 45° 72.0 90° 64.3 135° 71.6 180° 81.6 mean 69.4 anis 25% | cones75 0:71.2 45:69.9 90:68.5 135:69.9 180:71.0 | cz-based mean 103.1 (0° 128.2 180° 130.0)
+D=50 M=10x  horizon (max present distance reachable, min over angles)=3.06 Gpc  shell-crossing=True (out to r=-363127482460049984.00 Gpc)  infall now out to r=37.31 Gpc  max rel speed within 100 Mpc=493358572955799.812c  our speed now=5.72c
+   R=1.00 Gpc  ln-based H: 0° 108.4 45° 77.0 90° 41.3 135° 76.3 180° 109.5 mean 64.7 anis 105% | cones75 0:72.6 45:66.6 90:61.0 135:66.4 180:71.9 | cz-based mean 73.1 (0° 130.6 180° 132.2)
+   R=3.00 Gpc  ln-based H: 0° 90.9 45° 72.9 90° 57.9 135° 71.9 180° 91.9 mean 67.6 anis 50% | cones75 0:71.2 45:68.8 90:65.7 135:68.5 180:70.6 | cz-based mean 97.6 (0° 148.1 180° 150.7)
+   R=3.00 Gpc  ln-based H: 0° 90.9 45° 72.9 90° 57.9 135° 71.9 180° 91.9 mean 67.6 anis 50% | cones75 0:71.2 45:68.8 90:65.7 135:68.5 180:70.6 | cz-based mean 97.6 (0° 148.1 180° 150.7)
+D=60 M=0x  horizon (max present distance reachable, min over angles)=3.54 Gpc  shell-crossing=False (out to r=0.00 Gpc)  infall now out to r=0.00 Gpc  max rel speed within 100 Mpc=0.053c  our speed now=14.01c
+   R=1.00 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 78.8 (0° 78.8 180° 78.8)
+   R=3.00 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 101.4 (0° 101.4 180° 101.4)
+   R=3.45 Gpc  ln-based H: 0° 70.0 45° 70.0 90° 70.0 135° 70.0 180° 70.0 mean 70.0 anis 0% | cones75 0:70.0 45:70.0 90:70.0 135:70.0 180:70.0 | cz-based mean 107.6 (0° 107.6 180° 107.6)
+D=60 M=1x  horizon (max present distance reachable, min over angles)=3.46 Gpc  shell-crossing=False (out to r=0.00 Gpc)  infall now out to r=20.76 Gpc  max rel speed within 100 Mpc=123151685113866.734c  our speed now=13.10c
+   R=1.00 Gpc  ln-based H: 0° 77.0 45° 71.7 90° 66.2 135° 71.7 180° 77.3 mean 69.9 anis 16% | cones75 0:71.1 45:70.2 90:69.3 135:70.2 180:71.0 | cz-based mean 78.7 (0° 87.8 180° 88.2)
+   R=3.00 Gpc  ln-based H: 0° 73.8 45° 70.9 90° 68.0 135° 70.8 180° 74.1 mean 69.9 anis 9% | cones75 0:70.6 45:70.1 90:69.6 135:70.1 180:70.5 | cz-based mean 101.3 (0° 109.1 180° 109.8)
+   R=3.40 Gpc  ln-based H: 0° 73.1 45° 70.7 90° 68.4 135° 70.7 180° 73.3 mean 70.0 anis 7% | cones75 0:70.5 45:70.1 90:69.7 135:70.1 180:70.4 | cz-based mean 106.8 (0° 113.8 180° 114.3)
+D=60 M=4x  horizon (max present distance reachable, min over angles)=3.29 Gpc  shell-crossing=True (out to r=-1463343517050637568.00 Gpc)  infall now out to r=33.01 Gpc  max rel speed within 100 Mpc=394822148945789.312c  our speed now=10.72c
+   R=1.00 Gpc  ln-based H: 0° 91.6 45° 74.7 90° 56.4 135° 74.4 180° 92.3 mean 68.5 anis 52% | cones75 0:72.5 45:69.5 90:66.5 135:69.4 180:72.3 | cz-based mean 77.2 (0° 107.1 180° 108.0)
+   R=3.00 Gpc  ln-based H: 0° 81.8 45° 72.3 90° 63.4 135° 71.9 180° 82.5 mean 69.3 anis 27% | cones75 0:71.3 45:69.9 90:68.3 135:69.8 180:71.1 | cz-based mean 100.3 (0° 126.6 180° 128.2)
+   R=3.20 Gpc  ln-based H: 0° 80.8 45° 72.0 90° 64.3 135° 71.7 180° 81.5 mean 69.4 anis 25% | cones75 0:71.2 45:69.9 90:68.5 135:69.9 180:71.0 | cz-based mean 103.1 (0° 128.3 180° 129.9)
+D=60 M=10x  horizon (max present distance reachable, min over angles)=3.06 Gpc  shell-crossing=True (out to r=-95755049052397024.00 Gpc)  infall now out to r=44.77 Gpc  max rel speed within 100 Mpc=710436345056402.250c  our speed now=6.87c
+   R=1.00 Gpc  ln-based H: 0° 108.5 45° 77.0 90° 41.3 135° 76.3 180° 109.4 mean 64.7 anis 105% | cones75 0:72.5 45:66.6 90:61.0 135:66.5 180:72.0 | cz-based mean 73.1 (0° 130.8 180° 132.1)
+   R=3.00 Gpc  ln-based H: 0° 90.9 45° 72.8 90° 57.9 135° 72.0 180° 91.8 mean 67.6 anis 50% | cones75 0:71.1 45:68.7 90:65.7 135:68.5 180:70.7 | cz-based mean 97.7 (0° 148.3 180° 150.5)
+   R=3.00 Gpc  ln-based H: 0° 90.9 45° 72.8 90° 57.9 135° 72.0 180° 91.8 mean 67.6 anis 50% | cones75 0:71.1 45:68.7 90:65.7 135:68.5 180:70.7 | cz-based mean 97.7 (0° 148.3 180° 150.5)

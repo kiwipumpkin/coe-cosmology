@@ -1,0 +1,8 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+cmb_aware 2 1000 63s
+cmb_aware 2 2000 141s
+cmb_aware 2 3000 238s
+cmb_aware 2 4000 353s
+cmb_aware 2 5000 525s
+cmb_aware 2 6000 735s
+DONE shallow cmb_aware 2 final 162.91677080470893 saved 162.91677080470893

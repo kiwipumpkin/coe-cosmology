@@ -1,0 +1,88 @@
+{
+ "in05": {
+  "extreme 50 Mpc": {
+   "cmb_rms_random_over_floor": 34.114175039906854,
+   "needed_over_floor": 237.25774727019066,
+   "chi": 68.81723470431402,
+   "dof": 40,
+   "n_sigma": 52.5372392886231,
+   "n_sigma_method": "Wilson-Hilferty chi2->Gaussian"
+  },
+  "typical \u00b10.3, 50 Mpc": {
+   "cmb_rms_random_over_floor": 17.988078680126712,
+   "needed_over_floor": 237.25774727019066,
+   "chi": 130.51105858565114,
+   "dof": 40,
+   "n_sigma": 87.59452444479888,
+   "n_sigma_method": "Wilson-Hilferty chi2->Gaussian"
+  },
+  "extreme 30 Mpc": {
+   "cmb_rms_random_over_floor": 29.94893556702697,
+   "needed_over_floor": 237.25774727019066,
+   "chi": 78.38820131724539,
+   "dof": 40,
+   "n_sigma": 58.5119797136914,
+   "n_sigma_method": "Wilson-Hilferty chi2->Gaussian"
+  },
+  "extreme 100 Mpc": {
+   "cmb_rms_random_over_floor": 41.54168827270131,
+   "needed_over_floor": 237.25774727019066,
+   "chi": 56.5129461049865,
+   "dof": 40,
+   "n_sigma": 44.42979318753981,
+   "n_sigma_method": "Wilson-Hilferty chi2->Gaussian"
+  },
+  "LCDM": {
+   "cmb_rms_random_over_floor": 11.583442931183486,
+   "needed_over_floor": 237.25774727019066,
+   "chi": 216.68844885498095,
+   "dof": 40,
+   "n_sigma": 128.1853868282894,
+   "note": "inner region only, 300 realizations",
+   "n_sigma_method": "Wilson-Hilferty chi2->Gaussian"
+  }
+ },
+ "both10": {
+  "extreme 50 Mpc": {
+   "cmb_rms_random_over_floor": 27.462890124274015,
+   "needed_over_floor": 237.25774727019066,
+   "chi": 105.03029643338738,
+   "dof": 40,
+   "n_sigma": 73.98729446282643,
+   "n_sigma_method": "Wilson-Hilferty chi2->Gaussian"
+  },
+  "typical \u00b10.3, 50 Mpc": {
+   "cmb_rms_random_over_floor": 14.480919669352344,
+   "needed_over_floor": 237.25774727019066,
+   "chi": 199.18869495386525,
+   "dof": 40,
+   "n_sigma": 120.45913399162959,
+   "n_sigma_method": "Wilson-Hilferty chi2->Gaussian"
+  },
+  "extreme 30 Mpc": {
+   "cmb_rms_random_over_floor": 24.10975278909953,
+   "needed_over_floor": 237.25774727019066,
+   "chi": 119.63770495291656,
+   "dof": 40,
+   "n_sigma": 81.90739372388155,
+   "n_sigma_method": "Wilson-Hilferty chi2->Gaussian"
+  },
+  "extreme 100 Mpc": {
+   "cmb_rms_random_over_floor": 33.442251476855695,
+   "needed_over_floor": 237.25774727019066,
+   "chi": 86.25123498835856,
+   "dof": 40,
+   "n_sigma": 63.24008649964565,
+   "n_sigma_method": "Wilson-Hilferty chi2->Gaussian"
+  },
+  "LCDM": {
+   "cmb_rms_random_over_floor": 9.003511412322672,
+   "needed_over_floor": 237.25774727019066,
+   "chi": 925703.5258217773,
+   "dof": 36,
+   "n_sigma": null,
+   "note": "inner region only, 300 realizations; covariance near-singular for the one-sided half grid -> Mahalanobis unreliable, use rms only",
+   "n_sigma_method": "Wilson-Hilferty chi2->Gaussian"
+  }
+ }
+}

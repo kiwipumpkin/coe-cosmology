@@ -1,0 +1,23 @@
+beta=0 check: max relative |field3-field| = 2.6835595749384036e-15
+d = 120.9 Mpc, c = 197.5 Mpc
+tetra hole: nearest clusters /d = [0.6124 0.6124 0.6124 0.6124 1.0206]
+octa hole: nearest clusters /d = [0.7071 0.7071 0.7071 0.7071 0.7071 0.7071 1.2247]
+HCP {"cluster->cluster": {"1.0": 12.0, "1.414": 6.0, "1.633": 2.0, "1.732": 18.0, "1.915": 12.0, "2.0": 6.0, "2.236": 12.0}, "tetra void->cluster": {"0.612": 4.0, "1.021": 1.0, "1.173": 9.0}, "octa void->cluster": {"0.707": 6.0}, "tetra void->tetra void": {"0.408": 1.0, "0.707": 3.0, "1.0": 12.0, "1.08": 6.0, "1.225": 4.0, "1.354": 3.0, "1.414": 6.0}, "octa void->octa void": {"0.816": 2.0, "1.0": 6.0, "1.291": 12.0}, "per cluster: tetra holes, octa holes": [1.84, 0.952]}
+FCC {"cluster->cluster": {"1.0": 12.0, "1.414": 6.0, "1.732": 24.0, "2.0": 12.0, "2.236": 24.0}, "tetra void->cluster": {"0.612": 4.0, "1.173": 12.0}, "octa void->cluster": {"0.707": 6.0}, "tetra void->tetra void": {"0.707": 6.0, "1.0": 12.0, "1.225": 8.0, "1.414": 6.0}, "octa void->octa void": {"1.0": 12.0, "1.414": 6.0}, "per cluster: tetra holes, octa holes": [1.6255924170616114, 0.9994075829383886]}
+HCP web ratio | perfect            N=  4462 Shist=1.367 cv=0.411 u=   +2.57 deg=15.21 L/d=1.188
+HCP web ratio | jitter 5%          N=  4472 Shist=1.902 cv=0.423 u=   +2.31 deg=15.26 L/d=1.189
+HCP web ratio | jitter 15%         N=  4526 Shist=2.082 cv=0.412 u=   +1.52 deg=14.93 L/d=1.196
+HCP web ratio | jitter 30%         N=  4584 Shist=2.290 cv=0.488 u=   +1.35 deg=14.97 L/d=1.221
+HCP web ratio | defects 3%         N=  4468 Shist=1.636 cv=0.438 u=   +2.14 deg=15.16 L/d=1.194
+HCP web ratio | defects 10%        N=  4444 Shist=2.058 cv=0.529 u=   +1.54 deg=15.21 L/d=1.208
+HCP web ratio | polycrystal        N= 12735 Shist=2.268 cv=0.536 u=   +1.60 deg=15.29 L/d=1.227
+HCP web ratio octa | perfect       N=  4484 Shist=0.670 cv=0.279 u=   +0.56 deg=14.20 L/d=1.184
+HCP fluorite | perfect             N= 11648 Shist=0.869 cv=0.378 u=  -77.68 deg=16.00 L/d=1.327
+HCP clusters only -0.0 -5.462580384129407 13.991582491582491
+FCC clusters only -0.0 -5.388976169345315 14.004149377593361
+comp web s3 BEFORE 2.7132098027440703 4.0474945440915056 15.362631388184125
+comp web s3 AFTER 2.7263199490498264 3.9504125896267364 15.372392526754943
+
+real	0m16.614s
+user	0m24.613s
+sys	0m2.088s
