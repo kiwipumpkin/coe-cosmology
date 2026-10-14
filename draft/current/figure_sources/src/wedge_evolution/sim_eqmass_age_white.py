@@ -50,6 +50,7 @@ for i,(Dg,lab) in enumerate([(0.35,'5. Voids expand, matter drains to walls'),(0
     rr=np.hypot(xx,yy); tt=np.arctan2(xx,yy); tt=(tt+HA)%(2*HA)-HA; rr=np.where(rr<R0,2*R0-rr,rr); rr=np.where(rr>R1,2*R1-rr,rr)
     fr.append(frame(rr,tt,lab,f't{4+i}: outer growth factor {2*Dg:.1f}',f'f{5+i}.png',sm=1.5,vmax=3))
 import PIL.Image as I
-ims=[I.open(f) for f in fr]; W=max(i.size[0] for i in ims); Hh=max(i.size[1] for i in ims); g=I.new('RGB',(W*2,Hh*4),'white')
+ims=[I.open(f) for f in fr[:6]];  # panel 7 dropped (Oct 13)
+W=max(i.size[0] for i in ims); Hh=max(i.size[1] for i in ims); g=I.new('RGB',(W*2,Hh*3),'white')
 for i,im in enumerate(ims): g.paste(im,((i%2)*W,(i//2)*Hh))
 g.save('filmstrip_portrait.png')
