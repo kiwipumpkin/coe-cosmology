@@ -19,7 +19,7 @@ def dep(rr,tt,wt,sm=1.2):
     H=gaussian_filter(H,sm); H/=H[mask].mean(); return H
 def frame(rr,tt,title,tl,fn,sm=1.2,vmax=3):
     D=dep(rr,tt,w,sm); D=np.where(mask,D,np.nan)
-    f,a=plt.subplots(figsize=(11,8)); im=a.pcolormesh(Y,-X,D,cmap='Greys',norm=LogNorm(0.1,20),shading='auto')  # sideways: CoE at left
+    f,a=plt.subplots(figsize=(11,8)); im=a.pcolormesh(Y,-X,D,cmap='inferno',norm=LogNorm(0.1,20),shading='auto')  # sideways: CoE at left
     a.set_aspect('equal'); a.axis('off'); a.plot(0,0,'k>',ms=14); a.text(0.0,-0.05,'CoE',color='k',fontsize=18,ha='center',va='top')
     a.set_title(title+'\n'+tl,fontsize=24,color='k'); c=f.colorbar(im,ax=a,fraction=0.035,pad=0.02); c.set_label('density / global mean (log)',fontsize=18)
     f.tight_layout(); f.savefig(fn,dpi=110,bbox_inches='tight',pad_inches=0.05); plt.close(f); return fn
