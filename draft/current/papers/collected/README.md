@@ -2,7 +2,7 @@
 
 # Collected papers packet — sources
 
-- `CoE_collected_papers.pdf` — the full packet (115 pages, Figs. 1–114), as sent on Oct 13, 2026.
+- `CoE_collected_papers.pdf` — the full packet (110 pages, Figs. 1–111), as sent on Oct 13, 2026.
 - `coe/` — CoE paper: `coe_shell_preprint.source.tex` (source, `coe_shell_preprint.tex.bak_before_ltb_section`) and `coe_as_built.tex` (the as-built copy with the single page/figure numbering chain).
 - `cmb/` — CMB fingerprint paper: `main.before_reorder.tex` (source), `cmb_as_built.tex`, `table_modes.tex`, `refs.bib`.
 - `pattern/` — pattern-formation paper v5: `pattern_formation_v5.tex`, `pattern_as_built.tex`.

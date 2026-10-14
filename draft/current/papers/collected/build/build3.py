@@ -4,7 +4,7 @@ B='/workspace/chain/cmb/z.pdf'
 P='/workspace/chain/pat/z.pdf'
 S='supp.pdf'; M='mich.pdf'
 # segments: (file, from0, to0 inclusive)
-seg=[(C,0,99),(S,0,99),(B,0,40),(P,0,15),(M,0,2),(P,16,22),(P,24,27),(P,30,31)]
+seg=[(C,0,99),(S,0,99),(B,0,40),(P,0,15),(M,0,0),(P,16,18),(M,1,2),(P,19,19),(P,21,22),(P,25,26)]
 start=3; cmap={}; n=start
 for fi,a,b in seg:
     for i in range(a,min(b,len(f.open(fi))-1)+1): cmap[(fi,i)]=n; n+=1
@@ -25,12 +25,13 @@ ents+=[(1,'Appendix figures',cmap[(C,28)]),SUPP]
 add(B,'2. Reading the CMB fingerprint of the CoE shell model',2)
 add(P,'3. Pattern formation (v5)',1)
 i=[k for k,e in enumerate(ents) if e[1].startswith('Wrinkled')][0]
-ents.insert(i+1,(1,'Inserted figures: Michaut et al.\\ (2012) and wedge storyboard',cmap[(M,0)]))
+ents.insert(i+1,(1,'Inserted figures: Michaut et al.\\ (2012), Figs.\\ 2 and 3',cmap[(M,0)]))
+ents.insert(i+2,(1,'Inserted figures: Michaut et al.\\ (2012), Fig.\\ 6, and wedge storyboard',cmap[(M,1)]))
 ents.append((0,'4. Does everything have a centre? A philosophical note',phil))
 import pymupdf as _f
 _b=_f.open('back.pdf'); _r=[i for i in range(len(_b)) if _b[i].get_text().lstrip().startswith('References')][0]
 ents.append((0,'References',phil+_r))
-ents.append((0,'Fig. 114: CoE on the northern celestial hemisphere',phil+len(_b)-1))
+ents.append((0,'Fig. 111: CoE on the northern celestial hemisphere',phil+len(_b)-1))
 rows='\n'.join((r'\noindent\textbf{%s}\dotfill\textbf{%d}\par\smallskip' if l==0 else r'\noindent\hspace*{1.2em}%s\dotfill %d\par')%(t if '$' in t or '\\' in t else esc(t),pg) for l,t,pg in ents)
 open('ents.txt','w').write('\n'.join(map(str,ents)))
 s=open('/workspace/combined/c.tex').read()
@@ -50,10 +51,10 @@ for fi,a,b in seg: out.insert_pdf(f.open(fi),from_page=a,to_page=b)
 bk=f.open('back.pdf'); assert out.page_count+1==phil+0 or True
 out.insert_pdf(bk)
 # Fig33 overlay onto pattern p23
-p23=out[cmap[(P,22)]-1]; src=f.open(P)
-clip=f.Rect(61.2,116.8,534.1,723.5); top,bot=276,795
+p23=out[cmap[(P,19)]-1]; src=f.open(P)
+clip=f.Rect(61.2,116.8,534.1,723.5); top,bot=240,795
 h=bot-top; w=clip.width*h/clip.height; x0=(595.28-w)/2
-p23.show_pdf_page(f.Rect(x0,top,x0+w,bot),src,23,clip=clip)
+p23.show_pdf_page(f.Rect(x0,top,x0+w,bot),src,20,clip=clip)
 # landscape summary tables
 pass  # summary tables: original pages already /Rotate 90 landscape, kept unchanged
 
@@ -80,5 +81,5 @@ for l,t,pg in ents: toc.append([l+1,re.sub(r'[$\\{}]','',t.replace('_{\\rm all}'
 out.delete_page(0); out.insert_pdf(f.open('cover2.pdf'),from_page=0,to_page=0,start_at=0)
 out.set_toc(toc)
 out.save('/workspace/combined3/CoE_collected_papers.pdf',garbage=3,deflate=True)
-print(out.page_count,phil,cmap[(S,0)],cmap[(M,0)],cmap[(P,22)])
+print(out.page_count,phil,cmap[(S,0)],cmap[(M,0)],cmap[(P,19)])
 import json; json.dump({f'{k[0]}|{k[1]}':v for k,v in cmap.items()},open('cmap.json','w'))

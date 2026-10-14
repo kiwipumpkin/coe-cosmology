@@ -33,7 +33,7 @@
 \captionsetup{font=small}
 \setlength{\intextsep}{8pt plus 2pt minus 2pt}
 \newcommand{\LEGEND}{\textbf{Classes} (how the scale is selected). \textbf{A} bulk finite-wavelength instability above a threshold. \textbf{B} equilibrium modulated phase: short-range cost vs.\ long-range gain gives a free-energy minimum at finite period. \textbf{C} coarsening: no equilibrium scale, $L\propto t^n$. \textbf{D} interfacial instability: long waves unstable, surface tension cuts off short ones. \textbf{E} fronts and waves invading an unstable, excitable or supersaturated state. ref.\ = forced linear mode (Chladni). \textbf{Tags} (what sustains it): \textbf{D} driven (open), \textbf{R} relaxing (closed transient), \textbf{E} equilibrium.}
-\renewcommand{\thepage}{\the\numexpr\value{page}+76\ifnum\value{page}>16 +3\fi\ifnum\value{page}>24 -1\fi\ifnum\value{page}>30 -2\fi\relax}\renewcommand{\thefigure}{\the\numexpr\value{figure}+72\ifnum\value{figure}>26 +4\fi\relax}
+\renewcommand{\thepage}{\the\numexpr\value{page}+76\ifnum\value{page}>16 +1\fi\ifnum\value{page}>19 +2\fi\ifnum\value{page}>21 -1\fi\ifnum\value{page}>23 -2\fi\relax}\renewcommand{\thefigure}{\the\numexpr\value{figure}+72\ifnum\value{figure}>26 +2\fi\ifnum\value{figure}>29 +2\fi\relax}
 \begin{document}
 \maketitle
 
@@ -475,22 +475,6 @@ Stacking many thin shells and letting their thickness go to zero gives a continu
 \end{figure}
 
 
-\paragraph{Where the mass gathers.} Figs.~\ref{fig:sh1}--\ref{fig:sh3} show the same shell as a heat map of mass density: as the wrinkle grows, material moves into the crests (hot) and out of the troughs (cold).
-\begin{figure}[p]
-\centering
-\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{shell_heat_1.png}
-\caption{Flat shell: uniform density. Colour: density relative to the unwrinkled mean. Schematic.\label{fig:sh1}}
-\end{figure}
-\begin{figure}[p]
-\centering
-\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{shell_heat_2.png}
-\caption{Wrinkled shell: slight gathering at the crests. Colour: density relative to the unwrinkled mean. Schematic.\label{fig:sh2}}
-\end{figure}
-\begin{figure}[p]
-\centering
-\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{shell_heat_3.png}
-\caption{Concentrated: crests dense (hot), troughs thinned (cold). Colour: density relative to the unwrinkled mean. Schematic.\label{fig:sh3}}
-\end{figure}
 \subsection{Potential geometry of clumps and voids}
 Relative to the mean, an overdensity is a potential well and an underdensity a potential hill (Fig.~\ref{fig:pot}). Two overdensities merge into one wider well, two underdensities into one wider hill. A clump next to a void forms a potential dipole: the steepest slope runs between them, so matter flows down the gradient out of the void and into the clump, deepening both.
 \begin{figure}[p]
@@ -501,26 +485,9 @@ Relative to the mean, an overdensity is a potential well and an underdensity a p
 
 \subsection{From flat density to clump and void}
 Figs.~\ref{fig:fc1}--\ref{fig:fc4} follow one patch of a thin shell. A flat shell carries a seed of about $10^{-3}$; the crest becomes a shallow well and the trough a shallow hill; the dipole drains the trough into the crest; linear growth ($\delta\propto a$) carries the $+1.5\times10^{-3}$ seed to $\delta_c=1.686$ (clump) and the $-2.5\times10^{-3}$ seed to $\delta_v=-2.81$ (void) by today. The growth continues after the shell instability has stopped.
-\begin{figure}[p]
-\centering
-\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{flat_to_clump_1.png}
-\caption{Flat density at recombination: the seed is too small to see. Graphs: density along the shell and potential. Schematic.\label{fig:fc1}}
-\end{figure}
-\begin{figure}[p]
-\centering
-\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{flat_to_clump_2.png}
-\caption{\spaceskip=0.85\fontdimen2\font plus \fontdimen3\font minus \fontdimen4\font Slight perturbation: crest above, trough below the mean; a shallow well and hill appear. Schematic.\label{fig:fc2}}
-\end{figure}
-\begin{figure}[p]
-\centering
-\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{flat_to_clump_3.png}
-\caption{Potential dipole: matter drains down the gradient from trough to crest (arrow). Schematic.\label{fig:fc3}}
-\end{figure}
-\begin{figure}[p]
-\centering
-\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{flat_to_clump_4.png}
-\caption{Clump and void: the crest reaches $\delta_c=1.686$, the trough $\delta_v=-2.81$; bottom graph shows linear growth of the seeds. Schematic.\label{fig:fc4}}
-\end{figure}
+\clearpage
+\begin{landscape}\noindent\begin{minipage}[t]{0.49\linewidth}\centering\includegraphics[width=\linewidth,height=420pt,keepaspectratio]{flat_to_clump_1.png}\captionof{figure}{Flat density at recombination: the seed is too small to see. Graphs: density along the shell and potential. Schematic.\label{fig:fc1}}\end{minipage}\hfill\begin{minipage}[t]{0.49\linewidth}\centering\includegraphics[width=\linewidth,height=420pt,keepaspectratio]{flat_to_clump_2.png}\captionof{figure}{\spaceskip=0.85\fontdimen2\font plus \fontdimen3\font minus \fontdimen4\font Slight perturbation: crest above, trough below the mean; a shallow well and hill appear. Schematic.\label{fig:fc2}}\end{minipage}\end{landscape}
+\begin{landscape}\noindent\begin{minipage}[t]{0.49\linewidth}\centering\includegraphics[width=\linewidth,height=420pt,keepaspectratio]{flat_to_clump_3.png}\captionof{figure}{Potential dipole: matter drains down the gradient from trough to crest (arrow). Schematic.\label{fig:fc3}}\end{minipage}\hfill\begin{minipage}[t]{0.49\linewidth}\centering\includegraphics[width=\linewidth,height=420pt,keepaspectratio]{flat_to_clump_4.png}\captionof{figure}{Clump and void: the crest reaches $\delta_c=1.686$, the trough $\delta_v=-2.81$; bottom graph shows linear growth of the seeds. Schematic.\label{fig:fc4}}\end{minipage}\end{landscape}
 \clearpage
 \begingroup\footnotesize\fontsize{9}{10.2}\selectfont
 \begin{thebibliography}{99}
