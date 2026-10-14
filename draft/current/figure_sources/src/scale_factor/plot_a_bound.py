@@ -26,5 +26,5 @@ for i,(lab,H0,Om,OL,c,ls) in enumerate(cases):
 ax.axhline(1,color='grey',lw=.5); ax.set_xlim(0,160); ax.set_ylim(0,3.5)
 ax.set_xlabel("time since bang (Gyr)"); ax.set_ylabel("scale factor a (a = 1 today)")
 ax.set_title("Scale factor vs time: E > 0, E = 0 and E < 0 cases")
-ax.legend(fontsize=7.5,loc='upper left'); fig.tight_layout(); fig.savefig("scale_factor_bound.png",dpi=150)
+ax.legend(fontsize=7.5,loc='lower right'); fig.tight_layout(); fig.savefig("scale_factor_bound.png",dpi=150)
 np.savez("scale_factor_bound.npz",**out)
