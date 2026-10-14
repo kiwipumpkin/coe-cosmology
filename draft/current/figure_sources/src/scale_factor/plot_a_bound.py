@@ -14,6 +14,7 @@ cases=[("ΛCDM flat (Planck Ωm=0.315, ΩΛ=0.685)",67.4,0.315,0.685,'k','-'),
  ("ΛCDM closed, E<0 (Ωm=0.315, ΩΛ=0.735, Ωk=−0.05)",67.4,0.315,0.735,'grey','-'),
  ("ΛCDM closed, E<0, heavy (Ωm=2.0, ΩΛ=0.685)",67.4,2.0,0.685,'m','-'),
  ("CoE shell, E>0 (mass 0.3)",70,0.3,0,'C3','--'),
+ ("CoE shell, E=0 critical (mass 1)",70,1.0,0,'C1','--'),
  ("CoE shell, E<0 bound (mass 1.5)",70,1.5,0,'C2','--'),
  ("CoE shell, E<0 bound (mass 3)",70,3.0,0,'C4','--')]
 fig,ax=plt.subplots(figsize=(9,6)); out={}
@@ -24,6 +25,6 @@ for i,(lab,H0,Om,OL,c,ls) in enumerate(cases):
     out[f"t{i}"]=t; out[f"a{i}"]=a; print(lab,round(t0,2),note)
 ax.axhline(1,color='grey',lw=.5); ax.set_xlim(0,160); ax.set_ylim(0,3.5)
 ax.set_xlabel("time since bang (Gyr)"); ax.set_ylabel("scale factor a (a = 1 today)")
-ax.set_title("Scale factor vs time with E < 0 (bound / closed) cases")
+ax.set_title("Scale factor vs time: E > 0, E = 0 and E < 0 cases")
 ax.legend(fontsize=7.5,loc='upper left'); fig.tight_layout(); fig.savefig("scale_factor_bound.png",dpi=150)
 np.savez("scale_factor_bound.npz",**out)
