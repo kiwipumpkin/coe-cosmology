@@ -1,0 +1,17 @@
+import numpy as np
+exec(open('/workspace/redweb2/realweb/analyze.py').read().split('O=')[0])
+t=np.loadtxt('/workspace/joint/lcdm.txt');Lt=np.interp(l,t[:,0],t[:,1])
+z=np.load('mc_mean_passing.npz');fig,ax=plt.subplots(3,1,figsize=(11,15),sharex=True)
+for a,R in zip(ax,[4.0,8.0,14.0]):
+  D=z[f'D{R}'];Ev=z[f'E{R}'];m=D.mean(0);s=D.std(0);p16,p50,p84=np.percentile(D,[16,50,84],0)
+  c2=chi(m);rr=r2(m);c2m=chi(p50)
+  print(f'R={R} N={len(D)} E* median {np.median(Ev):.4g} [16-84 {np.percentile(Ev,16):.4g}-{np.percentile(Ev,84):.4g}] mean chi2={c2:.1f} r2={rr:.3f} | median-spectrum chi2={c2m:.1f} r2={r2(p50):.3f}')
+  print('  l=2..6 mean',np.round(m[2:7],0),'sd',np.round(s[2:7],0),'p16',np.round(p16[2:7]),'p84',np.round(p84[2:7]))
+  a.fill_between(l,p16[2:31],p84[2:31],color='tab:blue',alpha=.25,label='16–84 percentile')
+  a.errorbar(l+.15,m[2:31],yerr=s[2:31],fmt='s-',color='tab:blue',ms=4,capsize=2,label=f'mean of {len(D)} passing ±1σ: χ²={c2:.1f}, r²={rr:.2f}')
+  a.plot(l,Lt,'k-',lw=1.6,label=f'ΛCDM: χ²=20.1, r²={r2(np.r_[0,0,Lt]):.2f}')
+  a.errorbar(Pl[:,0],Pl[:,1],yerr=[Pl[:,2],Pl[:,3]],fmt='o',color='k',mfc='w',ms=5,capsize=2,label='Planck TT')
+  a.set_ylim(0,2500);a.set_ylabel('D_ℓ [μK²]');a.set_title(f'R = {R:g} Gpc  (median E* = {np.median(Ev):.3g})')
+  if m[3]>2500:a.annotate(f'ℓ=3 mean {m[3]:.0f} ±{s[3]:.0f} (off scale)',(3.3,2350))
+  a.legend(loc='lower center',ncol=2,fontsize=9)
+ax[-1].set_xlabel('ℓ');plt.tight_layout();plt.savefig('mc_mean_passing_lin.png',dpi=120)
