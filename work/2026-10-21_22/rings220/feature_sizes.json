@@ -1,0 +1,49 @@
+{
+ "R=4Gpc": {
+  "l=200": {
+   "theta_deg": 0.9,
+   "size_Mpc": 62.8
+  },
+  "l=220": {
+   "theta_deg": 0.818,
+   "size_Mpc": 57.1
+  },
+  "l=240": {
+   "theta_deg": 0.75,
+   "size_Mpc": 52.4
+  }
+ },
+ "R=8Gpc": {
+  "l=200": {
+   "theta_deg": 0.9,
+   "size_Mpc": 125.7
+  },
+  "l=220": {
+   "theta_deg": 0.818,
+   "size_Mpc": 114.2
+  },
+  "l=240": {
+   "theta_deg": 0.75,
+   "size_Mpc": 104.7
+  }
+ },
+ "R=14Gpc": {
+  "l=200": {
+   "theta_deg": 0.9,
+   "size_Mpc": 219.9
+  },
+  "l=220": {
+   "theta_deg": 0.818,
+   "size_Mpc": 199.9
+  },
+  "l=240": {
+   "theta_deg": 0.75,
+   "size_Mpc": 183.3
+  }
+ },
+ "observed_reference_Mpc": {
+  "voids_typical": "10-100 (up to ~300 supervoids)",
+  "superclusters": "~100-200",
+  "BAO_scale": 147
+ }
+}
