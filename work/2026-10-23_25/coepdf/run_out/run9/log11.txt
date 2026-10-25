@@ -1,0 +1,2 @@
+{'n_bodies': 272638, 'pattern_rms_over_floor': 48.88990881377383, 'repo_value': 149.87782489337775, 'repo_n_bodies': 272175}
+R0.9 {'R0.9_web_only': None, 'R0.9_0.0175': 27.00977200306465}

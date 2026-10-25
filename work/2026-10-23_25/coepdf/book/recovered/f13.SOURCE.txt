@@ -1,0 +1,6 @@
+f13 (target peak, l=220, non-axisymmetric source shell r=1.012R)
+SOURCE: Chris's own attachment, uploaded Wed Oct 21 2026 6:09 PM CT, file 01M5GBMH5C2D4X1DRCQ4N5TBPC.txt in the bot store attachments
+  (header: "Original model code used to generate distributed_spherical_clumps_ell220.png").
+  The f13 image itself was first attached Wed Oct 21 6:11 PM CT (01M5GBQ5JZG32ZMF32Q6QHBWS6.png, md5-identical to coepdf/fig/f13.png).
+Companion script attached 5:55 PM CT: 01M5GAV35XYZA5B8SHPAJ3ZFAH.py (axisymmetric rings version, saved as f13_rings_companion.py).
+Rerun as-is: same model, same seeds, same curves; differences are only label glyphs (sigma_l vs σℓ) and dpi. SSIM vs original = 0.80 (after resize).

@@ -1,0 +1,5 @@
+exec(open('ltb.py').read().split('def rho')[0])
+xs=np.linspace(0.6,1.45,171);Ts=np.geomspace(3.2e-8,t0,40)
+G=np.array([[S(t,x)[0,0]/S(t,1.)[0,0] for x in xs] for t in Ts])
+np.savez('/workspace/redweb2/realweb/los_flow/deform.npz',xs=xs,Ts=Ts,G=G,S0=np.array([S(t0,x)[0,0] for x in xs]))
+i=0;print('t',Ts[i],'ratio/x at x=.65,.9,1.1,1.35:',[float(np.interp(v,xs,G[i]/xs)) for v in (.65,.9,1.1,1.35)],'today S(t0,x)/x',[float(S(t0,v)[0,0]/v) for v in (.65,1.35)])

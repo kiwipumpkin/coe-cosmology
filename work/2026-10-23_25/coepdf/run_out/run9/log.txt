@@ -1,0 +1,3 @@
+{'n_bodies': 272175, 'pattern_rms_over_floor': 149.87782489980992, 'repo_value': 149.87782489337775, 'repo_n_bodies': 272175}
+paper_R14.3 {'paper_R14.3_web_only': None, 'paper_R14.3_1': 2456413186.2309413, 'paper_R14.3_0.5': 153267201.2135268, 'paper_R14.3_0.25': 9514342.657483662, 'paper_R14.3_0.1': 232104.06092220175}
+red_surface {'red_surface_web_only': None, 'red_surface_1': 5473.108003881845, 'red_surface_0.5': 762.9107546117893, 'red_surface_0.25': 481.5782798716598, 'red_surface_0.1': 468.00756542984396}
