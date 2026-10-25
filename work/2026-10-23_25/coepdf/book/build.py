@@ -59,6 +59,21 @@ F=[
 ('Harmonic decomposition 2x2',['recon_n3_2x2.png'],'Sun Oct 25 2026, 12:15 AM CT','file creation (modified again 8:23 AM CT)',25,13,[W+'cosmology/figures/fourier_resid/recon_n3_2x2.py'],
  'A and B data with model before/after removing n = 1-3 harmonics; residuals with fitted modes. Depends on #11. A chi2 25.54 to 11.46, B chi2 13.68 to 10.24.'),
 ]
+
+RM='/workspace/coepdf/book/remade/';RC='/workspace/coepdf/book/recovered/'
+GT='/workspace/coe-cosmology-gh/draft/current/figure_sources/src/'
+SIM={'f02':(0.370,0.938),'f11':(0.779,0.944),'f12':(0.628,0.936),'f13':(0.690,0.937),'f19mc3b_stack':(0.498,0.911),'Fig06_overlay_one':(0.693,0.778),'sky_angle':(0.695,0.891),'sky_mapA_al':(0.721,0.923),'sky_mapB_al':(0.731,0.928),'sky_tab_only':(0.322,0.816)}
+ST={'f06.png':('original (box)',[RC+'f06.py'],'redweb2/bodies3.py output red_web_s2000_bodies_1pct.png is md5-identical to f06.png (SSIM 1.000).'),
+ 'Fig01a_geometry_top_test.png':('original (git) + manual crop',[],'Per FIGURE_MANIFEST.md (coe-cosmology-gh): top/middle panels are manual crops of Fig01_geometry.png written by universe_thin.py via figs_letter_exact_python/makers/make_fig01_02_geometry_achart.py (sources in draft/current/figure_sources). Crop step not scripted.'),
+ 'f02.png':('remade',[RM+'f02_remade.py'],''),'f12.png':('remade',[RM+'f12_remade.py'],''),'f11.png':('remade',[RM+'f11_remade.py'],''),'f13.png':('remade',[RM+'f13_remade.py'],''),
+ 'sky_angle.png':('remade (spot geometry from recovered box /tmp code)',[RM+'sky_angle_remade.py',RC+'sky_mapA_al.py',RC+'spots.py'],'sky maps: recovered (box /tmp) r45c.py, axes cropped; angle plot remade.'),
+ 'sky_tab_only.png':('recovered (box /tmp)',[RC+'sky_tab_only.py'],'Table section of /tmp/comb45c.py; same content, 5 px wider at dpi 120.'),
+ 'Fig06_overlay_one.png':('remade',[RM+'Fig06_overlay_one_remade.py'],''),'f19mc3b_stack.png':('remade',[RM+'f19mc3b_stack_remade.py'],'Restack of f19mc3b.png made by redweb2/realweb/mc/mc_br_plot.py.')}
+F=[(a,b,c,d,e,f,(ST[b[0]][1]+g if b[0] in ST else g),h+((' STATUS NOTE: '+ST[b[0]][2]) if b[0] in ST else '')) for (a,b,c,d,e,f,g,h) in F]
+def status(files,src,scr):
+    if files[0] in ST: return ST[files[0]][0]
+    if not scr: return 'not found'
+    return 'original (git)' if src.startswith('git commit') else 'original (box)'
 def esc(s):
     for a,b in [('\\','\\textbackslash{}'),('&','\\&'),('%','\\%'),('$','\\$'),('#','\\#'),('_','\\_'),('{','\\{'),('}','\\}'),('~','\\textasciitilde{}'),('^','\\textasciicircum{}')]:
         s=s.replace(a,b) if a!='\\' else s.replace(a,'\x00')
@@ -81,6 +96,7 @@ rep=[]
 for i,(nm,files,dt,src,mo,now,scr,notes) in enumerate(F,1):
     out.append(r'\clearpage\section*{%d. %s}\addcontentsline{toc}{section}{%d. %s}'%(i,esc(nm),i,esc(nm)))
     out.append(r'\textbf{Originally made:} %s \quad (\textit{%s})\\ \textbf{Paper figure number:} this morning Fig.~%d; now Fig.~%d\\ \textbf{Files:} \texttt{%s}'%(esc(dt),esc(src),mo,now,esc(', '.join(files))))
+    out.append(r'\\ \textbf{Code status:} \fbox{%s}'%esc(status(files,src,scr)))
     c=capmorn.get(files[0]) or capnow.get(files[0],'')
     out.append(r'\subsection*{Notes}'+esc(notes)+r'\par\textbf{Paper caption (caveats as stated):} '+re.sub(r'\\ref\{([^}]*)\}',lambda m:'{}'+esc(m.group(1)),c))
     for f in files:
@@ -90,12 +106,16 @@ for i,(nm,files,dt,src,mo,now,scr,notes) in enumerate(F,1):
             ph=need+3.0
             out.append(r'\clearpage\begingroup\pdfpageheight=%.2fin\paperheight=%.2fin\textheight=%.2fin\vsize=\textheight\makeatletter\@colht=\textheight\@colroom=\textheight\makeatother '%(ph,ph,ph-2.2)+g+r'\clearpage\endgroup ')
         else: out.append(r'\par\medskip'+g)
+        b=f.rsplit('.',1)[0]
+        if os.path.exists(RM+b+'_remade.png'):
+            ss,mm=SIM[b]
+            out.append(r'\par\medskip\noindent\textbf{REMADE (not original)} -- similarity to original: SSIM %.3f, 1-MAE %.3f\\ \includegraphics[width=0.48\textwidth,height=0.4\textheight,keepaspectratio]{%s}\hfill\includegraphics[width=0.48\textwidth,height=0.4\textheight,keepaspectratio]{%s}\par\centerline{\footnotesize left: original (unchanged) \quad right: remade}'%(ss,mm,FIG+f,RM+b+'_remade.png'))
     out.append(r'\subsection*{Generating script}')
     if not scr: out.append(r'\textbf{Generating script not found.} Searched all \texttt{.py} files under /workspace (excluding virtualenvs) for the image filename and its known aliases, and the git repos.')
     for s in scr:
         k='code/%02d_%s'%(i,os.path.basename(s));open(k,'w').write(open(s,encoding='utf-8',errors='replace').read().replace('\t','    '))
         out.append(r'\textbf{\texttt{%s}}\VerbatimInput{%s}'%(esc(s),k))
-    rep.append((i,nm,dt,'y' if scr else ('partial' if False else 'n')))
+    rep.append((i,nm,status(files,src,scr),'y' if scr else ('partial' if False else 'n')))
 out.append(r'\end{document}')
 open('book.tex','w').write('\n'.join(out))
 for r in rep:print(*r,sep=' | ')

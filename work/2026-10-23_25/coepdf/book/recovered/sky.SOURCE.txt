@@ -1,0 +1,1 @@
+sky_tab_only: table section of /tmp/comb45c.py (box /tmp). sky_map*_al: /tmp/r45c.py (box /tmp), crop to each axes was a manual step. Inputs spots.py, M25.json, R.json.

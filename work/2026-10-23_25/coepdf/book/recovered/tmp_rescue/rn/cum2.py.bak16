@@ -1,0 +1,54 @@
+import numpy as np,csv
+import matplotlib;matplotlib.use('Agg');import matplotlib.pyplot as plt;plt.rcParams.update({'font.size':18})
+from matplotlib.lines import Line2D
+from make_A_vs_angle_axisymmetric_before_rotation import periodic_interp
+rows=list(csv.DictReader(open('/workspace/cosmology/migkas/fig6_digitized.csv')))
+l=np.array([float(r['l_deg']) for r in rows]);th=np.radians(l)
+d=np.genfromtxt('residuals.csv',delimiter=',',names=True);Araw,AF,sA=d['A_migkas'],d['A_axisym_AF_smooth'],d['sigma']
+Bv=np.array([float(r['B_over_Ball']) for r in rows]);sB=np.array([(float(r['B_err_low'])+float(r['B_err_high']))/2 for r in rows])
+gm=np.genfromtxt('sheet_BL_copy2_density_w_rotat.csv',delimiter=',',names=True)
+g=np.linspace(0,360,721);gt=np.radians(g)
+BG=periodic_interp(gm['ell_deg'],gm['BL_modelB_sheet'],l);BGg=periodic_interp(gm['ell_deg'],gm['BL_modelB_sheet'],g)
+AFg=periodic_interp(l,AF,g)
+SG=1.;chi=lambda r,s:np.sum(r**2/s**2);o=np.ones_like(th);Z=0*o
+rA=Araw-AF;rB=Bv-BG;steps=[]
+for n in range(1,5):
+ h=np.column_stack([np.cos(n*th),np.sin(n*th)])
+ X=np.vstack([np.column_stack([o,Z,h]),np.column_stack([Z,o,SG*h])]);s=np.r_[sA,sB]
+ p=np.linalg.lstsq(X/s[:,None],np.r_[rA,rB]/s,rcond=None)[0]
+ steps.append(dict(n=n,p=p,C=np.hypot(p[2],p[3]),pk=np.degrees(np.arctan2(p[3],p[2]))%360/n))
+ rA=rA-X[:71]@p;rB=rB-X[71:]@p
+def term(st,x,k,sg):n=st['n'];p=st['p'];return p[k]+sg*(p[2]*np.cos(n*x)+p[3]*np.sin(n*x))
+cols=['purple','tab:blue','tab:red','tab:green','tab:orange']
+for nm,Y,sY,base,baseg,k,sg in (('A',Araw,sA,AF,AFg,0,1.),('B',Bv,sB,BG,BGg,1,SG)):
+ lab='A/A_all' if nm=='A' else 'B/B_all'
+ cum=[(base.copy(),baseg.copy())]
+ for st in steps:cum.append((cum[-1][0]+term(st,th,k,sg),cum[-1][1]+term(st,gt,k,sg)))
+ fig,axs=plt.subplots(5,2,figsize=(22,30),facecolor='white');print(nm)
+plt.rcParams.update({'font.size':17})
+for nm,Y,sY,base,baseg,k,sg in (('A',Araw,sA,AF,AFg,0,1.),('B',Bv,sB,BG,BGg,1,SG)):
+ lab='A/A_all' if nm=='A' else 'B/B_all'
+ cum=[(base.copy(),baseg.copy())]
+ for st in steps:cum.append((cum[-1][0]+term(st,th,k,sg),cum[-1][1]+term(st,gt,k,sg)))
+ fig,axs=plt.subplots(2,5,figsize=(26,8.6),facecolor='white',sharex=True,sharey='row');print(nm)
+ for i in range(5):
+  m,mg=cum[i];res=Y-m;c2=chi(res,sY);r2=np.corrcoef(Y,m)[0,1]**2;print(f' {i} chi2={c2:.2f} r2={r2:.3f}')
+  a=axs[0,i];a.axvspan(15,80,color='gold',alpha=.18,zorder=0);a.axvspan(260,335,color='lightsteelblue',alpha=.35,zorder=0)
+  a.errorbar(l,Y,yerr=sY,fmt='o',color='k',ms=4,alpha=.45,capsize=0,lw=1)
+  if i>0:a.plot(g,cum[i-1][1],color='grey',lw=2,ls='--',alpha=.6)
+  a.plot(g,mg,color=cols[i],lw=3.5)
+  a.set_title('base' if i==0 else f'+ n={i}',fontsize=22,fontweight='bold')
+  a.text(.03,.04,f'χ²={c2:.2f}  r²={r2:.3f}',transform=a.transAxes,fontsize=14,color='0.25')
+  b=axs[1,i];b.axvspan(15,80,color='gold',alpha=.18,zorder=0);b.axvspan(260,335,color='lightsteelblue',alpha=.35,zorder=0)
+  b.errorbar(l,res,yerr=sY,fmt='o',color='k',ms=4,alpha=.45,capsize=0,lw=1);b.axhline(0,color='grey',lw=1.2)
+  if i<4:
+   st=steps[i];b.plot(g,term(st,gt,k,sg)-st['p'][k],color=cols[i+1],lw=3.5)
+   b.text(.03,.04,f'next n={st["n"]}: C={st["C"]:.3f}',transform=b.transAxes,fontsize=14,color='0.25')
+  else:b.text(.03,.04,'final residual',transform=b.transAxes,fontsize=14,color='0.25')
+  b.set_xlim(0,360);b.set_xticks([0,90,180,270,360]);b.set_xlabel('ℓ [deg]',fontsize=18)
+ axs[0,0].set_ylabel(lab,fontsize=20);axs[1,0].set_ylabel('residual',fontsize=20)
+ axs[0,0].set_ylim(0.8,1.2);axs[1,0].set_ylim(-0.2,0.2)
+ bn='AF_smooth (axisymmetric)' if nm=='A' else 'CoE sheet (1−BE)·AN'
+ h=[Line2D([],[],color='k',marker='o',ls='',alpha=.5,label='Migkas Fig. 6 ±σ'),Line2D([],[],color='purple',lw=3,label=f'base: {bn}')]+[Line2D([],[],color=cols[j],lw=3,label=f'shared n={j}') for j in range(1,5)]+[Line2D([],[],color='grey',lw=2,ls='--',label='previous model'),plt.Rectangle((0,0),1,1,color='gold',alpha=.3,label='ℓ≈50° deviation (ℓ=15–80°)'),plt.Rectangle((0,0),1,1,color='lightsteelblue',alpha=.5,label='ℓ≈305° deviation (ℓ=260–335°)')]
+ fig.legend(handles=h,loc='lower center',ncol=5,fontsize=15,frameon=False)
+ fig.tight_layout(rect=(0,0.09,1,1),w_pad=0.3);fig.savefig(f'{nm}_cumulative_harmonics.png',dpi=90,facecolor='white')

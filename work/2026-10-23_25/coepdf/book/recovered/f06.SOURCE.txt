@@ -1,0 +1,1 @@
+f06: EXACT original. fig/f06.png md5-identical to cosmology-course/.../constrained/red_web_s2000_bodies_1pct.png, written by /workspace/redweb2/bodies3.py (imports vmn_gen from coe-cosmology-gh/draft/current/analyses/void_mass_network).
