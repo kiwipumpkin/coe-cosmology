@@ -1,0 +1,61 @@
+\documentclass[10pt]{article}
+\usepackage[letterpaper,margin=0.45in]{geometry}
+\usepackage{array}
+\usepackage{amsmath,amssymb,booktabs}
+\pagestyle{empty}\setlength{\parindent}{0pt}\setlength{\parskip}{2pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{document}
+{\small
+\textbf{3. Input parameters implied by the term-by-term solution vs.\ Table~1} of universe\_bestfit\_thinshell.pdf. Each column keeps that fit's shell assumption. Newtonian $\Omega_s$ free: $\Omega_s=1.012$, thin shell $R_{\rm in}=D-R$, $R_{\rm out}=D+R$. Newtonian $\Omega_s$=0.049: $R_{\rm in}=D-1.028\,R$, $R_{\rm out}=D+1.475\,R$. Relativistic: $R_{\rm in}=D-1.040\,R$, $R_{\rm out}=D+1.171\,R$. The unknowns are solved from the Sec.~2 equations ($2\ell$ phase $\to\ell_0$, $2\ell$ amplitude $\to\beta\to M_c/M_{\rm crit}$, $1\ell\to$ Amp, $\varphi$, $3\ell$ cos $\to\varepsilon Q\to D$; $C_m,S_m$, $m=1$--3, by least squares). The $a_m(\beta,\gamma)$ come from the code's exact $h(q)$, not the linear formula. Masses use $H_0=70$, $\rho_s=\Omega_s\rho_c$.
+\begin{center}\footnotesize\setlength{\tabcolsep}{4.5pt}\begin{tabular}{llllll}\toprule
+ & \multicolumn{2}{c}{Newtonian, $\Omega_s$ free} & \multicolumn{2}{c}{Newtonian, $\Omega_s$=0.049} & Relativistic (LTB)\\
+Quantity & term-by-term & Table 1 & term-by-term & Table 1 & Table 1\\\midrule
+$D/R$ & 6.474 & 6.554 & 2.589 & 3.439 & 2.303\\
+$D$ & $2.857{\times}10^{24}$ km & $2.892{\times}10^{24}$ km & $1.143{\times}10^{24}$ km & $1.517{\times}10^{24}$ km & $1.016{\times}10^{24}$ km\\
+ & (92.6 Gpc) & (93.7 Gpc) & (37.0 Gpc) & (49.2 Gpc) & (32.9 Gpc)\\
+$R_{\rm in}$ & 78.3 Gpc & 79.4 Gpc & 22.3 Gpc & 34.5 Gpc & 18.1 Gpc\\
+$R_{\rm out}$ & 106.9 Gpc & 108.0 Gpc & 58.1 Gpc & 70.3 Gpc & 49.7 Gpc\\
+$M_c$ & $2.38{\times}10^{54}$ kg & $2.47{\times}10^{54}$ kg & $9.41{\times}10^{52}$ kg & $2.31{\times}10^{53}$ kg & $3.38{\times}10^{54}$ kg\\
+ & $1.20{\times}10^{24}$ $M_\odot$ & $1.24{\times}10^{24}$ $M_\odot$ & $4.73{\times}10^{22}$ $M_\odot$ & $1.16{\times}10^{23}$ $M_\odot$ & $1.70{\times}10^{24}$ $M_\odot$\\
+$M_c/M_{\rm crit}(D)$ & 0.00265 & 0.00265 & 0.00164 & 0.00171 & 0.0835\\
+$M(<D)$, total & $3.62{\times}10^{56}$ kg & $3.72{\times}10^{56}$ kg & $2.29{\times}10^{54}$ kg & $4.56{\times}10^{54}$ kg & $5.04{\times}10^{54}$ kg\\
+$M_{\rm shell}$, total & $8.50{\times}10^{56}$ kg & $8.71{\times}10^{56}$ kg & $1.03{\times}10^{55}$ kg & $1.70{\times}10^{55}$ kg & $6.48{\times}10^{54}$ kg\\
+$M$ within $R$ & $3.35{\times}10^{54}$ kg & $3.35{\times}10^{54}$ kg & $1.62{\times}10^{53}$ kg & $1.62{\times}10^{53}$ kg & $1.62{\times}10^{53}$ kg\\
+$\Omega_s$ & 1.012$^a$ & 1.012 & 0.049$^a$ & 0.049 & 0.049\\
+$\ell_0$ & 13.2$^\circ$ & 12.8$^\circ$ & 12.8$^\circ$ & 13.0$^\circ$ & 13.5$^\circ$\\
+Amp & $-0.1246$ & $-0.1240$ & $-0.0637$ & $-0.0622$ & $-0.0558$\\
+$\varphi$ & 1.267 rad & 1.264 rad & 0.941 rad & 0.929 rad & 0.848 rad\\
+$R^2$ vs Migkas & 0.909 & 0.909 & 0.881 & 0.893 & 0.885\\
+$R^2$ vs $A_F$ & 0.987 & 0.987 & 0.970 & 0.977 & 0.963\\
+\bottomrule
+\end{tabular}\end{center}
+\vspace{-3pt}
+{\footnotesize $^a$ Held fixed (that column's shell assumption). The harmonic solve weights $C_m,S_m$ equally, not the 71 points, so its $R^2$ can sit slightly below the point fit.}
+
+
+\textbf{4. Model vs.\ generally accepted values.} Model columns use the Table~1 fits. $\langle H\rangle$ is the model's sky-mean expansion rate (mean of $a_f=|\Delta\vec V|/$separation over the code's directions at $R$, with the fitted sine). The fits fix only its shape, so its absolute value is solved from Migkas et al.'s own $H_0$ values by fitting $H(\ell)=\langle H\rangle\,A(\ell)/\langle A\rangle$ to them (anchor: their all-combined joint result$^a$). All rate-dependent rows follow from $\langle H\rangle$: rates, $k$, $V_O\propto\langle H\rangle$; masses, densities $\propto\langle H\rangle^2$; $t_0\propto1/\langle H\rangle$. Lengths use $R=14.3$ Gpc.
+\begin{center}\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.12}\begin{tabular}{>{\raggedright\arraybackslash}p{4.45cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{3.48cm}>{\raggedright\arraybackslash}p{3.48cm}>{\raggedright\arraybackslash}p{3.48cm}}\toprule
+Quantity & Accepted value [source] & Newt.\ $\Omega_s$ free (0.909) & Newt.\ $\Omega_s$=0.049 (0.893) & Relativistic LTB (0.885)\\\midrule
+$H_0$ [km\,s$^{-1}$\,Mpc$^{-1}$] & $67.36\pm0.54$ (CMB) [1]; $73.04\pm1.04$ (local) [2] & $\langle H\rangle$ = 71.8$\pm$0.5$^a$ (= 0.971\,$k$) & $\langle H\rangle$ = 71.6$\pm$0.5$^a$ (= 1.012\,$k$) & $\langle H\rangle$ = 71.6$\pm$0.5$^{a,d}$ (= 0.956/$t_0$)\\
+$k$ (LTB: $1/t_0$) [km\,s$^{-1}$\,Mpc$^{-1}$] & -- & 74.0 & 70.8 & 74.9\\
+Age / $k^{-1}$ & $13.797\pm0.023$ Gyr [1] & $k^{-1}=t_0$ = 13.22\ Gyr & $k^{-1}=t_0$ = 13.81\ Gyr & $t_0$ = 13.05\ Gyr\\
+Ordinary-matter mass within $R$ & $1.51{\times}10^{53}$ kg [1]$^b$ & $3.67{\times}10^{54}$ kg & $1.64{\times}10^{53}$ kg & $1.60{\times}10^{53}$ kg\\
+Total matter mass within $R$ & $9.67{\times}10^{53}$ kg [1]$^b$ & same (no dark matter) & same (no dark matter) & same (no dark matter)\\
+Ordinary-matter density $\rho_b$ & $4.20{\times}10^{-28}$ kg\,m$^{-3}$ [1] & $1.02{\times}10^{-26}$ kg\,m$^{-3}$ & $4.56{\times}10^{-28}$ kg\,m$^{-3}$ & $4.46{\times}10^{-28}$ kg\,m$^{-3}$\\
+$\Omega_b$ (= $\Omega_m$ in the model) & $\Omega_b=0.0493$, $\Omega_m=0.3153\pm0.0073$ [1] & 1.012 (1.053 vs $\langle H\rangle$) & 0.049 (0.047 vs $\langle H\rangle$) & 0.049 (0.046 vs $\langle H\rangle$)\\
+Critical density $\rho_c$ at $\langle H\rangle$ & $8.52{\times}10^{-27}$ kg\,m$^{-3}$ ($H_0$=67.36) [1] & $9.68{\times}10^{-27}$ kg\,m$^{-3}$ & $9.63{\times}10^{-27}$ kg\,m$^{-3}$ & $9.64{\times}10^{-27}$ kg\,m$^{-3}$\\
+Earth (Sun) speed vs.\ CMB & $369.82\pm0.11$ km\,s$^{-1}$ [3] & $V_O$ = $6.23{\times}10^{6}$ km\,s$^{-1}$ = 20.8\,$c$ & $V_O$ = $3.26{\times}10^{6}$ km\,s$^{-1}$ = 10.9\,$c$ & $V_O$ = $2.29{\times}10^{6}$ km\,s$^{-1}$ = 7.6\,$c$\\
+\quad ratio $V_O$/(CMB dipole speed) & 1 & 16{,}848 & 8{,}804 & 6{,}199\\
+Local Group speed vs.\ CMB & $620\pm15$ km\,s$^{-1}$ [3] & -- (not modelled) & -- (not modelled) & -- (not modelled)\\
+Bulk flow within $150\,h^{-1}$ Mpc & $395\pm29$ km\,s$^{-1}$ [4] & 6.0 km\,s$^{-1}$$^c$ & 0.33 km\,s$^{-1}$$^c$ & not computed\\
+Core mass $M_c$ (vs.\ accepted $M_b$ in $R$) & -- & $2.71{\times}10^{54}$ kg (18$\times$) & $2.33{\times}10^{53}$ kg (1.5$\times$) & $3.34{\times}10^{54}$ kg (22$\times$)\\
+Mass inside $D$ (same comparison) & -- & $4.07{\times}10^{56}$ kg (2{,}692$\times$) & $4.61{\times}10^{54}$ kg (30$\times$) & $4.98{\times}10^{54}$ kg (33$\times$)\\
+\bottomrule
+\end{tabular}\end{center}
+\vspace{-3pt}
+{\footnotesize $^a$ Weighted least-squares fit of $\langle H\rangle A(\ell)/\langle A\rangle$ to Migkas et al.\ (2021, A\&A, 649, A151) all-combined $H_0$: $66.5\pm1.0$ toward $\ell=273^\circ$ and $72.8\pm0.6$ for the rest of the sky (model value at the cone centre, and the model mean outside a $75^\circ$ cone). Across all 11 Migkas 2020/2021 choices (each relation, sample and joint result) $\langle H\rangle$ = 70.4$\pm$2.4 / 70.3$\pm$2.1 / 70.4$\pm$2.0 (mean$\pm$s.d., the three fits). Migkas's absolute $H_0$ values rest on their fiducial calibration ($H_0=70$ assumed to calibrate the scaling relations), so this anchor inherits it. $^b$ Derived from [1]: $\Omega_b h^2=0.02237$, $\Omega_m=0.3153$, $H_0=67.36$, times the volume of the $R=14.3$ Gpc sphere; ratios in brackets are model / this accepted ordinary-matter mass. $^c$ Mean of $\Delta\vec V$ over a $150\,h^{-1}$ Mpc ball around Earth, from the code's exact expansion-rate profile (second order in radius/$D$); the sine factor is not a velocity. $^d$ LTB: mean of the local expansion rate over the in-plane directions, $(H_\perp+H_r)/2$; the fit's $z=0.3$ curve is normalised and carries no absolute rate. LTB values rescaled from the fit (which set the 3D-mean local rate to 70) with the same power laws (approximate in GR; the fitted valley shows the shape does not depend on $HD/c$).
+
+\textbf{Sources.} [1] Planck Collaboration 2020, A\&A, 641, A6 (Planck 2018 VI, TT,TE,EE+lowE+lensing). [2] Riess, A.~G., et al. 2022, ApJL, 934, L7 (SH0ES). [3] Planck Collaboration 2020, A\&A, 641, A1 (Planck 2018 I; Local Group value after Kogut et al. 1993, ApJ, 419, 1). [4] Watkins, R., et al. 2023, MNRAS, 524, 1885 (CosmicFlows-4). Sedov--Taylor: Taylor, G.~I. 1950, Proc.\ R.\ Soc.\ Lond.\ A, 201, 159; Sedov, L.~I. 1959, Similarity and Dimensional Methods in Mechanics (Academic Press).}
+
+}
+\end{document}

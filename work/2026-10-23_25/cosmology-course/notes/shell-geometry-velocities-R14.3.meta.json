@@ -1,0 +1,31 @@
+{
+  "V_E_kms": [
+    3821416.7890395834,
+    0.0
+  ],
+  "V_E_kms_mag": 3821416.7890395834,
+  "beta_E": [
+    12.74687433611016,
+    0.0
+  ],
+  "beta_E_mag": 12.74687433611016,
+  "fixed_parameters": {
+    "D_Gpc": 58.19699837268826,
+    "mcc": 0.0017121308626185587,
+    "Rin_Gpc": 0.499774693006799,
+    "Rout_Gpc": 72.83442650308822,
+    "Os": 0.049,
+    "Lc": 0.005,
+    "mc": 0.0,
+    "Ob": 0.0
+  },
+  "R_Gpc": 14.30048287260589,
+  "DR": 4.069582747039322,
+  "Ht": 0.9879573881606687,
+  "age_Gyr": 13.799294371932715,
+  "vrmin": 0.6521771986881089,
+  "conversion": "v_phys[m/s] = V_dimless * D_m / t0_s = V_dimless * D_m * H0 / Ht",
+  "factor_kms": 4123446.957234222,
+  "factor_ms": 4123446957.234222,
+  "caveat": "Newtonian |beta| can exceed 1 for large D (VO ~ H0*D); documented in newt_omb VO_over_c."
+}

@@ -1,0 +1,8 @@
+nomass: u=5.0 f=0.0 M=0.0000; found 181/181, missing []; t0=0.20000 D/c = 27.397 Gyr; our crossing 13.699 Gyr; green 4.200 Gpc; our speed today 5.0000 c
+ 0: emit t 11.708 Gyr, light travel 4.810 Gpc, 1+z 2.3401, red today from us 7.142 Gpc, emit pt from us today 21.000 Gpc, emit radius 1.000000 Rrec
+ 90: emit t 13.565 Gyr, light travel 4.241 Gpc, 1+z 2.0197, red today from us 5.905 Gpc, emit pt from us today 21.405 Gpc, emit radius 1.000000 Rrec
+ 180: emit t 15.467 Gyr, light travel 3.658 Gpc, 1+z 1.7713, red today from us 4.802 Gpc, emit pt from us today 21.000 Gpc, emit radius 1.000000 Rrec
+ delay 0 vs 180: 3.759 Gyr; blue arc half-width from CoE 8.016 deg; green inside red: True (closest red 4.802 Gpc)
+ straight ray red->us 0: 7.142 Gpc
+ straight ray red->us 90: 5.905 Gpc
+ straight ray red->us 180: 4.802 Gpc

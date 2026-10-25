@@ -1,0 +1,528 @@
+{
+  "D/L": {
+    "range": [
+      3.0,
+      10.0
+    ],
+    "baseline": 5.9,
+    "n_sweep": 201,
+    "hold": {
+      "x": 5.9,
+      "eps": 0.1,
+      "alpha": 1.0,
+      "kappa": 0.23058828928336284
+    },
+    "points": [
+      {
+        "var": "D/L",
+        "point": "low end",
+        "value": 3.0,
+        "branch": "max near 10 deg",
+        "l_deg": 28.909,
+        "A_over_Aall": 1.06034
+      },
+      {
+        "var": "D/L",
+        "point": "low end",
+        "value": 3.0,
+        "branch": "max near 170 deg",
+        "l_deg": null,
+        "A_over_Aall": null
+      },
+      {
+        "var": "D/L",
+        "point": "low end",
+        "value": 3.0,
+        "branch": "min near 95 deg",
+        "l_deg": null,
+        "A_over_Aall": null
+      },
+      {
+        "var": "D/L",
+        "point": "low end",
+        "value": 3.0,
+        "branch": "min near 266 deg",
+        "l_deg": 260.26,
+        "A_over_Aall": 0.91945
+      },
+      {
+        "var": "D/L",
+        "point": "baseline",
+        "value": 5.9,
+        "branch": "max near 10 deg",
+        "l_deg": 10.432,
+        "A_over_Aall": 1.10609
+      },
+      {
+        "var": "D/L",
+        "point": "baseline",
+        "value": 5.9,
+        "branch": "max near 170 deg",
+        "l_deg": 170.086,
+        "A_over_Aall": 1.07585
+      },
+      {
+        "var": "D/L",
+        "point": "baseline",
+        "value": 5.9,
+        "branch": "min near 95 deg",
+        "l_deg": 95.338,
+        "A_over_Aall": 0.96445
+      },
+      {
+        "var": "D/L",
+        "point": "baseline",
+        "value": 5.9,
+        "branch": "min near 266 deg",
+        "l_deg": 265.731,
+        "A_over_Aall": 0.86171
+      },
+      {
+        "var": "D/L",
+        "point": "high end",
+        "value": 10.0,
+        "branch": "max near 10 deg",
+        "l_deg": 5.675,
+        "A_over_Aall": 1.17994
+      },
+      {
+        "var": "D/L",
+        "point": "high end",
+        "value": 10.0,
+        "branch": "max near 170 deg",
+        "l_deg": 175.085,
+        "A_over_Aall": 1.18709
+      },
+      {
+        "var": "D/L",
+        "point": "high end",
+        "value": 10.0,
+        "branch": "min near 95 deg",
+        "l_deg": 92.454,
+        "A_over_Aall": 0.86441
+      },
+      {
+        "var": "D/L",
+        "point": "high end",
+        "value": 10.0,
+        "branch": "min near 266 deg",
+        "l_deg": 267.697,
+        "A_over_Aall": 0.77217
+      }
+    ],
+    "merges": [
+      {
+        "var": "x",
+        "value": 3.1567448019372044,
+        "l_deg": 127.45,
+        "A": 1.023060874704952,
+        "max_branch": "max near 170 deg",
+        "min_branch": "min near 95 deg",
+        "max_last": [
+          127.5,
+          1.023060874704952
+        ],
+        "min_last": [
+          127.4,
+          1.0230608747049519
+        ]
+      }
+    ],
+    "baseline_check_on_plotted_361pt_curve": {
+      "argmax_raw_deg": [
+        9.97,
+        170.53
+      ],
+      "argmin_raw_deg": [
+        95.73,
+        265.26
+      ]
+    }
+  },
+  "alpha": {
+    "range": [
+      0.2,
+      2.0
+    ],
+    "baseline": 1.0,
+    "n_sweep": 201,
+    "hold": {
+      "x": 5.9,
+      "eps": 0.1,
+      "alpha": 1.0,
+      "kappa": 0.23058828928336284
+    },
+    "points": [
+      {
+        "var": "alpha",
+        "point": "low end",
+        "value": 0.2,
+        "branch": "max near 10 deg",
+        "l_deg": 40.19,
+        "A_over_Aall": 1.0548
+      },
+      {
+        "var": "alpha",
+        "point": "low end",
+        "value": 0.2,
+        "branch": "max near 170 deg",
+        "l_deg": null,
+        "A_over_Aall": null
+      },
+      {
+        "var": "alpha",
+        "point": "low end",
+        "value": 0.2,
+        "branch": "min near 95 deg",
+        "l_deg": null,
+        "A_over_Aall": null
+      },
+      {
+        "var": "alpha",
+        "point": "low end",
+        "value": 0.2,
+        "branch": "min near 266 deg",
+        "l_deg": 259.173,
+        "A_over_Aall": 0.92683
+      },
+      {
+        "var": "alpha",
+        "point": "baseline",
+        "value": 1.0,
+        "branch": "max near 10 deg",
+        "l_deg": 10.432,
+        "A_over_Aall": 1.10609
+      },
+      {
+        "var": "alpha",
+        "point": "baseline",
+        "value": 1.0,
+        "branch": "max near 170 deg",
+        "l_deg": 170.086,
+        "A_over_Aall": 1.07585
+      },
+      {
+        "var": "alpha",
+        "point": "baseline",
+        "value": 1.0,
+        "branch": "min near 95 deg",
+        "l_deg": 95.338,
+        "A_over_Aall": 0.96445
+      },
+      {
+        "var": "alpha",
+        "point": "baseline",
+        "value": 1.0,
+        "branch": "min near 266 deg",
+        "l_deg": 265.731,
+        "A_over_Aall": 0.86171
+      },
+      {
+        "var": "alpha",
+        "point": "high end",
+        "value": 2.0,
+        "branch": "max near 10 deg",
+        "l_deg": 5.207,
+        "A_over_Aall": 1.20607
+      },
+      {
+        "var": "alpha",
+        "point": "high end",
+        "value": 2.0,
+        "branch": "max near 170 deg",
+        "l_deg": 175.322,
+        "A_over_Aall": 1.19006
+      },
+      {
+        "var": "alpha",
+        "point": "high end",
+        "value": 2.0,
+        "branch": "min near 95 deg",
+        "l_deg": 92.948,
+        "A_over_Aall": 0.84874
+      },
+      {
+        "var": "alpha",
+        "point": "high end",
+        "value": 2.0,
+        "branch": "min near 266 deg",
+        "l_deg": 267.244,
+        "A_over_Aall": 0.75819
+      }
+    ],
+    "merges": [
+      {
+        "var": "alpha",
+        "value": 0.3055798736481167,
+        "l_deg": 127.0329023858591,
+        "A": 1.025139676339902,
+        "max_branch": "max near 170 deg",
+        "min_branch": "min near 95 deg",
+        "max_last": [
+          127.0658047717182,
+          1.0251396763516856
+        ],
+        "min_last": [
+          127.0,
+          1.0251396763281189
+        ]
+      }
+    ],
+    "baseline_check_on_plotted_361pt_curve": {
+      "argmax_raw_deg": [
+        9.97,
+        170.53
+      ],
+      "argmin_raw_deg": [
+        95.73,
+        265.26
+      ]
+    }
+  },
+  "kappa": {
+    "range": [
+      0.15,
+      0.7
+    ],
+    "baseline": 0.23058828928336284,
+    "n_sweep": 201,
+    "hold": {
+      "x": 5.9,
+      "eps": 0.1,
+      "alpha": 1.0,
+      "kappa": 0.23058828928336284
+    },
+    "points": [
+      {
+        "var": "kappa",
+        "point": "low end",
+        "value": 0.15,
+        "branch": "max near 10 deg",
+        "l_deg": 15.61,
+        "A_over_Aall": 1.07849
+      },
+      {
+        "var": "kappa",
+        "point": "low end",
+        "value": 0.15,
+        "branch": "max near 170 deg",
+        "l_deg": 163.991,
+        "A_over_Aall": 1.04449
+      },
+      {
+        "var": "kappa",
+        "point": "low end",
+        "value": 0.15,
+        "branch": "min near 95 deg",
+        "l_deg": 98.493,
+        "A_over_Aall": 0.99797
+      },
+      {
+        "var": "kappa",
+        "point": "low end",
+        "value": 0.15,
+        "branch": "min near 266 deg",
+        "l_deg": 264.37,
+        "A_over_Aall": 0.89195
+      },
+      {
+        "var": "kappa",
+        "point": "baseline",
+        "value": 0.23058828928336284,
+        "branch": "max near 10 deg",
+        "l_deg": 10.432,
+        "A_over_Aall": 1.10609
+      },
+      {
+        "var": "kappa",
+        "point": "baseline",
+        "value": 0.23058828928336284,
+        "branch": "max near 170 deg",
+        "l_deg": 170.086,
+        "A_over_Aall": 1.07585
+      },
+      {
+        "var": "kappa",
+        "point": "baseline",
+        "value": 0.23058828928336284,
+        "branch": "min near 95 deg",
+        "l_deg": 95.338,
+        "A_over_Aall": 0.96445
+      },
+      {
+        "var": "kappa",
+        "point": "baseline",
+        "value": 0.23058828928336284,
+        "branch": "min near 266 deg",
+        "l_deg": 265.731,
+        "A_over_Aall": 0.86171
+      },
+      {
+        "var": "kappa",
+        "point": "high end",
+        "value": 0.7,
+        "branch": "max near 10 deg",
+        "l_deg": 3.324,
+        "A_over_Aall": 1.34697
+      },
+      {
+        "var": "kappa",
+        "point": "high end",
+        "value": 0.7,
+        "branch": "max near 170 deg",
+        "l_deg": 177.036,
+        "A_over_Aall": 1.35075
+      },
+      {
+        "var": "kappa",
+        "point": "high end",
+        "value": 0.7,
+        "branch": "min near 95 deg",
+        "l_deg": 92.227,
+        "A_over_Aall": 0.6882
+      },
+      {
+        "var": "kappa",
+        "point": "high end",
+        "value": 0.7,
+        "branch": "min near 266 deg",
+        "l_deg": 267.827,
+        "A_over_Aall": 0.61476
+      }
+    ],
+    "merges": [],
+    "baseline_check_on_plotted_361pt_curve": {
+      "argmax_raw_deg": [
+        9.97,
+        170.53
+      ],
+      "argmin_raw_deg": [
+        95.73,
+        265.26
+      ]
+    }
+  },
+  "d/D": {
+    "range": [
+      0.06,
+      0.74
+    ],
+    "baseline": 0.1,
+    "n_sweep": 201,
+    "hold": {
+      "x": 5.9,
+      "eps": 0.1,
+      "alpha": 1.3,
+      "kappa": 0.23058828928336284
+    },
+    "points": [
+      {
+        "var": "d/D",
+        "point": "low end",
+        "value": 0.06,
+        "branch": "max near 8 deg",
+        "l_deg": 7.711,
+        "A_over_Aall": 1.13677
+      },
+      {
+        "var": "d/D",
+        "point": "low end",
+        "value": 0.06,
+        "branch": "max near 173 deg",
+        "l_deg": 172.241,
+        "A_over_Aall": 1.10289
+      },
+      {
+        "var": "d/D",
+        "point": "low end",
+        "value": 0.06,
+        "branch": "min near 94 deg",
+        "l_deg": 93.458,
+        "A_over_Aall": 0.93332
+      },
+      {
+        "var": "d/D",
+        "point": "low end",
+        "value": 0.06,
+        "branch": "min near 266 deg",
+        "l_deg": 266.983,
+        "A_over_Aall": 0.83377
+      },
+      {
+        "var": "d/D",
+        "point": "baseline",
+        "value": 0.1,
+        "branch": "max near 8 deg",
+        "l_deg": 8.072,
+        "A_over_Aall": 1.13294
+      },
+      {
+        "var": "d/D",
+        "point": "baseline",
+        "value": 0.1,
+        "branch": "max near 173 deg",
+        "l_deg": 172.546,
+        "A_over_Aall": 1.10653
+      },
+      {
+        "var": "d/D",
+        "point": "baseline",
+        "value": 0.1,
+        "branch": "min near 94 deg",
+        "l_deg": 94.18,
+        "A_over_Aall": 0.93295
+      },
+      {
+        "var": "d/D",
+        "point": "baseline",
+        "value": 0.1,
+        "branch": "min near 266 deg",
+        "l_deg": 266.395,
+        "A_over_Aall": 0.83348
+      },
+      {
+        "var": "d/D",
+        "point": "high end",
+        "value": 0.74,
+        "branch": "max near 8 deg",
+        "l_deg": 16.245,
+        "A_over_Aall": 1.11943
+      },
+      {
+        "var": "d/D",
+        "point": "high end",
+        "value": 0.74,
+        "branch": "max near 173 deg",
+        "l_deg": 164.43,
+        "A_over_Aall": 1.06121
+      },
+      {
+        "var": "d/D",
+        "point": "high end",
+        "value": 0.74,
+        "branch": "min near 94 deg",
+        "l_deg": 112.534,
+        "A_over_Aall": 0.93063
+      },
+      {
+        "var": "d/D",
+        "point": "high end",
+        "value": 0.74,
+        "branch": "min near 266 deg",
+        "l_deg": 250.317,
+        "A_over_Aall": 0.83698
+      }
+    ],
+    "merges": [],
+    "baseline_check_on_plotted_361pt_curve": {
+      "argmax_raw_deg": [
+        7.98,
+        172.52
+      ],
+      "argmin_raw_deg": [
+        93.74,
+        266.26
+      ]
+    }
+  }
+}

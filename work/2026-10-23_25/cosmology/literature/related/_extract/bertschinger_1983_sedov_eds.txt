@@ -1,0 +1,855 @@
+1983ApJ. . .268. . .17B
+
+
+
+
+                          The Astrophysical Journal, 268:17-29, 1983 May 1
+                          © 1983. The American Astronomical Society. All rights reserved. Printed in U.S.A.
+
+
+
+
+                                             COSMOLOGICAL SELF-SIMILAR SHOCK WAVES AND GALAXY FORMATION
+                                                                                                    E. Bertschinger
+                                                                                              Princeton University Observatory
+                                                                                      Received 1982 March 26; accepted 1982 October 18
+                                                                                    ABSTRACT
+                                          A new family of similarity solutions is found for a point blast in a £2 = 1 Friedmann cosmology
+                                        (Einstein-de Sitter universe). The given solutions are valid several Hubble times after an explosion.
+                                        Initially the shock wave formed satisfies the Sedov solution for adiabatic evolution in a constant
+                                        medium, but it is modified by the cosmological expansion to form a self-similar thin dense shell
+                                        which cools by adiabatic expansion and is unstable to gravitational fragmentation and collapse.
+                                        The shock solution is applied to the explosive amplification model of galaxy formation of Ostriker
+                                        and Cowie. It is shown that earlier than 1 + z ~ 9, inverse Compton and free-free cooling prevent
+                                        galactic-scale shocks from forming. At smaller redshifts, galactic shocks cool adiabatically to form
+                                        cosmological dense-shelled shocks. Line cooling becomes important in the dense shells, cooling them
+                                        to ~ 104 K and setting the Jeans mass to galactic scales. One generation of explosive amplification
+                                        from an initial “seed” galaxy produces a shell of ~ 3 x 1011 M0 in galaxies, with radius and velocity
+                                        dispersion typical of small groups. There may be time for a second generation (though no more);
+                                        the resulting shell of ~2 x 1013 M0 has radius and velocity dispersion characteristic of small
+                                        clusters of galaxies.
+                                        Subject headings: cosmology — galaxies: clusters of — galaxies : formation — relativity —
+                                                           shock waves
+
+                                                I. INTRODUCTION                                                  amplification model of galaxy formation (Ostriker and
+                             The Sedov solution (Taylor 1950; Sedov 1959) for the                                Cowie 1981, hereafter OC; Ikeuchi 1981). OC expected
+                          adiabatic (postshock) evolution of a blast wave into a                                 that radiative cooling of galactic explosions would
+                          uniform medium is well known and frequently applied                                    produce dense shells fragmenting to form new galaxies.
+                          in astrophysics to supernova remnant evolution (see, e.g.,                             In § IV we show that for moderate redshifts adiabatic
+                          Woltjer 1972). Other self-similar shock wave solutions                                 cooling is more effective in forming dense shells (though
+                          have been found for adiabatic and isothermal evolution                                 radiative cooling governs shell fragmentation), and we
+                          into media with power law density distributions (Sedov                                 discuss explosive amplification in terms of the similarity
+                          1959; Solinger, Rappaport, and Buff 1975). Relativistic                                solutions given herein. The results are summarized in
+                          adiabatic similarity solutions have also been found                                    §V.
+                          (Blandford and McKee 1976). In spite of their diversity,
+                          however, these similarity solutions are all for explosions                                                 II. BASIC EQUATIONS
+                          into external media which are constant in time.                                           In this section we develop the notation and equations
+                             Similarity solutions for adiabatic shock waves in                                   with which to describe cosmological similarity solutions.
+                          cosmologically varying media (homogeneous in space                                     The fluid equations and boundary conditions are given
+                          but time-varying and self-gravitating) were cited by                                   first, and integrals of the motion are then derived from
+                          Schwarz, Ostriker, and Yahil (1975), but were not given                                similarity arguments.
+                          in that paper. The solutions are presented here, and have
+                          recently been derived independently by Ikeuchi,                                                    a) Equations of Self-similar Flow
+                          Tomisaka, and Ostriker (1983). True similarity solutions
+                          exist only for Friedmann cosmologies with Q = p/pcrit =                                   Consider a point explosion in an expanding, self-
+                          0 or 1, since only in these cases is the scale length a                                gravitating, uniform medium with negligible pressure.
+                           power law of time, though the general case of power law                               The initial conditions of the explosion give the dimen-
+                           cosmological expansion is considered here. The basic                                  sional parameters ij (cosmic time of the explosion,
+                           equations and boundary conditions are given in § II, and                              measured from the big bang), E (explosion energy), and
+                           the similarity solutions are derived and discussed in § III.                          pi (cosmic density at tf From these and the independent
+                             The cosmological adiabatic shock solution is applic-                                variables t (cosmic time) and r, we can form a dimen-
+                           able only for very high energy explosions in low-density                              sionless time, and distance,
+                           media, since otherwise the shock radiatively cools and
+                           dissipates in less than a Hubble time, the time scale for
+                           cosmological effects to become important. But these
+                           conditions are exactly those encountered in the explosive                              where a and Ô are constants to be determined. In the
+
+
+
+
+                                © American Astronomical Society • Provided by the NASA Astrophysics Data System
+1983ApJ. . .268. . .17B
+
+
+
+
+                          18                                                  BERTSCHINGER                                                Vol. 268
+                          limit T   1 we assume the shock propagation is given by        These are respectively the continuity, Euler, adiabatic,
+                                                /Ft2-5ô\l/5                              and mass equations. Here y denotes the ratio of specific
+                                       rs(t) = a(^-j t3 = rixô ;               (2)       heats CP/CV (assumed constant). For r > rs, equations
+                                                                                         (4), (5), and (7) give the Hubble flow boundary conditions
+                          2=1 defines the shock. Note that 2 = r/rs is the radial        ahead of the shock :
+                          coordinate normalized to unity at the shock.
+                             A one-parameter similarity solution is sought for the                   v = n- = n — rô~1À, p = PiT~3n,
+                          velocity, density, pressure, and integral mass, of the form                     t     U
+                          y(r, t) = (t* y(2) for each dependent variable, where Y is                    m = trrpr3 =                 .            (8)
+                          a dimensionless function of 2, and C is a dimensional
+                          combination of th rh and       The most general form for       We further require p(r > rs, t) = 0. (The addition of
+                          self-similar motion is                                         external pressure adds another dimensional parameter,
+                                                                                         making a similarity solution impossible. The assumption
+                                    v(r, t) = j%aV(A), p(r, t) = p¡ rbD(À),              made here is valid for a strong shock, whose Mach
+                                                                                         number greatly exceeds 1.) For 2 > 1 (subscript 1 to
+                                                                                         denote preshock medium), equation (8) implies
+                             p(r, t) = Pi — xcP(À), m(r, t) = j7ip¡ /-¡VAÍfA), (3)
+                                          ¿i                                                      Fi = n2 , Di = 1 ,    Pi = 0 , Mi = 23 .        (9)
+                          with the constants a-d to be determined.
+                             Now let us consider cosmology (cf. Weinberg 1972).          Equations (7) and (8) also give the constants in equation
+                          Suppose R(t) = Ri zn is the scale length of the universe,      (3):
+                          with n constant. This is an exact solution of Einstein’s             a = ô — l, b=—3n,          c = 2(ô — 1) — 3n ,
+                          field equations for a matter-dominated, homogeneous,
+                          and isotropic universe if n = 0 (Sedov case, no gravity                              d = 3(0-n).                       (10)
+                          and no Hubble flow), n = 1 (uniform expansion, no
+                          gravity, Q = 0), or n = j (Einstein-de Sitter universe,           The fluid equations (7) may be written in nondimen-
+                          Í2 = 1). Exact similarity solutions for shock waves in         sional form using equations (1), (3), (6), and (10). The
+                          homogeneous cosmological media exist only in these             result is
+                          cases, because in a similarity solution all nondimensional
+                          parameters without an explicit power law dependence on                   (V — ôÀ,)D' + DV-\     :    3nD = 0i         (11a)
+                                                                                                                          A
+                          t must be constant, and n is constant only if it equals
+                          0, 1, or f. Then the preshock velocity and density in the                                 P'      M
+                          laboratory frame (i.e., at the center of expansion) are          (V — ôA)V — (1 - ô)V = - --„(!-„)-,                  (11b)
+                                      v = Hr, p = pi(Ri/Rf = piT-3\               (4)
+                                                                                            (K-<5A)^-r^j =2(1 -ô)-3n(y- 1),                     (11c)
+                          where H is the Hubble constant. H and the density
+                          parameter Q are related to n at any epoch by
+                                                                                                                 M' = 3A2D ,                    (lid)
+                                           R n  Q     RR 1 — n
+                                                                                   (5)   where a prime = d/dL The self-similar nature of the
+                                           R=7’ 2 = ~   =
+                                                           ñ                             solution has reduced the partial differential fluid equa-
+                           and the field equations relate these by                       tions into ordinary differential equations.
+                                                                                            To integrate equations (11) we need the solution
+                                          4                   n(l - n)                   immediately postshock (denoted by subscript 2), since the
+                                          3                  t2                    (6)
+                                                                                         fluid variables are discontinuous across the shock. They
+                              The fluid equations in Eulerian form, for a spherically    are given by the usual shock jump conditions derived
+                           symmetric, adiabatic, self-gravitating gas (neglecting        from continuity of mass, momentum, and energy fluxes
+                           magnetic fields, viscosity, thermal conduction, and radia-    in the shock reference frame (cf. Spitzer 1978, § 10.2).
+                           tion) are given by                                            When solved for the postshock values and written in
+                                                                                         dimensionless form, they become:
+                                               dp   1 d , j .
+                                                  H—* — (r2pv) = 0 ,             (7a)
+                                               dt r2 dr y H
+                                                                                         V2-ô = ^L\        - +                     (^i - à), (12a)
+                                          dv       dv _    1 dp   Gm                            y +l/ ZMB-<5)
+                                                                                 (7b)
+                                          dt       dr      p dr    r2                                 y+l\           iMtW)2
+                                                                                             D2                                            (12b)
+                                                                                                     ,y - 1/[2y/(y - Ifl/y^ + (F, - <5)2 ’
+                                                                                  (7c)
+                                                                                                           2
+                                                                                                   Pi         D1(V1 - Ô)2 -                     (12c)
+                                                   dm                                                     y+1
+                                                      = 4nr2p .                  (7d)
+                                                   dr                                                            M2=M1 ,                        (12d)
+
+
+
+
+                               © American Astronomical Society • Provided by the NASA Astrophysics Data System
+No. 1, 1983                          COSMOLOGICAL SELF-SIMILAR SHOCK WAVES                                                                 19
+where ô is the dimensionless shock velocity (cf. eq. [2]):              The shock velocity S is now specified by differentiating
+                                                                      equation (18) and substituting equations (11), (16), and
+                      drs       rs     r¡   ô_                        (18), giving
+                      dt         t     ti                '        '
+Substituting the preshock boundary conditions (eqs. [9])              (3n + 2 — 55)          DV2 +            - n(l - n)
+gives
+                                                  y+ 1                                            + n(l — n)(2 — 3n)             =0.      (19)
+         V2-ô = y—±(n-ô), D2                                                                                                 A
+                y+1
+                                                                      For n = 0, 1, or f, this will be satisfied if
+              p             n    0 2        m    = 1         14
+               i = yjri( - ) ’               2      -    ( )                                     Ô = i(3n 4- 2) .                         (20)
+
+                  b) Integrals of the Motion                          This result may also be shown heuristically from the
+                                                                      results of the Sedov solution, for which rs cc (Et2/p)115
+   Integrals of the motion are necessary to specify a and             cc t3, noting that cosmologically p cct 3".
+<5 and to check the integration. Integrals expressing                    A third integral of motion may be derived by exploiting
+conservation of mass and energy are conveniently found                the adiabatic nature of the postshock flow, using the
+using the similarity property of the fluid motion (cf. Sedov          specific entropy as a Lagrangian variable.1 The specific
+1959; Landau and Lifshitz 1959, § 99). Consider a sphere              entropy of a given fluid element is S = Cv In q, where
+of radius r, expanding such that À = constant; the radial
+velocity of points on this surface is Àvs. Similarity requires                           q = eSICv = pp-y = p2p2-y,                       (21)
+that the mass contained in this sphere remain a constant
+fraction of the total mass bounded by the shock as it                 where p2 and p2 are the values the fluid element had
+evolves. In a time dt the mass in the sphere increases by             just after it crossed the shock. Since it is constant along
+4nr2p(Àvs — v)dt, while the total mass interior to the                an adiabat, q may be used as an independent variable
+shock (À = 1) increases by 47rrs2p1(i;s — v^dt. Thus we               by labeling fluid elements with the value of q they had
+must have                                                             after they were shocked. But for spherical symmetry we
+                                                                      may also use the integrated mass m as a Lagrangian
+               4nr2p(Àvs — v)dt             m                         variable, labeling each fluid shell by the mass interior to
+                                                             (15)
+              47trs2pi(t)s - vjdt      (4/3)nrs3p1 ’                  it. For different fluid shells, both q and m are functions
+                                                                      of the dimensionless time ts when a given fluid shell was
+which in dimensionless form becomes                                    shocked. Using equations (3) and (10) to eliminate ts
+                                                                       between q and m gives
+                                                             (16)
+                                     n—o                                                    q = q0(m/m0fn-ô^ô-n\                          (22)
+This result may also be obtained from direct integration
+of equations (11a) and (lid).                                         where q0 and m0 are dimensional constants depending
+   To acquire a second integral, we note that the change              on y, E, th and p^ Substituting this in equation (21) gives
+in energy of the gas enclosed by the shock equals the                 the integral
+energy of the swept-up gas. For an adiabatic self-similar                                pp~ym{yn~ô)l{n~ô) = constant.                    (23)
+shock this must vanish, because otherwise the total
+energy enclosed by the shock, divided by the initial                  This result is valid for all values of ts (along all adiabats),
+explosion energy, would not be a constant. (This does                 and hence for all values of t and 2 < 1. Nondimension-
+not exclude self-similar detonation waves, which have                 alizing and using equation (20) gives
+£ = 0 at t = if.) Similarity requires this energy balance
+to hold for any sphere 2 = constant. In a time dt the                                   PD - yMiyn - mn ~0) = constant .                  (24)
+amount of energy 4nr2vdt[p + jpv2 + p/(y — l) — Gmp/r]
+leaves the sphere of radius r. But as the sphere expands,             This integral may also be obtained by direct integration
+the energy acquired in the extra volume is 4nr2Xvsdt                  of equations (11a) and (11c). Note that the fact that
+ x [jpv2 4- p/(y — 1) — Gmp/r]. Equating these gives                  equation (23) must be independent of t provides an
+                                                                      independent derivation of equation (20).
+                                                                         Global integrals may be obtained using conservation
+       pv A- (v — Àvs                                        (17)     of total energy and the virial theorem. Integrating over
+                                                                      the volume enclosed by the shock and nondimension-
+ which in dimensionless form becomes                                  alizing, energy conservation gives for a (defined in eq. [2])
+                                                                                                                      1/5
+                                                                                            a = [47t(i + « + w)]-        ,                (25)
+ PV + {V — ÔÀ)          DV2 +           — n(l - n)^Y] = 0 '
+                                                                         1
+                                                             (18)            I am indebted to Dr. J. P. Ostriker for pointing this out.
+
+
+
+
+    © American Astronomical Society • Provided by the NASA Astrophysics Data System
+1983ApJ. . .268. . .17B
+
+
+
+
+                          20                                                 BERTSCHINGER
+                          where i, w, and w are the nondimensional total kinetic,       This is necessary because, as will be seen, the solutions
+                          thermal, and gravitational energies:                          do not extend all the way to 2 = 0, but only to x = 0
+                                        1                   1                           (where X = ko>0 and V # 0). It is easy to see that
+                                  i=: r jDV2À2dÀ, u=\r         P -A2iU,
+                                                                                        x > 0. Suppose a fluid element has dimensionless velocity
+                                      J                   J
+                                        o                   o 7- 1                      V = ÔL As it evolves it then remains at constant A
+                                                       c1 MD                            (constant fraction of the shock radius). But if F > ¿A,
+                                         w — —n(l — n) \ —— À2dÀ .              (26)    the fluid element moves toward the shock (increasing A)
+                                                            A                           and the profile changes with time, destroying the self-
+                          The virial theorem is obtained by multiplying the Euler       similar nature. Since x is nonnegative and numerical
+                          equation by pr and integrating over the shock-enclosed        integrations show it is monotone increasing with A, it is
+                          volume, using the continuity equation and equation (14)       a suitable independent variable.
+                          for the surface terms obtained by using Gauss’s theorem.         Expansion of equations (11) for n = f to lowest order
+                          The nondimensional result is                                  in x shows a power law behavior of the solutions near
+                                                                                        x = 0 for y > 7/6. (The solution for y < 7/6 has not been
+                           Yl= Jf WVX2dX = 2t + 3(y - l)u + w - n(n - S).               found.) This behavior is factored out in order to allow
+                                 o                                                      accurate numerical solution:
+                                                                       (27)                    D = D(x)xs~1 , P = P(x)xs, M = M(x)xs, (29)
+                                  III. COSMOLOGICAL SIMILARITY SOLUTIONS                with
+                             Solutions are now given of the nondimensional fluid
+                          equations (11), with boundary conditions set at ¿ = 1
+                          by equations (14). The n = 0 noncosmological Sedov
+                          solution is already well known (Sedov 1959; Zel’dovich        F (and hence A), D, P, and M approach constant positive
+                          and Raizer 1966). The trivial n = 1 (Q 1) case is             values F0, D0, P0, and M0 at x = 0 (A = A0) which depend
+                          discussed below first, and then accurate numerical solu-      on boundary conditions at A = 1 and must be determined
+                          tions are given for the n = f (Q = 1) case. The cosmolog-     numerically.
+                          ical solutions are only valid for t > 1, and the develop-        Equations (11), with equations (28) and (29) substi-
+                          ment from a Sedov solution for t < 1 is discussed.            tuted, were integrated with 1000 points for y = 5/3, 3/2,
+                          Finally, the n = 2/3, y = 5/3 solution is argued to be        7/5, and 4/3 using a fifth and sixth order Runge-Kutta
+                          gravitationally unstable.                                     ordinary differential equation solver. At each point the
+                                                                                        integrals (16), (18), and (24) were checked and had
+                                           a) Open Universe (Q = 0)                     relative errors less than 10“11 (except at x = 0, where
+                             For rc = 1 (negligible gravity, uniform expansion), only   extrapolation of a power law fit provided slightly worse
+                          trivial solutions of equations (11) exist, with F = A,        accuracy), so the solutions are believed to be highly
+                          P = 0, and D arbitrary. (D is given by non-self-similar       accurate.
+                          initial conditions.) The “shock” comoves with the                The solutions for y = 5/3 and 7/5 are shown in Figures
+                          expanding medium (rs cc i), so no matter passes through        1 and 2 and are presented in tabular form in Tables 1
+                          it and no shock heating occurs. (Thus there is no shock       and 2. For all values of y > 7/6 the integrated mass is
+                          in the usual sense, although there is a contact discon-       zero at A = A0 > 0. Thus the matter swept up by the
+                          tinuity, with the density discontinuous at Â = 1.) This       shock is confined to a shell of thickness 1 — A0 ^ 0.03,
+                          solution is the limiting case after many Hubble times of      interior to which is void. Intuitively this occurs because
+                          a point blast in a Q 1 Friedmann cosmology. Before            in the absence of a shock the fluid is already expanding
+                          reaching this self-similar solution an initial Sedov blast    due to the Hubble recession, and the additional kinetic
+                          wave decelerates until it is comoving with the Hubble         energy of the explosion is enough so that the fluid
+                          flow. The (nondimensional) density distribution at that       comoves with the shock; hence F = <5A at A = A0. The
+                          time is frozen in, and adiabatic expansion cools the          pressure also goes to zero at A = A0 as the fluid undergoes
+                          interior to p = 0.                                            adiabatic decompression. As a result, the fluid flow in the
+                                                                                        laboratory frame is highly supersonic through the shell;
+                                    b) Einstein-de Sitter Universe (Q = 1)              in the shock frame the flow is subsonic for A > 0.969 (for
+                             In the n = j (Einstein-de Sitter-Sedov) case, equation      y = 5/3 and 7/5) and supersonic interior to this. For
+                          (20) shows that the shock propagates as rs oc i4/5. Cosmo-     y > 7/5, equations (29) and (30) show that the density
+                          logical effects modify the solution substantially from the     becomes singular at A = A0, although slowly enough that
+                          Sedov solution. Mathematical singularities appear, and         the total mass enclosed by the shock is finite. This density
+                          it is necessary to factor out the singular behavior before     singularity is unstable to further gravitational condensa-
+                          numerical solution can be obtained. (An analytic solution      tion and, as we shall see, may play an important role in
+                          was not found for this case.)                                  galaxy formation.
+                              The independent variable is first changed from À to           Several constants associated with the Einstein-de
+                                                                                         Sitter-Sedov solutions are shown in Table 3 for y = 5/3,
+                                                x = ôÀ — V .                     (28)    3/2, 7/5, and 4/3. The integrals in equation (26) were
+
+
+
+
+                               © American Astronomical Society • Provided by the NASA Astrophysics Data System
+1983ApJ. . .268. . .17B
+
+
+
+
+                                                                            X                                                    X
+
+
+
+
+                                                                            X                                                     X
+                             Fig. 1.—Einstein-de Sitter-Sedov solution for y — 5/3. See note to Table 1 for units. The density is zero inside A = 0.9674. The dashed line in
+                          the velocity graph is V = ¿A, the velocity a fluid element would have to have in order to remain at constant A.
+
+
+
+
+                                                                            X                                                     X
+
+
+
+
+                                                                             X                                                    X
+                            Fig. 2.—Einstein-de Sitter-Sedov solution for y = 7/5. See Fig. 1 legend for units and the dashed line. The density is zero inside A = 0.9661.
+
+
+
+
+                               © American Astronomical Society • Provided by the NASA Astrophysics Data System
+1983ApJ. . .268. . .17B
+
+
+
+
+                          22                                                                BERTSCHINGER                                                                   Vol. 268
+                                                        TABLE 1                                                                        TABLE 2
+                                     Einstein-de Sitter-Sedov Solution for y = 5/3a                                 Einstein-de Sitter-Sedov Solution for y = 7/5a
+                                                                                               M                                                                              M
+                          1.000000.              0.766667         4.00000     0.0133333     1.000000      1.000000 .               0.777778      6.00000       0.0148148    1.000000
+                          0.998816.              0.767386         4.15942     0.0137546     0.985523      0.998980 .               0.778073      6.21054       0.0152574    0.981330
+                          0.997588 .             0.768070         4.33174     0.0141804     0.969946      0.997910 .               0.778328      6.43427       0.0157021    0.961111
+                          0.996317 .             0.768720         4.51878     0.0146089     0.953182      0.996790 .               0.778543      6.67240       0.0161449    0.939197
+                          0.995003 .             0.769336         4.72273     0.0150382     0.935131      0.995615 .               0.778714      6.92628       0.0165809    0.915423
+                          0.993646 .             0.769917         4.94625     0.0154654     0.915674      0.994384.                0.778841      7.19745       0.0170032    0.889605
+                          0.992246 .             0.770463         5.19266     0.0158871     0.894677      0.993093 .               0.778919      7.48762       0.0174035    0.861530
+                          0.990801 .             0.770974         5.46613     0.0162986     0.871979      0.991740 .               0.778947      7.79871       0.0177704    0.830960
+                          0.989312.              0.771450         5.77196     0.0166943     0.847386      0.990319 .               0.778922      8.13294       0.0180896    0.797623
+                          0.987778 .             0.771889         6.11710     0.0170662     0.820667      0.988828 .               0.778840      8.49277       0.0183424    0.761206
+                          0.986199 .             0.772292         6.51078     0.0174045     0.791538      0.987261 .               0.778698      8.88105       0.0185047    0.721351
+                          0.984572 .             0.772658         6.96563     0.0176954     0.759641      0.985614 .               0.778491      9.30100       0.0185451    0.677648
+                          0.982898 .             0.772985         7.49954     0.0179205     0.724522      0.983881 .               0.778216      9.75633       0.0184232    0.629623
+                          0.981175 .             0.773273         8.13876     0.0180540     0.685582      0.982057 .               0.777868     10.25129       0.0180860    0.576724
+                          0.979401 .             0.773521         8.92396     0.0180590     0.642007      0.980134 .               0.777440     10.79078       0.0174643    0.518315
+                          0.977573 .             0.773725         9.92226     0.0178798     0.592637      0.978105 .               0.776929     11.38047       0.0164676    0.453649
+                          0.975688 .             0.773884        11.25494     0.0174285     0.535717      0.975963 .               0.776326     12.02693       0.0149762    0.381857
+                          0.973743 .             0.773995        13.17161     0.0165529     0.468337      0.973698 .               0.775625     12.73781       0.0128322    0.301914
+                          0.971730 .             0.774051        16.30652     0.0149517     0.384940      0.971300.                0.774818     13.52201       0.0098252    0.212616
+                          0.969639 .             0.774044        23.10934     0.0118475     0.271592      0.968759 .               0.773896     14.38998       0.0056739    0.112541
+                          0.967437 .             0.773950            00       0             0             0.966063.                0.772851     15.35396       0            0
+                               a
+                              A = r/rs is the radius in units of the shock radius. F, D, P, and M            ‘ See note to Table 1 for units.
+                          are the nondimensional velocity, density, pressure, and mass,
+                          respectively, with units given by dimensional combinations of the
+                          explosion parameters th E, and p¡ (cf. eqs. [l]-[3]).
+
+                          performed using cubic splines interpolation, with an                            density D increases with time at A ^ À0 for y > 7/5, the
+                          asymptotic power series fit in xand xs near x = 0 (where                        real (dimensional) density p actually decreases. This may
+                          the derivatives of D, P, and M are singular). Both the                          be seen by considering the Lagrangian time derivative
+                          virial theorem equation (27) and the mass equation (lid)                        (following a fixed fluid element):
+                          were also integrated and checked and had relative errors
+                          less than 5 x 10-10. For y = 5/3 these results give                                      d^_d       (V — ôX) d _ d               .          x d
+                                                                                                                                                                  V') z dx     (31)
+                          rs = (6n)1/5oc(EG)1/5t^5 = 1.89(£G)1/5i4/5. Schwarz, Os-                                 dz dz         t     dÀ dz
+                          triker, and Yahil (1975), who first gave the form of this
+                          solution, gave the coefficient as 2.09 due to an error in                       Now equations (3), (10) and (29) give
+                          accounting for the energy. We note from Table 3 that                                           d(\np)
+                          since the pressure goes to zero in the shell, thermal                                                        -2-(0 - V')(s-1)                        (32)
+                                                                                                                         d(\n z)
+                          energy contributes very little to the total energy, which
+                          is dominated by the kinetic component. In the absence                           in the limit x -► 0. Since x is monotone increasing in 2,
+                          of a shock (pure Hubble flow) we would have t = —w =                            V' = dV/dÀ < ô. Furthermore, s > ¿, so d(\n p)/d(\n z)
+                          2/45, u = 0.                                                                     < — 4/3 and the density of a fluid element at À & À0
+                             The density singularity appears troubling but actually                       decreases with time. The shock only approaches the
+                          never occurs in practice. Although the dimensionless                            singular self-similar form in rescaled variables.
+
+                                                                                                 TABLE 3
+                                                                              Einstein-de Sitter-Sedov Solution Constants
+                                                                  Parameter                y = 5/3       y = 3/2         7 = 7/5         7 = 4/3
+                                                        A0                                  0.967437      0.967248       0.966063        0.963794
+                                                        V0                                  0.773950      0.773799       0.772851        0.771035
+                                                        D0                                  1.45821       4.04520       15.3540         92.8734
+                                                        P0                                  0.564291      1.56508        5.93316        35.8044
+                                                        M0                                 10.2359       28.3842       107.471         647.025
+                                                        a a                                  1.04901      1.04612        1.04381         1.04186
+                                                        t/E                                  1.58979      1.57674        1.56586         1.55633
+                                                        u/E                                 0.0119112     0.0155019      0.0189841       0.0223802
+                                                        w/E                               -0.601700     -0.592247      -0.584843       -0.578707
+                                                            3
+                                                                Here E = t + u + w.
+
+
+
+
+                                   © American Astronomical Society • Provided by the NASA Astrophysics Data System
+No. 1, 1983                         COSMOLOGICAL SELF-SIMILAR SHOCK WAVES                                                                      23
+         c) Initial Development of Shock Solutions                          increases at À = À0, becoming asymptotically singular,
+   The cosmological shock solutions presented above are                     while the pressure (and hence temperature) decrease. For
+(in the absence of instabilities to be discussed below)                     isothermal perturbations (cooling times become short in
+approached asymptotically only at large times, because                      the dense shell) this is just the condition for the simple
+the initial conditions of the explosion do not satisfy self-                Jeans instability to occur, though we must also consider
+similarity. First, a blast occurs in a finite volume of                     the expansion of the shell in order to determine if the
+space and may also be spread in time, e.g., continuous                      perturbed mass is gravitationally bound.
+energy injection for some period of time A^ after í = í¿.                      Consider a cylindrical fluid element at 2 > A0 (^0 ~ ^
+The shock wave formed becomes self-similar only after it                     < Ao + A/l) of height AÀ and radius As (lengths are
+has swept up several times the initial explosion mass,                      measured in units of rs), whose axis points in the radial
+and t — tiP Ati. Assuming this occurs in less than a                        direction. Neglecting the effects of a perturbation on the
+Hubble time (t — ti < if), the shock enters a phase during                  surrounding medium, the element is unstable to gravita-
+which it satisfies the Sedov solution. In this case the                     tional collapse if its total energy is negative. It may be
+cosmological density is constant and vs $> vH = Hrs, so                      shown that for AÀ > As the energy is positive, so we only
+the Hubble flow is dynamically unimportant. This non-                       need consider AÀ < As. In this case the gravitational
+cosmological phase is also indicated by the invalidity of                    energy is given to a good approximation by that of a thin
+equation (2) for z = 1 (rs = 0). Finally, for i greater than                 disk, — (Sßn)GM2/(rs As). Then the nondimensional
+several Hubble times (t 1) cosmology becomes                                 kinetic, thermal, and gravitational energies of the fluid
+important, and the shock asymptotically satisfies the                        element (measured in the moving frame at 2 = A0) are,
+ cosmological solutions given above. The time at which                       to lowest order in A¿ and As,
+ this occurs may be estimated by equating the shock
+ velocity given by the Sedov solution to that given by the                        t ~ § <514/9Z)0(As)4(AA)5/9 « 1.46(As)4(AA)5/9 ,
+ cosmological solution:
+                                                                                 u * %Ttö5l9P0(As)2(AX)1419 ä 1.51(As)2(AA)14/9 ,
+                                                                             w « -ff0-8/9D02(As)3(A/l)10/9 « — 3.73(As)3(A¿)10/9 .
+This gives t = 2ti.                                                                                                                           (34)
+  d) Gravitational Instability and Shell Fragmentation                      The kinetic energy is due entirely to the spherical
+   The discussion here is confined to n = 2/3, 7 = 5/3,                     divergence, since the radial velocity gradient is very small
+since this is the case that would be expected in practice.                  near À = À0. (Radial kinetic energy < 10-4w.)
+We saw above that for t > 1 the dimensionless density                         There are now three constraints on the dimensions of
+
+
+
+
+                                                                    log (AS)
+   Fig. 3.—Gravitational instability region for the y = 5/3 Einstein-de Sitter-Sedov solution. A/l and As are the height and radius, respectively,
+of a cylindrical fluid element. Lengths are in units of the shock radius rs. (AAmin, AAmax, Asmin, Asmax) = (0.01592, 0.03256, 0.1285, 0.2440). The
+total energy (kinetic + thermal + gravitational) of the fluid element is i + w + w.
+
+
+
+
+    © American Astronomical Society • Provided by the NASA Astrophysics Data System
+24                                                 BERTSCHINGER                                                 Vol. 268
+
+a fluid element in order that it be unstable: i + u + w       We first neglect gas cooling and then consider what
+ < 0, AA < As, and A A < (shell thickness) = A¿max. These     constraints it imposes on galaxy amplification. The
+three conditions define a region in the (As, Airplane         possibly observable consequences of inverse Compton
+shown in Figure 3. It is seen that fluid elements are         cooling are also noted.
+unstable if 0.016 < A2 < 0.033 and 0.13 < As < 0.24. The         The tentative nature of the discussion must be
+smallest unstable element has mass ~ 1/300 of the swept-      emphasized since analytic similarity solutions are not
+up mass. The lower limit on As for instability corresponds    strictly applicable, partly because cooling effects are not
+to a maximum of / æ 23 for nonradial perturbations            well accounted for. A more detailed treatment awaits
+expanded in spherical harmonics Ylm, comparable with          numerical simulations (Vishniac, Ostriker, and Bert-
+the result obtained by Vishniac (1982), who used the          schinger 1983).
+thin shell approximation for adiabatic perturbations.
+Vishniac also showed that when the interaction between                      a) Adiabatic Galactic Shocks
+the shell and the perturbed element is included, elements
+are unstable for As > 0.24, corresponding to a minimum          Assume a typical exploding young galaxy has mass
+ 1=1.                                                         10114Mû ! M0. Assuming an energy conversion efficiency
+   Thus there is presumably a range of unstable wave-         10~ £_4, the energy produced in a galactic explosion is
+ lengths for both adiabatic and isothermal perturbations.     E = 1061£61 ergs = eMiC2, or
+ When the gravitational instability first occurs (t ~ 2),                       E61 = 1.796_4Mill .                  (35)
+ there will be a minimum unstable mass, which may set
+ the mass scale for galaxies. Furthermore, the positive       This is consistent with the argument of Bookbinder et al.
+ pressure gradient and negative density gradient at 2 = 20    (1980) that supernovae must have contributed ~1061
+ cause a lighter fluid element to decelerate a denser one,    ergs per galaxy during formation in order to produce the
+ so a Rayleigh-Taylor instability may also appear (Spitzer,   abundance of heavy elements observed in Population II
+ private communication), although this is complicated by      objects. The energy is injected continuously beginning at
+ the noninertial shock frame. The details of instabilities    a redshift Zj over a period Aii, the dynamical free-fall
+ depend on the transition of the shock from the Sedov         collapse time of a protogalaxy. The cosmic time
+ to the cosmological phase, which is beyond the scope         (measured from the big bang) and density at the epoch
+ of this paper.                                               z¿ are
+         IV. APPLICATION TO GALAXY FORMATION
+                                                                 = 4- (i + z,)_3/2 = 6.52 x W9h0-l(l + Zi)-312 yr ,
+   In this section the self-similar shock solutions derived        JIÍq
+above are applied to the explosive amplification model             'yzj 2
+of galaxy formation of OC. In this picture supernova          P¡ =        + z¡)3 = 1-88 x 10_29/i02(l + Zifgcm“3 ,
+remnants in a young galaxy overlap to produce a galactic
+wind which leaves the galaxy and forms a shock wave                                                                  (36)
+(galactic shock) propagating into the intergalactic
+medium. The shock forms a dense shell, as a result of         where h0 is the Hubble constant H0 divided by 100 km
+cosmological expansion and/or gas cooling, which is           s"1 Mpc-1. Assuming a collapsing protogalaxy cools
+gravitationally unstable and collapses to form new            rapidly and is initially homogeneous, with a density
+galaxies. If the mass swept up by the shock exceeds the       p = Di Pi, the dynamical time is
+initial galaxy mass, amplification results and a chain
+reaction may occur. The model predicts that (1) galaxy
+formation occurred recently (z < 10); (2) the diffuse
+X-ray background (Boldt 1978) may be due in part to              Since Aij ~ th the shock never enters a Sedov phase.
+thermal bremsstrahlung emission from the galaxy explo-        For i — i; < Aii, supernovae inject energy continuously
+sions (Schwarz, Ostriker, and Yahil 1975; Bookbinder          with E = E(t) oc Z(t) = galactic metal abundance (cf.
+et al. 1980); (3) the cooling shells may produce observable   Audouze and Tinsley 1976). During the early galaxy
+redshifted Lya and He n 2304 emission (Shull and Silk         collapse E(t) oc tv, with v % 1 [t = (i — t^/ti during this
+ 1981); and (4) if explosive amplification is sufficiently    injection phase]. Then it is clear from dimensional
+prolific, the shocks overlap to produce a low-density         arguments that a self-similar shock wave forms given
+hot ionized intergalactic medium in pressure equilibrium      approximately by the Sedov solution, except with E being
+with embedded cool clouds (Field 1972; OC), much like         explicitly time-dependent. The shock radius, velocity, and
+ the interstellar medium (Cox and Smith 1974; McKee           swept-up mass are (to within factors of order unity) just
+ and Ostriker 1977). For convenience in this discussion       the same as for the corresponding Sedov solution with
+ we take Q0 = (p/pCrit)o = 1 and assume that before galaxy    time-varying energy. The internal structure of the shock
+ formation occurs all the mass is in the pregalactic          will differ from the Sedov solution but will be charac-
+ medium, with n(He) = 0.10n(H). (The possibility of           terized by decreasing density and increasing temperature
+ massive neutrinos is neglected.) The results will not        for 2 == r/rs < 1. (These also imply constant pressure as
+ change much if Q0 ^ 0.5, as galaxy formation is expected     r -► 0, since the sound speed becomes much greater than
+ to occur before z = 1, in which case Q ^ 1 at that epoch.    the shock speed and pressure gradients are eliminated
+
+
+
+
+     © American Astronomical Society • Provided by the NASA Astrophysics Data System
+1983ApJ. . .268. . .17B
+
+
+
+
+                          No. 1, 1983                          COSMOLOGICAL SELF-SIMILAR SHOCK WAVES                                                   25
+                          quickly by sound waves.) Since the shock solution is                T = l_P
+                                                                                                      r
+                                                                                                       _l_
+                          necessary in this phase to determine under what condi-                  D k t2
+                          tions gas cooling is important, before t ~ 1 (when
+                          cosmological effects become important) we assume that                 = 1.16 x 107 - t-2/5£612/5V/5(1 + ¿i)315 K .       (39d)
+                          it is given by the Sedov solution, which has shock radius,
+                          velocity, mass, and interior temperature
+                                                                                              Here t = t/th P/D = 1/300 (T oc 3.86 x 104 K) at A = 1,
+                                                                                              and H only is ionized by the shock so /¿ = 0.67mH.
+                                                                                              Because of the Hubble flow the velocity of the external
+                                                                                              fluid with respect to the shock is only vs- vH = (¿)i;s.
+                                    = 2.77t2/5E611/5/io_4/5(1 + Zi)~615 Mpc , (38a)           (This is why the postshock temperature is substantially
+                                                                                              lower than in the Sedov case.) The density rises and
+                                   2 rK                                                       temperature falls behind the shock, with the density
+                              vx = --
+                                   5 t — ti                                                   nearly zero inside r0 = 0.967rs (cf. § III for details).
+                                                                                                 The swept-up matter is confined to a thin shell of
+                                 = 166t_3/5£611/5/i01/5(1 + Zi)3/1° km s-1 , (38b)            thickness
+                             Ms = %nrs3Pi                                                            Ars = 82t4/5£611/5V4/5(1 + zf)"6/5 kpc ,        (40)
+                                = 2.47 x 1013t6/5£613/5/ío“2/5(1 + z¡)_3/5 M0 ,               which is close to galactic dimensions. Interestingly, this
+                                                                                     (38c)    scale length is not directly dependent on gas cooling
+                                                                                              processes, which have been postulated to account for
+                          T=PP(
+                                        r
+                                       s ^                                                    galaxy sizes by Rees and Ostriker (1975) and Silk (1977).
+                                D k\t — t;                                                    (This is not to argue that radiative processes may not
+                                                                                              be important in determining the mass of a collapsing
+                                                                                              protogalaxy after a dense shell forms, only to point out
+                             = 121 x 107 - t-6/5E612/5/i02/5(1 + ¿i)315 K ,          (38d)
+                                                                                              that cosmology may also be relevant.)
+                                                                                                 The shell is unstable to gravitational fragmentation
+                          where k is Boltzmann’s constant, H and He are assumed               and collapse, which occur adiabatically on a Hubble time
+                          fully ionized so that [i = mean mass per particle =                 scale ti or isothermally on a cooling time scale icool
+                          0.61mH, and P and D are the dimensionless pressure           and    (cf. § Hid). If fragmentation occurs at t = Tf> 2, the
+                          density. It is to be understood that E61(t) & tv, so that,          mass swept up in the shell is (cf. eq. [39c])
+                          e.g.,rs oc t(2 + v)/5. The coefficient of 1.15 in equation (38a),
+                          correct for the v = 0 Sedov solution, has a slight depend-                 Ms = 2.65 x 1013T/2/5e_43/5Mill3/5/io_2/5
+                          ence on v which is given by Ostriker, McKee, and Cowie                             x (1 + Zi)~3/5 Mq ,                     (41)
+                          (1982), but which will not change the results below, since
+                          the v-dependence may be absorbed into E61 or e_4.                   where equation (35) has been used for E61. Large ampli-
+                          (Weaver et al 1977 give the coefficient as 0.88 for the             fication occurs for initial 1011M0 galaxies. Amplification
+                          case v = 1.) Shock jump conditions give P/D = 0.03                  also occurs on other mass scales, but much smaller
+                          (T oc 3.82 x 105 K) at 2 = 1. In the Sedov solution                 masses may be Jeans stable, as will be shown below.
+                          P/D oc 2with rj = 9/2 for 2^1 (cf. Sedov 1959); rj may                 Explosive amplification in the cosmological phase is
+                          be different (but positive) in the injection modified               limited to a moderate range of redshifts Zj. For small Zj-
+                          solution.                                                           there is not enough time for shell fragmentation to occur
+                             If gas cooling is negligible, the injection phase lasts          before the present epoch; this implies 1 + z¿ > xf213. For
+                          until t — ti^ Ath when energy injection ends and cosmo-             Zj > 8, inverse Compton and free-free cooling occur in
+                          logical effects become important. A cosmological shock              less than a Hubble time and cool galactic shocks while
+                          wave forms with                                                     still in the energy injection phase. These effects are
+                                                                                              discussed below.
+                                              / Et2 \1/5 4/5
+                                 rs =1.05               *                                                          b) Gas Cooling
+                                                                                                 Gas cooling is important since it (1) restricts the range
+                                    = 2.52t4/5E611/5/i0“4/5(1 + ^)'6/5 Mpc , (39a)
+                                                                                              of redshifts for which explosive amplification of galaxies
+                               _4r,                                                           may occur and (2) sets the scale of galaxy masses in
+                                                                                              fragmenting dense shells (the Jeans mass at 104 K).
+                              ^ 5 t                                                           Nevertheless, it will be shown that because the energy
+                                 = 303t"1/5E611/5/îo1/5(1 + Zi)3110 km s~1 , (39b)            injection time scale is roughly the Hubble time, the
+                                                                                              adiabatic cosmological shock solution correctly gives the
+                             Afs = înrs3 Pi?-2                                                radius and mass of a dense shell. Thus both cosmological
+                                                                                              and gas cooling processes are important to galaxy
+                                 = 1.87 x 1013t2/5£613/5/z0"2/5(1 + Zi)-315 M0 ,
+                                                                                              formation in the explosive amplification model.
+                                                                                     (39c)       First consider cooling in the energy injection phase,
+
+
+
+
+                              © American Astronomical Society • Provided by the NASA Astrophysics Data System
+1983ApJ. . .268. . .17B
+
+
+
+
+                          26                                                  BERTSCHINGER                                                     Vol. 268
+                                                     1/2
+                          0 < T < Ati/ti = (371/4)0^ . There are three main gas          approximately correct for hv/kThkg <0.1. Looking face
+                          cooling processes: inverse Compton scattering, thermal         on to a Sedov shock at t = 1 gives the rough estimate
+                          bremsstrahlung, and line emission. For each, a cooling
+                          time tcool for the shock may be calculated. Cooling is              ATI                      Pi r,-3 <xT
+                                                                                                                 PdX
+                          dynamically important in this phase if tc00l < t — ti =              Tb                       me c2t2
+                          tí,. But in this case individual supernova remnants                                                 / 1 -I- z-1 \12/5
+                          within a galaxy cool before overlapping to power a                        ^ 4.5 x 10_6£613/5/io64/25 ;                . (46)
+                          galactic wind, so galactic-scale shocks cannot form.                                                \1 +ZJC/
+                          Alternatively, a lower mass cooled dense shell forms and       Since ne Te rises out to the shock, this estimate may be
+                          fragments, with mass given by equation (38c), with             increased by several times if looking edge-on to a shock
+                          E61 ä tv < 1. Amplification of galaxy-size masses cannot       (limb brightening). Since the current detection limit is
+                          occur for icool Ath setting an upper limit on the red-         ATb/Tb ~ 10“4, if IC cooling galactic shocks exist, they
+                          shift as shown below.                                          may be just visible at 1 + z æ 9 as lower temperature
+                             At large redshifts, cooling by inverse Compton (IC)         rings in the microwave background. The rings would
+                          scattering of electrons off the cosmic background radia-       have angular radius (Weinberg 1972) (2T/2)(H0 rJ2c) ä
+                          tion dominates shock evolution. For a current back-            1 ^6i1/5^o1/5-
+                          ground temperature of Tbkg — 3 K the cooling time (of             Radiative processes may also limit explosive galaxy
+                          electrons and protons) for IC scattering is (Rybicki and       amplification by cooling galactic shocks in the injection
+                          Lightman 1979)                                                 phase. For temperatures above ~ 106 K, free-free
+                                                                                         emission (thermal bremsstrahlung) is the dominant
+                                                                                         radiative cooling process. For a hydrogen plasma the
+                                ‘“-i2Í7-‘-59xl0‘!<1 + I>-4;'r-                   (42)    free-free cooling function is (Spitzer 1978, p. 58, evaluat-
+                                                                                         ing g{{ at 106 K)
+                          From the above, IC cooling prevents galaxy amplifica-
+                          tion if tic < rth giving                                                  Aff = 2.01 x 10_27T1/2 ergs cm3 s_1 .             (47)
+                                                                                         This leads to a cooling time (including 10 % He by
+                                  1 +    > (1 + zic)t-2/5 = 9.0ho2/5T~2/5 .      (43)    number) in the injection phase of
+                          This result was also given by OC (except for the explicit
+                                                                                                f
+                          t-dependence, included here since we are comparing tiC                         , !'5Pn n = 1-99 x 1012(P/D3)1/2
+                                                                                                 ff = ,1.4A
+                                                                                                             ff e H
+                          with t — th not tj), and is independent of shock structure.
+                                                                                                          _3/5
+                          Since the injection phase ends at t ä Ati/th IC cooling                      x t       £611/5/i0_9/5(1 + Zi)-27110 yr .    (48)
+                          limits galaxy amplification to redshifts                                       3 112                       3 112      3 2
+                                                                                         At /I = 1, (P/D ) = 0.0433 and (P/D ) oc A' ^ for
+                                           1 + Z* < 6.4iV/5/io2/5 •              (44)    A 1. Free-free cooling occurs if iff < giving
+                                                                                                        1 + Z; > 8.6t - 4l3E611/6h0 ~ 2/3             (49)
+                          Note that this constraint depends only weakly on the
+                                                                                                                                                    -5??/4
+                          compression       of a collapsing protogalaxy. Di is not       at A = 1; the numerical coefficient increases as /l
+                          expected to be very large (e.g., > 10), since the shell from   inside the shock and is only approximate since we have
+                          which the protogalaxy forms becomes Jeans unstable on          assumed the Sedov solution in the injection phase. Since
+                          galaxy mass scales for Dj ~ a few (cf. § Hid and eq. [58]).    E61 ä tv, equation (49) provides an upper limit to the
+                          Thus a reasonable upper limit on the beginning of              redshifts for which galaxy amplification may occur if
+                          explosive amplification of galaxy-size objects may be          v < 8, which is almost certainly the case. For t < Atjti
+                          z ä 10.                                                        and 2 < 1 the limit is
+                            If galaxy-size explosions do occur as early as z ä zic,
+                          the IC cooling may be observable. IC scattering shifts                       1-hZf <2.7Di2/3£611/6/zo-2/3 .                 (50)
+                          cosmic background photons to higher energies, produc-          Since we expect Di ~ 5-10 (D¿ > 4 from the shock jump
+                          ing a dip in the microwave brightness temperature              conditions), this limit is comparable with that given by
+                          (Zel’dovich and Sunyaev 1969), which has been observed         IC cooling in equation (44) for E61 ~ 1 ; the dependence
+                          in the direction of nearby (z < 0.2) rich clusters of          on E6l prevents the amplification of very low mass
+                          galaxies (Lake and Partridge 1977; Birkinshaw, Gull,           galaxies.
+                          and Northover 1978). The magnitude of the microwave              Below 106 K, radiative cooling at the epoch of galaxy
+                          dip is (Sunyaev 1980)                                          formation is due almost entirely to Lya and He n A304
+                                                                                         emission. Shull and Silk (1981) have calculated the
+                                          ATb    r kTe  .                                emission from a 100 km s-1 shock using the radiative
+                                          -—=-2      (45)
+                                           Tb   J mec                                    shock code of Shull and McKee (1979). While their shock
+                                                                                         model is not strictly valid for the injection-modified
+                          integrated along the line of sight, where ne and Te are        Sedov solution, the results should not be very sensitive
+                          the electron number density and temperature, and / is the      to internal structure, since virtually all the radiation
+                          path length of the scattering gas. The coefficient of 2 is     comes from near the shock (where the density is highest).
+
+
+
+
+                               © American Astronomical Society • Provided by the NASA Astrophysics Data System
+No. 1, 1983                     COSMOLOGICAL SELF-SIMILAR SHOCK WAVES                                                   27
+Thus their calculated luminosity should also be valid         not correctly account for the self-gravity of the shell,
+here, provided E6l ä tv. For metals depleted to 10"3 of       which increases shell densities and hence cooling rates in
+solar abundances the Lya luminosity is (assuming line         the cosmological phase, so / > 1. If vs — vH > 100 km
+intensity oc vs2, as holds approximately in Shull and Silk    s“1, He il A304 emission is important, which doubles/.
+1979, Fig. 1)                                                    Even though radiative cooling occurs, cosmological
+                                                              effects still govern the shell propagation (and hence
+LLyx = 8.11 x KT“                                             mass), since, as Ostriker, McKee, and Cowie (1982) have
+                                                              shown, for t — ti> th cooled shocks propagate as rs oc tô,
+     = 4.31 x 109t-2/5E614/5/jo4/5(1 + zf)6/5 Lq .    (51)    with
+
+(The line intensity is a factor of 4 greater than the value                        15 + (17)1/2
+                                                                              0=                ; 0.797 ,             (55)
+given by Shull and Silk 1981 due to textual errors in                                 ~24
+their paper [Shull, private communication]. The luminos-      which is so close to f that equation (41) for the mass is
+ity given here agrees with theirs, 6 x 108 L0 at t = 1        still correct.
+for £61 =0.1.) Since He n A304 has the same luminosity           It is conceivable that adiabatic expansion may be so
+and all other lines contribute less than 1 %, the cooling     effective in cooling the shell that recombination occurs.
+time for the entire shock due to line emission is             In that case radiative cooling would decrease greatly and
+   ^ _ U _ 0.717E                                             the shell would presumably fragment adiabatically (cf.
+     ~ zIT                                                    § Md). Since there is likely to be a residual source of
+         '-L'Lya — -¿'-‘-'Lya
+                   IT
+                                                              heating (such as quasar photoionization), however,
+     = 6.89 x 109t2/5£611/5/zo'4/5(1 + ^)“6/5 yr • (52)       temperatures will stabilize at ~ 104 K in a few cooling
+                                                              times (ícool < i;), and the shells will resemble H n regions.
+Line cooling occurs in the injection phase if i* < xth
+giving                                                           Radiative cooling therefore probably sets the mass
+                                                              scale of the galaxies forming from shell collapse. One can
+                1 + zf < 0.8t2£61-2/3/io_2/3 .         (53)   estimate the mass of the galaxies as the Jeans mass which
+                                                              can cool at 104 K just at the dynamical free-fall rate
+If v < 3, line cooling thus imposes no constraint on galaxy   (Rees and Ostriker 1975; Silk 1977). The cooling rate at
+amplification. If v > 3, initial supernovae cool, but for      10,000 K for collisional excitation of H is approximately
+larger t, as the star formation rate increases, remnants      5.3 x 10-24nen(Hi)ergscm_3 s_1 (Spitzer 1978, p. 140).
+succeed in overlapping before line cooling occurs, so it      The Jeans mass is defined as
+is again ignorable.
+    OC found radiative cooling to be effective for z < 5,
+but they assumed solar cosmic abundances in calculating                        "-(fr)”"”'                          (56)
+the cooling. Metal abundances in the galaxy formation
+epoch certainly would not be expected to have exceeded        Equating the local cooling time (= 1.5p/Anen[H i]) to the
+those of Population II objects, ~10~2 of solar. Since         dynamical time (eq. [37]) then gives
+radiative cooling for 105 K < T < 106 K and solar                               Mj = 5.3 x 1010 Mq ,                   (57)
+abundances comes primarily from O m-vi line emission
+(Cox and Tucker 1969), the cooling time is longer than        where the hydrogen ionization fraction has been taken to
+OC give and, as shown above, radiative cooling is             be 0.5. Using the cosmic density with a compression
+probably not important in leading to shell formation.         factor D and temperature T — T4 x 104 K (again with
+    Thus for Zi < zIC gas cooling is unimportant during       H half ionized) gives a similar result:
+the energy injection phase, allowing galaxy-size explo-          Mj = 3.4 x 101otD- 1/2T43/2h0~1(l + zt.)-3/2 M0 .
+sions to occur and propagate into the intergalactic
+medium. But since the injection phase ends at í — æ                                                                    (58)
+(protogalaxy collapse time ~ Hubble time), cosmologi-
+cal effects promptly become important. The shock cools                       c) Explosive Amplification
+adiabatically and develops a thin dense shell (cf. § Mb),        The results of the preceding sections suggest that at
+propagating according to equations (39abc). Once this         least one generation of explosive amplification of galaxies
+occurs, however, radiative processes take over and            can occur for
+dominate the shell fragmentation. This may be seen from                  t//3 < 1 + zz < min {6.4ZV/5b02/5 ,
+the result corresponding to equation (53) for adiabatic
+cosmological shocks (i;s -> vs — vH, U = 0.0119£). Radia-       2.7D213E611/6h0~2/3 ,     l3f10/3Tf-8/3E61-2/3h0-213} ,
+ tive cooling dominates in the dense shell (iz < it) for
+                                                                                                                       (59)
+            1 + Z* < 13/10/3T_8/3£61_2/3/io-2/3 ,      (54)
+                                                              where / à: 1, Di >4, and Tf>2. The lower limit for
+where / is the factor by which cooling is increased over      Zf is set by the fact that for 1 + zz < Tf2/3 > 2 galaxies
+that calculated from the Shull and Silk (1981) model          would still be forming in the present epoch. At high
+assuming only Lya cooling. The explicit /-dependence          redshifts, inverse Compton and free-free cooling prevent
+is given because the calculations by Shull and Silk do        supernova remnants within a galaxy from overlapping
+
+
+
+
+    © American Astronomical Society • Provided by the NASA Astrophysics Data System
+28                                                                 BERTSCHINGER                                                   Vol. 268
+to power a galactic wind, or the cosmological dense shells                       If ~ 2, there is just enough time for two generations
+are too hot to cool radiatively. (Adiabatic fragmentation                     of explosive amplification of galaxies between 1 + z¿ =
+may perhaps occur in the latter case, leading to radiative                    1 + zIC ~ 9 and 1 -b z = 3, with total amplification ~ 2
+cooling at high enough densities.) Alternatively, for fixed                    x 104, though as mentioned above it is not clear that a
+Zj < zIC, galaxy formation will not occur if E is too small                   second generation can cool. It is interesting to note that
+(free-free cooling prevents galactic shock formation) or                      a single generation produces ~3 x 1011 M0 in galaxies,
+too large (cosmological shocks do not radiatively cool).                      typical of small groups, while two generations produce
+Jeans mass sized galaxies (eq. [58]) do amplify, however.                      ~2 x 1013 M0, characteristic of small clusters. The
+Assuming the initial exploding galaxy has mass equal to                       resultant radii and velocity dispersions are also typical
+the Jeans mass at z = z¿ (t = 1), equation (54) gives the                     of groups and clusters (eqs. [39] and [63], with z¿ = 8,
+condition for line cooling to dominate in the shells:                         Tf = 2,D = 10, T4 = £_4 = 1): rs æ 100 kpc, vs ~ 200 km
+                                                                              s_1 for groups, and rs æ 500 kpc, vs » 700 km s_1 for
+            19/10/3t/"8/3D1/3T4-16_4-2/3 > 1 .                        (60)
+                                                                              clusters. Since only a small fraction of the initial explosion
+Since this inequality is expected to hold, the shells cool                    energy is radiated away (u/E æ 0.01, cf. § Illfr), the groups
+and fragment rapidly, suggesting Tf & 2-3.                                    and clusters formed would not be gravitationally bound.
+   Assuming the protogalaxies forming out of the frag-
+menting shells have mass equal to the Jeans mass at                                                   v. SUMMARY
+t = Tj, the first-generation explosive amplification factor                       Similarity solutions have been found which are valid
+(cf. eqs. [41] and [58]) is given by                                          for times long compared to the Hubble time for adiabatic
+                                                                              shock waves in Q 1 (open) and Q = 1 (Einstein-de
+              =Mî = 406TrJ -3/5D1/5r4-3/5£_43/5 .                     (61)    Sitter) Friedmann universes. Dimensional analysis shows
+               Mj                                                             that these are the only cases (besides the special Sedov
+For tf — 2, D = 10, this gives an amplification ~400.                         case) for which self-similar shocks exist for homogeneous,
+   The formation of galaxies in the shell will produce                        self-gravitating fluids. Integrals of the motion were
+further energy injection into the intergalactic medium,                       derived expressing conservation of mass and energy, and
+producing a “supergalactic” shock wave. Shock waves                           the adiabatic property of the postshock flow (eqs. [16],
+from individual galaxies propagate quickly through the                        [18], and [24]). Even with three integrals (for four fluid
+low-density cavity inside the shell, so they all overlap                      variables), however, for the Q = 1 case only numerical
+to produce a radial shock with energy (cf. equations                          solutions were found.
+[35] and [41])                                                                    The Q 1 case is trivial. There is a contact discontinu-
+                                                                              ity (a density jump) comoving with the Hubble flow, but
+     £61 = 249tf2/5D~3/10T49/10e_48,5h0~1(l + zf)~3/2 ,                       since no matter passes through it, no shock heating
+                                                                              occurs, and the interior is pressureless. The density
+                                                                      (62)
+                                                                              profile can only be determined from initial conditions,
+and radius, velocity, mass and postshock (A = 1 )                             which may vary depending on the value of t at the time
+temperature at t = Tj (obtained by substituting eq. [62]                      of the explosion.
+into eq. [39])                                                                     The Q = 1 case is more interesting. An initial Sedov
+                                                                               shock wave (valid for i — ^ í¿) decelerates until at
+             rs = 7.61tj22/25D-3/507í9/506_48/25                              t — t( ~ ti the shock velocity is only 6/5 times the Hubble
+                     x /zo_1(l + zi)~312 Mpc ,                       (63a)     velocity. The shock heating decreases substantially and
+                  3/25    _3/50     9/50      8/25        -1                  the interior cools adiabatically, with the matter piling up
+       vs = 913T/“       D       T4      e_4         km s      ,     (63b)     behind the shock to form a dense shell of thickness
+                         14     16 25      9 50    27 5        4 25            ~0.03rs. For y > 7/5 the dimensionless density becomes
+        Ms = 5.12 x lO ^ / /)- / ^ / ^-^ /
+                                                                               singular at the inner edge, although the real density
+              X /lo-1^ + Zi)~3/2 Mq ,                                 (63c)    decreases with time (because of the cosmological expan-
+                     5
+     T = 3.51 x 10 t/"   6/25
+                              D"  3/25
+                                        T4 9/25
+                                                  €_416/25
+                                                             K.       (63d)    sion). It is argued that the shell is unstable to adiabatic
+                                                                               and isothermal perturbations, though no proof is given.
+ Line cooling dominates in the dense shell if                      < th or         The Q = 1, y = 5/3 solution is applied to the explosive
+ (cf. eq. [60]) if                                                             amplification model of galaxy formation of Ostriker and
+                                                                               Cowie (1981). In this model, rapid star formation and
+         0.34/10/3t/“44/15D1/5T4-3/5£_4-16/25 > 1 .                    (64)    supernova explosions occurring in a collapsing proto-
+ This inequality may hold if f >22 for Tf & 2 and                              galaxy power a galactic wind, producing a shock wave
+ D = 10, suggesting that line cooling may be marginally                        propagating into the intergalactic medium. During this
+ effective in contributing to shell fragmentation. (He n                       energy injection phase a modified Sedov shock wave
+ A304 emission would give / 5: 2.) If radiative cooling                        forms, with time-varying energy. It is shown that for
+ does predominate, the shell will fragment into Jeans mass                      1 + z > 9, inverse Compton and free-free cooling occur
+ size protogalaxies, with a total amplification (cf. eqs. [58]                 before injection is complete and thus limit galaxy ampli-
+ and [63c])                                                                    fication to smaller redshifts (eqs. [44], [50]). Line cooling
+                                                                                is unimportant in this phase for low (Population II) metal
+        A2 = 1.5 x 104t/"9/25D8/25T4-24/25£_424/25 . (65)                       abundances.
+
+
+
+
+      © American Astronomical Society • Provided by the NASA Astrophysics Data System
+1983ApJ. . .268. . .17B
+
+
+
+
+                          No. 1, 1983                          COSMOLOGICAL SELF-SIMILAR SHOCK WAVES                                                                        29
+                             Energy is injected over the whole collapse time of the                     continue propagating radially outward. If line cooling is
+                          galaxy, roughly a Hubble time, so cosmological effects                        great enough (this is uncertain), the resulting cosmolog-
+                          are important in the subsequent shock propagation. The                        ical shock will fragment to form a second generation of
+                          shock evolves to the thin-shelled self-similar form                           galaxies, with shell mass, radius, and velocity typical of
+                          described above. Provided recombination does not occur                        small clusters of galaxies.
+                          and the explosion energy is not too great, now line
+                          cooling becomes very important and the shell fragments                           I would like to thank Dr. L. L. Cowie for encouraging
+                          isothermally into new protogalaxies with Jeans mass                           this work; Drs. J. P. Ostriker, L. Spitzer, and M. Shull
+                           ^lO11 Mq. The mass, radius, and velocity dispersion                          for helpful comments; and Dr. E. Vishniac for pointing
+                          of the shell are typical of small groups of galaxies. The                     out an error in an earlier discussion of gravitational
+                          formation of galaxies in the shell may inject more energy                     instability. This work was supported by a NSF Graduate
+                          into the intergalactic medium, causing a shock wave to                        Fellowship and NSF grant AST 80-22785.
+
+                                                                                                REFERENCES
+                          Audouze, J., and Tinsley, B. M. 1976, Ann. Rev. Astr. Ap., 14, 43.           Sedov, L. I. 1959, Similarity and Dimensional Methods in Mechanics
+                          Birkinshaw, M., Gull, S. F., and Northover, K. J. E. 1978, M.N.R.A.S.,         (New York: Academic Press).
+                            185,245.                                                                   Shull, J. M., and McKee, C. F. 1979, Ap. J., 227, 131.
+                          Blandford, R. D., and McKee, C. F. 1976, Phys. Fluids, 19, 1130.             Shull, J. M, and Silk, J. 1979, Ap. J., 234, 427.
+                          Boldt, E. 1978, NASA Tech. Memo. 78106.                                              . 1981, Ap. J., 249, 26.
+                          Bookbinder, J., Cowie, L. L., Krolik, J. H., Ostriker, J. P., and Rees, M.   Silk, J. 1977, Ap. J., 211, 638.
+                            1980, Ap. J., 237, 647.                                                    Solinger, A., Rappaport, S., and Bufif, J. 1975, Ap. J., 201, 381.
+                          Cox, D. P, and Smith, B. W. 1974, Ap. J. (Letters), 189, L105.               Spitzer, L. 1978, Physical Processes in the Interstellar Medium (New
+                          Cox, D. P., and Tucker, W. H. 1969, Ap. J., 157, 1157.                          York: Wiley-Interscience).
+                          Field, G. B. 1972, Ann. Rev. Astr. Ap., 10, 227.                             Sunyaev, R. A. 1980, Soviet Astr. Letters, 6, 213.
+                          Ikeuchi, S. 1981, Pub. Astr. Soc. Japan, 33, 211.                            Taylor, G. I. 1950, Proc. Roy. Soc. London, A201, 159.
+                          Ikeuchi, S., Tomisaka, K., and Ostriker, J. P. 1983, Ap. J., 265, in press.  Vishniac, E. 1982, preprint.
+                          Lake, G., and Partridge, R. B. 1977, Nature, 270, 502.                       Vishniac, E., Ostriker, J. P., and Bertschinger, E. 1983, in preparation.
+                          Landau, L. D., and Lifshitz, E. M. 1959, Fluid Mechanics (Oxford:            Weaver, R., McCray, R., Castor, J., Shapiro, P., and Moore, R. 1977,
+                            Pergamon Press).                                                              Ap. J., 218, 377.
+                          McKee, C. F, and Ostriker, J. P. 1977, Ap. J., 218, 148.                     Weinberg, S. 1972, Gravitation and Cosmology (New York: Wiley-
+                          Ostriker, J. P., and Cowie, L. L. 1981, Ap. J. (Letters), 243, L127 (OC).       Interscience), chap. 15.
+                          Ostriker, J. P., McKee, C. F., and Cowie, L. L. 1982, preprint.              Woltjer, L. 1972, Ann. Rev. Astr. Ap., 10, 129.
+                          Rees, M. J, and Ostriker, J. P. 1977, M.N.R.A.S., 179, 541.                   Zel’dovich, Ya. B., and Raizer, Yu. P. 1966, Physics of Shock Waves
+                          Rybicki, G. B., and Lightman, A. P. 1979, Radiative Processes in                and High-Temperature Hydrodynamic Phenomena (New York:
+                             Astrophysics (New York: Wiley-Interscience).                                 Academic Press).
+                          Schwarz, J., Ostriker, J. P., and Yahil, A. 1975, Ap. J., 202, 1.             Zel’dovich, Ya. B., and Sunyaev, R. A. 1969, Ap. Space Sei., 4, 301.
+
+
+                          Edmund Bertschinger: Princeton University Observatory, Princeton, NJ 08544
+
+
+
+
+                              © American Astronomical Society • Provided by the NASA Astrophysics Data System
+

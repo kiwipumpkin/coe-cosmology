@@ -1,0 +1,42 @@
+{
+ "own crossing, distributed mass, normalisation a (equal mass)": {
+  "range_over_Planck": 130.30130202285187,
+  "hot_angle_from_antiCoE": 180.0,
+  "cold_angle_from_antiCoE": 0.0,
+  "quad_axis_lb": [
+   16.171875,
+   0.0
+  ],
+  "quad_sign_at_axis": "hot"
+ },
+ "own crossing, distributed mass, normalisation b (Migkas-fitted)": {
+  "range_over_Planck": 85.59350683316974,
+  "hot_angle_from_antiCoE": 180.0,
+  "cold_angle_from_antiCoE": 0.0,
+  "quad_axis_lb": [
+   16.171875,
+   0.0
+  ],
+  "quad_sign_at_axis": "cold"
+ },
+ "simultaneous, distributed mass, normalisation b (Migkas-fitted)": {
+  "range_over_Planck": 3.5390412421340094,
+  "hot_angle_from_antiCoE": 94.0,
+  "cold_angle_from_antiCoE": 0.0,
+  "quad_axis_lb": [
+   16.171875,
+   0.0
+  ],
+  "quad_sign_at_axis": "cold"
+ },
+ "own crossing, point mass, fraction 0.2 (reference)": {
+  "range_over_Planck": 189.5863404918745,
+  "hot_angle_from_antiCoE": 107.0,
+  "cold_angle_from_antiCoE": 0.0,
+  "quad_axis_lb": [
+   16.171875,
+   0.0
+  ],
+  "quad_sign_at_axis": "cold"
+ }
+}

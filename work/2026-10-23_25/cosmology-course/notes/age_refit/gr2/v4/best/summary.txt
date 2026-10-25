@@ -1,0 +1,5 @@
+best_eta_fwd_gtc_1 16.89 3.54 K=8.46 solved cov 49/60 Tmean 2.73 T [2.33, 4.475] dTT_rms 0.111 res 0.14 canc -270.9 ord0<180 None Uo 1.5 M 2.5e+54
+best_exp_back_le_0 10.08 4.45 K=2.51 no root with max coverage; clo cov 60/60 Tmean 422 T [368.002, 483.163] dTT_rms 0.00568 res 0.065 canc -13.4 ord0<180 False Uo 0.284 M 8.61e+37
+best_pl_back_gtc_3 18.04 3.41 K=9.81 solved cov 59/60 Tmean 2.73 T [1.885, 3.125] dTT_rms 0.0444 res 0.0971 canc -71.0 ord0<180 None Uo 4.47 M 3.74e+26
+best_pl_fwd_le_1 14.22 3.83 K=59.3 solved cov 59/60 Tmean 2.72 T [1.714, 4.471] dTT_rms 0.0793 res 0.143 canc -154.4 ord0<180 None Uo 0.516 M 4.01e+49
+best_soft_fwd_gtc_0 14.22 3.83 K=19.9 solved cov 59/60 Tmean 2.73 T [1.79, 8.339] dTT_rms 0.33 res 0.398 canc -607.8 ord0<180 None Uo 1.3 M 9.02e+52

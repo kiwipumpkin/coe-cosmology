@@ -1,0 +1,7 @@
+{
+  "R2_before": 0.30667565501525784,
+  "RMSE_before": 0.058948377644118685,
+  "R2_after": 0.5527836672026178,
+  "RMSE_after": 0.0473437288068649,
+  "note": "Before curve is AF_smooth and after curve is A_rotated_smooth from A_vs_angle_ideal_plus_chris_rotation.csv; bottom red curve is A_rotated_smooth - AF_smooth. This is the axisymmetric rotation analogue, not Amp\u00d7sin or 2ell."
+}

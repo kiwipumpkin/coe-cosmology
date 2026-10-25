@@ -1,0 +1,36 @@
+{
+  "before_old_registration": {
+    "cx": 863.0,
+    "cy": 763.25,
+    "Rx": 693.9927,
+    "Ry": 392.542425
+  },
+  "before_skel_residual": {
+    "median": 5.241999999999999,
+    "p75": 10.897999999999998,
+    "p90": 17.241999999999997,
+    "mean": 7.3054247246022035,
+    "n": 2451
+  },
+  "after_registration": {
+    "cx": 865.6,
+    "cy": 766.4,
+    "Rx": 706.1922400000001,
+    "Ry": 393.70006750000005
+  },
+  "after_skel_residual": {
+    "median": 2.4139999999999997,
+    "p75": 14.0,
+    "p90": 19.0,
+    "mean": 7.46263100252738,
+    "n": 2374
+  },
+  "dofs": [
+    "cx",
+    "cy",
+    "Rx",
+    "Ry"
+  ],
+  "target": "DT-ridge medial axis of achromatic published CEQ stroke",
+  "note": "Previous gray<55 chamfer reported ~1 px by locking onto thick stroke EDGE; honest centerline median was ~5.2 px. Drawing inset=0.97 added ~8 px visual offset."
+}

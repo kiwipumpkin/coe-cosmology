@@ -1,0 +1,141 @@
+{
+  "method": "image_overlay_on_attachment",
+  "note": "Base canvas is Chris's attached Amp\u00d7sin residual JPEG \u2014 NOT a matplotlib redraw. Only translucent \u00b118\u00b0 vertical bands and four extrema markers were painted onto the TOP panel axes box. Titles, legends, residual panel, fonts, and colors are untouched.",
+  "attachment_path": "/home/box/agent-data/agents/196ab413-0708-4f81-99fc-58a32c5366c5/attachments/2cbbd78c643fe8dc9629369bfea19a57bc9745184eb946b068dfdb9306266ed1.jpg",
+  "attachment_size_px": [
+    1280,
+    992
+  ],
+  "top_panel_axes_box_px": {
+    "x_left": 121,
+    "x_right": 1266,
+    "y_top": 49,
+    "y_bottom": 513
+  },
+  "x_mapping": "Galactic longitude 0\u2192360 maps linearly onto [x_left, x_right]",
+  "band_half_width_deg": 18.0,
+  "max_angles_deg": [
+    30.0,
+    185.0
+  ],
+  "min_angles_deg": [
+    115.0,
+    265.0
+  ],
+  "max_bands_deg": [
+    [
+      12.0,
+      48.0
+    ],
+    [
+      167.0,
+      203.0
+    ]
+  ],
+  "min_bands_deg": [
+    [
+      97.0,
+      133.0
+    ],
+    [
+      247.0,
+      283.0
+    ]
+  ],
+  "bands_painted": [
+    {
+      "kind": "MAX",
+      "center_deg": 30.0,
+      "band_deg": [
+        12.0,
+        48.0
+      ],
+      "pixel_x_spans": [
+        [
+          159,
+          274
+        ]
+      ]
+    },
+    {
+      "kind": "MAX",
+      "center_deg": 185.0,
+      "band_deg": [
+        167.0,
+        203.0
+      ],
+      "pixel_x_spans": [
+        [
+          652,
+          767
+        ]
+      ]
+    },
+    {
+      "kind": "MIN",
+      "center_deg": 115.0,
+      "band_deg": [
+        97.0,
+        133.0
+      ],
+      "pixel_x_spans": [
+        [
+          430,
+          544
+        ]
+      ]
+    },
+    {
+      "kind": "MIN",
+      "center_deg": 265.0,
+      "band_deg": [
+        247.0,
+        283.0
+      ],
+      "pixel_x_spans": [
+        [
+          907,
+          1021
+        ]
+      ]
+    }
+  ],
+  "markers_painted": [
+    {
+      "kind": "MAX",
+      "ell_deg": 30.0,
+      "x_px": 216.41666666666666,
+      "y_px": 146.0
+    },
+    {
+      "kind": "MAX",
+      "ell_deg": 185.0,
+      "x_px": 709.4027777777777,
+      "y_px": 231.0
+    },
+    {
+      "kind": "MIN",
+      "ell_deg": 115.0,
+      "x_px": 486.76388888888886,
+      "y_px": 343.0
+    },
+    {
+      "kind": "MIN",
+      "ell_deg": 265.0,
+      "x_px": 963.8472222222223,
+      "y_px": 400.0
+    }
+  ],
+  "A_after_at_extrema": {
+    "30": 1.1451033448173344,
+    "185": 1.0536211218945415,
+    "115": 0.9330252837402823,
+    "265": 0.8712353234272684
+  },
+  "marker_y_source": "gold_curve_pixel_sample_in_attachment",
+  "outputs": [
+    "/workspace/cosmology/figures/A_vs_angle_after_2ell_with_residuals.png",
+    "/workspace/cosmology/map_compare/amp_mean_param_noise/A_vs_angle_after_2ell_with_residuals.png"
+  ],
+  "redrawn_from_scratch": false
+}

@@ -1,0 +1,31 @@
+{
+  "updated": "2026-09-22",
+  "outputs": [
+    "/workspace/cosmology/figures/coe_geometry_cmb_dipole_schematic.png",
+    "/workspace/cosmology/figures/coe_geometry_cmb_dipole_schematic.pdf"
+  ],
+  "changes": [
+    "Replaced prior near-CoE kink-as-lens illustration with orange irregular lens blob on far left (between R_CMB and S1).",
+    "Thick purple lensed ray now comes from CMB side, skims just below the orange lens, then bends down to observer (us).",
+    "Added red squiggly radiation arrows from left and upper-left toward interior shells.",
+    "Vision shell radius = r; concentric shell spacing Sn to Sn+1 = 2r.",
+    "Kept CoE, observer at D, concentric S1/S2/S3, R_CMB dashed, toward-CoE / anti-CoE path labels, title about allowed CMB dipole along D."
+  ],
+  "geometry": {
+    "D": 1.0,
+    "r": 0.36,
+    "r_vision": 0.36,
+    "R_S1": 2.29,
+    "R_S2": 1.5699999999999998,
+    "R_S3": 0.85,
+    "R_CMB": 2.84,
+    "lens_blob_xy": [
+      -2.565,
+      0.22
+    ],
+    "shell_lw": 1.6
+  },
+  "note_cmb_dipole_estimate": "cmb_dipole_estimate_coe_geometry.png is a quantitative dipole-budget plot (not this schematic); left unchanged.",
+  "script": "/workspace/cosmology/figures/make_coe_geometry_cmb_dipole_schematic.py",
+  "drive_copy": "/workspace/cosmology/drive_upload_payloads/papers/stage_setting_2026-09-20/figures/coe_geometry_cmb_dipole_schematic.png"
+}

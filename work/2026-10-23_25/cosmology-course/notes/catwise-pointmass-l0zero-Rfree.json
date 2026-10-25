@@ -1,0 +1,43 @@
+{
+  "name": "pointmass_l0zero_D_mc_Rfree",
+  "chi2": 28.09139241638003,
+  "n_free": 3,
+  "free_params": [
+    "D",
+    "mc",
+    "R"
+  ],
+  "nu": 68,
+  "R2_unweighted": 0.39669230995780846,
+  "R2_weighted": 0.37172868615102994,
+  "D_Gpc": 25.28386474153323,
+  "mc": 0.0008263774035728785,
+  "R_Gpc": 3.591629136719318,
+  "DR": 7.0396646700076975,
+  "chi2_null": 45.13662301218721,
+  "Delta_chi2": 17.045230595807176,
+  "p_nested_nu3": 0.0006917645344157678,
+  "sigma_nested_nu3": 3.1980653848874208,
+  "R_at_lower_bound": false,
+  "R_at_upper_bound": false,
+  "R_bounds": [
+    0.1,
+    14.3
+  ],
+  "best_chi2_by_start_R": {
+    "3": 28.09139241638371,
+    "6": 28.09139241638405,
+    "10": 28.09139241638461,
+    "1": 28.091392416445803
+  },
+  "top5_chi2": [
+    28.09139241638371,
+    28.09139241638405,
+    28.09139241638461,
+    28.091392416386128,
+    28.091392416386217
+  ],
+  "n_starts": 64,
+  "vrmin": 0.8007355880627375,
+  "note": "Model depends only on D/R and mc; R is fully degenerate with D (flat direction), so R value is arbitrary within bounds subject to D<1e4 Gpc."
+}

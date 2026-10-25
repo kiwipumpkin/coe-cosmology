@@ -1,0 +1,14 @@
+python3 cmb2.py pl fwd gtc 6 > gr2/log_pl_fwd_gtc.txt 2>&1
+python3 cmb2.py pl fwd le 6 > gr2/log_pl_fwd_le.txt 2>&1
+python3 cmb2.py exp fwd gtc 6 > gr2/log_exp_fwd_gtc.txt 2>&1
+python3 cmb2.py exp fwd le 6 > gr2/log_exp_fwd_le.txt 2>&1
+python3 cmb2.py eta fwd gtc 6 > gr2/log_eta_fwd_gtc.txt 2>&1
+python3 cmb2.py eta fwd le 6 > gr2/log_eta_fwd_le.txt 2>&1
+python3 cmb2.py soft fwd gtc 6 > gr2/log_soft_fwd_gtc.txt 2>&1
+python3 cmb2.py pl back gtc 6 > gr2/log_pl_back_gtc.txt 2>&1
+python3 cmb2.py exp back gtc 6 > gr2/log_exp_back_gtc.txt 2>&1
+python3 cmb2.py exp back le 6 > gr2/log_exp_back_le.txt 2>&1
+python3 cmb2.py eta back gtc 6 > gr2/log_eta_back_gtc.txt 2>&1
+python3 cmb2.py eta back le 6 > gr2/log_eta_back_le.txt 2>&1
+python3 cmb2.py soft back gtc 6 > gr2/log_soft_back_gtc.txt 2>&1
+python3 cmb2.py soft back le 6 > gr2/log_soft_back_le.txt 2>&1

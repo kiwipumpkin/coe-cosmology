@@ -1,0 +1,131 @@
+{
+  "png": "/workspace/cosmology/figures/coe_rings_migkas_pin_axis.png",
+  "script": "/workspace/cosmology/figures/make_coe_rings_migkas_pin_axis.py",
+  "migkas_max_lb_deg": [
+    [
+      17.0,
+      -9.0
+    ],
+    [
+      185.0,
+      0.0
+    ]
+  ],
+  "migkas_min_lb_deg": [
+    [
+      115.0,
+      0.0
+    ],
+    [
+      274.0,
+      -22.0
+    ]
+  ],
+  "strip_theta_max_deg": [
+    30.0,
+    185.0
+  ],
+  "strip_theta_min_deg": [
+    115.0,
+    265.0
+  ],
+  "band_half_width_deg": 9.0,
+  "band_full_width_deg": 18.0,
+  "band_total_width_deg": 18.0,
+  "band_width_note": "5% of 360\u00b0 = 18\u00b0 end-to-end = \u00b19\u00b0 about each MAX/MIN center",
+  "max_bands_deg": [
+    [
+      21.0,
+      39.0
+    ],
+    [
+      176.0,
+      194.0
+    ]
+  ],
+  "min_bands_deg": [
+    [
+      106.0,
+      124.0
+    ],
+    [
+      256.0,
+      274.0
+    ]
+  ],
+  "band_intervals": {
+    "MAX_30": [
+      21.0,
+      39.0
+    ],
+    "MAX_185": [
+      176.0,
+      194.0
+    ],
+    "MIN_115": [
+      106.0,
+      124.0
+    ],
+    "MIN_265": [
+      256.0,
+      274.0
+    ]
+  },
+  "scan_stop_source": "best_fit_2ell_multiplier.npz A_after extrema (two max, two min); each drawn as one transparent 18\u00b0 end-to-end highlight (\u00b19\u00b0 = 5% of 360\u00b0) + one solid mid-stroke",
+  "theta_max_from_plus_x_deg": [
+    30.0,
+    185.0
+  ],
+  "theta_min_from_plus_x_deg": [
+    115.0,
+    265.0
+  ],
+  "mu_max_bands": [
+    [
+      0.93358043,
+      0.77714596
+    ],
+    [
+      -0.99756405,
+      -0.97029573
+    ]
+  ],
+  "mu_min_bands": [
+    [
+      -0.27563736,
+      -0.5591929
+    ],
+    [
+      -0.2419219,
+      0.06975647
+    ]
+  ],
+  "CoE_lb_deg": [
+    180.0,
+    -30.0
+  ],
+  "anti_CoE_lb_deg": [
+    0.0,
+    30.0
+  ],
+  "D_hat_galactic_xyz": [
+    0.8660254037844387,
+    0.0,
+    0.49999999999999994
+  ],
+  "angular_sep_migkas_max0_min1_deg": 98.476384,
+  "axis_tilt_b_deg": 30,
+  "axis_tilt_reason": "Chris 2026-09-22 \u2014 markers fixed, rings rotate up 30\u00b0",
+  "orientation": "Galactic orientation: anti-CoE at (ell=0\u00b0, b=+30\u00b0), CoE at (ell=180\u00b0, b=\u221230\u00b0); +D = anti-CoE = +x; axis tilted +30\u00b0 (Chris 2026-09-22 \u2014 markers fixed, rings rotate up 30\u00b0)",
+  "drawing": "Exactly 4 features. Each = ONE smooth transparent highlight band between \u03b8\u22129\u00b0 and \u03b8+9\u00b0 (18\u00b0 end-to-end = 5% of 360\u00b0) + ONE solid mid-stroke at the exact center \u03b8. No multi-stroke wash / hairball. Four distinct colors (two reds + two blues); no orange; no 283\u00b0 companion. Panel A: clean vertical strip clipped to unit circle; theta rays from observer to each loop (emphasized at MAX 30\u00b0). Mollweide seam-split honestly. Sphere: single Poly3D strip (no n_wash stack).",
+  "note": "Stops are after-2\u2113 A(\u2113) extrema from best_fit_2ell_multiplier.npz A_after: two MAX at \u03b8=30\u00b0/185\u00b0 and two MIN at \u03b8=115\u00b0/265\u00b0, each drawn as one 18\u00b0 end-to-end highlight (\u00b19\u00b0 = 5% of 360\u00b0). Rings use \u03bc=cos(\u03b8); sky markers are map extrema (17\u00b0,\u22129\u00b0) and (274\u00b0,\u221222\u00b0) plus strip stand-ins (185\u00b0,0\u00b0) and (115\u00b0,0\u00b0).",
+  "plot_convention": "Migkas Galactic Mollweide: lon_disp=-ell_wrapped (ell increases LEFT)",
+  "legend_summary": "two MAX + two MIN highlight bands, each 18\u00b0 end-to-end (\u00b19\u00b0 = 5% of 360\u00b0); four distinct colors",
+  "colors": {
+    "MAX_30": "#c0392b",
+    "MAX_185": "#ec7063",
+    "MIN_115": "#1a5276",
+    "MIN_265": "#5dade2",
+    "no_orange": true
+  }
+}

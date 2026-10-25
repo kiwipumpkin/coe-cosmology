@@ -1,0 +1,53 @@
+{
+  "folderId": "1wZYStJhpdowbcjTkkS9TOImAtt9_GvzD",
+  "uploaded_at_local": "2026-09-18 12:27 PM CT (UTC-0500)",
+  "task": "level-set contours R2_A/R2_B under rho(D)=Omega_m rho_crit",
+  "local_dir": "/workspace/cosmology/density_local_match/level_sets",
+  "baseline": {
+    "D_over_L": 5.9,
+    "f_u": 0.94,
+    "kappa": 0.2306,
+    "Amp": 0.07,
+    "phi_deg": 212.82,
+    "alpha": 1.0,
+    "eps": 0.1,
+    "af_mode": "hratio"
+  },
+  "files": [
+    {
+      "name": "levelsets_DL_vs_fu.png",
+      "id": "1HI4J745715LEs3mf4C8zPv2QOQJ8aeNv",
+      "link": "https://drive.google.com/file/d/1HI4J745715LEs3mf4C8zPv2QOQJ8aeNv/view?usp=drivesdk"
+    },
+    {
+      "name": "levelsets_alpha_vs_eps.png",
+      "id": "12L6OboyrTP81XLghTjw_iULqtolAvsVK",
+      "link": "https://drive.google.com/file/d/12L6OboyrTP81XLghTjw_iULqtolAvsVK/view?usp=drivesdk"
+    },
+    {
+      "name": "levelsets_Amp_vs_phi.png",
+      "id": "1YRdxh8XHjNJtQ94ikbV0MehTcUmB6NAF",
+      "link": "https://drive.google.com/file/d/1YRdxh8XHjNJtQ94ikbV0MehTcUmB6NAF/view?usp=drivesdk"
+    },
+    {
+      "name": "levelsets_DL_vs_alpha.png",
+      "id": "1Bp_pLtp4e-ajGBeKnBDW6bPPVphNTgMe",
+      "link": "https://drive.google.com/file/d/1Bp_pLtp4e-ajGBeKnBDW6bPPVphNTgMe/view?usp=drivesdk"
+    },
+    {
+      "name": "levelsets_summary.png",
+      "id": "1qK7xfjUhLB91ash0lkw6UKwUlRCarn1t",
+      "link": "https://drive.google.com/file/d/1qK7xfjUhLB91ash0lkw6UKwUlRCarn1t/view?usp=drivesdk"
+    },
+    {
+      "name": "levelsets_NOTE.md",
+      "id": "1EsruPrInpLhxiC4KF1iMvBYaM84QqVxF",
+      "link": "https://drive.google.com/file/d/1EsruPrInpLhxiC4KF1iMvBYaM84QqVxF/view?usp=drivesdk"
+    },
+    {
+      "name": "run_levelsets.py",
+      "id": "1a2z1klm06UWhuehWYiReNdlFEJOIbrcq",
+      "link": "https://drive.google.com/file/d/1a2z1klm06UWhuehWYiReNdlFEJOIbrcq/view?usp=drivesdk"
+    }
+  ]
+}

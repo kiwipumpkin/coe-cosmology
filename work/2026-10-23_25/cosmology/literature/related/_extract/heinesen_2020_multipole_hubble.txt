@@ -1,0 +1,1285 @@
+                                               Multipole decomposition of the
+                                               general luminosity distance ‘Hubble
+                                               law’ – a new framework for
+arXiv:2010.06534v2 [astro-ph.CO] 23 Apr 2021
+
+
+
+
+                                               observational cosmology
+
+                                               Asta Heinesena
+                                               a Univ Lyon, Ens de Lyon, Univ Lyon1, CNRS, Centre de Recherche Astrophysique de Lyon
+
+                                                UMR5574, F–69007, Lyon, France
+                                                E-mail: asta.heinesen@ens–lyon.fr
+
+                                               Abstract. We present the luminosity distance series expansion to third order in redshift
+                                               for a general space-time with no assumption on the metric tensor or the field equations
+                                               prescribing it. It turns out that the coefficients of this general ‘Hubble law’ can be ex-
+                                               pressed in terms of a finite number of physically interpretable multipole coefficients. The
+                                               multipole terms can be combined into effective direction dependent parameters replacing the
+                                               Hubble constant, deceleration parameter, curvature parameter, and ‘jerk’ parameter of the
+                                               Friedmann-Lemaître-Robertson-Walker (FLRW) class of metrics. Due to the finite number
+                                               of multipole coefficients, the exact anisotropic Hubble law is given by 9, 25, 61 degrees of
+                                               freedom in the O(z), O(z 2 ), O(z 3 ) vicinity of the observer respectively, where z := redshift.
+                                               This makes possible model independent determination of dynamical degrees of freedom of the
+                                               cosmic neighbourhood of the observer and direct testing of the FLRW ansatz. We argue that
+                                               the derived multipole representation of the general Hubble law provides a new framework
+                                               with broad applications in observational cosmology.
+
+                                               Keywords: Hubble-Lemaître law, distance ladder, relativistic cosmology, geometrical optics,
+                                               observational cosmology
+1 Introduction                                                             2
+
+2 The cosmological observers and light bundles                             3
+
+3 The luminosity distance Hubble law                                       5
+
+4 Multipole analysis of the luminosity distance Hubble law                 8
+
+5 Discussion of assumptions and accounting for peculiar motion            11
+
+6 Conclusion                                                              13
+
+Appendix A Traceless reduction of symmetric tensors                       16
+
+Appendix B Multipole expansions of the effective curvature and jerk param-
+  eters                                                                    17
+
+
+
+
+                                    –1–
+1       Introduction
+
+The Hubble-Lemaître law [1–3] describing the observed approximate proportional relationship
+z = H0 dL between cosmological redshift z and luminosity distance dL in terms of the Hubble
+parameter H0 is one of the most groundbreaking discoveries made in cosmology. The empirical
+discovery of positive correlation between dL and z indicated the expansion of space itself, and
+cemented the use of dynamical space-time models to describe the Universe at cosmological
+scales. A century after its discovery the Hubble-Lemaître law (Hereafter referred to as the
+‘Hubble law’) is widely used in cosmological analysis.
+      Since its first formulation, the Hubble law1 has been generalised for a number of ap-
+plications. Within the Friedmann-Lemaître-Robertson-Walker (FLRW) class of metrics, the
+geometrical expansion of the luminosity distance in redshift has been formulated [4]. The lu-
+minosity distance Hubble law has been considered for broader classes of geometries, including
+Lemaître-Tolman-Bondi models [5, 6] and certain families of Szekeres cosmological models
+[7]. Series expansion of the Jacobi map around the vertex of an observer has been considered
+for arbitrary space-times [8] resulting in a general angular diameter distance expansion in
+the affine parameter along a light beam. Power series of cosmological distances in redshift
+have been obtained for general relativistic space-times [9, 10] and expressed using multipole
+expansions [11, 12]. The present paper builds on these results. Studies of distance–redshift
+relations in various anisotropic media – typically under the assumption of an FLRW ‘back-
+ground’ metric – have been made, e.g. [13–22]. Despite of some theoretical interest in the
+modelling of anisotropies, the isotropic ansatz is used for the vast majority of observational
+analysis, though see [23–26]. While a notion of statistical homogeneity and isotropy is indi-
+cated by the convergence of galaxy 2-point correlation function statistics [27, 28], large scale
+structures of sizes that extend hundreds of Megaparsecs in effective radii have been detected
+[29–32] along with coherent ‘bulk flow velocity’ on scales of several hundreds of Megaparsecs
+[33, 34]. In this paper we develop a model independent framework for taking into account
+the existence of cosmic structures in the analysis of distance–redshift data.
+      As we shall detail, the proportionality law between redshift and distance as it was first
+hypothesised by Lemaître [1] and observed by Slipher and Hubble [2, 3] emerges in the small
+redshift and isotropic limit of the luminosity distance in a general expanding space-time
+setting. In this paper we derive the expression for the luminosity distance ‘Hubble law’ as
+formulated in a general space-time geometry admitting such a series expansion, from which the
+form of the originally formulated Hubble law derives as a monopole approximation in the O(z)
+vicinity of the observer. The strength of the final expression for the general anisotropic Hubble
+law is its simple form given by a finite set of physically interpretable multipole coefficients,
+providing a new framework for observational analysis.
+      In section 2 we introduce a general time-like congruence and consider mutual distances
+defined between observers comoving with the congruence through their emission and absorp-
+tion of light rays. In section 3 we present the general ‘Hubble law’: the series expansion
+of luminosity distance in redshift for general space-times admitting such a series expansion.
+Section 4 contains the main result of this paper: we formulate the anisotropic coefficients of
+the general Hubble law in a multipole representation. In section 5 we review the assumptions
+behind the derived results, and consider the effect of a special relativistic boost of the observer
+with respect to the frame of the smooth congruence description. We conclude in section 6.
+    1
+   In this paper, we use the term ‘Hubble law’ as meaning the series expansion of luminosity distance or
+angular diameter distance in redshift.
+
+
+
+
+                                                 –2–
+Notation and conventions: Units are used in which c = 1. Greek letters µ, ν, . . . label space-
+time indices in a general basis. Einstein notation is used such that repeated indices are
+summed over. The signature of the spacetime metric gµν is (− + ++) and the connection ∇µ
+is the Levi-Civita connection. Round brackets ( ) containing indices denote symmetrisation
+in the involved indices and square brackets [ ] denote anti-symmetrisation. Bold notation T
+for the basis-free representation of tensorial quantities Tν1 ,ν2 ,..,νnµ1 ,µ2 ,..,µm is used occasionally.
+
+2    The cosmological observers and light bundles
+We consider a time-like congruence governed by the tangent vector field u, representing
+the 4–velocity of reference observers and emitters in the space-time. We further consider
+an irrotational geodesic congruence of photons with affinely parametrised tangent vector k
+representing the 4–momentum of the light emitted and observed between members of the
+time-like congruence. It will be useful to decompose the photon 4–momentum field k in
+terms of the 4–velocity field u as follows
+                                k µ = E(uµ − eµ ) ,       E ≡ −k µ uµ ,                              (2.1)
+where e is a vector field orthogonal to u, and E is the energy of the photon congruence as
+inferred by observers comoving with u. The sign convention is such that e describes the
+spatial direction of observation of observers comoving with u, and we can think of e as a
+radial unit-vector when evaluated at the vertex point of the observer’s lightcone. We define
+the projection tensors
+                         hµν ≡ uµ uν + gµν ,       pµν ≡ uµ uν − eµ eν + gµν ,                       (2.2)
+onto the 3–dimensional space orthogonal to u and the 2–dimensional screen space orthogonal
+to k and u respectively. The equations describing the deformation of the photon congruences
+are given by [35, 36]
+                                 dθ̂    1
+                                     = − θ̂2 − σ̂µν σ̂ µν − k µ k ν Rµν ,                            (2.3)
+                                 dλ     2
+                               dσ̂µν
+                                     = −θ̂σ̂µν − pµρ pνσ k α k β Cρασβ ,                             (2.4)
+                                dλ
+                     d
+where the operation dλ ≡ k µ ∇µ is the directional derivative along the flow lines of the photon
+4-momentum, where Rµν is the Ricci tensor of the space-time and Cµνρσ is the Weyl tensor,
+and where the decomposition of the expansion tensor of the null congruence
+                          1                                                              1
+    Θ̂µν ≡ pνβ pµα ∇β kα = θ̂pµν + σ̂µν ,        θ̂ ≡ ∇µ k µ ,     σ̂µν ≡ pµα pνβ ∇α kβ − θ̂pµν      (2.5)
+                          2                                                              2
+has been used. The variables θ̂ and σ̂µν describe the expansion and stretching of the con-
+gruence area as measured in the 2–dimensional screen space. The equations governing the
+geodesic deviation of the time-like congruence are [36]
+                  dθ    1
+                     = − θ2 − σµν σ µν + ωµν ω µν − uµ uν Rµν + Dµ aµ + aµ aµ ,                      (2.6)
+                  dτ    3
+                dσµν    2                                              1
+                     = − θσµν − σαhµ σ ανi + ωαhµ ω ανi − uρ uσ Cρµσν − Rhµνi
+                 dτ     3                                              2
+                     + Dhµ aνi + ahµ aνi + 2aα σα(ν uµ) ,                                            (2.7)
+                dωµν    2
+                     = − θωµν + 2σ α[µ ων]α − D[µ aν] − 2aα ωα[µ uν] ,                               (2.8)
+                 dτ     3
+
+
+
+                                                  –3–
+        d
+where dτ  ≡ uµ ∇µ is the directional derivative along the flow lines of u, where aµ ≡ uν ∇ν uµ
+is the 4–acceleration field, where the spatial covariant derivative Dµ is defined through its
+acting on a tensor field Tν1 ,ν2 ,..,νnγ1 ,γ2 ,..,γm :
+
+       Dµ Tν1 ,ν2 ,..,νnγ1 ,γ2 ,..,γm ≡ hνα11 hνα22 ..hναnn hβγ11 hβγ22 ..hβγnm hµσ ∇σ Tα1 ,α2 ,..,αnβ1 ,β2 ,..,βm ,    (2.9)
+
+and where we have used the decomposition
+                                              1
+                        Θµν ≡ hνβ hµα ∇β uα = θhµν + σµν + ωµν ,
+                                              3
+                                µ
+                        θ ≡ ∇µ u ,       σµν ≡ ∇hν uµi , ωµν ≡ hνβ hµα ∇[β uα] .                                       (2.10)
+
+The operation hi around indices selects the tracefree symmetric part of the spatial projection,
+               α hβ A
+i.e., Ahµνi ≡ h(µ          1     αβ
+                  ν) αβ − 3 hµν h Aαβ . The expansion scalar θ describes the expansion rate
+of the congruence, the shear term σµν describes its stretching, and the vorticity ωµν describes
+its rotation. The evolution equations (2.3)–(2.4) and (2.6)–(2.8) are purely geoemetrical and
+follow from the Ricci identity. The evolution of the energy function E along the flow lines of
+k can be formulated in terms of projected dynamical variables of u in the following way
+                dE                                                      1
+                   = −k µ ∇µ (k ν uν ) = −E 2 H ,                    H ≡ θ − eµ aµ + eµ eν σµν .                       (2.11)
+                dλ                                                      3
+We note that H is a truncated multipole series in the spatial unit vector e, which will be
+important for the multipole decomposition of the general Hubble law derived in section 4.
+We now describe cosmological distance measures defined between observers and emitters
+comoving with u. The angular diameter distance dA of an astronomical source – describing
+the physical size of an object relative to the angular measure it subtends on the sky of a
+reference observer – is defined as [37]
+
+                                                                δA
+                                                       d2A ≡       ,                                                   (2.12)
+                                                                δΩ
+where δA is the proper area of the object perpendicular to the 4–velocity u of the emitting
+congruence and the 4–momentum k of the lightbeam, and δΩ is the subtended angular ele-
+ment. The evolution of the angular diameter distance along the photon congruence is given
+by the expansion rate of the null congruence
+                                                     ddA  1
+                                                         = θ̂dA ,                                                      (2.13)
+                                                      dλ  2
+and the second derivative of dA can be rewritten using (2.3), yielding the focusing equation
+[35, 38]
+                             d2 dA
+                                                        
+                                            2   1 µ ν
+                                   = −   σ̂   +   k k Rµν dA .                        (2.14)
+                              dλ2               2
+Assuming the conservation of photons it follows from Etherington’s reciprocity theorem [39,
+40] that the luminosity distance between a source and an observer
+                                            r
+                                                L
+                                       dL ≡         ,                                (2.15)
+                                               4πF
+
+
+
+
+                                                           –4–
+is related to the angular diameter distance in the following way
+                                                                     E
+                                  dL = (1 + z)2 dA ,       1+z ≡        ,                            (2.16)
+                                                                     Eo
+where L is the bolometric luminosity of the source, F is the bolometric flux of energy as
+measured by the observer, E is the photon energy in the frame of the emitter, Eo is the photon
+energy measured at the vertex point o of the observer’s lightcone, and z is the associated
+redshift.
+
+3       The luminosity distance Hubble law
+
+In this section we formulate the series expansion of luminosity distance in redshift to third
+order in the general case: we make no restrictions on the observer congruence or the curvature
+of space-time other than the regularity requirements implied by Taylor’s theorem. Let λ be
+an affine function along the null rays of the photon congruence satisfying k µ ∇µ λ = 1. We
+expand the angular diameter distance around the point of observation2 o in the following way
+
+                              ddA        1 d2 dA    2   1 d3 dA
+               dA = dA |o +         ∆λ +         ∆λ   +         ∆λ3 + O(∆λ4 ) ,                       (3.1)
+                               dλ o      2 dλ2 o        6 dλ3 o
+where ∆λ ≡ λ − λo , and where the subscript o denotes evaluation at the vertex point. We
+can invoke the initial conditions [8]
+
+                                    ∂         1 ddA
+                    dA |o = 0 ,          dA =         = −1 ,                σ̂µν |o = 0 ,             (3.2)
+                                    ∂τ k   o  Eo dλ o
+         ∂                       d
+where ∂S   |k ≡ (1/k µ ∇µ S) dλ    denotes the derivative with respect to the scalar function S along
+the flow lines of k. The function τ is the proper time parameter of u defined from uµ ∇µ τ = 1
+and hµν ∇µ τ |o = 0, so that k µ ∇µ τ |o = Eo follows from the decomposition (2.1). The first
+initial condition of (3.2) ensures that the area measure tends to zero at the observer, while
+the second requirement ensures that the area measure reduces to the Euclidian one near a
+point. The third condition states that the shear rate σ̂µν tends to zero at the focus point of the
+null rays and results from the Minkowski limiting description around a single space-time point.
+The divergence of the expansion rate of the photon congruence θ̂ at the observer position o
+reflects the caustic nature of the vertex point [8, 41]. From the initial conditions in (3.2) it
+follows immediately that the first two coefficients in the series expansion (3.1) read dA |o = 0
+and dd dλ |o = −Eo . Further, using (2.14) together with the first and third initial conditions
+        A
+
+                         2
+of (3.2) we have ddλd2A |o = 0, assuming that k µ k ν Rµν is non-singular at the vertex point.
+Computing the directional derivative of both sides of (2.14) along the direction of k gives
+d3 dA
+ dλ3 o
+      | = 12 Eo k µ k ν Rµν , assuming that the derivative of k µ k ν Rµν and σ̂µν are non-singular at
+the vertex point. Thus, the series expansion (3.1) reduces to
+                                             1
+                         dA = −Eo ∆λ +         Eo k µ k ν Rµν ∆λ3 + O(∆λ4 ) .                         (3.3)
+                                            12                o
+    2
+    The series expansion is defined along the individual null rays, which can be labelled uniquely by the
+direction vector eo , and the coefficients of the series expansion have implicit dependence on the direction
+vector eo . This dependence reflects the anisotropy of the local space-time neighbourhood relative to the
+observer at o.
+
+
+
+
+                                                   –5–
+We can rewrite ∆λ in terms of its expansion in z, assuming that the function λ 7→ z(λ) is
+invertible3 :
+                       ∂           1 ∂2         2   1 ∂3
+                  ∆λ =      λ z +          λ  z   +         λ z 3 + O(z 4 ) ,       (3.4)
+                       ∂z k o      2 ∂z 2 k o       6 ∂z 3 k o
+where zo = 0 per definition. We can find the coefficients of the expansion (3.4) by using
+(2.11), which gives
+ ∂            1            1
+     k
+       λ = µ         =−        ,
+ ∂z     o  k ∇µ z o      Eo Ho
+                    
+            d      1                                                             !
+∂ 2              µ
+           dλ k ∇µ z             2                                   1 1 dH
+                                                                          dλ
+   2 k
+       λ =     µ
+                         =−                                     −1 +                 ,
+∂z      o     k ∇µ z          Eo Ho                                  2 Eo H2 o
+                       o
+                       
+                             d       1
+                        d     dλ    kµ ∇µ z
+                                                                                    dH 2       d2 H
+                                                                                                    !
+                                                                      1 dH
+                                                                                       
+ ∂3                    dλ           µ
+                                   k ∇µ z               6                dλ    1 1  dλ     1 1 dλ 2
+         λ         =                                =−             1−        +           −            ,(3.5)
+∂z 3 k       o                k µ ∇µ z                 Eo Ho          Eo H2 o 2 Eo2 H4 o 6 Eo2 H3 o
+                                                o
+                              ∂         1      d
+where it has been used that ∂z  k
+                                  = kµ ∇  µ z dλ
+                                                 from the definition given below equation (3.2),
+and where the definition of z in (2.16) has been invoked. We can now use the coefficients in
+(3.5) together with (3.3) and (3.4) to obtain a third order expansion of dA in redshift:
+                        (1)           (2)           (3)
+         dA = dA z + dA z 2 + dA z 3 + O(z 4 ) ,
+                                                            !
+          (1) 1                         (2) 1     1 1 dH
+                                                       dλ
+         dA ≡    ,                     dA ≡ −1 +              ,
+              Ho                            Ho    2 Eo H2 o
+                                                    2          2
+                                                                                        !
+             (3)       1          1 dH
+                                     dλ    1 1 dHdλ       1 1 ddλH2   1 1 k µ k ν Rµν
+         dA ≡                  1−        +              −           −                     ,                   (3.6)
+                       Ho         Eo H2 o 2 Eo2 H4 o 6 Eo2 H3 o 12 Eo2        H2      o
+
+where we have plugged in (3.4) in (3.3) and kept terms up till third order in z. It is convenient
+to write an analogous taylor series of the luminosity distance in redshift
+                                                          (1)     (2)     (3)
+                                              dL = dL z + dL z 2 + dL z 3 + O(z 4 ) ,                         (3.7)
+where the coefficients can be formulated in terms of the coefficients of the expansion of the
+angular diameter distance (3.6) by invoking the first relation in (2.16), and from using the
+                                                                                (1)       (1)
+first initial condition of (3.2). This yields the first order coefficient dL = dA , the second
+                    (2)    (2)     (1)                                      (3)       (3)     (2)   (1)
+order coefficient dL = dA + 2dA and the third order coefficient dL = dA + 2dA + dA .
+Using the expressions (3.6) in these expressions for the coefficients, we finally have:
+                                                               !
+                  (1)    1         (2)    1        1 1 dH dλ
+                 dL ≡       ,     dL ≡         1+                ,
+                        Ho                Ho       2 Eo H2 o
+                                     dH 2           d2 H
+                                                                                    !
+                                                                     k µ kν R
+                  (3)    1     1 1   dλ        1 1   dλ 2      1   1          µν
+                 dL ≡                        −               −                          .         (3.8)
+                        Ho 2 Eo2 H4 o 6 Eo2 H3 o 12 Eo2                  H2        o
+
+Motivated by the FLRW series expansions of distance measures in redshift [4], we identify
+                                                                                                 2
+                      1 dH                                  1 k µ k ν Rµν                    1 d H2
+ H,           Q ≡ −1 − dλ2 ,                        R≡1+Q−                ,              J ≡ 2 dλ3 − 4Q − 3 , (3.9)
+                      EH                                   2E 2   H2                        E H
+   3
+    This and other regularity conditions must be satisfied for the below derived expressions to be well defined.
+See section 5 for a complete discussion of assumptions and their physical significance.
+
+
+
+
+                                                                    –6–
+as effective observational ‘Hubble’, ‘deceleration’, ‘curvature’, and ‘jerk’ parameters respec-
+tively. From (2.11) and (3.9) we see that 1/E plays the role of a generalised ‘scale-factor’
+on the null cone, in that its derivatives along k result in the effective observational Hubble,
+deceleration, and jerk parameters.4 While 1/E is a natural observational generalisation of
+the FLRW scale-factor for the interpretation of distance–redshift data, it does not inherit all
+properties which we associate with an FLRW scale-factor. For instance, 1/E does in gen-
+eral not describe the scaling of volume in the frame of the observer congruence generated
+by u. Neither is the dynamics of E in general constrained by any FLRW-like field equa-
+tions. From (2.11) it is evident that the effective Hubble parameter includes contributions
+from non-gravitational forces via the 4–acceleration of the observer congruence. In addition,
+the effective Hubble parameter includes contributions from the shear tensor of the observer
+congruence, which is in turn directly linked to Weyl curvature of the space-time through the
+evolution equation (2.7). As we shall see in the following analysis, the effective deceleration,
+curvature, and jerk parameters contain non-trivial contributions from the 4–acceleration as
+well as kinematic and dynamic variables associated with the observer congruence. We write
+the expansion coefficients (3.8) in terms of these parameters as evaluated at the vertex point:
+
+              (1)    1            (2)   1 − Qo            (3)    −1 + 3Q2o + Qo − Jo + Ro
+             dL =       ,       dL =           ,         dL =                             ,             (3.10)
+                     Ho                   2Ho                               6Ho
+and see that the effective observational parameters replace the FLRW Hubble Ho , deceleration
+qo , curvature Ωk , and jerk jo parameters of the analogous FLRW expansion [4, eq. (46)] with:
+ (1)              (2)              (3)    −1+3qo2 +qo −jo +Ωk
+dL = H1o , dL = 1−q         o
+                          2Ho , dL =              6Ho         . The set of parameters {Ho , Qo , Ro , Jo } is
+generally anisotropic and depend on the direction of observation eo in a manner which will be
+detailed in the following section. We note that Ho , Qo , and Jo arise from the reparametrization
+of the null-lines in terms of the redshift function as incorporated in the coefficients (3.5). The
+only information coming from the focusing of null rays (2.14) is the projected Ricci curvature
+k µ k ν Rµν |o , which is contained in the effective curvature parameter Ro .
+        When evaluated in an FLRW space-time with comoving observers, the variables (3.9)
+reduce to the FLRW Hubble constant, deceleration parameter, curvature parameter, and jerk
+respectively, and the coefficients (3.10) reduce to those of the well-known FLRW series expan-
+sion [4, eq. (46)]. As we shall derive in the following, the effective parameters H, Q, R, and
+J of the luminosity distance expansion law acquire non-trivial correction terms with respect
+                                                                            dθ
+to the naive isotropized extrapolations5 ‘H’:= θ/3, ‘q’:= −1 − 3 dτ            /θ2 , ‘Ωk ’:= −(3/2)(3) R/θ2 ,
+                       2
+                      d θ      dθ
+and ‘j’:= 1 + 9( dτ                    3 of the FLRW Hubble, deceleration, curvature, and jerk pa-
+                         2 + θ dτ )/θ
+rameters respectively. For instance, the effective observational deceleration parameter Q
+                                                                             dθ
+differs from the isotropized deceleration parameter ‘q’:= −1 − 3 dτ             /θ2 considered in [42, 43]
+in two ways. Firstly, the full expansion variable H enter the definition in (3.9) instead of
+the isotropized part θ/3 only (but see [43] where the shear component is also considered).
+Secondly, the evolution of H is evaluated along the flow lines of k instead of the flow lines
+of u, adding a derivative along spatial propagation direction −e of the incoming light beam
+   4
+     The reduction to the FLRW Hubble, deceleration, and jerk parameters in the homogeneous and isotropic
+case where E is proportional to the inverse homogeneous and isotropic scalefactor, can be seen immediately by
+using the decomposition (2.1) in (2.11) and (3.9). For instance H = d(1/E)
+                                                                         dλ
+                                                                               = E d(1/E)
+                                                                                     dτ
+                                                                                          − Eeµ ∂µ (1/E), where
+the second term vanishes identically in the FLRW limit with observers comoving with the homogeneous and
+isotropic space-time foliation.
+   5
+     The function (3) R is the adapted 3-curvature on the spatial sections defined by u in the case of vanishing
+vorticity ωµν of the congruence.
+
+
+
+
+                                                    –7–
+via the decomposition (2.1). This adds potentially crucial multipole terms to the effective
+observational deceleration parameter Q.
+      For reasons that will become clear in the following section, we introduce the modified
+set of dimensionful parameters {H, Q, R, J} 7→
+
+                      H,      b ≡ H2 (Q + 1) ,
+                              Q                                J ≡ H3 (J − 1 − R) ,
+                                                               b                                             (3.11)
+
+in terms of which the Hubble law reads
+                                                                           b2
+                                         2− Qo
+                                                                       3Qo
+                                                                           − 5Q o
+                                                                                  − HJo3
+                                               b                                    b            b
+                 (1)   1          (2)       H2     o             (3)    H4    H2
+                                                                               o        o            o
+                dL =      ,      dL =                  ,        dL =                                     .   (3.12)
+                       Ho                 2Ho                                      6Ho
+We shall argue that this representation of the luminosity distance Hubble law is particularly
+natural for the analysis of data in a general anisotropic universe.
+
+4   Multipole analysis of the luminosity distance Hubble law
+
+We shall now consider the effective kinematical parameters (3.9) and analyse their dependence
+on the direction of observation. We have from the definition in (2.11) that H is given by the
+truncated multipole series
+                                           1
+                                 H(e) =      θ − e · a + ee · σ ,                                             (4.1)
+                                           3
+where we have used the compact notation e · a = eµ aµ and ee · σ = eµ eν σµν for later
+convenience, and we have made the direction dependence of H clear by explicating H(e). The
+expansion rate θ constitutes the monopole term, the negative acceleration −a is the dipole
+coefficient, and σ is the quadrupole coefficient, with the eigendirections of the quadrupole
+moment corresponding to the axes of stretch/contraction of the observer congruence. We
+next consider the effective deceleration parameter Q defined in (3.9), which can be written as
+                                   0       1               2           3                     4
+                                   q + e · q + ee · q + eee · q + eeee · q
+                     Q(e) = −1 −                                           ,                                  (4.2)
+                                                    H2 (e)
+
+with
+                 0  1 dθ 1             2          2
+                q≡        + Dµ aµ − aµ aµ − σµν σ µν ,
+                    3 dτ      3        3          5
+                1          daν     1                  9          2
+                qµ ≡ −hνµ       − Dµ θ + aν ωµν + aν σµν − Dν σ νµ ,
+                            dτ     3                  5          5
+                2             dσαβ                                     6
+                qµν ≡ hαµ hβν       + Dhµ aνi + ahµ aνi − 2σα(µ ω αν) − σαhµ σ ανi ,
+                               dτ                                      7
+                 3                                              4
+                qµνρ ≡ −Dhµ σνρi − 3ahµ σνρi ,                  qµνρκ ≡ 2σhµν σρκi ,                          (4.3)
+
+                                                       1        1          2             2
+where we have used the compact notation e · q ≡ eµ qµ , ee · q ≡ eµ eν qµν , etc., and made use
+of the identity
+
+                deµ
+                                                                
+                                             1 µ
+                     = E(eµ − uµ )H − Eeν      θh ν + σ µν + ω µν + Eaµ .                 (4.4)
+                 dλ                          3
+
+
+
+
+                                               –8–
+The system (4.3) has been written in its ‘traceless decomposition’, and the notation Thµ1 ,µ2 ,..,µn i
+denotes the symmetric and traceless part of the 3–dimensional tensor
+Tµ1 ,µ2 ,..,µn = hµα11 hµα22 ..hµαnn Tα1 ,α2 ,..,αn as detailed in appendix A.
+      The effective observational deceleration parameter Q needs not obey the Friedmannian
+inequality Q ≥ 0 in a general relativistic space-time obeying the strong energy condition
+Rµν uµ uν ≥ 0: both monopole and higher order multipole terms can violate the inequality.
+Regional Universe properties alter the Friedmannian deceleration parameter with several non-
+trivial correction terms that need not be small. For instance, the relative spatial variation
+in the expansion rate θ is of order unity between void regions and regions dominated by
+gravitationally bound structures, and thus Dµ θ could realistically contribute to a significant
+dipole in the effective deceleration parameter. Neglecting all anisotropic contributions in
+                                                                        0
+(4.1) and (4.2), we have the monopole limit Q → −1 − 9q/θ2 . The effective deceleration
+parameter Q does not in general reduce to the isotropized deceleration of length scales in
+                                    dθ                                               0
+the observer frame ‘q’:= −1 − 3 dτ     /θ2 due to the presence of terms in q involving the shear,
+the 4–acceleration, and the gradient of the 4–acceleration of the observer congruence. Thus,
+even in its monopole limit, the deceleration parameter does not directly measure volume
+                                                                         dθ
+deceleration in the general case. Furthermore, local values of θ and dτ     will in general differ
+from the corresponding parameters of a given hypothesised FLRW background model. This
+effect can in itself give rise to locally positive values of volume acceleration as pointed out
+in, e.g., [42, 43]. For a ‘tilted’ observer congruence in an FLRW universe model, the leading
+                                                                                   dθ
+order correction of the isotropized deceleration of length scales ‘q’:= −1 − 3 dτ     /θ2 relative
+                                                             µ
+to that in the ‘CMB frame’ comes from the term Dµ a in Raychaudhuri’s equation (2.6)
+                                                               0
+[42, 44]. It is in this context interesting to note that q contains a term Dµ aµ /3 in addition to
+                                             dθ
+that appearing in the contribution from dτ      through the Raychaudhuri equation. Taking this
+extra term into account would lead to an enhancement of the predicted apparent monopolar
+volume acceleration effects quoted in table 1 of [44] for various survey length scales.
+      A dipolar structure in the observed deceleration parameter has been hypothesized in
+[42, 43], based on FLRW studies with peculiar velocity flow. The above expression for Q
+(4.2) confirms the general expectation of a dipolar structure in the effective deceleration pa-
+rameter of the luminosity distance Hubble law – along with higher order anisotropic terms
+up till quadrupolar order – even though the deceleration parameter and its dipole takes a dif-
+ferent form than that proposed in [42, 43]. The reason for these differences – apart from the
+present analysis being more general than a perturbative framework around an FLRW back-
+ground space-time – is that the expressions used for the deceleration parameter in [42, 43]
+relies on the extrapolation of the FLRW deceleration parameter to the effective deceleration
+                            dθ
+parameter ‘q’:= −1 − 3 dτ      /θ2 . While such an extrapolation has physical meaning as the
+isotropized deceleration of length scales in the fluid frame, the natural extrapolation of the
+FLRW deceleration parameter when considering distance–redshift data is the parameter Q,
+which replaces the FLRW deceleration parameter in the general series expansion of luminosity
+distance in redshift.6 Similar conclusions were reached in the investigations [11, 12] consid-
+   6
+     The discrepancy between Q and ‘q’ is due to the non-trivial mapping of the relative expansion and
+acceleration of distances between time-like world lines by the detected null rays: The inverse photon energy
+1/E defines an observationally relevant length scale, which H and Q measure the expansion and deceleration
+of along the direction of the photon 4-momentum (see the definitions in (2.11) and (3.9)). The parameter
+              dθ
+‘q’:= −1 − 3 dτ  /θ2 measures the deceleration of length scales in the observer frame, where the length scale is
+defined from the cube root of the Riemannian volume element in the frame of the observer congruence, which
+is not directly probed in the distance–redshift relation.
+
+
+
+
+                                                    –9–
+ering the general formula for angular diameter distance. Thus, for the purpose of analysing
+cosmological surveys of standardisable objects, Q is the relevant deceleration parameter to
+consider.
+     We may decompose the parameters R and J into normalised multipole series in a similar
+way as for Q, as done in appendix B. Using these results, we can finally write the set of
+dimensionful parameters (3.11) in the following way:
+                            1
+                     H(e) =   θ − e · a + ee · σ ,                                                          (4.5)
+                            3
+                              0        1        2       3          4
+                                                                      
+                     Q(e)
+                     b    = − q + e · q + ee · q + eee · q + eeee · q ,                                     (4.6)
+                              0    1         2           3            4               5       6
+                     J(e) = t + e· t + ee· t + eee· t + eeee· t + eeeee· t + eeeeee· t ,
+                     b                                                                                      (4.7)
+                                       0 1 2 3 4 5 6
+where the set of coefficients {t, t, t, t, t, t, t} is given in appendix B. The multipole coefficients
+of (4.5)–(4.7) are all given in terms of dynamical variables associated with the 4–velocity u of
+the observer congruence and curvature degrees of freedom as projected relative to the frame
+of u. The dependence on the photon congruence enter solely through the projection of the
+multipole coefficients onto the spatial direction vector e of observation. Due to their simple
+form in terms of truncated multipole series, we argue that the set {H, Q,            J} constitutes a
+                                                                                   b b
+preferred set of parameters for observational analysis.
+      Equation (3.12) in combination with (4.5)–(4.7) is the main result of this paper. In the
+trace-free decompositions of the series (4.5)–(4.7), each 2` -pole represents 2` + 1 degrees of
+freedom. Thus Ho represents 9 degrees of freedom: {θo , ao , σo }; Q    b o represents 16 independent
+                          0  1   2    3
+degrees of freedom7 : {qo , qo , qo , qo }; and b Jo represents 36 independent degrees of freedom:
+ 0       1   2   3   4   5
+{to , to , to , to , to , to }. Thus, the exact anisotropic Hubble law is given by 9, 25, 61 constant
+degrees of freedom in the O(z), O(z 2 ), O(z 3 ) vicinity of the observer respectively.
+Note on application to data analysis: The general Hubble law (3.12) with (4.5)–(4.7) can be
+used directly in the analysis of distance–redshift data in the small to intermediate redshift
+regime. To generalise analyses conventionally carried out using the FLRW ansatz for the
+relation between distances and redshift, the FLRW luminosity distance Hubble law [4, eq.
+(46)] can simply be replaced by the general Hubble law given by (3.12) and (4.5)–(4.7).
+                                         0   1   2   3       0    1   2   3   4   5
+The coefficients {θo , ao , σo }, {qo , qo , qo , qo }, {to , to , to , to , to , to } constitutes the set of free
+parameters of a full model independent analysis.8 When the number of data points and/or
+sky coverage is too sparse for estimation of the full set of 61 degrees of freedom, a truncation
+of the series as motivated by the available data may be carried out. Physically motivated
+assumptions may be imposed on the system of coefficients through their expressions in terms
+of expansion variables of the observer congruence and curvature degrees of freedom of the
+space-time.
+     7
+    The 16-pole moment of Q    b o and the 64-pole moment of b Jo are given in terms of σo .
+     8
+    Such an analysis requires that the observer is comoving with the cosmological congruence description or
+that the special relativistic velocity of the observer with respect to the congruence 4–velocity u is known. See
+section 5 for the derivation of a modified fitting function where the unknown peculiar velocity of the observer
+with respect to the congruence 4–velocity is incorporated as three additional parameters in a boosted version
+of the Hubble law.
+
+
+
+
+                                                         – 10 –
+5       Discussion of assumptions and accounting for peculiar motion
+
+We have presented a model independent expression for the luminosity distance Hubble law
+to third order in redshift assuming (i) the presence of a time-like congruence constituting
+the observers and emitters in the space-time; (ii) the presence of an irrotational null geodesic
+congruence describing the light emitted and observed, and the conservation of photon number;
+(iii) invertibility of the redshift function λ 7→ z(λ) along the flow lines of k where λ is an
+affine parameter satisfying k µ ∇µ λ = 1; (iv) 3-times differentiability of z along k at the vertex
+point o; (v) 3-times differentiability of the angular diameter distance dA along k at the vertex
+point o.
+       The condition (iii) requires some attention. Invertibility of λ 7→ z(λ) is satisfied if and
+only if H is a continuous function satisfying H 6= 0 along each null ray. For cosmological
+large scale solutions, H is reasonably assumed to be of constant (and positive) sign. However,
+taking into account small scales where collapse and strong deformation of structure occur, H
+can change sign regionally. The break down of the series expansion (3.4) for changing sign of H
+can be understood physically as follows: when both expansion and contraction happen along
+the propagation direction of the photon congruence, the energy function E will alternately
+decrease and increase along the photon congruence. This in turn causes the redshift function
+relative to the central observer to alternately decrease and increase, along the light ray causing
+the function z 7→ λ(z) to be multivalued. Thus redshift cannot be identified as a parameter
+along the null ray, and the function z 7→ dA (z) is multivalued, i.e., the cosmological notion of
+distance as a well behaved function of redshift breaks down. One may circumvent the issue of
+multivaluedness either by considering a small enough space-time region around the observer
+where H is of constant sign, or by coarse-graining over scales large enough such that the sign
+of H can safely be taken to be constant. Physically, the latter strategy requires coarse-graining
+over scales exceeding the largest collapsing regions, which in the present epoch Universe are of
+characteristic size ∼ 10 Megaparsecs [45–47]. Condition (iv) requires the dynamical variables
+associated with u and their derivatives to be non-singular at the vertex point o, and the
+condition (v) requires k µ k ν Rµν to be finite at the vertex point. Note that the conditions (i)–
+(v) do not guarantee the remainder term of the Hubble law as formulated for a given order
+in z to be small. The level of accuracy of the truncated luminosity distance series expansion
+in redshift must be assessed on a case by case basis.
+Note on peculiar velocities: A difficulty of any cosmological analysis is to reconcile the cosmo-
+logical congruence picture with the observer residing inside a single cosmological ‘particle’,
+which may have special relativistic movement with respect to the smooth congruence 4–
+velocity field u. Knowledge of any such ‘peculiar velocity’ of the observer and emitters is in
+principle required in order to satisfy the condition (i). In the following we incorporate a small
+peculiar motion of the observer relative to the congruence 4–velocity field9 in the Hubble law.
+We assume that emitters are statistically well described as comoving with the congruence
+four velocity u.
+     Let us consider the luminosity distance expansion law as viewed from a ‘tilted’ observer
+with a special relativistic velocity |v|  1 relative to the congruence four velocity field u at
+    9
+     The peculiar motion of the observer is usually calibrated against the dipole of the cosmic microwave
+background (CMB). However, a recent investigation of the angular distribution of the CatWISE quasar sample
+concludes that the exclusively kinematic interpretation of the CMB dipole is rejected with a p-value of 5×10−7
+[48]. See also [24] for an investigation of cosmic rest frames and Hubble flow anisotropies in the COMPOSITE
+sample of galaxies and clusters.
+
+
+
+
+                                                   – 11 –
+the vertex point o, such that the four velocity of the tilted observer takes the form ũo = uo +v
+to first order in v. It follows that the energy and redshift measured by the tilted observer is
+                                                                                         E     Eo
+                    Ẽo ≡ −ũµ kµ |o = Eo (1 + eµo vµ ) ,                     1 + z̃ ≡       =     (1 + z) ,        (5.1)
+                                                                                         Ẽo   Ẽo
+and that the spatial direction10 ẽo of the incoming light beam as inferred by the tilted observer
+is given by the relation
+                                                eµo = (1 + eνo vν )ẽµo − v µ − eνo vν uµo .                        (5.2)
+The angular diameter and luminosity distance as measured in the tilted frame are given by
+[49]
+                                            Ẽo                                           Eo
+                                      d˜A =     dA ,                d˜L ≡ (1 + z̃)2 d˜A =     dL ,                  (5.3)
+                                            Eo                                            Ẽo
+due to the light aberration effect and the redshifts relation (5.1). Invoking the expansion of
+luminosity distance (3.7) and using the function z̃ 7→ z(z̃) given by (5.1) we have for v · ẽo  z
+and (v · ẽo )2  z 3 :
+                                              (0)   (1)      (2)        (3)
+                                      d˜L = d˜L + d˜L z̃ + d˜L z̃ 2 + d˜L z̃ 3 + O(z̃ 4 ) ,                         (5.4)
+to first order in v · ẽo , with
+    (0)          (1)      (1)  (1)          (2)                        (2)  (2)          (2)  (3)          (3)  (3)
+  d˜L ≡ ẽµo vµ dL ;    d˜L ≡ dL +2ẽµo vµ dL ;                      d˜L ≡ dL +ẽµo vµ (dL +3dL ) ;      d˜L ≡ dL , (5.5)
+where the third order term does not acquire correction terms for an expansion truncated at
+                                                                               (1)  (2)        (3)
+O(z̃ 3 ), since v·ẽo z̃ 3  z̃ 4 . Using the form (3.12) of the coefficients dL , dL and dL in terms
+of the effective parameters {H, Q,       b b J} – keeping terms consistently to first order in v for the
+                 (0)   (1)          (2)                                (3)
+coefficients dL , dL and dL and to zeroth order in v for dL – we have
+                                                                                           !
+                            µ                                            µ
+                (0)      ẽ o v µ           (1)     1      δHo (ẽ)   ẽ o vµ      Q(ẽ)
+                                                                                   b
+              d˜L =               ,       d˜L =           − 2       +         2− 2           ,
+                        Ho (ẽ)                   Ho (ẽ)  Ho (ẽ)    Ho (ẽ)      Ho (ẽ)
+                           o (ẽ)
+                       2− Q
+                              b
+               (2)        H2 (ẽ)   δHo (ẽ) 1 Q  b o (ẽ)  δQo (ẽ)      δHo (ẽ)
+                                                                                    
+             d˜L =                o
+                                   − 2        −                       −3
+                        2Ho (ẽ)     Ho (ẽ)    2 H3o (ẽ) Qo (ẽ)          Ho (ẽ)
+                                                                          !
+                             µ               2
+                         1 ẽo vµ         Q (ẽ)
+                                           b           Qo (ẽ)
+                                                       b          Jo (ẽ)
+                                                                  b
+                       +            2 + 3 4o      −6 2         − 3          ,
+                         2 Ho (ẽ)        Ho (ẽ)      Ho (ẽ) Ho (ẽ)
+                         b2
+                         o (ẽ)      o (ẽ)
+                       3Q       − 5Q        − HJo3(ẽ)
+                                            b           b
+               (3)      H4 (ẽ)    H2 (ẽ)        (ẽ)
+             d˜L =        o                     o           o
+                                                                ,                                                   (5.6)
+                                       6Ho (ẽ)
+
+with δHo (ẽ) and δ Q
+                    b o (ẽ) given by the truncated multipole expansions
+
+       δH(ẽ) ≡ v µ aµ − 2ẽµ vν σµν − ẽµ ẽν vµ aν + 2ẽµ ẽν ẽρ vµ σνρ ,
+                     1             2
+                                                  3                1
+                                                                                4              2
+                                                                                                     
+       δ Q(ẽ)
+         b     ≡ v µ qµ + 2ẽµ v ν qµν + 3ẽµ ẽν v ρ qµνρ − vµ qν + ẽµ ẽν ẽρ v κ qµνρκ − 2vµ qνρ
+                                        3                                 4
+               − 3ẽµ ẽν ẽρ ẽκ vµ qνρκ − 4ẽµ ẽν ẽρ ẽκ ẽγ vµ qνρκγ                                           (5.7)
+  10
+    The spatial direction of observation ẽo is defined through the decomposition ko = Ẽo (ũo − ẽo ) analogously
+to the definition (2.1) of e.
+
+
+
+
+                                                                    – 12 –
+and with Ho (ẽ), Qb o (ẽ), and b
+                                 Jo (ẽ) given by the expansions (4.5)–(4.7) with the replacement
+e 7→ ẽ. Note that the expansions δHo (ẽ) and δ Q      b o (ẽ) are given entirely in terms of the
+multipole coefficients of (4.5) and (4.6) and the peculiar velocity vector v. We see from (5.6)
+that the luminosity distance expansion in redshift acquires non-trivial correction terms for
+                                                                          (0)
+a non-zero boost velocity v. In particular the zeroth order term d˜L is added to the series
+expansion on account of the discontinuity in the energy function introduced at the vertex from
+the peculiar boost away from the smooth congruence description, resulting in the dipolar offset
+z̃o = Eo /Ẽo − 1 = −ẽµo vµ to first order in v. Using (5.4), (5.6) instead of (3.7), (3.12) allows
+us to incorporate the fit of a small unknown peculiar velocity of the observer relative to the
+congruence 4–velocity without reference to any hypothesised background space-time solution.
+Three additional degrees of freedom corresponding to the peculiar velocity vector v are in
+this case added to the general Hubble law, such that the exact anisotropic boosted Hubble law
+is given by 12, 28, 64 degrees of freedom in the O(z), O(z 2 ), O(z 3 ) vicinity of the observer
+respectively.
+
+6   Conclusion
+
+We have presented a derivation of the luminosity distance series expansion to third order
+in redshift without making assumptions on the metric of space-time or the field equations
+governing it. The main result of this paper consists of the equations (3.12) and (4.5)–(4.7)
+where Ho , Q          Jo represent the effective Hubble parameter, the effective (transformed)
+            b o , and b
+deceleration parameter, and the effective (transformed) ‘jerk’ parameter of the Hubble law as
+mapped to a Friedmannian form. The parameters {Ho , Q           Jo } are given by finite multipole-
+                                                           b o, b
+series where each multipole is formulated in terms of dynamical variables of the observer
+congruence u and curvature degrees of freedom as projected relative to u. Thus, we find this
+representation of the luminosity distance Hubble law particularly useful.
+      The derived general Hubble law opens the door to doing consistent multipole analysis
+of distance–redshift data. By a counting of degrees of freedom, the Hubble law is given by
+9, 25, 61 degrees of freedom in the O(z), O(z 2 ), O(z 3 ) vicinity of the observer respectively.
+If including an unknown special relativistic peculiar velocity of the observer11 relative to
+the 4–velocity field u of the smooth congruence description, the Hubble law is given by
+12, 28, 64 degrees of freedom in the observer’s O(z), O(z 2 ), O(z 3 ) neighbourhood. This
+is a large number of parameters, but not overwhelmingly so. With upcoming datasets of
+supernovae of type 1a in the 2020’s counting hundreds of thousands of supernovae to be
+detected at redshifts z . 2 over a large proportion of the sky – see [50] and references
+therein – the constraining power for unraveling the relation between luminosity distance and
+redshift will rise significantly. The ability to measure non-zero multipole components depend
+on the error budget of the cosmological catalogue used as well as the amplitudes of the
+multipole coefficients. Since the multipole terms appearing in the O(z 3 ) Hubble law derive
+from first, second, and third derivatives of the energy function as well as projections of the
+Ricci curvature tensor, it is expected that some of the multipole corrections to the monopole
+limit Hubble law are significantly larger – perhaps orders of magnitudes larger – in amplitude
+than the multipoles of the same order in the expansion of the temperature field of the cosmic
+microwave background (CMB). For a fit to data involving fewer degrees of freedom than the
+  11
+     The peculiar velocity field is defined with respect to the general congruence 4–velocity u. Thus, con-
+trary to usual definitions of peculiar velocities, no background space-time model with hypothesised symmetry
+properties is invoked as a reference.
+
+
+
+
+                                                  – 13 –
+exact Hubble law, the parameters {Ho , Q       Jo } may be truncated in their series expansion as
+                                          b o, b
+motivated by the available data. The general Hubble law can also be used within a given
+model setup placing assumptions on the dynamics of u and the curvature of space-time.
+      One of the main findings in the present paper is that the effective observational deceler-
+ation parameter Qo , replacing the FLRW deceleration parameter in the generalised distance–
+redshift series expansion, can be negative without the need of a cosmological constant or
+an energy source violating the strong energy condition. This can lead to an apparent ac-
+celeration effect if observers in an anisotropic and inhomogeneous space-time (or non-ideal
+observers in an FLRW universe model) are interpreting their data as if they were ideal ob-
+servers in an FLRW space-time. The possibility of (apparant) acceleration of length scales
+without violation of the strong energy condition has been suggested in previous studies. For
+instance, investigations of cosmological backreaction [51, 52] suggest that structures on small
+and intermediate scales can contribute to an emergent global notion of cosmic acceleration
+while space is locally decelerating everywhere [53, 54]. Furthermore, the possibility of local
+acceleration of length scales has been suggested in [42, 43]. While these previous studies
+clearly present conditions under which a notion of volume acceleration can be physically ob-
+tained, the operational definitions of ‘deceleration parameters’ in these investigations are not
+directly motivated from the analysis of cosmological datasets. In this paper we formulate an
+observationally relevant extension of the FLRW deceleration parameter to general space-times
+(together with analogous extensions of the FLRW Hubble, jerk, and curvature parameters),
+which replaces the FLRW deceleration parameter in the series expansion of the distance–
+redshift relation, and which can be directly measured with upcoming cosmological datasets
+of standard candles. Thus, we argue that the formalism presented in the present paper is the
+relevant for the analysis of cosmological surveys of standardisable objects.
+      Another insight of this analysis is that the effective observational parameters replacing
+the FLRW Hubble, deceleration, jerk, and curvature parameters in the generalised Hubble
+law are anisotropic in a particular way which can be directly linked to kinematic and dynamic
+properties of the observer congruence. The existence of a dipole in the observed deceleration
+parameter from peculiar velocity flow around an FLRW solution has been hypothesized in
+[42, 43]. In this paper we confirm the general expectation of a dipolar structure in the effec-
+tive deceleration parameter of the luminosity distance Hubble law, though the deceleration
+parameter and its dipole takes a different form than that proposed in [42, 43]. As detailed in
+section 4, the effective deceleration parameter Q differs – even in its monopole limit – from
+                                          dθ
+the natural generalisation ‘q’:= −1 − 3 dτ   /θ2 of the FLRW deceleration parameter. We also
+show that the effective deceleration parameter in general caries multipole terms up to fourth
+order, whereas the effective jerk parameter in general carries multipole terms up to sixth
+order. The derived series expansion can be generalised to higher orders in redshift, yielding
+coefficients with multipole expansions truncated at yet higher order.
+      Some multipole studies of distance–redshift data have already been carried out [23–26],
+which may be further developed using the results of this paper. Analyses determining the local
+expansion rate, which have so far been carried out with isotropic assumptions for the distance
+ladder [55, 56], may also be adapted to the presented model independent framework. The
+results of the present paper can be seen as extending the results on power series expansions
+of the angular diameter distance in relativistic space-times and multipole formulations of
+these [9–12]. Another luminosity distance multipole analysis framework has been proposed
+for investigation of linearly perturbed FLRW space-times [19, 57]. While the approach in
+[19, 57] relies on a direct multipole expansion of the luminosity distance, our approach is
+
+
+
+
+                                             – 14 –
+                                                                            (1)       (2)             (3)
+based on a convenient form of the anisotropic coefficients dL (e), dL (e), and dL (e) of
+the series expansion of the luminosity distance in redshift, allowing us to express these in
+terms of a finite set of multipole coefficients. This makes our procedure convenient for model
+independent analysis, invoking only the minimal set of assumptions (i)–(v) discussed in section
+5 such that z 7→ dL is a single-valued function with a well defined taylor expansion for each
+null ray. While the framework presented in this paper is much broader than the perturbed
+FLRW subcase, it may be used in this limit as well, yielding a complementary approach to
+that of [19, 57] in the low to intermediate redshift regime.
+       A possible direction for future research based on the framework presented in this paper
+is the orientation of CMB multipoles relative to the multipoles of the luminosity distance
+Hubble law described in this work. Since the majority of multipole contributions arise from
+the reparametrization λ 7→ z(λ) of the null rays (the remaining contributions come directly
+from the focusing equation (2.14) – see (3.3)) one could hypothesise the entering of correla-
+tion between multipoles of the CMB and multipoles entering the luminosity distance Hubble
+law. Another potential direction for future research drawing on the results in this paper is
+the direct testing of the FLRW geometrical assumptions. The multipole contributions enter-
+ing the distance expansion appear in extended versions of the Ehlers-Geren-Sachs theorem12
+[58, 59] that make assumptions on the relative order of magnitude of the kinematical variables
+θ, aµ , σµν , and their derivatives along with the off-diagonal components of the Ricci tensor
+hαµ uν Rαν and Rhµνi to prove the ‘closeness’ of the cosmic space-time geometry to an FLRW
+metric13 . These terms appear directly in the observable multipole coefficients {Ho , Q       Jo }
+                                                                                         b o, b
+– see (3.8) or the explicit expressions for the multipole coefficients (4.1), (4.3), (B.6) and
+compare with Theorem 2 of [59]. Model independent determination of the size of the multi-
+pole terms entering the general Hubble law may thus be used as a direct test of the FLRW
+geometric approximation.14 Yet another direction of research inspired by the framework pre-
+sented in this paper, is the model independent formulation of other observables exploiting the
+decomposition of physical observables into truncated multipole series. See, for instance, the
+multipole decomposition of redshift drift signals in general space-times presented in [64].
+       In conclusion we have formulated an expression for the luminosity distance Hubble law
+for general space-times under a minimal set of assumptions. The simple form in terms of
+physically interpretable multipole coefficients makes the expression directly applicable to data
+analysis with existing and upcoming surveys.
+
+
+
+
+  12
+     The Ehlers-Geren-Sachs theorem [60] and generalisations hereof [58, 59] seek to constrain the level of
+homogeneity and isotropy of the space-time metric from the level of isotropy of the CMB temperature field
+as inferred by classes of observers. So far an issue for applying the theorems to data has been that they make
+assumptions on the derivatives of the energy function, which are not directly observable in CMB data.
+  13
+     For a debate on the accuracy of the FLRW approximation on nested scales and the significance of cosmo-
+logical backreaction, see [61, 62].
+  14
+     A potential obstacle to such tests is the regularity assumption (iii) imposed in section 5, that effectively
+requires the consideration of scales large enough for the expansion rate θ to dominate over acceleration aµ
+and shear σµν contributions (as projected onto any spatial direction). However, the variables θ, aµ , and σµν
+can still consistently be of similar order of magnitude within the proposed framework.
+
+
+
+
+                                                    – 15 –
+Acknowledgments
+
+This work is part of a project that has received funding from the European Research Council
+(ERC) under the European Union’s Horizon 2020 research and innovation programme (grant
+agreement ERC advanced grant 740021–ARTHUS, PI: Thomas Buchert). I thank Thomas
+Buchert for his careful reading and comments on the manuscript. I also thank Chris Clarkson
+and the anonymous referee for useful comments.
+
+A     Traceless reduction of symmetric tensors
+
+A tensor in three dimensions can be expressed in therms of traceless symmetric tensors and
+isotropic tensors [63]. We shall be interested in the decomposition of symmetric and spatially
+projected tensors satisfying Tµ1 ,µ2 ,..,µn = T(µ1 ,µ2 ,..,µn ) = hµα11 hµα22 ..hµαnn T(α1 ,α2 ,..,αn ) , where n
+denotes the number of indices. Here we provide the reduction of Tµ1 ,µ2 ,..,µn into traceless
+symmetric tensors for n ≤ 6:
+                                1
+                Thµνi = Tµν − hµν T ,
+                                3
+                                 1
+               Thµνρi = Tµνρ − (Tµ hνρ + Tν hρµ + Tρ hµν ) ,
+                                 5
+                                  1
+              Thµνρκi = Tµνρκ −      T     hρκ + Thµρi hνκ + Thµκi hνρ + Thνρi hµκ
+                                  7 hµνi
+                                                  1
+                      + Thνκi hµρ + Thρκi hµν − T Hµνρκ ,
+                                                  15
+                                   1
+             Thµνρκγi = Tµνρκγ −       T     hκγ + Thµνκi hργ + Thµνγi hρκ
+                                   9 hµνρi
+                      + Thµρκi hνγ + Thµργi hνκ + Thµκγi hνρ + Thνρκi hµγ
+                                                             
+                      + Thνργi hµκ + Thνκγi hµρ + Thρκγi hµν
+                         1
+                      −    (Tµ Hνρκγ + Tν Hµρκγ + Tρ Hµνκγ + Tκ Hµνργ + Tγ Hµνρκ )
+                        35
+                                     1
+            Thµνρκγσi = Tµνρκγσ −        T      hγσ + Thµνργi hκσ + Thµνρσi hκγ
+                                    11 hµνρκi
+                      + Thµνκγi hρσ + Thµνκσi hργ + Thµνγσi hρκ + Thµρκγi hνσ
+                        + Thµρκσi hνγ + Thµργσi hνκ + Thµκγσi hνρ + Thνρκγi hµσ
+                                                                                
+                        + Thνρκσi hµγ + Thνργσi hµκ + Thνκγσi hµρ + Thρκγσi hµν
+                           1
+                        −     T     Hµνρκ + Thκσi Hµνργ + Thκγi Hµνρσ
+                          63 hγσi
+                        + Thρσi Hµνκγ + Thργi Hµνκσ + Thρκi Hµνγσ + Thνσi Hµρκγ
+                        + Thνγi Hµρκσ + Thνκi Hµργσ + Thνρi Hµκγσ + Thµσi Hνρκγ
+                                                                                           
+                        + Thµγi Hνρκσ + Thµκi Hνργσ + Thµρi Hνκγσ + Thµνi Hρκγσ
+                          1
+                        − T h(µν hρκ hγσ) ,                                                               (A.1)
+                          7
+where Hµνρκ ≡ 3h(µν hρκ) , and where we have used the short hand notation for tensor con-
+tractions: Tµνρκ ≡ hγσ Tµνρκγσ , Tµνρ ≡ hκγ Tµνρκγ , Tµν ≡ hρκ Tµνρκ , Tµ ≡ hνρ Tµνρ , and
+T ≡ hµν Tµν . The projections of the reductions (A.1) onto a spatial unit vector field e, lying
+
+
+
+
+                                                    – 16 –
+within the 3–dimensional projection space eµ = hµν eν , yield
+                           1
+    eµeν Thµνi = eµeν Tµν − T ,
+                           3
+                                   3
+    eµeνeρ Thµνρi = eµeνeρ Tµνρ − eµ Tµ ,
+                                   5
+                                         6          1
+     µ ν ρ κ
+    e e e e Thµνρκi = e e e e Tµνρκ − eµeν Thµνi − T ,
+                        µ ν ρ κ
+                                         7          5
+                                             10              3
+    eµeνeρeκeγ Thµνρκγi = eµeνeρeκeγ Tµνρκγ − eµeνeρ Thµνρi − eµ Tµ
+                                             9               7
+                                                  15 µ ν ρ κ        5           1
+     µ ν ρ κ γ σ               µ ν ρ κ γ σ
+    e e e e e e Thµνρκγσi = e e e e e e Tµνρκγσ − e e e e Thµνρκi − eµeν Thµνi − T . (A.2)
+                                                  11                7           7
+
+B    Multipole expansions of the effective curvature and jerk parameters
+
+We consider the effective curvature parameter of the luminosity distance Hubble law
+                                      0       1         2   3         4
+                                r + e · r + ee · r + eee · r + eeee · r
+                       R(e) = −                                         ,                  (B.1)
+                                                 H2 (e)
+
+where
+                 0   0   1       1                1    1
+                 r ≡ q + (uµ uν + hµν )Rµν ,      rµ ≡ qµ − hαµ uν Rαν ,
+                         2       3
+                 2     2    1            3      3           4         4
+                 rµν ≡ qµν + Rhµνi ,     rµνρ ≡ qµνρ ,      rµνρκ ≡ qµνρκ ,                (B.2)
+                            2
+which can be obtained directly from the definition (3.9) and (4.2). In a general relativistic
+fluid approximation (uµν + hµν /3)Rµν represents the sum of restmass density and isotropic
+pressure, hαµ uν Rαν represents the energy flux, and Rhµνi represents the anisotropic stress with
+respect to the frame of u. The effective curvature parameter R is an anisotropic function
+of dynamical properties of the photon congruence and the Ricci curvature of the space-time.
+We can consider the monopole limit, where we neglect all anisotropic contributions in (4.1)
+                                  0
+and (B.1), such that R → −9r/θ2 . Due to the presence of vorticity, shear and acceleration
+degrees of freedom, R does not reduce to its natural extension from FLRW geometry ‘Ωk ’:=
+−(3/2)(3) R/θ2 in this limit. Thus even when neglecting anisotropic contributions to the
+luminosity distance–redshift relation, the effecive curvature parameter R does not directly
+measure the 3-curvature (3) R of the spatial section defined by u. We next consider the jerk
+parameter, which is given by the expansion
+                      0      1            2         3       4          5             6
+                     j + e · j + ee · j + eee · j + eeee · j + eeeee · j + eeeeee · j
+          J(e) = 1 +                                                                       (B.3)
+                                                   H3 (e)
+
+
+
+
+                                                  – 17 –
+in terms of the multipole coefficients
+                 0
+          0    dq    0  1   1   1 1     2     2                  2
+          j≡      + θq − Dµ qµ − aµ qµ − σ µν qµν + hµν hρκ σ(µν qρκ) ,
+               dτ       3       3       3
+                                    1
+          1         0       0      dq    1         1        2    18            3
+          j µ ≡ −Dµ q − 3aµ q + hνµ ν + θqµ − S νµ qν + 2aν qµν + hνρ hκγ σ(µν qρκγ)
+                                       dτ                                 7
+                      1 νρ        1         2           2             3
+                                                                            
+                     + h     4σ(µν qρ) − D(µ qνρ) − 5a(µ qνρ) − 3S κ(µ qνρ)κ ,
+                      5
+                                                                   2
+                                                            α β dqαβ
+          2       0          1          1       ρ 2                     2         3
+          j µν ≡ 3qσµν − Dhµ qνi − 4ahµ qνi − 2S hµ qνiρ + h µ h ν   + θqµν + 3aρ qµνρ
+                                                                  dτ
+                      6 α β ρκ        2          3            3              4
+                                                                                     
+                     + hhµ hνi h 5σ(αβ qρκ) − D(α qβρκ) − 6a(α qβρκ) − 4S γ(α qβρκ)γ
+                      7
+                        α β ρκ γσ          4
+                     +5hhµ hνi h h σ(αβ qρκγσ) ,
+                                                                               3
+                                                                    α β γ dqαβγ
+          3             1         2           2        κ 3                          3
+          j µνρ ≡ 4σhµν qρi − Dhµ qνρi − 5ahµ qνρi − 3S hµ qνρiκ + h µ h ν h ρ   + θqµνρ
+                                                                        dτ
+                         κ4     10 α β  κγ        3           4             4
+                                                                                    
+                     +4a qµνρκ + hhµ hν hρi h 6σ(αβ qκγ) − D(γ qαβκ) − 7a(α qβκγ) ,
+                                9
+          4              2          3            3              4
+          j µνρκ ≡ 5σhµν qρκi − Dhµ qνρκi − 6ahµ qνρκi − 4S γhµ qνρκiγ
+                                      4
+                       α β σ η dqαβσγ      4       105 α β  ψ γσ          4
+                     +h µ h ν h ρ h κ   + θqµνρκ +    hhµ hν hρ hκi h σ(αβ qψγσ) ,
+                                     dτ                 11
+          5               3           4             4
+          j µνρκγ ≡ 6σhµν qρκγi − Dhγ qµνρκi − 7ahµ qνρκγi ,
+          6                4
+          j µνρκγσ ≡ 7σhµν qρκγσi ,                                                                  (B.4)
+
+where S αν ≡ σ αν + ω αν . The notation Thµ1 ,µ2 ,..,µn i denotes the symmetric and traceless part of
+the spatial tensor Tµ1 ,µ2 ,..,µn = hµα11 hµα22 ..hµαnn Tα1 ,α2 ,..,αn as defined in appendix A. Neglecting
+                                                                             0
+all anisotropic contributions in (4.1) and (B.3), we have J → 1 + 9 j/θ2 . Due to the presence
+of acceleration, shear, vorticity and spatial gradients in the expansion rate of the congruence,
+                                                                 d2 θ     dθ    3
+this limit does not correspond to the parameter ‘j’:= 1 + 9( dτ     2 + θ dτ )/θ |o describing the
+‘isotropized jerk’ in the frame of u. Thus, the monopole limit of the effective jerk parameter
+of the general Hubble law does not directly measure the physical ‘volume jerk’ associated
+with the observer congruence. We can finally consider the following useful combination of J
+and R:
+                              0     1          2       3           4             5              6
+                      t + e · t + ee · t + eee · t + eeee · t + eeeee · t + eeeeee · t
+    J(e) − 1 − R(e) =                                                                  , (B.5)
+                                                    H3 (e)
+
+
+
+
+                                                   – 18 –
+with
+    0   0      1 0 1               2     1 1
+    t ≡ j + θr + hµν hρκ σ(µν rρκ) − aµ rµ ,
+               3      5                  3
+    1     1       1 1       0  3            3        3      2      3        1
+    tµ ≡ j µ + θrµ − aµ r + hνρ hκγ σ(µν qρκγ) − hνρ a(µ rνρ) + hνρ σ(µν rρ) ,
+                  3            7                     5             5
+    2       2       1 2       1         0   5 α β ρκ γσ         4
+    tµν ≡ j µν + θrµν − ahµ rνi + σµν r + hhµ hνi h h σ(αβ qρκγσ)
+                    3                       7
+               6 α β ρκ         3            2
+                                                  
+          + hhµ hνi h       −a(α qβρκ) + σ(αβ rρκ) ,
+               7
+    3         3       1 3          2         1      10 α β  κγ         4              3
+                                                                                            
+    tµνρ ≡ j µνρ + θqµνρ − ahµ rνρi + σhµν rρi + hhµ    hν hρi h    −a(α qβκγ) + σ(αβ qκγ) ,
+                      3                             9
+    4           4       1 4          3            2     15 α β  ψ γσ          4
+    tµνρκ ≡ j µνρκ + θqµνρκ − ahµ qνρκi + σhµν rρκi + hhµ     hν hρ hκi h σ(αβ qψγσ) ,
+                        3                               11
+    5        5             4             3
+    tµνρκγ ≡ j µνρκγ − ahµ qνρκγi + σhµν qρκγi ,
+    6        86
+    tµνρκγσ ≡ j µνρκγσ ,                                                                         (B.6)
+               7
+which follows directly from combing (B.1) and (B.3).
+
+References
+ [1] G. Lemaître, Un Univers homogène de masse constante et de rayon croissant rendant compte
+     de la vitesse radiale des nébuleuses extra-galactiques, Annales de la Société Scientifique de
+     Bruxelles A47 (1927), 49, Republished in: Mon. Not. Roy. Astron. Soc. 91 (1931), 438
+ [2] V. M. Slipher, Nebulae, Proceedings of the American Philosophical Society 56 (1917), 403
+ [3] E. P. Hubble, A relation between distance and radial velocity among extra-galactic nebulae,
+     PNAS 15 (1929), 168
+ [4] M. Visser, Jerk, snap, and the cosmological equation of state, Class. Quant. Grav. 21 (2004),
+     2603 [arXiv:gr-qc/0309109]
+ [5] M. N. Celerier, Do we really see a cosmological constant in the supernovae data?, Astron.
+     Astrophys. 353 (2000), 63 [arXiv:astro-ph/9907206]
+ [6] M. Tanimoto and Y. Nambu, Luminosity distance-redshift relation for the LTB solution near
+     the center, Class. Quant. Grav. 24 (2007), 3843 [arXiv:gr-qc/0703012]
+ [7] M. Villani, Taylor expansion of luminosity distance in Szekeres cosmological models: Effects of
+     local structures evolution on cosmographic parameters, JCAP 06 (2014), 015 [arXiv:1401.4820]
+ [8] Seitz S, Schneider P and Ehlers J, Light propagation in arbitrary space-times and the
+     gravitational lens approximation, Class. Quant. Grav. 11 (1994), 2345 [arXiv:astro-ph/9403056]
+ [9] J. Kristian and R. K. Sachs, Observations in cosmology, Astrophysical Journal 143 (1966), 379
+[10] G. F. R. Ellis and M. A. H. MacCallum, A class of homogeneous cosmological models. II.
+     Observations, Comm. Math. Phys. 19 (1970), 31
+[11] C. Clarkson and O. Umeh, Is backreaction really small within concordance cosmology?, Class.
+     Quant. Grav. 28 (2011), 164010 [arXiv:1105.1886]
+[12] C. Clarkson, G. F. R. Ellis, A. Faltenbacher, R. Maartens, O. Umeh and J. P. Uzan,
+     (Mis-)Interpreting supernovae observations in a lumpy universe, Mon. Not. Roy. Astron. Soc.
+     426 (2012), 1121 [arXiv:1109.2484]
+
+
+
+
+                                               – 19 –
+[13] C. C. Dyer and R. C. Roeder, Observations in locally inhomogeneous cosmological models,
+     Astrophys. J. 189 (1974), 167
+[14] M. Sasaki, The magnitude-redshift relation in a perturbed Friedmann universe, Mon. Not. Roy.
+     Astron. Soc. 228 (1987), 653
+[15] T. Futamase and M. Sasaki, Light propagation and the distance redshift relation in a realistic
+     inhomogeneous universe, Phys. Rev. D 189 (1989), 2502
+[16] R. Kantowski, The effects of inhomogeneities on evaluating the mass parameter Ωm and the
+     cosmological constant Λ, Astrophys. J. 507 (1998), 483 [arXiv:astro-ph/9802208]
+[17] N. Sugiura, N. Sugiyama, M. Sasaki, Anisotropies in luminosity distance, Progress of
+     Theoretical Physics 101 (1999), 903
+[18] T. Pyne and M. Birkinshaw, The luminosity distance in perturbed FLRW space–times, Mon.
+     Not. R. Astron. Soc. 348 (2004), 581 [arXiv:astro-ph/0310841]
+[19] C. Bonvin, R. Durrer and M. A. Gasparini, Fluctuations of the luminosity distance, Phys. Rev.
+     D 73 (2006), 023523 [arXiv:astro-ph/0511183]
+[20] P. Fleury, Swiss-cheese models and the Dyer-Roeder approximation, JCAP 06 (2014), 054
+     [arXiv:1402.3123]
+[21] E. Bentivegna, M. Korzyński, I. Hinder and D. Gerlicher, Light propagation through black-hole
+     lattices, JCAP 03 (2017), 014 [arXiv:1611.09275]
+[22] Sikora S and Głód K, Example of an inhomogeneous cosmological model in the context of
+     backreaction, Phys. Rev. D 95 (2017), 063517 [arXiv:1612.03604]
+[23] J. S. Wang and F. Y. Wang, Probing the anisotropic expansion from supernovae and GRBs in
+     a model-independent way, Mon. Not. Roy. Astron. Soc. 443 (2014), 1680 [arXiv:1406.6448]
+[24] K. Bolejko, M. A. Nazer and D. L. Wiltshire, Differential cosmic expansion and the Hubble flow
+     anisotropy, JCAP 06 (2016), 035 [arXiv:1512.07364]
+[25] C. Bernal, V. H. Cardenas and V. Motta, Asymmetry in the reconstructed deceleration
+     parameter, Phys. Lett. B 765 (2017), 163 [arXiv:1606.07333]
+[26] J. Colin, R. Mohayaee, M. Rameez and S. Sarkar, Evidence for anisotropy of cosmic
+     acceleration, Astron. Astrophys. 631 (2019), L13 [arXiv:1808.04597]
+[27] Hogg D et al., Cosmic homogeneity demonstrated with luminous red galaxies, Astrophys. J. 624
+     (2005), 54 [arXiv:astro-ph/0411197]
+[28] Scrimgeour M et al., The WiggleZ Dark Energy Survey: the transition to large-scale cosmic
+     homogeneity, Mon. Not. R. Astr. Soc. 425 (2012), 116 [arXiv:1205.6812]
+[29] H. Shapley and A. Ames, A survey of the external galaxies brighter than the thirteenth
+     magnitude, Annals of Harvard College Observatory 88 (1932), 41
+[30] D. Proust et al., Structure and dynamics of the shapley supercluster, Astron. Astrophys. 447
+     (2006), 133 [arXiv:astro-ph/0509903]
+[31] J. R. Gott et al., A map of the universe, Astrophys. J. 624 (2005), 463
+     [arXiv:astro-ph/0310571]
+[32] H. Aihara et al., The eighth data release of the Sloan digital sky survey: First Data from
+     SDSS-III, The Astrophysical Journal Supplement 193 (2011), 17 [arXiv:1101.1559]
+[33] Feindt U et al., Measuring cosmic bulk flows with type Ia Supernovae from the Nearby
+     Supernova Factory, Astron. Astrophys. 560 (2013), A90 [arXiv:1310.4184]
+[34] Magoulas C et al., Measuring the cosmic bulk flow with 6dFGSv, Proc. IAU Symp. 308 (2016),
+     336
+
+
+
+
+                                               – 20 –
+[35] R. Sachs, Gravitational waves in general relativity, VI. The outgoing radiation condition, Proc.
+     R. Soc. Lond. A 264, (1961), 309
+[36] R. M. Wald, General Relativity, (University of Chicago Press, Chicago, 1984)
+[37] G. F. R. Ellis, Relativistic cosmology, Proc. Int. School of Physics “Enrico Fermi" (Varenna),
+     Course XLVII, edited by R. K. Sachs (Academic Press, New York, 1971), 104–182. Reprinted:
+     Gen. Relativ. Grav. 41 (2009), 581.
+[38] V. Perlick, Gravitational lensing from a spacetime perspective, [arXiv:1010.3416]
+[39] I. M. H. Etherington, On the definition of distance in general relativity, Phil. Mag. J. Sci. 15,
+     761–773 (1933). Reprinted: Gen. Relativ. Grav. 39 (2007), 1055
+[40] G. F. R. Ellis and H. van Elst, Cosmological models (Cargèse Lectures 1998), in Proc. of the
+     NATO Advanced Study Institute on Theoretical and Observational Cosmology, Cargèse,
+     France, August 17–29, 1998, edited by M. Lachièze–Rey, (Kluwer Academic, Boston, 1999),
+     1–116 and NATO Science Series C 541, 1–116 (1999). [arXiv:gr-qc/9812046v5].
+[41] P. Fleury, J. Larena and J. P. Uzan, The theory of stochastic cosmological lensing, JCAP 11
+     (2015), 022 [arXiv:1508.07903]
+[42] C. G. Tsagas, Large-scale peculiar motions and cosmic acceleration, Mon. Not. Roy. Astron.
+     Soc. 405 (2010), 503 [arXiv:0902.3232]
+[43] C. G. Tsagas, Peculiar motions, accelerated expansion and the cosmological axis, Phys. Rev. D
+     84 (2011), 063503 [arXiv:1107.4045]
+[44] C. G. Tsagas and M. I. Kadiltzoglou, Deceleration parameter in tilted Friedmann universes,
+     Phys. Rev. D 92 (2015), 043515 [arXiv:1507.04266]
+[45] A. Reisenegger, H. Quintana, E. R. Carrasco and J. Maze, The shapley supercluster. 3.
+     Collapse dynamics and mass of the central concentration, Astron. J. 120 (2000), 523
+     [arXiv:astro-ph/0007211]
+[46] D. W. Pearson, M. Batiste and D. J. Batuski, The largest gravitationally bound structures: the
+     Corona Borealis supercluster – mass and bound extent, Mon. Not. Roy. Astron. Soc. 441
+     (2014), 1601 [arXiv:1404.1308]
+[47] M. Einasto et al., Sloan Great Wall as a complex of superclusters with collapsing cores, Astron.
+     Astrophys. 595 (2016), A70 [arXiv:1608.04988]
+[48] N. Secrest, S. von Hausegger, M. Rameez, R. Mohayaee, S. Sarkar and J. Colin, A test of the
+     cosmological principle with quasars, Astrophys. J. Lett. 908 (2021), L51 [arXiv:2009.14826]
+[49] M. Korzyński and E. Villa, Geometric optics in relativistic cosmology: new formulation and a
+     new observable, Phys. Rev. D 101 (2020), 063506 [arXiv:1912.04988]
+[50] D. Scolnic et al., The next generation of cosmological measurements with type Ia supernovae,
+     [arXiv:1903.05128]
+[51] T. Buchert, On average properties of inhomogeneous fluids in general relativity: dust
+     cosmologies, Gen. Relativ. Gravit. 32, 105 (2000). [arXiv:gr-qc/9906015]
+[52] T. Buchert, On average properties of inhomogeneous fluids in general relativity: perfect fluid
+     cosmologies, Gen. Relativ. Gravit. 33, 1381 (2001). [arXiv:gr-qc/0102049]
+[53] S. Räsänen, Dark energy from backreaction, JCAP 02 (2004), 003. [arXiv:astro-ph/0311257]
+[54] S. Räsänen, Accelerated expansion from structure formation, JCAP 11 (2006), 003.
+     [arXiv:astro-ph/0607626]
+[55] A. G. Riess et al., A 2.4% determination of the local value of the Hubble constant, Astrophys.
+     J. 826 (2016), 56 [arXiv:1604.01424]
+
+
+
+
+                                                – 21 –
+[56] A. G. Riess, S. Casertano, W. Yuan, L. M. Macri and D. Scolnic, Large Magellanic Cloud
+     cepheid standards provide a 1% foundation for the determination of the Hubble constant and
+     stronger evidence for physics beyond ΛCDM, Astrophys. J. 876 (2019), 85 [arXiv:1903.07603]
+[57] C. Bonvin, R. Durrer and M. Kunz, The dipole of the luminosity distance: a direct measure of
+     H(z), Phys. Rev. Lett. 96 (2006), 191302 [arXiv:astro-ph/0603240]
+[58] W. R. Stoeger, R. Maartens and G. F. R. Ellis, Proving almost homogeneity of the universe: an
+     almost Ehlers-Geren-Sachs theorem, Astrophys. J. 443 (1995), 1
+[59] S. Räsänen, On the relation between the isotropy of the CMB and the geometry of the universe,
+     Phys. Rev. D 79 (2009), 123522 [arXiv:0903.3013]
+[60] J. Ehlers, P. Geren and R. K. Sachs, Isotropic solutions of the Einstein-Liouville equations, J.
+     Math. Phys. 9 (1968), 1344
+[61] S. R. Green and R. M. Wald, How well is our universe described by an FLRW model?, Class.
+     Quant. Grav. 31 (2014), 234003 [arXiv:1407.8084]
+[62] T. Buchert et al., Is there proof that backreaction of inhomogeneities is irrelevant in
+     cosmology?, Class. Quant. Grav. 32 (2015), 215021 [arXiv:1505.07800]
+[63] A. J. M. Spencer, A note on the decomposition of tensors into traceless symmetric tensors,
+     Phys. Rev. D 79 (2009), 123522 [arXiv:0903.3013]
+[64] A. Heinesen, Multipole decomposition of redshift drift: Model-independent mapping of the
+     expansion history of the Universe, Phys. Rev. D 103 (2021), 023537 [arXiv:2011.10048]
+
+
+
+
+                                                – 22 –
+

@@ -1,0 +1,16 @@
+python3 fit_gr.py exp fwd gtc > gr/exp_fwd_gtc.log 2>&1
+python3 fit_gr.py exp fwd le > gr/exp_fwd_le.log 2>&1
+python3 fit_gr.py exp back gtc > gr/exp_back_gtc.log 2>&1
+python3 fit_gr.py exp back le > gr/exp_back_le.log 2>&1
+python3 fit_gr.py soft fwd gtc > gr/soft_fwd_gtc.log 2>&1
+python3 fit_gr.py soft fwd le > gr/soft_fwd_le.log 2>&1
+python3 fit_gr.py soft back gtc > gr/soft_back_gtc.log 2>&1
+python3 fit_gr.py soft back le > gr/soft_back_le.log 2>&1
+python3 fit_gr.py eta fwd gtc > gr/eta_fwd_gtc.log 2>&1
+python3 fit_gr.py eta fwd le > gr/eta_fwd_le.log 2>&1
+python3 fit_gr.py eta back gtc > gr/eta_back_gtc.log 2>&1
+python3 fit_gr.py eta back le > gr/eta_back_le.log 2>&1
+python3 fit_gr.py pl fwd gtc > gr/pl_fwd_gtc.log 2>&1
+python3 fit_gr.py pl fwd le > gr/pl_fwd_le.log 2>&1
+python3 fit_gr.py pl back gtc > gr/pl_back_gtc.log 2>&1
+python3 fit_gr.py pl back le > gr/pl_back_le.log 2>&1

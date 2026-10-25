@@ -1,0 +1,34 @@
+Figure 8 shows the two-emitter baseline. If opposite
+plates (or shells) share the observer’s bulk velocity, the
+kinematic sky is flat before gravitational multipoles
+are included.
+In the infinite-plate idealisation the curvature radius
+of each emitting surface is infinite: every line of sight
+hits a flat wall, and solid angle is independent of
+observer offset. Bringing that curvature radius down
+from infinity toward the finite CoE–observer distance
+D interpolates continuously from parallel plates to
+concentric shells about the CoE. The shell (finite-R)
+geometry is the physically relevant limit for last
+scattering about a Centre of Expansion; the plate
+limit is the pedagogical flat-sky baseline against which
+Doppler residuals are compared.
+The same off-centre geometry still produces a
+gravitational multipole on the last-scattering sky. The
+kill function is the electromagnetic temperature
+multipole—∆T /T of kinematic–Doppler photon
+character—required to cancel that gravitational
+multipole: opposite in sign, same angular shape.
+
+
+
+
+                                                             Figure 8: Two-emitter baseline. If opposite plates (or shells) share
+                                                             the observer’s bulk velocity, the kinematic sky is flat before grav-
+                                                             itational multipoles are included.
+
+
+
+
+                                                                10
+

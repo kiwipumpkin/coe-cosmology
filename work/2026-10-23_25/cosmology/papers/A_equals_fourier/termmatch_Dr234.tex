@@ -1,0 +1,207 @@
+\documentclass[10pt]{article}
+\usepackage[letterpaper,margin=0.6in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array}
+\pagestyle{plain}\setlength{\parindent}{0pt}\setlength{\parskip}{3pt}
+\allowdisplaybreaks\sloppy
+\begin{document}
+{\large\textbf{CoE model vs Migkas+2020 Fig.\,6 $A(\ell)$: term matching at fixed $D/r=2,3,4$}}\\[2pt]
+Sedov--Taylor Center-of-Expansion model, sources on the vision shell ($d=r$). Analytic point-mass form and numeric ideal-drag model, each with Chris's rotation and $2\ell$ transforms.
+Scripts: \texttt{figures/termmatch\_Dr234.py} (solve) and \texttt{make\_termmatch\_tex.py} (writes this sheet); every number here is read from \texttt{termmatch\_Dr234\_results.json}.
+
+\medskip\textbf{Step 0. Chris's variables}\\
+$r$ = vision-shell radius $=14.3$ Gpc (sources at $d=r$); \ $D$ = our distance from the CoE; \ $L$ = density scale length; \ $M=M(<D)$ = mass enclosed toward the CoE;
+$(\ell_0,b_0)$ = Galactic longitude and tilt of the CoE axis; \ $\varphi$ = rotation phase in $\mathrm{Amp}_1\sin(\ell+\varphi)$; \ $\varphi_2$ = $2\ell$ phase in $\mathrm{Amp}_2\sin(2\ell+\varphi_2)$.
+
+\medskip\textbf{Step 1. Define parameters}
+\begin{align*}
+&\varepsilon\equiv r/D=1/(D/r)\ \ (=\tfrac12,\ \tfrac13,\ \tfrac14\ \text{here}),\qquad x\equiv D/L,\qquad
+M_{\rm crit}(<D)=\tfrac{4\pi}{3}\rho_cD^3=\frac{H_0^2D^3}{2G},\\
+&\kappa\equiv\frac{G\,M(<D)}{H_0^2D^3}=\frac{M(<D)}{2M_{\rm crit}},\qquad K\equiv\alpha\kappa\ \ (\alpha=O(1)\text{ time-integration factor; tables use }\alpha=1),\\
+&\phi_1\equiv\text{rotation: shift of the }m{=}1\text{ peak},\qquad \phi_2\equiv\text{shift of the }m{=}2\text{ peak (the }2\ell\text{ transform)},\\
+&\varphi=90^\circ-(\ell^{(1)}_{\rm nat}+\phi_1),\qquad \varphi_2=90^\circ-2(\ell^{(2)}_{\rm nat}+\phi_2),\\
+&\delta_3\equiv\ell_3^{\rm data}-\ell_3^{\rm model}\ \ (\text{octupole left at its natural phase; }\ell_3\text{ defined mod }120^\circ).
+\end{align*}
+\textbf{Analytic model} (point-mass tidal series to $O(\varepsilon)$, averaged over $90^\circ$ sectors every $5^\circ$, $|b|>20^\circ$ cut, $\cos b$ weight; same as the v2 sheet), with $\psi=\ell-\ell_0$:
+\begin{align*}
+\frac{A}{A_{\rm all}}&=N\big[1+K(3\mu^2-1)+K\varepsilon(\tfrac92\mu-\tfrac{15}{2}\mu^3)\big],\qquad \mu=\cos b\cos b_0\cos\psi+\sin b\sin b_0\\
+&\xrightarrow{\ \text{sector avg}\ }\ N\big[1+Kq_0\big]+NK\varepsilon\,o_1\cos\psi+NKq_2\cos2\psi+NK\varepsilon\,o_3\cos3\psi,
+\end{align*}
+$q_0=0.45900-0.68850a^2,\ q_2=0.49052a^2,\ o_1=0.90032\,a(-3.1958+3.9948a^2),\ o_3=-0.22806a^3$, \ $a=\cos b_0$.\\
+\textbf{Numeric model}: ideal-drag ST background, $du/dt+Hu=-GM(<r)/r^2$ integrated in time, density $\rho\propto(1-f_u)e^{-R/L}/e^{-D/L}+f_u$ (exp core + floor),
+$H_{\rm obs}(\hat n)=H+[(\vec u(\vec r)-\vec u(D))\cdot\hat n]/d$, $90^\circ$ boxcar, mean-normalised; parameters $\kappa,\ D/L,\ f_u,\ b_0,\ \ell_0$ (as in \texttt{r2\_vs\_Dr\_density\_families.py}; $|b_0|\le30^\circ$, $D/L\le300$).
+
+\medskip\textbf{Step 2. Data harmonics} (Fourier fit $A=0.9965+0.0296\cos\ell+0.0434\sin\ell+0.0636\cos2\ell+0.0366\sin2\ell-0.0299\cos3\ell-0.0114\sin3\ell$, $R^2=0.915$)
+\[
+|A_0|=0.99650,\quad |A_1|=0.05253\ (\ell_1=55.70^\circ),\quad |A_2|=0.07338\ (\ell_2=14.96^\circ),\quad |A_3|=0.03200\ (\ell_3=66.96^\circ)
+\]
+Weights: 1$\sigma$ amplitude errors from the 71-point least-squares Fourier fit with per-point errors $(\sigma_{\rm lo}+\sigma_{\rm hi})/2$ (overlapping sectors treated as independent, so these are too small by $\sim\sqrt{71/16}$; only their \emph{ratios} matter for the weights):
+$\sigma_0=0.0115,\ \sigma_1=0.0156,\ \sigma_2=0.0160,\ \sigma_3=0.0157$. \ Axis: $\ell_0\equiv\ell_2=14.96^\circ$.
+
+\medskip\textbf{Step 3. Method}\\
+\emph{A (analytic, fixed $\varepsilon$).} Unknowns $N,K,b_0$; four amplitude equations, so weighted least squares. Write $P\equiv NK$. The $m{=}0$ equation contains $N$ alone and is satisfied exactly for any $(P,b_0)$ by $N=A_0-Pq_0$.
+For fixed $b_0$ the $m{=}1,2,3$ equations are linear in $P$: with $c_1=\varepsilon|o_1|,\ c_2=|q_2|,\ c_3=\varepsilon|o_3|$ and $w_m=1/\sigma_m^2$,
+\[
+P(b_0)=\frac{\sum_m w_mA_mc_m}{\sum_m w_mc_m^2},\qquad \chi^2(b_0)=\sum_{m=1}^3w_m\big(A_m-P\,c_m\big)^2\ \ \text{minimised over }b_0\in[0^\circ,90^\circ)
+\]
+($\pm b_0$ give identical curves, so only $b_0\ge0$ is scanned).
+Transforms: $\phi_1=\ell_1^{\rm data}-\ell^{(1)}_{\rm nat}$, where $\ell^{(1)}_{\rm nat}=\ell_0$ if $o_1>0$ and $\ell_0+180^\circ$ if $o_1<0$; $\phi_2=\ell_2-\ell_0=0$ by construction. Octupole: $o_3<0$, so its natural peak is $\ell_0+60^\circ=74.96^\circ$, giving $\delta_3=-8.00^\circ$ at every $D/r$.\\
+\emph{B (numeric).} Numeric curve on a 181-point grid, FFT $\to$ harmonics $m=0..3$ about their natural peaks; the $m{=}1$ and $m{=}2$ components are shifted by $\phi_1,\phi_2$, the rest (octupole) untouched.
+$(\kappa,D/L,f_u,b_0,\phi_1,\phi_2)$ are fitted to maximise $R^2$ of the transformed curve vs the 71 points, with $\ell_0$ held at $14.96^\circ$ as in A (a free $\ell_0$ only moves the octupole, i.e.\ it would act as a third free phase; that variant is listed at the end for reference).
+Start points: the stored no-transform best fits, one differential-evolution run and 4 random starts, all polished with Nelder--Mead.
+
+\clearpage
+{\large\bfseries\boldmath $D/r=2$} \ ($\varepsilon=0.5000$, \ $D=28.6$ Gpc $=93.3$ Gly)
+
+\textbf{A. Analytic: set equal} (numbers substituted, $\varepsilon=0.5000$)
+\[ 0.99650=N(1+Kq_0),\quad 0.05253=NK\cdot0.5000\,|o_1|,\quad 0.07338=NK\,|q_2|,\quad 0.03200=NK\cdot0.5000\,|o_3| \]
+\textbf{Solve.} $\chi^2(b_0)$ has 2 local minima on $[0^\circ,90^\circ)$:
+
+\begin{center}\small\begin{tabular}{lrrrrrrrrr}\toprule
+branch & $b_0$ & $q_0$ & $q_2$ & $o_1$ & $o_3$ & $c_1,\ c_2,\ c_3$ & $P=NK$ & $\chi^2$ & dipole\\\midrule
+\textbf{primary} & $6.26^\circ$ & $-0.2213$ & 0.4847 & $+0.6725$ & $-0.2240$ & 0.3362, 0.4847, 0.1120 & 0.15772 & 0.872 & on axis\\
+\textbf{second} & $36.18^\circ$ & $+0.0105$ & 0.3195 & $-0.4312$ & $-0.1199$ & 0.2156, 0.3195, 0.0600 & 0.24136 & 1.304 & flipped\\
+\bottomrule\end{tabular}\end{center}
+\emph{Primary} ($b_0=6.26^\circ$): $P=\dfrac{\sum w_mA_mc_m}{\sum w_mc_m^2}=\dfrac{226.668}{1437.15}=0.15772$,\ \ $N=0.99650+0.15772\times0.22130=1.03140$,\ \ $K=P/N=0.15292$.\\
+\emph{Plug back:} \ $m0$: $1.03140(1-0.03384)=0.99650$; \ $m1$: $0.15772\times0.33623=0.05303$; \ $m2$: $0.15772\times0.48468=0.07644$; \ $m3$: $0.15772\times0.11200=0.01766$.\\
+Residuals (model$-$data): $m0$: $+0.00000$, \ $m1$: $+0.00050\ (+0.03\sigma)$, \ $m2$: $+0.00306\ (+0.19\sigma)$, \ $m3$: $-0.01433\ (-0.91\sigma)$.\\
+Phases: natural dipole peak $14.96^\circ\Rightarrow\phi_1=55.70-14.96=+40.75^\circ$ ($+0.711$ rad), Chris's $\varphi$: $75.04^\circ\to34.30^\circ$; \ $\phi_2=0^\circ$, $\varphi_2=60.08^\circ$; \ $\delta_3=-8.00^\circ$ (-24.0^\circ$ in $3\ell$).\\
+$R^2$ (71 pts): rotation $+\,2\ell$: \textbf{0.884}; \ no transforms: $0.752$; \ (octupole also given its own phase: 0.894). \ $M(<D)/M_{\rm crit}=2K/\alpha=0.306/\alpha$.
+
+\emph{Second branch} ($b_0=36.18^\circ$): $P=\dfrac{\sum w_mA_mc_m}{\sum w_mc_m^2}=\dfrac{146.331}{606.27}=0.24136$,\ \ $N=0.99650-0.24136\times0.01047=0.99397$,\ \ $K=P/N=0.24283$.\\
+\emph{Plug back:} \ $m0$: $0.99397(1+0.00254)=0.99650$; \ $m1$: $0.24136\times0.21561=0.05204$; \ $m2$: $0.24136\times0.31955=0.07713$; \ $m3$: $0.24136\times0.05996=0.01447$.\\
+Residuals (model$-$data): $m0$: $+0.00000$, \ $m1$: $-0.00049\ (-0.03\sigma)$, \ $m2$: $+0.00375\ (+0.23\sigma)$, \ $m3$: $-0.01753\ (-1.12\sigma)$.\\
+Phases: natural dipole peak $194.96^\circ\Rightarrow\phi_1=55.70-194.96=-139.25^\circ$ ($-2.430$ rad), Chris's $\varphi$: $-104.96^\circ\to34.30^\circ$; \ $\phi_2=0^\circ$, $\varphi_2=60.08^\circ$; \ $\delta_3=-8.00^\circ$ (-24.0^\circ$ in $3\ell$).\\
+$R^2$ (71 pts): rotation $+\,2\ell$: \textbf{0.876}; \ no transforms: $-0.088$; \ (octupole also given its own phase: 0.883). \ $M(<D)/M_{\rm crit}=2K/\alpha=0.486/\alpha$.
+
+\medskip\textbf{B. Numeric: fitted parameters} \ $\kappa=0.1081$, \ $D/L=300\ (\text{bound: point-mass limit})$, \ $f_u=0.0345$, \ $b_0=0.00^\circ$, \ $\ell_0=14.96^\circ$ (fixed), \ $\phi_1=-139.78^\circ$, \ $\phi_2=-0.12^\circ$.
+
+\textbf{Set equal (harmonics of the fitted numeric curve vs data)}
+\begin{center}\small\begin{tabular}{lrrrrrr}\toprule
+$m$ & data $|A_m|$ & numeric $|M_m|$ & resid. & resid./$\sigma_m$ & natural peak & transformed peak (data)\\\midrule
+0 & 0.9965 & 1.0000 & $+0.0035$ & $+0.30$ & -- & --\\
+1 & 0.0525 & 0.0462 & $-0.0063$ & $-0.40$ & $194.96^\circ$ & $55.18^\circ$ ($55.70^\circ$)\\
+2 & 0.0734 & 0.0798 & $+0.0064$ & $+0.40$ & $14.96^\circ$ & $14.84^\circ$ ($14.96^\circ$)\\
+3 & 0.0320 & 0.0207 & $-0.0113$ & $-0.72$ & $74.96^\circ$ & $74.96^\circ$ ($66.96^\circ$)$^\dagger$\\
+\bottomrule\end{tabular}\end{center}
+$^\dagger$octupole untouched. (The numeric curve is mean-normalised, so its $m{=}0$ is 1 by construction; $R^2$ uses the curve as is, no rescaling.) \ Octupole mismatch $\delta_3=-8.00^\circ$. \ Chris's $\varphi$: $-104.96^\circ\to34.82^\circ$ ($\phi_1=-2.440$ rad); \ $\varphi_2=60.33^\circ$.\\
+$R^2$ (71 pts): transformed \textbf{0.885}; \ same parameters, no transforms $0.027$; \ stored no-transform best fit 0.765. \ $M(<D)/M_{\rm crit}=2\kappa=0.216$.
+\\ Best solution on the other dipole branch (natural dipole on the axis): $R^2=0.879$ (no transforms $0.750$), $\kappa=0.264$, $D/L=15.24$, $f_u=0.679$, $b_0=30.0^\circ$, $\phi_1=+40.1^\circ$, $\phi_2=-0.15^\circ$.
+
+\clearpage
+{\large\bfseries\boldmath $D/r=3$} \ ($\varepsilon=0.3333$, \ $D=42.9$ Gpc $=139.9$ Gly)
+
+\textbf{A. Analytic: set equal} (numbers substituted, $\varepsilon=0.3333$)
+\[ 0.99650=N(1+Kq_0),\quad 0.05253=NK\cdot0.3333\,|o_1|,\quad 0.07338=NK\,|q_2|,\quad 0.03200=NK\cdot0.3333\,|o_3| \]
+\textbf{Solve.} $\chi^2(b_0)$ has 2 local minima on $[0^\circ,90^\circ)$:
+
+\begin{center}\small\begin{tabular}{lrrrrrrrrr}\toprule
+branch & $b_0$ & $q_0$ & $q_2$ & $o_1$ & $o_3$ & $c_1,\ c_2,\ c_3$ & $P=NK$ & $\chi^2$ & dipole\\\midrule
+\textbf{primary} & $39.96^\circ$ & $+0.0545$ & 0.2882 & $-0.5858$ & $-0.1027$ & 0.1953, 0.2882, 0.0342 & 0.26589 & 2.172 & flipped\\
+\textbf{second} & $0.00^\circ$ & $-0.2295$ & 0.4905 & $+0.7193$ & $-0.2281$ & 0.2398, 0.4905, 0.0760 & 0.16849 & 2.437 & on axis\\
+\bottomrule\end{tabular}\end{center}
+\emph{Primary} ($b_0=39.96^\circ$): $P=\dfrac{\sum w_mA_mc_m}{\sum w_mc_m^2}=\dfrac{129.567}{487.29}=0.26589$,\ \ $N=0.99650-0.26589\times0.05452=0.98200$,\ \ $K=P/N=0.27076$.\\
+\emph{Plug back:} \ $m0$: $0.98200(1+0.01476)=0.99650$; \ $m1$: $0.26589\times0.19528=0.05192$; \ $m2$: $0.26589\times0.28817=0.07662$; \ $m3$: $0.26589\times0.03423=0.00910$.\\
+Residuals (model$-$data): $m0$: $+0.00000$, \ $m1$: $-0.00061\ (-0.04\sigma)$, \ $m2$: $+0.00324\ (+0.20\sigma)$, \ $m3$: $-0.02290\ (-1.46\sigma)$.\\
+Phases: natural dipole peak $194.96^\circ\Rightarrow\phi_1=55.70-194.96=-139.25^\circ$ ($-2.430$ rad), Chris's $\varphi$: $-104.96^\circ\to34.30^\circ$; \ $\phi_2=0^\circ$, $\varphi_2=60.08^\circ$; \ $\delta_3=-8.00^\circ$ (-24.0^\circ$ in $3\ell$).\\
+$R^2$ (71 pts): rotation $+\,2\ell$: \textbf{0.858}; \ no transforms: $-0.106$; \ (octupole also given its own phase: 0.862). \ $M(<D)/M_{\rm crit}=2K/\alpha=0.542/\alpha$.
+
+\emph{Second branch} ($b_0=0.00^\circ$): $P=\dfrac{\sum w_mA_mc_m}{\sum w_mc_m^2}=\dfrac{202.902}{1204.27}=0.16849$,\ \ $N=0.99650+0.16849\times0.22950=1.03517$,\ \ $K=P/N=0.16276$.\\
+\emph{Plug back:} \ $m0$: $1.03517(1-0.03735)=0.99650$; \ $m1$: $0.16849\times0.23977=0.04040$; \ $m2$: $0.16849\times0.49052=0.08265$; \ $m3$: $0.16849\times0.07602=0.01281$.\\
+Residuals (model$-$data): $m0$: $-0.00000$, \ $m1$: $-0.01213\ (-0.78\sigma)$, \ $m2$: $+0.00927\ (+0.58\sigma)$, \ $m3$: $-0.01919\ (-1.22\sigma)$.\\
+Phases: natural dipole peak $14.96^\circ\Rightarrow\phi_1=55.70-14.96=+40.75^\circ$ ($+0.711$ rad), Chris's $\varphi$: $75.04^\circ\to34.30^\circ$; \ $\phi_2=0^\circ$, $\varphi_2=60.08^\circ$; \ $\delta_3=-8.00^\circ$ (-24.0^\circ$ in $3\ell$).\\
+$R^2$ (71 pts): rotation $+\,2\ell$: \textbf{0.848}; \ no transforms: $0.747$; \ (octupole also given its own phase: 0.855). \ $M(<D)/M_{\rm crit}=2K/\alpha=0.326/\alpha$.
+
+\medskip\textbf{B. Numeric: fitted parameters} \ $\kappa=0.4131$, \ $D/L=5.43$, \ $f_u=0.0061$, \ $b_0=30.00^\circ\ (\text{bound})$, \ $\ell_0=14.96^\circ$ (fixed), \ $\phi_1=+39.99^\circ$, \ $\phi_2=-0.17^\circ$.
+
+\textbf{Set equal (harmonics of the fitted numeric curve vs data)}
+\begin{center}\small\begin{tabular}{lrrrrrr}\toprule
+$m$ & data $|A_m|$ & numeric $|M_m|$ & resid. & resid./$\sigma_m$ & natural peak & transformed peak (data)\\\midrule
+0 & 0.9965 & 1.0000 & $+0.0035$ & $+0.30$ & -- & --\\
+1 & 0.0525 & 0.0511 & $-0.0014$ & $-0.09$ & $14.96^\circ$ & $54.95^\circ$ ($55.70^\circ$)\\
+2 & 0.0734 & 0.0775 & $+0.0042$ & $+0.26$ & $14.96^\circ$ & $14.78^\circ$ ($14.96^\circ$)\\
+3 & 0.0320 & 0.0084 & $-0.0236$ & $-1.50$ & $74.96^\circ$ & $74.96^\circ$ ($66.96^\circ$)$^\dagger$\\
+\bottomrule\end{tabular}\end{center}
+$^\dagger$octupole untouched. (The numeric curve is mean-normalised, so its $m{=}0$ is 1 by construction; $R^2$ uses the curve as is, no rescaling.) \ Octupole mismatch $\delta_3=-8.00^\circ$. \ Chris's $\varphi$: $75.04^\circ\to35.05^\circ$ ($\phi_1=+0.698$ rad); \ $\varphi_2=60.43^\circ$.\\
+$R^2$ (71 pts): transformed \textbf{0.853}; \ same parameters, no transforms $0.726$; \ stored no-transform best fit 0.743. \ $M(<D)/M_{\rm crit}=2\kappa=0.826$, \ $L=7.90$ Gpc.
+\\ Best solution on the other dipole branch (natural dipole flipped to $\ell_0+180^\circ$): $R^2=0.821$ (no transforms $0.232$), $\kappa=0.132$, $D/L=300.00$, $f_u=0.006$, $b_0=-0.0^\circ$, $\phi_1=-139.8^\circ$, $\phi_2=-0.12^\circ$.
+
+\clearpage
+{\large\bfseries\boldmath $D/r=4$} \ ($\varepsilon=0.2500$, \ $D=57.2$ Gpc $=186.6$ Gly)
+
+\textbf{A. Analytic: set equal} (numbers substituted, $\varepsilon=0.2500$)
+\[ 0.99650=N(1+Kq_0),\quad 0.05253=NK\cdot0.2500\,|o_1|,\quad 0.07338=NK\,|q_2|,\quad 0.03200=NK\cdot0.2500\,|o_3| \]
+\textbf{Solve.} $\chi^2(b_0)$ has 2 local minima on $[0^\circ,90^\circ)$:
+
+\begin{center}\small\begin{tabular}{lrrrrrrrrr}\toprule
+branch & $b_0$ & $q_0$ & $q_2$ & $o_1$ & $o_3$ & $c_1,\ c_2,\ c_3$ & $P=NK$ & $\chi^2$ & dipole\\\midrule
+\textbf{primary} & $43.32^\circ$ & $+0.0946$ & 0.2596 & $-0.7084$ & $-0.0878$ & 0.1771, 0.2596, 0.0220 & 0.29302 & 2.684 & flipped\\
+\textbf{second} & $0.00^\circ$ & $-0.2295$ & 0.4905 & $+0.7193$ & $-0.2281$ & 0.1798, 0.4905, 0.0570 & 0.17190 & 4.388 & on axis\\
+\bottomrule\end{tabular}\end{center}
+\emph{Primary} ($b_0=43.32^\circ$): $P=\dfrac{\sum w_mA_mc_m}{\sum w_mc_m^2}=\dfrac{115.823}{395.28}=0.29302$,\ \ $N=0.99650-0.29302\times0.09461=0.96878$,\ \ $K=P/N=0.30246$.\\
+\emph{Plug back:} \ $m0$: $0.96878(1+0.02861)=0.99650$; \ $m1$: $0.29302\times0.17710=0.05189$; \ $m2$: $0.29302\times0.25961=0.07607$; \ $m3$: $0.29302\times0.02195=0.00643$.\\
+Residuals (model$-$data): $m0$: $+0.00000$, \ $m1$: $-0.00064\ (-0.04\sigma)$, \ $m2$: $+0.00269\ (+0.17\sigma)$, \ $m3$: $-0.02557\ (-1.63\sigma)$.\\
+Phases: natural dipole peak $194.96^\circ\Rightarrow\phi_1=55.70-194.96=-139.25^\circ$ ($-2.430$ rad), Chris's $\varphi$: $-104.96^\circ\to34.30^\circ$; \ $\phi_2=0^\circ$, $\varphi_2=60.08^\circ$; \ $\delta_3=-8.00^\circ$ (-24.0^\circ$ in $3\ell$).\\
+$R^2$ (71 pts): rotation $+\,2\ell$: \textbf{0.846}; \ no transforms: $-0.117$; \ (octupole also given its own phase: 0.850). \ $M(<D)/M_{\rm crit}=2K/\alpha=0.605/\alpha$.
+
+\emph{Second branch} ($b_0=0.00^\circ$): $P=\dfrac{\sum w_mA_mc_m}{\sum w_mc_m^2}=\dfrac{187.522}{1090.88}=0.17190$,\ \ $N=0.99650+0.17190\times0.22950=1.03595$,\ \ $K=P/N=0.16593$.\\
+\emph{Plug back:} \ $m0$: $1.03595(1-0.03808)=0.99650$; \ $m1$: $0.17190\times0.17983=0.03091$; \ $m2$: $0.17190\times0.49052=0.08432$; \ $m3$: $0.17190\times0.05701=0.00980$.\\
+Residuals (model$-$data): $m0$: $+0.00000$, \ $m1$: $-0.02162\ (-1.38\sigma)$, \ $m2$: $+0.01094\ (+0.69\sigma)$, \ $m3$: $-0.02220\ (-1.41\sigma)$.\\
+Phases: natural dipole peak $14.96^\circ\Rightarrow\phi_1=55.70-14.96=+40.75^\circ$ ($+0.711$ rad), Chris's $\varphi$: $75.04^\circ\to34.30^\circ$; \ $\phi_2=0^\circ$, $\varphi_2=60.08^\circ$; \ $\delta_3=-8.00^\circ$ (-24.0^\circ$ in $3\ell$).\\
+$R^2$ (71 pts): rotation $+\,2\ell$: \textbf{0.801}; \ no transforms: $0.724$; \ (octupole also given its own phase: 0.807). \ $M(<D)/M_{\rm crit}=2K/\alpha=0.332/\alpha$.
+
+\medskip\textbf{B. Numeric: fitted parameters} \ $\kappa=0.6488$, \ $D/L=3.13$, \ $f_u=3.8e-10$, \ $b_0=-30.00^\circ\ (\text{bound})$, \ $\ell_0=14.96^\circ$ (fixed), \ $\phi_1=+39.94^\circ$, \ $\phi_2=-0.19^\circ$.
+
+\textbf{Set equal (harmonics of the fitted numeric curve vs data)}
+\begin{center}\small\begin{tabular}{lrrrrrr}\toprule
+$m$ & data $|A_m|$ & numeric $|M_m|$ & resid. & resid./$\sigma_m$ & natural peak & transformed peak (data)\\\midrule
+0 & 0.9965 & 1.0000 & $+0.0035$ & $+0.30$ & -- & --\\
+1 & 0.0525 & 0.0507 & $-0.0018$ & $-0.12$ & $14.96^\circ$ & $54.90^\circ$ ($55.70^\circ$)\\
+2 & 0.0734 & 0.0772 & $+0.0038$ & $+0.24$ & $14.96^\circ$ & $14.77^\circ$ ($14.96^\circ$)\\
+3 & 0.0320 & 0.0049 & $-0.0271$ & $-1.73$ & $74.96^\circ$ & $74.96^\circ$ ($66.96^\circ$)$^\dagger$\\
+\bottomrule\end{tabular}\end{center}
+$^\dagger$octupole untouched. (The numeric curve is mean-normalised, so its $m{=}0$ is 1 by construction; $R^2$ uses the curve as is, no rescaling.) \ Octupole mismatch $\delta_3=-8.00^\circ$. \ Chris's $\varphi$: $75.04^\circ\to35.10^\circ$ ($\phi_1=+0.697$ rad); \ $\varphi_2=60.45^\circ$.\\
+$R^2$ (71 pts): transformed \textbf{0.837}; \ same parameters, no transforms $0.711$; \ stored no-transform best fit 0.729. \ $M(<D)/M_{\rm crit}=2\kappa=1.298$, \ $L=18.30$ Gpc.
+\\ Best solution on the other dipole branch (natural dipole flipped to $\ell_0+180^\circ$): $R^2=0.767$ (no transforms $0.329$), $\kappa=0.138$, $D/L=300.00$, $f_u=0.693$, $b_0=-0.0^\circ$, $\phi_1=-139.7^\circ$, $\phi_2=-0.11^\circ$.
+
+\clearpage\textbf{\large Summary in Chris's variables} \ ($r=14.3$ Gpc, $\ell_0=14.96^\circ$ for all rows; analytic $M/M_{\rm crit}$ uses $\alpha=1$)
+\begin{center}\footnotesize\setlength{\tabcolsep}{3.2pt}\begin{tabular}{llrrrrrrrrrr}\toprule
+$D/r$ & model & $D$ [Gpc] & $D$ [Gly] & $M/M_{\rm crit}$ & $D/L$ & $b_0$ & $\phi_1$ [deg] & $\phi_1$ [rad] & $\phi_2$ [deg] & $R^2_{\rm tf}$ & $R^2_{\rm no\,tf}$\\\midrule
+2 & numeric & 28.6 & 93.3 & 0.216 & 300$^*$ & $0.0^\circ$ & $-139.78$ & $-2.440$ & $-0.12$ & \textbf{0.885} & $0.027$\\
+ & \quad (alt.\ branch) & & & 0.529 & 15.24 & $30.0^\circ$ & $+40.11$ & $+0.700$ & $-0.15$ & 0.879 & $0.750$\\
+ & analytic & & & 0.306 & -- & $6.3^\circ$ & $+40.75$ & $+0.711$ & $+0.00$ & \textbf{0.884} & $0.752$\\
+ & analytic (2nd) & & & 0.486 & -- & $36.2^\circ$ & $-139.25$ & $-2.430$ & $+0.00$ & 0.876 & $-0.088$\\
+\midrule
+3 & numeric & 42.9 & 139.9 & 0.826 & 5.43 & $30.0^\circ$$^*$ & $+39.99$ & $+0.698$ & $-0.17$ & \textbf{0.853} & $0.726$\\
+ & \quad (alt.\ branch) & & & 0.265 & 300$^*$ & $-0.0^\circ$ & $-139.77$ & $-2.439$ & $-0.12$ & 0.821 & $0.232$\\
+ & analytic & & & 0.542 & -- & $40.0^\circ$ & $-139.25$ & $-2.430$ & $+0.00$ & \textbf{0.858} & $-0.106$\\
+ & analytic (2nd) & & & 0.326 & -- & $0.0^\circ$ & $+40.75$ & $+0.711$ & $+0.00$ & 0.848 & $0.747$\\
+\midrule
+4 & numeric & 57.2 & 186.6 & 1.298 & 3.13 & $-30.0^\circ$$^*$ & $+39.94$ & $+0.697$ & $-0.19$ & \textbf{0.837} & $0.711$\\
+ & \quad (alt.\ branch) & & & 0.277 & 300$^*$ & $-0.0^\circ$ & $-139.71$ & $-2.438$ & $-0.11$ & 0.767 & $0.329$\\
+ & analytic & & & 0.605 & -- & $43.3^\circ$ & $-139.25$ & $-2.430$ & $+0.00$ & \textbf{0.846} & $-0.117$\\
+ & analytic (2nd) & & & 0.332 & -- & $0.0^\circ$ & $+40.75$ & $+0.711$ & $+0.00$ & 0.801 & $0.724$\\
+\bottomrule
+\end{tabular}\end{center}
+$^*$ at fit bound ($|b_0|\le30^\circ$, $D/L\le300$; $D/L=300$ is effectively a point mass at the CoE). Octupole mismatch $\delta_3=-8.0^\circ$ in every row (octupole at natural phase about $\ell_0$).
+Numeric rows: $f_u$ = 0.0345 ($D/r=2$), 0.00606 ($D/r=3$), 3.76e-10 ($D/r=4$). Analytic rows: $N$, $K$ = 1.0314, 0.1529 ($D/r=2$); 0.9820, 0.2708 ($D/r=3$); 0.9688, 0.3025 ($D/r=4$) (primary). Data Fourier fit: $R^2=0.915$ (ceiling for any $m\le3$ curve).
+
+\textbf{Harmonic amplitudes at a glance} (data: $|A_1|,|A_2|,|A_3|=0.0525, 0.0734, 0.0320$)
+\begin{center}\small\begin{tabular}{lrrrrrr}\toprule $D/r$ & num.\ $|M_1|$ & num.\ $|M_2|$ & num.\ $|M_3|$ & an.\ $|M_1|$ & an.\ $|M_2|$ & an.\ $|M_3|$\\\midrule
+2 & 0.0462 & 0.0798 & 0.0207 & 0.0530 & 0.0764 & 0.0177\\
+3 & 0.0511 & 0.0775 & 0.0084 & 0.0519 & 0.0766 & 0.0091\\
+4 & 0.0507 & 0.0772 & 0.0049 & 0.0519 & 0.0761 & 0.0064\\
+\bottomrule\end{tabular}\end{center}
+\textbf{Reference: numeric with $\ell_0$ also free} (a third free phase in effect): $D/r=2$: $R^2=0.894$ ($\ell_0=130.1^\circ$, $\delta_3=-3.1^\circ$); $D/r=3$: $R^2=0.858$ ($\ell_0=6.9^\circ$, $\delta_3=+0.1^\circ$); $D/r=4$: $R^2=0.839$ ($\ell_0=187.0^\circ$, $\delta_3=-0.0^\circ$). At $D/r=2$ and $4$ the free $\ell_0$ runs far from the data axis ($130^\circ$, $187^\circ$) and the transforms then re-point $m1$ and $m2$. The gain over fixed $\ell_0$ is $\le0.01$ in $R^2$.
+
+\medskip\textbf{Observations.}
+(1) With the two phases free, both primary solutions match $|m1|$ and $|m2|$ to within $0.3\sigma$ at every $D/r$; the one exception is the numeric fit at $D/r=2$ ($\mp0.4\sigma$). Where they fail, both fail in the octupole.
+(2) The octupole is the failure: $|m3|\propto\varepsilon$ in the analytic form, and the numeric one is similar ($0.021, 0.008, 0.005$ vs data $0.032$), and its natural phase is $8^\circ$ off. This is why $R^2_{\rm tf}$ falls from $D/r=2$ to $4$.
+(3) The transformed $R^2$ values are all $0.84$--$0.89$, below the $m\le3$ Fourier ceiling of $0.915$. In both methods the rotation is $\phi_1\approx+40^\circ$ (or $-140^\circ$ on the flipped branch) and $\phi_2\approx0^\circ$.
+(4) Without transforms, the on-axis branches keep $R^2\approx0.71$--$0.75$ and the flipped branches collapse ($R^2\le0.33$). For $D/r=3,4$ the analytic weighted-LSQ optimum is the flipped branch ($b_0\approx40^\circ$) by a small $\chi^2$ margin.
+
+\medskip\textbf{Caveats.}
+The rotation $\phi_1$ and the $2\ell$ phase $\phi_2$ (and $\ell_0$) are free parameters; they are not predicted by the axisymmetric physics. With them free, only amplitudes are being tested, and $|m1|,|m2|$ are matched almost automatically.
+The 71 points come from overlapping $90^\circ$ sectors stepped by $5^\circ$, so there are only $\sim$16 independent values: $R^2$ overstates the evidence, and differences of a few $\times0.01$ are not significant.
+The analytic form is a point-mass tidal series truncated at $O(\varepsilon)$. It misses the dipole contributed by the extended fitted density in the numeric model, so analytic $K$ and numeric $\kappa$ are not the same quantity ($\alpha\ne1$ in general).
+Several numeric parameters sit on their bounds ($|b_0|=30^\circ$, or $D/L=300$), and the data sector weighting assumes clusters uniform on the sky outside $|b|\le20^\circ$.
+\end{document}

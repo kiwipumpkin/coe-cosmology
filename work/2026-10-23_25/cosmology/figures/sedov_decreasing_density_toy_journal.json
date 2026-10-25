@@ -1,0 +1,14 @@
+{
+  "png": "/workspace/cosmology/figures/sedov_decreasing_density_toy_journal.png",
+  "pdf": "/workspace/cosmology/figures/sedov_decreasing_density_toy_journal.pdf",
+  "script": "/workspace/cosmology/figures/make_sedov_decreasing_density_toy_journal.py",
+  "density_formula": "rho(r)/rho0 = exp(-r/L)",
+  "enclosed_mass_formula": "m(r)/M = 1 - exp(-X)*(1 + X + X^2/2), X = r/L",
+  "D_over_L": 3.0,
+  "note": "Toy exponential panel uses D/L=3 (not recommended_profile twoscale x=5.9).",
+  "dpi_png": 300,
+  "figsize_inch": [
+    7.0,
+    3.35
+  ]
+}

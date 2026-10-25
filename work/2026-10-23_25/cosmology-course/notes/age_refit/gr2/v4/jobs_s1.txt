@@ -1,0 +1,16 @@
+python3 scan1.py exp fwd gtc 384 7 > gr2/v4/s1_exp_fwd_gtc.log 2>&1
+python3 scan1.py exp back gtc 128 7 > gr2/v4/s1_exp_back_gtc.log 2>&1
+python3 scan1.py exp fwd le 384 7 > gr2/v4/s1_exp_fwd_le.log 2>&1
+python3 scan1.py exp back le 128 7 > gr2/v4/s1_exp_back_le.log 2>&1
+python3 scan1.py pl fwd gtc 384 7 > gr2/v4/s1_pl_fwd_gtc.log 2>&1
+python3 scan1.py pl back gtc 128 7 > gr2/v4/s1_pl_back_gtc.log 2>&1
+python3 scan1.py pl fwd le 384 7 > gr2/v4/s1_pl_fwd_le.log 2>&1
+python3 scan1.py pl back le 128 7 > gr2/v4/s1_pl_back_le.log 2>&1
+python3 scan1.py eta fwd gtc 384 7 > gr2/v4/s1_eta_fwd_gtc.log 2>&1
+python3 scan1.py eta back gtc 128 7 > gr2/v4/s1_eta_back_gtc.log 2>&1
+python3 scan1.py eta fwd le 384 7 > gr2/v4/s1_eta_fwd_le.log 2>&1
+python3 scan1.py eta back le 128 7 > gr2/v4/s1_eta_back_le.log 2>&1
+python3 scan1.py soft fwd gtc 384 7 > gr2/v4/s1_soft_fwd_gtc.log 2>&1
+python3 scan1.py soft back gtc 128 7 > gr2/v4/s1_soft_back_gtc.log 2>&1
+python3 scan1.py soft fwd le 384 7 > gr2/v4/s1_soft_fwd_le.log 2>&1
+python3 scan1.py soft back le 128 7 > gr2/v4/s1_soft_back_le.log 2>&1

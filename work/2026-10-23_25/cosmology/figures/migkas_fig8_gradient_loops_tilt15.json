@@ -1,0 +1,165 @@
+{
+  "png": "/workspace/cosmology/figures/migkas_fig8_gradient_loops_tilt15.png",
+  "script": "/workspace/cosmology/figures/make_migkas_fig8_gradient_loops_overlay.py",
+  "geometry_module": "/workspace/cosmology/figures/coe_half_loop_geometry.py",
+  "source_image": "/workspace/cosmology/map_compare/FULL_migkas_theta75.png",
+  "gradient_module": "/workspace/cosmology/figures/coe_gradient_loop_geometry.py",
+  "FULL_GRADIENT_LOOPS": true,
+  "gradient_rule": "full loops; alpha *= (1+cos psi)/2, psi = ring azimuth from the \u03b8-ray point (ring point most along sign(sin\u03b8_mid)\u00b7\u0176, \u0176 rolled for B/C; A unrolled); equivalently alpha_scale = (1 + sign(sin\u03b8_mid)\u00b7sin(phi))/2",
+  "alpha_levels": 64,
+  "base_alphas": {
+    "fill": 0.3,
+    "white_underlay": 0.95,
+    "mid_line": 1.0
+  },
+  "axis_tilt_b_deg": 15.0,
+  "roll_about_coe_deg": 0.0,
+  "anti_CoE_lb_deg": [
+    0.0,
+    15.0
+  ],
+  "CoE_lb_deg": [
+    180.0,
+    -15.0
+  ],
+  "D_hat_galactic_xyz": [
+    0.9659258262890683,
+    0.0,
+    0.25881904510252074
+  ],
+  "migkas_max_lb_deg": [
+    [
+      17.0,
+      -9.0
+    ],
+    [
+      185.0,
+      0.0
+    ]
+  ],
+  "migkas_min_lb_deg": [
+    [
+      115.0,
+      0.0
+    ],
+    [
+      274.0,
+      -22.0
+    ]
+  ],
+  "theta_max_from_plus_x_deg": [
+    30.0,
+    185.0
+  ],
+  "theta_min_from_plus_x_deg": [
+    115.0,
+    265.0
+  ],
+  "band_half_width_deg": 9.0,
+  "band_full_width_deg": 18.0,
+  "max_bands_deg": [
+    [
+      21.0,
+      39.0
+    ],
+    [
+      176.0,
+      194.0
+    ]
+  ],
+  "min_bands_deg": [
+    [
+      106.0,
+      124.0
+    ],
+    [
+      256.0,
+      274.0
+    ]
+  ],
+  "colors": {
+    "MAX_30": "#00e5ff",
+    "MAX_185": "#ff2d95",
+    "MIN_115": "#b8f200",
+    "MIN_265": "#4fc3f7"
+  },
+  "convention": "Galactic Mollweide; lon_disp=-wrap(ell); ell increases LEFT (Migkas Fig.8)",
+  "registration": {
+    "cx": 863.0,
+    "cy": 763.25,
+    "Rx": 693.9927,
+    "Ry": 392.542425,
+    "ceq_median_px": 1.0,
+    "registration_source": "hard-set GOOD_REG (pre medial-axis retune)"
+  },
+  "landmark_checks": {
+    "landmarks_px": {
+      "center": {
+        "ell": 0.0,
+        "b": 0.0,
+        "px": 863.0,
+        "py": 763.25
+      },
+      "ell90": {
+        "ell": 90.0,
+        "b": 0.0,
+        "px": 516.00365,
+        "py": 763.25
+      },
+      "ell270": {
+        "ell": 270.0,
+        "b": 0.0,
+        "px": 1209.99635,
+        "py": 763.25
+      },
+      "north": {
+        "ell": 0.0,
+        "b": 90.0,
+        "px": 863.0,
+        "py": 370.707575
+      },
+      "south": {
+        "ell": 0.0,
+        "b": -90.0,
+        "px": 863.0,
+        "py": 1155.792425
+      },
+      "migkas_max0": {
+        "ell": 17.0,
+        "b": -9.0,
+        "px": 797.9553672670747,
+        "py": 811.6016206375474
+      },
+      "migkas_max1": {
+        "ell": 185.0,
+        "b": 0.0,
+        "px": 1537.7151250000002,
+        "py": 763.25
+      },
+      "migkas_min0": {
+        "ell": 115.0,
+        "b": 0.0,
+        "px": 419.61577500000004,
+        "py": 763.25
+      },
+      "migkas_min1": {
+        "ell": 274.0,
+        "b": -22.0,
+        "px": 1179.4349358022826,
+        "py": 880.5100357173818
+      }
+    },
+    "migkas_max0_rgb_mean": [
+      237.0,
+      166.33333333333334,
+      0.0
+    ],
+    "migkas_min1_rgb_mean": [
+      96.61728395061728,
+      0.0,
+      205.39506172839506
+    ]
+  },
+  "matches_three_panel": "/workspace/cosmology/figures/make_coe_rings_gradient_loops.py",
+  "drawing": "FULL loops with opacity gradient. Each = PolyCollection strips between \u00b19\u00b0 edges + solid mid line (white underlay + colour LineCollections), alpha * (1+cos psi)/2 grouped into quantized levels; darkest at \u03b8-ray point, alpha 0 at the opposite point. Antimeridian crossings dropped. Dec=0 NOT overlaid; published map untouched."
+}

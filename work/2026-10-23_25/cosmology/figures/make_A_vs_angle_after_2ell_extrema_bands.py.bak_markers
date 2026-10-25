@@ -1,0 +1,239 @@
+#!/usr/bin/env python3
+"""Make the 2ell-corrected A-versus-Galactic-longitude figure."""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.lines import Line2D
+from matplotlib.patches import Patch
+
+
+FIG_DIR = Path(__file__).resolve().parent
+FIT_PATH = FIG_DIR.parent / "map_compare" / "amp_mean_param_noise" / "best_fit_2ell_multiplier.npz"
+CSV_PATH = FIG_DIR / "revised_no_dipole" / "migkas2020_fig6_A_vs_longitude.csv"
+OUT_PATHS = (
+    FIG_DIR / "A_vs_angle_after_2ell_with_residuals.png",
+    FIG_DIR.parent / "map_compare" / "amp_mean_param_noise" / "A_vs_angle_after_2ell_with_residuals.png",
+)
+JSON_PATH = FIG_DIR / "A_vs_angle_after_2ell_extrema_bands.json"
+BAND_HALF_WIDTH_DEG = 18.0
+
+
+def periodic_interp(x: np.ndarray, xp: np.ndarray, fp: np.ndarray) -> np.ndarray:
+    """Interpolate samples on a 360-degree periodic longitude domain."""
+    order = np.argsort(xp)
+    xp = np.asarray(xp, dtype=float)[order]
+    fp = np.asarray(fp, dtype=float)[order]
+    xp_ext = np.concatenate((xp - 360.0, xp, xp + 360.0))
+    fp_ext = np.tile(fp, 3)
+    return np.interp(np.asarray(x, dtype=float), xp_ext, fp_ext)
+
+
+def find_extrema(x: np.ndarray, y: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """Find local periodic maxima and minima in a dense interpolated curve."""
+    previous = np.roll(y, 1)
+    following = np.roll(y, -1)
+    max_idx = np.flatnonzero((y >= previous) & (y >= following))
+    min_idx = np.flatnonzero((y <= previous) & (y <= following))
+    max_idx = max_idx[(x[max_idx] > 0.0) & (x[max_idx] < 360.0)]
+    min_idx = min_idx[(x[min_idx] > 0.0) & (x[min_idx] < 360.0)]
+    return x[max_idx], x[min_idx]
+
+
+def add_periodic_band(ax, center: float) -> None:
+    """Shade center +/- half-width, splitting the span if it crosses 0/360."""
+    lo = center - BAND_HALF_WIDTH_DEG
+    hi = center + BAND_HALF_WIDTH_DEG
+    color = "#e74c3c" if center in MAX_ANGLES else "#377eb8"
+    if lo < 0.0:
+        ax.axvspan(0.0, hi, color=color, alpha=0.24, lw=0, zorder=0)
+        ax.axvspan(lo + 360.0, 360.0, color=color, alpha=0.24, lw=0, zorder=0)
+    elif hi > 360.0:
+        ax.axvspan(lo, 360.0, color=color, alpha=0.24, lw=0, zorder=0)
+        ax.axvspan(0.0, hi - 360.0, color=color, alpha=0.24, lw=0, zorder=0)
+    else:
+        ax.axvspan(lo, hi, color=color, alpha=0.24, lw=0, zorder=0)
+
+
+# Set by main after the dense extrema are recomputed; only used by add_periodic_band.
+MAX_ANGLES: np.ndarray = np.array([])
+
+
+def main() -> None:
+    global MAX_ANGLES
+
+    fit = np.load(FIT_PATH)
+    ell_m = np.asarray(fit["ell_m"], dtype=float)
+    a_after = np.asarray(fit["A_after"], dtype=float)
+    rmse_after = float(np.asarray(fit["RMSE_after"]))
+
+    migkas = np.genfromtxt(CSV_PATH, delimiter=",", names=True)
+    migkas_lon = np.asarray(migkas["galactic_longitude_deg"], dtype=float)
+    migkas_a = np.asarray(migkas["A_over_Aall"], dtype=float)
+    migkas_err = np.asarray(migkas["A_over_Aall_err_1sigma"], dtype=float)
+    model_at_migkas = periodic_interp(migkas_lon, ell_m, a_after)
+    residuals = migkas_a - model_at_migkas
+
+    # A 0.01-degree grid makes the extrema locations and curve visually smooth.
+    lon_dense = np.linspace(0.0, 360.0, 36001)
+    model_dense = periodic_interp(lon_dense, ell_m, a_after)
+    max_angles, min_angles = find_extrema(lon_dense, model_dense)
+    MAX_ANGLES = max_angles
+    if len(max_angles) != 2 or len(min_angles) != 2:
+        raise RuntimeError(
+            f"Expected two maxima and two minima; got {len(max_angles)} maxima and {len(min_angles)} minima"
+        )
+
+    extrema = []
+    for kind, angles in (("MAX", max_angles), ("MIN", min_angles)):
+        for angle in angles:
+            extrema.append(
+                {
+                    "kind": kind,
+                    "angle_deg": float(angle),
+                    "model_A": float(periodic_interp(np.array([angle]), ell_m, a_after)[0]),
+                    "band_start_deg": float((angle - BAND_HALF_WIDTH_DEG) % 360.0),
+                    "band_end_deg": float((angle + BAND_HALF_WIDTH_DEG) % 360.0),
+                }
+            )
+
+    fig, (ax_top, ax_bottom) = plt.subplots(
+        2,
+        1,
+        figsize=(10.5, 8.0),
+        sharex=True,
+        gridspec_kw={"height_ratios": (1.35, 1.0), "hspace": 0.12},
+    )
+
+    for item in extrema:
+        add_periodic_band(ax_top, item["angle_deg"])
+
+    ax_top.axhline(1.0, color="#555555", lw=1.0, ls="--", zorder=1)
+    ax_top.plot(
+        lon_dense,
+        model_dense,
+        color="#c99a16",
+        lw=2.6,
+        zorder=4,
+        label="Amp x sin + 2ell model",
+    )
+    ax_top.errorbar(
+        migkas_lon,
+        migkas_a,
+        yerr=migkas_err,
+        fmt="o",
+        ms=4.2,
+        color="black",
+        ecolor="#888888",
+        elinewidth=1.0,
+        capsize=2.0,
+        capthick=1.0,
+        zorder=3,
+        label="Migkas",
+    )
+
+    for item in extrema:
+        is_max = item["kind"] == "MAX"
+        marker = "^" if is_max else "s"
+        color = "#e74c3c" if is_max else "#377eb8"
+        angle = item["angle_deg"]
+        value = item["model_A"]
+        ax_top.plot(
+            angle,
+            value,
+            marker=marker,
+            ms=8.0,
+            mec="white",
+            mew=0.7,
+            mfc=color,
+            linestyle="None",
+            zorder=6,
+        )
+        offset = (0, 13 if is_max else -19)
+        va = "bottom" if is_max else "top"
+        ax_top.annotate(
+            f"{item['kind']} {angle:.0f} deg",
+            (angle, value),
+            xytext=offset,
+            textcoords="offset points",
+            ha="center",
+            va=va,
+            fontsize=8.5,
+            color=color,
+            fontweight="bold",
+            zorder=7,
+        )
+
+    ax_top.set_title("After 2ell correction - A vs Galactic longitude", fontsize=14, pad=8)
+    ax_top.set_ylabel("A/A_all")
+    ax_top.set_ylim(0.75, 1.25)
+    ax_top.set_xlim(0.0, 360.0)
+    ax_top.set_yticks(np.arange(0.8, 1.21, 0.1))
+    ax_top.grid(True, color="#d9d9d9", lw=0.7, alpha=0.75)
+
+    handles = [
+        Line2D([0], [0], color="#c99a16", lw=2.6, label="Amp x sin + 2ell model"),
+        Line2D([0], [0], marker="o", color="black", ls="None", ms=4.5, label="Migkas"),
+        Line2D([0], [0], color="#555555", lw=1.0, ls="--", label="A = 1"),
+        Line2D([0], [0], marker="^", color="#e74c3c", ls="None", ms=7, label="MAX extrema"),
+        Line2D([0], [0], marker="s", color="#377eb8", ls="None", ms=6.5, label="MIN extrema"),
+        Patch(facecolor="#e74c3c", alpha=0.24, edgecolor="none", label="MAX +/-5% (= +/-18 deg) bands"),
+        Patch(facecolor="#377eb8", alpha=0.24, edgecolor="none", label="MIN +/-5% (= +/-18 deg) bands"),
+    ]
+    ax_top.legend(handles=handles, loc="upper right", fontsize=8.1, ncol=2, frameon=True)
+
+    ax_bottom.errorbar(
+        migkas_lon,
+        residuals,
+        yerr=migkas_err,
+        fmt="o",
+        ms=4.2,
+        color="#a81414",
+        ecolor="#a81414",
+        elinewidth=1.0,
+        capsize=2.0,
+        capthick=1.0,
+        zorder=3,
+        label="Migkas - model",
+    )
+    ax_bottom.axhline(0.0, color="#555555", lw=1.0, ls="--", zorder=1)
+    ax_bottom.set_title(f"Remaining residuals after 2ell (RMSE {rmse_after:.3f})", fontsize=12, pad=7)
+    ax_bottom.set_ylabel("Migkas - model")
+    ax_bottom.set_xlabel("Galactic longitude [deg]")
+    ax_bottom.set_ylim(-0.20, 0.20)
+    ax_bottom.set_yticks(np.arange(-0.20, 0.201, 0.05))
+    ax_bottom.set_xticks(np.arange(0, 361, 50))
+    ax_bottom.grid(True, color="#d9d9d9", lw=0.7, alpha=0.75)
+    ax_bottom.legend(loc="upper right", fontsize=8.5, frameon=True)
+
+    fig.tight_layout()
+    for output in OUT_PATHS:
+        fig.savefig(output, dpi=180, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+
+    metadata = {
+        "fit_source": str(FIT_PATH),
+        "migkas_source": str(CSV_PATH),
+        "interpolation": "periodic numpy.interp on a 0.01-degree grid",
+        "band_half_width_deg": BAND_HALF_WIDTH_DEG,
+        "band_fraction_of_360": BAND_HALF_WIDTH_DEG / 360.0,
+        "rmse_after": rmse_after,
+        "extrema": extrema,
+        "outputs": [str(path) for path in OUT_PATHS],
+    }
+    JSON_PATH.write_text(json.dumps(metadata, indent=2) + "\n")
+
+    print("Extrema used:")
+    for item in extrema:
+        print(f"  {item['kind']} {item['angle_deg']:.2f} deg (A={item['model_A']:.6f})")
+    print(f"Band half-width: {BAND_HALF_WIDTH_DEG:.1f} deg")
+    for output in OUT_PATHS:
+        print(f"Wrote {output}")
+    print(f"Wrote {JSON_PATH}")
+
+
+if __name__ == "__main__":
+    main()

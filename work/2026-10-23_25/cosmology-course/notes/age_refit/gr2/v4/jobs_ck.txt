@@ -1,0 +1,16 @@
+OUTTAG=ck_exp_fwd_gtc timeout 3000 python3 cmb4.py exp fwd gtc 30 > gr2/v4/ck_exp_fwd_gtc.log 2>&1
+OUTTAG=ck_exp_fwd_le timeout 3000 python3 cmb4.py exp fwd le 30 > gr2/v4/ck_exp_fwd_le.log 2>&1
+OUTTAG=ck_exp_back_gtc timeout 3000 python3 cmb4.py exp back gtc 30 > gr2/v4/ck_exp_back_gtc.log 2>&1
+OUTTAG=ck_exp_back_le timeout 3000 python3 cmb4.py exp back le 30 > gr2/v4/ck_exp_back_le.log 2>&1
+OUTTAG=ck_pl_fwd_gtc timeout 3000 python3 cmb4.py pl fwd gtc 30 > gr2/v4/ck_pl_fwd_gtc.log 2>&1
+OUTTAG=ck_pl_fwd_le timeout 3000 python3 cmb4.py pl fwd le 30 > gr2/v4/ck_pl_fwd_le.log 2>&1
+OUTTAG=ck_pl_back_gtc timeout 3000 python3 cmb4.py pl back gtc 30 > gr2/v4/ck_pl_back_gtc.log 2>&1
+OUTTAG=ck_pl_back_le timeout 3000 python3 cmb4.py pl back le 30 > gr2/v4/ck_pl_back_le.log 2>&1
+OUTTAG=ck_eta_fwd_gtc timeout 3000 python3 cmb4.py eta fwd gtc 30 > gr2/v4/ck_eta_fwd_gtc.log 2>&1
+OUTTAG=ck_eta_fwd_le timeout 3000 python3 cmb4.py eta fwd le 30 > gr2/v4/ck_eta_fwd_le.log 2>&1
+OUTTAG=ck_eta_back_gtc timeout 3000 python3 cmb4.py eta back gtc 30 > gr2/v4/ck_eta_back_gtc.log 2>&1
+OUTTAG=ck_eta_back_le timeout 3000 python3 cmb4.py eta back le 30 > gr2/v4/ck_eta_back_le.log 2>&1
+OUTTAG=ck_soft_fwd_gtc timeout 3000 python3 cmb4.py soft fwd gtc 30 > gr2/v4/ck_soft_fwd_gtc.log 2>&1
+OUTTAG=ck_soft_fwd_le timeout 3000 python3 cmb4.py soft fwd le 30 > gr2/v4/ck_soft_fwd_le.log 2>&1
+OUTTAG=ck_soft_back_gtc timeout 3000 python3 cmb4.py soft back gtc 30 > gr2/v4/ck_soft_back_gtc.log 2>&1
+OUTTAG=ck_soft_back_le timeout 3000 python3 cmb4.py soft back le 30 > gr2/v4/ck_soft_back_le.log 2>&1

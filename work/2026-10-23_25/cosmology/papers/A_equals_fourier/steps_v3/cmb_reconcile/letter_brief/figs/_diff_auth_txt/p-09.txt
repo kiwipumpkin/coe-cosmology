@@ -1,0 +1,16 @@
+Figure 8: Two-emitter baseline. If opposite plates (or shells) share the observer’s bulk velocity, the kinematic sky is flat
+before gravitational multipoles are included.
+
+
+The same off-centre geometry produces a gravitational multipole on the last-scattering sky. The kill function
+is the electromagnetic temperature multipole—∆T /T of kinematic–Doppler character—required to cancel that
+multipole: opposite in sign, same angular shape. Exploratory two-emitter and multipole-partner constructions
+follow the kill-function morphology at large D and remove most of the demeaned power through ℓ ≤ 4, but
+they do not yet reach the CMB bound of order 10−5 . Closing that residual on the full light cone remains the
+open calculation.
+
+
+
+
+                                                             9
+

@@ -1,0 +1,324 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1.7cm,columnsep=0.6cm]{geometry}
+\usepackage{multicol}\setlength{\columnsep}{0.6cm}
+\usepackage{amsmath,amssymb,graphicx,booktabs,caption,hyperref}
+\captionsetup{font=small,labelfont=bf}
+\newcommand{\fig}[2]{\includegraphics[width=#1,height=#2,keepaspectratio]}
+\setlength{\textfloatsep}{8pt plus 2pt}\setlength{\floatsep}{6pt plus 2pt}
+\renewcommand{\topfraction}{0.95}\renewcommand{\textfraction}{0.05}\renewcommand{\floatpagefraction}{0.8}
+\renewcommand{\dbltopfraction}{0.95}\renewcommand{\dblfloatpagefraction}{0.8}
+\title{Off-centre CoE cosmology: the mathematical workflow from geometry to the Planck $TT$ spectrum}
+\author{Working notes for C.\,A. \quad (compiled 23 October 2026)}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{multicols}{2}
+\begin{abstract}
+These notes set out, in logical order, the mathematics and physics used in the off-centre ``CoE'' cosmology workflow: (i) the geometry (off-centre observer, vision radius, no $\Lambda$) and its volume history; (ii) density laws and the Migkas $A/A_{\rm all}$ fit; (iii) spherical-harmonic primers and the inverse problem of building a target angular spectrum from clumps and voids; (iv) a realistic void/cluster web; (v) a stochastic density field projected onto the sky; (vi) the acoustic fit and the decomposition of its residuals; (vii) the damped half-scale model and its corrected projection; (viii) a parameter glossary and a statement of which quantities are predicted and which are fitted. Goodness-of-fit is reported as $\chi^2$ (Planck errors unless stated) and Pearson $r^2$ between data and model. No pass/fail judgement is made here.
+\end{abstract}
+
+\section{Geometry of the CoE universe}
+\paragraph{Set-up.} The observer sits off-centre at distance $D$ from the centre of expansion (CoE). Working values: $D\simeq58.2$\,Gpc, vision (horizon) radius $R$ explored at 4, 8 and 14\,Gpc, and an outer edge of the matter shell at $1.25D\simeq72.83$\,Gpc. There is no cosmological constant: the dynamics are matter (plus radiation at early times) in a Newtonian/LTB description.
+
+\paragraph{Volumes.} The three volumes tracked are the observer's sphere $V_R=\tfrac43\pi R^3$, the sphere out to the observer plus horizon $V_{D+R}=\tfrac43\pi(D+R)^3$, and the outer shell. Today $V_R\simeq268$\,Gpc$^3$ and $V_{D+R}\simeq1.0\times10^6$\,Gpc$^3$, so $V_R/V_{D+R}\simeq0.027\%$ and $V_R/V_{\rm shell}\simeq0.017\%$.
+
+\paragraph{Time dependence (assumed).} The growth law is \emph{assumed}, not derived from the geometry. Lengths follow the scale factor $a(t)$ with radiation + matter,
+\begin{equation}
+\Big(\frac{\dot a}{a}\Big)^2\propto \frac{a_{\rm eq}}{a^4}+\frac{1}{a^3},\qquad a_{\rm eq}=\frac{1}{3400},
+\end{equation}
+normalised so that $t_0=13.8$\,Gyr. Without $\Lambda$ this places equality at $\approx41$\,kyr and recombination at $\approx297$\,kyr. In the pure phases $a\propto t^{1/2}$ (radiation) and $a\propto t^{2/3}$ (matter); the horizon grows as $R\propto t$. For a volume $V\propto t^{n}$ the fractional rate is
+\begin{equation}
+\dot V/V=n/t,
+\end{equation}
+so $n=3/2$ (radiation era), $n=2$ for $D$ in the matter era, $n=3$ for $R$. The fractional rate is therefore largest at early times and falls as $1/t$; for $D$ today it is $\approx0.145$\,Gyr$^{-1}$. This is ordinary decelerating expansion put in by assumption (Fig.~\ref{fig:vol}).
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.42\textheight}{fig/f02.png}
+\captionof{figure}{Volume versus time with radiation + matter (no $\Lambda$). Top: absolute volumes of the $D$ sphere, $D{+}R$ sphere and $1.25D$ outer shell from $a(t)$ of Eq.~(1). Middle: $V_R$ as a percentage of the larger volumes. Bottom: fractional growth $\dot V/V=n/t$ for each volume. Vertical lines mark equality ($\approx$41\,kyr) and recombination ($\approx$297\,kyr).}
+\label{fig:vol}\end{center}
+\begin{multicols}{2}
+
+
+\paragraph{Densities in time: derivation.} Radiation dilutes as $\rho_r\propto a^{-4}$ (number $\propto a^{-3}$, each photon redshifts as $a^{-1}$); matter as $\rho_m\propto a^{-3}$. Equality defines $a_{\rm eq}$: $\rho_r(a)/\rho_{m,0}=a_{\rm eq}a^{-4}$, $\rho_m/\rho_{m,0}=a^{-3}$. Friedmann without $\Lambda$ or curvature, $H^2\propto\rho_r+\rho_m$, gives $dt=a\,da/(H_*\sqrt{a_{\rm eq}+a})$; $H_*$ is fixed by $t(a{=}1)=13.8$\,Gyr. Parameters: $a_{\rm eq}=1/3400$, $t_0=13.8$\,Gyr, recombination $z=1089$. Integrating numerically reproduces $t_{\rm eq}=40.8$\,kyr and $t_{\rm rec}=297.5$\,kyr (Fig.~\ref{fig:radmat}). (Closed form: $H_*t=\tfrac23(a-2a_{\rm eq})\sqrt{a+a_{\rm eq}}+\tfrac43a_{\rm eq}^{3/2}$.)
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.3\textheight}{fig/d4_radmat.png}
+\captionof{figure}{Radiation and matter densities (left, in units of today's matter density) and the resulting $a(t)$ (right) for $a_{\rm eq}=1/3400$, $t_0=13.8$\,Gyr, no $\Lambda$. Dotted lines: pure-phase limits $t^{1/2}$, $t^{2/3}$. Recomputed for this document.}
+\label{fig:radmat}\end{center}
+\begin{multicols}{2}
+
+\section{Density laws and the Migkas fit}
+\paragraph{Observable.} Migkas et al.\ measure the cluster scaling-relation normalisation $A$ in sky directions relative to the all-sky value, $A/A_{\rm all}$, binned in galactic longitude $l$ (71 bins). In CoE the direction dependence arises because lines of sight at different angles $\psi$ to the CoE axis traverse different matter densities and recession velocities.
+
+\paragraph{Line-of-sight averaging.} For a radial density law $\rho(r)$ about the CoE, a point at distance $s$ along direction $\hat n$ from the observer has $r(s,\hat n)=|\mathbf D+s\hat n|$. The predicted anisotropy is the average over the cluster depth distribution $p(s)$,
+\begin{equation}
+\frac{A}{A_{\rm all}}(\hat n)=\frac{\int ds\,p(s)\,f[\rho(r(s,\hat n))]}{\langle\int ds\,p(s)\,f[\rho]\rangle_{\rm sky}},
+\end{equation}
+where $f$ maps the local density/velocity to the scaling-relation shift. Density laws tried include exponential, $\eta$-form and level-set families (power-law, cored, Gaussian, soft).
+
+\paragraph{CatWISE lock: derivation.} Each law is $\rho(r)=\rho_0\,g(r/L)$ about the CoE, normalised at the observer: $\rho(D)=\Omega_m\rho_{\rm crit}$ with $\Omega_m=0.3$, $H_0=70$, so $\rho_0=0.3\rho_{\rm crit}/g(D/L)$. The contrast between the points a vision radius $d$ inward and outward,
+\begin{equation}
+\delta\equiv\frac{\rho(D-d)-\rho(D+d)}{\rho(D)}=0.031,
+\end{equation}
+is set to twice the CatWISE dipole $\mathcal D=0.01554$ (Secrest et al.\ 2021; $2\mathcal D=0.03108$, rounded to 0.031). Parameters: $D=58.2$\,Gpc, $d=14.3005$\,Gpc. For each shape this one equation fixes $L$. Exponential: $g=e^{-x}$ gives $\delta=e^{d/L}-e^{-d/L}=2\sinh(d/L)$, so
+\begin{equation}
+L=d/\operatorname{arcsinh}(\delta/2)=922.65\ \text{Gpc}\quad(L/D=15.85),
+\end{equation}
+$\rho_0=0.3195\rho_{\rm crit}$, $\rho'/\rho|_D=-1/L=-0.001084$\,Gpc$^{-1}$ ($d=3$\,Gpc would give $L=193.56$\,Gpc). The other shapes are solved numerically for $L$ (with shape parameters fixed):
+\begin{center}\small\begin{tabular}{@{}llrr@{}}
+law & $g(x)$ & $L$ [Gpc] & $\rho_0/\rho_{\rm c}$\\\hline
+exp & $e^{-x}$ & 922.6 & 0.3195\\
+power & $(1+x)^{-n}$, $n{=}1.20$ & 1049.3 & 0.3201\\
+cored & $(1+x^2)^{-1}$ & 321.9 & 0.3098\\
+Gauss & $e^{-x^2/2}$ & 231.5 & 0.3096\\
+soft & $(1+x^{\alpha})^{-\beta}$, $\alpha{=}0.30,\beta{=}1$ & 5109.6 & 0.3784\\
+stretched & $e^{-x^{\eta}}$, $\eta{=}0.25$ & 15246 & 0.3847\\
+$\eta$-edge & $e^{-x^{\eta}}$, $\eta{=}0.0500$ & 0.849 & 1.0319\\
+\end{tabular}\end{center}
+All satisfy $\delta=0.031$ to $10^{-15}$ and have $\rho'/\rho|_D\approx-0.00106$ to $-0.00109$\,Gpc$^{-1}$: the lock fixes the local gradient, so the laws are nearly indistinguishable inside $D\pm d$ (Fig.~\ref{fig:laws}) and differ only near the CoE. The level-set scan used a floor $\eta\ge0.25$; the $\eta$-edge solution ($\eta=0.0500$, $L/D=0.0146$) came from a separate free-$\eta$ fit. Values from \texttt{catwise-density-levelset-fit.json}, \texttt{catwise-eta-migkas-fit.json}.
+
+\paragraph{Fit per law.} At $l_0=15.2^\circ$ (71 bins, null $\chi^2=45.14$): exp $\chi^2=11.61$ ($D=48.26$), power $11.58$ ($D=47.86$), soft $10.43$ ($D=39.11$), stretched $\eta{=}0.25$: $10.39$ ($D=38.47$); cored and Gauss with free $l_0\approx21.7^\circ$: 11.60 and 11.61 ($D\approx59.5$, 59.8). Free $\eta$-edge: $\chi^2=9.28$, $D=34.96$\,Gpc, $l_0=19.9^\circ$. Here $D$ is refitted, so the locked $L$ is used with a $D$ different from 58.2.
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.33\textheight}{fig/d1_migkas_laws.png}
+\captionof{figure}{CatWISE-locked density laws $\rho/\rho_{\rm crit}$ versus distance from the CoE (left) and zoom on the lock window $D\pm d$ (right), plotted from \texttt{catwise-density-levelset.csv} and \texttt{catwise-eta-density.csv}. $D=58.2$\,Gpc (grey line), $d=14.3005$\,Gpc (band).}
+\label{fig:laws}\end{center}
+\begin{multicols}{2}
+
+\paragraph{Fit.} $\chi^2=\sum_i (y_i-m_i)^2/\sigma_i^2$ over the 71 Migkas bins. Fig.~\ref{fig:mig} shows the two-hump structure obtained: $\chi^2=10.79$ ($l_0=100^\circ$) and $\chi^2=7.67$ ($l_0=15.6^\circ$), the latter equal to a reference sinusoid fit ($\chi^2=7.67$).
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.3\textheight}{fig/f07.jpg}
+\captionof{figure}{Migkas $A/A_{\rm all}$ (71 bins, black) against galactic longitude with CoE direct fits. Red: smooth polynomial in $\cos\psi$, $\chi^2=10.79$, $l_0=100^\circ$. Green dashed: best-$\chi^2$ variant, $\chi^2=7.67$, $l_0=15.6^\circ$. Blue dashed: reference sinusoid (amplitudes 0.041/0.035), $\chi^2=7.67$. The two humps follow from projecting the axis direction $\psi(l)$ through Eq.~(3).}
+\label{fig:mig}\end{center}
+\begin{multicols}{2}
+
+\section{Harmonic basics and the inverse problem}
+Any sky pattern $\Delta T(\hat n)$ is expanded in spherical harmonics,
+\begin{equation}
+\Delta T(\hat n)=\sum_{\ell m}a_{\ell m}Y_{\ell m}(\hat n),\quad C_\ell=\frac{1}{2\ell+1}\sum_m|a_{\ell m}|^2 .
+\end{equation}
+$\ell$ counts angular wavelengths, $\theta\approx180^\circ/\ell$. Axisymmetric ($m=0$) patterns are Legendre polynomials $P_\ell(\cos\theta)$. For $N$ equal point masses equally spaced on a ring, the angular Fourier power is non-zero only at multiples of $N$ (aliasing). The primer (Fig.~\ref{fig:h1}; companion runs with binary mixtures $\ell_1+\ell_2$, ring point masses and sparse quadrature masses behave the same way: mixtures give one bar per mode, $N$ equally spaced masses alias power to $N,2N,\ldots$) builds intuition for the \emph{inverse problem}: given a target $C_\ell$, which arrangement of over-densities (clumps, blue) and under-densities (voids, orange/red) produces it? Because $C_\ell$ discards phases, the inverse problem is degenerate: many mass arrangements give the same spectrum.
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.28\textheight}{fig/f11.png}
+\captionof{figure}{Single axisymmetric harmonics $\ell=0\ldots7$, $m=0$ drawn as density on a ring (blue over-, orange under-density) with the power bar at that $\ell$: each pure harmonic puts all power in one multipole.}
+\label{fig:h1}\end{center}
+\begin{multicols}{2}
+
+\end{multicols}
+\begin{center}
+\fig{0.6\textwidth}{0.36\textheight}{fig/f12.png}\hfill
+\fig{0.38\textwidth}{0.36\textheight}{fig/f13.png}
+\captionof{figure}{Inverse problem solved numerically. Left: a fixed prominent mass at $1.55R$ plus fitted clumps/voids inside and outside $R$ reproduce target angular profiles (half wave, $1\tfrac12$, $2\tfrac12$ waves, two waves); red target vs fitted curve. Right: a non-axisymmetric source shell at $r=1.012R$ (density varying in latitude and longitude; gravitational potential, not CMB temperature) built from distributed 3D clumps/voids reproduces a prescribed peak at $\ell=220$ with widths $\sigma_\ell=32$ and $8$.}
+\label{fig:inv}\end{center}
+\begin{multicols}{2}
+
+\section{A realistic web of voids and clusters}
+To replace hand-placed masses, a realistic web is generated (Fig.~\ref{fig:web}): clusters above a mass cut and voids from a $\Lambda$CDM-like seed realisation, placed around the observer. Each structure contributes a potential $\Phi$ through Poisson's equation, and photons crossing the moving/evolving potentials pick up temperature shifts (integrated Sachs--Wolfe and moving-lens terms). The resulting $D_\ell$ is computed for $R=4$, 8, 14\,Gpc (``level-set ladders'', Fig.~\ref{fig:ladder}), and Monte-Carlo webs and kernels are compared to Planck at low $\ell$. At the lowest multipoles, large ``passing-universe'' domains dominate (Fig.~\ref{fig:pass}).
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.4\textheight}{fig/f06.png}
+\captionof{figure}{Realistic web: slab $|z|<0.4$\,Gpc of a 20\,Gpc box (seed 2000, 1\% mass cut, 3904 clusters, 10568 void--cluster links); black circle is the 14.3\,Gpc sphere, $+$ the observer. Bottom: zoom ($\pm9$\,Gpc) showing voids (blue discs) and cluster links.}
+\label{fig:web}\end{center}
+\begin{multicols}{2}
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.4\textheight}{fig/f04.png}
+\captionof{figure}{Web riding the CoE flow (grow\_full, run \#113) at $R=4$, 8, 14\,Gpc: coloured curves are $D_\ell$ for a ladder of density level sets, black points Planck, red dashed the bracket guess $E^*$. The lines show how $D_\ell$ at $\ell\le30$ scales with the density threshold.}
+\label{fig:ladder}\end{center}
+\begin{multicols}{2}
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.4\textheight}{fig/f05.png}
+\captionof{figure}{Passing-universe domains at $R=4$, 8, 14\,Gpc overlaid (top; bands are spreads over realisations, overlaps darker; $\ell=3$ and $R=8$ $\ell$ 8--12 maxima clipped) and the density of sky-plane domains (bottom) against Planck. Monte-Carlo webs with smoothing kernels 0.5--2\,Gpc give level-set ladders of the same form as Fig.~\ref{fig:ladder}.}
+\label{fig:mc}\label{fig:pass}\end{center}
+\begin{multicols}{2}
+
+
+\paragraph{Web densities: derivation.} From \texttt{realweb/build.py, cosmo.py} (2026-10-20/21). Background: $h=0.7$, $\Omega_m=0.31$, $\Omega_b=0.049$, $n_s=0.965$, $\sigma_8=0.8$, $\bar\rho_m=\Omega_m\,2.775\times10^{11}h^2\,M_\odot$Mpc$^{-3}$. Linear spectrum $P(k)=A k^{n_s}T_{\rm EH}^2(k)$ (Eisenstein--Hu no-wiggle), $A$ fixed by $\sigma(8/h)=0.8$ with top-hat $W(x)=3(\sin x-x\cos x)/x^3$.
+\emph{Clusters}: Press--Schechter $\frac{dn}{d\ln M}=\sqrt{\tfrac2\pi}\frac{\bar\rho_m}{M}\frac{\delta_c}{\sigma}\big|\tfrac{d\ln\sigma}{d\ln M}\big|e^{-\delta_c^2/2\sigma^2}$, $\delta_c=1.686$, $M=10^{14}$--$2\times10^{15}M_\odot$ (41 bins), bias $b=1+(\delta_c^2/\sigma^2-1)/\delta_c$.
+\emph{Voids}: Sheth--van de Weygaert size function with $\delta_v=-2.7$, $R_{\rm nl}=1.7R_L$, $R=10$--50\,Mpc; bias $-1.5$; interior contrast $-0.85$, i.e.\ deficit $M_d=0.85\bar\rho_m\tfrac{4\pi}{3}R_v^3$, painted as a point deficit at the centre plus 8 random points of $M_d/8$ on a shell at $1.25R_v$ (compensated).
+Counts per cell are Poisson with mean $\frac{dn}{d\ln X}\Delta\ln X\,\Delta V\,\max(0,1+b\,\delta_{\rm lin})\,m(\mathbf x)\,f$, $f=1/100$ thinning, where $m$ is the CoE modulation of Fig.~\ref{fig:mod}. The painted $\rho$ is mean-subtracted inside the region (net zero mass), then $\Phi$ via FFT Poisson.
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.27\textheight}{fig/d2_web.png}
+\captionof{figure}{Web density ingredients recomputed from \texttt{cosmo.py}: halo mass function (left), void size function (middle) and the compensated void mass placement (right).}
+\label{fig:webd}\end{center}
+\begin{multicols}{2}
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.2\textheight}{fig/d5_mod.png}
+\captionof{figure}{CoE modulation $m(r)$ of the web number density, $r$ from axis point $42\hat a$ Gpc ($\hat a\propto(1,0,\tan15^\circ)$), $c_k$ from the Migkas smooth-polynomial fit (amplitudes 0.041/0.035 appear as $c_0,c_1$), $R_b=1.5(1+1/2.937)$; normalised to mean 1 in each grid shell.}
+\label{fig:mod}\end{center}
+\begin{multicols}{2}
+
+\section{Stochastic field and sky projection}
+\paragraph{Source.} Instead of discrete objects, the density contrast $\delta$ in a shell is treated as a Gaussian random field with power spectrum $P_\delta(k)$. The potential follows from Poisson,
+\begin{equation}
+\Phi_k=-\frac{4\pi G\rho\,\delta_k}{k^2}\ \Rightarrow\ P_\Phi=\frac{(4\pi G\rho)^2P_\delta}{k^4}.
+\end{equation}
+In the code the dominant temperature term is the moving-lens term $\Delta T/T\propto K_M(\chi)\,\mathbf u\cdot\nabla\Phi$; averaging $(\mathbf k\cdot\mathbf u)^2$ over directions gives a factor $k^2/3$.
+
+\paragraph{Projection.} With radial window $W(\chi)=\exp[-(\chi-R_c)^2/2w^2]$ (shell centre $R_c$, width $w$), the exact projection is
+\begin{equation}
+C_\ell=\frac{2}{\pi}\int k^2dk\,P(k)\Big|\int d\chi\,W(\chi)K(\chi)j_\ell(k\chi)\Big|^2 ,
+\end{equation}
+with $j_\ell$ the spherical Bessel function. For a shell thin compared to its radius, $j_\ell(k\chi)$ peaks at $k\chi\approx\ell+\tfrac12$ (Limber):
+\begin{equation}\begin{split}
+D_\ell=&\frac{\ell(\ell+1)T_0^2}{2\pi}\!\int\!d\chi\\
+&\times\frac{[K_MW]^2}{\chi^2}\frac{k^2}{3}P_\Phi(k)\Big|_{k=\frac{\ell+1/2}{\chi}},
+\end{split}\end{equation}
+with $D_\ell\equiv\ell(\ell+1)C_\ell/2\pi$ in $\mu$K$^2$. A length $r$ on the shell maps to $\Delta\ell\approx2\pi R_c/r$.
+
+\paragraph{Fitted $P_\delta$ and $W$.} The source spectrum is
+\begin{equation}\begin{split}
+P_\delta=&10^{\lg A}k^{n}e^{-(k/k_D)^2}\big[1+A_w\cos(kr_s+\phi)\\
+&+Be^{-k/k_B}\cos(kr_2+\phi_2)\big],
+\end{split}\end{equation}
+$k$ in Gpc$^{-1}$, amplitude in code units. Fitted values ($r_2$ free, \texttt{acoustic\_half\_fixed.json}): $\lg A=-8.282$, $n=-0.183$, $A_w=0.311$, $r_s=79.5$\,Mpc, $\phi=1.367$, $k_D=335$\,Gpc$^{-1}$, $B=0.815$, $k_B=138$\,Gpc$^{-1}$, $r_2=42.1$\,Mpc, $\phi_2=3.640$; window $R_c=3.5715$, $w=0.3355$\,Gpc (Fig.~\ref{fig:pdelta}). The physical normalisation $4\pi G\rho$ is absorbed into $A$.
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.28\textheight}{fig/d3_stoch.png}
+\captionof{figure}{Fitted stochastic source spectrum split into its terms (left) and radial window $W(\chi)$ (right).}
+\label{fig:pdelta}\end{center}
+\begin{multicols}{2}
+
+\paragraph{Cosmic variance and a single sky.} Each $C_\ell$ estimated from one sky has $2\ell+1$ modes, so $\Delta C_\ell/C_\ell=\sqrt{2/(2\ell+1)}$; this is the red/blue $\pm1\sigma$ band. The jagged line is one realisation of $a_{\ell m}$ drawn from the model.
+
+\paragraph{Feature size.} The $\ell\approx220$ hump corresponds to $\theta=180^\circ/220=0.818^\circ$, i.e.\ a physical size $R\theta$ of 57.1, 114.2, 199.9\,Mpc at $R=4$, 8, 14\,Gpc (52--63, 105--126, 183--220\,Mpc for $\ell$ 240--200). For comparison, generic literature ranges: voids 10--100\,Mpc (supervoids up to $\sim$300), superclusters $\sim$100--200\,Mpc, BAO 147\,Mpc.
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.35\textheight}{fig/f17.png}
+\captionof{figure}{Low multipoles (linear axes): $\Lambda$CDM (black), Planck (grey), CoE one-sky realisation (red, real values) in the $\pm1\sigma$ cosmic-variance band with faint ensemble mean. Bottom: full spectrum.}
+\label{fig:low}\end{center}
+\begin{multicols}{2}
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.3\textheight}{fig/f14.png}
+\captionof{figure}{Parameter degeneracies. Left: radial position vs amplitude ($\Delta\chi^2=2.3,6.2,11.8$ contours, i.e.\ 1, 2, 3$\sigma$ for two parameters): a farther shell needs more amplitude, giving an extended valley. Right: spectral slope vs amplitude at the chosen window. Degeneracies mean individual parameters are less well constrained than the combination.}
+\label{fig:deg}\end{center}
+\begin{multicols}{2}
+
+\section{Acoustic fit and residual decomposition}
+\paragraph{Acoustic source.} To produce peaks, the source spectrum gets an oscillation at scale $r_s$:
+\begin{equation}
+P_\delta=P_0k^n[1+A\cos(kr_s+\varphi)]e^{-(k/k_D)^2}.
+\end{equation}
+Through $\Delta\ell=2\pi R_c/r_s$ this gives evenly spaced peaks. ``free\_W'' lets $R_c,w$ float. Result: $r_s=81.9$\,Mpc, $R_c=3.944$\,Gpc, $\chi^2_{2-2500}=11{,}772$ (Planck errors), Pearson $r^2=0.871$; $\Lambda$CDM: 2{,}558, 0.983. Peaks: CoE 227, 530, 831, 1131, 1431 vs Planck 224, 535, 821, 1122, 1412 (Fig.~\ref{fig:ac}).
+
+\paragraph{Residuals.} Define $\epsilon_\ell=(D^{\rm Planck}_\ell-D^{\rm CoE}_\ell)/\sigma_\ell$. Two decompositions:
+with $s_j(\ell)=\sin(2\pi j\ell/\Delta\ell+\phi_j)$:
+\begin{align}
+\text{undamped: }&\epsilon_\ell=\textstyle\sum_j a_j s_j(\ell),\\
+\text{damped: }&\epsilon_\ell=e^{-\ell/L}\textstyle\sum_j a_j s_j(\ell).
+\end{align}
+Undamped plateaus at Pearson $r^2=0.551$. Damped with 1--9 harmonics: $r^2=$ 0.797, 0.813, 0.831, 0.834, 0.835, 0.836, 0.836, 0.837, 0.837; fundamental $\Delta\ell\approx593$ (34.6$\sigma$), $L\approx990$; starting amplitudes ($\sigma$) 34.6, 5.6, 5.7, 2.2, 1.3, 1.0, 1.2, 0.4, 0.5. Late troughs at $\ell\sim1400$, 2000 are missed because the shared envelope has decayed.
+
+\paragraph{Mapping to $k$.} With $R\approx3.94$\,Gpc: $r_2=2\pi R/593\approx42$\,Mpc $\approx r_s/2$, which modulates alternate peaks (odd/even alternation), and $k_B=L/R\approx0.25$\,Mpc$^{-1}$ as the envelope scale (starting value).
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.3\textheight}{fig/f15.png}
+\captionof{figure}{Acoustic-feature stochastic field, $R=4$\,Gpc, free\_W: model peaks [227, 530, 831, 1131, 1431] vs Planck [224, 535, 821, 1122, 1412]; red band $\pm1\sigma$ cosmic variance, black $\Lambda$CDM.}
+\label{fig:ac}\end{center}
+\begin{multicols}{2}
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.4\textheight}{fig/f18.png}
+\captionof{figure}{Damped-harmonic fits to $\epsilon_\ell$ with 7, 8, 9 harmonics ($\Delta\ell=593$, $L=990$), and Pearson $r^2$ versus number of harmonics (bottom), rising from 0.797 to 0.837.}
+\label{fig:damp}\end{center}
+\begin{multicols}{2}
+
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.3\textheight}{fig/f03.png}
+\captionof{figure}{Acoustic free\_W ladder (exact-limber corrected, one realisation per panel; Planck peaks 224, 535, 821, 1122, 1412). Panels: $R=4$, 5, 6\,Gpc with shell at 3.944, 4.944, 5.944\,Gpc; model peaks [227, 530, 831, 1131, 1431], [284, 412, 663, 1042, 1417], [341, 419, 797, 1252, 1703] at fixed source parameters. The peak spacing is set by $r_s$ and $R_c$ jointly ($\Delta\ell\approx2\pi R_c/r_s$), so moving the shell without refitting $r_s$ shifts the peaks.}
+\label{fig:acl}\end{center}
+\begin{multicols}{2}
+
+
+
+\section{Damped half-scale model}
+\paragraph{Model.}
+\begin{equation}
+\begin{split}P_\delta=P_0k^n\big[&1+A\cos(kr_s+\varphi)\\&+Be^{-k/k_B}\cos(kr_2+\varphi_2)\big]e^{-(k/k_D)^2}.\end{split}
+\end{equation}
+The $B$ term is the minimal damped cosine (amplitude, decay, period, phase) suggested by the residuals. Free parameters (12): $P_0,n,A,r_s,\varphi,k_D,R_c,w,B,k_B,r_2,\varphi_2$; ``half'' variant ties $r_2=r_s/2$ (11). All are floated in one $\chi^2$ minimisation over $\ell=2$--2500.
+
+\paragraph{The $\ell=50$ discontinuity.} The code uses the exact projection (Eq.~6) for $\ell\le50$ and Limber (Eq.~7) above, multiplied by a correction $c_\ell=C^{\rm exact}_\ell/C^{\rm Limber}_\ell$. That ratio had been computed for the earlier, narrower shell; when the fit widened the shell it was not recomputed, producing a 43\% step at $\ell=50$. Fix: compute the exact/Limber ratio at 69 nodes ($\ell=50$--175 then every 40 to 2480), interpolate in $\log\ell$, apply at every $\ell>50$, and recompute after each fit pass. The $\ell$ 50$\to$51 change is now $\approx1.1\%$, the curve's natural slope.
+
+\paragraph{Results ($r_2$ free).} $\log_{10}P_0=-8.28$, $n=-0.183$, $A=0.311$, $r_s=79.5$\,Mpc, $\varphi=1.37$, $k_D=0.335$\,Mpc$^{-1}$, $R_c=3.572$\,Gpc, $w=0.336$\,Gpc, $B=0.815$, $k_B=0.138$\,Mpc$^{-1}$, $r_2=42.1$\,Mpc ($r_s/2=39.8$), $\varphi_2=3.64$.
+
+\end{multicols}
+\begin{center}\small
+\captionof{table}{Fit statistics (Planck errors). Pearson $r^2$ for $\ell$ 2--2500.}
+\begin{tabular}{lccc}\toprule
+Model & $\chi^2_{2-2500}$ & $r^2$ & $\chi^2_{2-30}$\\\midrule
+CoE $r_2$ free & 3{,}787 & 0.976 & 137\\
+CoE half ($r_2=r_s/2$) & 4{,}131 & 0.966 & 49.1\\
+CoE acoustic (no $B$) & 11{,}772 & 0.871 & --\\
+$\Lambda$CDM & 2{,}558 & 0.983 & 20.1\\\bottomrule
+\end{tabular}
+\vspace{4pt}
+\captionof{table}{Peaks: $\ell$ ($D_\ell$, $\mu$K$^2$).}
+\begin{tabular}{cccc}\toprule
+& Planck & CoE $r_2$ free & CoE half\\\midrule
+1&228 (5726)&218 (5927)&207 (5223)\\
+2&544 (2580)&531 (2449)&537 (2383)\\
+3&823 (2525)&813 (2466)&818 (2433)\\
+4&1121 (1239)&1130 (1293)&1132 (1260)\\
+5&1417 (814)&1420 (822)&1426 (861)\\\bottomrule
+\end{tabular}\end{center}
+\begin{multicols}{2}
+
+The odd/even alternation is absent from the new residual. Remaining structure: a slow wave with $\Delta\ell\approx1{,}384$ ($\pm8$--$11\sigma$); $\ell=2$--3 raised to $\approx3{,}300\,\mu$K$^2$ (off the top panel), which drives $\chi^2_{2-30}=137$.
+\end{multicols}
+\begin{center}
+\fig{\textwidth}{0.4\textheight}{fig/f01.png}
+\captionof{figure}{Final model: CoE acoustic field + damped half-scale term ($r_2$ free), exact projection, $R\approx4$\,Gpc. Top: low $\ell$ (linear). Bottom: full spectrum, $\Lambda$CDM black, Planck grey, CoE one-sky realisation red in its $\pm1\sigma$ band with faint mean. $\chi^2_{2-2500}=3{,}787$, Pearson $r^2=0.976$.}
+\label{fig:final}\end{center}
+\begin{multicols}{2}
+
+
+
+
+\section{Parameters and status}
+\end{multicols}
+\begin{center}\small
+\captionof{table}{Glossary.}
+\begin{tabular}{p{0.16\textwidth}p{0.6\textwidth}}\toprule
+$D$ & observer--CoE distance (58.2\,Gpc)\\
+$R$ & vision radius (4/8/14\,Gpc)\\
+$a_{\rm eq}$ & scale factor at equality (1/3400)\\
+$P_0,n$ & source amplitude, tilt\\
+$A,r_s,\varphi$ & acoustic amplitude, scale, phase\\
+$k_D$ & small-scale (diffusion) cutoff\\
+$R_c,w$ & shell centre and Gaussian width\\
+$B,k_B$ & damped-mode amplitude, decay\\
+$r_2,\varphi_2$ & damped-mode scale, phase\\
+$\Delta\ell,L$ & residual period, envelope\\
+$\chi^2$ & $\sum(D^{\rm P}-D^{\rm M})^2/\sigma^2$\\
+Pearson $r^2$ & squared correlation of $D^{\rm P}$, $D^{\rm M}$\\\bottomrule
+\end{tabular}\end{center}
+\begin{multicols}{2}
+
+\paragraph{Predicted vs fitted.} From the geometry: the two-hump Migkas shape and ring placement given $D$, mass and density law (those three fitted). From the stochastic field: the spectrum shape follows from Eqs.~(6)--(7) once the 12 source/shell parameters are fitted. Inverse-problem targets: the data require a second, damped mode at $r_2\approx42$\,Mpc $\approx r_s/2$ decaying at $k_B\approx0.14$\,Mpc$^{-1}$; a physical shell model must supply this.
+
+\paragraph{Next steps.} (1) Careful numerics: exact projection throughout, low-$\ell$ control in the $r_2$-free fit, the $\Delta\ell\approx1{,}384$ wave. (2) Analytic thin-shell projection: with $W$ narrow, $C_\ell\approx P(k_\ell)/R_c^2$ times a window transform, to see which of the 12 parameters the geometry fixes (e.g.\ whether $r_s$ and $r_2=r_s/2$ follow from the shell itself). (3) $D(t)$ from the Newtonian integrator instead of an assumed power law.
+\end{multicols}
+\end{document}

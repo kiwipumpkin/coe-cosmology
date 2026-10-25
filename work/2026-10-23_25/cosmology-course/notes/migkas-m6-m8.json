@@ -1,0 +1,125 @@
+{
+ "geometry": {
+  "D_Gpc": 58.19699837268826,
+  "l0_deg": 15.1629523788697,
+  "mcc": 0.0017121308626185587,
+  "Rin_Gpc": 0.499774693006799,
+  "Rout_Gpc": 72.83442650308822,
+  "kin": 4.034634647911553,
+  "kout": 1.0235618098210888,
+  "Omega_s": 0.049,
+  "R_Gpc": 14.30048287260589,
+  "source": "exact wls_fit in migkas-geometry-fit.json (the quoted 58.2 Gpc, 15.2 deg, 0.00171, 0.50, 72.8)"
+ },
+ "weights": "sigma=(A_err_low+A_err_high)/2, w=1/sigma^2, chi2=sum((model-data)/sigma)^2",
+ "R2": "unweighted: 1-SS_res/SS_tot about the unweighted mean; weighted: same with w, about the weighted mean. Same definitions as migkas-geometry-fit.py",
+ "modulation": "1 + a_m cos(m*ell) + b_m sin(m*ell), ell galactic longitude in radians (zero at the same ell=0 as the geometry curve). Equivalent: 1 + C cos(m*ell - psi) with C=hypot(a,b), psi=atan2(b,a); and the paper sine 1 - Amp sin(m*ell + phi) with Amp=-C and phi=atan2(a,b). Angles stored in degrees.",
+ "n_bins": 71,
+ "cases": {
+  "geometry": {
+   "free_parameters": 0,
+   "note": "frozen WLS geometry; 5 geometry parameters not free here",
+   "R2_unweighted": 0.5456268309812682,
+   "R2_weighted": 0.5807290671992491,
+   "chi2": 18.746525652958397,
+   "n_bins": 71
+  },
+  "geometry_x_m6": {
+   "free_parameters": 2,
+   "coefficients": {
+    "6": {
+     "a": -0.004454205788584068,
+     "b": 0.003976291594656267,
+     "C": 0.0059708327771584675,
+     "psi_deg": 138.24455239792212,
+     "Amp": -0.0059708327771584675,
+     "phi_deg": 311.7554476020779
+    }
+   },
+   "R2_unweighted": 0.5457847445268638,
+   "R2_weighted": 0.5839814393010552,
+   "chi2": 18.601104942220864,
+   "n_bins": 71
+  },
+  "geometry_x_m8": {
+   "free_parameters": 2,
+   "coefficients": {
+    "8": {
+     "a": 0.0001087501711102509,
+     "b": -0.00013472635950012595,
+     "C": 0.0001731409589342338,
+     "psi_deg": -51.08977493742445,
+     "Amp": -0.0001731409589342338,
+     "phi_deg": 141.08977493742447
+    }
+   },
+   "R2_unweighted": 0.545604746501867,
+   "R2_weighted": 0.5807318966213935,
+   "chi2": 18.7463991432706,
+   "n_bins": 71
+  },
+  "geometry_x_m6_m8": {
+   "free_parameters": 4,
+   "coefficients": {
+    "6": {
+     "a": -0.004522604085628355,
+     "b": 0.003975756966900308,
+     "C": 0.006021676774387564,
+     "psi_deg": 138.6817563495312,
+     "Amp": -0.006021676774387564,
+     "phi_deg": 311.3182436504688
+    },
+    "8": {
+     "a": -0.00031781131458513733,
+     "b": 0.0003405132316480245,
+     "C": 0.00046578245201565324,
+     "psi_deg": 133.02497291898035,
+     "Amp": -0.00046578245201565324,
+     "phi_deg": 316.9750270810197
+    }
+   },
+   "R2_unweighted": 0.5457886633104638,
+   "R2_weighted": 0.584001498893539,
+   "chi2": 18.60020803371692,
+   "n_bins": 71
+  },
+  "geometry_x_fixed_dipole": {
+   "free_parameters": 0,
+   "note": "Amp=-0.06 and phi=11.5 deg held fixed (previously plotted paper dipole), not refit on these bins",
+   "Amp": -0.06,
+   "phi_deg": 11.5,
+   "convention": "1 - Amp * sin(ell_rad + phi_rad)",
+   "R2_unweighted": 0.8211011729074769,
+   "R2_weighted": 0.8381063653894668,
+   "chi2": 7.238620512048049,
+   "n_bins": 71
+  },
+  "geometry_x_fixed_dipole_x_m6_m8": {
+   "free_parameters": 4,
+   "note": "dipole held fixed; a6,b6,a8,b8 fit on top",
+   "coefficients": {
+    "6": {
+     "a": -0.00640996514423087,
+     "b": -0.0007317570266718637,
+     "C": 0.0064515983675627496,
+     "psi_deg": -173.4873489185329,
+     "Amp": -0.0064515983675627496,
+     "phi_deg": 263.48734891853286
+    },
+    "8": {
+     "a": 0.0037301729312949738,
+     "b": 0.00448186105614163,
+     "C": 0.005831060677434655,
+     "psi_deg": 50.22999208440081,
+     "Amp": -0.005831060677434655,
+     "phi_deg": 39.770007915599194
+    }
+   },
+   "R2_unweighted": 0.8282966408333889,
+   "R2_weighted": 0.8452290666804365,
+   "chi2": 6.920148869910672,
+   "n_bins": 71
+  }
+ },
+ "diagnostics_not_proofs": true
+}

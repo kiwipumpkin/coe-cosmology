@@ -1,0 +1,19 @@
+\documentclass[border=12pt,varwidth=17cm]{standalone}
+\usepackage{booktabs,amsmath}
+\renewcommand{\arraystretch}{1.35}
+\begin{document}\Large
+\textbf{Local vs global $\sigma$ (Migkas $A/A_{\mathrm{all}}$, $\chi^2_{\text{null}}=45.14$)}\\[6pt]
+\begin{tabular}{p{9.5cm}ccc}
+\toprule
+Model & $R^2$ & Local $\sigma$ & Global $\sigma$\\
+\midrule
+Point mass at CoE & 0.521 & 4.4 & 4.1\\
+Exponential, $L$ free & 0.759 & 5.3 & 5.1\\
+Exponential, CatWISE 3\% lock & 0.716 & 5.4 & 5.1\\
+Soft core $1/(1+(r/L)^{0.3})$, lock & 0.743 & 5.4 & 5.1\\
+Exponential (lock) + rotation \& phase & 0.845 & 5.5 & 5.3\\
+Soft core + rotation \& phase & 0.870 & 5.4 & 5.1\\
+\bottomrule
+\end{tabular}\\[6pt]
+\normalsize Local: axis angle $\ell_0$ taken as given. Global: $\ell_0$ counted as one fitted parameter.
+\end{document}

@@ -1,0 +1,69 @@
+{
+ "Rrec": 1.0,
+ "Urec": 3.0,
+ "mu": 1.0,
+ "tstar": 2.0,
+ "D": 6.536831698963421,
+ "U_now": 2.7029536842165736,
+ "cap_deg": 8.799621591820959,
+ "rows": [
+  {
+   "theta": 0.0,
+   "hit": false
+  },
+  {
+   "theta": 30.0,
+   "hit": false
+  },
+  {
+   "theta": 60.0,
+   "hit": false
+  },
+  {
+   "theta": 90.0,
+   "hit": false
+  },
+  {
+   "theta": 120.0,
+   "hit": false
+  },
+  {
+   "theta": 150.0,
+   "hit": false
+  },
+  {
+   "theta": 180.0,
+   "hit": true,
+   "path": 5.536831698963421,
+   "t_e": -3.5368316989634208,
+   "emit_xy": [
+    1.0,
+    6.780663217553155e-16
+   ],
+   "alpha_CoE": 3.885033846653929e-14,
+   "beyond_CoE": false,
+   "elem_now_r": null,
+   "photon_crosses_plasma": false
+  },
+  {
+   "theta": 210.0,
+   "hit": false
+  },
+  {
+   "theta": 240.0,
+   "hit": false
+  },
+  {
+   "theta": 270.0,
+   "hit": false
+  },
+  {
+   "theta": 300.0,
+   "hit": false
+  },
+  {
+   "theta": 330.0,
+   "hit": false
+  }
+ ]
+}

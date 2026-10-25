@@ -1,0 +1,35 @@
+{
+ "N0 Newtonian baseline (static profile, 14.3 Gpc sphere)": {
+  "along_over_across": 1.172991191476109,
+  "orientation": "along",
+  "R2_ns_l0fixed": -0.7341888225187474,
+  "R2_s_l0fixed": 0.9087565091919895,
+  "R2_ns_l0free": 0.2658374233265788,
+  "l0_ns": 206.0,
+  "R2_s_l0free": 0.908726428806206,
+  "l0_s": 13.0,
+  "age_Gyr": 13.831397844401673
+ },
+ "N1 co-moving profile only": {
+  "along_over_across": 0.9753782748624827,
+  "orientation": "across",
+  "R2_ns_l0fixed": -42.282649018164776,
+  "R2_s_l0fixed": -41.57896864890044,
+  "R2_ns_l0free": -27.91460472594493,
+  "l0_ns": 240.0,
+  "R2_s_l0free": -27.86789664004688,
+  "l0_s": 240.0,
+  "age_Gyr": 14.161676616658276
+ },
+ "N2 static profile, 0.43 Gpc sphere (~z=0.1)": {
+  "along_over_across": 1.1703986914698437,
+  "orientation": "along",
+  "R2_ns_l0fixed": 0.5200482264671584,
+  "R2_s_l0fixed": 0.8059125695165732,
+  "R2_ns_l0free": 0.5314726728568181,
+  "l0_ns": 195.0,
+  "R2_s_l0free": 0.8094214500797068,
+  "l0_s": 15.0,
+  "age_Gyr": 13.831397844401673
+ }
+}

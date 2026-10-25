@@ -1,0 +1,130 @@
+{
+ "own crossing, no mass": {
+  "None": {
+   "range_over_Planck": 135.96109856507795,
+   "leftover_over_Planck": 2.418344990606456,
+   "range_change_over_Planck": 0.0,
+   "leftover_change_over_Planck": 0.0
+  },
+  "0": {
+   "range_over_Planck": 134.97955427082326,
+   "leftover_over_Planck": 2.8964246884271594,
+   "range_change_over_Planck": -0.9815442942546895,
+   "leftover_change_over_Planck": 0.4780796978207036
+  },
+  "90": {
+   "range_over_Planck": 135.96463566492767,
+   "leftover_over_Planck": 2.84227366974438,
+   "range_change_over_Planck": 0.0035370998497228356,
+   "leftover_change_over_Planck": 0.4239286791379242
+  },
+  "180": {
+   "range_over_Planck": 136.94306058240787,
+   "leftover_over_Planck": 2.2396774990836437,
+   "range_change_over_Planck": 0.98196201732992,
+   "leftover_change_over_Planck": -0.17866749152281214
+  },
+  "270": {
+   "range_over_Planck": 135.96463566492767,
+   "leftover_over_Planck": 2.842273669744364,
+   "range_change_over_Planck": 0.0035370998497228356,
+   "leftover_change_over_Planck": 0.4239286791379082
+  }
+ },
+ "own crossing, distributed, normalisation b (Migkas-fitted)": {
+  "None": {
+   "range_over_Planck": 85.59350539063848,
+   "leftover_over_Planck": 1.368898489690932,
+   "range_change_over_Planck": 0.0,
+   "leftover_change_over_Planck": 0.0
+  },
+  "0": {
+   "range_over_Planck": 84.62119204243776,
+   "leftover_over_Planck": 1.8716512040440265,
+   "range_change_over_Planck": -0.9723133482007285,
+   "leftover_change_over_Planck": 0.5027527143530945
+  },
+  "90": {
+   "range_over_Planck": 85.59937425067787,
+   "leftover_over_Planck": 1.9045082886369937,
+   "range_change_over_Planck": 0.0058688600393850265,
+   "leftover_change_over_Planck": 0.5356097989460618
+  },
+  "180": {
+   "range_over_Planck": 86.56608061278627,
+   "leftover_over_Planck": 1.106832267806772,
+   "range_change_over_Planck": 0.9725752221477819,
+   "leftover_change_over_Planck": -0.26206622188416007
+  },
+  "270": {
+   "range_over_Planck": 85.59937425067787,
+   "leftover_over_Planck": 1.9045082886369216,
+   "range_change_over_Planck": 0.0058688600393850265,
+   "leftover_change_over_Planck": 0.5356097989459896
+  }
+ },
+ "simultaneous, no mass": {
+  "None": {
+   "range_over_Planck": 3.2351774957860074e-06,
+   "leftover_over_Planck": 3.921914615412775e-06,
+   "range_change_over_Planck": 0.0,
+   "leftover_change_over_Planck": 0.0
+  },
+  "0": {
+   "range_over_Planck": 0.9700075812419495,
+   "leftover_over_Planck": 0.970006807791085,
+   "range_change_over_Planck": 0.9700043460644537,
+   "leftover_change_over_Planck": 0.9700028858764695
+  },
+  "90": {
+   "range_over_Planck": 0.9700076359777214,
+   "leftover_over_Planck": 0.9700076359777214,
+   "range_change_over_Planck": 0.9700044008002257,
+   "leftover_change_over_Planck": 0.970003714063106
+  },
+  "180": {
+   "range_over_Planck": 0.9700076926077279,
+   "leftover_over_Planck": 0.9700084660585925,
+   "range_change_over_Planck": 0.9700044574302321,
+   "leftover_change_over_Planck": 0.9700045441439771
+  },
+  "270": {
+   "range_over_Planck": 0.9700076359776778,
+   "leftover_over_Planck": 0.9700076359776778,
+   "range_change_over_Planck": 0.970004400800182,
+   "leftover_change_over_Planck": 0.9700037140630624
+  }
+ },
+ "simultaneous, distributed, normalisation b": {
+  "None": {
+   "range_over_Planck": 3.539041017090472,
+   "leftover_over_Planck": 3.4378597527142496,
+   "range_change_over_Planck": 0.0,
+   "leftover_change_over_Planck": 0.0
+  },
+  "0": {
+   "range_over_Planck": 3.611342689942735,
+   "leftover_over_Planck": 3.926222682329279,
+   "range_change_over_Planck": 0.07230167285226319,
+   "leftover_change_over_Planck": 0.48836292961502936
+  },
+  "90": {
+   "range_over_Planck": 4.042696325036742,
+   "leftover_over_Planck": 3.9400265905729577,
+   "range_change_over_Planck": 0.50365530794627,
+   "leftover_change_over_Planck": 0.5021668378587081
+  },
+  "180": {
+   "range_over_Planck": 4.072901706771111,
+   "leftover_over_Planck": 3.7289137838227138,
+   "range_change_over_Planck": 0.533860689680639,
+   "leftover_change_over_Planck": 0.2910540311084642
+  },
+  "270": {
+   "range_over_Planck": 4.042696325036742,
+   "leftover_over_Planck": 3.940026590572957,
+   "range_change_over_Planck": 0.50365530794627,
+   "leftover_change_over_Planck": 0.5021668378587072
+  }
+ }
+}

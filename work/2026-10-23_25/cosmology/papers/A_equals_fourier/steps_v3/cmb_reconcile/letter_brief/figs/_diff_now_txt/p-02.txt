@@ -1,0 +1,31 @@
+Figure 1 (continued). Panels (b)–(c): Hubble-bubble scale with US mid-shell, and the cosmic shell scale with the core
+rs ring.
+
+2.2   Fitting procedure
+The analysis proceeds in five steps.
+
+  1. Compare Migkas A/Aall versus Galactic longitude ℓ (their Fig. 6; our Fig. 2), and fit by redshift slice (our
+     Fig. 3), with orientation against Migkas Fig. 8.
+  2. Fit a CoE plus thick shell in both Newtonian gravity and relativistic LTB[4, 5, 6].
+  3. Orient the model on the Galactic sky: untilted, then +15◦ tilt, then a radial gradient, then an +80.8◦
+     roll about the CoE axis, matching Migkas Fig. 8.
+  4. Evolve the donut-universe picture—shells expanding outward faster than light in a coordinate sense, while
+     the sphere of events visible to us grows at c, with recombination as a spherical surface of fixed physical
+     radius around the CoE.
+  5. Stress-test the CMB: compute the gravitational multipole on the last-scattering sky, form the kill function
+     (the electromagnetic temperature multipole opposite in sign to that gravitational multipole), and compare
+     exploratory two-emitter and multipole-partner constructions.
+
+                          Table 1: Newtonian and relativistic shell+core fits to Migkas A(ℓ).
+                                       Newt. Ωs free   Newt. Ωs = 0.049    Rel. LTB Ωs = 0.049
+                      D (Gpc)              93.7               49.2                  32.9
+                      Ωs                   1.01               0.049                0.049
+                      l0 (deg)             12.8               13.0                 13.5
+                      R2 vs Migkas         0.909              0.893                0.885
+                      R2 vs AF             0.987              0.977                0.963
+
+
+
+
+                                                          2
+

@@ -1,0 +1,1148 @@
+{
+ "eta_back_gtc": {
+  "tag": "eta_back_gtc",
+  "counts": {
+   "c_no_solution:integrator_stop": 60
+  },
+  "Uo_global_c": 1.000000035304858,
+  "U_rel_local_flow_c": 0.0,
+  "chi2": 14.619114957917072,
+  "sigma": 3.786825482983977
+ },
+ "eta_back_le": {
+  "tag": "eta_back_le",
+  "counts": {
+   "outer_surface": 37,
+   "a_core_surface": 6,
+   "b_lensed_behind_core": 16,
+   "c_no_solution:integrator_stop": 1
+  },
+  "Uo_global_c": 0.28841612710514175,
+  "U_rel_local_flow_c": 0.0,
+  "T_obs_K": [
+   1375.5562829907813,
+   2469.3614734537173
+  ],
+  "core_vs_outer_T_ratio": 0.7779075193043552,
+  "t_e_Gyr": [
+   7.12727632399109,
+   12.463664455577922
+  ],
+  "flight_Gyr": [
+   2.120160091687239,
+   7.456548223274069
+  ],
+  "near180": [
+   [
+    150.0,
+    "b_lensed_behind_core",
+    1502.80285
+   ],
+   [
+    156.0,
+    "b_lensed_behind_core",
+    1438.83864
+   ],
+   [
+    162.0,
+    "b_lensed_behind_core",
+    1437.01722
+   ],
+   [
+    168.0,
+    "b_lensed_behind_core",
+    1409.58655
+   ],
+   [
+    174.0,
+    "b_lensed_behind_core",
+    1378.94558
+   ],
+   [
+    180.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    186.0,
+    "b_lensed_behind_core",
+    1403.39849
+   ],
+   [
+    192.0,
+    "b_lensed_behind_core",
+    1375.55628
+   ],
+   [
+    198.0,
+    "b_lensed_behind_core",
+    1419.8214
+   ],
+   [
+    204.0,
+    "b_lensed_behind_core",
+    1466.0415
+   ],
+   [
+    210.0,
+    "b_lensed_behind_core",
+    1464.79118
+   ]
+  ],
+  "chi2": 10.01082450116204,
+  "sigma": 4.252037806482572
+ },
+ "eta_fwd_gtc": {
+  "tag": "eta_fwd_gtc",
+  "counts": {
+   "outer_surface": 31,
+   "a_core_surface": 16,
+   "c_no_solution:integrator_stop": 13
+  },
+  "Uo_global_c": 4.175586029952057,
+  "U_rel_local_flow_c": 0.0,
+  "T_obs_K": [
+   0.009759549859098438,
+   0.11970376645610488
+  ],
+  "core_vs_outer_T_ratio": 3.6625220458266465,
+  "t_e_Gyr": [
+   0.00044813978662182623,
+   0.000768771203098571
+  ],
+  "flight_Gyr": [
+   13.961146174351907,
+   13.961466805768385
+  ],
+  "near180": [
+   [
+    150.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    156.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    162.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    168.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    174.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    180.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    186.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    192.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    198.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    204.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    210.0,
+    "c_no_solution:integrator_stop",
+    null
+   ]
+  ],
+  "chi2": 14.512266088446093,
+  "sigma": 3.798064071377089
+ },
+ "eta_fwd_le": {
+  "tag": "eta_fwd_le",
+  "counts": {
+   "outer_surface": 31,
+   "a_core_surface": 10,
+   "b_lensed_behind_core": 16,
+   "c_no_solution:integrator_stop": 3
+  },
+  "Uo_global_c": 0.585447645302494,
+  "U_rel_local_flow_c": 0.0,
+  "T_obs_K": [
+   91.57975031497215,
+   304.72526463494427
+  ],
+  "core_vs_outer_T_ratio": 0.6791134482447004,
+  "t_e_Gyr": [
+   0.4346205661343805,
+   1.4962362555536406
+  ],
+  "flight_Gyr": [
+   12.962408929600123,
+   14.024024619019382
+  ],
+  "near180": [
+   [
+    150.0,
+    "b_lensed_behind_core",
+    111.71334
+   ],
+   [
+    156.0,
+    "b_lensed_behind_core",
+    99.01115
+   ],
+   [
+    162.0,
+    "b_lensed_behind_core",
+    103.70901
+   ],
+   [
+    168.0,
+    "b_lensed_behind_core",
+    99.03571
+   ],
+   [
+    174.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    180.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    186.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    192.0,
+    "b_lensed_behind_core",
+    97.55852
+   ],
+   [
+    198.0,
+    "b_lensed_behind_core",
+    104.37341
+   ],
+   [
+    204.0,
+    "b_lensed_behind_core",
+    99.92541
+   ],
+   [
+    210.0,
+    "b_lensed_behind_core",
+    93.16908
+   ]
+  ],
+  "chi2": 19.96173029983821,
+  "sigma": 3.1919894026520907
+ },
+ "exp_back_gtc": {
+  "tag": "exp_back_gtc",
+  "counts": {
+   "outer_surface": 31,
+   "a_core_surface": 16,
+   "b_lensed_behind_core": 13
+  },
+  "Uo_global_c": 1.0000000002482206,
+  "U_rel_local_flow_c": 0.0,
+  "T_obs_K": [
+   336.16586088016027,
+   479.6041328401573
+  ],
+  "core_vs_outer_T_ratio": 1.2425223417262097,
+  "t_e_Gyr": [
+   2.554414187035961,
+   6.1377748366162495
+  ],
+  "flight_Gyr": [
+   8.681613506992983,
+   12.26497415657327
+  ],
+  "near180": [
+   [
+    150.0,
+    "b_lensed_behind_core",
+    479.60413
+   ],
+   [
+    156.0,
+    "b_lensed_behind_core",
+    478.09568
+   ],
+   [
+    162.0,
+    "b_lensed_behind_core",
+    475.38195
+   ],
+   [
+    168.0,
+    "b_lensed_behind_core",
+    472.47565
+   ],
+   [
+    174.0,
+    "b_lensed_behind_core",
+    470.31184
+   ],
+   [
+    180.0,
+    "b_lensed_behind_core",
+    466.33957
+   ],
+   [
+    186.0,
+    "b_lensed_behind_core",
+    470.31185
+   ],
+   [
+    192.0,
+    "b_lensed_behind_core",
+    472.47566
+   ],
+   [
+    198.0,
+    "b_lensed_behind_core",
+    475.38194
+   ],
+   [
+    204.0,
+    "b_lensed_behind_core",
+    478.09567
+   ],
+   [
+    210.0,
+    "b_lensed_behind_core",
+    479.60413
+   ]
+  ],
+  "raw": {
+   "cancel": -161.1,
+   "res_1e5": 15015.469,
+   "m1": 0.18493137626442918,
+   "m2": 0.0045460056850680506
+  },
+  "nodip": {
+   "cancel": 17.5,
+   "res_1e5": 4744.641,
+   "m1": 0.00018448525333783651,
+   "m2": 0.01173470630383015
+  },
+  "chi2": 14.619114230134283,
+  "sigma": 4.002545962271013
+ },
+ "exp_back_le": {
+  "tag": "exp_back_le",
+  "counts": {
+   "outer_surface": 39,
+   "b_lensed_behind_core": 21
+  },
+  "Uo_global_c": 0.2840633296538337,
+  "U_rel_local_flow_c": 0.0,
+  "T_obs_K": [
+   368.0023359500624,
+   483.1627558707638
+  ],
+  "t_e_Gyr": [
+   5.912869511492056,
+   7.078558431867774
+  ],
+  "flight_Gyr": [
+   7.7815498269397265,
+   8.947238747315446
+  ],
+  "near180": [
+   [
+    150.0,
+    "b_lensed_behind_core",
+    474.38974
+   ],
+   [
+    156.0,
+    "b_lensed_behind_core",
+    477.63849
+   ],
+   [
+    162.0,
+    "b_lensed_behind_core",
+    480.20092
+   ],
+   [
+    168.0,
+    "b_lensed_behind_core",
+    482.04826
+   ],
+   [
+    174.0,
+    "b_lensed_behind_core",
+    483.16276
+   ],
+   [
+    180.0,
+    "b_lensed_behind_core",
+    482.3973
+   ],
+   [
+    186.0,
+    "b_lensed_behind_core",
+    483.16276
+   ],
+   [
+    192.0,
+    "b_lensed_behind_core",
+    482.04826
+   ],
+   [
+    198.0,
+    "b_lensed_behind_core",
+    480.20093
+   ],
+   [
+    204.0,
+    "b_lensed_behind_core",
+    477.63849
+   ],
+   [
+    210.0,
+    "b_lensed_behind_core",
+    474.38973
+   ]
+  ],
+  "raw": {
+   "cancel": -115.0,
+   "res_1e5": 12365.258,
+   "m1": 0.1368069807377748,
+   "m2": 0.00798298034211016
+  },
+  "nodip": {
+   "cancel": -3.7,
+   "res_1e5": 5964.205,
+   "m1": 8.489656511419715e-07,
+   "m2": 0.0033542844113111222
+  },
+  "chi2": 10.084374827453741,
+  "sigma": 4.454206100263475
+ },
+ "exp_fwd_gtc": {
+  "tag": "exp_fwd_gtc",
+  "counts": {
+   "outer_surface": 31,
+   "a_core_surface": 20,
+   "c_no_solution:integrator_stop": 9
+  },
+  "Uo_global_c": 29.448930020685395,
+  "U_rel_local_flow_c": 0.0,
+  "T_obs_K": [
+   3.254912442602087,
+   79.03497514702025
+  ],
+  "core_vs_outer_T_ratio": 0.29594059265991407,
+  "t_e_Gyr": [
+   0.007768193651788466,
+   0.36959824320179757
+  ],
+  "flight_Gyr": [
+   13.531065819858934,
+   13.892895869408942
+  ],
+  "near180": [
+   [
+    150.0,
+    "a_core_surface",
+    3.47715
+   ],
+   [
+    156.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    162.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    168.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    174.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    180.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    186.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    192.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    198.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    204.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    210.0,
+    "a_core_surface",
+    3.25491
+   ]
+  ],
+  "chi2": 14.474918359786168,
+  "sigma": 4.0174880104822694
+ },
+ "exp_fwd_le": {
+  "tag": "exp_fwd_le",
+  "counts": {
+   "outer_surface": 37,
+   "a_core_surface": 2,
+   "b_lensed_behind_core": 18,
+   "c_no_solution:integrator_stop": 3
+  },
+  "Uo_global_c": 0.45008684432393997,
+  "U_rel_local_flow_c": 0.0,
+  "T_obs_K": [
+   31.493936601862284,
+   80.66650986991499
+  ],
+  "core_vs_outer_T_ratio": 0.6885001856717216,
+  "t_e_Gyr": [
+   0.14250722175758815,
+   0.38747923947510454
+  ],
+  "flight_Gyr": [
+   13.709116686267587,
+   13.954088703985102
+  ],
+  "near180": [
+   [
+    150.0,
+    "b_lensed_behind_core",
+    36.57553
+   ],
+   [
+    156.0,
+    "b_lensed_behind_core",
+    35.02628
+   ],
+   [
+    162.0,
+    "b_lensed_behind_core",
+    33.16411
+   ],
+   [
+    168.0,
+    "b_lensed_behind_core",
+    33.90433
+   ],
+   [
+    174.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    180.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    186.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    192.0,
+    "b_lensed_behind_core",
+    32.70461
+   ],
+   [
+    198.0,
+    "b_lensed_behind_core",
+    33.16411
+   ],
+   [
+    204.0,
+    "b_lensed_behind_core",
+    35.28897
+   ],
+   [
+    210.0,
+    "b_lensed_behind_core",
+    36.70438
+   ]
+  ],
+  "chi2": 14.057463318335715,
+  "sigma": 4.060516226264882
+ },
+ "pl_back_gtc": {
+  "tag": "pl_back_gtc",
+  "counts": {
+   "outer_surface": 31,
+   "a_core_surface": 16,
+   "b_lensed_behind_core": 13
+  },
+  "Uo_global_c": 1.0000000004710001,
+  "U_rel_local_flow_c": 0.0,
+  "T_obs_K": [
+   336.16696930820086,
+   479.6061272159686
+  ],
+  "core_vs_outer_T_ratio": 1.2425232596143747,
+  "t_e_Gyr": [
+   2.5552391888626986,
+   6.1377925715462505
+  ],
+  "flight_Gyr": [
+   8.681600614620727,
+   12.264153997304279
+  ],
+  "near180": [
+   [
+    150.0,
+    "b_lensed_behind_core",
+    479.60613
+   ],
+   [
+    156.0,
+    "b_lensed_behind_core",
+    478.09761
+   ],
+   [
+    162.0,
+    "b_lensed_behind_core",
+    475.38381
+   ],
+   [
+    168.0,
+    "b_lensed_behind_core",
+    472.47746
+   ],
+   [
+    174.0,
+    "b_lensed_behind_core",
+    470.3136
+   ],
+   [
+    180.0,
+    "b_lensed_behind_core",
+    465.94231
+   ],
+   [
+    186.0,
+    "b_lensed_behind_core",
+    470.3136
+   ],
+   [
+    192.0,
+    "b_lensed_behind_core",
+    472.47746
+   ],
+   [
+    198.0,
+    "b_lensed_behind_core",
+    475.3838
+   ],
+   [
+    204.0,
+    "b_lensed_behind_core",
+    478.09761
+   ],
+   [
+    210.0,
+    "b_lensed_behind_core",
+    479.60612
+   ]
+  ],
+  "raw": {
+   "cancel": -161.0,
+   "res_1e5": 15012.577,
+   "m1": 0.18490234593003646,
+   "m2": 0.004578651113191003
+  },
+  "nodip": {
+   "cancel": 17.5,
+   "res_1e5": 4742.985,
+   "m1": 0.0001856001908737722,
+   "m2": 0.01176240621520057
+  },
+  "chi2": 14.619114228886492,
+  "sigma": 3.7868255597441896
+ },
+ "pl_back_le": {
+  "tag": "pl_back_le",
+  "counts": {
+   "c_no_solution:integrator_stop": 60
+  },
+  "Uo_global_c": 0.24040314750211622,
+  "U_rel_local_flow_c": 0.0,
+  "chi2": 9.13553252909671,
+  "sigma": 4.336275872163642
+ },
+ "pl_fwd_gtc": {
+  "tag": "pl_fwd_gtc",
+  "counts": {
+   "outer_surface": 31,
+   "a_core_surface": 16,
+   "c_no_solution:integrator_stop": 13
+  },
+  "Uo_global_c": 3.815817290467505,
+  "U_rel_local_flow_c": 0.0,
+  "T_obs_K": [
+   0.00389933420594785,
+   0.007725442007651247
+  ],
+  "core_vs_outer_T_ratio": 1.3288002801558785,
+  "t_e_Gyr": [
+   0.00018144247666776762,
+   0.00024064044031712448
+  ],
+  "flight_Gyr": [
+   13.980117564376899,
+   13.980176762340548
+  ],
+  "near180": [
+   [
+    150.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    156.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    162.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    168.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    174.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    180.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    186.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    192.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    198.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    204.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    210.0,
+    "c_no_solution:integrator_stop",
+    null
+   ]
+  ],
+  "chi2": 14.546739828184618,
+  "sigma": 3.79444058603134
+ },
+ "pl_fwd_le": {
+  "tag": "pl_fwd_le",
+  "counts": {
+   "outer_surface": 37,
+   "a_core_surface": 2,
+   "b_lensed_behind_core": 18,
+   "c_no_solution:integrator_stop": 3
+  },
+  "Uo_global_c": 0.4444722202467005,
+  "U_rel_local_flow_c": 0.0,
+  "T_obs_K": [
+   0.0009473581941878455,
+   0.003912915402771883
+  ],
+  "core_vs_outer_T_ratio": 1.6807506892779258,
+  "t_e_Gyr": [
+   0.00036122292566860537,
+   0.00037103136745788586
+  ],
+  "flight_Gyr": [
+   14.326163171757209,
+   14.326172980198995
+  ],
+  "near180": [
+   [
+    150.0,
+    "b_lensed_behind_core",
+    0.00331
+   ],
+   [
+    156.0,
+    "b_lensed_behind_core",
+    0.00352
+   ],
+   [
+    162.0,
+    "b_lensed_behind_core",
+    0.00371
+   ],
+   [
+    168.0,
+    "b_lensed_behind_core",
+    0.00391
+   ],
+   [
+    174.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    180.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    186.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    192.0,
+    "b_lensed_behind_core",
+    0.00391
+   ],
+   [
+    198.0,
+    "b_lensed_behind_core",
+    0.00371
+   ],
+   [
+    204.0,
+    "b_lensed_behind_core",
+    0.00352
+   ],
+   [
+    210.0,
+    "b_lensed_behind_core",
+    0.00331
+   ]
+  ],
+  "chi2": 13.989213357784324,
+  "sigma": 3.852748457687136
+ },
+ "soft_back_gtc": {
+  "tag": "soft_back_gtc",
+  "counts": {
+   "outer_surface": 31,
+   "a_core_surface": 15,
+   "c_no_solution:integrator_stop": 11,
+   "b_lensed_behind_core": 3
+  },
+  "Uo_global_c": 1.000000035304858,
+  "U_rel_local_flow_c": 0.0,
+  "T_obs_K": [
+   470.30877221430075,
+   1272.887773848627
+  ],
+  "core_vs_outer_T_ratio": 0.6610187246856117,
+  "t_e_Gyr": [
+   2.566867825984196,
+   8.19220259498592
+  ],
+  "flight_Gyr": [
+   6.6270819504580665,
+   12.252416719459793
+  ],
+  "near180": [
+   [
+    150.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    156.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    162.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    168.0,
+    "b_lensed_behind_core",
+    472.47161
+   ],
+   [
+    174.0,
+    "b_lensed_behind_core",
+    470.30877
+   ],
+   [
+    180.0,
+    "a_core_surface",
+    1272.88777
+   ],
+   [
+    186.0,
+    "b_lensed_behind_core",
+    470.30878
+   ],
+   [
+    192.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    198.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    204.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    210.0,
+    "c_no_solution:integrator_stop",
+    null
+   ]
+  ],
+  "chi2": 14.619114957917072,
+  "sigma": 3.786825482983977
+ },
+ "soft_back_le": {
+  "tag": "soft_back_le",
+  "counts": {
+   "outer_surface": 39,
+   "b_lensed_behind_core": 21
+  },
+  "Uo_global_c": 0.2840633088410681,
+  "U_rel_local_flow_c": 0.0,
+  "T_obs_K": [
+   368.00360473814266,
+   483.16493989119664
+  ],
+  "t_e_Gyr": [
+   5.9128834979428815,
+   7.078577354959827
+  ],
+  "flight_Gyr": [
+   7.781535258101284,
+   8.94722911511823
+  ],
+  "near180": [
+   [
+    150.0,
+    "b_lensed_behind_core",
+    474.39185
+   ],
+   [
+    156.0,
+    "b_lensed_behind_core",
+    477.64062
+   ],
+   [
+    162.0,
+    "b_lensed_behind_core",
+    480.2031
+   ],
+   [
+    168.0,
+    "b_lensed_behind_core",
+    482.05043
+   ],
+   [
+    174.0,
+    "b_lensed_behind_core",
+    483.16494
+   ],
+   [
+    180.0,
+    "b_lensed_behind_core",
+    482.39948
+   ],
+   [
+    186.0,
+    "b_lensed_behind_core",
+    483.16494
+   ],
+   [
+    192.0,
+    "b_lensed_behind_core",
+    482.05043
+   ],
+   [
+    198.0,
+    "b_lensed_behind_core",
+    480.20309
+   ],
+   [
+    204.0,
+    "b_lensed_behind_core",
+    477.64063
+   ],
+   [
+    210.0,
+    "b_lensed_behind_core",
+    474.39186
+   ]
+  ],
+  "raw": {
+   "cancel": -115.0,
+   "res_1e5": 12365.293,
+   "m1": 0.13680751222105295,
+   "m2": 0.00798301676403412
+  },
+  "nodip": {
+   "cancel": -3.7,
+   "res_1e5": 5964.205,
+   "m1": 8.48976947523944e-07,
+   "m2": 0.0033542851995779807
+  },
+  "chi2": 10.084374836819347,
+  "sigma": 4.244903709077478
+ },
+ "soft_fwd_gtc": {
+  "tag": "soft_fwd_gtc",
+  "counts": {
+   "outer_surface": 31,
+   "a_core_surface": 16,
+   "b_lensed_behind_core": 12,
+   "c_no_solution:integrator_stop": 1
+  },
+  "Uo_global_c": 1.2976673354516377,
+  "U_rel_local_flow_c": 0.0,
+  "T_obs_K": [
+   0.12394431036056487,
+   0.5325937223189575
+  ],
+  "core_vs_outer_T_ratio": 1.3781307160794174,
+  "t_e_Gyr": [
+   0.0008802329021197898,
+   0.0017295899868198944
+  ],
+  "flight_Gyr": [
+   13.904920258512552,
+   13.905769615597253
+  ],
+  "near180": [
+   [
+    150.0,
+    "b_lensed_behind_core",
+    0.24635
+   ],
+   [
+    156.0,
+    "b_lensed_behind_core",
+    0.26484
+   ],
+   [
+    162.0,
+    "b_lensed_behind_core",
+    0.28835
+   ],
+   [
+    168.0,
+    "b_lensed_behind_core",
+    0.325
+   ],
+   [
+    174.0,
+    "b_lensed_behind_core",
+    0.53259
+   ],
+   [
+    180.0,
+    "c_no_solution:integrator_stop",
+    null
+   ],
+   [
+    186.0,
+    "b_lensed_behind_core",
+    0.53259
+   ],
+   [
+    192.0,
+    "b_lensed_behind_core",
+    0.325
+   ],
+   [
+    198.0,
+    "b_lensed_behind_core",
+    0.28835
+   ],
+   [
+    204.0,
+    "b_lensed_behind_core",
+    0.26484
+   ],
+   [
+    210.0,
+    "b_lensed_behind_core",
+    0.24635
+   ]
+  ],
+  "chi2": 14.215105437579941,
+  "sigma": 3.829198804388053
+ },
+ "soft_fwd_le": {
+  "tag": "soft_fwd_le",
+  "counts": {
+   "c_no_solution:integrator_stop": 60
+  },
+  "Uo_global_c": 0.4427289256310064,
+  "U_rel_local_flow_c": 0.0,
+  "chi2": 13.721193187889702,
+  "sigma": 3.8805597117106996
+ }
+}

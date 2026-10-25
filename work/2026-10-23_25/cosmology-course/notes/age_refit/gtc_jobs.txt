@@ -1,0 +1,32 @@
+VMODE=gtc python3 fit_lc.py exp fwd > fwd/gtc_exp_fwd.log 2>&1; GRZ=gr VMODE=gtc python3 fit_lc.py exp fwd > fwd/gtcgr_exp_fwd.log 2>&1
+VMODE=gtc python3 fit_lc.py exp back > fwd/gtc_exp_back.log 2>&1; GRZ=gr VMODE=gtc python3 fit_lc.py exp back > fwd/gtcgr_exp_back.log 2>&1
+VMODE=gtc python3 fit_lc.py soft fwd > fwd/gtc_soft_fwd.log 2>&1; GRZ=gr VMODE=gtc python3 fit_lc.py soft fwd > fwd/gtcgr_soft_fwd.log 2>&1
+VMODE=gtc python3 fit_lc.py soft back > fwd/gtc_soft_back.log 2>&1; GRZ=gr VMODE=gtc python3 fit_lc.py soft back > fwd/gtcgr_soft_back.log 2>&1
+VMODE=gtc python3 fit_lc.py eta fwd > fwd/gtc_eta_fwd.log 2>&1; GRZ=gr VMODE=gtc python3 fit_lc.py eta fwd > fwd/gtcgr_eta_fwd.log 2>&1
+VMODE=gtc python3 fit_lc.py eta back > fwd/gtc_eta_back.log 2>&1; GRZ=gr VMODE=gtc python3 fit_lc.py eta back > fwd/gtcgr_eta_back.log 2>&1
+VMODE=gtc python3 fit_lc.py pl fwd > fwd/gtc_pl_fwd.log 2>&1; GRZ=gr VMODE=gtc python3 fit_lc.py pl fwd > fwd/gtcgr_pl_fwd.log 2>&1
+VMODE=gtc python3 fit_lc.py pl back > fwd/gtc_pl_back.log 2>&1; GRZ=gr VMODE=gtc python3 fit_lc.py pl back > fwd/gtcgr_pl_back.log 2>&1
+UFIX=1.01 MAXIT=12 VMODE=gtc python3 fit_lc.py exp fwd > fwd/scan_exp_fwd_1.01.log 2>&1
+UFIX=2 MAXIT=12 VMODE=gtc python3 fit_lc.py exp fwd > fwd/scan_exp_fwd_2.log 2>&1
+UFIX=5 MAXIT=12 VMODE=gtc python3 fit_lc.py exp fwd > fwd/scan_exp_fwd_5.log 2>&1
+UFIX=10 MAXIT=12 VMODE=gtc python3 fit_lc.py exp fwd > fwd/scan_exp_fwd_10.log 2>&1
+UFIX=30 MAXIT=12 VMODE=gtc python3 fit_lc.py exp fwd > fwd/scan_exp_fwd_30.log 2>&1
+UFIX=100 MAXIT=12 VMODE=gtc python3 fit_lc.py exp fwd > fwd/scan_exp_fwd_100.log 2>&1
+UFIX=1.01 MAXIT=12 VMODE=gtc python3 fit_lc.py exp back > fwd/scan_exp_back_1.01.log 2>&1
+UFIX=2 MAXIT=12 VMODE=gtc python3 fit_lc.py exp back > fwd/scan_exp_back_2.log 2>&1
+UFIX=5 MAXIT=12 VMODE=gtc python3 fit_lc.py exp back > fwd/scan_exp_back_5.log 2>&1
+UFIX=10 MAXIT=12 VMODE=gtc python3 fit_lc.py exp back > fwd/scan_exp_back_10.log 2>&1
+UFIX=30 MAXIT=12 VMODE=gtc python3 fit_lc.py exp back > fwd/scan_exp_back_30.log 2>&1
+UFIX=100 MAXIT=12 VMODE=gtc python3 fit_lc.py exp back > fwd/scan_exp_back_100.log 2>&1
+UFIX=1.01 MAXIT=12 VMODE=gtc python3 fit_lc.py eta fwd > fwd/scan_eta_fwd_1.01.log 2>&1
+UFIX=2 MAXIT=12 VMODE=gtc python3 fit_lc.py eta fwd > fwd/scan_eta_fwd_2.log 2>&1
+UFIX=5 MAXIT=12 VMODE=gtc python3 fit_lc.py eta fwd > fwd/scan_eta_fwd_5.log 2>&1
+UFIX=10 MAXIT=12 VMODE=gtc python3 fit_lc.py eta fwd > fwd/scan_eta_fwd_10.log 2>&1
+UFIX=30 MAXIT=12 VMODE=gtc python3 fit_lc.py eta fwd > fwd/scan_eta_fwd_30.log 2>&1
+UFIX=100 MAXIT=12 VMODE=gtc python3 fit_lc.py eta fwd > fwd/scan_eta_fwd_100.log 2>&1
+UFIX=1.01 MAXIT=12 VMODE=gtc python3 fit_lc.py eta back > fwd/scan_eta_back_1.01.log 2>&1
+UFIX=2 MAXIT=12 VMODE=gtc python3 fit_lc.py eta back > fwd/scan_eta_back_2.log 2>&1
+UFIX=5 MAXIT=12 VMODE=gtc python3 fit_lc.py eta back > fwd/scan_eta_back_5.log 2>&1
+UFIX=10 MAXIT=12 VMODE=gtc python3 fit_lc.py eta back > fwd/scan_eta_back_10.log 2>&1
+UFIX=30 MAXIT=12 VMODE=gtc python3 fit_lc.py eta back > fwd/scan_eta_back_30.log 2>&1
+UFIX=100 MAXIT=12 VMODE=gtc python3 fit_lc.py eta back > fwd/scan_eta_back_100.log 2>&1

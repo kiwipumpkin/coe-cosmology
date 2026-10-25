@@ -1,0 +1,3 @@
+cd /workspace/cosmology-course/notes/age_refit
+ulimit -v 6000000
+OUTD=gr2/v4/s2 XOVR='[0.3412720444271027, 1.2239497095434138, 46.77814553915232, -1.2339651542126076, -1.3408134462235592, 7.210280619726566]' OUTTAG=s2_soft_back_gtc_2 timeout 2400 python3 cmb4.py soft back gtc 30 > gr2/v4/s2/s2_soft_back_gtc_2.log 2>&1

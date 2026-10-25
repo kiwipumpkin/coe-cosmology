@@ -1,0 +1,6 @@
+# CoE shadow v4 (shadow.py, refitM.py, shadow_plot.py)
+Shadow = directions whose past ray ends in the mass without reaching 3000 K (K held at each fit's solved value). 2° grid over θ=120–240°, edges bisected to 0.0625°.
+Best fits: eta_fwd_gtc_1 62.19° (148.91–211.09); soft_fwd_gtc_0 11.06°; pl_fwd_le_1 9.31°; pl_back_gtc_3 0.06° (only the exact radial ray); exp_back_le_0 0°.
+M scan (eta fwd U>c, lM varied, u,p,lf,lL,s refit to Migkas, K held 8.46 K):
+ M=7.9e52 2.31° (χ²=373, refit failed); 2.5e53 6.44° (χ²14.1); 7.9e53 33.1° (χ²15.2, U at c edge); 2.5e54 62.2° (16.9); 7.9e54 75.4° (16.1); 2.5e55 81.4° (16.2); 7.9e55 43.9° (15.1, U/c=24); 2.5e56 83.9° (16.3). M ≤2.5e52 (−2, −3 decades): no buildable U>c universe found.
+Lensing: as the shadow edge is approached, the emitter azimuth sweeps through 180° and beyond (soft: 278° at 174°) inside the last ~1–4°: this is the primary + secondary image ring of matter behind the mass, observed hotter (eta 7.4 K at the edge vs 2.7 K mean). Inside the shadow every ray ends in the mass, so in geometric optics no image can fill it; images pile up as a hot ring just outside the edge. Filling needs beam smoothing / plasma emission, which isn't modelled.

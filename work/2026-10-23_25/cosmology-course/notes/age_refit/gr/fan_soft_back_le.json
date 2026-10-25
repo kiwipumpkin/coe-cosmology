@@ -1,0 +1,9 @@
+{
+ "tag": "soft_back_le",
+ "trec_Gyr": 0.0,
+ "n_backward_rays_reaching": 0,
+ "n_forward_hits": 0,
+ "theta_covered": [],
+ "hits": [],
+ "fwd_check": null
+}

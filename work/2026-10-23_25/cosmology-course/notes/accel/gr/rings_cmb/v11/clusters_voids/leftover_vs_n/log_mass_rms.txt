@@ -1,0 +1,25 @@
+/home/box/.local/lib/python3.13/site-packages/healpy/pixelfunc.py:577: RuntimeWarning: divide by zero encountered in _pix2ang_ring
+  theta, phi = pixlib._pix2ang_ring(nside, ipix)
+/home/box/.local/lib/python3.13/site-packages/healpy/pixelfunc.py:577: RuntimeWarning: invalid value encountered in _pix2ang_ring
+  theta, phi = pixlib._pix2ang_ring(nside, ipix)
+smooth: dipole x 1.7221325814547672 rms(l1-12) x 5.435961527713568
+mass rms 1 5.3324 mass
+mass rms 2 5.2156 mass
+mass rms 3 5.0483 mass
+mass rms 4 4.9052 mass
+mass rms 5 4.7664 mass
+mass rms 6 4.6189 mass
+mass rms 7 4.5116 mass
+mass rms 8 4.3254 mass
+mass rms 9 4.2197 mass
+mass rms 10 4.0854 mass
+mass rms 11 3.9857 mass
+mass rms 12 3.8587 mass
+mass rms 13 3.7298 mass
+mass rms 14 3.6069 mass
+mass rms 15 3.5068 mass
+mass rms 16 3.3915 mass
+mass rms 17 3.2255 mass
+mass rms 18 3.0984 mass
+mass rms 19 2.9092 mass
+mass rms 20 2.8133 mass

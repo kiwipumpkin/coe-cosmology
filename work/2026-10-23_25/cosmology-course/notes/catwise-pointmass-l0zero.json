@@ -1,0 +1,44 @@
+{
+  "name": "pointmass_l0zero_D_mc",
+  "chi2": 28.09139241638137,
+  "nu": 69,
+  "n_free": 2,
+  "free_params": [
+    "D",
+    "mc"
+  ],
+  "R2_unweighted": 0.3966923089147404,
+  "R2_weighted": 0.37172868615099997,
+  "Delta_chi2_vs_null": 17.045230595805837,
+  "Delta_nu_vs_null": 2,
+  "p_value_nested": 0.0001989185133202072,
+  "sigma_nested_one_sided": 3.54151447682026,
+  "sigma_sqrt_Delta_chi2": 4.1285869974854394,
+  "D_Gpc": 100.67062877589834,
+  "mc": 0.0008263775564394884,
+  "l0": 0.0,
+  "LD_fixed": 0.0001,
+  "Ob": 0.0,
+  "shell_mass": 0.0,
+  "sine": false,
+  "chi2_null": 45.13662301218721,
+  "vrmin": 0.800735616958347,
+  "Ht": 0.9979267769607788,
+  "age_Gyr": 13.938541805485585,
+  "Fx_at_r0p01D": 1.0,
+  "chi2_vs_LD_check": {
+    "0.001": 28.0749909715001,
+    "0.0001": 28.09139241638137,
+    "1e-05": 28.09139241638137
+  },
+  "n_starts": 19,
+  "top5_chi2": [
+    28.091392416396435,
+    28.091392416406645,
+    28.091392416428075,
+    28.091392416431347,
+    28.091392416435266
+  ],
+  "l0_fixed": true,
+  "note": "chi2 flattens for D>~300 Gpc (far-field limit); D cap 1e4 Gpc. Point mass realised as LD->0 limit of bubble_core exponential CoE profile (LD=1e-4 D)."
+}

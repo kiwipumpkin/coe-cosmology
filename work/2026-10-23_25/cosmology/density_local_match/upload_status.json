@@ -1,0 +1,62 @@
+{
+  "folderId": "1wZYStJhpdowbcjTkkS9TOImAtt9_GvzD",
+  "uploaded_at_local": "2026-09-18 11:37 AM CDT (UTC-0500)",
+  "task": "density_local_match \u03c1(D)=\u03a9_m \u03c1_crit + Migkas Amp\u00d7sin",
+  "recommended": {
+    "profile": "twoscale_fu0.94",
+    "D_over_L": 5.9,
+    "f_u": 0.94,
+    "kappa": 0.2306,
+    "kappa_core": 0.0896,
+    "rho_D_over_rcrit": 0.3,
+    "rho_mean_over_rcrit": 0.4612,
+    "R2_A": 0.6852,
+    "R2_B": 0.6855,
+    "Amp": 0.07,
+    "phi_deg": 212.82,
+    "af_mode": "hratio",
+    "note": "\u03ba must exceed 0.15 under local-density constraint; pure exp invsq cannot reach R\u00b2\u22730.7"
+  },
+  "files": [
+    {
+      "name": "density_profile_local_match.png",
+      "id": "1xIsgDA1GFeQFpNha8u1xYHStd9AvNgs8",
+      "link": "https://drive.google.com/file/d/1xIsgDA1GFeQFpNha8u1xYHStd9AvNgs8/view?usp=drivesdk"
+    },
+    {
+      "name": "migkas_overlay_local_density.png",
+      "id": "1w-jYtLc9z3hew1YB81n9fR6AmGJ_iQfX",
+      "link": "https://drive.google.com/file/d/1w-jYtLc9z3hew1YB81n9fR6AmGJ_iQfX/view?usp=drivesdk"
+    },
+    {
+      "name": "migkas_scatter_local_density.png",
+      "id": "147TCUqR7fRLvay_O9cTqDZnWJoHRnjYc",
+      "link": "https://drive.google.com/file/d/147TCUqR7fRLvay_O9cTqDZnWJoHRnjYc/view?usp=drivesdk"
+    },
+    {
+      "name": "scan_pareto_local_density.png",
+      "id": "1zB38bMH9FwNTj6J4xrZfy3VA-9tkexEs",
+      "link": "https://drive.google.com/file/d/1zB38bMH9FwNTj6J4xrZfy3VA-9tkexEs/view?usp=drivesdk"
+    },
+    {
+      "name": "scan_summary.json",
+      "id": "1QyKIRLYu3phtYa7cKl5a3UoIK9qqut-S",
+      "link": "https://drive.google.com/file/d/1QyKIRLYu3phtYa7cKl5a3UoIK9qqut-S/view?usp=drivesdk"
+    },
+    {
+      "name": "recommended_profile.json",
+      "id": "1V7GqczZdVvvDyKE8lMaNs1q_oT8vViD7",
+      "link": "https://drive.google.com/file/d/1V7GqczZdVvvDyKE8lMaNs1q_oT8vViD7/view?usp=drivesdk"
+    },
+    {
+      "name": "density_local_match_NOTE.md",
+      "id": "1Rgp2lk-P2cpFz_xM2_M9HvAlUJe63Ip-",
+      "link": "https://drive.google.com/file/d/1Rgp2lk-P2cpFz_xM2_M9HvAlUJe63Ip-/view?usp=drivesdk"
+    },
+    {
+      "name": "run_density_local_match.py",
+      "id": "1vCW5Rz9CJDYO2sP3Iso58JB-qJuAoGnH",
+      "link": "https://drive.google.com/file/d/1vCW5Rz9CJDYO2sP3Iso58JB-qJuAoGnH/view?usp=drivesdk"
+    }
+  ]
+}

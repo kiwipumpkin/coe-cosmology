@@ -1,0 +1,60 @@
+{
+  "folderId": "1wZYStJhpdowbcjTkkS9TOImAtt9_GvzD",
+  "uploaded_at_local": "2026-09-18 10:49 AM CDT (UTC-0500)",
+  "task": "migkas_r2_rotation_fit Chris-style panels",
+  "results": {
+    "A": {
+      "R2_before_phi0_0": 0.4022,
+      "R2_prior_phi0_280": 0.5023,
+      "R2_best": 0.5361,
+      "best_phi0_deg": 103.5,
+      "slope_amp_scaled": 1.0,
+      "intercept_amp_scaled": -0.0034,
+      "slope_raw": 0.2774,
+      "intercept_raw": 0.7191
+    },
+    "B": {
+      "R2_before_phi0_0": 0.0558,
+      "R2_prior_phi0_280": 0.031,
+      "R2_best": 0.0579,
+      "best_phi0_deg": 354.5,
+      "slope_amp_scaled": 1.0,
+      "intercept_amp_scaled": 0.0037,
+      "slope_raw": 0.0717,
+      "intercept_raw": 0.932
+    },
+    "note": "A R2=0.536 matches Chris sheet exactly. B R2 stays ~0.06 at binding d/D=0.1 (B nearly isotropic; Chris sheet 0.333 needs d/D~1.5 or dipole-like template)."
+  },
+  "files": [
+    {
+      "name": "migkas_r2_fit_panels.png",
+      "id": "153-JW6msicVUuC0wEo3qp9DcBig97-a2",
+      "link": "https://drive.google.com/file/d/153-JW6msicVUuC0wEo3qp9DcBig97-a2/view?usp=drivesdk",
+      "local": "/workspace/cosmology/figures/migkas_r2_fit_panels.png"
+    },
+    {
+      "name": "migkas_r2_fit_panels.pdf",
+      "id": "1ZxTrsQMfnTYJKJsBDno_1P1hiC4wRAG6",
+      "link": "https://drive.google.com/file/d/1ZxTrsQMfnTYJKJsBDno_1P1hiC4wRAG6/view?usp=drivesdk",
+      "local": "/workspace/cosmology/figures/migkas_r2_fit_panels.pdf"
+    },
+    {
+      "name": "migkas_r2_vs_rotation.png",
+      "id": "1b2p88p-WvXNbDWZdv60mkDvZaVAnYPsn",
+      "link": "https://drive.google.com/file/d/1b2p88p-WvXNbDWZdv60mkDvZaVAnYPsn/view?usp=drivesdk",
+      "local": "/workspace/cosmology/figures/migkas_r2_vs_rotation.png"
+    },
+    {
+      "name": "migkas_r2_rotation_fit.py",
+      "id": "1p0QvRrq8x3PA2UVItXfW3fNbJAb2lPGn",
+      "link": "https://drive.google.com/file/d/1p0QvRrq8x3PA2UVItXfW3fNbJAb2lPGn/view?usp=drivesdk",
+      "local": "/workspace/cosmology/figures/migkas_r2_rotation_fit.py"
+    },
+    {
+      "name": "migkas_r2_fit_summary.json",
+      "id": "12Bl36h0uqDotb5G8O9LNGvXx_-P8CGeG",
+      "link": "https://drive.google.com/file/d/12Bl36h0uqDotb5G8O9LNGvXx_-P8CGeG/view?usp=drivesdk",
+      "local": "/workspace/cosmology/figures/migkas_r2_fit_summary.json"
+    }
+  ]
+}

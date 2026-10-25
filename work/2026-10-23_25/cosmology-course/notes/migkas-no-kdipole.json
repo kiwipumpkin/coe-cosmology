@@ -1,0 +1,35 @@
+{
+ "what_removed": "No separate kinematic-dipole term exists in the integrator. Subtracted the m=1 Fourier component of the geometry curve a_f/<a_f> in psi=ell-l0: A -> A - a_c cos psi - a_s sin psi. This is the model's own dipole, not a CMB velocity boost.",
+ "a_c": -0.006750026109774747,
+ "a_s": 5.499494193372811e-10,
+ "fourier_about_antiCoE": {
+  "a0": 1.0,
+  "a1": -0.006750166340626862,
+  "b1": 0.0,
+  "a2": 0.0781848094168037,
+  "b2": 3.947459643111668e-17,
+  "a3": -0.02100190457652516,
+  "b3": 0.0,
+  "a4": 0.004002854671522416,
+  "b4": -3.454027187722709e-17,
+  "a5": -0.0006275183387508469,
+  "b5": 3.947459643111668e-17
+ },
+ "D": 58.19699837268826,
+ "l0": 15.1629523788697,
+ "mcc": 0.0017121308626185587,
+ "kin": 4.034634647911553,
+ "kout": 1.0235618098210888,
+ "Rin": 0.499774693006799,
+ "Rout": 72.83442650308822,
+ "original": {
+  "R2_unweighted": 0.5456268309812682,
+  "R2_weighted": 0.5807290671992491,
+  "chi2": 18.7465256529584
+ },
+ "m1_removed": {
+  "R2_unweighted": 0.6044045763389192,
+  "R2_weighted": 0.6332574000979523,
+  "chi2": 16.397868345344264
+ }
+}

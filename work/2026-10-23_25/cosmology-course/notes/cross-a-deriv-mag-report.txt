@@ -1,0 +1,11 @@
+cross-a derivative magnitude report
+PNG: /workspace/cosmology-course/notes/cross-a-deriv-mag.png
+The plot uses the exact analytic formulas recorded in cross-a-deriv.json, with absolute values on a logarithmic y axis (equivalent to log10 magnitudes).
+The recombination derivative is plotted only through t = 1.0979391162917367 Gyr, the recorded last finite point (~0.25 Gpc/Gyr magnitude), and not at/after 1.10 Gyr.
+
+|d(v/c)/dt| samples (1/Gyr):
+  t = 0.1 Gyr: 4.7939747529
+  t = 1 Gyr: 1.50477402923
+  t = 5 Gyr: 0.274698470021
+  t = 13.8 Gyr: 0.0774065449827
+  t = 61.2 Gyr: 0.0110593839422

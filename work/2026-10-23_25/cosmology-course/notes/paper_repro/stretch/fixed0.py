@@ -1,0 +1,17 @@
+exec(open("paper_repro/stretch/chain_stretch.py").read().split("D,Rv,phi0")[0])
+import numpy as np
+p1=np.array(P2full,float); p0=p1.copy(); p0[2]=0.0
+print("params",p1)
+R1=R_of(G_FULL,p1); R0=R_of(G_FULL,p0)
+print("with mass RMS",rms(R1),"f",f(p1,G_FULL)); print("zero mass RMS",rms(R0),"max",np.abs(R0).max())
+print("geometry RMS",rms(G_FULL/G_FULL.mean()-1))
+b_=np.loadtxt("migkas-A-vs-angle-bins.csv",delimiter=",",skiprows=1)
+plt.rcParams.update({"font.size":18}); fig,ax=plt.subplots(2,1,figsize=(13,12),sharex=True)
+ax[0].errorbar(b_[:,0],b_[:,1],yerr=[b_[:,2],b_[:,3]],fmt="o",color="k",ms=5,capsize=2,label="Migkas bins")
+ax[0].plot(ELL,full,lw=3,color="tab:orange",label="paper geometry")
+ax[0].set_ylabel("A / A_all"); ax[0].legend(fontsize=14); ax[0].grid(alpha=.3)
+ax[1].plot(ELL,R1*1e3,color="tab:red",lw=3,label=f"paper, with mass: RMS {rms(R1):.2e}")
+ax[1].plot(ELL,R0*1e3,color="tab:green",lw=3,label=f"same speeds, zero mass: RMS {rms(R0):.2e}")
+ax[1].axhline(0,color="gray"); ax[1].set_ylabel("CMB ΔT/T × 10³"); ax[1].set_xlabel("galactic longitude ℓ (deg)")
+ax[1].legend(fontsize=14); ax[1].grid(alpha=.3); ax[1].set_xlim(0,359)
+plt.tight_layout(); plt.savefig("paper_repro/stretch/fixed_zero_mass.png",dpi=120)

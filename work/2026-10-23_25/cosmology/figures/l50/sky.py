@@ -1,0 +1,52 @@
+import numpy as np,healpy as hp,csv
+import matplotlib;matplotlib.use('Agg');import matplotlib.pyplot as plt;plt.rcParams.update({'font.size':18})
+from matplotlib.lines import Line2D
+L=[q for q in open('/workspace/cosmology/migkas/migkas2020_tablec1_vizier.tsv') if not q.startswith('#') and q.strip()]
+h=L[0].rstrip('\n').split('\t');R=[r.rstrip('\n').split('\t') for r in L[3:]]
+G=lambda k:np.array([float(r[h.index(k)]) for r in R]);nm=np.array([r[h.index('Cluster')].strip() for r in R])
+z,l,b,T,LX=G('z'),G('GLON'),G('GLAT'),G('T'),G('LX')
+y=np.log10(LX/np.sqrt(.3*(1+z)**3+.7));x=np.log10(T/4);B=np.polyfit(x,y,1);res=y-np.polyval(B,x)
+top=['A2415','RXCJ1742.8+3900','A2151a','A1831','A2428','A2566','A4038','Zw1420.2+4952','A2110','A2597']
+lab=['A2151a','A2052','RXCJ1742.8+3900','A2415','A4038','A3880']
+X=lambda lon:-np.radians(((np.asarray(lon)+180)%360)-180)   # l increases to the left
+m=hp.read_map('/workspace/cosmology/cmb/commander_I_n128_uK.fits')
+lo=np.linspace(-179.75,179.75,720);la=np.linspace(-90,90,361);LO,LA=np.meshgrid(lo,la)
+cmb=m[hp.ang2pix(128,(LO%360),LA,lonlat=True)]
+fig=plt.figure(figsize=(18,21),facecolor='white')
+def band(ax):
+  for e in (260,335):ax.plot(X(np.full(181,e)),np.radians(np.linspace(-90,90,181)),color='steelblue',lw=2.5)
+  ll=np.linspace(260,335,151);bb=np.radians(np.linspace(-90,90,181));LL,BB=np.meshgrid(ll,bb)
+  ax.pcolormesh(X(LL),BB,np.ones_like(LL),cmap=matplotlib.colors.ListedColormap(['lightsteelblue']),alpha=.4,shading='auto',zorder=3)
+  for e in (15,80):ax.plot(X(np.full(181,e)),np.radians(np.linspace(-90,90,181)),color='goldenrod',lw=2.5)
+  ll=np.linspace(15,80,131);bb=np.radians(np.linspace(-90,90,181));LL,BB=np.meshgrid(ll,bb)
+  ax.pcolormesh(X(LL),BB,np.ones_like(LL),cmap=matplotlib.colors.ListedColormap(['gold']),alpha=.28,shading='auto',zorder=3)
+  # Loop I small circle: centre (329,+17.5), radius 58 deg (Berkhuijsen+1971)
+  c=np.radians([329,17.5]);r=np.radians(58);t=np.linspace(0,2*np.pi,721)
+  bl=np.arcsin(np.sin(c[1])*np.cos(r)+np.cos(c[1])*np.sin(r)*np.cos(t))
+  dl=np.arctan2(np.sin(t)*np.sin(r)*np.cos(c[1]),np.cos(r)-np.sin(c[1])*np.sin(bl))
+  lc=np.degrees(c[0]+dl);xx=X(lc);br=np.where(np.abs(np.diff(xx))>3)[0]+1
+  for s in np.split(np.arange(len(xx)),br):ax.plot(xx[s],bl[s],'k--',lw=2.2,zorder=5)
+  ax.text(X(300),np.radians(62),'NPS/Loop I (approx.)',fontsize=16,zorder=6)
+  tk=[150,90,50,0,-90,-150];ax.set_xticks(np.radians([-150,-90,-50,0,90,150]))
+  ax.set_xticklabels(['150°','90°','50°','0°','270°','210°']);ax.grid(True,alpha=.4)
+  for t_,lb in ((180,'180°'),):ax.text(np.radians(178),0,lb,ha='right',fontsize=15)
+a1=fig.add_axes([.05,.60,.9,.35],projection='mollweide');a1.set_facecolor('white')
+ns=32;pl,pb=hp.pix2ang(ns,np.arange(hp.nside2npix(ns)),lonlat=True)
+v=hp.ang2vec(l,b,lonlat=True);la0,B0=np.polyfit(x,y,1)[::-1]
+def fitn(m):Bs=np.cov(x[m],y[m],bias=True)[0,1]/np.var(x[m]);return y[m].mean()-Bs*x[m].mean()
+la_all=fitn(np.ones(len(z),bool));H=np.zeros(len(pl))
+for j in range(len(pl)):
+  m=v@hp.ang2vec(pl[j],pb[j],lonlat=True)>=np.cos(np.radians(75));H[j]=100*(10**((fitn(m)-la_all)/2)-1)
+np.save('H0map_n32_cone75.npy',H)
+Hg=H[hp.ang2pix(ns,(LO%360),LA,lonlat=True)]
+sc=a1.pcolormesh(-np.radians(LO),np.radians(LA),Hg,cmap='coolwarm',vmin=-np.abs(H).max(),vmax=np.abs(H).max(),shading='auto',rasterized=True)
+it=np.isin(nm,top);a1.scatter(X(l[it]),np.radians(b[it]),s=120,facecolor='none',edgecolor='k',lw=1.2,alpha=.6,zorder=6)
+band(a1);a1.set_title('LOW z: H₀ variation map, RECONSTRUCTION from Migkas+2020 clusters (75° cones, OLS L_X–T)',pad=25)
+c1=fig.add_axes([.25,.565,.5,.014]);fig.colorbar(sc,cax=c1,orientation='horizontal',label='ΔH₀/H₀ [%]  = (A/A_all)^(+1/2) − 1  (L_X ∝ H₀² at fixed flux)')
+a2=fig.add_axes([.05,.14,.9,.35],projection='mollweide')
+pm=a2.pcolormesh(-np.radians(LO),np.radians(LA),cmb,cmap='RdBu_r',vmin=-300,vmax=300,shading='auto',rasterized=True)
+band(a2);a2.set_title('HIGH z (z≈1100): Planck 2018 Commander CMB temperature, nside 128, no mask',pad=25)
+c2=fig.add_axes([.25,.085,.5,.015]);fig.colorbar(pm,cax=c2,orientation='horizontal',label='ΔT [μK]')
+h_=[plt.Rectangle((0,0),1,1,fc='gold',alpha=.4,ec='goldenrod',lw=2,label='ℓ≈50° deviation (ℓ=15–80°), all b'),plt.Rectangle((0,0),1,1,fc='lightsteelblue',alpha=.5,ec='steelblue',lw=2,label='ℓ≈305° deviation (ℓ=260–335°)'),Line2D([],[],color='k',ls='--',lw=2.2,label='NPS/Loop I approx.: circle centre (329°,+17.5°), r = 58°'),Line2D([],[],marker='o',mfc='none',mec='k',ms=16,mew=2.5,ls='',label='top-10 ℓ≈50° influencers (jackknife)')]
+fig.legend(handles=h_,loc='lower center',ncol=2,frameon=False,fontsize=17)
+fig.savefig('sky_lowz_highz_l50band.png',dpi=70,facecolor='white')

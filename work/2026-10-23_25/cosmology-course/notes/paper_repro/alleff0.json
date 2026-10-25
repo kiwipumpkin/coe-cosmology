@@ -1,0 +1,149 @@
+{
+ "mu": 0.0,
+ "D_now_Gpc": 39.106761968270064,
+ "obs_speed_c": 47.85640277617359,
+ "stretch": {
+  "R_rec_Mpc": 35.52197545451221,
+  "t_rec_Myr": 2.420937022328327,
+  "mean_T": 2.72499999999993,
+  "finite_dirs": 360,
+  "stretch_inner": 1100.9174311927798,
+  "stretch_outer": 1100.917431192598,
+  "speed_factor_first_order": [
+   1.9990916666579777,
+   1.999091666658266
+  ],
+  "gamma_defined_dirs": 360,
+  "rel_speed_c_toward_CoE": 0.9990916666579814,
+  "rel_speed_c_away_from_CoE": 0.9990916666580665,
+  "los_speed_c_toward_CoE": 0.9990916666579814,
+  "los_speed_c_away": 0.9990916666580665,
+  "emitter_speed_c": [
+   46.85731110951561,
+   48.85549444283165
+  ],
+  "twoGM_rc2_emitter": 0.0,
+  "twoGM_rc2_observer": 0.0,
+  "gravity_factor": 1.0,
+  "delay_needed_Gyr": 2.662830830695232,
+  "delay_available_Gyr": [
+   2.6627792114719506,
+   2.6628803386990314
+  ],
+  "emit_time_Myr": [
+   2.3714290185285947,
+   2.472556245609392
+  ],
+  "6deg": {
+   "full_amp_1e5": 8.254355405103213e-09,
+   "dipole_1e5": 8.250827230002276e-09,
+   "hot_l": 15.206175092523004,
+   "leftover_rms_1e5": 8.611906441973124e-12
+  },
+  "1deg": {
+   "full_amp_1e5": 8.25435540510321e-09,
+   "dipole_1e5": 8.250927118692381e-09,
+   "hot_l": 15.204474551415721,
+   "leftover_rms_1e5": 9.540131794425007e-12
+  },
+  "swing_1e5_stretch": 8.250916986677506e-09,
+  "swing_1e5_speed_first_order": 7.214174982775921e-09,
+  "swing_1e5_gamma": 7.934568135916598e-06
+ },
+ "dop1": {
+  "R_rec_Mpc": 70.97947788298127,
+  "t_rec_Myr": 4.837480000305633,
+  "mean_T": 2.7249999999999948,
+  "finite_dirs": 360,
+  "stretch_inner": 550.958715598702,
+  "stretch_outer": 550.9587155986665,
+  "speed_factor_first_order": [
+   1.9981849819660353,
+   1.9981849819663333
+  ],
+  "gamma_defined_dirs": 360,
+  "rel_speed_c_toward_CoE": 0.998184981966042,
+  "rel_speed_c_away_from_CoE": 0.9981849819661324,
+  "los_speed_c_toward_CoE": 0.998184981966042,
+  "los_speed_c_away": 0.9981849819661324,
+  "emitter_speed_c": [
+   46.85821779420754,
+   48.854587758139715
+  ],
+  "twoGM_rc2_emitter": 0.0,
+  "twoGM_rc2_observer": 0.0,
+  "gravity_factor": 1.0,
+  "delay_needed_Gyr": 2.6604142877172547,
+  "delay_available_Gyr": [
+   2.6603112385593013,
+   2.660513125924851
+  ],
+  "emit_time_Myr": [
+   4.738641792709295,
+   4.940529158258644
+  ],
+  "6deg": {
+   "full_amp_1e5": 8.319542812053478e-09,
+   "dipole_1e5": 1.5378079139827312e-09,
+   "hot_l": 15.780229385685576,
+   "leftover_rms_1e5": 3.0364451374896314e-09
+  },
+  "1deg": {
+   "full_amp_1e5": 8.686221976149865e-09,
+   "dipole_1e5": 1.3968795619560312e-09,
+   "hot_l": 15.460664220114548,
+   "leftover_rms_1e5": 2.938327242860906e-09
+  },
+  "swing_1e5_stretch": 3.2292782743439727e-09,
+  "swing_1e5_speed_first_order": 7.456363212083147e-09,
+  "swing_1e5_gamma": 4.1027854951726595e-06
+ },
+ "full": {
+  "R_rec_Mpc": 461.21402635890047,
+  "t_rec_Myr": 31.433221191871382,
+  "mean_T": 2.7249999999998407,
+  "finite_dirs": 360,
+  "stretch_inner": 84.7909207727366,
+  "stretch_outer": 84.79092077273388,
+  "speed_factor_first_order": [
+   1.9882062844510502,
+   1.9882062844513482
+  ],
+  "gamma_defined_dirs": 360,
+  "rel_speed_c_toward_CoE": 0.9882062844510658,
+  "rel_speed_c_away_from_CoE": 0.9882062844511774,
+  "los_speed_c_toward_CoE": 0.9882062844510658,
+  "los_speed_c_away": 0.9882062844511774,
+  "emitter_speed_c": [
+   46.86819649172252,
+   48.84460906062476
+  ],
+  "twoGM_rc2_emitter": 0.0,
+  "twoGM_rc2_observer": 0.0,
+  "gravity_factor": 1.0,
+  "delay_needed_Gyr": 2.633818546525689,
+  "delay_available_Gyr": [
+   2.6331557835211874,
+   2.6344544919722757
+  ],
+  "emit_time_Myr": [
+   30.797275745284626,
+   32.095984196372676
+  ],
+  "6deg": {
+   "full_amp_1e5": 5.553641135145428e-07,
+   "dipole_1e5": 1.533994285790602e-07,
+   "hot_l": 195.18868139619468,
+   "leftover_rms_1e5": 2.4039162179658753e-07
+  },
+  "1deg": {
+   "full_amp_1e5": 6.353898039721166e-07,
+   "dipole_1e5": 1.601417129008225e-07,
+   "hot_l": 195.17777542386114,
+   "leftover_rms_1e5": 2.411128608220468e-07
+  },
+  "swing_1e5_stretch": 1.6005683308232008e-09,
+  "swing_1e5_speed_first_order": 7.493786287161977e-09,
+  "swing_1e5_gamma": 6.279438915065487e-07
+ }
+}

@@ -1,0 +1,49 @@
+var,point,value,branch,l_deg,A_over_Aall
+D/L,low end,3.0,max near 10 deg,28.909,1.06034
+D/L,low end,3.0,max near 170 deg,,
+D/L,low end,3.0,min near 95 deg,,
+D/L,low end,3.0,min near 266 deg,260.26,0.91945
+D/L,baseline,5.9,max near 10 deg,10.432,1.10609
+D/L,baseline,5.9,max near 170 deg,170.086,1.07585
+D/L,baseline,5.9,min near 95 deg,95.338,0.96445
+D/L,baseline,5.9,min near 266 deg,265.731,0.86171
+D/L,high end,10.0,max near 10 deg,5.675,1.17994
+D/L,high end,10.0,max near 170 deg,175.085,1.18709
+D/L,high end,10.0,min near 95 deg,92.454,0.86441
+D/L,high end,10.0,min near 266 deg,267.697,0.77217
+alpha,low end,0.2,max near 10 deg,40.19,1.0548
+alpha,low end,0.2,max near 170 deg,,
+alpha,low end,0.2,min near 95 deg,,
+alpha,low end,0.2,min near 266 deg,259.173,0.92683
+alpha,baseline,1.0,max near 10 deg,10.432,1.10609
+alpha,baseline,1.0,max near 170 deg,170.086,1.07585
+alpha,baseline,1.0,min near 95 deg,95.338,0.96445
+alpha,baseline,1.0,min near 266 deg,265.731,0.86171
+alpha,high end,2.0,max near 10 deg,5.207,1.20607
+alpha,high end,2.0,max near 170 deg,175.322,1.19006
+alpha,high end,2.0,min near 95 deg,92.948,0.84874
+alpha,high end,2.0,min near 266 deg,267.244,0.75819
+kappa,low end,0.15,max near 10 deg,15.61,1.07849
+kappa,low end,0.15,max near 170 deg,163.991,1.04449
+kappa,low end,0.15,min near 95 deg,98.493,0.99797
+kappa,low end,0.15,min near 266 deg,264.37,0.89195
+kappa,baseline,0.23058828928336284,max near 10 deg,10.432,1.10609
+kappa,baseline,0.23058828928336284,max near 170 deg,170.086,1.07585
+kappa,baseline,0.23058828928336284,min near 95 deg,95.338,0.96445
+kappa,baseline,0.23058828928336284,min near 266 deg,265.731,0.86171
+kappa,high end,0.7,max near 10 deg,3.324,1.34697
+kappa,high end,0.7,max near 170 deg,177.036,1.35075
+kappa,high end,0.7,min near 95 deg,92.227,0.6882
+kappa,high end,0.7,min near 266 deg,267.827,0.61476
+d/D,low end,0.06,max near 8 deg,7.711,1.13677
+d/D,low end,0.06,max near 173 deg,172.241,1.10289
+d/D,low end,0.06,min near 94 deg,93.458,0.93332
+d/D,low end,0.06,min near 266 deg,266.983,0.83377
+d/D,baseline,0.1,max near 8 deg,8.072,1.13294
+d/D,baseline,0.1,max near 173 deg,172.546,1.10653
+d/D,baseline,0.1,min near 94 deg,94.18,0.93295
+d/D,baseline,0.1,min near 266 deg,266.395,0.83348
+d/D,high end,0.74,max near 8 deg,16.245,1.11943
+d/D,high end,0.74,max near 173 deg,164.43,1.06121
+d/D,high end,0.74,min near 94 deg,112.534,0.93063
+d/D,high end,0.74,min near 266 deg,250.317,0.83698

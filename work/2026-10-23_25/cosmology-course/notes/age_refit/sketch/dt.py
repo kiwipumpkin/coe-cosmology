@@ -1,0 +1,20 @@
+import numpy as np,matplotlib;matplotlib.use('Agg');import matplotlib.pyplot as plt
+plt.rcParams.update({'font.size':18})
+c,U,dt,ts,t=1.0,1.5,1.0,0.0,3.0
+D=10.0;Dold=D-U*dt;r_now=c*(t-ts);r_old=c*(t-dt-ts)
+fig,a=plt.subplots(figsize=(13,9));a.set_aspect('equal')
+a.scatter(0,0,marker='x',s=400,c='r',zorder=5);a.text(-0.6,-0.9,'CoE',color='r')
+a.add_patch(plt.Circle((Dold,0),r_old,fill=False,color='tab:orange',lw=3))
+a.add_patch(plt.Circle((D,0),r_now,fill=False,color='tab:blue',lw=3,ls='--'))
+a.scatter(Dold,0,s=250,c='tab:orange',zorder=5);a.text(Dold-0.6,-0.8,'us, Δt ago',color='tab:orange',fontsize=15)
+a.scatter(D,0,marker='*',s=600,c='k',zorder=6);a.text(D+0.2,0.35,'us now',fontsize=16)
+a.annotate('',xy=(D,-3.6),xytext=(Dold,-3.6),arrowprops=dict(arrowstyle='->',lw=2))
+a.text((D+Dold)/2-0.8,-4.3,'UΔt  (U > c)',fontsize=15)
+for th in np.radians([0,45,90,135,-45,-90,-135]):
+    p=np.array([Dold+r_old*np.cos(th),r_old*np.sin(th)])
+    a.annotate('',xy=(D,0),xytext=p,arrowprops=dict(arrowstyle='->',color='tab:orange',lw=2))
+a.text(Dold-r_old-0.2,r_old+0.4,'circle Δt ago: radius c(t−Δt−t*)\nthe light we see now left from here',color='tab:orange',fontsize=14)
+a.text(D+0.5,r_now+0.3,'circle now: radius c(t−t*)\n(its light reaches us next step)',color='tab:blue',fontsize=14)
+a.set_xlim(-2,15);a.set_ylim(-5,6);a.set_xlabel('distance along CoE → us axis');a.set_yticks([])
+a.set_title('Us at a fixed distance D from the CoE, one Δt step')
+plt.savefig('dt_step.png',dpi=90,bbox_inches='tight')

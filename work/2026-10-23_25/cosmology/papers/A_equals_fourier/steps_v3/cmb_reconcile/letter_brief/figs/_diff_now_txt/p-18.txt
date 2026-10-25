@@ -1,0 +1,18 @@
+                                                Appendix
+
+Shell expansion and pointing at the CoE
+The LTB shell equation integrates to the usual early radiation and late matter asymptotics, with the sign of
+E(r) fixing whether a dust shell expands forever or recollapses. Figure A1 collects those solutions for a flat
+matter+radiation track, dust with E = 0, E > 0, and E < 0.
+
+
+
+
+Figure A1: LTB shell evolution. The flat matter+radiation track is shown with the E = 0 dust solution and the E > 0
+(expand-forever) and E < 0 (recollapsing) branches.
+
+
+
+
+                                                        18
+

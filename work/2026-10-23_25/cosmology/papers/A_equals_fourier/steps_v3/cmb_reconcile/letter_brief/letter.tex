@@ -1,0 +1,294 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{paracol}
+\captionsetup{font=small,skip=3pt}
+\setstretch{1.04}
+\pagestyle{plain}
+\graphicspath{{figs/}{../../figs/}{../cycle7_recombination/}{../cycle6_two_emitters/}{../cycle4/dtt/}}
+
+\title{\vspace{-1.2em}Centre-of-Expansion shell cosmology:\\
+from Migkas anisotropy to a flat CMB}
+\author{Chris Alameddin}
+\date{1 October 2026}
+
+\begin{document}
+\maketitle
+\vspace{-1.3em}
+
+\noindent
+Directional Hubble measurements from Migkas et~al.\cite{Migkas2020} fix an off-centre Sedov--Taylor\cite{Sedov1946,Taylor1950} / Lema\^itre--Tolman--Bondi (LTB)\cite{Lemaitre1933,Tolman1934,Bondi1947} shell geometry about a Centre of Expansion (CoE). The same geometry is then tested against the cosmic microwave background (CMB)\cite{Planck2018VII}. Both Migkas anisotropy and Planck isotropy of order \(10^{-5}\) are taken as facts; the goal is coexistence, not replacement. Apparent late-time acceleration is an off-centre sampling illusion requiring neither dark energy nor outward shell acceleration.
+
+\section{Problem and stance}
+Migkas et~al.\ report a sky-dependent cluster Hubble rate\cite{Migkas2020}. Standard cosmology assumes large-scale isotropy, and the CMB is isotropic to \(\sim10^{-5}\)\cite{Planck2018VII}. This letter takes both seriously: coexistence of the Migkas anisotropy with a flat last-scattering sky, with the LTB origin at the CoE (observer at \(r=D\)) rather than US.
+
+
+\section{Best-fit geometry}
+Local Hubble velocity is free-fall toward the CoE minus our own motion,
+\(\vec{V}_H=\vec{V}_g-\vec{V}_O\).
+The observer (US) sits inside a thick shell; vision radius \(R\approx14.3\,\mathrm{Gpc}\); shell rule \(D\gtrsim14.7\,\mathrm{Gpc}\). Preferred relativistic fit: \(D\approx32.9\,\mathrm{Gpc}\), \(R_{\mathrm{in}}\approx18.1\,\mathrm{Gpc}\), \(R_{\mathrm{out}}\approx49.7\,\mathrm{Gpc}\).
+
+\begin{center}
+\includegraphics[width=0.82\textwidth,height=0.42\textheight,keepaspectratio]{att14_universe_thin_drawing.png}
+\captionof{figure}{Geometry: CoE, observer (US) inside a thick shell, and the vision sphere of radius $R$.}
+\end{center}
+
+\section{Approach}
+\begin{enumerate}\setlength{\itemsep}{1pt}\setlength{\parsep}{0pt}
+\item Migkas \(A/A_{\mathrm{all}}\) vs.\ Galactic \(\ell\) (and Fig.~8); slice fits by redshift.
+\item Fit CoE + thick shell (Newtonian and relativistic LTB)\cite{Lemaitre1933,Tolman1934,Bondi1947}.
+\item Orient on the sky: untilted $\rightarrow$ $+15^\circ$ tilt $\rightarrow$ gradient $\rightarrow$ $+80.8^\circ$ roll; match Migkas Fig.~8.
+\item Donut-universe evolution: shells $>c$, visible at $c$, \(V_{\mathrm{HB}}=0\) until \(D_{\mathrm{recomb}}\), fixed recombination surface.
+\item CMB stress test: gravitational multipole $\rightarrow$ kill function $\rightarrow$ two-emitter construction.
+\end{enumerate}
+
+\begin{center}
+\begin{minipage}{\textwidth}
+\centering
+\small
+\captionof{table}{Newtonian and relativistic shell+core fits to Migkas \(A(\ell)\).}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+& Newt.\ \(\Omega_s\) free & Newt.\ \(\Omega_s=0.049\) & Rel.\ LTB \(\Omega_s=0.049\) \\
+\midrule
+\(D\) (Gpc) & 93.7 & 49.2 & 32.9 \\
+\(\Omega_s\) & 1.01 & 0.049 & 0.049 \\
+\(l_0\) (deg) & 12.8 & 13.0 & 13.5 \\
+\(R^2\) vs Migkas & 0.909 & 0.893 & 0.885 \\
+\(R^2\) vs \(A_F\) & 0.987 & 0.977 & 0.963 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{center}
+
+\begin{center}
+\includegraphics[width=\textwidth,height=0.78\textheight,keepaspectratio]{att14_Achart.png}
+\captionof{figure}{Migkas $A/A_{\mathrm{all}}$ versus Galactic longitude, with Newtonian and relativistic shell+core model curves.}
+\end{center}
+
+\clearpage
+\begin{center}
+\includegraphics[width=\textwidth]{att14_migkas_slices.png}
+\captionof{figure}{Migkas $A(\ell)$ in three redshift slices ($0.03$--$0.07$, $z>0.07$, and all-$z$), with the CoE model recomputed at each slice's median distance (fit parameters fixed), plus the $D$--core-mass degeneracy.}
+\end{center}
+
+\section{Einstein and Friedmann equations for the CoE+shell}
+\begingroup
+\setlength{\abovedisplayskip}{5pt}
+\setlength{\belowdisplayskip}{5pt}
+\setlength{\abovedisplayshortskip}{3pt}
+\setlength{\belowdisplayshortskip}{3pt}
+The LTB metric is written about the CoE, not about us. The observer (US) sits at comoving distance \(D\) from that centre. Sky anisotropy is therefore an off-centre sampling of radial structure \(\beta(r)\), not a direction-dependent scale factor \(a(t,\theta)\). Einstein's equation is
+\begin{equation}
+G_{\mu\nu}=8\pi G\,T_{\mu\nu}.
+\end{equation}
+For concentric dust shells about the CoE the Lema\^itre--Tolman--Bondi line element is\cite{Lemaitre1933,Tolman1934,Bondi1947}
+\begin{equation}
+\mathrm{d}s^{2}=-\mathrm{d}t^{2}+\frac{(R')^{2}}{1+2E(r)}\,\mathrm{d}r^{2}+R(t,r)^{2}\,\mathrm{d}\Omega^{2},
+\end{equation}
+with areal radius \(R(t,r)\), \(R'\equiv\partial_{r}R\), and \(\dot R\equiv\partial_{t}R\). Each shell obeys the Friedmann-like constraint
+\begin{equation}
+\dot{R}^{2}=2E(r)+\frac{2GM(r)}{R}.
+\end{equation}
+The interior mass uses a background density scale \(\nu\) and a radial mass multiplier \(\beta(r)\) (not a scale factor),
+\begin{equation}
+M(r)=\frac{4\pi}{3}\,R^{3}\,\nu\,\beta(r),
+\end{equation}
+so \(\beta=1\) recovers critical-density normalisation. In the CoE+shell geometry \(\beta(r)\) is small in the cavity, rises through the thick shell, and returns toward the exterior background beyond \(R_{\mathrm{out}}\).
+
+Including radiation on the same radial scaffolding,
+\begin{equation}
+H_{a}^{2}\propto\frac{\nu_{m}\beta_{m}(r)}{a^{3}}+\frac{\nu_{r}\beta_{r}(r)}{a^{4}}-\frac{k(r)}{a^{2}},
+\end{equation}
+with \(H_{a}=\dot{a}/a\) and \(a(t,r)\) the local expansion factor of each shell. Early times are radiation-dominated (\(a\sim t^{1/2}\)); late times are dust-dominated (\(a\sim t^{2/3}\)). Curvature \(k(r)\) follows from \(E(r)\) and introduces no angular dependence into the metric coefficients.
+
+For the Newtonian \(\Omega_{s}=0.049\) CoE+shell fit in Table~1, the solved geometry matching Migkas \(A(\ell)\) is
+\[
+D\approx49.17\,\mathrm{Gpc},\quad
+R_{\mathrm{in}}\approx34.48\,\mathrm{Gpc},\quad
+R_{\mathrm{out}}\approx70.27\,\mathrm{Gpc},\quad
+\Omega_{s}=0.049,\quad
+\ell_{0}=13^{\circ}.
+\]
+The shell rule with vision radius \(R\approx14.3\,\mathrm{Gpc}\) requires \(D\gtrsim14.7\,\mathrm{Gpc}\); the fitted \(D\) lies above that bound with the observer mid-shell between \(R_{\mathrm{in}}\) and \(R_{\mathrm{out}}\).
+\endgroup
+
+\begin{center}
+\includegraphics[width=\textwidth,height=0.55\textheight,keepaspectratio]{att14_amp_full.png}
+\captionof{figure}{Full Migkas $A/A_{\mathrm{all}}$ profile and residual panel for the Newtonian and relativistic fits.}
+\end{center}
+
+\clearpage
+\section{Sky orientation}
+The model must be placed on the Galactic sky. Starting from an untilted, no-roll configuration, we apply a $+15^\circ$ tilt, then a radial gradient, then an $+80.8^\circ$ roll about the CoE axis. The predicted MAX/MIN loci are compared with Migkas Fig.~8 in the following section.
+
+\begin{center}
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{att14_four_row.jpg}
+\captionof{figure}{Sky orientation sequence: untilted; $+15^\circ$ tilt; tilt with gradient; tilt, gradient, and $+80.8^\circ$ roll. Each row shows the model frame, the Mollweide sky map, and a 3D view.}
+\end{minipage}
+\end{center}
+
+\clearpage
+% Overlay RIGHT, text LEFT — equal-width paracol; original stack restored
+\columnratio{0.5}
+\begin{paracol}{2}
+\raggedright\footnotesize
+\noindent
+The untilted-to-tilted-to-rolled sequence places the CoE axis on the Galactic sky. With a $+15^\circ$ tilt alone, the model MAX/MIN bands already track Migkas Fig.~8. Adding a radial gradient sharpens contrast; the $+80.8^\circ$ roll aligns the MAX/MIN pattern. Fit parameters stay fixed; only sky placement varies.
+\captionof{figure}{Model MAX/MIN bands overlaid on Migkas Fig.~8 for $+15^\circ$ tilt; tilt with gradient; and tilt, gradient, and $+80.8^\circ$ roll.}
+\switchcolumn
+\centering
+\includegraphics[width=\linewidth,height=0.88\textheight,keepaspectratio]{att14_overlay_stack.png}
+\end{paracol}
+
+\clearpage
+\section{Time evolution and the CMB}
+In the donut-universe picture the CoE is fixed while thick shells expand outward faster than light in a coordinate sense; the sphere of events visible to us grows at \(c\). Recombination is a spherical surface of fixed physical radius around the CoE. The observer remains mid-shell between the inner and outer edges (S1 and S2). The Hubble-bubble volume about US satisfies \(V_{\mathrm{HB}}=0\) until the observer passes \(D_{\mathrm{recomb}}\); afterward the visible sphere grows at \(c\). Frames A--D show shells crossing that recombination surface while the visible sphere grows more slowly.
+
+\begin{center}
+\includegraphics[width=0.64\textwidth,height=0.82\textheight,keepaspectratio]{att14_storyboard.png}
+\captionof{figure}{Donut-universe time sequence (A--D): fixed recombination surface; shells expand through it; S2 is filled in every frame; the observer sits mid-shell.}
+\end{center}
+
+\clearpage
+\begin{center}
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[width=0.65\textwidth,height=0.62\textheight,keepaspectratio]{att14_two_emitters.png}
+\captionof{figure}{Two-emitter baseline. If opposite plates (or shells) share the observer's bulk velocity, the kinematic sky is flat before gravitational multipoles are included.}
+\vspace{0.8em}
+\end{minipage}
+\end{center}
+
+\noindent
+The same off-centre geometry produces a gravitational multipole on the last-scattering sky. The \emph{kill function} is the electromagnetic temperature multipole---\(\Delta T/T\) of kinematic--Doppler character---required to cancel that multipole: opposite in sign, same angular shape. Exploratory two-emitter and multipole-partner constructions follow the kill-function morphology at large \(D\) and remove most of the demeaned power through \(\ell\le4\), but they do not yet reach the CMB bound of order \(10^{-5}\). Closing that residual on the full light cone remains the open calculation.
+
+\clearpage
+\begin{center}
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[width=\textwidth,height=0.88\textheight,keepaspectratio]{att14_kill.jpg}
+\captionof{figure}{Unit-normalized kill function compared with exploratory plate, shell, and shear residuals at three distances $D$.}
+\end{minipage}
+\end{center}
+
+\clearpage
+\begin{center}
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[width=\textwidth,height=0.88\textheight,keepaspectratio]{att14_cancel_partner.png}
+\captionof{figure}{CoE Doppler term plus a multipole partner: residuals after a dipole+$P_2$ cancellation and after an $\ell\le4$ partner.}
+\end{minipage}
+\end{center}
+
+\section{What is interesting}
+The Migkas anisotropy is a gravitational effect: free-fall relative to an off-centre CoE. On the last-scattering sky that same gravity produces a temperature multipole. Separately, a pure electromagnetic Doppler pattern---from radial motion of emitting surfaces---has nearly the same angular shape. The \emph{kill function} is that electromagnetic temperature multipole written opposite in sign to the gravitational residual. Today's result is that this gravitational kill tracks the electromagnetic Doppler morphology across the distances scanned. That is unexpected if gravity and the photon bath are unrelated, and it suggests a geometric route to CMB flatness that does not discard the Migkas fit.
+
+Apparent late-time accelerated expansion is an illusion of off-centre sampling (no dark energy). A contracting analogue would share the average appearance but differ in angular signature.
+
+\section{What we do next}
+\begin{enumerate}\setlength{\itemsep}{2pt}\setlength{\parsep}{0pt}
+\item Evolve \(D(t)\), \(R_{\mathrm{in}}(t)\), and \(R_{\mathrm{out}}(t)\) from the present back through recombination, with the observer mid-shell.
+\item Integrate null geodesics on that history to obtain \(T(\theta)\) on our sky, including gravitational and kinematic contributions together.
+\item Ask whether a shared bulk velocity of the emitting surfaces, plus the gravitational multipole, can keep \(\ell\ge2\) below \(\sim10^{-5}\) while the low-redshift \(A(\ell)\) pattern remains Migkas-compatible.
+\item If a residual remains, identify the smallest additional degree of freedom (timing of recombination, shell thickness history, or a mild partner multipole) that removes it without reintroducing a fixed-curve conflict across redshift slices.
+\end{enumerate}
+
+\section{Bottom line}
+Migkas fixes an off-centre CoE+shell that fits directional Hubble across slices. Gravity on that geometry predicts a last-scattering multipole whose kill function matches the shape of an electromagnetic Doppler pattern from the same radii. Apparent late-time acceleration is an illusion of off-centre sampling. The open problem is no longer whether the shapes talk to each other---they do---but whether a full time-dependent light-cone calculation can make them cancel at the \(10^{-5}\) level without spoiling the Migkas anisotropy. The goal is coexistence of both datasets under one off-centre shell geometry.
+
+\begin{thebibliography}{99}
+\bibitem{Migkas2020}
+K.~Migkas, G.~Schellenberger, T.~H.~Reiprich, F.~Pacaud, M.~E.~Ramos-Ceja, and L.~Lovisari,
+Astron.\ Astrophys.\ \textbf{636}, A15 (2020); arXiv:2004.03305.
+
+\bibitem{Sedov1946}
+L.~I.~Sedov,
+J.\ Appl.\ Math.\ Mech.\ \textbf{10}, 241 (1946).
+
+\bibitem{Taylor1950}
+G.~I.~Taylor,
+Proc.\ R.\ Soc.\ Lond.\ A \textbf{201}, 159 (1950).
+
+\bibitem{Lemaitre1933}
+G.~Lema\^itre,
+Ann.\ Soc.\ Sci.\ Bruxelles \textbf{A53}, 51 (1933).
+
+\bibitem{Tolman1934}
+R.~C.~Tolman,
+Proc.\ Natl.\ Acad.\ Sci.\ USA \textbf{20}, 169 (1934).
+
+\bibitem{Bondi1947}
+H.~Bondi,
+Mon.\ Not.\ R.\ Astron.\ Soc.\ \textbf{107}, 410 (1947).
+
+\bibitem{Planck2018VII}
+Planck Collaboration,
+Astron.\ Astrophys.\ \textbf{641}, A7 (2020).
+
+\end{thebibliography}
+
+\section*{Acknowledgments}
+I thank Luke for the important question that sharpened this work, and Dr.~Rendler for his support and guidance. Computational assistance is gratefully acknowledged.
+
+\noindent Respectfully,\quad\textbf{Chris Alameddin}
+
+
+\clearpage
+\appendix
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\renewcommand{\thefigure}{A\arabic{figure}}
+\renewcommand{\thetable}{A\arabic{table}}
+\renewcommand{\theHfigure}{A\arabic{figure}}
+\renewcommand{\theHtable}{A\arabic{table}}
+
+\begin{center}
+{\LARGE\bfseries Appendix}
+\end{center}
+\vspace{0.4em}
+\section*{Shell expansion and pointing at the CoE}
+\noindent
+The LTB shell equation integrates to the usual early radiation and late matter asymptotics, with the sign of \(E(r)\) fixing whether a dust shell expands forever or recollapses. Figure~A1 collects those solutions for a flat matter+radiation track, dust with \(E=0\), \(E>0\), and \(E<0\).
+
+\begin{center}
+\includegraphics[width=\textwidth,height=0.62\textheight,keepaspectratio]{att14_ltb_shell.png}
+\captionof{figure}{LTB shell evolution. The flat matter+radiation track is shown with the \(E=0\) dust solution and the \(E>0\) (expand-forever) and \(E<0\) (recollapsing) branches.}
+\end{center}
+
+\clearpage
+\noindent
+Because the CoE is a fixed direction on the sky in our geometry, it is a place one can point to. From Central Texas (where this work was done), that direction rises in the northeast and sets in the northwest on a sidereal schedule fixed by the fitted CoE coordinates. Figure~A2 compares CoE rise, culmination, and set with the Sun through 2026. Table~A1 lists the nine Sun--CoE event crossings for 2027; the highlighted diagonal is rise with rise, highest with highest, and set with set.
+
+\begin{center}
+\includegraphics[width=\textwidth,height=0.48\textheight,keepaspectratio]{att14_coe_sun.jpg}
+\captionof{figure}{CoE and Sun timing from Plano through 2026: rise, culmination, and set compared with the Sun.}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.92\textwidth,height=0.28\textheight,keepaspectratio]{att14_coe_crossings.jpg}
+\captionof{table}{Sun/CoE event crossings for Central Texas in 2027.}
+\end{center}
+
+\clearpage
+\noindent
+Figure~A3 gives the annual track of the Centre of Expansion (CoE) on the local sky as seen from Plano at 12:00 local mean time on each day of 2026. The month labels make the calendar progression explicit: as the Earth moves through its orbit, one fixed celestial direction traces a large oval in local horizon coordinates. This is a locus on the sky, not the Sun's familiar figure-eight (analemma).
+
+\begin{center}
+\includegraphics[width=\textwidth,height=0.70\textheight,keepaspectratio]{att14_coe_sky.png}
+\captionof{figure}{Annual local-sky path of the Centre of Expansion (CoE) from Plano, Texas, evaluated at 12:00 local mean time on each day of 2026. The colour gradient and labelled dates mark the progression through the year; the large oval is the locus of the fixed celestial direction in local horizon coordinates, not a solar figure-eight.}
+\end{center}
+
+\vspace{0.5em}
+\begin{center}
+\includegraphics[width=0.65\textwidth]{att14_coe_comic.jpg}
+\end{center}
+
+\end{document}

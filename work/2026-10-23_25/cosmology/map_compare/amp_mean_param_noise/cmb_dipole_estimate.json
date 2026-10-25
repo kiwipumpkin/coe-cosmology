@@ -1,0 +1,11 @@
+{
+  "dipole_obs": 0.001233586736861806,
+  "v_cmb_kms": 369.82,
+  "formula": "deltaT/T_geom \u2248 \u03b1 (D/R_CMB) (\u0394H/H)_eff, \u03b1~0.5-2",
+  "localized_formula": "deltaT/T_geom \u2248 (\u0394H/H) (L/R_CMB) if L < D",
+  "dH_fiducial": 0.06,
+  "dH_migkas_2021": 0.09,
+  "D_over_R_max_alpha1_dH0p06": 0.02055977894769677,
+  "R_over_D_min_alpha1_dH0p06": 48.63865523768319,
+  "D_max_Gpc_if_R14_alpha1_dH0p06": 0.28783690526775474
+}

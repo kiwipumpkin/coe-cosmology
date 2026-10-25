@@ -1,0 +1,711 @@
+#!/usr/bin/env python3
+"""
+CoE rings + Migkas A(ell) extrema loops in the Galactic frame.
+
+Concept:
+  Pure CoE axisymmetry → constant A on small-circle rings about x = CoE↔anti-CoE.
+  Scan A vs angle from +x (anti-CoE) around 360°. After-2ℓ A(ℓ) has TWO maxima
+  and TWO minima (from best_fit_2ell_multiplier.npz A_after):
+    MAX at ℓ = 30° and 185° from +x,
+    MIN at ℓ = 115° and 265° from +x.
+
+  Four widened loops (half-width ±18°, matching Amp×sin ±5% ranges):
+    MAX: 30±18 → [12°, 48°] and 185±18 → [167°, 203°]
+    MIN: 115±18 → [97°, 133°] and 265±18 → [247°, 283°]
+  Each loop = two boundary small-circles + light fill between (μ-space),
+  NOT giant filled sky caps. 283° is simply the outer edge of MIN 265±18
+  (no separate decorative companion).
+
+  Galactic orientation: anti-CoE (+x) at ℓ=0°, b=0°; CoE (−x) at ℓ=180°, b=0°.
+  Sky markers (ℓ, b):
+    Maxes: map extrema (17°, −9°) for ~30° max; strip (185°, 0°) for second max.
+    Mins:  strip (115°, 0°) for ~115° min; map extrema (274°, −22°) for ~265° min.
+
+Outputs:
+  coe_rings_migkas_pin_axis.png
+  coe_rings_migkas_pin_axis.json
+"""
+
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.lines import Line2D
+from matplotlib.patches import Patch, Polygon
+from mpl_toolkits.mplot3d import Axes3D  # noqa: F401
+from mpl_toolkits.mplot3d.art3d import Poly3DCollection
+
+OUT_DIR = Path(__file__).resolve().parent
+PNG_PATH = OUT_DIR / "coe_rings_migkas_pin_axis.png"
+JSON_PATH = OUT_DIR / "coe_rings_migkas_pin_axis.json"
+
+BAND_HALF = 18.0  # ±5% of 360°
+STRIP_THETA_MAX = [30.0, 185.0]
+STRIP_THETA_MIN = [115.0, 265.0]
+
+MIGKAS_MAXES = [(17.0, -9.0), (185.0, 0.0)]
+MIGKAS_MINS = [(115.0, 0.0), (274.0, -22.0)]
+
+C_COE = "#6b3fa0"
+C_ANTI = "#c0392b"
+C_MAX = "#e74c3c"
+C_MIN = "#2980b9"
+C_AXIS = "#5b2c6f"
+C_EQ = "#1e8449"
+
+
+def wrap_lon_deg(lon: np.ndarray) -> np.ndarray:
+    return ((np.asarray(lon, dtype=float) + 180.0) % 360.0) - 180.0
+
+
+def lon_disp_from_ell(ell_deg: np.ndarray) -> np.ndarray:
+    """Migkas Galactic: ℓ increases LEFT → lon_disp = −ℓ_wrapped."""
+    return -wrap_lon_deg(ell_deg)
+
+
+def lb_to_n(l_deg: float, b_deg: float) -> np.ndarray:
+    l = np.deg2rad(l_deg)
+    b = np.deg2rad(b_deg)
+    return np.array(
+        [np.cos(b) * np.cos(l), np.cos(b) * np.sin(l), np.sin(b)], dtype=float
+    )
+
+
+def n_to_lb(n: np.ndarray) -> tuple[float, float]:
+    n = np.asarray(n, dtype=float)
+    n = n / np.linalg.norm(n)
+    b = float(np.rad2deg(np.arcsin(np.clip(n[2], -1.0, 1.0))))
+    l = float(np.rad2deg(np.arctan2(n[1], n[0])) % 360.0)
+    return l, b
+
+
+def celestial_equator_lb(n: int = 720) -> tuple[np.ndarray, np.ndarray]:
+    """Dec=0 (ICRS) as Galactic (ℓ, b). IAU J2000 NGP convention, no astropy."""
+    ra_ngp = np.deg2rad(192.85948)
+    dec_ngp = np.deg2rad(27.12825)
+    l_ncp = np.deg2rad(122.93192)
+    ra = np.linspace(0.0, 2.0 * np.pi, n, endpoint=False)
+    dec = 0.0
+    sin_b = np.sin(dec) * np.sin(dec_ngp) + np.cos(dec) * np.cos(dec_ngp) * np.cos(ra - ra_ngp)
+    sin_b = np.clip(sin_b, -1.0, 1.0)
+    b = np.arcsin(sin_b)
+    y = np.cos(dec) * np.sin(ra - ra_ngp)
+    x = np.sin(dec) * np.cos(dec_ngp) - np.cos(dec) * np.sin(dec_ngp) * np.cos(ra - ra_ngp)
+    l = (l_ncp - np.arctan2(y, x)) % (2.0 * np.pi)
+    return np.rad2deg(l), np.rad2deg(b)
+
+
+def great_circle_through_poles(D: np.ndarray, n: int = 361) -> tuple[np.ndarray, np.ndarray]:
+    """Great circle through ±D (any meridian of the CoE axis). Prefer Galactic plane if D is in it."""
+    a = D / np.linalg.norm(D)
+    tmp = np.array([0.0, 0.0, 1.0])
+    if abs(np.dot(a, tmp)) > 0.9:
+        tmp = np.array([1.0, 0.0, 0.0])
+    e2 = np.cross(a, tmp)
+    e2 /= np.linalg.norm(e2)
+    t = np.linspace(0.0, 2.0 * np.pi, n)
+    pts = np.outer(np.cos(t), a) + np.outer(np.sin(t), e2)
+    ls = np.array([n_to_lb(p)[0] for p in pts])
+    bs = np.array([n_to_lb(p)[1] for p in pts])
+    return ls, bs
+
+
+def small_circle_about_axis(axis: np.ndarray, mu: float, n: int = 361) -> np.ndarray:
+    """Unit vectors on the small circle n·axis = mu (|mu|<1)."""
+    a = axis / np.linalg.norm(axis)
+    mu = float(np.clip(mu, -1.0 + 1e-9, 1.0 - 1e-9))
+    tmp = np.array([0.0, 0.0, 1.0]) if abs(a[2]) < 0.9 else np.array([1.0, 0.0, 0.0])
+    e1 = np.cross(a, tmp)
+    e1 /= np.linalg.norm(e1)
+    e2 = np.cross(a, e1)
+    rho = np.sqrt(max(0.0, 1.0 - mu * mu))
+    t = np.linspace(0.0, 2.0 * np.pi, n)
+    return (mu * a)[None, :] + rho * (np.outer(np.cos(t), e1) + np.outer(np.sin(t), e2))
+
+
+def split_lon_segments(lon_rad: np.ndarray, lat_rad: np.ndarray, gap: float = np.pi):
+    """Split polyline where Mollweide lon jumps (wrap discontinuity)."""
+    d = np.diff(lon_rad)
+    cuts = np.where(np.abs(d) > gap)[0] + 1
+    idx = np.concatenate([[0], cuts, [len(lon_rad)]])
+    segs = []
+    for i0, i1 in zip(idx[:-1], idx[1:]):
+        if i1 - i0 >= 2:
+            segs.append((lon_rad[i0:i1], lat_rad[i0:i1]))
+    return segs
+
+
+def plot_lb_curve_mollweide(ax, l_deg, b_deg, **kwargs):
+    lon = np.deg2rad(lon_disp_from_ell(l_deg))
+    lat = np.deg2rad(b_deg)
+    for xr, yr in split_lon_segments(lon, lat):
+        ax.plot(xr, yr, **kwargs)
+
+
+def band_edges(centers: list[float], half: float = BAND_HALF) -> list[tuple[float, float]]:
+    """Return (theta_lo, theta_hi) for each band center."""
+    return [(c - half, c + half) for c in centers]
+
+
+def mu_pair_for_band(lo: float, hi: float) -> tuple[float, float]:
+    """
+    Edge μ=cos(θ) for a scan-angle band. Uses the two boundary cones only
+    (μ-space), so bands that straddle θ=180° become a thin annulus between
+    cos(lo) and cos(hi) rather than a filled polar cap through μ=−1.
+    """
+    return float(np.cos(np.deg2rad(lo))), float(np.cos(np.deg2rad(hi)))
+
+
+def migkas_scan_stops() -> dict:
+    th_max = [float(t) for t in STRIP_THETA_MAX]
+    th_min = [float(t) for t in STRIP_THETA_MIN]
+    max_bands = band_edges(th_max)
+    min_bands = band_edges(th_min)
+    return {
+        "theta_max_from_plus_x_deg": th_max,
+        "theta_min_from_plus_x_deg": th_min,
+        "max_bands_deg": max_bands,
+        "min_bands_deg": min_bands,
+        "band_half_width_deg": BAND_HALF,
+        "mu_max_centers": [float(np.cos(np.deg2rad(t))) for t in th_max],
+        "mu_min_centers": [float(np.cos(np.deg2rad(t))) for t in th_min],
+        "mu_max_bands": [mu_pair_for_band(lo, hi) for lo, hi in max_bands],
+        "mu_min_bands": [mu_pair_for_band(lo, hi) for lo, hi in min_bands],
+        "source": (
+            "best_fit_2ell_multiplier.npz A_after extrema (two max, two min); "
+            f"each drawn as a ±{BAND_HALF:.0f}° widened loop (two boundary "
+            "small-circles + light μ-space fill)"
+        ),
+    }
+
+
+def compute_geometry(st: dict) -> dict:
+    anti_l, anti_b = 0.0, 0.0
+    coe_l, coe_b = 180.0, 0.0
+
+    n_coe = lb_to_n(coe_l, coe_b)
+    n_anti = lb_to_n(anti_l, anti_b)
+    D = n_anti  # +D = anti-CoE = +x
+
+    th_max = [float(t) for t in st["theta_max_from_plus_x_deg"]]
+    th_min = [float(t) for t in st["theta_min_from_plus_x_deg"]]
+    max_bands = list(st["max_bands_deg"])
+    min_bands = list(st["min_bands_deg"])
+
+    n_maxes = [lb_to_n(*lb) for lb in MIGKAS_MAXES]
+    n_mins = [lb_to_n(*lb) for lb in MIGKAS_MINS]
+
+    sep = float(
+        np.rad2deg(
+            np.arccos(np.clip(np.dot(n_maxes[0], n_mins[1]), -1.0, 1.0))
+        )
+    )
+
+    return {
+        "D": D,
+        "n_coe": n_coe,
+        "n_anti": n_anti,
+        "n_maxes": n_maxes,
+        "n_mins": n_mins,
+        "anti_lb": (anti_l, anti_b),
+        "coe_lb": (coe_l, coe_b),
+        "theta_max_from_plus_x_deg": th_max,
+        "theta_min_from_plus_x_deg": th_min,
+        "max_bands_deg": max_bands,
+        "min_bands_deg": min_bands,
+        "mu_max_bands": list(st["mu_max_bands"]),
+        "mu_min_bands": list(st["mu_min_bands"]),
+        "sep_deg": sep,
+        "band_half_width_deg": st["band_half_width_deg"],
+    }
+
+
+def draw_wire_sphere(ax, n_mer=12, n_par=6, **kwargs):
+    u = np.linspace(0, 2 * np.pi, 60)
+    v = np.linspace(-np.pi / 2, np.pi / 2, 40)
+    xs = np.outer(np.cos(u), np.cos(v))
+    ys = np.outer(np.sin(u), np.cos(v))
+    zs = np.outer(np.ones_like(u), np.sin(v))
+    ax.plot_surface(xs, ys, zs, color="#dfe6e9", alpha=0.15, linewidth=0, shade=False)
+    kw = dict(color="#95a5a6", lw=0.4, alpha=0.45)
+    kw.update(kwargs)
+    for i in range(n_mer):
+        phi = 2 * np.pi * i / n_mer
+        t = np.linspace(-np.pi / 2, np.pi / 2, 80)
+        ax.plot(np.cos(t) * np.cos(phi), np.cos(t) * np.sin(phi), np.sin(t), **kw)
+    for j in range(1, n_par):
+        b = -np.pi / 2 + np.pi * j / n_par
+        t = np.linspace(0, 2 * np.pi, 80)
+        r = np.cos(b)
+        ax.plot(r * np.cos(t), r * np.sin(t), np.full_like(t, np.sin(b)), **kw)
+
+
+def foreshortened_ellipse_xy(mu: float, n: int = 200):
+    """Side-view foreshortened ellipse hint of a 3D ring at n·x = mu."""
+    rho = np.sqrt(max(0.0, 1.0 - mu * mu))
+    phi = np.linspace(0, 2 * np.pi, n)
+    ex = mu + 0.04 * rho * np.cos(phi)
+    ey = rho * np.sin(phi)
+    return ex, ey, rho
+
+
+def fill_annular_sector_panelA(ax, mu_a: float, mu_b: float, color: str, alpha: float = 0.22):
+    """
+    Fill the foreshortened annular band between two μ=cos(θ) edges in panel A.
+    Draw only the two boundary ellipses + light fill (widened-loop look).
+    """
+    mu_lo, mu_hi = (mu_a, mu_b) if mu_a <= mu_b else (mu_b, mu_a)
+    ex_a, ey_a, _ = foreshortened_ellipse_xy(mu_lo)
+    ex_b, ey_b, _ = foreshortened_ellipse_xy(mu_hi)
+    xs = np.concatenate([ex_a, ex_b[::-1]])
+    ys = np.concatenate([ey_a, ey_b[::-1]])
+    poly = Polygon(
+        np.column_stack([xs, ys]),
+        closed=True,
+        facecolor=color,
+        edgecolor="none",
+        alpha=alpha,
+        zorder=2,
+    )
+    ax.add_patch(poly)
+    ax.plot(ex_a, ey_a, color=color, lw=1.6, alpha=0.95, zorder=3)
+    ax.plot(ex_b, ey_b, color=color, lw=1.6, alpha=0.95, zorder=3)
+
+
+def panel_A_model_frame(ax, geo):
+    """Side view: four MAX/MIN ±18° widened loops about the CoE axis."""
+    ax.set_title(
+        "A. Model frame (no Galactic yet)\n"
+        r"axisymmetric about $x$ = CoE$\leftrightarrow$anti-CoE"
+        "\n"
+        r"two MAX + two MIN loops, each $\pm18^\circ$ wide",
+        fontsize=10,
+        pad=8,
+    )
+    th = np.linspace(0, 2 * np.pi, 400)
+    ax.plot(np.cos(th), np.sin(th), color="#7f8c8d", lw=1.2, zorder=1)
+    ax.plot(0, 0, "ko", ms=6, zorder=5)
+    ax.text(0.08, -0.12, "observer", fontsize=8, color="k", ha="left")
+
+    ax.annotate(
+        "",
+        xy=(1.15, 0),
+        xytext=(-1.15, 0),
+        arrowprops=dict(arrowstyle="<->", color=C_AXIS, lw=2.5),
+        zorder=4,
+    )
+    ax.text(1.18, 0.08, "anti-CoE\n(+x)", color=C_ANTI, fontsize=8, ha="left", va="bottom")
+    ax.text(-1.18, 0.08, "CoE\n(−x)", color=C_COE, fontsize=8, ha="right", va="bottom")
+
+    for (mu_lo, mu_hi) in geo["mu_max_bands"]:
+        fill_annular_sector_panelA(ax, mu_lo, mu_hi, C_MAX, alpha=0.22)
+    for (mu_lo, mu_hi) in geo["mu_min_bands"]:
+        fill_annular_sector_panelA(ax, mu_lo, mu_hi, C_MIN, alpha=0.22)
+
+    # Center rays only (compact); edge rays omitted to keep the look clean
+    label_r = 1.30
+    for center, color in zip(geo["theta_max_from_plus_x_deg"], [C_MAX] * 2):
+        t = np.deg2rad(center)
+        ax.plot([0, np.cos(t)], [0, np.sin(t)], color=color, lw=1.4, alpha=0.85, zorder=4)
+        ax.text(
+            label_r * np.cos(t),
+            label_r * np.sin(t),
+            rf"$\theta\!=\!{center:.0f}\!\pm\!18^\circ$",
+            color=color,
+            fontsize=6.5,
+            ha="center",
+            va="center",
+            fontweight="bold",
+        )
+    for center, color in zip(geo["theta_min_from_plus_x_deg"], [C_MIN] * 2):
+        t = np.deg2rad(center)
+        ax.plot([0, np.cos(t)], [0, np.sin(t)], color=color, lw=1.4, alpha=0.85, zorder=4)
+        ax.text(
+            label_r * np.cos(t),
+            label_r * np.sin(t),
+            rf"$\theta\!=\!{center:.0f}\!\pm\!18^\circ$",
+            color=color,
+            fontsize=6.5,
+            ha="center",
+            va="center",
+            fontweight="bold",
+        )
+
+    ax.text(
+        0.0,
+        -1.38,
+        "widened constant-A loops about $x$  ·  unequal cones from +x\n"
+        r"(after-2$\ell$ $A(\ell)$: two MAX + two MIN, each $\pm18^\circ$)"
+        "\n"
+        r"$y,z$ free (roll) — model does not pick celestial equator",
+        fontsize=7.5,
+        ha="center",
+        va="top",
+        style="italic",
+        color="#34495e",
+    )
+    ax.set_xlim(-1.55, 1.55)
+    ax.set_ylim(-1.55, 1.45)
+    ax.set_aspect("equal")
+    ax.axis("off")
+
+
+def _ring_lb(D, mu, n_pts=721):
+    pts = small_circle_about_axis(D, mu, n=n_pts)
+    rl = np.array([n_to_lb(p)[0] for p in pts])
+    rb = np.array([n_to_lb(p)[1] for p in pts])
+    return rl, rb
+
+
+def fill_mollweide_loop(ax, D, theta_lo, theta_hi, color, n_wash=28, n_pts=721):
+    """
+    Widened loop on Mollweide: two boundary small-circles + soft μ-space wash.
+    Wash samples linspace in μ=cos(θ), NOT in θ, so a band that straddles
+    180° stays a thin annulus (no polar-cap bullseye). Dense low-alpha strokes
+    blend into a light ribbon rather than nested contours. Seam-split honestly
+    via plot_lb_curve_mollweide — no fake rim bridges.
+    """
+    mu_a, mu_b = mu_pair_for_band(theta_lo, theta_hi)
+    # Soft wash so individual strokes blend into a translucent ribbon
+    for mu in np.linspace(mu_a, mu_b, n_wash):
+        rl, rb = _ring_lb(D, float(mu), n_pts=n_pts)
+        plot_lb_curve_mollweide(
+            ax, rl, rb, color=color, lw=1.35, alpha=0.055, zorder=2
+        )
+    # Two crisp boundaries (the widened-loop outline)
+    for mu in (mu_a, mu_b):
+        rl, rb = _ring_lb(D, mu, n_pts=n_pts)
+        plot_lb_curve_mollweide(
+            ax, rl, rb, color=color, lw=2.05, alpha=0.95, zorder=3
+        )
+
+
+def panel_B_mollweide(ax, geo):
+    ax.set_title(
+        r"B. Migkas $A(\ell)$ loops on sky (anti-CoE at $\ell=0^\circ$)"
+        "\n"
+        r"(Galactic Mollweide; $\ell$ increases LEFT; "
+        r"two MAX + two MIN, each $\pm18^\circ$)",
+        fontsize=10,
+        pad=8,
+    )
+    for b in [-60, -30, 0, 30, 60]:
+        ell = np.linspace(0, 360, 361)
+        plot_lb_curve_mollweide(ax, ell, np.full_like(ell, b), color="#bdc3c7", lw=0.5, zorder=0)
+    for ell0 in range(0, 360, 30):
+        b = np.linspace(-90, 90, 181)
+        plot_lb_curve_mollweide(ax, np.full_like(b, ell0), b, color="#bdc3c7", lw=0.5, zorder=0)
+
+    D = geo["D"]
+    ls, bs = great_circle_through_poles(D, n=721)
+    plot_lb_curve_mollweide(ax, ls, bs, color=C_AXIS, lw=2.0, zorder=2)
+
+    for (lo, hi) in geo["max_bands_deg"]:
+        fill_mollweide_loop(ax, D, lo, hi, C_MAX)
+    for (lo, hi) in geo["min_bands_deg"]:
+        fill_mollweide_loop(ax, D, lo, hi, C_MIN)
+
+    # Celestial equator (Dec = 0)
+    ell_eq, b_eq = celestial_equator_lb(721)
+    plot_lb_curve_mollweide(ax, ell_eq, b_eq, color=C_EQ, lw=1.8, ls="--", zorder=2)
+
+    for (l, b), color, marker, ms in [
+        (geo["anti_lb"], C_ANTI, "o", 9),
+        (geo["coe_lb"], C_COE, "*", 14),
+    ]:
+        ax.plot(
+            np.deg2rad(lon_disp_from_ell(l)),
+            np.deg2rad(b),
+            marker=marker,
+            ms=ms,
+            color=color,
+            markerfacecolor=color,
+            markeredgecolor="k",
+            markeredgewidth=0.6,
+            zorder=6,
+            linestyle="None",
+        )
+    for (l, b) in MIGKAS_MAXES:
+        ax.plot(
+            np.deg2rad(lon_disp_from_ell(l)),
+            np.deg2rad(b),
+            marker="^",
+            ms=10,
+            color=C_MAX,
+            markeredgecolor="k",
+            markeredgewidth=0.7,
+            zorder=7,
+            linestyle="None",
+        )
+    for (l, b) in MIGKAS_MINS:
+        ax.plot(
+            np.deg2rad(lon_disp_from_ell(l)),
+            np.deg2rad(b),
+            marker="s",
+            ms=10,
+            color=C_MIN,
+            markeredgecolor="k",
+            markeredgewidth=0.7,
+            zorder=7,
+            linestyle="None",
+        )
+
+    xticks = np.deg2rad(lon_disp_from_ell(np.array([180, 90, 0, 270])))
+    ax.set_xticks(xticks)
+    ax.set_xticklabels([r"$180^\circ$", r"$90^\circ$", r"$0^\circ$", r"$270^\circ$"], fontsize=8)
+    ax.set_yticks(np.deg2rad([-60, -30, 0, 30, 60]))
+    ax.set_yticklabels([r"$-60^\circ$", r"$-30^\circ$", r"$0^\circ$", r"$+30^\circ$", r"$+60^\circ$"], fontsize=8)
+    ax.grid(False)
+    ax.set_xlabel(r"Galactic $\ell$ (increases LEFT)", fontsize=8)
+    ax.set_ylabel(r"Galactic $b$", fontsize=8)
+
+
+def fill_sphere_loop(ax, D, theta_lo, theta_hi, color, n_wash=12, n_pts=120):
+    """Widened loop on the 3D sphere: two boundaries + soft μ-space ribbon."""
+    mu_a, mu_b = mu_pair_for_band(theta_lo, theta_hi)
+    mus = np.linspace(mu_a, mu_b, n_wash)
+    # Soft wash rings (blend) + translucent ribbon strips
+    for mu in mus:
+        pts = small_circle_about_axis(D, float(mu), n=n_pts)
+        ax.plot(
+            pts[:, 0], pts[:, 1], pts[:, 2],
+            color=color, lw=1.0, alpha=0.08, zorder=3,
+        )
+    for i in range(len(mus) - 1):
+        p0 = small_circle_about_axis(D, float(mus[i]), n=n_pts)
+        p1 = small_circle_about_axis(D, float(mus[i + 1]), n=n_pts)
+        verts = [[p0[j], p0[j + 1], p1[j + 1], p1[j]] for j in range(n_pts - 1)]
+        coll = Poly3DCollection(
+            verts, facecolors=color, edgecolors="none", alpha=0.06, zorder=2
+        )
+        ax.add_collection3d(coll)
+    # Two crisp boundaries
+    for mu in (mu_a, mu_b):
+        pts = small_circle_about_axis(D, mu, n=n_pts)
+        ax.plot(
+            pts[:, 0], pts[:, 1], pts[:, 2],
+            color=color, lw=2.1, alpha=0.95, zorder=4,
+        )
+
+
+def panel_C_sphere(ax, geo):
+    th_max = geo["theta_max_from_plus_x_deg"]
+    th_min = geo["theta_min_from_plus_x_deg"]
+    ax.set_title(
+        r"C. Sphere 3D — two MAX + two MIN loops, each $\pm18^\circ$"
+        "\n"
+        r"(axis line emphasized; celestial equator dashed)",
+        fontsize=10,
+        pad=6,
+    )
+    draw_wire_sphere(ax)
+    D = geo["D"]
+    ell_eq, b_eq = celestial_equator_lb(400)
+    eq_xyz = np.array([lb_to_n(l, b) for l, b in zip(ell_eq, b_eq)])
+    ax.plot(eq_xyz[:, 0], eq_xyz[:, 1], eq_xyz[:, 2], color=C_EQ, lw=1.8, ls="--", zorder=3)
+    ax.plot(
+        [-D[0], D[0]],
+        [-D[1], D[1]],
+        [-D[2], D[2]],
+        color=C_AXIS,
+        lw=3.0,
+        zorder=5,
+    )
+    ax.scatter(*(-D), color=C_COE, s=120, marker="*", edgecolors="k", linewidths=0.6,
+               depthshade=False, zorder=8)
+    ax.scatter(*(D), color=C_ANTI, s=80, edgecolors="k", linewidths=0.6, depthshade=False, zorder=8)
+    ax.text(*(-D * 1.22), "CoE", color=C_COE, fontsize=8, fontweight="bold")
+    ax.text(*(D * 1.18), "anti-CoE", color=C_ANTI, fontsize=8, fontweight="bold")
+    ax.scatter([0], [0], [0], color="k", s=25, depthshade=False, zorder=9)
+
+    for (lo, hi) in geo["max_bands_deg"]:
+        fill_sphere_loop(ax, D, lo, hi, C_MAX)
+    for (lo, hi) in geo["min_bands_deg"]:
+        fill_sphere_loop(ax, D, lo, hi, C_MIN)
+
+    for n in geo["n_maxes"]:
+        ax.scatter(
+            [n[0]], [n[1]], [n[2]],
+            c=[C_MAX], marker="^", s=70,
+            edgecolors="k", linewidths=0.7, depthshade=False, zorder=10,
+        )
+        ax.plot([0, n[0]], [0, n[1]], [0, n[2]], color=C_MAX, lw=0.8, ls=":", alpha=0.7)
+    for n in geo["n_mins"]:
+        ax.scatter(
+            [n[0]], [n[1]], [n[2]],
+            c=[C_MIN], marker="s", s=60,
+            edgecolors="k", linewidths=0.7, depthshade=False, zorder=10,
+        )
+        ax.plot([0, n[0]], [0, n[1]], [0, n[2]], color=C_MIN, lw=0.8, ls=":", alpha=0.7)
+
+    ax.set_xlim(-1.25, 1.25)
+    ax.set_ylim(-1.25, 1.25)
+    ax.set_zlim(-1.25, 1.25)
+    ax.set_box_aspect((1, 1, 1))
+    ax.view_init(elev=18, azim=-55)
+    ax.set_axis_off()
+    ax.text2D(
+        0.5,
+        -0.02,
+        rf"MAX $\theta\!=\!{th_max[0]:.0f}^\circ,{th_max[1]:.0f}^\circ\pm18^\circ$; "
+        rf"MIN $\theta\!=\!{th_min[0]:.0f}^\circ,{th_min[1]:.0f}^\circ\pm18^\circ$",
+        transform=ax.transAxes,
+        ha="center",
+        fontsize=7.5,
+        color="#34495e",
+    )
+
+
+def main():
+    st = migkas_scan_stops()
+    geo = compute_geometry(st)
+
+    th_max = geo["theta_max_from_plus_x_deg"]
+    th_min = geo["theta_min_from_plus_x_deg"]
+    max_bands = geo["max_bands_deg"]
+    min_bands = geo["min_bands_deg"]
+
+    fig = plt.figure(figsize=(14.5, 5.6), dpi=160)
+    fig.suptitle(
+        r"Pure CoE axisymmetry: two MAX + two MIN loops, each $\pm18^\circ$ wide"
+        "\n"
+        rf"(MAX $\theta\!=\!{th_max[0]:.0f}^\circ/{th_max[1]:.0f}^\circ$; "
+        rf"MIN $\theta\!=\!{th_min[0]:.0f}^\circ/{th_min[1]:.0f}^\circ$; "
+        r"anti-CoE at $\ell\!=\!0^\circ$, CoE at $\ell\!=\!180^\circ$)",
+        fontsize=11,
+        fontweight="bold",
+        y=1.02,
+    )
+
+    axA = fig.add_subplot(1, 3, 1)
+    panel_A_model_frame(axA, geo)
+
+    axB = fig.add_subplot(1, 3, 2, projection="mollweide")
+    panel_B_mollweide(axB, geo)
+
+    axC = fig.add_subplot(1, 3, 3, projection="3d")
+    panel_C_sphere(axC, geo)
+
+    handles = [
+        Line2D([0], [0], color=C_AXIS, lw=2.5, label=r"CoE$\leftrightarrow$anti-CoE axis"),
+        Patch(
+            facecolor=C_MAX, alpha=0.45, edgecolor=C_MAX,
+            label=(
+                rf"MAX $\pm18^\circ$ loops (two): "
+                rf"[{max_bands[0][0]:.0f},{max_bands[0][1]:.0f}]$^\circ$, "
+                rf"[{max_bands[1][0]:.0f},{max_bands[1][1]:.0f}]$^\circ$"
+            ),
+        ),
+        Patch(
+            facecolor=C_MIN, alpha=0.45, edgecolor=C_MIN,
+            label=(
+                rf"MIN $\pm18^\circ$ loops (two): "
+                rf"[{min_bands[0][0]:.0f},{min_bands[0][1]:.0f}]$^\circ$, "
+                rf"[{min_bands[1][0]:.0f},{min_bands[1][1]:.0f}]$^\circ$"
+            ),
+        ),
+        Line2D([0], [0], color=C_EQ, lw=1.8, ls="--", label="celestial equator (Dec$=0$)"),
+        Line2D(
+            [0], [0], marker="^", color="w", markerfacecolor=C_MAX, markeredgecolor="k",
+            ms=9,
+            label=rf"MAX $({MIGKAS_MAXES[0][0]:.0f}^\circ,{MIGKAS_MAXES[0][1]:+.0f}^\circ)$",
+        ),
+        Line2D(
+            [0], [0], marker="^", color="w", markerfacecolor=C_MAX, markeredgecolor="k",
+            ms=9,
+            label=rf"MAX $({MIGKAS_MAXES[1][0]:.0f}^\circ,{MIGKAS_MAXES[1][1]:+.0f}^\circ)$",
+        ),
+        Line2D(
+            [0], [0], marker="s", color="w", markerfacecolor=C_MIN, markeredgecolor="k",
+            ms=8,
+            label=rf"MIN $({MIGKAS_MINS[0][0]:.0f}^\circ,{MIGKAS_MINS[0][1]:+.0f}^\circ)$",
+        ),
+        Line2D(
+            [0], [0], marker="s", color="w", markerfacecolor=C_MIN, markeredgecolor="k",
+            ms=8,
+            label=rf"MIN $({MIGKAS_MINS[1][0]:.0f}^\circ,{MIGKAS_MINS[1][1]:+.0f}^\circ)$",
+        ),
+        Line2D(
+            [0], [0], marker="o", color="w", markerfacecolor=C_ANTI, markeredgecolor="k",
+            ms=8, label=rf"anti-CoE $({geo['anti_lb'][0]:.1f}^\circ,{geo['anti_lb'][1]:+.1f}^\circ)$",
+        ),
+        Line2D(
+            [0], [0], marker="*", color="w", markerfacecolor=C_COE, markeredgecolor="k",
+            ms=11, label=rf"CoE $({geo['coe_lb'][0]:.1f}^\circ,{geo['coe_lb'][1]:+.1f}^\circ)$",
+        ),
+    ]
+    fig.legend(
+        handles=handles,
+        loc="lower center",
+        ncol=5,
+        fontsize=7.5,
+        frameon=True,
+        fancybox=True,
+        bbox_to_anchor=(0.5, -0.10),
+    )
+
+    fig.tight_layout()
+    fig.savefig(PNG_PATH, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+
+    payload = {
+        "png": str(PNG_PATH),
+        "script": str(OUT_DIR / "make_coe_rings_migkas_pin_axis.py"),
+        "migkas_max_lb_deg": [list(lb) for lb in MIGKAS_MAXES],
+        "migkas_min_lb_deg": [list(lb) for lb in MIGKAS_MINS],
+        "strip_theta_max_deg": list(STRIP_THETA_MAX),
+        "strip_theta_min_deg": list(STRIP_THETA_MIN),
+        "band_half_width_deg": BAND_HALF,
+        "max_bands_deg": [list(b) for b in max_bands],
+        "min_bands_deg": [list(b) for b in min_bands],
+        "band_intervals": {
+            "MAX_30pm18": [12.0, 48.0],
+            "MAX_185pm18": [167.0, 203.0],
+            "MIN_115pm18": [97.0, 133.0],
+            "MIN_265pm18": [247.0, 283.0],
+        },
+        "scan_stop_source": st["source"],
+        "theta_max_from_plus_x_deg": [round(t, 4) for t in th_max],
+        "theta_min_from_plus_x_deg": [round(t, 4) for t in th_min],
+        "mu_max_bands": [[round(a, 8), round(b, 8)] for a, b in geo["mu_max_bands"]],
+        "mu_min_bands": [[round(a, 8), round(b, 8)] for a, b in geo["mu_min_bands"]],
+        "companion_283_note": (
+            "283° is simply the outer edge of MIN 265±18 (265+18=283); "
+            "no separate decorative loop; not emphasized in titles."
+        ),
+        "CoE_lb_deg": [round(geo["coe_lb"][0], 4), round(geo["coe_lb"][1], 4)],
+        "anti_CoE_lb_deg": [round(geo["anti_lb"][0], 4), round(geo["anti_lb"][1], 4)],
+        "D_hat_galactic_xyz": geo["D"].tolist(),
+        "angular_sep_migkas_max0_min1_deg": round(geo["sep_deg"], 6),
+        "orientation": (
+            "Galactic orientation: anti-CoE at (ell=0°, b=0°), CoE at "
+            "(ell=180°, b=0°); +D = anti-CoE = +x"
+        ),
+        "drawing": (
+            "Each loop = two boundary small-circles at θ±18° plus light fill "
+            "interpolated in μ=cos(θ) (not θ-linspace), so bands near/straddling "
+            "180° stay thin annuli rather than filled polar caps. Mollweide "
+            "curves seam-split honestly; no fake rim bridges."
+        ),
+        "note": (
+            "Stops are after-2ℓ A(ℓ) extrema from best_fit_2ell_multiplier.npz "
+            f"A_after: two MAX at θ={th_max[0]:.0f}°/{th_max[1]:.0f}° and "
+            f"two MIN at θ={th_min[0]:.0f}°/{th_min[1]:.0f}°, each drawn as "
+            f"±{BAND_HALF:.0f}° widened loops. "
+            "Rings use μ=cos(θ); sky markers are map extrema (17°,−9°) and "
+            "(274°,−22°) plus strip stand-ins (185°,0°) and (115°,0°)."
+        ),
+        "plot_convention": "Migkas Galactic Mollweide: lon_disp=-ell_wrapped (ell increases LEFT)",
+        "legend_summary": "two MAX + two MIN loops, each ±18° wide",
+    }
+    JSON_PATH.write_text(json.dumps(payload, indent=2) + "\n")
+    print(json.dumps(payload, indent=2))
+    print(f"\nWrote {PNG_PATH}")
+    print(f"Wrote {JSON_PATH}")
+
+
+if __name__ == "__main__":
+    main()

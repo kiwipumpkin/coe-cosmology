@@ -1,0 +1,81 @@
+{
+  "geometry": {
+    "D": 58.19699837268826,
+    "mcc": 0.0017121308626185587,
+    "Rin": 0.499774693006799,
+    "Rout": 72.83442650308822,
+    "Os": 0.049,
+    "Lc": 0.005,
+    "l0": 15.1629523788697,
+    "CoE_ell": 195.1629523788697,
+    "antiCoE_ell": 15.1629523788697
+  },
+  "directions": {
+    "Secrest_highcount": [
+      238.2,
+      28.8
+    ],
+    "CMB": [
+      264.021,
+      48.253
+    ],
+    "ang_CoE_Secrest": 50.17062069825669,
+    "ang_CoE_CMB": 76.1042525526001,
+    "ang_Secrest_CMB": 27.790333215363468
+  },
+  "contrasts": {
+    "3.0": {
+      "R": 3.0,
+      "D": 58.19699837268826,
+      "rin_G": 55.19699837268826,
+      "rout_G": 61.19699837268826,
+      "rho_in": 0.049,
+      "rho_out": 0.049,
+      "rho_E": 0.049,
+      "rho_bar_loc": 0.049,
+      "rho_bar_vol": 0.049,
+      "contrast_loc": 0.0,
+      "contrast_E": 0.0,
+      "contrast_vol": 0.0,
+      "contrast_integrator": 0.0,
+      "rho_hem_in": 0.049,
+      "rho_hem_out": 0.04900000000000001,
+      "hem_contrast": -1.4161007967157609e-16,
+      "D_rho_cos": 3.163600347752218e-17,
+      "mc_tot": 0.050712267825946,
+      "Ht": 0.9879573881606687,
+      "inside_shell_in": true,
+      "inside_shell_out": true,
+      "Omega_run_in": 0.048997520799848385,
+      "Omega_run_out": 0.048997520799848385,
+      "Omega_run_E": 0.048997520799848385
+    },
+    "14.30048287260589": {
+      "R": 14.30048287260589,
+      "D": 58.19699837268826,
+      "rin_G": 43.89651550008237,
+      "rout_G": 72.49748124529415,
+      "rho_in": 0.049,
+      "rho_out": 0.049,
+      "rho_E": 0.049,
+      "rho_bar_loc": 0.049,
+      "rho_bar_vol": 0.049,
+      "contrast_loc": 0.0,
+      "contrast_E": 0.0,
+      "contrast_vol": 0.0,
+      "contrast_integrator": 0.0,
+      "rho_hem_in": 0.049,
+      "rho_hem_out": 0.04900000000000001,
+      "hem_contrast": -1.4161007967157609e-16,
+      "D_rho_cos": 3.163600347752218e-17,
+      "mc_tot": 0.050712267825946,
+      "Ht": 0.9879573881606687,
+      "inside_shell_in": true,
+      "inside_shell_out": true,
+      "Omega_run_in": 0.048997520799848385,
+      "Omega_run_out": 0.048997520799848385,
+      "Omega_run_E": 0.048997520799848385
+    }
+  },
+  "note": "Earth sits inside thick constant-Os shell; D\u00b1R both in shell for R=3 and R=14.3 (D+R nearly at Rout for R=14.3). Native pole contrast \u2248 0 from flat shell; tiny residual from exponential core and/or outer edge."
+}

@@ -1,0 +1,778 @@
+#!/usr/bin/env python3
+"""
+Superimpose CoE MAX/MIN rings + Migkas markers onto the REAL Migkas Fig. 8
+theta=75 A/A_all Mollweide map.
+
+Full Panel-B feature set (matches make_coe_rings_migkas_pin_axis.py):
+  MAX rings at θ = 30° and 185° from +x  → μ = cos(θ)
+  MIN rings at θ = 115° and 265° from +x → μ = cos(θ)
+  MAX triangles: (17°, −9°) and (185°, 0°)
+  MIN squares:   (115°, 0°) and (274°, −22°)
+  Companion ring: θ = 283° from +x (+18° from MIN 265°), dashed orange
+  Celestial equator Dec=0 (dashed green); CoE axis b=0 (purple)
+
+Registration (no guessing):
+  1. Detect the Mollweide oval (longest non-white mid-row segment; colorbar excluded).
+  2. Map Galactic (l, b) -> Mollweide native (x, y) -> pixels via the oval ellipse
+     (normalized Mollweide coords scaled independently to Rx, Ry).
+  3. Fine-tune (cx, cy, Rx, Ry) so Dec=0 tracks the black celestial-equator curve
+     already drawn on Migkas Fig. 8 (median residual ~1 px).
+
+Convention: lon_disp = -wrap(l)  (l increases LEFT), same as Migkas Fig. 8.
+
+No vertical chords inside rings; no blocking text box on the map; legend below.
+Colorbar from the source is preserved.
+
+Outputs:
+  migkas_fig8_theta75_with_coe_rings.png
+  migkas_fig8_theta75_with_coe_rings.json
+"""
+
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.lines import Line2D
+from matplotlib.patches import Ellipse
+from PIL import Image
+
+OUT_DIR = Path(__file__).resolve().parent
+PNG_PATH = OUT_DIR / "migkas_fig8_theta75_with_coe_rings.png"
+JSON_PATH = OUT_DIR / "migkas_fig8_theta75_with_coe_rings.json"
+
+SOURCE_CANDIDATES = [
+    Path("/workspace/cosmology/map_compare/FULL_migkas_theta75.png"),
+    Path("/workspace/cosmology/map_compare/migkas_fig8_theta75_crop.png"),
+    Path("/workspace/cosmology/migkas/pub_maps/Fig8_full_hires.png"),
+]
+
+# Strip A(ℓ) scan stops from +x (after-2ℓ A_after extrema) — ring cone angles.
+THETA_MAX = [30.0, 185.0]
+THETA_MIN = [115.0, 265.0]
+THETA_EXTRA = [283.0]
+MU_MAX = [float(np.cos(np.deg2rad(t))) for t in THETA_MAX]
+MU_MIN = [float(np.cos(np.deg2rad(t))) for t in THETA_MIN]
+MU_EXTRA = [float(np.cos(np.deg2rad(t))) for t in THETA_EXTRA]
+
+# Sky markers (ℓ, b): map extrema + strip stand-ins (same as 3-panel Panel B).
+MIGKAS_MAXES = [(17.0, -9.0), (185.0, 0.0)]
+MIGKAS_MINS = [(115.0, 0.0), (274.0, -22.0)]
+
+D_HAT = np.array([1.0, 0.0, 0.0])
+
+C_MAX = "#e74c3c"
+C_MIN = "#2980b9"
+C_COE = "#6b3fa0"
+C_ANTI = "#c0392b"
+C_AXIS = "#5b2c6f"
+C_EQ = "#1e8449"
+C_EXTRA = "#e67e22"
+
+
+def wrap_lon_deg(lon):
+    return ((np.asarray(lon, dtype=float) + 180.0) % 360.0) - 180.0
+
+
+def lon_disp_from_ell(ell_deg):
+    return -wrap_lon_deg(ell_deg)
+
+
+def n_to_lb(n):
+    n = np.asarray(n, dtype=float)
+    n = n / np.linalg.norm(n)
+    b = float(np.rad2deg(np.arcsin(np.clip(n[2], -1.0, 1.0))))
+    l = float(np.rad2deg(np.arctan2(n[1], n[0])) % 360.0)
+    return l, b
+
+
+def celestial_equator_lb(n=2500):
+    ra_ngp = np.deg2rad(192.85948)
+    dec_ngp = np.deg2rad(27.12825)
+    l_ncp = np.deg2rad(122.93192)
+    ra = np.linspace(0.0, 2.0 * np.pi, n, endpoint=False)
+    dec = 0.0
+    sin_b = np.clip(
+        np.sin(dec) * np.sin(dec_ngp)
+        + np.cos(dec) * np.cos(dec_ngp) * np.cos(ra - ra_ngp),
+        -1.0,
+        1.0,
+    )
+    b = np.arcsin(sin_b)
+    y = np.cos(dec) * np.sin(ra - ra_ngp)
+    x = (
+        np.sin(dec) * np.cos(dec_ngp)
+        - np.cos(dec) * np.sin(dec_ngp) * np.cos(ra - ra_ngp)
+    )
+    l = (l_ncp - np.arctan2(y, x)) % (2.0 * np.pi)
+    return np.rad2deg(l), np.rad2deg(b)
+
+
+def small_circle_about_axis(axis, mu, n=721):
+    a = axis / np.linalg.norm(axis)
+    mu = float(np.clip(mu, -1.0 + 1e-9, 1.0 - 1e-9))
+    tmp = np.array([0.0, 0.0, 1.0]) if abs(a[2]) < 0.9 else np.array([1.0, 0.0, 0.0])
+    e1 = np.cross(a, tmp)
+    e1 /= np.linalg.norm(e1)
+    e2 = np.cross(a, e1)
+    rho = np.sqrt(max(0.0, 1.0 - mu * mu))
+    t = np.linspace(0.0, 2.0 * np.pi, n)
+    return (mu * a)[None, :] + rho * (
+        np.outer(np.cos(t), e1) + np.outer(np.sin(t), e2)
+    )
+
+
+def mollweide_xy(lon_rad, lat_rad, n_iter=64):
+    """Standard Mollweide; stable bracketed solve of 2θ+sin(2θ)=π sin(lat)."""
+    lon = np.asarray(lon_rad, dtype=float)
+    lat = np.asarray(lat_rad, dtype=float)
+    target = np.pi * np.sin(np.clip(lat, -np.pi / 2, np.pi / 2))
+    lo = np.full_like(lat, -np.pi / 2, dtype=float)
+    hi = np.full_like(lat, np.pi / 2, dtype=float)
+    for _ in range(n_iter):
+        mid = 0.5 * (lo + hi)
+        g = 2.0 * mid + np.sin(2.0 * mid)
+        lo = np.where(g < target, mid, lo)
+        hi = np.where(g >= target, mid, hi)
+    theta = 0.5 * (lo + hi)
+    theta = np.where(lat >= np.pi / 2 - 1e-15, np.pi / 2, theta)
+    theta = np.where(lat <= -np.pi / 2 + 1e-15, -np.pi / 2, theta)
+    x = (2.0 * np.sqrt(2.0) / np.pi) * lon * np.cos(theta)
+    y = np.sqrt(2.0) * np.sin(theta)
+    return x, y
+
+
+def lb_to_px(ell_deg, b_deg, cx, cy, Rx, Ry):
+    lon = np.deg2rad(lon_disp_from_ell(np.asarray(ell_deg, dtype=float)))
+    lat = np.deg2rad(np.asarray(b_deg, dtype=float))
+    x, y = mollweide_xy(lon, lat)
+    Xn = x / (2.0 * np.sqrt(2.0))
+    Yn = y / np.sqrt(2.0)
+    return cx + Xn * Rx, cy - Yn * Ry
+
+
+def as_xy(px, py):
+    return float(np.asarray(px).reshape(-1)[0]), float(np.asarray(py).reshape(-1)[0])
+
+
+def chamfer_distance_to_dark(dark):
+    h, w = dark.shape
+    INF = 1e6
+    D = np.where(dark, 0.0, INF)
+    for y in range(h):
+        for x in range(w):
+            v = D[y, x]
+            if x > 0:
+                v = min(v, D[y, x - 1] + 1.0)
+            if y > 0:
+                v = min(v, D[y - 1, x] + 1.0)
+            if x > 0 and y > 0:
+                v = min(v, D[y - 1, x - 1] + 1.414)
+            if x + 1 < w and y > 0:
+                v = min(v, D[y - 1, x + 1] + 1.414)
+            D[y, x] = v
+    for y in range(h - 1, -1, -1):
+        for x in range(w - 1, -1, -1):
+            v = D[y, x]
+            if x + 1 < w:
+                v = min(v, D[y, x + 1] + 1.0)
+            if y + 1 < h:
+                v = min(v, D[y + 1, x] + 1.0)
+            if x + 1 < w and y + 1 < h:
+                v = min(v, D[y + 1, x + 1] + 1.414)
+            if x > 0 and y + 1 < h:
+                v = min(v, D[y + 1, x - 1] + 1.414)
+            D[y, x] = v
+    return D
+
+
+def detect_oval_bbox(rgb):
+    h, w, _ = rgb.shape
+    white = (rgb[:, :, 0] > 250) & (rgb[:, :, 1] > 250) & (rgb[:, :, 2] > 250)
+    oval_left = np.full(h, np.nan)
+    oval_right = np.full(h, np.nan)
+    for y in range(h):
+        row = ~white[y]
+        d = np.diff(np.r_[0, row.astype(int), 0])
+        starts = np.where(d == 1)[0]
+        ends = np.where(d == -1)[0] - 1
+        if len(starts) == 0:
+            continue
+        lengths = ends - starts + 1
+        candidates = [
+            (int(lengths[i]), int(starts[i]), int(ends[i]))
+            for i in range(len(starts))
+            if starts[i] < 0.72 * w and lengths[i] > 40
+        ]
+        if not candidates:
+            continue
+        candidates.sort(reverse=True)
+        _, L, R = candidates[0]
+        oval_left[y] = L
+        oval_right[y] = R
+    widths = np.where(np.isfinite(oval_left), oval_right - oval_left, 0.0)
+    yeq = int(np.argmax(widths))
+    thresh = 0.08 * widths[yeq]
+    y0 = yeq
+    while y0 > 0 and widths[y0 - 1] >= thresh:
+        y0 -= 1
+    y1 = yeq
+    while y1 < h - 1 and widths[y1 + 1] >= thresh:
+        y1 += 1
+    x0 = float(oval_left[yeq])
+    x1 = float(oval_right[yeq])
+    return {
+        "x0": int(x0),
+        "x1": int(x1),
+        "y0": int(y0),
+        "y1": int(y1),
+        "yeq": int(yeq),
+        "cx": 0.5 * (x0 + x1),
+        "cy": 0.5 * (y0 + y1),
+        "Rx": 0.5 * (x1 - x0),
+        "Ry": 0.5 * (y1 - y0 + 1),
+    }
+
+
+def refine_registration(rgb, seed):
+    h, w, _ = rgb.shape
+    dark = rgb.mean(axis=2) < 55
+    dist = chamfer_distance_to_dark(dark)
+
+    ell_eq, b_eq = celestial_equator_lb(2500)
+    lon = np.deg2rad(lon_disp_from_ell(ell_eq))
+    lat = np.deg2rad(b_eq)
+    mx, my = mollweide_xy(lon, lat)
+    Xn = mx / (2.0 * np.sqrt(2.0))
+    Yn = my / np.sqrt(2.0)
+
+    def median_dist(cx, cy, Rx, Ry):
+        px = cx + Xn * Rx
+        py = cy - Yn * Ry
+        m = (px >= 1) & (px < w - 1) & (py >= 1) & (py < h - 1)
+        xi = np.clip(np.round(px[m]).astype(int), 0, w - 1)
+        yi = np.clip(np.round(py[m]).astype(int), 0, h - 1)
+        return float(np.median(dist[yi, xi]))
+
+    base = {k: float(seed[k]) for k in ("cx", "cy", "Rx", "Ry")}
+    best_sc = median_dist(**base)
+    best = dict(base)
+    for dcx in np.linspace(-10, 10, 21):
+        for dcy in np.linspace(-10, 10, 21):
+            for sRx in (0.98, 0.99, 1.0, 1.01, 1.02):
+                for sRy in (0.98, 0.99, 1.0, 1.01, 1.02):
+                    p = dict(
+                        cx=base["cx"] + dcx,
+                        cy=base["cy"] + dcy,
+                        Rx=base["Rx"] * sRx,
+                        Ry=base["Ry"] * sRy,
+                    )
+                    sc = median_dist(**p)
+                    if sc < best_sc:
+                        best_sc = sc
+                        best = p
+    b = best
+    for dcx in np.linspace(-2, 2, 17):
+        for dcy in np.linspace(-2, 2, 17):
+            for sRx in np.linspace(0.995, 1.005, 11):
+                for sRy in np.linspace(0.995, 1.005, 11):
+                    p = dict(
+                        cx=b["cx"] + dcx,
+                        cy=b["cy"] + dcy,
+                        Rx=b["Rx"] * sRx,
+                        Ry=b["Ry"] * sRy,
+                    )
+                    sc = median_dist(**p)
+                    if sc < best_sc:
+                        best_sc = sc
+                        best = p
+    best["ceq_median_px"] = float(best_sc)
+    return best
+
+
+def choose_source():
+    for p in SOURCE_CANDIDATES:
+        if p.is_file():
+            return p
+    raise FileNotFoundError("No Migkas Fig.8 theta=75 source image found")
+
+
+def sample_rgb(rgb, ell, b, cx, cy, Rx, Ry, r=4):
+    px, py = lb_to_px(ell, b, cx, cy, Rx, Ry)
+    xi, yi = int(round(as_xy(px, py)[0])), int(round(as_xy(px, py)[1]))
+    patch = rgb[max(0, yi - r) : yi + r + 1, max(0, xi - r) : xi + r + 1]
+    return patch.mean(axis=(0, 1))
+
+
+def validate_landmarks(rgb, reg):
+    cx, cy, Rx, Ry = reg["cx"], reg["cy"], reg["Rx"], reg["Ry"]
+    pts = {}
+    landmarks = [
+        ("center", 0.0, 0.0),
+        ("ell90", 90.0, 0.0),
+        ("ell270", 270.0, 0.0),
+        ("north", 0.0, 90.0),
+        ("south", 0.0, -90.0),
+    ]
+    for i, (ell, b) in enumerate(MIGKAS_MAXES):
+        landmarks.append((f"migkas_max{i}", ell, b))
+    for i, (ell, b) in enumerate(MIGKAS_MINS):
+        landmarks.append((f"migkas_min{i}", ell, b))
+    for name, ell, b in landmarks:
+        x, y = as_xy(*lb_to_px(ell, b, cx, cy, Rx, Ry))
+        pts[name] = {"ell": ell, "b": b, "px": x, "py": y}
+
+    assert pts["ell90"]["px"] < pts["center"]["px"], "l=90 must be LEFT of center"
+    assert pts["ell270"]["px"] > pts["center"]["px"], "l=270 must be RIGHT of center"
+    assert abs(pts["center"]["px"] - cx) < 1.5
+    assert abs(pts["center"]["py"] - cy) < 1.5
+    assert pts["north"]["py"] < pts["center"]["py"]
+    assert pts["south"]["py"] > pts["center"]["py"]
+
+    # Map-extrema pair: (17,-9) should sit in a warmer patch than (274,-22).
+    cmax = sample_rgb(rgb, *MIGKAS_MAXES[0], cx, cy, Rx, Ry)
+    cmin = sample_rgb(rgb, *MIGKAS_MINS[1], cx, cy, Rx, Ry)
+    assert (cmax[0] + cmax[1]) > (cmin[0] + cmin[1]) + 50
+    return {
+        "landmarks_px": pts,
+        "migkas_max0_rgb_mean": [float(x) for x in cmax],
+        "migkas_min1_rgb_mean": [float(x) for x in cmin],
+    }
+
+
+def inside_ellipse(px, py, ecx, ecy, eRx, eRy, r_lim=1.0):
+    """Boolean mask: points inside axis-aligned ellipse (image y down)."""
+    px = np.asarray(px, dtype=float)
+    py = np.asarray(py, dtype=float)
+    Xn = (px - ecx) / eRx
+    Yn = (py - ecy) / eRy
+    return Xn * Xn + Yn * Yn <= float(r_lim) * float(r_lim)
+
+
+def plot_lb_curve(
+    ax, ell, b, cx, cy, Rx, Ry, inset=1.0, jump_px=45.0,
+    clip_r2=None, clip_path=None, color_oval=None, **kw
+):
+    """Draw curve in oval; inset<1 keeps strokes inside the published Mollweide edge."""
+    px, py = lb_to_px(ell, b, cx, cy, Rx, Ry)
+    px = np.asarray(px, dtype=float).reshape(-1)
+    py = np.asarray(py, dtype=float).reshape(-1)
+    # Pull points slightly toward oval center so thick strokes do not spill past the rim.
+    px = cx + (px - cx) * inset
+    py = cy + (py - cy) * inset
+    Xn = (px - cx) / Rx
+    Yn = (cy - py) / Ry
+    r2_lim = (inset * inset) if clip_r2 is None else float(clip_r2)
+    inside = Xn * Xn + Yn * Yn <= r2_lim
+    # Also require published colored oval (seed) so registration oversize cannot bleed.
+    if color_oval is not None:
+        ocx, ocy, oRx, oRy, o_r = color_oval
+        inside = inside & inside_ellipse(px, py, ocx, ocy, oRx, oRy, o_r)
+    px = np.where(inside, px, np.nan)
+    py = np.where(inside, py, np.nan)
+
+    segs = []
+    cur_x, cur_y = [], []
+    for x, y in zip(px, py):
+        if not (np.isfinite(x) and np.isfinite(y)):
+            if len(cur_x) >= 2:
+                segs.append((cur_x, cur_y))
+            cur_x, cur_y = [], []
+            continue
+        if cur_x and np.hypot(x - cur_x[-1], y - cur_y[-1]) > jump_px:
+            if len(cur_x) >= 2:
+                segs.append((cur_x, cur_y))
+            cur_x, cur_y = [float(x)], [float(y)]
+        else:
+            cur_x.append(float(x))
+            cur_y.append(float(y))
+    if len(cur_x) >= 2:
+        segs.append((cur_x, cur_y))
+    if clip_path is not None:
+        kw["clip_path"] = clip_path
+        kw["clip_on"] = True
+    for sx, sy in segs:
+        (line,) = ax.plot(sx, sy, **kw)
+        if clip_path is not None:
+            line.set_clip_path(clip_path)
+            line.set_clip_on(True)
+
+
+def plot_closed_ring(
+    ax, mu, cx, cy, Rx, Ry, color, lw, inset=1.0, jump_px=80.0,
+    clip_path=None, color_oval=None, ls="-",
+):
+    """
+    Exact projected small-circle about D_HAT=+x: n·x̂ = μ.
+
+    Parameterize on the sphere, convert to Galactic (ℓ,b), apply
+    lon_disp = -wrap(ℓ), Mollweide-project, and stroke continuous polylines.
+    Split wherever display-longitude jumps across the antimeridian (or pixel
+    distance jumps). Never invent interior chords, ellipse fits, or decorative
+    oval-rim bridges.
+
+    Notes on θ labels used elsewhere:
+      μ=cos(30°)  → r=30° about +x (closed oval near map center)
+      μ=cos(185°)=cos(175°) → r=175° about +x ≡ 5° about CoE
+        → small arcs on BOTH left and right map edges (not a rim loop)
+      μ=cos(115°) → r=115° about +x (large seam-crossing curve)
+      μ=cos(265°)=cos(95°) → r=95° about +x (near-meridian, seam-crossing)
+    """
+    pts = small_circle_about_axis(D_HAT, mu, n=4001)
+    # Keep sampling order around the axis (azimuth) — stable for splitting.
+    phi = np.arctan2(pts[:, 2], pts[:, 1])
+    order = np.argsort(phi)
+    pts = pts[order]
+
+    ell = np.empty(len(pts))
+    b = np.empty(len(pts))
+    for i, p in enumerate(pts):
+        ell[i], b[i] = n_to_lb(p)
+
+    lon = np.deg2rad(lon_disp_from_ell(ell))  # λ ∈ (-π, π]
+    lat = np.deg2rad(b)
+
+    # Split on antimeridian jumps in display longitude BEFORE pixel projection.
+    dlon = np.diff(lon)
+    cuts = np.where(np.abs(dlon) > np.pi)[0] + 1
+    # Also close the periodic sample: check wrap between last and first.
+    # Build open segments from azimuth-ordered points.
+    idx = np.concatenate([[0], cuts, [len(lon)]])
+    lon_segs = []
+    for i0, i1 in zip(idx[:-1], idx[1:]):
+        if i1 - i0 >= 2:
+            lon_segs.append((lon[i0:i1].copy(), lat[i0:i1].copy()))
+
+    # Circle sampling is cyclic. Merge the artificial last→first break when
+    # that periodic join is not itself an antimeridian crossing. Otherwise a
+    # seam-crossing circle falsely appears as three pieces with a tiny hole.
+    if len(lon_segs) > 1 and abs(lon[0] - lon[-1]) <= np.pi:
+        first_lo, first_la = lon_segs[0]
+        last_lo, last_la = lon_segs[-1]
+        lon_segs = [(
+            np.concatenate([last_lo, first_lo]),
+            np.concatenate([last_la, first_la]),
+        )] + lon_segs[1:-1]
+
+    # Only now pin TRUE seam endpoints to ±π. Never snap the arbitrary
+    # parameterization start/end to the boundary.
+    snapped = []
+    for lo, la in lon_segs:
+        if abs(abs(lo[0]) - np.pi) < np.deg2rad(10):
+            lo[0] = np.sign(lo[0] if lo[0] != 0 else 1.0) * np.pi
+        if abs(abs(lo[-1]) - np.pi) < np.deg2rad(10):
+            lo[-1] = np.sign(lo[-1] if lo[-1] != 0 else 1.0) * np.pi
+        snapped.append((lo, la))
+    lon_segs = snapped
+
+    def stroke_xy(xs, ys):
+        if len(xs) < 2:
+            return
+        for col, width, z, a in (
+            ("white", lw + 1.6, 3, 0.98),
+            (color, lw, 4, 1.0),
+        ):
+            (line,) = ax.plot(
+                xs, ys, color=col, lw=width, linestyle=ls,
+                solid_capstyle="round", solid_joinstyle="round",
+                zorder=z, alpha=a,
+                clip_path=clip_path, clip_on=True,
+            )
+            if clip_path is not None:
+                line.set_clip_path(clip_path)
+                line.set_clip_on(True)
+
+    r2_lim = inset * inset + 1e-10
+    drawn = 0
+    for lo, la in lon_segs:
+        # Mollweide in normalized oval coords, then pixels.
+        x_m, y_m = mollweide_xy(lo, la)
+        Xn = x_m / (2.0 * np.sqrt(2.0))
+        Yn = y_m / np.sqrt(2.0)
+        px = cx + Xn * Rx
+        py = cy - Yn * Ry
+        # Mild inset so thick strokes stay inside published oval (no rim-snap).
+        px = cx + (px - cx) * inset
+        py = cy + (py - cy) * inset
+        Xn2 = (px - cx) / Rx
+        Yn2 = (cy - py) / Ry
+        inside = (Xn2 * Xn2 + Yn2 * Yn2) <= r2_lim
+        if color_oval is not None:
+            ocx, ocy, oRx, oRy, o_r = color_oval
+            inside = inside & inside_ellipse(px, py, ocx, ocy, oRx, oRy, o_r)
+
+        # Pixel-space split on NaN / large jumps / outside oval.
+        cur_x, cur_y = [], []
+        for x, y, ok in zip(px, py, inside):
+            if (not ok) or (not np.isfinite(x)) or (not np.isfinite(y)):
+                if len(cur_x) >= 2:
+                    stroke_xy(cur_x, cur_y)
+                    drawn += 1
+                cur_x, cur_y = [], []
+                continue
+            if cur_x and np.hypot(x - cur_x[-1], y - cur_y[-1]) > jump_px:
+                if len(cur_x) >= 2:
+                    stroke_xy(cur_x, cur_y)
+                    drawn += 1
+                cur_x, cur_y = [float(x)], [float(y)]
+            else:
+                cur_x.append(float(x))
+                cur_y.append(float(y))
+        if len(cur_x) >= 2:
+            # Close only if this single segment is already nearly a loop
+            # (non-wrapping ring such as MAX 30°).
+            if (
+                drawn == 0
+                and len(lon_segs) == 1
+                and np.hypot(cur_x[0] - cur_x[-1], cur_y[0] - cur_y[-1]) < jump_px
+            ):
+                cur_x.append(cur_x[0])
+                cur_y.append(cur_y[0])
+            stroke_xy(cur_x, cur_y)
+            drawn += 1
+
+
+
+def draw_overlay(rgb, reg, seed, source):
+    h, w, _ = rgb.shape
+    cx, cy, Rx, Ry = reg["cx"], reg["cy"], reg["Rx"], reg["Ry"]
+    # Published colored Mollweide (seed detect) — used to keep overlays inside
+    # the Migkas map even when registration ellipse is slightly larger.
+    scx = float(seed["cx"])
+    scy = float(seed["cy"])
+    sRx = float(seed["Rx"])
+    sRy = float(seed["Ry"])
+
+    dpi = 120
+    fig, ax = plt.subplots(figsize=(w / dpi, (h / dpi) + 1.35), dpi=dpi)
+    ax.imshow(rgb, origin="upper", extent=(0, w, h, 0), interpolation="nearest")
+    ax.set_xlim(0, w)
+    ax.set_ylim(h, 0)
+    ax.set_aspect("equal")
+    ax.axis("off")
+
+    # clip_path = registered oval (cx,cy,Rx,Ry). Registration itself is unchanged.
+    # Because the refined ellipse can sit a bit outside the published colored
+    # map, we ALSO inset strokes and cull/inset markers against the seed oval.
+    clip_oval = Ellipse(
+        (cx, cy), width=2.0 * Rx, height=2.0 * Ry,
+        facecolor="none", edgecolor="none", transform=ax.transData,
+    )
+    ax.add_patch(clip_oval)
+
+    # Stroke inset so thick white+color underlays do not AA-bleed past the rim.
+    STROKE_INSET = 0.97
+    # Cull points outside this fraction of the published colored seed oval.
+    COLOR_R = 0.978
+    color_oval = (scx, scy, sRx, sRy, COLOR_R)
+
+    def stroke_curve(ell, b, color, lw, ls="-"):
+        # White underlay then color — stands out on magma without looking oversized.
+        plot_lb_curve(
+            ax, ell, b, cx, cy, Rx, Ry, inset=STROKE_INSET, clip_path=clip_oval,
+            color_oval=color_oval,
+            color="white", lw=lw + 1.6, ls=ls, alpha=0.95,
+            solid_capstyle="round", zorder=3,
+        )
+        plot_lb_curve(
+            ax, ell, b, cx, cy, Rx, Ry, inset=STROKE_INSET, clip_path=clip_oval,
+            color_oval=color_oval,
+            color=color, lw=lw, ls=ls, alpha=1.0,
+            solid_capstyle="round", zorder=4,
+        )
+
+    def mark_point(ell, b, marker, color, ms):
+        """Place marker; pull limb symbols inward so halo stays in colored oval."""
+        px, py = as_xy(*lb_to_px(ell, b, cx, cy, Rx, Ry))
+        # Approx marker+halo radius in pixels (ms is points).
+        halo_ms = ms + 1.8
+        ms_px = 0.5 * halo_ms * (dpi / 72.0)
+        # Normalized margin inside the published colored oval.
+        margin = ms_px / min(sRx, sRy) + 0.012
+        r_lim = max(0.55, COLOR_R - margin)
+
+        Xn = (px - scx) / sRx
+        Yn = (py - scy) / sRy
+        r_col = float(np.hypot(Xn, Yn))
+
+        if r_col > 1e-9:
+            # Scale toward colored-oval center so the whole symbol fits.
+            if r_col > r_lim:
+                scale = r_lim / r_col
+                px = scx + (px - scx) * scale
+                py = scy + (py - scy) * scale
+                Xn = (px - scx) / sRx
+                Yn = (py - scy) / sRy
+                r_col = float(np.hypot(Xn, Yn))
+            # Mild extra inset for everyone (matches stroke inset spirit).
+            mild = min(STROKE_INSET, 0.995)
+            px = scx + (px - scx) * mild
+            py = scy + (py - scy) * mild
+            Xn = (px - scx) / sRx
+            Yn = (py - scy) / sRy
+            r_col = float(np.hypot(Xn, Yn))
+
+        # Skip if still too close to the rim for this marker size.
+        if r_col + margin > COLOR_R + 1e-6:
+            return
+
+        def _mark(m_size, m_color, m_edge, m_ew, z):
+            (line,) = ax.plot(
+                px, py, marker=marker, ms=m_size, color=m_color,
+                markeredgecolor=m_edge, markeredgewidth=m_ew, linestyle="None",
+                zorder=z, clip_path=clip_oval, clip_on=True,
+            )
+            line.set_clip_path(clip_oval)
+            line.set_clip_on(True)
+
+        _mark(ms + 1.8, "white", "white", 0, 6)
+        _mark(ms, color, "k", 0.55, 7)
+
+    # CoE axis + celestial equator
+    stroke_curve(np.linspace(0, 360, 721), np.zeros(721), C_AXIS, lw=1.15)
+    ell_eq, b_eq = celestial_equator_lb(1500)
+    stroke_curve(ell_eq, b_eq, C_EQ, lw=1.1, ls="--")
+
+    for mu in MU_MAX:
+        plot_closed_ring(
+            ax, mu, cx, cy, Rx, Ry, C_MAX, lw=1.55,
+            inset=STROKE_INSET, clip_path=clip_oval, color_oval=color_oval,
+        )
+    for mu in MU_MIN:
+        plot_closed_ring(
+            ax, mu, cx, cy, Rx, Ry, C_MIN, lw=1.55,
+            inset=STROKE_INSET, clip_path=clip_oval, color_oval=color_oval,
+        )
+    for mu in MU_EXTRA:
+        plot_closed_ring(
+            ax, mu, cx, cy, Rx, Ry, C_EXTRA, lw=1.55, ls="--",
+            inset=STROKE_INSET, clip_path=clip_oval, color_oval=color_oval,
+        )
+
+    # Markers (limb ones get stronger inset inside mark_point)
+    mark_point(0.0, 0.0, "o", C_ANTI, ms=5.5)
+    mark_point(180.0, 0.0, "*", C_COE, ms=7.5)
+    for (ell, b) in MIGKAS_MAXES:
+        mark_point(ell, b, "^", C_MAX, ms=6.5)
+    for (ell, b) in MIGKAS_MINS:
+        mark_point(ell, b, "s", C_MIN, ms=6.0)
+
+    th_max_str = "/".join(f"{t:.0f}" for t in THETA_MAX)
+    th_min_str = "/".join(f"{t:.0f}" for t in THETA_MIN)
+    max_lbl = ", ".join(rf"$({e:.0f}^\circ,{b:+.0f}^\circ)$" for e, b in MIGKAS_MAXES)
+    min_lbl = ", ".join(rf"$({e:.0f}^\circ,{b:+.0f}^\circ)$" for e, b in MIGKAS_MINS)
+    handles = [
+        Line2D([0], [0], color=C_MAX, lw=2.4,
+               label=rf"MAX rings ($\theta={th_max_str}^\circ$)"),
+        Line2D([0], [0], color=C_MIN, lw=2.4,
+               label=rf"MIN rings ($\theta={th_min_str}^\circ$)"),
+        Line2D([0], [0], color=C_EXTRA, lw=2.4, ls="--",
+               label=r"283° companion (+18° from MIN 265°)"),
+        Line2D([0], [0], color=C_EQ, lw=2.0, ls="--",
+               label="celestial equator (Dec=0)"),
+        Line2D([0], [0], color=C_AXIS, lw=2.0, label="CoE axis (b=0)"),
+        Line2D([0], [0], marker="^", color=C_MAX, markeredgecolor="k",
+               linestyle="None", ms=8,
+               label=rf"MAX markers {max_lbl}"),
+        Line2D([0], [0], marker="s", color=C_MIN, markeredgecolor="k",
+               linestyle="None", ms=7,
+               label=rf"MIN markers {min_lbl}"),
+        Line2D([0], [0], marker="o", color=C_ANTI, markeredgecolor="k",
+               linestyle="None", ms=6,
+               label=r"anti-CoE $+x$ $(0^\circ,0^\circ)$"),
+        Line2D([0], [0], marker="*", color=C_COE, markeredgecolor="k",
+               linestyle="None", ms=9,
+               label=r"CoE $(180^\circ,0^\circ)$"),
+    ]
+    leg = ax.legend(
+        handles=handles, loc="upper center", bbox_to_anchor=(0.5, -0.012),
+        ncol=4, fontsize=8.5, frameon=True, fancybox=False,
+        edgecolor="#222222", framealpha=1.0, facecolor="white",
+        labelcolor="#111111", borderpad=0.6, handlelength=2.2,
+    )
+    leg.get_frame().set_linewidth(1.2)
+    fig.suptitle(
+        r"Migkas Fig. 8 $\theta=75^\circ$ $A/A_{\rm all}$ + CoE MAX/MIN rings"
+        "\n"
+        r"(Galactic Mollweide; $\ell$ increases LEFT; registered to published oval)",
+        fontsize=11, y=0.985,
+    )
+    fig.subplots_adjust(left=0.01, right=0.99, top=0.92, bottom=0.13)
+    fig.savefig(PNG_PATH, dpi=dpi, facecolor="white")
+    plt.close(fig)
+    print(f"wrote {PNG_PATH}")
+
+
+def main():
+    source = choose_source()
+    print(f"source: {source}")
+    rgb = np.asarray(Image.open(source).convert("RGB"))
+    seed = detect_oval_bbox(rgb)
+    print("oval seed:", {k: seed[k] for k in ("cx", "cy", "Rx", "Ry", "x0", "x1", "y0", "y1")})
+    reg = refine_registration(rgb, seed)
+    print("refined:", {k: reg[k] for k in ("cx", "cy", "Rx", "Ry", "ceq_median_px")})
+    checks = validate_landmarks(rgb, reg)
+    print(
+        "validation OK — max0 RGB", checks["migkas_max0_rgb_mean"],
+        "min1 RGB", checks["migkas_min1_rgb_mean"],
+    )
+    draw_overlay(rgb, reg, seed, source)
+
+    meta = {
+        "png": str(PNG_PATH),
+        "script": str(Path(__file__).resolve()),
+        "source_image": str(source),
+        "convention": (
+            "Galactic Mollweide; lon_disp=-wrap(ell); ell increases LEFT "
+            "(Migkas Fig.8)"
+        ),
+        "anti_CoE_lb_deg": [0.0, 0.0],
+        "CoE_lb_deg": [180.0, 0.0],
+        "D_hat_galactic_xyz": [1.0, 0.0, 0.0],
+        "migkas_max_lb_deg": [list(p) for p in MIGKAS_MAXES],
+        "migkas_min_lb_deg": [list(p) for p in MIGKAS_MINS],
+        "theta_max_from_plus_x_deg": list(THETA_MAX),
+        "theta_min_from_plus_x_deg": list(THETA_MIN),
+        "theta_extra_from_plus_x_deg": list(THETA_EXTRA),
+        "mu_max": list(MU_MAX),
+        "mu_min": list(MU_MIN),
+        "mu_extra": list(MU_EXTRA),
+        "companion_color_hex": C_EXTRA,
+        "companion_linestyle": "--",
+        "scan_stop_source": (
+            "best_fit_2ell_multiplier.npz A_after extrema (two max, two min)"
+        ),
+        "oval_seed_bbox": {
+            "x0": seed["x0"], "x1": seed["x1"], "y0": seed["y0"], "y1": seed["y1"],
+            "cx": seed["cx"], "cy": seed["cy"], "Rx": seed["Rx"], "Ry": seed["Ry"],
+        },
+        "registration": {
+            "cx": reg["cx"], "cy": reg["cy"], "Rx": reg["Rx"], "Ry": reg["Ry"],
+            "ceq_median_px": reg["ceq_median_px"],
+            "method": (
+                "oval edge detect + fine-tune Dec=0 to Migkas black celestial equator"
+            ),
+        },
+        "landmark_checks": checks,
+        "notes": [
+            "Full Panel-B feature set: two MAX rings, two MIN rings, one dashed 283° companion, four markers",
+            "Exact n·x̂=μ small-circles; split on antimeridian (no rim bridges)",
+            "θ=185° via μ=cos185° ≡ r=175° from +x ≡ 5° from CoE (edge arcs only)",
+            "θ=265° via μ=cos265° ≡ r=95° from +x (same cone as cos95°)",
+            "θ=283° companion via μ=cos283°; dashed orange (+18° from MIN 265°)",
+            "No ellipse-fit, no interior chords, no decorative oval-rim loops",
+            "No blocking text box on the map; legend below",
+            "Colorbar preserved from source (overlays stay on oval)",
+            "Overlays clip_path = registered Ellipse(cx,cy,Rx,Ry); stroke inset 0.97",
+            "Limb markers inset toward colored-oval center so halo stays inside",
+            "Points culled at COLOR_R=0.978 of seed oval; limb markers inset to fit halo",
+        ],
+    }
+    JSON_PATH.write_text(json.dumps(meta, indent=2))
+    print(f"wrote {JSON_PATH}")
+
+
+if __name__ == "__main__":
+    main()

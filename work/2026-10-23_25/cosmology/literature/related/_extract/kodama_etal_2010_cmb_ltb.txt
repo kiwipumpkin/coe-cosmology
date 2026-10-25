@@ -1,0 +1,539 @@
+                                             K. Saito                                                                                                              1
+
+
+                                                    Analytic formulae for CMB anisotropy in LTB cosmology
+
+                                                                        Keiki Saito1(a) , Akihiro Ishibashi(b) and Hideo Kodama(b)
+                                                                              (a)
+                                                                              Department of Particles and Nuclear Physics,
+                                                                      The Graduate University for Advanced Studies (SOKENDAI),
+                                                                              1-1 Oho, Tsukuba, Ibaraki 305-0801, Japan
+                                                                (b)
+                                                                    KEK Theory Center, Institute of Particle and Nuclear Studies, KEK,
+                                                                              1-1 Oho, Tsukuba, Ibaraki, 305-0801, Japan
+arXiv:1002.3855v3 [astro-ph.CO] 9 Apr 2010
+
+
+
+
+                                                                                                   Abstract
+                                                             The local void model has lately attracted considerable attention since it can explain
+                                                             the present apparent accelerated expansion of the universe without introducing dark
+                                                             energy. However, in order to justify this model as an alternative cosmological model
+                                                             to the standard ΛCDM model (FLRW universe plus dark energy), one has to test the
+                                                             model by various observations, such as CMB temperature anisotropy, other than the
+                                                             distance-redshift relation of SNIa. For this purpose, we derive some analytic formulae
+                                                             that can be used to rigorously compare consequences of this model with observations
+                                                             of CMB anisotropy and to place constraints on the position of observers in the void
+                                                             model.
+
+                                             1      Introduction
+                                             In standard cosmology, we assume that our universe is isotropic and homogeneous, and accordingly is
+                                             described by the Friedmann-Lemaı̂tre-Robertson-Walker (FLRW) metric. Recent observation of Cosmic
+                                             Microwave Background (CMB) temperature distribution on the celestial sphere shows that the spatial
+                                             curvature is flat. Furthermore, the distance-redshift relation of type Ia supernovae indicates that the
+                                             expansion of the present universe is accelerated. Then, we are led to introduce, within the flat FLRW
+                                             model, “dark energy,” which has negative pressure and behaves just like a positive cosmological constant.
+                                             However, no satisfactory model that explains the origin of dark energy has so far been proposed.
+                                                 As an attempt to explain the SNIa distance-redshift relation without invoking dark energy, Tomita
+                                             proposed a “local void model” [1]. In this model, our universe is no longer assumed to be homogeneous,
+                                             having instead an underdense local void in the surrounding overdense universe. The isotropic nature of
+                                             cosmological observations is realized by assuming the spherical symmetry and demanding that we live
+                                             near the center of the void. Furthermore, the model is supposed to contain only ordinary dust like cosmic
+                                             matter. Since such a spacetime can be described by Lemaı̂tre-Tolman-Bondi (LTB) spacetime [2]-[4], we
+                                             also call this model the “LTB cosmological model.” Since the rate of expansion in the void region is larger
+                                             than that in the outer overdense region, it can explain the observed dimming of SNIa luminosity. In fact,
+                                             many numerical analysis [5]-[9] have recently shown that this LTB model can accurately reproduce the
+                                             SNIa distance-redshift relation.
+                                                 However, in order to verify the LTB model as a viable cosmological model, one has to test the LTB
+                                             model by various observations—such as CMB temperature anisotropy—other than the distance-redshift
+                                             relation2 . For this purpose, in this paper, we derive some analytic formulae that can be used to rigorously
+                                             compare consequences of the LTB model with observations of CMB anisotropy. More precisely, we derive
+                                             analytic formulae for CMB temperature anisotropy for dipole and quadrupole momenta, and then use
+                                             the dipole formula to place the constraint on the distance between an observer and the symmetry center
+                                             of the LTB model. We also check the consistency of our formulae with some numerical analysis of the
+                                             CMB anisotropy in the LTB model, previously made by Alnes and Amarzguioui [10].
+                                                 In Sec. 2, we briefly summarize the LTB metric. In Sec. 3, we derive analytic formulae for CMB
+                                             anisotropy in the LTB model. In Sec. 4, we obtain some constraints concerning the position of the
+                                             observer. Sec. 5 is devoted to a summary.
+                                                 1 Email address: saitok@post.kek.jp
+                                                2 Recently, some constraints on the LTB model from BAO and kSZ effects have also been discussed, see e.g. [9]. Still,
+
+                                             the possibility of the LTB model is not completely excluded.
+2                                                                                          CMB anisotropy in LTB cosmology
+
+
+2     LTB spacetime
+A spherically symmetric spacetime with only non-relativistic matter is described by the Lemaı̂tre-Tolman-
+Bondi (LTB) metric [2]-[4]
+
+                                                              {R′ (t, r)}2 2
+                                          ds2 = −dt2 +                    dr + R2 (t, r)dΩ22 ,                         (1)
+                                                              1 − k(r)r2
+
+where ′ ≡ ∂r , k(r) is an arbitrary function of only r. The Einstein equations reduce to
+                                                        !2
+                                                   Ṙ              2GM (r) k(r)r2
+                                                              =           −       ,                                    (2)
+                                                   R                 R3      R2
+                                                                   M ′ (r)
+                                              4πρ(t, r)       =            ,                                           (3)
+                                                                   R2 R′
+where ˙ ≡ ∂t , M (r) is an arbitrary function of only r, and ρ(t, r) is the energy density of the non-relativistic
+matter. The general solution for the Einstein equations in this model admits two arbitrary functions k(r)
+and M (r). By appropriately choosing the profile of these functions, one can construct some models which
+can reproduce the distance-redshift relation of SNIa in this model.
+
+
+3     Analytic formulae for CMB anisotropy in LTB model
+In this section, we derive analytic formulae for the CMB anisotropy in the LTB model. First, we assumed
+that the universe was locally in thermal equilibrium (that is, the distribution function F was Planck
+distribution Φ) at the last scattering surface, and the direction of the CMB photon traveling is fixed. In
+this case, F can be written as F = Φ(ω/T ), where ω ≡ pt , and T is the temperature. Then, the CMB
+temperature anisotropy δT /T is defined by
+
+                                                                      δT
+                                                             δF = −      ω∂ω F.                                        (4)
+                                                                      T
+
+Second, supposing that an observer lives at a distance of δxi from the center of the void, it follows that
+
+                                               (δF )(1)        =   δxi (∂i F )0 ,                                      (5)
+                                                        (2)        1 i j
+                                               (δF )           =     δx δx (∂i ∂j F )0 ,                               (6)
+                                                                   2
+where the subscript 0 means the value at the center (r = 0) at the present time (t = t0 ). From these, the
+CMB temperature anisotropy dipole (δT /T )(1) and quadrupole (δT /T )(2) are written as
+                                   (1)
+                                                  δxi (∂i F )0
+                          
+                              δT
+                                          =   −                ,                                                       (7)
+                              T                    ω∂ω F0
+                                   (2)                                        (        (1) )2
+                                                1 δxi δxj (∂i ∂j F )0                              (ω∂ω )2 F0
+                          
+                              δT                                        1           δT
+                                          =   −                       +                                       .        (8)
+                               T                2      ω∂ω F0           2           T               ω∂ω F0
+
+    We assume that the distribution function F (x, p)√itself is spherically symmetric. Then, F can be
+written as F (x, p) = F0 (t, r, ω, µ), where µ ≡ R′ pr /( 1 − kr2 ω). This implies that ∂i F = (∂i r)∂r F0 +
+(∂i ω)∂ω F0 + (∂i µ)∂µ F0 . Then, we can derive analytic formulae for the CMB anisotropy dipole by solving
+the Boltzmann equation L [F0 ] = ∂t F0 + ṙ∂r F0 + ω̇∂ω F0 + µ̇∂µ F0 = 0. The result is
+               (1)            (p                                        Z ri           Z t              )
+                                 1 − k(ri )ri2 −P̃ (t0 ,ti ) ∂r F0
+                                                                  
+          δT                  j                                                   ′
+                      = δLn Ωj                e                        +      drH// exp      dt1 H// (t1 ) ,           (9)
+           T                        R0′                       ω∂ω F0 i    0               t0
+K. Saito                                                                                                         3
+
+
+                                                                                Rr
+where δLnj is the position vector of the observer, Ωj ≡ xj /r, P̃ (t0 , ti ) ≡ 0 i drR′′ /R′ , H// ≡ Ṙ′ /R′ , and
+the subscript i denotes the value at the last scattering surface. By a similar method, we also derive the
+CMB anisotropy quadrupole formula
+          (2)                        "
+                             δxi δxj
+                                                                           
+            δT                                             ∂r F0      ∂µ F0
+                     = −                 (δij − Ωi Ωj )          −µ 2          + Ωi Ωj (∂r2 F0 )0
+             T             2(ω∂ω F0 )i                       r         r     0
+                                            (                                  ′′        )               #
+                                              a′′⊥                 R′
+                                                            
+                                                                                   Ωi Ωj
+                                         +         δij + a⊥ √             − a⊥                 (ω∂ω F0 )i
+                                              a⊥                 1 − kr2           (R′ )2
+                                                                                             0
+                             (  )2
+                                       (1)
+                           1      δT          (ω∂ω )2 F0
+                         +                                ,                                                    (10)
+                           2       T           ω∂ω F0
+where a⊥ ≡ R/r.
+
+
+4     Constraint on LTB model
+In this section, we derive some constraints concerning the position of the off-center observers in the LTB
+model from the CMB dipole formula (9). In general, the CMB temperature anisotropy is decomposed in
+terms of the spherical harmonics Ylm by
+                                             δT   X
+                                                =     alm Ylm ,                                        (11)
+                                              T
+                                                      l,m
+
+where the amplitudes in the expression are recovered as
+                                         Z 2π    Z π
+                                                             δT
+                                  alm =       dφ     dθ sin θ Ylm .                                           (12)
+                                           0      0           T
+We are interested in a10 as the dipole moment. We estimate the CMB dipole formula (9) numerically by
+using the profile considered in [10] (Fig. 1),
+                                                                              
+                                  1 2                3           1 1     r − r0
+                      M (r) =       H (t0 , rout )r α0 − ∆α       − tanh           ,            (13)
+                                  2 ⊥                            2 2      2∆r
+                                                                            
+                                      2                        1 1     r − r0
+                       k(r) = −H⊥       (t0 , rout ) β0 − ∆β    − tanh           ,              (14)
+                                                               2 2      2∆r
+where
+                          ts (r) = 0, H⊥ (t0 , rout ) = 51 km/s/Mpc, α0 = 1, ∆α = 0.90,
+             r0 = 1.34 Gpc, ∆r = 0.536 Gpc, β0 = 1 − α0 = 0, ∆β = −∆α = −0.90,                                (15)
+and H⊥ ≡ a˙⊥ /a⊥ . The induced a10 is of order 10−3 or less observed by Cosmic Background Explorer
+(COBE) [11], so we find that
+                                           δL <∼ 15Mpc,                                       (16)
+where δL is the distance from the observer to the center of the void. This is consist with the result of
+[10].
+
+
+5     Summary
+In the LTB model, we have derived the analytic formulae for the CMB anisotropy dipole (9) and
+quadrupole (10), which can be used to rigorously compare consequences of this model with observa-
+tions of the CMB anisotropy. Moreover, we checked the consistency of our formulae with results of the
+numerical analysis in [10], and constrained the distance from an observer to the center of the void. One
+of the advantages in obtaining analytic formulae is that we can identify physical origins of the CMB
+anisotropy in the LTB model. For example, in the CMB dipole formula (9), we can regard the first term
+as the initial condition at the last scattering surface, and the second term as the Integrated Sachs-Wolfe
+effect.
+4                                                                                                                                               CMB anisotropy in LTB cosmology
+
+              HAVARD ALNES, MORAD AMARZGUIOUI,
+                       INHOMOGENEOUS           AND ØYVIND
+                                      ALTERNATIVE  TO DARKGRØN
+                                                           ENERGY?                                                            PHYSICAL REVIEW D 73, 083519
+                                                                                                                                          PHYSICAL   REVIEW(2006)
+                                                                                                                                                               D 73, 083519 (2006)
+                                                                                    t=t                                        0.66
+                            In our case, we must use expression (22)                        0    for the angular             ’       in         out       100 km                    (33)
+                                                                                         t=t                                                                                                                 H
+                        diameter distance to the last scattering rec                         surface when we                                                                                                    ⊥
+                                                                                                                                                                                                             H
+               1
+                        calculate the shift parameter in Eq. (32). On the other                       wherehand,is the distance   0.62     from the observer to the center,                                     ||
+
+                        we can still use the expression for the sound horizon                         measuredasin Mpc. If we, for instance, require that                           must
+             0.8        defined in the homogeneous case in Eq. (25), be                                sinceless ourthan the estimated peculiar velocity of the local
+                        model is assumed to be homogeneous close to                                   groupthe [41],
+                                                                                                                  last which is of the order of 600 km/s, this means
+                                                                                                                                  0.58
+               ρ / ρ(rrec)
+
+
+
+
+                        scattering surface.                                                           that the observer must be within 40 Mpc from the center of
+
+
+
+
+                                                                                                                      h
+             0.6
+                                                                                                      the inhomogeneity. Even stronger constraints might be
+                                                                                                                                  0.54
+                                                                                                      obtained by considering             the peculiar velocities of nearby
+             0.4
+                                                           IV. RESULTS                                clusters; see e.g. [42].
+                                                                                                          Recently, Eisenstein    0.50
+                                                                                                                                         et al. announced the detection of
+             0.2
+                            When going from a homogeneous to an inhomogeneous                         baryon oscillations in the Sloan Digital Sky Survey (SDSS)
+                        universe model, the parameters describing the model                           galaxy( power spectrum [43]. This represents additional,
+                        and          ) become functions of . This means that                                 we in- data that
+                                                                                                      independent                 0.46can be used to constrain our model
+               0                                                                                                                       0           2000         4000           6000         8000        10000
+                0       troduce, in principle, an infinite number of new degrees
+                          2000           4000         6000          8000           10000
+                                                                                                      even further.  of The physical            length scale associated with
+                                                   D/Mpc
+                        freedom. However, for the purpose of studying these                            the possi-                                                          D/Mpc
+                                                                                                                oscillations is set by the sound horizon at recombi-
+                        bility of explaining the current observations without                         nation. intro-
+                                                                                                                   Measuring
+        FIG. 4 (color online). The evolution of the underdensity in our                                                     FIG.how      large online).
+                                                                                                                                   2 (color       this length   The scale   appears
+                                                                                                                                                                       spatial           at of the Hubble
+                                                                                                                                                                                  variation
+         1: The
+Figure standard          profile
+                        ducing
+                    model.            darkconsidered
+                                             energy into theinmodel,         [10].weThe        have subscript
+                                                                                                        restricted
+                                                                                                      some      redshift in recthe galaxy
+                                                                                                                            parameters      at power the
+                                                                                                                                      denotes             spectrumvalue  allows atusthe to recombination, and
+                        ourselves to a very simple ‘‘toy model’’: an underdense                       constrain the time evolution of the universe from recom-
+H// (or H⊥ ) = 100hkm/s/Mpc.
+                        region close to us, surrounded by a flat, matter-dominated                    bination to the time corresponding to this redshift [30,44–
+        shown to beuniverse.
+                           compatible         with     a   homogeneous
+                                         This means that we must choose 48]. and  universe                                      Note that the               value for our model is                        176
+        rather than actually .proving            it.  The
+                                       Furthermore, we put   key   point     here    is   that,
+                                                                                    ÿ . ThisAleaves          length scale     quoted
+                                                                                                                            when          by Eisenstein
+                                                                                                                                     compared                      al. is the
+                                                                                                                                                      to the et‘‘gold’’     dataratio
+                                                                                                                                                                                   setofof Riess et al. [6].
+        in order to determine, for example, the number counts of                                      theHubble
+                                                                                                             effective distance
+                                                                                                                            This istoslightly
+                                                                                                                                          the chosenbetteredshift
+                                                                                                                                                             than that  in the   galaxy
+                                                                                                                                                                            of the   concordance CDM
+                        four parameters —                                , and the physical
+Acknowledgments
+        galaxy clusters, one needs to make an assumption about kmsurvey to the angular
+                        parameter at the origin,
+        galaxy evolution and how likely it is to observe a galaxy Mpc
+                                                                           ; t   100                    —to be            model diameter
+                                                                                                                                       [6], CDM    distance 178 to the last scatter-
+                                                                                                      ing surface,              The spatial shapes of the underdensity at the initial time
+        with a certain  fitted    to the observations.
+                            luminosity       at a certain redshift. As pointed
+The authors
+        out in e.g. would
+                      [39],Let        like
+                                         first to
+                              oneususually      focus  thank
+                                                 assumes   ona the     all
+                                                                       two main
+                                                                  homogeneous               observations: of
+                                                                                 participants
+                                                                                           uni-                    the theand     today are plotted in Fig. 4 as functions of the physical
+                                                                                                                               workshop                 Λ-LTB
+                                                                                                                                                      sdss               Cosmology                 (LLTB2009) held
+                        supernova         Hubble      diagram       and CMB           angular power spec-                   distance35today. This            illustrates the time   (34) evolution of the
+        verse in order       to deduce       the ffects        of source        evolution.
+at KEK       from
+        Therefore, using
+                        20      to
+                        trum.this
+                                        23
+                                   A good
+                                       deduced
+                                               October
+                                              fit to
+                                                   evolution
+                                                                    2009
+                                                                   to claimdata
+                                                       the supernova
+                                                                                   for  requires the Hubble
+                                                                                 observed
+                                                                                              useful         discussions.   underdensity. We       would
+                                                                                                                                                  As    we can also see, thelikeshapeto   staysthank
+                                                                                                                                                                                                  almost con-Hajime Goto
+for useful       discussions.
+        homogeneity       in the number
+                        parameter              This
+                                          insidecounts      work only
+                                                            amounts
+                                                    the underdensity,      is supported
+                                                                                  toin ,circu-
+                                                                                          to be aroundwhere   byinsdssthe stant.
+                                                                                                                              project
+                                                                                                                             35.  The This
+                                                                                                                            being roughly
+                                                                                                                                         effective       to the Hubble
+                                                                                                                                                  duedistance
+                                                                                                                                              is Shinryoiki
+                                                                                                                                                  constant
+                                                                                                                                                                         isof    parameters
+                                                                                                                                                                                 the
+                                                                                                                                                                            defined     in SOKENDAI     and          Hayama
+                                                                                                      Eq. (2) in   forRef. [43] as a formix of radial      and in    space.distances,
+                                                                                                                                                                 angular
+Centerlar forargumentation.
+                  Advanced
+        [39] that given
+                           65. On
+                        a flat
+                                    Furthermore,
+                                       theStudies
+                                            other hand,  it isaexplicitly
+                                    LTB model it is always
+                             anymatter-dominated
+                                                              andgood the fit toshown
+                                                              modelpossible
+                                                                                   the
+                                                                                    MEXT
+                                                                        requirestothe
+                                                                                          CMB in spectrum
+                                                                                           findHubble
+                                                                                                        Grant-in-Aid
+                                                                                                      taking
+                                                                                                          parame-
+                                                                                                                                Although        Scientific
+                                                                                                                                                the   matter      distribution
+                                                                                                                  into account that these scale differently. The value
+                                                                                                                                                                        Research    is        on
+                                                                                                                                                                                         clearly    Innovative
+                                                                                                                                                                                                   inhomoge-           Areas
+(No. 21111006).                                                                                       they    measure       neous close to the observer, we. wish                     to point out that this
+        a source evolution
+                        ter outside that the
+                                           agrees     with the observed
+                                                underdensity         to be outnumber. This                more       or for this ratio is 35 79                               Note that
+        counts.                                                                                       this value differs    does
+                                                                                                                               from notthat
+                                                                                                                                          necessarily        contradict
+                                                                                                                                               quoted in [43].                the data
+                                                                                                                                                                      The reason       for from the galaxy
+                        less determines the two parameters                                 and
+            The inhomogeneity                                                                         this is that we have  surveys.
+                                                                                                                                  chosen One  to often
+                                                                                                                                                 give thehears     the claim and
+                                                                                                                                                              distances          that these surveys show
+                            Next, theatshape  the center       gives onlybetween
+                                                     of the transition            a minorthe underdense
+        change of theand   angular      diameter distance          to the           scatter-by in and                       the localwhile
+                                                                                                           physical coordinates,             distribution
+                                                                                                                                                  Eisensteinof          matter
+                                                                                                                                                                           quote tothem  be homogeneous.
+                                the homogeneous               region     is last
+                                                                               specified                                                                          et al.
+References
+        ing surface. In fact, our model has                         10 4 Mpc, which
+                        These values dictate the redshift-magnitude relationship,
+        is the same value as we find for the Einstein-de Sitter model
+                                                                                                      as comoving. However, it is probably more correct to say that they are
+                                                                                                          Calculating this ratio for our model, we find the value
+                        and must be chosen to fit the supernova Hubble diagram.                          inhom
+                                                                                                                      107 . Comparing this value with that quoted by
+        with            51. (Note that these values are physical, not                                      35
+                        There are lots         of choices       forHubble
+                                                                    the parameters              that give     a very et al., one
+ [1] K. Tomita,
+        comoving,            Astrophys.
+                       distances.)       Our   model,    J.with529,          26      (2000).
+                                                                                parameter             Eisenstein                 1.5 might be tempted to claim that the
+
+                 51 in good       fit to both theregion,
+                        the homogeneous                supernovae         and the
+                                                                 thus yields        a CMB position model
+                                                                                                      of the firstis ruled out. However, in order to say something
+                                                                                                                                                                                                Inhomogeneous
+                                                                                                                                                                                                Einstein−de Sitter
+        angular power   acoustic
+                             spectrum    peak
+                                            very insimilarthe totemperature
+                                                                   the one plottedpower       in       spectrum. using this constraint, we need to be sure that the
+                                                                                                      conclusive                                                                                  CDM
+          Lemaitre,
+ [2] G.Fig.             However,
+              1, at least         Ann.
+                           for large     we    Soc.
+                                               wantUsing
+                                           values.      theSci.      Brux (32),
+                                                               underdensity
+                                                                the formula          53,in weour      (1933).
+                                                                                                51model        to be value of 35 is model independent. But when
+                                                                                                      ‘‘measured’’
+        find            suchi.e.
+                       006,      thatanthe   matter
+                                          almost         density
+                                                     perfect         is compatible
+                                                                 match     for the posi-       with the
+                                                                                                      the current
+                                                                                                             authors derived this constraint they assumed a CDM
+          C.ofTolman,
+ [3] R.tion             model
+                   the first          Proc.  peak.Nat.
+                                     independent
+                               Doppler                 For       Acad.values,
+                                                          observations
+                                                              smaller            Sci. the
+                                                                                 of           USA.
+                                                                                               . An model.
+                                                                                                        excellent
+                                                                                                            20,This   169makes
+                                                                                                                             (1934).
+                                                                                                                                 0.5 it a little unclear how to use this
+
+        CMB patterncandidate             for such
+                          will be affected        by ourobservations
+                                                             position relativeis thetomass-to-light
+                                                                                             the      constraintratio for non-CDM models or, indeed, whether it
+                                                                                                                      (m−M)
+
+
+
+
+        center of themeasurements
+                           underdensity. made    This has  by been
+                                                                 the 2dFstudied teamin [38]. the Theseis even       possible to use it for such models. Ideally, one
+                                                                                                                yield
+          Bondi,mentioned
+ [4] H.previously         Mon. 24        Not.
+                                         void model05Roy.    of Astron.
+                                                          from    Tomita
+                                                                   observations [22],Soc. who         would410
+                                                                                                   107,
+                                                                                             of galaxies           need (1947).
+                                                                                                                with     to repeat the analysis of Eisenstein et al.
+        concluded that         relatively
+                        redshifts       z < large12. We  displacements
+                                                              will therefore     from        the the
+                                                                                        choose        assuming
+                                                                                                          free pa-our inhomogeneous model as the base model.
+ [5] K.center
+          Tomita, of therameters
+                          underdensity
+                             Astrophys.such thatwerethe fully
+                                                         J.mass  consistent
+                                                               529, density       with
+                                                                             38parameter
+                                                                                     (2000). the atWe  thewillorigintherefore be−0.5careful not to rule out the model based
+        observed CMB    is within dipolethisand
+                                              rangequadrupole.
+                                                         in addition Furthermore,
+                                                                            to giving a goodonfithis          to parameter
+                                                                                                                   the          alone.
+        Moffat [13] supernova
+                         argues thatmeasurements
+                                            such a displacement   and thecould   CMBeven     peak. TheThe    modelmain features        of our standard model are summa-
+          Tomita,
+ [6] K.explain               MNRAS
+                   the detected
+                        which we     alignment
+                                          adopt as
+                                                   326,
+                                                    of the
+                                                        ourCMB
+                                                                           (2001).
+                                                                 287quadrupole
+                                                               ‘‘standard        model’’   andgivesrized
+                                                                                                                                 −1
+                                                                                                                 in Table I. Note that the age of the universe is
+                                                                                                          a matter
+        octopole [40].                                                                                12.8 Gyr in our model. This is significantly less than the
+                        density at the center of the underdensity of                                          20. A
+            A rough estimate of the apparent peculiar velocity for an                                 value for the concordance             CDM        model,    13.7   Gyr,   but1.2it is 1.4 1.6 1.8
+          Alnes,
+ [7] H.off-center        M.
+                        plot   of Amarzguioui
+                                    the
+                      observer is [22]
+                                         spatial     variation    and
+                                                                   today      Ø.
+                                                                              of  the Grøn,
+                                                                                          Hubble      Phys.
+                                                                                                     parameters       Rev. −1.5 D73, 0        083519
+                                                                                                                                            0.2     0.4     0.6 (2006).
+                                                                                                      still in agreement with observations of globular clusters
+                                                                                                                                                                    0.8      1                                     2
+
+                        of our standard model is given in Fig. 2. Furthermore, a plot
+ [8] M. Kasai,ofProg.        the distanceTheor.   modulus  Phys.  of this117, model1067     together      with the
+                                                                                                     (2007).                FIG. 3 (color online). Distance modulus vs redshift for our
+                        supernova observations can found in Fig. 3.                                                         standard model together with supernova observations.
+                                                                                          083519-6
+    [9] J. Garcı́a-Bellido and T. Haugbølle, JCAP 0809: 016 (2008).
+                                                                                                            083519-5
+[10] H. Alnes and M. Amarzguioui, Phys. Rev. D74, 103520 (2006).
+[11] C. L. Bennett et al., Astrophys. J. 464, L1-L4 (1996).
+[12] K. Tomita, astro-ph/0906.1325.
+

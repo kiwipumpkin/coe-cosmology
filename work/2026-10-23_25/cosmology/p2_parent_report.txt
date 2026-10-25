@@ -1,0 +1,21 @@
+P2 template + footprint dipole leakage — DONE
+
+Drive fileId: 15osiNhP5b0xtHv3bksgKHL5dk6Gd4r7moMe1F80as6s
+Local: /workspace/cosmology/p2_footprint_leakage.md
+Code/JSON: p2_footprint_leakage.py, p2_footprint_leakage_results.json
+
+Max fake A by mask (α=1 / C2=0.30, axis Migkas 303°,-27°):
+- full sky / |b|>20°: ~0
+- random 30% p95: ~0.009
+- cluster-like crude: ~0.044
+- CoE-facing hemi: A_amp=A_Migkas=0.450, A_moment=0.113
+- |b|>20° ∩ CoE hemi: A_amp~0.448, A_moment=0.103
+Drag (α≈0.664): scale ×0.664 → cluster~0.032; CoE hemi A_moment~0.075
+
+half-ptp pure P2: 0.225 (α=1) / 0.149 (drag)
+forward half-ptp d/D=0.05/0.1/0.2: 0.237 / 0.251 / 0.287 (α=1)
+
+RECOMMENDATION FOR CHRIS:
+Leakage alone under realistic masks does NOT reach Migkas A~0.1–0.16.
+Max realistic fake A ~0.044 (α=1). Only CoE-facing selection hits Migkas scale (artifact).
+Prefer P2 quadrupole template comparison; keep Migkas dipole MCMC NO-GO for spherical M_enc.

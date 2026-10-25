@@ -1,0 +1,364 @@
+{
+ "0.0": {
+  "threshold_speeds": {
+   "centre": 2.0,
+   "edge": 1.1547005383792517
+  },
+  "rows": [
+   {
+    "u": 0.3,
+    "t0": 3.3333333333333335,
+    "tc": 1.6666666666666667,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "ok": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.06709642240232011,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 0.5,
+    "t0": 2.0,
+    "tc": 1.0,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "ok": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.06709642240232011,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 0.8,
+    "t0": 1.25,
+    "tc": 0.625,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "ok": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.06709642240232011,
+    "frac_emitted_before_our_crossing": 0.023424383686861817
+   },
+   {
+    "u": 1.0,
+    "t0": 1.0,
+    "tc": 0.5,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "observer outruns wave (num<=0)": 4.7596468821108004e-08,
+     "ok": 0.06709637480585129
+    },
+    "frac_positive_redshift": 0.06709637480585129,
+    "frac_emitted_before_our_crossing": 0.06709637480585129
+   },
+   {
+    "u": 1.0517872092161258,
+    "t0": 0.950762655447463,
+    "tc": 0.4753813277237315,
+    "frac": {
+     "both negative": 0.024674400346883736,
+     "misses sphere": 0.93290357759768,
+     "ok": 0.04242202205543637
+    },
+    "frac_positive_redshift": 0.06709642240232011,
+    "frac_emitted_before_our_crossing": 0.06709642240232011
+   },
+   {
+    "u": 1.1,
+    "t0": 0.9090909090909091,
+    "tc": 0.45454545454545453,
+    "frac": {
+     "both negative": 0.045472807130483996,
+     "misses sphere": 0.93290357759768,
+     "ok": 0.02162361527183612
+    },
+    "frac_positive_redshift": 0.06709642240232011,
+    "frac_emitted_before_our_crossing": 0.06709642240232011
+   },
+   {
+    "u": 1.2,
+    "t0": 0.8333333333333334,
+    "tc": 0.4166666666666667,
+    "frac": {
+     "both negative": 0.06666041994421593,
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.0004360024581041799
+    },
+    "frac_positive_redshift": 0.06666041994421593,
+    "frac_emitted_before_our_crossing": 0.06666041994421593
+   },
+   {
+    "u": 1.5,
+    "t0": 0.6666666666666666,
+    "tc": 0.3333333333333333,
+    "frac": {
+     "both negative": 0.0520471581680013,
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.015049264234318805
+    },
+    "frac_positive_redshift": 0.0520471581680013,
+    "frac_emitted_before_our_crossing": 0.0520471581680013
+   },
+   {
+    "u": 1.9,
+    "t0": 0.5263157894736842,
+    "tc": 0.2631578947368421,
+    "frac": {
+     "both negative": 0.012184811459168492,
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.05491161094315162
+    },
+    "frac_positive_redshift": 0.012184811459168492,
+    "frac_emitted_before_our_crossing": 0.012184811459168492
+   },
+   {
+    "u": 2.0,
+    "t0": 0.5,
+    "tc": 0.25,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.0,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 2.5,
+    "t0": 0.4,
+    "tc": 0.2,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.0,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 4,
+    "t0": 0.25,
+    "tc": 0.125,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.0,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 5,
+    "t0": 0.2,
+    "tc": 0.1,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.0,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 10,
+    "t0": 0.1,
+    "tc": 0.05,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.0,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 30,
+    "t0": 0.03333333333333333,
+    "tc": 0.016666666666666666,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.0,
+    "frac_emitted_before_our_crossing": 0.0
+   }
+  ]
+ },
+ "0.015426145753569655": {
+  "threshold_speeds": {
+   "centre": 1.9436970090271064,
+   "edge": 1.1221939913848697
+  },
+  "rows": [
+   {
+    "u": 0.3,
+    "t0": 3.239495015045176,
+    "tc": 1.5777606873914831,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "ok": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.06709642240232011,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 0.5,
+    "t0": 1.943697009027105,
+    "tc": 0.94665641243489,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "ok": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.06709642240232011,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 0.8,
+    "t0": 1.2148106306419406,
+    "tc": 0.5916602577718059,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "ok": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.06709642240232011,
+    "frac_emitted_before_our_crossing": 0.023780371574771107
+   },
+   {
+    "u": 1.0,
+    "t0": 0.9718485045135525,
+    "tc": 0.473328206217445,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "observer outruns wave (num<=0)": 4.7596468821108004e-08,
+     "ok": 0.06395601593503765,
+     "source outruns its own wave toward us (den<=0)": 0.003140358870813639
+    },
+    "frac_positive_redshift": 0.06395601593503765,
+    "frac_emitted_before_our_crossing": 0.06709642240232011
+   },
+   {
+    "u": 1.0517872092161258,
+    "t0": 0.9239972648439513,
+    "tc": 0.45002278224148223,
+    "frac": {
+     "both negative": 0.024674400346883736,
+     "misses sphere": 0.93290357759768,
+     "ok": 0.03443174378724975,
+     "source outruns its own wave toward us (den<=0)": 0.007990278268186619
+    },
+    "frac_positive_redshift": 0.059106144134133495,
+    "frac_emitted_before_our_crossing": 0.06709642240232011
+   },
+   {
+    "u": 1.1,
+    "t0": 0.8834986404668661,
+    "tc": 0.4302983692885861,
+    "frac": {
+     "both negative": 0.045472807130483996,
+     "misses sphere": 0.93290357759768,
+     "ok": 0.009894605937195057,
+     "source outruns its own wave toward us (den<=0)": 0.011729009334641062
+    },
+    "frac_positive_redshift": 0.05536741306767904,
+    "frac_emitted_before_our_crossing": 0.06709642240232011
+   },
+   {
+    "u": 1.2,
+    "t0": 0.809873753761294,
+    "tc": 0.3944401718478708,
+    "frac": {
+     "both negative": 0.06600889172258986,
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.0010875306797302573
+    },
+    "frac_positive_redshift": 0.06600889172258986,
+    "frac_emitted_before_our_crossing": 0.06600889172258986
+   },
+   {
+    "u": 1.5,
+    "t0": 0.647899003009035,
+    "tc": 0.31555213747829675,
+    "frac": {
+     "both negative": 0.04861347783660133,
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.018482944565718792
+    },
+    "frac_positive_redshift": 0.04861347783660133,
+    "frac_emitted_before_our_crossing": 0.04861347783660133
+   },
+   {
+    "u": 1.9,
+    "t0": 0.5114992129018701,
+    "tc": 0.24912010853549743,
+    "frac": {
+     "both negative": 0.005524362402801621,
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.061572059999518494
+    },
+    "frac_positive_redshift": 0.005524362402801621,
+    "frac_emitted_before_our_crossing": 0.005524362402801621
+   },
+   {
+    "u": 2.0,
+    "t0": 0.48592425225677627,
+    "tc": 0.2366641031087225,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.0,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 2.5,
+    "t0": 0.38873940180542127,
+    "tc": 0.189331282486978,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.0,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 4,
+    "t0": 0.2429621259328918,
+    "tc": 0.11833205155436125,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.0,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 5,
+    "t0": 0.19436970074631377,
+    "tc": 0.094665641243489,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.0,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 10,
+    "t0": 0.09718485037315688,
+    "tc": 0.0473328206217445,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.0,
+    "frac_emitted_before_our_crossing": 0.0
+   },
+   {
+    "u": 30,
+    "t0": 0.032394950124385605,
+    "tc": 0.015777606873914832,
+    "frac": {
+     "misses sphere": 0.93290357759768,
+     "would need emission before t=0": 0.06709642240232011
+    },
+    "frac_positive_redshift": 0.0,
+    "frac_emitted_before_our_crossing": 0.0
+   }
+  ]
+ },
+ "cap_fraction_geometric": 0.06698729810778065
+}

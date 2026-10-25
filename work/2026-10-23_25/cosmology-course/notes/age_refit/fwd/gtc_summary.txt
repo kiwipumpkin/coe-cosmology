@@ -1,0 +1,18 @@
+U_o > c REFIT (light-cone Migkas). GR cancel% [Newton]; SR=local q=0.23, uni=uniform a=1/1100; raw | m=1 removed
+law mode: chi2 R2 sig | M kg | D Gpc | U/c | H||/Hperp | age | grav/kin | r_s/D
+exp fwd: 18.81 0.48 3.5 | 1.4e+56 | 459 | 107 | 70/70 | 14.0 | 0.0016 | 18 INSIDE r_s DEGENERATE mass
+   SR na|na [na|na]  uni -177|nan [-203|-152]
+soft fwd: 14.95 0.61 3.8 | 5e+55 | 17.3 | 1.64 | 153/28 | 5.1 | 87 | 2.3e+02 INSIDE r_s
+   SR na|na [na|na]  uni na|na [-5344|-2412]
+eta fwd: 21.63 0.47 3.0 | 6e+49 | 7.26 | 1.68 | 71/69 | 14.0 | 0.0028 | 0.0079 DEGENERATE mass
+   SR na|na [na|na]  uni -23520|-23518 [nan|nan]
+pl fwd: 21.59 0.47 3.0 | 1.5e+49 | 7.09 | 1.66 | 70/70 | 14.0 | 3.6e-05 | 9.9e-05 DEGENERATE mass
+   SR na|na [na|na]  uni -14804|-14004 [-4656|-5427]
+exp back: 13.41 0.64 4.1 | 9.1e+50 | 2.84 | 1 | -1/105 | 9.0 | 0.015 | 0.015
+   SR na|na [na|na]  uni -554|-240 [-543|-146]
+soft back: 18.04 0.54 3.4 | 7.1e+54 | 21.3 | 2.69 | 134/38 | 14.3 | 2.3 | 16 INSIDE r_s
+   SR na|na [na|na]  uni na|na [na|na]
+eta back: 22.03 0.46 2.9 | 3.9e+44 | 40.3 | 8.08 | 90/60 | 16.2 | 7.4e-12 | 4.8e-10 DEGENERATE mass
+   SR na|na [na|na]  uni na|na [na|na]
+pl back: 14.46 0.62 3.8 | 8.8e+52 | 6.26 | 1.26 | 89/60 | 7.4 | 4.4 | 7.1 INSIDE r_s
+   SR na|na [na|na]  uni na|na [na|na]

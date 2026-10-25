@@ -1,0 +1,16 @@
+soft 1
+soft 4
+soft 8
+eta 0.5
+eta 1
+eta 2
+eta 4
+exp 0
+pow 0
+curv -1
+curv -0.3
+curv 0.3
+curv 1
+curv 3
+core 10
+core 1000

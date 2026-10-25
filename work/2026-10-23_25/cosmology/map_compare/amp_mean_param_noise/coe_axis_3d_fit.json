@@ -1,0 +1,30 @@
+{
+  "method": "3D dipole axis fit to Migkas A(ell); strip proxy = mean over |b|<60 deg",
+  "R2": 0.27069484607549377,
+  "R2_old_1d_ampsin": 0.2336872325995351,
+  "CoE_cold_toward_l_b": [
+    237.5,
+    72.5
+  ],
+  "antiCoE_hot_l_b": [
+    57.5,
+    -72.5
+  ],
+  "c0": 0.9960226320032944,
+  "c1": -0.21305484279265688,
+  "Planck_hot": [
+    264.021,
+    48.253
+  ],
+  "Planck_cold": [
+    84.021,
+    -48.253
+  ],
+  "angsep_deg": {
+    "CoE_vs_Planck_hot": 27.036861633563163,
+    "antiCoE_vs_Planck_cold": 27.03686163356315,
+    "CoE_vs_Planck_cold": 152.96313836643685,
+    "antiCoE_vs_Planck_hot": 152.96313836643685
+  },
+  "note": "Hot=anti-CoE (more photons); cold=toward CoE. CMB heating poles follow this axis."
+}

@@ -1,0 +1,559 @@
+197 7MNRAS.181. .121F
+
+                                       Mon. Not. R. astr. Soc. (1977) 181, 121-130
+
+
+
+
+                                       Anisotropy in the Hubble parameter and large-scale
+                                       cosmological inhomogeneity*
+
+
+
+
+                                       A. J. Fennelly Physics and Astronomy Department,
+                                       Western Kentucky University, Bowling Green, Kentucky 42101, USA
+
+
+
+                                       Received 1977 March 30; in original form 1976 December 20
+
+
+
+
+                                       Summary. The reported anisotropy of the Hubble expansion parameter
+                                       is analysed within the context of a possible large-scale inhomogeneity. We are
+                                       able to fit the data to a tilted self-similar cosmology with a Gaussian density
+                                       distribution superposed on a homogeneous Universe. The particular model
+                                       sets the inhomogeneous region’s diameter at 540 Mpc, with our Galaxy
+                                       120 Mpc from the centre which is toward a = 12h42m, ô = + 20°. This elimi-
+                                       nates the conflict between the anomaly and the isotropy of the microwave
+                                       background.
+
+
+                        1 Introduction
+                        The expansion of the Universe has been generally considered to be homogeneous and iso-
+                        tropic to high degree [1], as indicated, for example, by observations of galaxies [2] and
+                        analysis of the microwave background radiation [3]. However, evidence on Sc I galaxies has
+                        suggested that this may not be so on large scales (~ 120 Mpc) [4], and some confirmation of
+                        this result has come from data on compact galaxies with absorption spectra and on
+                        Markarian galaxies [5], the brightest cluster galaxies [5, 6], Type I supernovae [7], the van
+                        den Bergh galaxy luminosity classification [8], and radio galaxies associated with galaxy
+                        clusters [9].
+                            More recently, a thorough analysis has established the existence of a Hubble parameter
+                        anomaly more firmly, both for a variation with direction and an effect due to intervening
+                        galaxy clusters [10]. Southern hemisphere photometry [11] has completed the original
+                        Sc I map [4]. A complete sample of Sc I—Sell galaxies has provided a map of the anomaly
+                        both for optical velocities and radio velocities [12]. Subsequent interpretations do not
+                        agree [10,13], but application of one has substantially reduced the scatter in a published
+                        Hubble diagram for nuclear magnitudes of first-ranked cluster galaxies [14].
+                            An interpretation of the anomaly as due to a peculiar velocity of 500±125km/s of the
+                        Galaxy presents a clear discrepancy with the isotropy of the microwave background radia-
+                        tion [3], which limits our peculiar velocity relative to the frame of last scattering of the
+                        radiation to 250km/s. This is a most serious disagreement within the context of what is
+                        generally believed about the Universe.
+                        * Work performed at King’s College, London, UK; 1975 May-August.
+
+
+
+                           © Royal Astronomical Society • Provided by the NASA Astrophysics Data System
+197 7MNRAS.181. .121F
+
+                        122            A. J. Fennelly
+                            Several interpretations and explanations have been advanced, ranging from the exotic to
+                        the ordinary: One group of observers has developed a new physical theory requiring a
+                        universal low-mass scalar boson field interacting with finite-mass photons [15]. This leads to
+                        a static hierarchical Universe with ‘tired-light’ redshifts, in which photons traversing a cluster
+                        of galaxies experience a greater redshift due to photon-boson scattering. It can explain one
+                        interpretation of the data [10] but is close to an ‘ether’ theory of light propagation, and will
+                        have to be tested experimentally before it can be taken seriously.
+                            Other explanations involve selection effects or systematic deviations in populations or
+                        intrinsic properties of objects across the celestial sphere. These seem not to be the case [13],
+                        and there remain only dynamic explanations: a systematic peculiar velocity of our Galaxy,
+                        a systematic anisotropy in the Hubble expansion (both of which can exist in homogeneous
+                        Universes), or alternatively an inhomogeneity.
+                            inhomogeneity of the purely Swiss-cheese type, affecting galaxies behind clusters of
+                        galaxies can be ruled out [16]. Doroshkevich & Shandarin [17] have presented a model of
+                        the formation of galaxies and clusters of galaxies that generates an anisotropy in H con-
+                        sistent with the data. It is purely local due to the velocity perturbations induced during
+                        galaxy formation and covers scales of 50-100 Mpc, with velocities 500-1000 km/s. A
+                        peculiar velocity of the galaxy of 600 ±125 km/s toward a = 32° ±20°, 0 = + 530±ll° is
+                        consistent with the data [13]. A systematic angular gradient in i/was rejected in [13] by
+                        applying Occam’s razor and accepting the simplest explanation. There seems to be no
+                        advantage in that anyway, since the conflict with the microwave background radiation
+                        would remain: we would have exchanged a discrepant Doppler shift for a discrepant shear in
+                        a homogeneous Universe.
+                            But what of an inhomogeneous Universe? We examine here an alternative that is inhomo-
+                        geneous and produces an angular gradient of H on the celestial sphere. The degree of in-
+                        homogeneity is within the experimental errors of [13] for their near sample of galaxies (at
+                        ± 3 a), which they used as evidence for a peculiar velocity. We are guided in this by the
+                        results of Guthrie [6], which show the effect decreasing closer to us than -100 Mpc and
+                        further from us than -140 Mpc.
+                            Mavrides [18] has modelled a general class of inhomogeneous cosmologies which provide
+                        order-of-magnitude arguments in support of this. He imbeds an Einstein—de Sitter universe
+                        within a spherical vacuum region which is joined to an exterior Einstein—de Sitter model
+                        using the Swiss-cheese junction conditions. The two Einstein—de Sitter regions have
+                        different expansion rates and so their fitting must use an intermediate vacuum shell. A
+                        Tolman—Bondi solution is given, analytically continued through the three regions. While this
+                        is a desirable first step, it seems that a more specific model could be fitted. First there is
+                        Guthrie’s result [6] which implies rather more structure than two homogeneous models
+                        fitted together through a vacuole. Then an observation of Dodd et al [19] shows that there
+                        may be a change in the number count—diameter relation in the opposite direction on the
+                        celestial sphere, which may indicate a limit to this inhomogeneous structure at a particular
+                        radius; in such a case there would be no intermediate vacuole, but rather a clump in a
+                        Friedman background.
+                            The Dodd result may not be statistically significant [20] but it does suggest a model with
+                        a definite structure to be fitted with the data. First, the detailed nature of the reported
+                        anisotropy will be examined and this will lead to a map of a possible inhomogeneity in
+                        which we may exist. The structure of such an inhomogeneity will then be studied in a few
+                        dynamical models. Finally its effects on the microwave background radiation will be
+                        determined. Throughout the discussion we shall use the following terms in reference to
+                        distance r: local for r -10 Mpc, large-scale for r -100 Mpc and global for r -1000 Mpc.
+
+
+
+
+                           © Royal Astronomical Society • Provided by the NASA Astrophysics Data System
+197 7MNRAS.181. .121F
+
+                                                                        Anisotropy in the Hubble parameter                      123
+                        2 The anisotropy model
+
+                        According to the reported observations the anisotropy is maximized at a distance modulus
+                        for Sc I spiral galaxies of 35.7 which, for an absolute magnitude of — 21.2, corresponds to a
+                        luminosity distance of 132 Mpc. For this distance the anisotropy is mapped in Fig. 1.
+                        Coordinates of right ascension and declination are marked, as is the galactic plane GP. The
+                        line DL separates regions of maximum redshift MAX from minimum redshift MIN. The
+                        hatched lines plot the anisotropy gradient in contours. The anisotropy gradient is less
+                        pronounced for greater and lesser luminosity distances, vanishing eventually.
+                            Successive versions of Fig. 1 for a range of luminosity distances projected into a plane
+                        marked by the dotted line in Fig. 1 are shown in Fig. 2. The dotted circles are celestial
+                        spheres concentric about our Galaxy G. The dotted circle passing through 0 is that for
+
+                                                                          ♦90*
+
+
+
+
+                        Figure 1. Representation of redshift gradient on celestial sphere. Regions of maximum and minimum
+                        redshift are marked MAX and MIN. Coordinates are right ascension and declination (1950.0). Galactic
+                        plane is G.P., line dividing regions is DL. Isocontours of redshift variation are 111 h 11 lines. Plane slide
+                        for Fig. 2 is marked           .
+
+
+
+
+                          Figure 2. Plane from celestial sphere showing variation of redshift gradient with luminosity distance.
+                          Galaxy is at G, ‘centre’ of redshift isodents        is 0, luminosity isodents are          .
+
+
+
+
+                           © Royal Astronomical Society • Provided by the NASA Astrophysics Data System
+197 7MNRAS.181. .121F
+
+                        124              A. J. Fennelly
+                        r~132Mpc. The concentric circles about 0 intersect each celestial sphere at contours of
+                        anisotropy gradient and represent contours of increasing redshift gradient radial about 0.
+                        The redshift of each galaxy may thus be considered as a combination of two factors, one due
+                        to expansion (mapped by the dotted circle) and the other due to an inhomogeneous
+                        structure about 0 (mapped by the circle about 0). The sum of the two redshift components
+                        is given in Fig. 3.
+
+
+
+
+                        Figure 3. Redshift map for model suggested by Fig. 2. Small arrows mark ‘gravitational’ energy shift
+                        direction, across isodents of 6HM               > Large arrows —► mark expansion Doppler shift direction,
+                        across isodents of luminosity density. Source markings Sx, S2, S3 are placed at equal luminosity distance
+                        (subscript); source markings £*, S'11 are placed at different 6HM isodents (superscripts). Photons are wavy
+                        lines from     S’}1, Sj, S\, S\l to G. O is the centre of the system.
+
+
+
+                        3 Dynamics
+
+                        We shall first examine a spherically symmetric model. In Fig. 3 the paths of photons from
+                        sources S to our Galaxy G are represented by wavy lines. The dotted circles around G are
+                        contours of increasing Hubble expansion velocity, while the full circles about 0 are contours
+                        of decreasing gravitational shift. The arrows represent the direction of redshift. In     the
+                        subscript refers to radius about G while the superscript refers to that about 0. Thus S2 and
+                        Sl2 have equal Hubble expansion velocities but different gravitational velocity shifts, etc.
+                        Since there is essentially no difference between Doppler shifts and gravitational shifts [18]
+                        we could model the effects of the inhomogeneity as due to either one, the other entering
+                        indirectly through their coupling in the dynamics.
+                           Since the centre of the homogeneity is ~120Mpc away (toward a~12h, ô~20°), a dia-
+                        meter of the patch (embedded in the homogeneous expanding Universe) is ^300Mpc.
+                        Dodd et al have reported evidence of inhomogeneity in the direction a~2—3h, b — 30°
+                        with a boundary ~150Mpc [19]. While this may not be statistically significant [20] it may
+                        be real, giving a radius ~270Mpc. This is about 10 per cent of the present horizon distance
+                        of a Friedmann universe, so relativistic dynamics must be used.
+
+
+
+                           © Royal Astronomical Society • Provided by the NASA Astrophysics Data System
+197 7MNRAS.181. .121F
+
+                                                                           Anisotropy in the Hubble parameter    125
+                           We used a Tolman—Bondi [21] model as modified by Bonnor [22]. The redshift reduces
+                        to the formula (for inhomogeneous models)
+
+                        (l+z)|f = l + AF/c+0G-0s.                                                                 (1)
+
+                        where A F is the relative expansion velocity between G and S and <t>\- ~ GM(t)lc2ri is the
+                        gravitational potential at r¡ on a spherical surface enclosing the mass M(i). Assuming a
+                        linear expansion rate 0, and the relation d = rL/(l +z)2 connecting true distance d on spatial
+                        hypersurfaces labelled by constant time t - t0 with luminosity distance rL along the light
+                        cone (removing the effects of the redshift on our distance measurements) to find the
+                        distance of the emitter (àV=Qd), we may obtain information about 0i if 0(G) can be
+                        determined. But 0i may contain a contribution due to a peculiar velocity relative to a
+                        Friedman model (or to the centre of symmetry in a spherically symmetric model) that is
+                        yet of interest.
+                            The existence of a peculiar velocity relative to a Friedman model must be expected even
+                        for a dust flow. The equation of motion is aß = u^\\aua = 0, which just says that the velocity
+                        decreases with time as w = u0e~OL in a Friedman universe where ea is the expansion scale
+                        factor. But in an inhomogeneous universe it will have a different form which can be easily
+                        seen if we consider inhomogeneous self-similar universes such as those of Cahill & Taub
+                         [23] or Lin et al [24]. For a self-similar spacetime with a tilted time coordinate we have a
+                        metric
+                        ds^^i-idt-u^f + ib^cJ)}                                                                   (2)
+
+                        where 0 contains the information about the inhomogeneity (viz. dÿ^b^ with ¿>M a
+                        constant vector and aM a basis of differential forms on the spatial hypersurfaces) and
+                            = e^e^tf^ (a and ßßV functions of time describing the volume and shape of the matter
+                        ellipsoids) [25]. The conservation equation reads
+
+
+                        ^                    + r*M) + e-a-'p        = 0,                                          (3)
+                        ot
+                        where
+
+                                        +
+                              ^             i6*3) e(^)
+                        and
+                        T
+                         Xß ~ (e^) e [a.m1
+
+                        are the expansion tensor and rotation tensor of an observer’s reference triad with respect to
+                        a set of Fermi-transported axes. The solution is (no sum on o$)
+
+                        Uß = exp p a - j*(o£ + aM) Jfj («° cos                  dt + u° sin tmK dt)
+
+
+                                  exp                                                             ejbv dt.
+                                            [-                 xjexp j^— a + J(0 + r) i/rj
+                                                                                             ß\
+
+                        Clearly the inhomogeneity substantially changes the velocity in the second term on the right
+                        of equation (4).
+                           The velocity will also cause an important apparent variation in physical quantities. For
+                        the redshift z a spatial gradient will appear. Using standard tensor transformation laws with
+
+
+
+                            © Royal Astronomical Society • Provided by the NASA Astrophysics Data System
+197 7MNRAS.181. .121F
+
+                        126              A. J. Fennelly
+                        the metric in equation (1) we find
+                         3z      3z
+                               = — u,                                                                             (5)
+
+                        an extra component to any spatial variation of z. Then
+
+                                  G       AF
+                        (l+z)       = 1 + -—- + 0G -      +
+                                                               fG ~ mMm dxß.                                      (6)
+                                  s        C                  Js
+                           With metric
+                        ds = - (co0)2 + R'2dr2 + R\d62 + sin2 0 di//2),
+                          2
+                                                                                                                  (7)
+
+                        Æ =^(r, i), Einstein’s equations for dust with density p without cosmological constant, are
+                        C = a/ar):
+
+                        2RR'2 = F(r)      and     STtp^F'llR'R2,                                                  (8)
+                        with F(r) a function of r only, and the continuity equation reads
+
+
+                        P=                                                                                        (9)
+
+                        and we specialize to the shearfree case for which the expansion 0 depends only on time [26].
+                        We can then let R be separable R = T(t) P(r) and we choose a Gaussian density distribution
+                        function for the density p of amplitude ô and dispersion a:
+
+                        p = p(0[l + ôe-y/a2].                                                                    (10)
+
+                        Then equation (8) can be solved to give
+
+                        R = (/L/2)1/3[3/(87r/r)] f2/3 [1 +ôe~'’2/a2]~1.                                          (11)
+
+                        The mass within a radius r is
+
+
+                        M=47t         pR'R* dr,                                                                  (12)
+                                 Jo
+                        giving
+
+                                   2^(25+ S2)(l-e-,>2)
+                        m(r) =                                                                                   (13)
+                                        (1+5)2(1+Ôe-^2)
+
+                        for the mass beyond that due to a homogeneous distribution.
+                           The acceleration equation solved in the frame with oj° = dt - uRdR -dt - Uydr gives
+
+                        ur = w?(F/2)1/3(3i/87rF)2/3 [1 + Ôe-^K- 2ô/a2) r.                                        (14)
+
+                        Using the structure of the redshift variation we find K = 4/9, « 200 km/s, a « 36 Mpc and
+                        ô « 0.03.
+                           A more exact model may be generated following the method of [23] and [24], which
+                        show that several forms of density variation are possible. The model may be extended to
+                        spheroidal self-similar systems using the technique of [25] and allowing more general
+                        shearing motions and space curvatures.
+
+
+
+                              © Royal Astronomical Society • Provided by the NASA Astrophysics Data System
+197 7MNRAS.181. .121F
+
+                                                                 Anisotropy in the Hubble parameter               127
+                           One exotic model would involve the extreme case of very large b in the density so that an
+                        extreme black hole would cause the necessary gravitational shift. The required mass would
+                        be M~105Og to produce gravitational redshifts. A black hole of such a mass would be an
+                        X-ray source from the accretion of intergalactic matter. The X-ray luminosity Z,x is given in
+                        terms of the mass accretion rate Macc and the conversion efficiency e as [27]
+
+
+                                              1046 erg/s                                                          (15)
+
+
+                        and the Bondi [28] accretion rate is
+
+                                             3/2
+                        ^acc     ,,      ^     Pi                                                                 (16)
+                                (kT) 3/2
+
+                        with    /i, 71, p, the Boltzmann constant and the gas mean molecular weight, temperature,
+                        and density, and M the black-hole mass. Assuming ionized hydrogen with p ~10"31gcm-3
+                        and r~106K, one finds M ^ 1.1 x 1029g/s and Z,x ** e(5.5) x 10soerg/s. For an efficiency of
+                        10"3 that becomes 5.5 x 1047erg/s and, at a distance -120 Mpc, the received intensity of this
+                        source would be / ~4x 10_7erg/(cm2s). The identification of such a source in the direction
+                        of maximum Hubble anisotropy would indeed be interesting.
+
+
+
+                        4 The microwave background
+
+                        The conflict of the Hubble anisotropy with microwave isotropy may now be considered. For
+                        this large-scale inhomogeneity the results of Dyer are applicable [29]. For a central mass of
+                        ~1019Afo, there is a large redshift in the pattern centred on the inhomogeneity with
+                        ôT- -0.3, and a hot ring (blueshift) of radius - 30° with 07=0.1 per cent around it. If
+                        there is a central black hole of mass ~1O17M0 then the cool point at         13h, Ô - + 20° has
+                        57--0.06 per cent and a hot ring of radius 2arcmin with 67-+0.03 per cent. Other
+                        perturbation schemes produce variations of the same order. We see that such an inhomo-
+                        geneous structure may just barely be reconciled with the isotropy of the microwave back-
+                        ground radiation.
+                            This should not be too surprising. The effects of a large-scale inhomogeneity appear in the
+                        behaviour of geodesic congruences. The microwave photons propagate over global distances,
+                        spending a relatively small part of their lifetime in the region of the large-scale inhomo-
+                        geneity. Also their momenta obey pMpM = 0, indicating a much weaker effect on their
+                        geodesics.
+                            However, the galaxies spend their entire histories under the influence of local and large-
+                        scale dynamics with their momenta obeying pMpM=~l. Their geodesics are therefore far
+                        more seriously affected by the inhomogeneous region’s dynamics. Also, not only are their
+                        images affected but their own motions as well, while only the image of the last scattering
+                        surface of the microwave background is involved. A Doppler velocity of 500km/s [13]
+                        would appear in both of them and apparently it does not. The inhomogeneous model
+                        therefore explains the Hubble anisotropy and the background radiation isotropy. It is im-
+                        portant to remember, however, that the microwave isotropy is not yet a whole-sky survey.
+                        Therefore, anisotropies may yet remain to be discovered which would have to be confronted
+                        by these models. It may well be that a significant anisotropy will require the addition of a
+                        rotational velocity     component, or of some form of electromagnetic fields. On the other
+                        hand such a discovery might also invalidate the models.
+                         5
+
+                             © Royal Astronomical Society • Provided by the NASA Astrophysics Data System
+197 7MNRAS.181. .121F
+
+                        128                A. J. Fennelly
+                           Debney [30] has presented an interesting inhomogeneous cosmology. He shows that
+                        observers inside a black hole would largely see an anisotropic pattern of redshifts from
+                        sources distributed isotropically about them. The Hubble anisotropy [10,13] may be
+                        possibly represented by this model, and it should be investigated. It is not yet clear how
+                        background radiation would appear, so the question of suitability remains open.
+
+
+                        5 Other astrophysical effects
+
+                        One expects other astrophysical effects to appear if we have such an eccentric position in a
+                        spherically symmetric Universe. Among these are the isotropy of number counts of galaxies,
+                        the apparent proper motions of objects, and the distribution of ellipticities of objects.
+                           The shear of a bundle of null rays obeys an equation different from that obeyed by a
+                        time-like ray bundle’s shear. This is
+
+                        Gfiv        Cß0vQ~ 2/3QOij,v                                                             (17)
+                        for the rate of change of           along the ray path. In the geometry considered above the
+                        solutions are
+                                           R
+                        oMM    O0                                                                              (18.1)
+                                    r2r’
+
+                                                                 R
+                                               Qq
+                        °dd ~ °\p\p —                                                                          (18.2)
+                                           R2Rr                   Ro
+                        evaluated between the integration limits R0 and R. The evolution of the ellipticity e along
+                        the ray path is given in terms of the rms shear o2 = V20ßvoßv as [31]
+                        (In e) * = 2(7.                                                                          (19)
+
+                        The apparent proper motion of an object with Cartesian position vector     is (20)
+
+                        ¿a =          “ CT^eVea.                                                                 (20)
+
+                        For a reasonable inhomogeneity, both of these effects would be difficult to detect. Simple
+                        order-of-magnitude calculations give that a~10-5/Mpc for close passage just outside the
+                        region of maximum density (~10Mpc). Then, for a path traversing the regions of
+                        maximum Hubble anisotropy (~102Mpc), equation (19) gives an ellipticity change
+                        A In e « 2 x 10“5 A/ = 2 x 10“3, implying Ae « 0.002. Similarly equation (20) gives
+
+                        A hi     ~ (a- So^y^) A/,
+
+                        where '£omY2m is the sum Ox^e8 considered as a sum over harmonics on the unit sphere
+                        (20); then Ae^ 0.002 for the same case. But these same considerations may rule out the
+                        extreme black-hole case, for then a ~ —10-3/Mpc for an impact parameter -IMpc. With a
+                        ray path A/~102Mpc, Ain0.2 implies Ae~0.22 and Ae^^O.!!. These effects should
+                        be detected if they exist. It is doubtful that they do.
+                           In the case of a non-exotic kind of inhomogeneity, rather subtle trends may be revealed
+                        in a data sample of sufficient statistical significance. Sample luminosity distances depend on
+                        the expansion, 6 = VaKa, of a ray bundle which itself obeys the equation
+
+                        è = -RabKaKb -2o2-d2l2                                                                   (21)
+
+
+
+                           © Royal Astronomical Society • Provided by the NASA Astrophysics Data System
+197 7MNRAS.181. .121F
+
+                                                                    Anisotropy in the Hubble parameter              129
+                        along the ray path. In equation (21) the part -d2/!- RabKaKb is expected in any case, and
+                        the contribution of inhomogeneity to 02 is small. The change in Q due to the inhomogeneity
+                        is —2a2 — A(RabKaKb) with &Rab = %(Tab — l/2gabT)~ptyfR by equations (10) and (11).
+                        Then we write A0 ~ —2 a2 —p0//? and make dimensional estimates again, a2~ 10~loMpc~2
+                        and &RabKaKb ~\Q~sN[pc~2. The change in Q over a 102Mpc path is then ~10“3/Mpc
+                        which could lead to a sizeable change in apparent luminosity over a sample of objects. An
+                        anisotropy in the luminosity function of galaxies should exist between separate hemispheres.
+                           With regard to published studies, we note in passing that such an anisotropy may well
+                        exist for the luminosity function of galaxies [32] and a variation of ellipticities of galaxies
+                        may have been detected [33]. A systematic orientation of galaxies toward the cluster centre
+                        may exist in the Coma Cluster [34]; it is there that such an extreme black hole may be.
+                        These observations await confirmation and may well be due to a variety of other astro-
+                        physical effects.
+                           We now turn to number counts. A suitable formula from Kristian & Sachs [20], to first
+                        order in gradients and direction cosines eßi is
+
+                        ¿/TV = (1 + z) r2 dr d£l{n + r(nQ + n^)},                                                  (22)
+
+                        with the redshift z given by
+
+
+                                                                                                                   (23)
+                                                                                 T
+
+                        Retaining only terms to first order in the luminosity distance r we have
+
+                        dN= r2 dr d£l{(nd + nßeß+ n[Q¡3+ yLomY2m])r}.                                              (24)
+
+                        For the metric of equation (2) we have n^ = 3M« +        dQn for a gradient, which causes an
+                        anisotropy in the source distribution, along with the SamT2m angular harmonic term. We
+                        integrate separately over both halves of the celestial sphere Nu centred on a = 12h42m,
+                        5 = + 20°, and     centred at the antipole, again looking for dimensional estimates, we form
+                        the quantity I|/(M+A^2), finding
+
+                        \Ni~ N2\I(Ni+N2) ~ (?/%uQ + o+V\nri)r,                                                     (25)
+
+                        where the region surveyed extends to r and we evaluate V Intí between the two halves of the
+                        celestial sphere. We have 3w0/8 ~ 1CT4/Mpc and a~lCT5/Mpc. Next, from equation (10) we
+                        obtain V In « ~ 4.6 x 10-5 Mpc-2 r. So we find overall that
+
+                        l^i ~ N2\¡(Nx + Af2) ~1.1 x 10"4Mpc-1 r + 4.0 x 10"5Mpc~2r2.
+
+                        For a survey over ~102Mpc we find the density difference is -0.4601. A locally steep
+                        density gradient in the same direction does exist, but not on scales > 20 Mpc [35]. However,
+                        de Vaucouleurs [36] noted just such a large-scale gradient with the ratio N1/N2 ~ 3.2-4.1.
+                        The ratio implied above is Ni/N2 - 2.7. This is a highly suggestive result. Other ways that this
+                        might manifest itself is in a change in the luminosity function of galaxies with a greater
+                        number of brighter galaxies in the Nx region (about û: = 12h42m, ô = + 20°) as has been
+                        reported [32]. Or one might expect anomalous behaviour in the number count—angular
+                        diameter relation a la Dodd et al [19].
+                            We have not resolved the issue here but further data, particularly number counts, should
+                        decide if the model is to be rejected. As long as the supercluster/no supercluster discussion
+                        continues it is likely that this will also. One recalls that Omer’s inhomogeneous model [37]
+                        still makes interesting reading.
+
+
+
+                           © Royal Astronomical Society • Provided by the NASA Astrophysics Data System
+197 7MNRAS.181. .121F
+
+                        130             A. J. Fennelly
+                        Acknowledgments
+
+                        1 thank Alan Edwards and Ralph Martin for discussion of reference [19], B. N. Guthrie for a
+                        preprint in advance of publication, and Paul C. Davies, S. A. Fulling, and D. C. Robinson for
+                        discussions. 1 am grateful to Professors John Taylor and Chris Isham for the hospitality of
+                        King’s College, 1975 May—August. The advice and encouragement of George Debney and
+                        David Farnsworth are gratefully acknowledged. I thank the referee for many comments
+                        and suggestions for revision.
+
+
+                        References
+
+                          [1] Peebles, P. J. E., 1911. Physical cosmology, Princeton.
+                          [2] Sandage, A. & Tammann, G. A., 1975. Astrophys. J., 197, 265.
+                          [3 j Collins, C. B. & Hawking, S. W., 1973. Mon. Not. R. astr. Soc., 162, 307.
+                          [4 J Rubin, V. C., Ford, W. K. & Rubin, J. S., 1973. Astrophys. J. Lett., 123, LIII.
+                          [51 Jaakkola, T., Karoji, H., Moles, M. & Vigier, J.-P., 1975. Nature, 256, 24.
+                          [6] Guthrie, B. N. G., 1977. Astrophys. Space Sei., in press.
+                          [7] LeDenmat, G. & Vigier, J.-P., 1975. C. r. lebd. Seanc. Acad. Sei. Paris, 280B, 459.
+                          [8] LeDenmat, G., Moles, M. Vigier, J.-P. & Nieto, J. L., 1975. Nature, 257, 773.
+                          [9] Karoji, H. & Nottale, L., 1976. Nature, 259, 31.
+                        [10] Jaakkola, T., Karoji, H., LeDenmat, G., Moles, M., Nottale, L., Vigier, J.-P. & Pecker, J.-C., 1976.
+                                Mon. Not. R. astr. Soc., 177, 191.
+                        [11] Graham,!. A., 1916. Astr. J., 81,681.
+                        [12] Rubin, V. C., Ford, W. K., Thonnard, N., Roberts, M. & Graham, J. A., 1916. Astr. J., 81, 687.
+                        [13] Rubin, V. C., Thonnard, N., Ford, W. K. & Roberts, M. S., 1976. Astr. J., 81, 719.
+                        [14] Rubin, V. C., 1911. Astrophys. J. Lett., 211, LI.
+                        [15] Jaakkola, T., Moles, M., Vigier, J.-P., Pecker, J.-C. & Yowgrau, W., 1975. Foundation Phys., 5, 257.
+                        [16] Dyer, C. C. & Roeder, R. C, 1976. Nature, 260, 765.
+                        [17] Doroshkevich, A. G. & Shandarin, S. F., 1916. Mon. Not. R. astr. Soc., 175, 15P.
+                        [18] Mavrides, S., 1916. Mon. Not. R. astr. Soc., 177, 709.
+                        [19] Dodd, R. J., Morgan, D. H., Nandy, K., Reddish, V. C. & Seddon, H., 1915. Mon. Not. R. astr. Soc.,
+                                171, 329.
+                               Ellis, R. S., Fong, R. & Phillips, S., 1916. Mon. Not. R. astr. Soc., 176, 391.
+                        [20] Sachs, R. K. & Wolfe, A. M., 1967. Astrophys. J., 147, 73.
+                        [21] Bondi, H., 19A1 .Mon. Not. R. astr. Soc., 107, 409.
+                        [22] Bonnor, W. G., 1912. Mon. Not. R. astr. Soc., 159, 261.
+                        [23] Cahill, M. E. & Taub, A. H., 1971. Comm. math. Phys., 21, 1.
+                        [24] Lin, D. N. C., Carr, B. J. & Fall, S. M., 1916. Mon. Not. R. astr. Soc., 177, 51.
+                               Carr, B. J. & Hawking, S. W., 1974. A/o«. Not. R. astr. Soc., 168, 399.
+                        [25] Eardley, D. M., 1974. Comm. math. Phys., 37, 287.
+                        [26] Nariai, H., 196%. Prog, theor. Phys., 40, 1013.
+                        [27] Ostriker, J. P., McCray, R., Weaver, R. & Yahil, A., 1976. Astrophys. J. Lett., 208, L61.
+                        [28] Bondi, H., 1952. Mon. Not. R. astr. Soc., 112,195.
+                         [29] Dyer, C. C., 1976. Mon. Not. R. astr. Soc., 175, 429.
+                         [30] Debney, G., 1916. Mon. Not. R. astr. Soc., 176, 561.
+                         [31] Dyer, C. C. & Roeder, R. C., 1914. Astrophys. J., 189, 167.
+                               Fennelly, A. J., 1975. PhD dissertation, University Microfilms, Ann Arbor.
+                         [32] Christensen, C. G., 1975. Astr. J., 80, 282.
+                         [33] Reinhardt, M., 1912. Mon. Not. R. astr. Soc., 156, 151.
+                         [34] Hawley, D. L. & Peebles, P. J. E., 1975. Astr. J., 80, 447.
+                         [35] Sandage, A., Tammann, G. A. & Hardy, E., 1972. Astrophys. J., 172, 253.
+                         [36] de Vaucouleurs, G., 1971. Publ. astr. Soc. Pacific, 83, 113.
+                         [37] Orner, G. C., 1949. Astrophys. J., 109, 164.
+
+
+
+
+                           © Royal Astronomical Society • Provided by the NASA Astrophysics Data System
+

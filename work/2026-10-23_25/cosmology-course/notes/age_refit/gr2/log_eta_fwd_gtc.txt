@@ -1,0 +1,63 @@
+sanity R_o 2374.0449433084405 vs 2373.6940949451086  U_o/c 4.175586029952057 vs 4.174882095574182
+tB_obs -0.015548170364964477 t_rec 0.03345491937371198 tn 534.4943654461873
+    0 z_b 16396.9 z_f 16396.920567532907 land 5.42e-09->5.422563020254887e-09 unborn False 5s
+    6 z_b 16392.4 z_f 16392.430305909416 land 1.73e-08->1.72693678987483e-08 unborn False 11s
+   12 z_b 16379 z_f 16378.992585510683 land 1.91e-09->1.9093467639412206e-09 unborn False 16s
+   18 z_b 16356.7 z_f 16356.672252877235 land 5.83e-09->5.829960854925971e-09 unborn False 21s
+   24 z_b 16325.6 z_f 16325.58780884963 land 3.70e-08->3.699127681175464e-08 unborn False 26s
+   30 z_b 16285.9 z_f 16285.907718935825 land 2.85e-09->2.8510067415365405e-09 unborn False 31s
+   36 z_b 16237.8 z_f 16237.798135222067 land 9.70e-09->9.70020513107898e-09 unborn False 36s
+   42 z_b 16181.5 z_f 16181.462886673764 land 1.14e-08->1.14214070722845e-08 unborn False 41s
+   48 z_b 16117.1 z_f 16117.077175748516 land 2.13e-09->2.132121607822871e-09 unborn False 47s
+   54 z_b 16044.8 z_f 16044.795164476149 land 3.31e-09->3.3069806551940237e-09 unborn False 52s
+   60 z_b 15964.7 z_f 15964.682776270338 land 3.11e-09->3.110056261995357e-09 unborn False 58s
+   66 z_b 15876.7 z_f 15876.673104230422 land 1.27e-08->1.2651168908170598e-08 unborn False 64s
+   72 z_b 15780.5 z_f 15780.491232201659 land 6.84e-09->6.841971691994386e-09 unborn False 69s
+   78 z_b 15675.5 z_f 15675.50668829685 land 5.53e-09->5.526921524517555e-09 unborn False 75s
+   84 z_b 15560.6 z_f 15560.56186511249 land 2.12e-08->2.120539960226786e-08 unborn False 80s
+   90 z_b 15433.7 z_f 15433.658340896549 land 1.39e-08->1.3913434846652765e-08 unborn False 87s
+   96 z_b 15291.4 z_f 15291.400145789894 land 1.10e-08->1.103905535330703e-08 unborn False 92s
+  102 z_b 15128 z_f 15128.046815947364 land 2.28e-08->2.277402391319577e-08 unborn False 98s
+  108 z_b 14933.7 z_f 14933.666760892002 land 9.14e-09->9.137303495120157e-09 unborn False 104s
+  114 z_b 14690.3 z_f 14690.261954452717 land 2.50e-08->2.4960813821046292e-08 unborn False 110s
+  120 z_b 14362.8 z_f 14362.816718634507 land 2.09e-08->2.0892941693492448e-08 unborn False 116s
+  126 z_b 13874.8 z_f 13874.753789056716 land 2.73e-08->2.7281000484158303e-08 unborn False 122s
+  132 z_b 13020.9 z_f 13020.854766001563 land 5.01e-08->5.0092839503535784e-08 unborn False 128s
+  138 z_b 10919.7 z_f 10919.690980381127 land 1.05e-07->1.0529703608766071e-07 unborn False 142s
+144.0 not reached {'ell': 144.0, 'reached_rec': False, 'ncross': 0, 'stop_t_frac_of_flight': 0.8230494781419697, 'stop_label_r0': 0.9966512327001052, 'stop_label_unborn_at_trec': False}
+150.0 not reached {'ell': 150.0, 'reached_rec': False, 'ncross': 0, 'stop_t_frac_of_flight': 0.7452037459977119, 'stop_label_r0': 0.996645174050749, 'stop_label_unborn_at_trec': False}
+156.0 not reached {'ell': 156.0, 'reached_rec': False, 'ncross': 0, 'stop_t_frac_of_flight': 0.7020726263838717, 'stop_label_r0': 0.9966468427767086, 'stop_label_unborn_at_trec': False}
+162.0 not reached {'ell': 162.0, 'reached_rec': False, 'ncross': 0, 'stop_t_frac_of_flight': 0.6759215568662857, 'stop_label_r0': 0.9966448149919083, 'stop_label_unborn_at_trec': False}
+168.0 not reached {'ell': 168.0, 'reached_rec': False, 'ncross': 0, 'stop_t_frac_of_flight': 0.6601318336566024, 'stop_label_r0': 0.9966415935699223, 'stop_label_unborn_at_trec': False}
+174.0 not reached {'ell': 174.0, 'reached_rec': False, 'ncross': 0, 'stop_t_frac_of_flight': 0.6469702526682017, 'stop_label_r0': 0.9966520729355105, 'stop_label_unborn_at_trec': False}
+180.0 not reached {'ell': 180.0, 'reached_rec': False, 'ncross': 0, 'stop_t_frac_of_flight': 0.6459818006583724, 'stop_label_r0': 0.9966462235142743, 'stop_label_unborn_at_trec': False}
+186.0 not reached {'ell': 186.0, 'reached_rec': False, 'ncross': 0, 'stop_t_frac_of_flight': 0.6454926128295663, 'stop_label_r0': 0.9966563422687534, 'stop_label_unborn_at_trec': False}
+192.0 not reached {'ell': 192.0, 'reached_rec': False, 'ncross': 0, 'stop_t_frac_of_flight': 0.6615321612432196, 'stop_label_r0': 0.9966377192025202, 'stop_label_unborn_at_trec': False}
+198.0 not reached {'ell': 198.0, 'reached_rec': False, 'ncross': 0, 'stop_t_frac_of_flight': 0.6758466164443787, 'stop_label_r0': 0.9966450285420654, 'stop_label_unborn_at_trec': False}
+204.0 not reached {'ell': 204.0, 'reached_rec': False, 'ncross': 0, 'stop_t_frac_of_flight': 0.7027571245065501, 'stop_label_r0': 0.9966448531992387, 'stop_label_unborn_at_trec': False}
+210.0 not reached {'ell': 210.0, 'reached_rec': False, 'ncross': 0, 'stop_t_frac_of_flight': 0.745738567504529, 'stop_label_r0': 0.9966435878379456, 'stop_label_unborn_at_trec': False}
+216.0 not reached {'ell': 216.0, 'reached_rec': False, 'ncross': 0, 'stop_t_frac_of_flight': 0.8273653921411516, 'stop_label_r0': 0.9966381622728098, 'stop_label_unborn_at_trec': False}
+  222 z_b 10919.7 z_f 10919.691792461226 land 9.69e-08->9.690907615343872e-08 unborn False 156s
+  228 z_b 13020.9 z_f 13020.856001777476 land 3.93e-08->3.9333160317583235e-08 unborn False 162s
+  234 z_b 13874.8 z_f 13874.753117092088 land 3.28e-08->3.282900982182909e-08 unborn False 167s
+  240 z_b 14362.8 z_f 14362.816024734619 land 2.61e-08->2.6123918657171614e-08 unborn False 172s
+  246 z_b 14690.3 z_f 14690.26210575809 land 2.35e-08->2.3478023070282232e-08 unborn False 178s
+  252 z_b 14933.7 z_f 14933.664785809176 land 2.39e-08->2.394487018542067e-08 unborn False 184s
+  258 z_b 15128 z_f 15128.046171424481 land 2.78e-08->2.7837034973168174e-08 unborn False 190s
+  264 z_b 15291.4 z_f 15291.400481411805 land 8.57e-09->8.569620708061375e-09 unborn False 197s
+  270 z_b 15433.7 z_f 15433.657424744752 land 2.07e-08->2.0702433661260147e-08 unborn False 202s
+  276 z_b 15560.6 z_f 15560.56304428019 land 1.25e-08->1.2536754891503272e-08 unborn False 208s
+  282 z_b 15675.5 z_f 15675.504983335555 land 7.90e-09->7.90075034372532e-09 unborn False 213s
+  288 z_b 15780.5 z_f 15780.490422484065 land 1.83e-09->1.8334798259873336e-09 unborn False 218s
+  294 z_b 15876.7 z_f 15876.674982601611 land 1.84e-09->1.837404097348423e-09 unborn False 224s
+  300 z_b 15964.7 z_f 15964.682776270338 land 3.11e-09->3.110056261995357e-09 unborn False 230s
+  306 z_b 16044.8 z_f 16044.794338350008 land 3.30e-09->3.303671880597427e-09 unborn False 235s
+  312 z_b 16117.1 z_f 16117.08022223826 land 1.97e-08->1.965225705950012e-08 unborn False 241s
+  318 z_b 16181.5 z_f 16181.462672661934 land 1.02e-08->1.015727687645367e-08 unborn False 248s
+  324 z_b 16237.8 z_f 16237.79887075766 land 4.76e-09->4.7571304932189895e-09 unborn False 253s
+  330 z_b 16285.9 z_f 16285.90505541353 land 2.13e-08->2.134006224786481e-08 unborn False 259s
+  336 z_b 16325.6 z_f 16325.59121767191 land 1.40e-08->1.4004303974892481e-08 unborn False 265s
+  342 z_b 16356.7 z_f 16356.6715617931 land 1.03e-08->1.0270995834987363e-08 unborn False 270s
+  348 z_b 16379 z_f 16378.991389628189 land 6.27e-09->6.270871354246364e-09 unborn False 277s
+  354 z_b 16392.4 z_f 16392.434066402937 land 7.51e-09->7.508865947654755e-09 unborn False 282s
+DONE eta_fwd_gtc

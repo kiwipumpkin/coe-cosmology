@@ -1,0 +1,68 @@
+{
+  "source_full_deck": "/workspace/cosmology/cosmology_figures_deck_FULL.pptx",
+  "source_manifest": "/workspace/cosmology/_deck_manifest.txt",
+  "ordering": "filesystem mtime ascending, then relative path ascending for ties",
+  "total_pngs": 395,
+  "parts": [
+    {
+      "part": 1,
+      "path": "/workspace/cosmology/cosmology_figures_deck_part1of5.pptx",
+      "n_slides": 79,
+      "first_png": "figures/density_mass.png",
+      "last_png": "map_compare/side_by_side_theta75_rotated.png",
+      "first_global_index": 1,
+      "last_global_index": 79,
+      "mtime_start": "2026-09-20T20:05:50.697806-05:00",
+      "mtime_end": "2026-09-20T20:05:51.889809-05:00",
+      "file_size_bytes": 17592331
+    },
+    {
+      "part": 2,
+      "path": "/workspace/cosmology/cosmology_figures_deck_part2of5.pptx",
+      "n_slides": 79,
+      "first_png": "map_compare/side_by_side_migkas_vs_ours.png",
+      "last_png": "migkas/pub_maps/p-16.png",
+      "first_global_index": 80,
+      "last_global_index": 158,
+      "mtime_start": "2026-09-20T20:05:51.897809-05:00",
+      "mtime_end": "2026-09-20T20:05:52.261810-05:00",
+      "file_size_bytes": 21920624
+    },
+    {
+      "part": 3,
+      "path": "/workspace/cosmology/cosmology_figures_deck_part3of5.pptx",
+      "n_slides": 79,
+      "first_png": "map_compare/cone_thetas/cards/theta75_phys_invsq.png",
+      "last_png": "map_compare/amp_mean_param_noise/CARD_primary_both_d02_invsq.png",
+      "first_global_index": 159,
+      "last_global_index": 237,
+      "mtime_start": "2026-09-20T20:05:52.265810-05:00",
+      "mtime_end": "2026-09-20T20:05:52.469810-05:00",
+      "file_size_bytes": 23465950
+    },
+    {
+      "part": 4,
+      "path": "/workspace/cosmology/cosmology_figures_deck_part4of5.pptx",
+      "n_slides": 79,
+      "first_png": "map_compare/amp_mean_param_noise/CARD_primary_dist_d01_invsq.png",
+      "last_png": "map_compare/amp_mean_param_noise/HIST_migkas_logy_N_and_S_separate_stacked.png",
+      "first_global_index": 238,
+      "last_global_index": 316,
+      "mtime_start": "2026-09-20T20:05:52.469810-05:00",
+      "mtime_end": "2026-09-20T20:05:52.869810-05:00",
+      "file_size_bytes": 18335610
+    },
+    {
+      "part": 5,
+      "path": "/workspace/cosmology/cosmology_figures_deck_part5of5.pptx",
+      "n_slides": 79,
+      "first_png": "map_compare/amp_mean_param_noise/HIST_overlay_A_migkas_over_model.png",
+      "last_png": "figures/A_vs_angle_after_2ell_with_residuals.png",
+      "first_global_index": 317,
+      "last_global_index": 395,
+      "mtime_start": "2026-09-20T20:05:52.869810-05:00",
+      "mtime_end": "2026-09-21T10:11:44.211236-05:00",
+      "file_size_bytes": 15709137
+    }
+  ]
+}

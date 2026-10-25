@@ -1,0 +1,188 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{fontspec,graphicx,fvextra,xcolor,amsmath}\usepackage[hidelinks]{hyperref}
+\setmonofont{DejaVu Sans Mono}[Scale=0.8]
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\fvset{breaklines=true,breakanywhere=true,fontsize=\footnotesize,frame=single,numbers=left,numbersep=4pt}
+\title{CoE paper figure book\\\large every figure, in the order it was made, with its Python source}
+\author{}\date{Built Sun Oct 25 2026}
+\newcommand{\flag}[1]{\textsf{[unverified: #1]}}\newcommand{\why}[1]{\textit{Validity.} #1}\usepackage{xurl}\sloppy
+\begin{document}\maketitle
+Order: by ``originally made'' time (CT), oldest first; ties broken by git commit, then file time to the second, then paper number. ``Copy time'' means only when the file was copied onto the box (Fri Oct 23 2026, 8:20--8:31 AM CT); the true original is likely earlier. ``This morning'' = paper as of 8:30 AM CT Oct 25; ``now'' = rewritten paper. Every image is set at \texttt{\textbackslash textwidth}; very tall images get a taller page instead of being shrunk.
+\tableofcontents\clearpage
+\clearpage\section*{1. Passing-universe domains}\addcontentsline{toc}{section}{1. Passing-universe domains}
+\textbf{Originally made:} Wed Oct 21 2026, 4:19 PM CT \quad (\textit{git commit ae85632 (coe-cosmology-gh), adding mc\_domain\_overlay\_lin.png})\\ \textbf{Paper figure number:} this morning Fig.~18; now Fig.~18\\ \textbf{Files:} \texttt{f05.png}
+\subsection*{Notes}Domains at R = 4, 8, 14 Gpc overlaid, with spreads over Monte-Carlo realisations of the realistic web. Derived from the redweb2/realweb Monte-Carlo runs; no earlier figure in this book is an input. Script saves mc\_domain\_overlay\_lin.png, which is md5-identical to f05.png.\par\textbf{Paper caption (caveats as stated):} Passing-universe domains at $R=4$, 8, 14\,Gpc overlaid (top; bands are spreads over realisations; $\ell=3$ and the $R=8$ $\ell$ 8--12 maxima clipped) and the density of sky-plane domains (bottom) against Planck.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f05.png}\par\centerline{\footnotesize\texttt{f05.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/redweb2/realweb/mc/mc\_overlay.py}}\VerbatimInput{code/01_mc_overlay.py}
+\clearpage\section*{2. First stochastic-field fit (stage A)}\addcontentsline{toc}{section}{2. First stochastic-field fit (stage A)}
+\textbf{Originally made:} Thu Oct 22 2026, 12:42 AM CT \quad (\textit{git commit c18eae2, adding stochfield/a\_cl\_l30\_bg.png})\\ \textbf{Paper figure number:} this morning Fig.~12; now Fig.~21\\ \textbf{Files:} \texttt{f15.png}
+\subsection*{Notes}Gaussian random field riding the CoE flow, R = 4 Gpc, fitted to Planck low multipoles. Lives in the stochfield/ work; builds on the CoE flow geometry. Script (from GitHub kiwipumpkin/coe-cosmology, commit c18eae2, work/2026-10-21\_22/stochfield/figs.py) saves a\_cl\_\{tag\}.png; run with tag l30\_bg it writes a\_cl\_l30\_bg.png, which is md5-identical to f15.png. fwd.py is its imported helper.\par\textbf{Paper caption (caveats as stated):} First stochastic-field fit (stage A: Gaussian random field riding the CoE flow, $R=4$\,Gpc, $\ell$ 2--30, CoE background included, $\lambda=100$). Blue: ensemble mean with $\pm1\sigma$ cosmic-variance band ($\chi^2_{\rm Planck+CV}=10.8$, $\chi^2_{\rm Planck}=17.6$, Pearson $r^2=0.032$); red dashed: deterministic CoE background; black: ΛCDM ($\chi^2=20.1$, $r^2=0.012$); points: Planck 2018.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f15.png}\par\centerline{\footnotesize\texttt{f15.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/coepdf/book/gitsrc/figs.py}}\VerbatimInput{code/02_figs.py}
+\textbf{\texttt{/workspace/coepdf/book/gitsrc/fwd.py}}\VerbatimInput{code/02_fwd.py}
+\clearpage\section*{3. Parameter degeneracies}\addcontentsline{toc}{section}{3. Parameter degeneracies}
+\textbf{Originally made:} Thu Oct 22 2026, 12:42 AM CT \quad (\textit{git commit c18eae2 (same commit as \#2; ordered after it by paper number), adding stochfield/d\_degeneracy\_l30\_bg.png})\\ \textbf{Paper figure number:} this morning Fig.~22; now Fig.~23\\ \textbf{Files:} \texttt{f14.png}
+\subsection*{Notes}Delta-chi2 contours of shell position vs amplitude for the stochastic-field fit. Depends on the stage-A fit (\#2). Script writes d\_degeneracy\_l30\_bg.png (md5 match to f14.png).\par\textbf{Paper caption (caveats as stated):} Parameter degeneracies. Left: shell position vs amplitude ($\Delta\chi^2=2.3,6.2,11.8$, i.e.\ 1, 2, 3$\sigma$ for two parameters). A farther shell needs a different amplitude because $K_M$ varies with $\chi$. Right: tilt vs amplitude at the chosen window.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f14.png}\par\centerline{\footnotesize\texttt{f14.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/redweb2/stochfield/deg.py}}\VerbatimInput{code/03_deg.py}
+\clearpage\section*{4. Same source at R = 4, 5, 6 Gpc}\addcontentsline{toc}{section}{4. Same source at R = 4, 5, 6 Gpc}
+\textbf{Originally made:} Thu Oct 22 2026, 12:42 AM CT \quad (\textit{git commit c18eae2, adding stochfield/acoustic\_ladder\_456.png (pixel-identical to f03.png)})\\ \textbf{Paper figure number:} this morning Fig.~21; now Fig.~22\\ \textbf{Files:} \texttt{f03.png}
+\subsection*{Notes}Peak positions vs shell radius for the same source parameters. Script (commit c18eae2, work/2026-10-21\_22/stochfield/acoustic\_ladder456.py) ends with savefig('acoustic\_ladder\_456.png'); that committed PNG is pixel-for-pixel identical to f03.png (f03 is a re-saved copy). acoustic\_model.py is its imported module.\par\textbf{Paper caption (caveats as stated):} The same source parameters with $R=4$, 5, 6\,Gpc (shell at 3.944, 4.944, 5.944\,Gpc): peaks [227, 530, 831, 1131, 1431], [284, 412, 663, 1042, 1417], [341, 419, 797, 1252, 1703]. Moving the shell without refitting $r_s$ changes $\chi_{\rm eff}$ in Eq.~(20).
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f03.png}\par\centerline{\footnotesize\texttt{f03.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/coepdf/book/gitsrc/acoustic\_ladder456.py}}\VerbatimInput{code/04_acoustic_ladder456.py}
+\textbf{\texttt{/workspace/coepdf/book/gitsrc/acoustic\_model.py}}\VerbatimInput{code/04_acoustic_model.py}
+\clearpage\section*{5. Low multipoles: LCDM, Planck, CoE one-sky}\addcontentsline{toc}{section}{5. Low multipoles: LCDM, Planck, CoE one-sky}
+\textbf{Originally made:} Thu Oct 22 2026, 12:42 AM CT \quad (\textit{git commit c18eae2, adding stochfield/combo10.png (pixel-identical to f17.png)})\\ \textbf{Paper figure number:} this morning Fig.~20; now Fig.~27\\ \textbf{Files:} \texttt{f17.png}
+\subsection*{Notes}CoE one-sky realisation in its cosmic-variance band. Script (commit c18eae2, work/2026-10-21\_22/stochfield/combo10.py) ends with savefig('combo10.png'); that committed PNG is pixel-for-pixel identical to f17.png.\par\textbf{Paper caption (caveats as stated):} Low multipoles (linear axes): ΛCDM (black), Planck (grey), CoE one-sky realisation (red) in its $\pm1\sigma$ cosmic-variance band (Eq.~8) with faint ensemble mean. Bottom: full spectrum.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f17.png}\par\centerline{\footnotesize\texttt{f17.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/coepdf/book/gitsrc/combo10.py}}\VerbatimInput{code/05_combo10.py}
+\clearpage\section*{6. Damped-harmonic fits to eps\_l}\addcontentsline{toc}{section}{6. Damped-harmonic fits to eps\_l}
+\textbf{Originally made:} Thu Oct 22 2026, 12:42 AM CT \quad (\textit{git commit c18eae2, adding stochfield/resid\_damped\_7to9.png (pixel-identical to f18.png)})\\ \textbf{Paper figure number:} this morning Fig.~23; now Fig.~24\\ \textbf{Files:} \texttt{f18.png}
+\subsection*{Notes}Fits with 7, 8, 9 harmonics to eps\_l. Original name resid\_damped\_7to9.png found in git; no .py in any commit or under /workspace contains resid\_damped, so its script was never saved (likely run inline).\par\textbf{Paper caption (caveats as stated):} Damped-harmonic fits to $\epsilon_\ell$ with 7, 8, 9 harmonics ($\Delta\ell=593$, $L=990$) and Pearson $r^2$ versus number of harmonics (bottom).
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f18.png}\par\centerline{\footnotesize\texttt{f18.png}}
+\subsection*{Generating script}
+\textbf{Generating script not found.} Searched all \texttt{.py} files under /workspace (excluding virtualenvs) for the image filename and its known aliases, and the git repos.
+\clearpage\section*{7. Final CMB model vs Planck TT}\addcontentsline{toc}{section}{7. Final CMB model vs Planck TT}
+\textbf{Originally made:} Thu Oct 22 2026, 11:14 AM CT \quad (\textit{git commit 2b5677e, adding acoustic\_half\_cl\_fixed.png})\\ \textbf{Paper figure number:} this morning Fig.~24; now Fig.~25\\ \textbf{Files:} \texttt{f01.png}
+\subsection*{Notes}CoE acoustic field plus damped half-scale term vs Planck TT, exact projection to l = 2500. Depends on the stochastic-field / acoustic fits (\#2, \#3). Helper modules half\_fit, acoustic\_fit and acoustic\_model are included below.\par\textbf{Paper caption (caveats as stated):} Final model: acoustic field + damped half-scale term ($r_2$ free), exact/Limber-corrected projection, $R\approx4$\,Gpc, plus $D^{\rm fix}_\ell$. Top: low $\ell$ (linear). Bottom: full spectrum. ΛCDM black, Planck grey, CoE one-sky realisation red in its $\pm1\sigma$ band. $\chi^2_{2-2500}=3{,}787$, Pearson $r^2=0.976$.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f01.png}\par\centerline{\footnotesize\texttt{f01.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/redweb2/stochfield/half\_figs\_fixed.py}}\VerbatimInput{code/07_half_figs_fixed.py}
+\textbf{\texttt{/workspace/redweb2/stochfield/half\_fit.py}}\VerbatimInput{code/07_half_fit.py}
+\textbf{\texttt{/workspace/redweb2/stochfield/acoustic\_fit.py}}\VerbatimInput{code/07_acoustic_fit.py}
+\textbf{\texttt{/workspace/redweb2/stochfield/acoustic\_model.py}}\VerbatimInput{code/07_acoustic_model.py}
+\clearpage\section*{8. Density and t vs a (radiation + matter)}\addcontentsline{toc}{section}{8. Density and t vs a (radiation + matter)}
+\textbf{Originally made:} Fri Oct 23 2026, 12:37 AM CT \quad (\textit{git commit 54f717f, adding math\_pdf/fig/d4\_radmat.png})\\ \textbf{Paper figure number:} this morning Fig.~3; now Fig.~3\\ \textbf{Files:} \texttt{d4\_radmat.png}
+\subsection*{Notes}Eq. 1 density and Eq. 2 t(a) for a\_eq = 1/3400, t0 = 13.8 Gyr. Analytic; no figure inputs. The four d*.png figures (\#5–\#8) come from one commit; ordered by paper number.\par\textbf{Paper caption (caveats as stated):} Eq.~(1) (left, units of today's matter density) and Eq.~(2) (right) for $a_{\rm eq}=1/3400$, $t_0=13.8$\,Gyr. Dotted: the limits $t^{1/2}$ and $t^{2/3}$.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/d4_radmat.png}\par\centerline{\footnotesize\texttt{d4\_radmat.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/coepdf/dens\_plots.py}}\VerbatimInput{code/08_dens_plots.py}
+\clearpage\section*{9. CatWISE-locked density laws}\addcontentsline{toc}{section}{9. CatWISE-locked density laws}
+\textbf{Originally made:} Fri Oct 23 2026, 12:37 AM CT \quad (\textit{git commit 54f717f})\\ \textbf{Paper figure number:} this morning Fig.~5; now Fig.~5\\ \textbf{Files:} \texttt{d1\_migkas\_laws.png}
+\subsection*{Notes}rho/rho\_crit vs distance from the CoE with zoom on D +/- d, from the CatWISE-locked level-set laws. Input: CatWISE 3\% dipole lock.\par\textbf{Paper caption (caveats as stated):} CatWISE-locked laws $\rho/\rho_{\rm crit}$ versus distance from the CoE (left) and zoom on $D\pm d$ (right), plotted from \texttt{catwise-density-levelset.csv} and \texttt{catwise-eta-density.csv}. $D=58.2$\,Gpc (line), $d=14.3005$\,Gpc (band).
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/d1_migkas_laws.png}\par\centerline{\footnotesize\texttt{d1\_migkas\_laws.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/coepdf/dens\_plots.py}}\VerbatimInput{code/09_dens_plots.py}
+\clearpage\section*{10. Cosmic-web ingredients}\addcontentsline{toc}{section}{10. Cosmic-web ingredients}
+\textbf{Originally made:} Fri Oct 23 2026, 12:37 AM CT \quad (\textit{git commit 54f717f})\\ \textbf{Paper figure number:} this morning Fig.~13; now Fig.~7\\ \textbf{Files:} \texttt{d2\_web.png}
+\subsection*{Notes}Halo mass function, void size function and compensated void mass placement, recomputed from cosmo.py. Input to the realistic web (\#14) and later web figures.\par\textbf{Paper caption (caveats as stated):} Web ingredients recomputed from \texttt{cosmo.py}: halo mass function (left), void size function (middle), compensated void mass placement (right).
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/d2_web.png}\par\centerline{\footnotesize\texttt{d2\_web.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/coepdf/dens\_plots.py}}\VerbatimInput{code/10_dens_plots.py}
+\clearpage\section*{11. Fitted P\_delta terms and window W(chi)}\addcontentsline{toc}{section}{11. Fitted P\_delta terms and window W(chi)}
+\textbf{Originally made:} Fri Oct 23 2026, 12:37 AM CT \quad (\textit{git commit 54f717f})\\ \textbf{Paper figure number:} this morning Fig.~19; now Fig.~26\\ \textbf{Files:} \texttt{d3\_stoch.png}
+\subsection*{Notes}Fitted P\_delta split into its terms and the radial window. Depends on the stochastic-field fit (\#2).\par\textbf{Paper caption (caveats as stated):} Fitted $P_\delta$ split into its terms (left) and the radial window $W(\chi)$ (right).
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/d3_stoch.png}\par\centerline{\footnotesize\texttt{d3\_stoch.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/coepdf/dens\_plots.py}}\VerbatimInput{code/11_dens_plots.py}
+\clearpage\section*{12. Observables: Migkas A/A\_all with bars and rotation overlay}\addcontentsline{toc}{section}{12. Observables: Migkas A/A\_all with bars and rotation overlay}
+\textbf{Originally made:} Fri Oct 23 2026, 8:21 AM CT \quad (\textit{copy time onto the box (true original likely earlier)})\\ \textbf{Paper figure number:} this morning Fig.~4; now Fig.~4\\ \textbf{Files:} \texttt{migkas\_bars\_rotation\_overlay.png}
+\subsection*{Notes}Migkas A/A\_all vs Galactic longitude with bars and rotation overlay. Input: Migkas cluster data (reads a spreadsheet via openpyxl).\par\textbf{Paper caption (caveats as stated):} The observables. Top: Migkas $A/A_{\rm all}$ against Galactic longitude (digitised, $\Delta l=90^\circ$ cones, black with error bars). Bottom: $B/B_{\rm all}$. Solid: spreadsheet shell model with the one-cycle sine rotation (Amp $=\mp0.06$, $\varphi=0.35$\,rad); dashed: best shared-$\varphi$ scan. $R^2$ before and after rotation is given in each panel. Restored from \texttt{cosmology/figures}.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/migkas_bars_rotation_overlay.png}\par\centerline{\footnotesize\texttt{migkas\_bars\_rotation\_overlay.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/cosmology/figures/migkas\_bars\_rotation\_overlay.py}}\VerbatimInput{code/12_migkas_bars_rotation_overlay.py}
+\clearpage\section*{13. Sky-orientation sequence (four rows)}\addcontentsline{toc}{section}{13. Sky-orientation sequence (four rows)}
+\textbf{Originally made:} Fri Oct 23 2026, 8:23 AM CT (8:23:32) \quad (\textit{copy time onto the box (true original likely earlier)})\\ \textbf{Paper figure number:} this morning Fig.~7; now Fig.~10\\ \textbf{Files:} \texttt{Fig05\_sky\_orientation\_four\_row.jpg}
+\subsection*{Notes}Untilted, +15 deg tilt, radial gradient, +80.8 deg roll. The maker stacks panels produced by four ring scripts it loads dynamically from /workspace/cosmology/figures/: make\_coe\_rings\_notilt.py, make\_coe\_rings\_migkas\_pin\_axis\_matched.py, make\_coe\_rings\_migkas\_pin\_axis\_matched\_grad.py, make\_coe\_rings\_migkas\_pin\_axis\_matched\_grad\_rot\_fit.py (named, not reproduced). Caption says restored from the original preprint.\par\textbf{Paper caption (caveats as stated):} Sky-orientation sequence: untilted configuration, then $+15^\circ$ tilt, radial gradient, and $+80.8^\circ$ roll about the CoE axis. Restored from the original preprint (its Fig.~5).
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/Fig05_sky_orientation_four_row.jpg}\par\centerline{\footnotesize\texttt{Fig05\_sky\_orientation\_four\_row.jpg}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/figs\_letter\_exact\_python/makers/make\_fig05\_sky\_orientation.py}}\VerbatimInput{code/13_make_fig05_sky_orientation.py}
+\textbf{\texttt{/workspace/figs\_letter\_exact\_python/makers/paths.py}}\VerbatimInput{code/13_paths.py}
+\clearpage\section*{14. Full Migkas A/A\_all with model and residual bars (key plot)}\addcontentsline{toc}{section}{14. Full Migkas A/A\_all with model and residual bars (key plot)}
+\textbf{Originally made:} Fri Oct 23 2026, 8:23 AM CT (8:23:33) \quad (\textit{copy time onto the box (true original likely earlier); dated from an earlier same-name version})\\ \textbf{Paper figure number:} this morning Fig.~6; now Fig.~9\\ \textbf{Files:} \texttt{Fig04\_amp\_full.png}
+\subsection*{Notes}Full Migkas profile with model curves and residual bars. Input: Migkas data, CoE model from physics.py; follows the observables plot (\#9).\par\textbf{Paper caption (caveats as stated):} Full Migkas $A/A_{\rm all}$ profile against Galactic longitude with the model curves; coloured vertical bands mark the predicted MAX/MIN longitude bands. Bottom: residual bars, $100(A-A_F)/A_F$, with low-order harmonic fits ($M\le5,6,7$). Pre-made figure from the original preprint.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/Fig04_amp_full.png}\par\centerline{\footnotesize\texttt{Fig04\_amp\_full.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/figs\_letter\_exact\_python/makers/make\_fig04\_amp\_full.py}}\VerbatimInput{code/14_make_fig04_amp_full.py}
+\textbf{\texttt{/workspace/figs\_letter\_exact\_python/makers/paths.py}}\VerbatimInput{code/14_paths.py}
+\textbf{\texttt{/workspace/figs\_letter\_exact\_python/makers/physics.py}}\VerbatimInput{code/14_physics.py}
+\clearpage\section*{15. Geometry set-up}\addcontentsline{toc}{section}{15. Geometry set-up}
+\textbf{Originally made:} Fri Oct 23 2026, 8:23 AM CT (8:23:52) \quad (\textit{copy time onto the box (true original likely earlier); dated from an earlier same-name Fig01b\_geometry.png})\\ \textbf{Paper figure number:} this morning Fig.~1; now Fig.~1\\ \textbf{Files:} \texttt{Fig01a\_geometry\_top\_test.png, Fig01a\_geometry\_bot\_test.png, Fig01b\_geometry.png}
+\subsection*{Notes}CoE, observer (Earth) and galaxy velocity vectors; D from CoE to observer. Top and middle panels: generating script not found (taken from the original preprint docx). Bottom panel (Fig01b) was redrawn on Oct 24-25 by the script below, so the caption phrase "Restored from the original preprint" no longer holds for it.\par\textbf{Paper caption (caveats as stated):} Set-up. Top: Hubble velocity vectors for the CoE, the observer and a galaxy, $\vec V_H=\vec V_g-\vec V_O$. Bottom: the observer inside a thick ordinary-matter shell at distance $D$ from the CoE, with its vision sphere. Restored from the original preprint (Figs.~1--2 there).
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/Fig01a_geometry_top_test.png}\par\centerline{\footnotesize\texttt{Fig01a\_geometry\_top\_test.png}}
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/Fig01a_geometry_bot_test.png}\par\centerline{\footnotesize\texttt{Fig01a\_geometry\_bot\_test.png}}
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/Fig01b_geometry.png}\par\centerline{\footnotesize\texttt{Fig01b\_geometry.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/coepdf/scripts/fig01b\_geometry.py}}\VerbatimInput{code/15_fig01b_geometry.py}
+\clearpage\section*{16. Realistic cosmic web slab}\addcontentsline{toc}{section}{16. Realistic cosmic web slab}
+\textbf{Originally made:} Fri Oct 23 2026, 8:29 AM CT \quad (\textit{copy time onto the box (true original likely earlier)})\\ \textbf{Paper figure number:} this morning Fig.~16; now Fig.~16\\ \textbf{Files:} \texttt{f06.png}
+\subsection*{Notes}Slab |z|<0.4 Gpc of a 20 Gpc box, seed 2000, 3904 clusters. Built from web ingredients (\#7). Candidates searched: redweb2/stack\_s2000.py writes red\_web\_s2000\_stack.png (a spectrum stack, not this slab), so not used.\par\textbf{Paper caption (caveats as stated):} Realistic web: slab $|z|<0.4$\,Gpc of a 20\,Gpc box (seed 2000, 1\% mass cut, 3904 clusters, 10568 void--cluster links). Circle: 14.3\,Gpc sphere; $+$: observer. Bottom: zoom ($\pm9$\,Gpc). \flag{whether this figure used the same \texttt{build.py} as above (whose grids use seeds 11, 12)}.
+\clearpage\begingroup\pdfpageheight=16.32in\paperheight=16.32in\textheight=14.12in\vsize=\textheight\makeatletter\@colht=\textheight\@colroom=\textheight\makeatother \noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f06.png}\par\centerline{\footnotesize\texttt{f06.png}}\clearpage\endgroup 
+\subsection*{Generating script}
+\textbf{Generating script not found.} Searched all \texttt{.py} files under /workspace (excluding virtualenvs) for the image filename and its known aliases, and the git repos.
+\clearpage\section*{17. Migkas 71 bins with CoE direct fits}\addcontentsline{toc}{section}{17. Migkas 71 bins with CoE direct fits}
+\textbf{Originally made:} Fri Oct 23 2026, 8:30 AM CT (8:30:28.584) \quad (\textit{copy time onto the box (true original likely earlier)})\\ \textbf{Paper figure number:} this morning Fig.~15; now Fig.~12\\ \textbf{Files:} \texttt{f07.jpg}
+\subsection*{Notes}Red polynomial uses the same c\_k as m(r) (\#27). Caveat: poly\_plots.py saves poly\_plots.png / poly\_spectrum.png, not f07.jpg directly; f07.jpg is taken to be its output per the inventory.\par\textbf{Paper caption (caveats as stated):} Migkas $A/A_{\rm all}$ (71 bins, black) with CoE direct fits. Red: smooth polynomial in $\cos\psi$, $\chi^2=10.79$, $l_0=100^\circ$. Green dashed: best variant, $\chi^2=7.67$, $l_0=15.6^\circ$. Blue dashed: reference sinusoid (amplitudes 0.041/0.035), $\chi^2=7.67$. The two humps come from $\cos\psi(l)$ at fixed galactic latitude. Red uses the $c_k$ of $m(r)$, Fig.~{}fig:mod.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f07.jpg}\par\centerline{\footnotesize\texttt{f07.jpg}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/cosmology-course/notes/accel/gr/rings\_cmb/v11/clusters\_voids/quad\_balance/mass\_family\_scan/constrained/poly\_plots.py}}\VerbatimInput{code/17_poly_plots.py}
+\clearpage\section*{18. Volume vs time (radiation + matter)}\addcontentsline{toc}{section}{18. Volume vs time (radiation + matter)}
+\textbf{Originally made:} Fri Oct 23 2026, 8:30 AM CT (8:30:28.612) \quad (\textit{copy time onto the box (true original likely earlier); same second as \#16, ordered by paper number})\\ \textbf{Paper figure number:} this morning Fig.~2; now Fig.~2\\ \textbf{Files:} \texttt{f02.png}
+\subsection*{Notes}Volumes of the D sphere, D+R sphere and outer sphere from a(t) of Eq. 2; follows from \#5.\par\textbf{Paper caption (caveats as stated):} Volume versus time with radiation + matter (no $\Lambda$). Top: volumes of the $D$ sphere, $D{+}R$ sphere and outer sphere from $a(t)$ of Eq.~(2). Middle: $V_R$ as a percentage of the larger volumes. Bottom: $\dot V/V=n/t$. Vertical lines: equality (41\,kyr), recombination (297\,kyr).
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f02.png}\par\centerline{\footnotesize\texttt{f02.png}}
+\subsection*{Generating script}
+\textbf{Generating script not found.} Searched all \texttt{.py} files under /workspace (excluding virtualenvs) for the image filename and its known aliases, and the git repos.
+\clearpage\section*{19. Target profiles matched numerically}\addcontentsline{toc}{section}{19. Target profiles matched numerically}
+\textbf{Originally made:} Fri Oct 23 2026, 8:30 AM CT (8:30:28.612) \quad (\textit{copy time onto the box (true original likely earlier)})\\ \textbf{Paper figure number:} this morning Fig.~10; now Fig.~19\\ \textbf{Files:} \texttt{f12.png}
+\subsection*{Notes}Fixed mass at 1.55R plus fitted clumps/voids. Per Chris, matched to a different power spectrum from the web/ladder track.\par\textbf{Paper caption (caveats as stated):} Target profiles matched numerically: a fixed mass at $1.55R$ plus fitted clumps/voids reproduce target angular profiles (half, $1\tfrac12$, $2\tfrac12$, two waves).
+\clearpage\begingroup\pdfpageheight=11.68in\paperheight=11.68in\textheight=9.48in\vsize=\textheight\makeatletter\@colht=\textheight\@colroom=\textheight\makeatother \noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f12.png}\par\centerline{\footnotesize\texttt{f12.png}}\clearpage\endgroup 
+\subsection*{Generating script}
+\textbf{Generating script not found.} Searched all \texttt{.py} files under /workspace (excluding virtualenvs) for the image filename and its known aliases, and the git repos.
+\clearpage\section*{20. Axisymmetric harmonics on a ring}\addcontentsline{toc}{section}{20. Axisymmetric harmonics on a ring}
+\textbf{Originally made:} Fri Oct 23 2026, 8:30 AM CT (8:30:28.824) \quad (\textit{copy time onto the box (true original likely earlier)})\\ \textbf{Paper figure number:} this morning Fig.~9; now Fig.~8\\ \textbf{Files:} \texttt{f11.png}
+\subsection*{Notes}Single harmonics l = 0..7 as density on a ring with the power bar at that l.\par\textbf{Paper caption (caveats as stated):} Single axisymmetric harmonics $\ell=0\ldots7$ drawn as density on a ring (blue over-, orange under-density) with the power bar at that $\ell$.
+\clearpage\begingroup\pdfpageheight=12.20in\paperheight=12.20in\textheight=10.00in\vsize=\textheight\makeatletter\@colht=\textheight\@colroom=\textheight\makeatother \noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f11.png}\par\centerline{\footnotesize\texttt{f11.png}}\clearpage\endgroup 
+\subsection*{Generating script}
+\textbf{Generating script not found.} Searched all \texttt{.py} files under /workspace (excluding virtualenvs) for the image filename and its known aliases, and the git repos.
+\clearpage\section*{21. Target peak matched numerically}\addcontentsline{toc}{section}{21. Target peak matched numerically}
+\textbf{Originally made:} Fri Oct 23 2026, 8:30 AM CT (8:30:28.880) \quad (\textit{copy time onto the box (true original likely earlier)})\\ \textbf{Paper figure number:} this morning Fig.~11; now Fig.~20\\ \textbf{Files:} \texttt{f13.png}
+\subsection*{Notes}Non-axisymmetric source shell at r = 1.012R. Per Chris, made because the spectrum from the target-profiles fit (\#16) was not there yet.\par\textbf{Paper caption (caveats as stated):} Target peak matched numerically: a non-axisymmetric source shell at $r=1.012R$ (gravitational potential, not temperature) built from 3D clumps/voids reproduces a prescribed peak at $\ell=220$ with widths $\sigma_\ell=32$ and 8.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f13.png}\par\centerline{\footnotesize\texttt{f13.png}}
+\subsection*{Generating script}
+\textbf{Generating script not found.} Searched all \texttt{.py} files under /workspace (excluding virtualenvs) for the image filename and its known aliases, and the git repos.
+\clearpage\section*{22. Density modulation m(r)}\addcontentsline{toc}{section}{22. Density modulation m(r)}
+\textbf{Originally made:} Fri Oct 23 2026, 8:30 AM CT (8:30:28.880) \quad (\textit{copy time onto the box (true original likely earlier); same instant as \#21, ordered by paper number; redrawn since (last Oct 25 12:27 AM CT)})\\ \textbf{Paper figure number:} this morning Fig.~14; now Fig.~6\\ \textbf{Files:} \texttt{d5\_mod.png}
+\subsection*{Notes}m(r) with Earth at 42 Gpc, band 27.7-56.3 Gpc; illustrative unconstrained falloffs beyond 56.3 Gpc, cut at 80 Gpc. Original version came from coepdf/dens\_plots.py (shown under \#5). c\_k shared with \#14.\par\textbf{Paper caption (caveats as stated):} CoE modulation $m(r)=\exp\sum_kc_k(\min(r/42,R_b)-1)^{k+1}$ of the web number density. $r$ is measured from the axis point $42\hat a$\,Gpc, $\hat a\propto(1,0,\tan15^\circ)$; $c=[-0.041,-0.035,0.1353,0]$, $R_b=1.5(1+1/2.937)$. Normalised to mean 1 in each grid shell. Black dot: Earth at $r=42$\,Gpc ($m=1$); red dashed: tangent there, slope $-9.8\times10^{-4}$\,Gpc$^{-1}$ (cf.\ CatWISE-locked $\rho'/\rho\approx-0.00106$); gold band: how far we see in either direction, $r=42\pm14.3$\,Gpc ($d=14.3$\,Gpc, the $D\pm d$ reach of \S{}sec:laws). Grey ($r>56.3$\,Gpc): assumed uniform at the band-edge value $m=0.987$; dotted: formula continued, not used.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/d5_mod.png}\par\centerline{\footnotesize\texttt{d5\_mod.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/coepdf/d5\_mod\_earth.py}}\VerbatimInput{code/22_d5_mod_earth.py}
+\textbf{\texttt{/workspace/coepdf/scripts/shp.py}}\VerbatimInput{code/22_shp.py}
+\clearpage\section*{23. A/B running-mean residuals and sky maps}\addcontentsline{toc}{section}{23. A/B running-mean residuals and sky maps}
+\textbf{Originally made:} Sat Oct 24 2026, 4:40 PM CT \quad (\textit{file creation, coepdf/fig/sky\_angle.png})\\ \textbf{Paper figure number:} this morning Fig.~27; now Fig.~15\\ \textbf{Files:} \texttt{sky\_angle.png, sky\_mapA\_al.png, sky\_mapB\_al.png}
+\subsection*{Notes}Residuals vs model-frame angle and residual sky maps for A and B. Depends on the model fits (\#11). coepdf/conv.py only references these files in LaTeX; it does not make them.\par\textbf{Paper caption (caveats as stated):} Top: A and B running-mean residuals vs model-frame angle ($\pm15/25/35^\circ$). Bottom: residual maps (Galactic Mollweide, $\ell=0$ at centre, increasing to the left) lifted $15^\circ$ and rotated $45^\circ$ about the CoE axis, with spots at published $(\ell,b)$; left A, right B.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/sky_angle.png}\par\centerline{\footnotesize\texttt{sky\_angle.png}}
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/sky_mapA_al.png}\par\centerline{\footnotesize\texttt{sky\_mapA\_al.png}}
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/sky_mapB_al.png}\par\centerline{\footnotesize\texttt{sky\_mapB\_al.png}}
+\subsection*{Generating script}
+\textbf{Generating script not found.} Searched all \texttt{.py} files under /workspace (excluding virtualenvs) for the image filename and its known aliases, and the git repos.
+\clearpage\section*{24. Spot-scores table}\addcontentsline{toc}{section}{24. Spot-scores table}
+\textbf{Originally made:} Sat Oct 24 2026, 4:46 PM CT \quad (\textit{file creation, coepdf/fig/sky\_tab\_only.png})\\ \textbf{Paper figure number:} this morning Fig.~26; now Fig.~14\\ \textbf{Files:} \texttt{sky\_tab\_only.png}
+\subsection*{Notes}Spot scores by sign of the tied residual (A vs B spots). Built from \#23.\par\textbf{Paper caption (caveats as stated):} Spot scores by sign of the tied residual. The qualitative assignment of each spot to A or B is given in the text below.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/sky_tab_only.png}\par\centerline{\footnotesize\texttt{sky\_tab\_only.png}}
+\subsection*{Generating script}
+\textbf{Generating script not found.} Searched all \texttt{.py} files under /workspace (excluding virtualenvs) for the image filename and its known aliases, and the git repos.
+\clearpage\section*{25. Predicted MAX/MIN bands on Migkas Fig 8}\addcontentsline{toc}{section}{25. Predicted MAX/MIN bands on Migkas Fig 8}
+\textbf{Originally made:} Sat Oct 24 2026, 8:17 PM CT \quad (\textit{file creation, coepdf/fig/Fig06\_overlay\_one.png})\\ \textbf{Paper figure number:} this morning Fig.~8; now Fig.~11\\ \textbf{Files:} \texttt{Fig06\_overlay\_one.png}
+\subsection*{Notes}Bands overlaid on Migkas Fig 8. Related makers exist (figs\_letter\_exact\_python/makers/make\_fig06\_overlay\_stack.py, make\_fig06\_matplotlib\_clean.py) but write Fig06\_overlay\_stack.png / Fig06\_matplotlib\_clean.png, not this file.\par\textbf{Paper caption (caveats as stated):} Predicted MAX/MIN bands on Migkas Fig.~8 (two MAX and two MIN bands, each $18^\circ$ wide) for the $+15^\circ$ tilt alone (top), tilt with gradient (middle), and tilt, gradient and $+80.8^\circ$ roll (bottom). Regenerated from code (the original preprint's Fig.~6).
+\clearpage\begingroup\pdfpageheight=15.63in\paperheight=15.63in\textheight=13.43in\vsize=\textheight\makeatletter\@colht=\textheight\@colroom=\textheight\makeatother \noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/Fig06_overlay_one.png}\par\centerline{\footnotesize\texttt{Fig06\_overlay\_one.png}}\clearpage\endgroup 
+\subsection*{Generating script}
+\textbf{Generating script not found.} Searched all \texttt{.py} files under /workspace (excluding virtualenvs) for the image filename and its known aliases, and the git repos.
+\clearpage\section*{26. Web smoothed ladder (R = 0.5-14 Gpc)}\addcontentsline{toc}{section}{26. Web smoothed ladder (R = 0.5-14 Gpc)}
+\textbf{Originally made:} Sat Oct 24 2026, 11:29 PM CT \quad (\textit{file creation, coepdf/fig/f19mc3b\_stack.png (git commit 6cfb9e6 message mentions an MC web \#3 kernel ladder on Oct 23 1:08 AM CT, earlier file not md5-matched)})\\ \textbf{Paper figure number:} this morning Fig.~17; now Fig.~17\\ \textbf{Files:} \texttt{f19mc3b\_stack.png}
+\subsection*{Notes}Red + Monte-Carlo web \#3 smoothed with kernels R = 0.5..14 Gpc. Builds on \#13 and \#1.\par\textbf{Paper caption (caveats as stated):} Red + Monte-Carlo web \#3, kernel $R=0.5$, 0.9, 2.0, 4, 8, 14\,Gpc (top to bottom); key in text.
+\clearpage\begingroup\pdfpageheight=20.81in\paperheight=20.81in\textheight=18.61in\vsize=\textheight\makeatletter\@colht=\textheight\@colroom=\textheight\makeatother \noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/f19mc3b_stack.png}\par\centerline{\footnotesize\texttt{f19mc3b\_stack.png}}\clearpage\endgroup 
+\subsection*{Generating script}
+\textbf{Generating script not found.} Searched all \texttt{.py} files under /workspace (excluding virtualenvs) for the image filename and its known aliases, and the git repos.
+\clearpage\section*{27. Harmonic decomposition 2x2}\addcontentsline{toc}{section}{27. Harmonic decomposition 2x2}
+\textbf{Originally made:} Sun Oct 25 2026, 12:15 AM CT \quad (\textit{file creation (modified again 8:23 AM CT)})\\ \textbf{Paper figure number:} this morning Fig.~25; now Fig.~13\\ \textbf{Files:} \texttt{recon\_n3\_2x2.png}
+\subsection*{Notes}A and B data with model before/after removing n = 1-3 harmonics; residuals with fitted modes. Depends on \#11. A chi2 25.54 to 11.46, B chi2 13.68 to 10.24.\par\textbf{Paper caption (caveats as stated):} Harmonic decomposition, A (left) and B (right). Top: data with the CoE model before harmonics and after removing the shared $n=1$--3 harmonics ($\chi^2$, Pearson $r^2$ for both). Bottom: residuals (data $-$ model) after $+n=1$, $+n=1$--2 and $n=1$--3 overlaid, RMS in the legend.
+\par\medskip\noindent\includegraphics[width=\textwidth]{/workspace/coepdf/fig/recon_n3_2x2.png}\par\centerline{\footnotesize\texttt{recon\_n3\_2x2.png}}
+\subsection*{Generating script}
+\textbf{\texttt{/workspace/cosmology/figures/fourier\_resid/recon\_n3\_2x2.py}}\VerbatimInput{code/27_recon_n3_2x2.py}
+\end{document}

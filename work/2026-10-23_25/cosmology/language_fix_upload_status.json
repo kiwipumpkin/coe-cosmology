@@ -1,0 +1,53 @@
+{
+  "task": "language_fix_spherical_decreasing_rho_LIVE",
+  "date_CT": "2026-09-17 evening",
+  "folderId": "1wZYStJhpdowbcjTkkS9TOImAtt9_GvzD",
+  "local": {
+    "md": "/workspace/cosmology/new_draft.md",
+    "tex": "/workspace/cosmology/new_draft.tex",
+    "pdf": "/workspace/cosmology/new_draft.pdf",
+    "addendum_md": "/workspace/cosmology/language_fix_spherical_decreasing_rho_live.md",
+    "pdf_pages": 15,
+    "pdf_bytes": 331815
+  },
+  "drive": {
+    "google_doc_revised": {
+      "fileId": "1jWlnGq6imaXEF7lS6quCbVtduXO0ee6nDZQO0l0ok2Q",
+      "title": "Anisotropic Hubble Expansion \u2014 New Draft (2026-09-17, revised)",
+      "url": "https://docs.google.com/document/d/1jWlnGq6imaXEF7lS6quCbVtduXO0ee6nDZQO0l0ok2Q/edit?usp=drivesdk",
+      "note": "Cover + revised \u00a7\u00a75.3/8.2/9.1 highlights; full continuous text in PDF/MD/TeX (MCP payload limit)"
+    },
+    "pdf": {
+      "fileId": "11C47ujTu7UW28cwADHLfceAqq_X2_nM9",
+      "title": "Anisotropic Hubble Expansion \u2014 New Draft (LaTeX, revised).pdf",
+      "url": "https://drive.google.com/file/d/11C47ujTu7UW28cwADHLfceAqq_X2_nM9/view?usp=drivesdk"
+    },
+    "tex": {
+      "fileId": "1syAMtR-LGCw8bjII8yyfuOfTdH7YZuNj",
+      "title": "Anisotropic Hubble Expansion \u2014 New Draft (LaTeX, revised).tex",
+      "url": "https://drive.google.com/file/d/1syAMtR-LGCw8bjII8yyfuOfTdH7YZuNj/view?usp=drivesdk"
+    },
+    "md_full": {
+      "fileId": "1oc2eszL1uuxSzDV8tdNVjuI8Pa4CmmRf",
+      "title": "Anisotropic Hubble Expansion \u2014 New Draft (2026-09-17, revised).md",
+      "url": "https://drive.google.com/file/d/1oc2eszL1uuxSzDV8tdNVjuI8Pa4CmmRf/view?usp=drivesdk"
+    },
+    "language_fix_doc": {
+      "fileId": "1ma3NdRWQjEP6Sjm22Dk1QlD8ztd9Bd5bE-O3x21lxwo",
+      "title": "Language fix \u2014 spherical decreasing-\u03c1 is live",
+      "url": "https://docs.google.com/document/d/1ma3NdRWQjEP6Sjm22Dk1QlD8ztd9Bd5bE-O3x21lxwo/edit?usp=drivesdk"
+    },
+    "language_fix_md": {
+      "fileId": "1QYr45eH2-rGF5I7bqUdEIyIwg991UoXC",
+      "title": "Language fix \u2014 spherical decreasing-\u03c1 is live.md",
+      "url": "https://drive.google.com/file/d/1QYr45eH2-rGF5I7bqUdEIyIwg991UoXC/view?usp=drivesdk"
+    },
+    "trashed_placeholder_doc": "18VkBv7wgp1Oj-_XmiRU5C5prWwY4Voz2L84CSPJ8XBY"
+  },
+  "edits": [
+    "Softened \u00a7\u00a74\u20135, 8\u20139: spherical decreasing-\u03c1 LIVE; CONDITIONAL vs Migkas pure dipole only",
+    "Verdict table retitled; retired over-broad CONDITIONAL-NO/NO-GO for spherical as a whole",
+    "Preferred wording: P2 comparison is the right test; do not run dipole-only MCMC",
+    "pdflatex \u00d72 OK (15 pages)"
+  ]
+}

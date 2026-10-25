@@ -1,0 +1,101 @@
+[
+ {
+  "psi": 0.0,
+  "alpha_obs": 180.0,
+  "alpha_emit": 180.0,
+  "dalpha": 0.0,
+  "max_dalpha_step_t_frac": 0.0135974173484427,
+  "half_turn_t_frac": 1.0,
+  "comoving_heading_turn_deg": 0.0,
+  "phi_emit_deg": 0.0,
+  "w_emit": 1.1271381056996792
+ },
+ {
+  "psi": 20.0,
+  "alpha_obs": 160.00000000000003,
+  "alpha_emit": 162.3815278649204,
+  "dalpha": -2.381527864920372,
+  "max_dalpha_step_t_frac": 1.4385205900886815e-05,
+  "half_turn_t_frac": 0.23249841650478417,
+  "comoving_heading_turn_deg": 0.37765182705228995,
+  "phi_emit_deg": 2.1930865708796117,
+  "w_emit": 1.1203934358249557
+ },
+ {
+  "psi": 45.0,
+  "alpha_obs": 135.0,
+  "alpha_emit": 139.95924299659796,
+  "dalpha": -4.959242996597965,
+  "max_dalpha_step_t_frac": 1.4385015394633561e-05,
+  "half_turn_t_frac": 0.2190039187380812,
+  "comoving_heading_turn_deg": 0.612178393031428,
+  "phi_emit_deg": 4.659906609238578,
+  "w_emit": 1.093855090536583
+ },
+ {
+  "psi": 70.0,
+  "alpha_obs": 110.0,
+  "alpha_emit": 116.67538560626971,
+  "dalpha": -6.675385606269714,
+  "max_dalpha_step_t_frac": 1.4384788461005522e-05,
+  "half_turn_t_frac": 0.19834578679536044,
+  "comoving_heading_turn_deg": 0.44487468594761026,
+  "phi_emit_deg": 6.470728830109115,
+  "w_emit": 1.0505047866799477
+ },
+ {
+  "psi": 90.0,
+  "alpha_obs": 90.00000000000001,
+  "alpha_emit": 97.20404814893718,
+  "dalpha": -7.2040481489371615,
+  "max_dalpha_step_t_frac": 1.4384513966899993e-05,
+  "half_turn_t_frac": 0.1797356720032028,
+  "comoving_heading_turn_deg": 0.08672053406193925,
+  "phi_emit_deg": 7.183812002153161,
+  "w_emit": 1.008007722192005
+ },
+ {
+  "psi": 110.0,
+  "alpha_obs": 70.0,
+  "alpha_emit": 76.88035740888145,
+  "dalpha": -6.880357408881451,
+  "max_dalpha_step_t_frac": 1.4385050774116035e-05,
+  "half_turn_t_frac": 0.16088929818814837,
+  "comoving_heading_turn_deg": -0.30089438129935786,
+  "phi_emit_deg": 7.051949799583511,
+  "w_emit": 0.9636728535939837
+ },
+ {
+  "psi": 135.0,
+  "alpha_obs": 45.00000000000001,
+  "alpha_emit": 50.28376600562994,
+  "dalpha": -5.283766005629936,
+  "max_dalpha_step_t_frac": 1.438477220377611e-05,
+  "half_turn_t_frac": 0.14163505533918677,
+  "comoving_heading_turn_deg": -0.5492589511156751,
+  "phi_emit_deg": 5.569412176910556,
+  "w_emit": 0.9143051611415921
+ },
+ {
+  "psi": 160.0,
+  "alpha_obs": 20.00000000000001,
+  "alpha_emit": 22.59419779290653,
+  "dalpha": -2.5941977929065203,
+  "max_dalpha_step_t_frac": 1.4384521235736891e-05,
+  "half_turn_t_frac": 0.12951339562323572,
+  "comoving_heading_turn_deg": -0.36913114514709733,
+  "phi_emit_deg": 2.781205611583656,
+  "w_emit": 0.8817420906043378
+ },
+ {
+  "psi": 180.0,
+  "alpha_obs": 0.0,
+  "alpha_emit": 0.0,
+  "dalpha": 0.0,
+  "max_dalpha_step_t_frac": 0.04778320464699289,
+  "half_turn_t_frac": 1.0,
+  "comoving_heading_turn_deg": -1.4194908915408398e-16,
+  "phi_emit_deg": 1.0042778379422504e-15,
+  "w_emit": 0.8731555541949441
+ }
+]

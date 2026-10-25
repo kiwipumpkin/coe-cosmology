@@ -1,0 +1,24 @@
+{
+  "method": "Homologous H_bg=+H expand / H_bg=-H collapse; Gauss peculiar with timescale |H|; A\u221d1/H_obs\u00b2 (invsq) mean-renorm + \u0394\u2113=90\u00b0 smooth; phase+affine vs Migkas.",
+  "note_B": "Mass-only AN is identical for expand/collapse; B panel uses same H_obs\u2192proxy as A so collapse morphology is visible. Sheet B diagnostic was Amp\u00d7sin on ST series.",
+  "expand_invsq": {
+    "R2_A": 0.5514665676013438,
+    "phi0_A": 345.0,
+    "R2_B_from_Hproxy": 0.047968067297709305,
+    "phi0_B": 4.0
+  },
+  "collapse_invsq": {
+    "R2_A": 0.5564246338473915,
+    "phi0_A": 256.0,
+    "R2_B_from_Hproxy": 0.07256358498563553,
+    "phi0_B": 6.0
+  },
+  "H_obs_range_expand": [
+    0.7692600822286496,
+    1.028528677593902
+  ],
+  "H_obs_range_collapse": [
+    -1.2307399177713505,
+    -0.971471322406098
+  ]
+}

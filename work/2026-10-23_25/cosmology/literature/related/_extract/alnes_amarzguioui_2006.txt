@@ -1,0 +1,675 @@
+                                              CMB anisotropies seen by an off-center observer in a spherically symmetric
+                                                                      inhomogeneous universe
+                                                                                 Håvard Alnes1, ∗ and Morad Amarzguioui2, †
+                                                           1
+                                                               Department of Physics, University of Oslo, PO Box 1048 Blindern, 0316 Oslo, Norway
+                                                  2
+                                                      Institute of Theoretical Astrophysics, University of Oslo, PO Box 1029 Blindern, 0315 Oslo, Norway
+
+                                                                                           (Dated: November 10, 2018)
+                                                          The current authors have previously shown that inhomogeneous, but spherically symmetric uni-
+                                                       verse models containing only matter can yield a very good fit to the SNIa data and the position
+                                                       of the first CMB peak. In this work we examine how far away from the center of inhomogeneity
+                                                       the observer can be located in these models and still fit the data well. Furthermore, we investigate
+arXiv:astro-ph/0607334v2 6 Dec 2006
+
+
+
+
+                                                       whether such an off-center location can explain the observed alignment of the lowest multipoles of
+                                                       the CMB map. We find that the observer has to be located within a radius of ∼ 15 Mpc from the
+                                                       center for the induced dipole to be less than that observed by the COBE satellite. But for such
+                                                       small displacements from the center, the induced quadru- and octopoles turn out to be insufficiently
+                                                       large to explain the alignment.
+
+                                                       Keywords: inhomogeneous universe models – dark energy – observational constraints
+
+
+                                                          I.     INTRODUCTION                               a possible explanation for the observed alignment of the
+                                                                                                            CMB quadru- and octopole [5, 6, 7, 8, 9], since the direc-
+                                                                                                            tion from the observer towards the center of the bubble
+                                      In a recent work [1], we studied spherically symmetric in-            singles out a “special” axis.
+                                      homogeneous universe models – the so-called Lemaı̂tre-
+                                      Tolman-Bondi (LTB) models. We found that for a cer-                   In this work we will investigate these induced anisotropies
+                                      tain class of inhomogeneities, such models could easily ex-           in the CMB to establish how far from the center the ob-
+                                      plain various cosmological observations without introduc-             server can be located, and whether they can offer an ex-
+                                      ing dark energy, most notably the luminosity distance-                planation to the alignment of the lowest multipoles. We
+                                      redshift relation of type IA supernovae and the position              find that the observer has to be located within a sphere
+                                      of the first peak in the CMB spectrum. The inhomo-                    extending approximately 15 Mpc about the origin, in or-
+                                      geneities required are of the form of a spherically sym-              der for the induced dipole to remain within the observed
+                                      metric underdense bubble in an otherwise flat and ho-                 range. However, within this small volume the induced
+                                      mogeneous Einstein-de Sitter universe, with the observer              quadru- and octopole turn out to be insufficiently large
+                                      located at the center of the bubble.                                  to explain the alignment.
+
+                                      Unless the observer is positioned exactly at the center of            The paper is organized as follows: In Sect. II, we deduce
+                                      the bubble, the distribution of matter, as seen by the ob-            the differential equations governing the path and redshift
+                                      server, will be anisotropic. This will affect the observed            of photons. We then proceed to work out expressions for
+                                      microwave background and constrain the possible loca-                 the induced temperature distribution and corresponding
+                                      tion of the observer, since the CMB dipole must be in                 CMB multipoles in Sect. III. Next, in Sect. IV, we solve
+                                      agreement with observations [2]. Note that in a homo-                 these equations numerically to find the multipoles as a
+                                      geneous universe model, this dipole is attributed to the              function of the position of the observer. This allows us
+                                      peculiar velocity of the observer. However, as discussed              to find LTB models which agree with both the observed
+                                      in [3], in an LTB model there will be an additional con-              dipole and observations of SNIa and the position of the
+                                      tribution to the dipole from the anisotropy of space-time.            first CMB peak, as described in [1]. We present two such
+                                      Thus, the dipole seen by an off-center observer will be due           models in this section. Finally, in Sect. V we discuss and
+                                      to a combination of kinematic effects and the off-center              summarize our work.
+                                      location.
+
+                                      The anisotropy will also induce higher multipoles in the
+                                      CMB spectrum. Moffat [4] proposes this mechanism as
+
+
+
+                                      ∗ Electronic address: alnes@fys.uio.no
+                                      † Electronic address: morad@astro.uio.no
+                                                                                                                          2
+
+ II.   THE GEODESIC EQUATION IN THE LTB                         y
+               SPACE-TIME
+
+
+The spherically symmetric LTB metric is given by [10,
+11, 12]
+                      [R′ (r, t)]2 2                                                                          x̃µ
+       ds2 = −dt2 +               dr + R2 (r, t)dΩ2 ,   (1)
+                       1 + β(r)                                                                x
+where R(r, t) is a position-dependent scale factor, and
+β(r) is related to the curvature.
+                                                                                              ui
+One of the great advantages of working in this space-time                                          ξ
+is that the Einstein equations can be solved exactly in
+the matter-dominated scenario. The function R(r, t) can                                      O vi                   z
+then be written in terms of a conformal time η, defined
+by β 1/2 dt = Rdη, as                                             FIG. 1: A photon hitting the observer at an angle ξ
+              α
+       R =       (cosh η − 1)
+              2β
+                   "          s               #               which can be written as conservation of angular momen-
+                                α + βR0                       tum J
+              +R0 cosh η +              sinh η ,       (2)
+                                  βR0                                                   
+                                                                             d      2 dθ      d
+    p         α                                                                   R        ≡    J = 0.           (8)
+      βt =       (sinh η − η)                                               dλ        dλ     dλ
+              2β
+                   "          s                     #
+                                α + βR0                       In addition, the 4-velocity identity, uµ uµ = 0 for photons,
+              +R0 sinh η +              (cosh η − 1) , (3)
+                                  βR0                         leads to the constraint
+                                                                            2               2
+where α(r) ≥ 0 is an arbitrary function, and we have                         dt       (R′ )2 dr         J2
+                                                                        −          +                 + 2 = 0.          (9)
+assumed β(r) > 0. Furthermore, we have defined R0 ≡                          dλ       1 + β dλ          R
+R(r, 0), with the initial time t = 0 defined as the time of
+last scattering.                                              It is simplest to specify the initial conditions at the time
+Photons follow trajectories determined by the geodesic        t0 when the photon arrives at the observer’s position,
+equation,                                                     which is given by r = r0 and θ = 0. The path of the
+                                                              photon is shown in Fig. 1. It hits the observer at an
+                 d2 xµ        dxα dxν                         angle ξ relative to the z-axis. The spatial components of
+                       + Γµαν         = 0,             (4)
+                 dλ  2         dλ dλ                          the unit vector along this axis are
+where Γµαν is the Christoffel symbol, and λ is a monoton-                              √
+                                                                                         1+β
+ically increasing (or decreasing) parameter defined along                        vi =          (1, 0, 0) ,            (10)
+                                                                                         R′
+the path of the photons.
+                                                              where the three components are in the r, θ and φ direc-
+Due to axial symmetry, the photon paths must be in-           tion, respectively.
+dependent of the azimuth angle φ, which leaves three
+possible choices for free index µ. First, µ = t yields        The spatial direction ui is given by the tangent to the
+                        2           2                     photon path at t0 , i.e.
+         d2 t   R′ Ṙ′ dr              dθ                                               
+              +                + RṘ         = 0.      (5)             dλ     dr dθ dφ          1
+         dλ2    1 + β dλ               dλ                         ui =            ,    ,    = − (p, J/R2 , 0) ,  (11)
+                                                                        dt    dλ dλ dλ          u
+Next, µ = r yields
+               ′′              2                          where the first factor ensures normalization, gij ui uj = 1,
+      d2 r       R        β′       dr                         and we have introduced u ≡ dt/dλ and p ≡ dr/dλ. Note
+           +         −
+      dλ2        R′    2 + 2β      dλ                         that we have chosen to let λ decrease with time, since we
+                                       2                    will start integrating the equations at t = t0 and follow
+               2Ṙ′ dr dt    R(1 + β) dθ
+           +              −                = 0,         (6)   the photons backwards in time until recombination.
+                R′ dλ dλ        R′     dλ
+and finally, µ = θ yields                                     The angle ξ is given by the inner product of v i and ui
+
+           d2 θ    R′ dθ dr    Ṙ dθ dt                                                              R′ p
+                +2          +2          = 0,            (7)                 cos ξ = gij ui v j = − √      .             (12)
+           dλ 2    R dλ dλ     R dλ dλ                                                              1+β u
+                                                                                                                            3
+
+Since the parametrization of the photon path in terms         This equation determines the change in redshift mea-
+of the affine parameter λ is arbitrary, we can choose this    sured by the observer along an infinitesimal distance dλ.
+such that λ = 0 when t = t0 and u0 = u(λ = 0) = −1.           To find the redshift as a function of λ for a photon hit-
+Using Eqs. (9) and (12), these conditions translate into      ting the observer today, we can sum up the infinitesimal
+the following initial conditions                              contributions along the past light cone,
+                          √                                                             "                  #
+                            1+β                                                             ′ ′
+                   p0 =           cos ξ ,            (13)           d ln(1 + z)      −1 R Ṙ 2       Ṙ 2
+                             R′                                                 = −u            p + 3J ,           (21)
+                   J0 = J = R sin ξ .                (14)                dλ               1+β        R
+
+
+Furthermore, we need to determine the redshift of the         with the initial condition z(λ = 0) = z0 = 0.
+incoming photons as a function of the direction. The          To summarize, we must solve the five first-order differen-
+photons follow a path given by r(λ), t(λ) and θ(λ). The       tial equations for (t, r, θ, p and z), with the correspond-
+redshift can be represented by the change in time sepa-       ing initial conditions (t0 , r0 , 0, p0 and z0 ), under the con-
+ration between adjacent photons. Due to the expansion         straints (9) and (14).
+of the universe, this separation changes as the photons
+propagate through space. The redshift is given by the
+relative change of the separation, i.e. z = (τr − τe )/τe ,
+where the subscripts r and e refer to the receiver and              III.   TEMPERATURE ANISOTROPIES
+emitter positions, respectively.
+
+Consider two photons emitted by a source with a time          We wish to examine how being situated away from the
+separation of τ . Let the equation describing the time
+                                                              center of the LTB coordinate system affects the CMB
+coordinate along the first geodesic be t1 (λ) = t(λ). The     temperature measured by the observer. Since space-time
+time along the second geodesic is then given by t2 (λ) =
+                                                              is no longer spherically symmetric around such an ob-
+t(λ) + τ (λ). Both photons must satisfy the 4-velocity
+                                                              server, we expect him to measure additional anisotropies
+identity (9). For the first photon this reads as
+                                                              in the temperature to those measured by an observer
+    2                   2               2               at the center. In this paper we concentrate on the ad-
+      dt       R′ (r, t)2 dr                 dθ
+            =                   + R(r, t)2        , (15)      ditional anisotropies rising from the observer’s location,
+     dλ         1+β        dλ               dλ
+                                                              i.e. we disregard any intrinsic anisotropies in the CMB
+while for the second photon, the 4-velocity identity be-      temperature at the last-scattering surface. Thus, we as-
+comes                                                         sume the temperature at the last-scattering surface to be
+                    2                   2                 isotropic. Any anisotropies measured by observers today
+           d(t + τ )      R′ (r, t + τ )2 dr
+                        =                                     are therefore due to the propagation of photons through
+              dλ              1+β          dλ
+                                            2     (16)      an anisotropic space-time.
+                                         2  dθ
+                          + R(r, t + τ )        .             The temperature of the background radiation in a given
+                                            dλ
+                                                              direction is determined by measuring the intensity of inci-
+Expanding Eq. (16) to first order in τ and using Eq. (15),    dent photons from this direction. Assuming the radiation
+we arrive at the expression                                   to be black-body radiation, the intensity will be given by
+                  "        2           2 #                a Planck spectrum with a corresponding characteristic
+   dt dτ            R′ Ṙ′ dr             dθ                  temperature. It can be shown that the radiation field
+          = τ (λ)                + RṘ            . (17)
+   dλ dλ            1 + β dλ              dλ                  preserves its black-body nature as it propagates freely
+                                                              through space under the influence of a gravitational field
+The redshift measured by the observer as a function of
+                                                              [13]. At any later time, the spectrum will still remain a
+the period at the time of emission is defined as
+                                                              Planck spectrum, but with a different temperature.
+                                  τ (λr )
+                   1 + z(λe ) =           .           (18)    In our specific case, the CMB temperature seen today by
+                                  τ (λe )
+                                                              an off-center observer is given by
+We differentiate this with respect to λe , which gives us
+the expression                                                                                   T∗
+                                                                                    T (ξ) =            ,                 (22)
+              dz        1 dτ (λe ) τ (λr )                                                    1 + z(ξ)
+                  =−                       .          (19)
+              dλe    τ (λe ) dλe τ (λe )
+                                                              where T∗ is the temperature at the last-scattering sur-
+Next, using Eqs. (17) and (18), and suppressing the sub-      face, and ξ is the angle defined in Fig. 1. The average
+script e, we arrive at the equation                           temperature Tb measured by the observer is then
+                    "        2           2 #
+  dz             dλ R′ Ṙ′ dr              dθ                               Z                Z
+     = −(1 + z)                     + RṘ         . (20)             b    1               T∗ π        sin ξ
+ dλ              dt 1 + β dλ               dλ                       T ≡        dΩ T (ξ) =        dξ          .   (23)
+                                                                         4π               2 0       1 + z(ξ)
+                                                                                                                                    4
+
+According to measurements made by the COBE satellite                   2.5
+
+[14], this temperature is Tb = 2.725. We can now use                                                              Model I
+Eqs. (22) and (23) to define an average redshift to the                                                           Model II
+last-scattering surface:                                                2
+
+
+
+                           Z π             −1
+                    T∗               sin ξ
+          1 + z∗ ≡      =2      dξ              .  (24)                1.5
+
+
+                     Tb            1 + z(ξ)
+
+
+
+
+                                                                   m
+                             0
+
+
+
+
+                                                                 Ω
+The relative temperature variation measured by the ob-                  1
+
+
+server today will then be
+                                                                       0.5
+
+                ∆T   T (ξ) − Tb   z∗ − z(ξ)
+         Θ(ξ) ≡    =            =           .        (25)
+                Tb       b
+                         T        1 + z(ξ)
+                                                                        0
+                                                                             0   1000     2000    3000    4000     5000      6000
+
+It is often more interesting to consider contributions at                               Physical distance [Mpc]
+different angular scales rather than the total anisotropy
+itself. Such an analysis can be performed by decomposing
+the temperature field in spherical harmonics Ylm :           FIG. 2: The matter density today as a function of physical
+                            X                                distance for the two models considered.
+                   Θ(ξ) =       alm Ylm ,            (26)
+                             l,m
+
+where the amplitudes in the expansion are recovered as       100 houtkm s−1 Mpc−1 is the Hubble constant of the outer
+                                                             homogeneous region today, while α0 and β0 = 1 − α0
+                 Z 2π Z π
+                              ∗                              are the relative densities of matter and curvature in this
+           alm =          Θ Ylm sin ξ dξ dφ .      (27)      region. Further, ∆α = −∆β determines the difference
+                    0    0
+                                                             in matter density between the regions, while r0 and ∆r
+These measure the level of anisotropy at different angu-     specify the position and width of the transition.
+lar scales, with larger l values corresponding to smaller
+scales. Since the relative temperature field does not de-    In our previous work [1], we assumed that the observer
+pend on the azimuth angle φ, all the alm will vanish,        was positioned at the center of the bubble, and found
+except those with m = 0.                                     a model that gave a good agreement with the Hubble
+                                                             diagram of observed SNIa and the position of the first
+The observed dipole in the CMB is of the order |a10 | ∼      CMB peak. Model I is identical to this model, while
+10−3 . This will put a natural constraint on how far away    model II is slightly different. The matter distribution to-
+from the origin the observer can be located, since a far-    day for these models is plotted in Fig. 2, where we have
+ther off-center position usually means a larger dipole.      used the generalized matter density defined in [1]. Var-
+                                                             ious other properties of these are listed in Tab. I. One
+                                                             notable difference between these two models is that the
+                                                             transition from the underdensity to the homogeneous re-
+           IV.   NUMERICAL RESULTS
+                                                             gion is much sharper in the second model. Note that the
+                                                             physical values given in the table are found assuming that
+                                                             the observer is placed at the center. The shift parameter
+Following [1] we will consider LTB models where the in-      S is defined in [1], and is simply the shift of the first peak
+homogeneity is an underdense bubble with a flat and
+                                                             in the CMB power spectrum relative to the concordance
+homogeneous space-time outside. We will consider two         ΛCDM model. As we can see, both models yield a very
+specific models of this type corresponding to two differ-
+                                                             good fit to both SNIa and the first CMB peak.
+ent choices of the functions α(r) and β(r) in Eqs. (2) and
+(3). We will refer to these as model I and model II. We      Figs. 3 and 4 show the solutions of the geodesic equations
+parametrize these function in the same way as in [1], i.e.   for two off-center observers in the two models, with the
+we write                                                     observers located 20 Mpc and 200 Mpc from the center.
+                                                         The blue lines show the photon paths in the metric (r, θ)
+                2 3             1 1         r − r0
+     α(r) = H0 r α0 − ∆α           − tanh             (28)   space, while the red circles are the positions of incoming
+                                2 2          2∆r             photons at evenly spaced points in (cosmic) time. The
+                                                 
+                                1 1         r − r0           distortion of light paths is clearly visible on the bottom
+     β(r) = H02 r2 β0 − ∆β        − tanh              (29)
+                                2 2          2∆r             plot of Fig. 4, in which the observer is placed relatively
+                                                             far from the center of the inhomogeneity and the density
+which corresponds to a smooth interpolation between          gradient is large at the transition.
+two homogeneous regions (i.e. a spherical bubble in an
+otherwise homogeneous universe). The parameter H0 =          In our calculations, recombination is assumed to occur at
+                                                                                                                                5
+
+ Description                               Symbol Model I Model II
+ Density contrast parameter                 ∆α      0.90    0.78
+ Transition point [Gpc]                      d0     1.34    1.68
+ Transition width                          ∆d/d0    0.40    0.03
+ Fit to supernovae                          χ2SN    176.2   177.8
+ Position of first CMB peak                  S      1.006   1.002
+
+
+
+
+                                                                                   r sinθ
+ Age of the universe [Gyr]                   t0     12.8    12.7
+ Relative density at the center            Ωm,in    0.20    0.25
+ Relative density outside underdensity     Ωm,out   1.00    1.00
+ Hubble parameter at the center             hin     0.65    0.63
+ Hubble parameter outside underdensity      hout    0.51    0.51
+
+TABLE I: The parameters and features of two inhomogeneous                                         r cosθ
+models, with the observer placed at the center. Note that d0
+and ∆d are physical distances corresponding to r0 and ∆r
+
+
+
+
+                                                                                   r sinθ
+                   r sinθ
+
+
+
+
+                                                                                                  r cosθ
+
+
+
+                                  r cosθ
+
+
+
+                                                                     FIG. 4: Model II: Photon paths converging on the observer
+                                                                     located 20 Mpc (top) and 200 Mpc (bottom) from the center.
+                                                                     The red cross marks the center of the underdensity, while the
+                                                                     red circles show positions that are evenly spaced in cosmic
+                                                                     time with a separation of 1 Gyr
+               r sinθ
+
+
+
+
+                                  r cosθ
+                                                                     we can now calculate the temperature multipoles seen by
+                                                                     such an observer. As an example, a plot of the multi-
+                                                                     poles can be seen in Fig. 5 for an observer who is located
+                                                                     200 Mpc from the center in model I.
+FIG. 3: Model I: Photon paths converging on the observer
+located 20 Mpc (top) and 200 Mpc (bottom) from the center.           In Fig. 6, the coefficients al0 for the dipole (l = 1),
+The red cross marks the center of the underdensity, while the        quadrupole (l = 2) and octopole (l = 3) are plotted
+red circles show positions that are evenly spaced in cosmic          as functions of the observer’s position in model I. The
+time with a separation of 1 Gyr                                      most striking feature of these plots is that the quadru-
+                                                                     and octopoles are very small compared to the dipole. If
+                                                                     we assume that the induced dipole must be smaller than
+t = 0 and today (t0 ) is defined to be the time when the             10−3 , the induced quadrupole is less than 10−7 while the
+redshift of photons emitted at t = 0 reaches z∗ ≃ 1100.              induced octopole is smaller than 10−9 .
+(The exact value of z∗ depends on the matter density
+outside the bubble, and a fitting formula is given in [15]).         In Fig. 7, the al0 ’s of model II are plotted as functions
+                                                                     of the observer’s position. It is evident that the behavior
+As discussed in the previous section, an off-center ob-              is almost indistinguishable from that of Model I, except
+server will measure a temperature anisotropy due to the              for the largest distances where the transition from un-
+non-symmetric paths traversed by CMB photons in dif-                 derdensity to flat space is starting to show in the first
+ferent direction in the sky. Using Eqs. (26) and (27),               model.
+                                                                                                                                                                                6
+
+
+
+
+FIG. 5: Temperature anisotropy in galactic coordinates seen by an observer 200 Mpc from the center of Model I, oriented so
+that the induced dipole coincides with the direction of the dipole seen by the COBE satellite [14]. The top plot to the left
+shows the temperature map, which is completely dominated by the dipole. Then follow plots with the dipole, quadrupole and
+octopole removed, successively
+
+                                                                                                                                 −6
+                                                                      −5                                                      x 10
+          0.025                                                    x 10                                                   6
+                                                              9
+
+                                                              8
+                                                                                                                          5
+           0.02
+                                                              7
+
+                                                              6                                                           4
+          0.015
+                                                              5
+     10
+
+
+
+
+                                                                                                                     30
+                                                        a20
+
+
+
+
+                                                                                                                          3
+    a
+
+
+
+
+                                                                                                                     a
+
+
+
+
+                                                              4
+           0.01
+                                                              3                                                           2
+
+
+          0.005                                               2
+                                                                                                                          1
+                                                              1
+
+             0                                                0                                                           0
+              0   50      100      150      200   250          0           50          100      150      200   250         0          50          100      150      200   250
+                   Distance from origin [Mpc]                                   Distance from origin [Mpc]                                 Distance from origin [Mpc]
+
+
+
+
+FIG. 6: The al0 as a function of the observer’s position, in Model I. The dotted lines are linear, quadratic and cubic fits,
+respectively.
+
+                                                                      −5                                                         −6
+                                                                   x 10                                                       x 10
+          0.025                                               5                                                           6
+
+                                                             4.5
+                                                                                                                          5
+           0.02                                               4
+
+                                                             3.5
+                                                                                                                          4
+          0.015                                               3
+     10
+
+
+
+
+                                                        20
+
+
+
+
+                                                                                                                     30
+
+
+
+
+                                                             2.5                                                          3
+    a
+
+
+
+
+                                                        a
+
+
+
+
+                                                                                                                     a
+
+
+
+
+           0.01                                               2
+                                                                                                                          2
+                                                             1.5
+
+          0.005                                               1
+                                                                                                                          1
+                                                             0.5
+
+             0                                                0                                                           0
+              0   50      100      150      200   250          0           50          100      150      200   250         0          50          100      150      200   250
+                   Distance from origin [Mpc]                                   Distance from origin [Mpc]                                 Distance from origin [Mpc]
+
+
+
+
+FIG. 7: The al0 as a function of the observer’s position, in Model II. The dotted lines are linear, quadratic and cubic fits,
+respectively.
+                                                                                                                        7
+
+                   V.   DISCUSSION                             tributed to a Doppler shift of the CMB photons due to
+                                                               his motion. The change in frequency can then be written
+                                                               as [17]
+The main purpose of this paper has been to determine the                                 p
+maximum displacement of the observer from the origin of                           νo       1 − β2
+the underdensity, for which the induced CMB dipole re-                               =              ,             (32)
+                                                                                  νe    1 − β cos ξ
+mains in agreement with the results observed by COBE
+[2]. Of course, one could in principle introduce an ad-        where νo is the frequency measured by the observer,
+ditional peculiar velocity towards the center of the un-       and νe is the frequency relative to a stationary back-
+derdensity to compensate for a too large induced dipole,       ground. The temperature shift associated with this fre-
+but such a coincidence would be very difficult to justify.     quency shift of the CMB photons is
+Therefore, we must require the induced a10 to be of order                                p
+10−3 or less, which from the plots in Figs. 6 and 7 can                            To      1 − β2
+                                                                                      =             .            (33)
+be translated to                                                                   Te   1 − β cos ξ
+                     dobs . 15 Mpc .                   (30)    The average background temperature measured by the
+                                                               observer will then be
+where d is the physical distance. When compared to
+                                                                          Z                p                
+the size of the underdensity, which according to Fig. 2                 1                Te 1 − β 2      1+β
+is around 1 500 Mpc, this means that if we are placed            Tbo =       d ΩTo (ξ) =            ln         . (34)
+                                                                       4π                2   β           1−β
+at a random position inside the bubble, there is roughly
+a chance of 1 to 106 that we end up inside the region          Thus, the temperature anisotropy can be written as
+allowed by Eq. (30). This is a rather strong violation of
+the Copernican principle, which states that we are not                      ∆T (ξ)     2         β
+                                                                   Θ(ξ) =          =                   −1.         (35)
+situated at a special place in the universe. On the other                    b
+                                                                             To        1+β   1 − β cos ξ
+                                                                                    ln
+hand, a 10−6 probability is still much better than the                                     1−β
+
+infinitely improbable case of the observer being exactly
+at the center of the underdensity. Note that the size of       Using Eq. (27), the multipoles can now be calculated in
+the underdensity is dictated by the fit to the CMB and         terms of the velocity of the observer. We find that the
+SNIa data. We have not been able to find smaller bubbles       leading contribution to al0 is β l ,
+that fit these data as well as the models considered here.                          al0 ∼ β l ∼ dlobs .              (36)
+From Figs. 6 and 7 we see that the induced multipoles
+                                                               Thus, using this simplified Newtonian picture, we expect
+become larger the farther away from the origin the ob-
+                                                               the dipole to scale linearly, the quadrupole quadratically,
+server is located, as we would expect. Thus, the largest
+                                                               and the octopole cubically with the observers position.
+possible quadru- and octopoles with a dipole compati-
+                                                               In Figs. 6 and 7 we have plotted the real dependence
+ble with COBE measurements are those for an observer
+                                                               of these multipoles on the observers position along with
+about 15 Mpc from the origin. However, at this rela-
+                                                               a best-fit dlobs dependence. As we see, the Newtonian
+tively small distance, the values for these are of the order
+                                                               picture gives a very good description. The expressions
+10−7 for the quadrupole, and 10−9 for the octopole. It
+                                                               for the three lowest multipoles to the lowest order in β is
+is therefore clear that the induced quadru- and octopole
+cannot explain the observed alignment of the low-l multi-                              q
+                                                                                          4π hin −hout
+poles in the CMB, since their contributions are negligible                   a10 =         3 3000 Mpc dobs ,         (37)
+compared to the observed anisotropies (which are of or-                             q                 2
+                                                                                      16π hin −hout
+der 10−5 ). Furthermore, any off-center placement must                       a20 =     45     3000 Mpc    d2obs ,    (38)
+necessarily result in axial symmetric contributions to the                          q                 3
+                                                                                       16π hin −hout
+CMB spectrum. Even if such contributions were of the                         a30 =     175    3000 Mpc    d3obs .    (39)
+correct order, Rakić et al. [16] show that they are very
+unlikely to explain the alignment.                             Numerically, this approximation yields a10 = 1.4 × 10−3 ,
+                                                               a20 = 5.2 × 10−7 and a30 = 1.2 × 10−9 for an observer at
+The smallness of the induced multipoles can be under-          dobs = 15 Mpc in Model I, whereas the exact values are
+stood from a simplified Newtonian picture. Compared            a10 = 1.4 × 10−3 , a20 = 2.3 × 10−7 and a30 = 1.3 × 10−9
+to the homogeneous case with a spatially constant Hub-         respectively.
+ble parameter hout , the observer at dobs has a “peculiar
+velocity” of roughly                                           Eqs. (37)-(39) imply that it is impossible to obtain suffi-
+                     vp   hin − hout                           ciently large values for the quadru- and octopole as long
+                β=      =            dobs              (31)    as the dipole is within the limits set by the COBE data.
+                      c   3000 Mpc                             Note, however, that Tomita [18] has previously found
+with respect to the origin. In such a picture, the tem-        relatively large values for the quadrupole in more sim-
+perature anisotropies measured by the observer are at-         plified bubble models (where two homogeneous regions
+                                                                                                                               8
+
+are separated by a massive comoving shell). It is unclear         A non-vanishing peculiar velocity can reduce the dipole
+to us why the Newtonian approach fails for his models.            to any desired value as long as the velocity is chosen
+We have attempted to reproduce his results by intro-              large enough. However, multipoles due to such motion
+ducing very narrow transition regions in our continuous           will have a hierarchical scaling similar to that which we
+model, but the results we get for the multipoles are of the       showed in the Newtonian case. Thus, even if we manage
+same order as those quoted above. We therefore expect             to obtain values for the dipole and quadrupole of the
+Eq. (36) to be roughly correct for all models of our type.        correct order, the octopole would still be too weak. From
+                                                                  this we can conclude that even when combined with other
+In our analysis so far we have only considered contri-            effects, the off-center placement cannot provide sufficient
+butions to the multipoles from the off-center placement.          power to both the quadru- and octopole.
+There will of course be additional contributions from var-
+ious sources such as the intrinsic primordial temperature         In summary, LTB models like the ones listed in Table I
+anisotropies, the integrated Sachs-Wolfe (ISW) effect [19]        are not ruled out on the basis of these results, but they
+and a non-vanishing peculiar velocity of the observer. We         do require a violation of the Copernican principle, since
+have seen that when the dipole is constrained by data,            the observer would have to be located at a very special
+the quadru- and octopoles due to the off-center placement         place. The volume within which the observer can be lo-
+are considerably weaker than those observed in the CMB.           cated is severely constrained by the size of the dipole
+A possible way to obtain stronger quadru- and dipoles is          induced by an off-center placement of the observer. As a
+to place the observer farther away from the center, while         consequence of this, the quadru- and octopole turn out
+allowing one or more of the effects mentioned above to            to have insufficient power to explain the observed align-
+cancel out the excessive contribution to the dipole.              ment. However, the LTB models remain an exotic alter-
+                                                                  native to dark energy as an explanation of the apparent
+However, concerning the first two effects, it is clear that       accelerated expansion of the universe.
+neither of these can achieve such cancellation. Although                              Acknowledgments
+there is no way of measuring directly the intrinsic dipole,
+it is reasonable to assume that it is of the same order as
+the neighboring multipoles, which are of order 10−5 Sim-          MA acknowledges support from the Norwegian Research
+ilarly, we expect the contribution to the dipole from the         Council through the project ”Shedding Light on Dark
+ISW effect to be of the same order as for the quadru- and         Energy” (grant 159637/V30). The authors wish to thank
+octopole. Therefore, it is very unlikely that these effects       Mike Hudson for a helpful correspondence.
+are responsible for a chance cancellation of an excessive
+contribution to the dipole from the off-center placement.
+
+
+
+
+ [1] H. Alnes, M. Amarzguioui, and O. Gron (2005), astro-         [11] R. C. Tolman, Proc. Nat. Acad. Sci. 20, 169 (1934).
+     ph/0512006.                                                  [12] H. Bondi, Mon. Not. Roy. Astron. Soc. 107, 410 (1947).
+ [2] C. L. Bennett et al., Astrophys. J. 464, L1 (1996), astro-   [13] G. F. R. Ellis, in General relativity and cosmology: Pro-
+     ph/9601067.                                                       ceedings of the international school of physics Enrico
+ [3] N. P. Humphreys, R. Maartens, and D. R. Matravers,                Fermi, course XLVII, edited by B. K. Sachs (Academic
+     Astrophys. J. 477, 47 (1997), astro-ph/9602033.                   Press, 1971), pp. 104–182.
+ [4] J. W. Moffat, JCAP 0510, 012 (2005), astro-ph/0502110.       [14] J. C. Mather, D. J. Fixsen, R. A. Shafer, C. Mosier, and
+ [5] A. de Oliveira-Costa, M. Tegmark, M. Zaldarriaga, and             D. T. Wilkinson, Astrophys. J. 512, 511 (1999), astro-
+     A. Hamilton, Phys. Rev. D69, 063516 (2004), astro-                ph/9810373.
+     ph/0307282.                                                  [15] M. Doran and M. Lilley, Mon. Not. Roy. Astron. Soc.
+ [6] C. J. Copi, D. Huterer, and G. D. Starkman, Phys. Rev.            330, 965 (2002), astro-ph/0104486.
+     D70, 043515 (2004), astro-ph/0310511.                        [16] A. Rakić, S. Räsänen, and D. J. Schwarz, Mon. Not. Roy.
+ [7] D. J. Schwarz, G. D. Starkman, D. Huterer, and                    Astron. Soc. Lett. 369, L27 (2006), astro-ph/0601445.
+     C. J. Copi, Phys. Rev. Lett. 93, 221301 (2004), astro-       [17] J. D. Jackson, Classical Electrodynamics (Wiley, New
+     ph/0403353.                                                       York, 1999), 3rd ed.
+ [8] J. P. Ralston and P. Jain, Int. J. Mod. Phys. D13, 1857      [18] K. Tomita, Astrophys. J. 529, 26 (2000), astro-
+     (2004), astro-ph/0311430.                                         ph/9905278.
+ [9] K. Land and J. Magueijo, Phys. Rev. Lett. 95, 071301         [19] R. K. Sachs and A. M. Wolfe, Astrophys. J. 147, 73
+     (2005), astro-ph/0502237.                                         (1967).
+[10] G. Lemaı̂tre, Annales Soc. Sci. Brux. A53, 51 (1933).
+2.5
+
+
+                                                       Model I
+                                                       Model II
+
+ 2
+
+
+
+
+1.5
+
+
+
+
+ 1
+
+
+
+
+0.5
+
+
+
+
+ 0
+      0   2000   4000           6000            8000    10000
+
+
+                        Physical distance/Mpc
+

@@ -1,0 +1,45 @@
+{
+  "name": "pointmass_only_D_mc_l0",
+  "chi2": 20.838770298003297,
+  "nu": 68,
+  "n_free": 3,
+  "free_params": [
+    "D",
+    "mc",
+    "l0"
+  ],
+  "R2_unweighted": 0.5211677359582255,
+  "R2_weighted": 0.5339354703368397,
+  "Delta_chi2_vs_null": 24.29785271418391,
+  "Delta_nu_vs_null": 3,
+  "p_value_nested": 2.164682538418552e-05,
+  "sigma_nested_one_sided": 4.089160882422123,
+  "sigma_sqrt_Delta_chi2": 4.929285213312769,
+  "D_Gpc": 303.620461764166,
+  "mc": 0.0010061906964195881,
+  "l0": 16.99999985210206,
+  "LD_fixed": 0.0001,
+  "Ob": 0.0,
+  "shell_mass": 0.0,
+  "sine": false,
+  "chi2_null": 45.13662301218721,
+  "vrmin": 0.8967063688398006,
+  "Ht": 0.9974262305324768,
+  "age_Gyr": 13.93155042347485,
+  "Fx_at_r0p01D": 1.0,
+  "chi2_vs_LD_check": {
+    "0.001": 20.831289150640696,
+    "0.0001": 20.838770298003297,
+    "1e-05": 20.838770298003297
+  },
+  "n_starts": 76,
+  "top5_chi2": [
+    20.83877029800403,
+    20.83877029800719,
+    20.838770298011653,
+    20.838770298022123,
+    20.83877029803054
+  ],
+  "D_profile_file": "catwise-pointmass-only-Dprofile.json",
+  "note": "chi2 flattens for D>~300 Gpc (far-field limit); D cap 1e4 Gpc. Point mass realised as LD->0 limit of bubble_core exponential CoE profile (LD=1e-4 D)."
+}

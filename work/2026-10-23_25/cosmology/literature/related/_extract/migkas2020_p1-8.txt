@@ -1,0 +1,629 @@
+                                              Astronomy & Astrophysics manuscript no. Migkas_etal                                                                                     c ESO 2020
+                                              2020-04-08
+
+
+
+
+                                                 Probing cosmic isotropy with a new X-ray galaxy cluster sample
+                                                              through the LX − T scaling relation
+                                                          K. Migkas1 , G. Schellenberger2 , T. H. Reiprich1 , F. Pacaud1 , M. E. Ramos-Ceja1 and L. Lovisari2
+
+                                                   1
+                                                     Argelander-Institut für Astronomie, Universität Bonn, Auf dem Hügel 71, 53121 Bonn, Germany
+                                                   2
+                                                     Center for Astrophysics | Harvard & Smithsonian, 60 Garden Street, Cambridge, MA 02138, USA
+                                                   e-mail: kmigkas@astro.uni-bonn.de
+
+                                                   Received date
+arXiv:2004.03305v1 [astro-ph.CO] 7 Apr 2020
+
+
+
+
+                                                                                                                  ABSTRACT
+
+                                                   The isotropy of the late Universe and consequently of the X-ray galaxy cluster scaling relations is an assumption greatly used in
+                                                   astronomy. However, within the last decade, many studies have reported deviations from isotropy when using various cosmological
+                                                   probes; a definitive conclusion has yet to be made. New, effective and independent methods to robustly test the cosmic isotropy are of
+                                                   crucial importance. In this work, we use such a method. Specifically, we investigate the directional behavior of the X-ray luminosity-
+                                                   temperature (LX − T ) relation of galaxy clusters. A tight correlation is known to exist between the luminosity and temperature of the
+                                                   X-ray-emitting intracluster medium of galaxy clusters. While the measured luminosity depends on the underlying cosmology through
+                                                   the luminosity distance DL , the temperature can be determined without any cosmological assumptions. By exploiting this property
+                                                   and the homogeneous sky coverage of X-ray galaxy cluster samples, one can effectively test the isotropy of cosmological parameters
+                                                   over the full extragalactic sky, which is perfectly mirrored in the behavior of the normalization A of the LX − T relation. To do so, we
+                                                   used 313 homogeneously selected X-ray galaxy clusters from the Meta-Catalogue of X-ray detected Clusters of galaxies (MCXC).
+                                                   We thoroughly performed additional cleaning in the measured parameters and obtain core-excised temperature measurements for
+                                                   all of the 313 clusters. The behavior of the LX − T relation heavily depends on the direction of the sky, which is consistent with
+                                                   previous studies. Strong anisotropies are detected at a & 4σ confidence level toward the Galactic coordinates (l, b) ∼ (280◦ , −20◦ ),
+                                                   which is roughly consistent with the results of other probes, such as Supernovae Ia. Several effects that could potentially explain these
+                                                   strong anisotropies were examined. Such effects are, for example, the X-ray absorption treatment, the effect of galaxy groups and low
+                                                   redshift clusters, core metallicities, and apparent correlations with other cluster properties, but none is able to explain the obtained
+                                                   results. Analyzing 105 bootstrap realizations confirms the large statistical significance of the anisotropic behavior of this sky region.
+                                                   Interestingly, the two cluster samples previously used in the literature for this test appear to have a similar behavior throughout the sky,
+                                                   while being fully independent of each other and of our sample. Combining all three samples results in 842 different galaxy clusters
+                                                   with luminosity and temperature measurements. Performing a joint analysis, the final anisotropy is further intensified (∼ 5σ), toward
+                                                   (l, b) ∼ (303◦ , −27◦ ), which is in very good agreement with other cosmological probes. The maximum variation of DL seems to be
+                                                   ∼ 16 ± 3% for different regions in the sky. This result demonstrates that X-ray studies that assume perfect isotropy in the properties
+                                                   of galaxy clusters and their scaling relations can produce strongly biased results whether the underlying reason is cosmological or
+                                                   related to X-rays. The identification of the exact nature of these anisotropies is therefore crucial for any statistical cluster physics or
+                                                   cosmology study.
+                                                   Key words. cosmology: observations – X-rays:galaxies:clusters – (cosmology:) large-scale structure of Universe – galaxies: clusters:
+                                                   general – methods: statistical – catalogs
+
+
+                                              1. Introduction                                                             Collaboration et al. 2016) telescopes. CMB shows a remark-
+                                                                                                                          able isotropy at small angular scales (high multipoles), whilst
+                                              The isotropy of the Universe on sufficiently large scales is a fun-         some anisotropies are still present in lower multipoles. The most
+                                              damental pillar of the standard model of cosmology. The most                prominent one is the so-called CMB dipole which, if one as-
+                                              important consequence of isotropy is that the expansion rate of             sumes its purely kinematic origin, is caused by the Doppler shift
+                                              the Universe as well as the physical properties of all astronom-            due to the motion of our Solar System with respect to the CMB
+                                              ical objects must be the same regardless of the direction in the            rest frame. This indicates that the Solar System moves toward
+                                              sky. Due to the high significance of this hypothesis, it is nec-            the Galactic coordinates (l, b) ∼ (264◦ , +48◦ ) with a peculiar
+                                              essary that it is robustly scrutinized and tested against different         velocity of ∼ 370 km/s (Kogut et al. 1993; Fixsen et al. 1996)
+                                              cosmological probes using the latest data samples.                          with respect to the CMB rest frame. Another anisotropic fea-
+                                                                                                                          ture present in the CMB is the dipole power asymmetry detected
+                                                  What was initially introduced as a repercussion of gen-
+                                                                                                                          in both WMAP and Planck with a significance of ∼ 2 − 3.5σ
+                                              eral relativity and the Friedmann-Lemaître-Robertson-Walker
+                                                                                                                          toward (l, b) ∼ (230◦ , −20◦ ) (Eriksen et al. 2004; Hanson &
+                                              (FLRW) metric was later supported by observations. The most
+                                                                                                                          Lewis 2009; Bennett et al. 2011; Akrami et al. 2014; Planck
+                                              crucial of them is arguably the cosmic microwave background
+                                                                                                                          Collaboration et al. 2014, 2016). Its nature still remains rela-
+                                              (CMB) as observed by Cosmic Background Explorer (COBE,
+                                                                                                                          tively unclear. The interpretation of the significance of these re-
+                                              Efstathiou et al. 1992), the Wilkinson Microwave Anisotropy
+                                                                                                                          sults differ between papers. Other potential challenges for the
+                                              Probe (WMAP, Bennett et al. 2013), and the Planck (Planck
+                                                                                                                                                                       Article number, page 1 of 44
+isotropy of the Universe found in the CMB is the parity asym-             gravitationally bound systems in the universe, strongly emitting
+metry, ∼ 3σ toward (l, b) = (264◦ , −17◦ ) and the unexpected             X-ray photons due to the large amounts of hot gas they contain
+quadrupole-octopole alignment and the existence of the Cold               (∼ 10% of their total mass) in their intra-cluster medium (ICM).
+Spot at (l, b) = (210◦ , −57◦ ) (Tegmark et al. 2003; Vielva et al.       Their physical quantities follow tight scaling relations, for which
+2004; Kim & Naselsky 2010; Aluri & Jain 2012; Cai et al. 2014;            Kaiser (1986) provided mathematical expressions. Specifically,
+Planck Collaboration et al. 2014, 2016; Schwarz et al. 2016).             the correlation between the X-ray luminosity (LX ) and the ICM
+    The CMB is a great tool to study the behavior of the early            gas temperature (T ) of galaxy clusters is of particular interest
+Universe. However, it can be quite challenging to extract infor-          since it can be used to trace the isotropy of the Universe, which is
+mation about the directional behavior of the late Universe based          a new concept for such cosmological studies. The general prop-
+on that probe. This problem intensifies when one considers that           erties of the LX − T scaling relation have been extensively scru-
+according to ΛCDM the late Universe is dominated by dark en-              tinized in the past by several authors (e.g., Vikhlinin et al. 2002;
+ergy whose effects are not directly present in the CMB spectrum.          Pacaud et al. 2007; Pratt et al. 2009; Mittal et al. 2011; Reichert
+Moreover, since the nature of dark energy is still completely             et al. 2011; Hilton et al. 2012; Maughan et al. 2012; Bharadwaj
+unknown, one can only make assumptions about the isotropic                et al. 2015; Lovisari et al. 2015; Giles et al. 2016; Zou et al.
+(or not) behavior of dark energy. Consequently, it becomes clear          2016; Migkas & Reiprich 2018; Ebrahimpour et al. 2018).
+that other cosmological probes, at much lower redshifts than the               In a nutshell, the gas temperature, the flux and the redshift
+CMB, are needed in order to search for possible anisotropies in           of a galaxy cluster do not require any cosmological assumptions
+the late Universe. There are indeed many probes that have been            in order to be measured 1 . Using the flux and the redshift to-
+used for such tests.                                                      gether with the luminosity distance, through which the cosmo-
+    For instance, Type Ia Supernovae (SNIa) have been exten-              logical parameters come into play, one can obtain the luminos-
+sively used to test the isotropy of the Hubble expansion with             ity of a cluster. The luminosity however can also be predicted
+many results reporting no significant deviation from the null hy-         (within an uncertainty range) based on the cluster gas temper-
+pothesis (Lin et al. 2016; Andrade et al. 2018; Sun & Wang                ature. Hence, adjusting the cosmological parameters, one can
+2018; Wang & Wang 2018). Other studies however, claim to de-              make the two luminosity estimations match. This can be repeat-
+tect mild-significance anisotropies in the SNIa samples that more         edly applied to different sky patches in order to test the consis-
+often than not approximately match the direction of the CMB               tency of the obtained values as a function of the direction. The
+dipole (Schwarz & Weinhorst 2007; Antoniou & Perivolaropou-               full detailed physical motivation behind this is discussed in M18.
+los 2010; Colin et al. 2011; Mariano & Perivolaropoulos 2012;             There, it is shown that the directional behavior of the normaliza-
+Kalus et al. 2013; Appleby et al. 2015; Bengaly et al. 2015; Ja-          tion of the LX − T relation strictly follows the directional behav-
+vanmardi et al. 2015; Migkas & Plionis 2016; Colin et al. 2017).          ior of the cosmological parameter values. This newly introduced
+Generally, the reported results from SNIa strongly depend on              method to test the Cosmological Principle (CP) could potentially
+the used catalog. Moreover, the robustness of SNIa as probes for          prove very effective due to the very homogeneous sky coverage
+testing the isotropy of the Universe based on the current status          of many galaxy cluster samples (in contrast to SNIa samples),
+of the relative surveys has been recently challenged (Colin et al.        the plethora of available data as well as large upcoming sur-
+2017; Beltrán Jiménez et al. 2015; Rameez 2019). This is mainly           veys such as eROSITA (Predehl et al. 2016) which will allows
+because of the highly inhomogeneous spatial distribution of the           us to measure thousands of cluster temperatures homogeneously
+data (most SNIa in the latest catalogs lie close to the CMB dipole        (Borm et al. 2014). For studying the isotropy of the Universe
+direction), their sensitivity to the applied kinematic flow models        with the future surveys, it is of crucial importance that any exist-
+which readjust their measured heliocentric redshifts, as well as          ing systematic biases that could potentially affect the LX and T
+the assumptions that go into the calibration of their light curves.       measurements of galaxy clusters would have been identified and
+    Other probes that have been used to pinpoint possible                 taken into account by then.
+anisotropies or inconsistencies with the ΛCDM model are the                    In this paper, we construct and use a new galaxy cluster sam-
+X-ray background (Shafer & Fabian 1983; Plionis & Georgan-                ple in order to identify regions that share a significantly differ-
+topoulos 1999), the distribution of optical (Javanmardi & Kroupa          ent LX − T relation compared to others. This could lead to pin-
+2017; Sarkar et al. 2019) and infrared galaxies (Yoon et al. 2014;        pointing an anisotropy in the Hubble expansion or discover pre-
+Rameez et al. 2018), the distribution of distant radio sources            viously unknown factors which could potentially affect X-ray
+(Condon 1988; Blake & Wall 2002; Singal 2011; Rubart &                    measurements of any kind. Except for the high quality obser-
+Schwarz 2013; Tiwari & Nusser 2016; Bengaly et al. 2018;                  vations and measurements, another advantage of our sample is
+Colin et al. 2018; Bengaly et al. 2019), GRBs (Řípa & Shafieloo          the small overlap with the XCS-DR1 (Mehrtens et al. 2012) and
+2017; Andrade et al. 2019), peculiar velocities of galaxy clusters        ACC (Horner 2001) samples used in M18. There are only three
+(Kashlinsky et al. 2008, 2010; Watkins et al. 2009; Kashlinsky            common clusters between our sample and XCS-DR1 (< 1%) and
+et al. 2011; Atrio-Barandela et al. 2015) and of SNIa (Appleby            only a 30% overlap with ACC. Since we reanalyze the XCS-
+et al. 2015) etc. While some of them find no statistically signif-        DR1 and ACC sample in this paper as well, using the same
+icant challenges for the null hypothesis of isotropy, others pro-         methods we use for our sample in order to perform a consistent
+vide results which are unlikely to occur within the standard cos-         comparison, all the common clusters between the different cat-
+mological model framework. The use of standard sirens for such            alogs are excluded from XCS-DR1 and ACC. Our cluster sam-
+tests in the future has also been proposed (e.g., Cai et al. 2018).       ple does not suffer from any strong archival biases in contrast to
+    Since the outcome of the search for a preferred cosmolog-             ACC. Throughout this paper we use a ΛCDM cosmology with
+ical direction remains ambiguous, new and independent meth-               1
+                                                                             Only indirectly when the selection of the cluster relative radius
+ods for such tests should be introduced and applied to the lat-           within which the used spectra are extracted is based on a cosmological
+est data samples. In Migkas & Reiprich (2018) (hereafter M18),            distance, such as the X-ray luminosity-mass scaling relation (LX − M)
+the use of the directional behavior of the galaxy cluster X-ray           and the conversion of the radius from Mpc to arcmin, where the lumi-
+luminosity-temperature relation is described as a cosmological            nosity and angular diameter distances enter. Nevertheless, even in these
+probe. It is well-known that galaxy clusters are the most massive         cases, the dependence happens to be very weak.
+
+                                                                      2
+H0 = 70 km s−1 Mpc−1 , Ωm = 0.3 and ΩΛ = 0.7 unless stated                 total of 15). This is due to the fact that clusters in rich environ-
+otherwise.                                                                 ments tend to be systematically fainter than single clusters (M18
+    The paper is organized as follows: In Sect. 2 we describe the          and references therein), thus biasing the final results. Moreover,
+construction of the sample and how we derive the properties of             some of these seemingly multiple systems are located at differ-
+the clusters. In Sect. 3 we explain the steps we follow for the data       ent redshifts but projected in our line of sight as real double
+reduction and the spectral analysis of the observations. In Sect. 4        and triple systems (see Ramos-Ceja et al. 2019, hereafter R19).
+we present the modeling of the LX − T relation together with the           When these different components are accounted as one system
+parameter fitting procedure. We also explain how we identify               in MCXC the flux of the "single cluster" is overestimated. As a
+possible spatial anisotropies and assign their statistical signifi-        result, some of these systems falsely overcome the selected flux
+cance. In Sect. 5 we present the first results, including the over-        limit while none of their true individual components has the nec-
+all LX − T results and the 1-dimensional (1D) and 2-dimensional            essary flux to be included in our catalog. On the other hand, there
+(2D) anisotropies of our sample. In Sect. 6 we investigate several         are cases where one of the individual extended components has
+X-ray and cluster-related causes that could possibly produce the           enough flux to be kept in our sample and at the same time it is
+observed anisotropic signal in our sample. In Sect. 7 we examine           located at a different redshift than the other components of the
+the case where the anisotropies in our sample have a cosmolog-             system (it does not belong to the same rich environment). In this
+ical origin instead, assuming there are no systematics associated          case, these extended sources were kept in the catalog and their
+with X-ray photons or cluster properties. In Sect. 8 we combine            LX values were adjusted correspondingly (see Sect. 2.3) while
+our results with those obtained from ACC and XCS-DR1. We                   the other component(s) were excluded. Since we use Chandra
+express these joint-analysis anisotropies in cosmological terms.           and XMM-Newton observations while the MCXC LX − T values
+In Sects. 9 and 10 we discuss our findings and their implications,         come from ROSAT observations, some minor inconsistencies be-
+compare with other studies and summarize.                                  tween these values and our own measurements are expected. In
+                                                                           order to account for this, we consider it as an extra source of
+                                                                           uncertainty and adjust the confidence levels of the final cluster
+2. Sample selection                                                        fluxes and luminosities accordingly as described later in the pa-
+                                                                           per.
+The cluster sample used in this work is a homogeneously se-                     Furthermore, we identify nine clusters to be strongly contam-
+lected one based on the Meta-Catalogue of X-ray detected Clus-             inated by point sources, likely Active Galactic Nuclei (AGN).
+ters of galaxies (MCXC, Piffaretti et al. 2011). Initially it con-         We confirm that by the absence of significant extended emis-
+sisted of the 387 galaxy clusters above an unabsorbed flux cut of          sion around the suspected point sources and by fitting a power-
+ f0.1−2.4 keV ≥ 5 × 10−12 ergs/s/cm2 excluding the Galactic plane          law (constraining the power index and the normalization) and an
+(|b| ≤ 20◦ ), the Magellanic clouds and the Virgo cluster area. The        apec model to the spectra of the bright part of the point source
+flux for every MCXC cluster is found based on the given X-ray              using XSPEC (Arnaud 1996). If the pow model returns a bet-
+luminosity and redshift, combined with a reversed K-correction             ter fit than the apec model we mark the source as an AGN.
+(the necessary temperature input was found by the LX −T relation           Moreover, we search the literature for known stars and AGNs at
+of Reichert et al. (2011). The MCXC luminosities (and therefore            these positions. For three of these nine clusters (A2055, A3574E,
+the calculated fluxes on which our sample is based) were cor-              RXCJ1840.6-7709) the point sources are located close to the
+rected for absorption based on HI measurements (see Sects. 2.2             (bright) cores of the clusters and cannot be deblended. Thus,
+and 2.3).                                                                  we chose to exclude these clusters since their MCXC LX values
+     The parent catalogs of the clusters we use are The ROSAT              would be overestimated and would add extra bias to our anal-
+extended Brightest Cluster Sample (eBCS, Ebeling et al. 2000),             ysis. For another cluster (A1735) there is a strong AGN source
+The Northern ROSAT All-Sky (NORAS) Galaxy Cluster Survey                   and a galaxy cluster with extended emission with an angular sep-
+(Böhringer et al. 2000) and the ROSAT-ESO Flux-Limited X-                  aration of ∼ 70 . This system has been identified as one cluster
+Ray (REFLEX) Galaxy Cluster Survey Catalog (Böhringer et al.               in the MCXC catalog centered at the AGN position, which has
+2004). They are all based on the ROSAT All-Sky Survey (RASS,               the higher contribution to the X-ray flux. Therefore, this sys-
+Voges et al. 1999).                                                        tem was also excluded since the single extended emission com-
+     Another selection criterion was for the clusters to have              ponent does not surpass the necessary flux limit. For the rest
+good quality Chandra (Weisskopf et al. 2000) or XMM-Newton                 five clusters, using the Chandra and XMM-Newton images the
+(Jansen et al. 2001) public observations (as of July 2019). This           point sources are easily distinguishable from the cluster emis-
+criterion is satisfied for 331 clusters. The rest 56 clusters for          sion while the MCXC objects are centered close to the extended
+which such observations were not available have a sparse sky               emission centers. For these five systems we calculate the flux
+distribution and similar average properties with the 331 clusters          of the point source using its spectra from one of the two afore-
+(as discussed later in the paper) and therefore their inclusion is         mentioned telescopes and a pow model, and subtract it from
+not expected to alter the results.                                         the MCXC flux in order to see if the extended emission alone
+     We reduced these 331 available observations, analyzed them            overcomes the flux limit. This procedure results in the exclusion
+and extracted cluster properties as described below. This sam-             of three clusters (A0750, A0901, A2351), while the other two
+ple includes a large fraction (∼ 85%) of the eeHIFLUGCS (ex-               (A3392, S0112) stay above the desired flux limit and are consid-
+tremely expanded HIghest X-ray FLUx Galaxy Cluster Sample                  ered in our analysis after appropriately decreasing their MCXC
+Reiprich 2017, Pacaud et al. in prep.) sample clusters. eeHI-              luminosity values (Sect. 2.3).
+FLUGCS is a complete, purely X-ray flux-limited sample with                     Since ∼ 50% of the clusters included in our sample have
+similar selection criteria.                                                been observed by both Chandra and XMM-Newton, we decide
+     The final sample we use for this paper consists of 313 galaxy         to analyze these common clusters with the former. This is due to
+clusters. The other 18 clusters are not used because of the fol-           the fact that Chandra data are generally less flared than XMM-
+lowing reasons. Firstly, we excluded 11 clusters from our anal-            Newton data. As a result, 237 clusters are analyzed using Chan-
+ysis that we identified as apparent multiple systems (out of a             dra observations while 76 clusters are processed using XMM-
+                                                                       3
+                          +90                                                                                                        0.3
+                                 313 clusters
+
+
+                                                                                                                                     0.25
+                             o
+                          +45
+
+                                                                                                                                     0.2
+      Galactic latitude
+
+
+
+
+                                                                                                                                            Redshift
+                            0o                  90o               0o                          270o                                   0.15
+
+
+
+                                                                                                                                     0.1
+
+                          -45o
+
+                                                                                                                                     0.05
+
+
+
+                          -90o                                                                                                       0
+                                                         Galactic longitude
+
+
+Fig. 1: Sky distribution of the 313 clusters in Galactic coordinates, with the colorbar indicating their redshift. There are two clusters
+at z > 0.3 but the scale is set in such way so the color contrast is optimal.
+
+
+Newton observations. For both telescopes, we extract and fit the            In that case, the redshift of the cluster was determined from the
+spectra within the energy range of 0.7 to 7 keV. The cross cal-             available X-ray data. For that, we extracted and fit the spectra
+ibration of the two satellites is discussed in Sect. 2.5. Using             within the 0 − 0.2 R500 2 circle and within the 0.2 − 0.5 R500 .
+Chandra data for ∼ 75% of our sample offers another advantage               Using two apec models (one for each cluster region) with the
+as well. As mentioned before, in M18 two samples are used:                  temperature and metallicity parameters free to vary for both, the
+ACC which consists only of ASCA observations, and XCS-                      redshift is also fit simultaneously but linked for the two regions
+DR1 which consists only of XMM-Newton observations. Subse-                  (same z for both regions). In Sect. 3 the technical details of the
+quently, mostly using a third independent telescope to built our            spectral fitting process are discussed.
+sample and study the anisotropy of the LX − T eliminates any                     In order to make sure that the obtained X-ray redshifts are
+systematics that might occur in the results because of telescope-           trustworthy, we also determined them for the 264 clusters with
+specific reasons.                                                           safe optical redshifts. The comparison of the optical and X-ray
+     Consequently, the sample with which this analysis is per-              redshifts is displayed in the top panel of Fig. 2. By comparing
+formed consists of 313 single galaxy clusters. For these clusters           the well-known optical redshifts with the X-ray ones, we see
+we have self-consistently measured their gas temperatures T and             that there is only a very small intrinsic scatter of ∆z = 0.0014
+their uncertainties, as well as their metallicities Z and their X-ray       (∼ 420 km/s) with the agreement being remarkable. It is note-
+redshifts z. Furthermore, we know their optical spectroscopic               worthy that only 10% of the clusters have a deviation of more
+z, their fluxes fX and their luminosities LX within the 0.1-2.4             than ∆z/(1 + zopt ) ≥ 0.01 between the X-ray and the good
+keV energy range together with their uncertainties, their Galactic          quality optical redshift, whilst only 3% deviate by more than
+(l, b) and Equatorial (RA, Dec) coordinates and the atomic and              ∆z/(1 + zopt ) ≥ 0.02. Therefore, using the X-ray determined
+molecular hydrogen column density NHtot in their direction. The             redshifts for the 42 clusters without optically spectroscopic red-
+exact information for every parameter and where it comes from               shifts seems to introduce no bias. The final redshift distribution
+is described in the following subsections. Their spatial distribu-          is shown in the bottom panel of Fig. 2. Moreover, in the Ap-
+tion together with the redshift value used for each cluster can be          pendix is further shown that using or not the clusters with X-ray
+seen in Fig. 1. The vast majority of these 313 galaxy clusters are          redshifts one derives very similar results. The redshift distribu-
+included in the eeHIFLUGCS sample.                                          tion of our sample covers the z = (0.003 − 0.45) range while the
+                                                                            median redshift of the sample is z = 0.075 (z = 0.072 for the ex-
+2.1. Redshift                                                               cluded clusters). All the aforementioned redshifts are heliocen-
+                                                                            tric. The clusters for which we changed their z values compared
+For 264 out of the 313 clusters the given MCXC redshifts are                to the ones from MCXC are displayed in Table C.1 with a star
+used. We have checked that all these clusters have at least seven           (*) next to their names.
+galaxies with optical spectroscopic redshifts in the NASA/IPAC
+Extragalactic Database (NED) and that agree with the assigned
+MCXC redshift. The median number of galaxies per cluster is 52              2.2. Hydrogen column density
+for these cases. For seven other clusters we reassigned a redshift
+based on the already-existing optical spectroscopic data when               The value of NH enters in both the determination of the LX (as
+the offset between the apparently correct redshift value and the            done in the parent catalogs) and in the T determination that is
+MCXC redshift is ∆z ≥ 0.007, corresponding to ∼ 2000 km/s.                  performed in this analysis. Hence, an inaccurate treatment of the
+    The remaining 42 clusters either do not have enough opti-
+cal spectroscopic data in order to trust the given redshift or the           2
+                                                                               R500 =the radius within which the mean density of the cluster is 500
+distribution of the galaxy redshifts of the cluster is inconclusive.        times greater than the critical density of the Universe
+
+                                                                        4
+                               0.4                                                                                                                   15
+
+                                               264 clusters
+                              0.35
+
+
+                               0.3                                                                                                                   10
+
+
+
+
+                                                                                                                              NHtot-NHI (1020/cm2)
+                              0.25
+                   X-ray z
+
+
+
+
+                               0.2                                                                                                                    5
+
+
+                              0.15
+
+
+                               0.1                                                                                                                    0
+
+
+                              0.05
+
+
+                                   0                                                                                                                 -5
+                                       0         0.05         0.1   0.15      0.2         0.25    0.3   0.35    0.4                                       1   3      5         10       30
+
+                                                                           Optical z                                                                          NHI (1020/cm2)
+                             150
+                                                                                                                          Fig. 3: Comparison between the atomic hydrogen column den-
+                                                                                                                          sity NHI as given in DL90 and the total one NHtot as given in W13
+                             120                                                                                          for the 313 clusters.
+ No. of clusters
+
+
+
+
+                             90
+                                                                                                                          rected these inconsistencies for all the 313 clusters. The LAB
+                                                                                                                          survey covers the velocity range of (−450 km/s, +400 km/s),
+                             60                                                                                           within which all neutral hydrogen is supposed to be detected.
+                                                                                                                          This velocity range naturally propagates to the NHtot values we
+                                                                                                                          use and any amount of hydrogen outside of this velocity range
+                             30                                                                                           is not accounted for. The median NHtot for the 313 clusters is
+                                                                                                                          3.81 × 1020 /cm2 (4.35 × 1020 /cm2 for the excluded clusters).
+                               0
+                                           0            0.1         0.2             0.3          0.4      0.5
+                                                                              z                                           2.3. Luminosity
+
+Fig. 2: Top: Comparison between the safe optical redshifts and                                                            We chose to use ROSAT luminosity measurements for the simple
+the X-ray redshifts obtained from this analysis. Bottom: Redshift                                                         reason that the entire R500 area of the clusters is observed in the
+distribution of the final sample.                                                                                         RASS. On the contrary, the field of view (FOV) of XMM-Newton
+                                                                                                                          and (especially) Chandra does not cover the full R500 for most of
+                                                                                                                          our clusters3 . It has been shown though that the ROSAT LX val-
+                                                                                                                          ues are fully consistent with the ones from XMM-Newton within
+input NH values could potentially bias both parameters mostly in
+                                                                                                                          the ROSAT LX uncertainties (Böhringer et al. 2007; Zhang et al.
+the opposite direction and eventually affect our results.
+                                                                                                                          2011) (see Sect. A.9 in Appendix for further tests)
+    In the calculation of the LX of every cluster, the REFLEX                                                                 Our estimates for the cluster X-ray luminosities used the re-
+and NORAS catalogs used the neutral hydrogen NHI values com-                                                              ported X-ray luminosities in the MCXC catalog as a baseline.
+ing from Dickey & Lockman (1990) (thereafter DL90), while                                                                 These luminosities were homogenized for systematics between
+the (e)BCS catalog used again NHI values but as given in Stark                                                            the different parent catalogs, and were aperture-corrected to re-
+et al. (1992). As shown in Baumgartner & Mushotzky (2006)                                                                 flect the flux within R500 (for more details see Piffaretti et al.
+and Schellenberger et al. (2015) (S15 hereafter) the total hydro-                                                         (2011), Chapter 3.4.1). For the relative luminosity uncertainty
+gen column density NHtot (neutral+molecular hydrogen) starts to                                                                                         1
+get significantly larger than NHI for NHI ≥ 6 × 1020 /cm2 . If this                                                       σLX we assumed σLX ∼ √ , where C N is the RASS counts
+is not taken into account it would result in a misinterpretation                                                                                        CN
+                                                                                                                          from the parent catalogs. We applied further corrections to the
+of the total X-ray absorption due to Galactic material and hence
+                                                                                                                          MCXC cluster luminosities.
+to underestimating LX while generally overestimating T . In or-
+der to account for this effect, we used the NHtot values as given                                                             Firstly, we calculated K-correction factors to account for the
+by Willingale et al. (2013) (hereafter W13) in all the spectra fit-                                                       redshifted source spectrum when observed in the observer ref-
+tings we performed and for correcting the MCXC LX values as                                                               erence frame. We derived these factors in two iterative steps
+described in the following subsections. The comparison between                                                            in XSPEC using the scaling relations by Reichert et al. (2011)
+the NHI used in the parent catalogs and the NHtot values we use                                                           for the input temperatures, and the 49 updated redshifts. The
+is displayed in Fig. 3.                                                                                                   changes that occurred are much smaller than σLX . Secondly,
+                                                                                                                          the LX values were adjusted accordingly for the 49 clusters
+    One can see that for certain clusters NHtot < NHI , some-
+                                                                                                                          for which we used new redshifts. The uncertainties of the fit-
+thing that seems counter-intuitive. This happens because in the
+                                                                                                                          ted X-ray z (both statistical and intrinsic) were propagated to
+calculation of NHtot , W13 use the NHI from the LAB survey
+(Kalberla et al. 2005) and not from DL90. The LAB survey has                                                              3
+                                                                                                                             For this particular study, another advantage of using ROSAT mea-
+a better resolution and tends to give slightly lower NHI values                                                           surements is that we excluded the possibility of a XMM-Newton-related
+than DL90 for the same sky positions, something that can cre-                                                             anisotropic bias, since such anisotropies have already been detected for
+ate these small inconsistencies for clusters where the molecu-                                                            XCS-DR1, a sample constructed purely by XMM-Newton observations
+lar hydrogen is not yet high enough. As stated above, we cor-                                                             (see M18).
+
+                                                                                                                      5
+the LX uncertainties and added in quadrature to the already ex-                          2.4. Cluster radius
+isting ones. Next, we corrected the MCXC LX for changes in
+the soft-band X-ray absorption by using the combined molec-                              The radii of the clusters were used for selecting the region within
+ular and neutral hydrogen column density values as described                             which the temperature and metallicity were measured. The R500
+in Sect. 2.2. We first derived an absorbed LX by reversing the                           values of the clusters as given in MCXC were determined using
+absorption correction from Piffaretti et al. (2011), and then de-                        the MCXC LX value and the X-ray luminosity-mass scaling re-
+rived updated unabsorbed LX values in XSPEC employing the                                lation LX − M as given in Arnaud et al. (2010), which results in
+cluster temperatures and metallicities derived in this work. Fi-                         LX ∼ R4.92
+                                                                                                  500 . Since we applied certain changes to the MCXC LX
+nally, the redshift-derived distances of nearby clusters might be                        values it is expected that also the respective R500 should (slightly)
+biased by peculiar velocities. For the five most nearby clusters                         change. Therefore, we used the same scaling relation to calculate
+(50h−1 Mpc, z ≤ 0.0116) we used redshift independent distance                            the new R500 in Mpc units. After that, the appropriate conversion
+measurements from NED (published within the last 20 years) to                            to arcmin units was required, using the angular diameter distance
+derive the LX from the unabsorbed, k-corrected flux. The stan-                           (DA ). Since there is only a weak R500 dependency on LX when
+dard deviation of these distance measurements was propagated                             the latter changes only because of alternations in the NH absorp-
+to the uncertainty of the luminosity. The average change in the                          tion, the new R500 value does not significantly differ from the
+distance compared to the redshift distances is ∼ 7%. For one                             MCXC one (all changes ≤ 5%, since DA remains fixed). How-
+cluster (S0851), no redshift independent distance was available                          ever, when LX changes because of a modification in the used z
+and thus we adopted the redshift-derived distance but added an                           value then also DA changes, as well as the normalized Hubble
+uncertainty of 250 km/s4 due to possible peculiar motions, which                         parameter E(z) = [Ωm (1 + z)3 + ΩΛ ]1/2 and the critical density
+propagated in the σLX as well.                                                           of the Universe ρc (z) ,which are also included in the LX − R500
+                                                                                         relation. This has a stronger impact on the final Rarcmin
+                                                                                                                                                500   (R500 in
+     The comparison between the MCXC LX values and the val-                              arcmin units) than the absorption case alone. Nonetheless, the
+ues used in this analysis is shown in Fig. 4. As seen there, for 301                     new Rarcmin   eventually changes by more than 10% only for 5 out
+                                                                                                500
+clusters (96% of the sample) the change in LX is ≤ 25%. Since                            of 313 clusters. At the same time, 294 clusters (> 94% of the
+the intention of this paper is to look for spatial anisotropies of                       sample) show a ≤ 4% relative change in Rarcmin  500 . Therefore, the
+the LX − T relation in the sky we need to ensure that we do                              direct use of the MCXC Rarcmin      values  is practically equivalent
+not introduce any directional bias through all of our LX correc-                                                       500
+                                                                                         to our new values.
+tions. To this end, we compare the fraction LX,ours /LX,MCXC (the
+latter is the value given by MCXC) throughout the sky and we
+find it to be consistent within ±4%. Similar results are obtained                        2.5. Temperature
+if one considers the fraction LX,MCXC /LX,parent , where LX,parent is
+the value given in the parent catalogs (more details in Sect. A.8                        We determined the temperature of each cluster within the 0.2 −
+of the Appendix).                                                                        0.5 R500 annulus of every cluster in order to have self-consistent
+                                                                                         temperature measurements that reflect the other cluster proper-
+                                                                                         ties (e.g., LX ) in a similar way. The cores of the clusters are ex-
+                      200                                                                cluded due to the presence of cool-cores, which significantly bias
+                                                                                         the temperature measurement and potentially increase the scatter
+                                                                                         of the LX − T relation (e.g., Hudson et al. 2010). As previously
+                      150
+                                                                                         stated, here we used the NHtot values in order to fit the spectra
+                                                                                         and obtain T . Since the new R500 values do not considerably vary
+                                                                                         compared to the MCXC ones, we used the latter for the spectra
+    No. of clusters
+
+
+
+
+                                                                                         extraction with one exception: when the difference between the
+                      100
+                                                                                         two values was > 10% (only five clusters as stated above) then
+                                                                                         we used the redetermined R500 value. Generally, the temperature
+                                                                                         shows only a weak dependance to such small changes in R500
+                      50                                                                 since the vast majority of the spectral extraction regions remains
+                                                                                         unchanged. The relative difference in the obtained temperature
+                                                                                         for these five clusters when we use both ours and the MCXC
+                       0
+                                                                                         R500 is by average ∼ 8%.
+                            0.1   0.4   0.7    1     1.3    1.6    1.9   2.2   2.5
+                                                                                             It has been shown that the Chandra and XMM-Newton tele-
+                                        LX,500,corrected/LX,500,MCXC
+                                                                                         scopes have systematic differences in the constrained tempera-
+                                                                                         ture values for the same clusters (S15). Thus, one has to take
+Fig. 4: Comparison between the LX values after all the correc-                           into account these biases when using temperature measurements
+tions we applied and the MCXC values for the 313 clusters.                               from both telescopes. To this end, for the 76 clusters in our
+                                                                                         sample for which we use XMM-Newton data since we do not
+                                                                                         have Chandra data, we converted their measured temperatures to
+    The final LX range of the clusters we use is LX = (1.15 ×                            Chandra temperatures adopting the conversion relation found in
+1042 − 3.51 × 1045 ) erg/s while the median value is 1.45 × 1044                         S15. To further check the consistency of this conversion, we ap-
+erg/s (1.10 × 1044 erg/s for the excluded objects). The median                           plied this test ourselves choosing 15 clusters in an XMM-Newton
+σLX is 10.6%.                                                                            temperature range of 1.2 − 8.5 keV (same range as for the 76
+                                                                                         XMM-Newton clusters) which have been observed by both tele-
+                                                                                         scopes. We constrained their temperatures with both instruments
+4
+   Average difference between recession velocity as obtained by                          and we find that the best-fit relation provided by S15 still returns
+redshift-independent distances and measured heliocentric velocities for                  satisfactory results (Fig. A.8 in Appendix). The final temperature
+the other four clusters.                                                                 range of these 313 clusters is T = (0.83 − 19.24) keV with the
+                                                                                     6
+median value being T = 4.5 keV, while the median uncertainty                   For the XMM-Newton clusters, the only difference with the
+is σT = 4.9%. Clearly the temperature range is considerably                process described in R19 is the background spectra extraction
+wide which significantly helps the purposes of our study. The              region. The X-ray sky background was obtained when possible,
+suspiciously high temperature of 19.23 keV occurs for the galaxy           from all the available sky region in the FOV outside of 1.6 R500
+cluster Abell 2163 (A2163) when the Asplund et al. (2009) abun-            from the cluster’s center. In this case, no cluster emission resid-
+dance table is used. A2163 also lies in a high absorption region           uals were added in the background modeling. This was done
+with NHtot = 2 × 1021 /cm2 . For other abundance tables, A2163             mostly for the clusters located at z & 0.1 which have a small
+returns a temperature of ∼ 13 − 16 keV. This large difference              apparent angular size in the sky. For most clusters, a partial over-
+is mainly driven by the phabs absorption model and the change              lap of the background extraction area with the 1.6 R500 circle is
+of the Helium and Oxygen abundances. Generally, the average                inevitable and thus, an extra apec component to account for the
+difference between the obtained temperature values between dif-            cluster emission residuals was added during the spectral fitting,
+ferent abundance tables do not vary by more than ∼ 3 − 5% and              with its temperature and metallicity free to vary. The normaliza-
+thus, this cluster is a special case. For consistency reasons we           tions of the background model components were also left free
+use the 19.23 keV value. Excluding this cluster from the sample            to vary during the cluster spectra fitting as described in detail in
+does not affect our results significantly since it is not an outlier       R19.
+in the LX − T plane.
+                                                                           3.3. Spectral fitting
+2.6. Metallicity
+                                                                           For the spectral fitting, the same methods were used as in R19
+The metallicity of each cluster was determined simultaneously              (apec×phabs+emission and fluorescence lines) with only some
+with the temperature. The two different telescopes are not shown           small differences which are described here. Firstly, the 0.7 − 7
+to give systematically different metallicity values for the same           keV energy range was used for all spectral fittings for both in-
+clusters (although the intrinsic scatter of the comparison is rela-        struments. This way we managed to exclude the emission lines
+tively large), and thus no conversion between the XMM-Newton               close to 0.6 keV which originate from the Solar Wind Charge
+and Chandra values was needed. The metallicity range of the                Exchange and cosmic X-ray background (S15, R19 and refer-
+used sample is Z = (0.04 − 0.87) Z except for two clusters                 ences therein). Moreover, we avoid the events produced by the
+with Z = 1.53+1.50                      +0.61
+                −1.07 Z and Z = 3.86−0.71 Z , where the metal-
+                                                                           fluorescent lines at 7.5, 8 and 8.6 keV which appear in the spec-
+licity determination of the latter is clearly inaccurate while the         tra of the pn detector of XMM-Newton. Furthermore, Chandra
+former is consistent with typical metallicity values within the            has a small effective area for energies higher than 7 keV. For
+1σ uncertainties. Excluding these two clusters from our analy-             all the spectral fits the Asplund et al. (2009) abundance table
+sis has no significant effects on the derived results. Finally, the        was used. Finally, for the 237 Chandra clusters the best-fit pa-
+median value is Z = 0.37 Z with the median uncertainty being               rameters of the spectral model were determined from an MCMC
+σZ = 23.1%                                                                 chain within XSPEC, while for the 76 XMM-Newton clusters the
+                                                                           χ2 -statistic was used.
+
+3. Data reduction and spectral fitting
+                                                                           4. The LX − T scaling relation
+3.1. Data reduction
+                                                                           For obtaining the best-fit values of the LX −T relation parameters
+The exact data reduction process slightly differs for the two in-          and comparing them for clusters located in different directions in
+struments. For the Chandra analysis, we followed the standard              the sky, we use a similar approach to M18. Here the strong de-
+data reduction tasks using the CIAO software package (version              pendance of the LX on the cosmological parameters should be
+4.8, CALDB 4.7.6). A more detailed description is given in                 stressed again, combined with the fact that T can be measured
+Schellenberger & Reiprich (2017) (S17). For the XMM-Newton                 without any cosmological assumptions (see Appendix for the ex-
+analysis, we followed the exact same procedure as described in             act R500 and T dependance on the chosen cosmology).
+detail by R19. In a nutshell, every observation was treated for
+solar flares, anomalous state of CCDs (Kuntz & Snowden 2008),
+instrumental background and exposure correction. For both in-              4.1. Form of the LX − T scaling relation
+struments, the X-ray emission peak was determined and used as              We adopt a standard power-law form of the LX − T scaling rela-
+the centroid for the spectral analysis5 , while bright point sources       tion as shown below:
+(AGNs and stars), extended structures unrelated to the cluster
+of interest (e.g., background clusters) and extended substructure                                   T B
+sources were masked automatically and later by hand in a vi-                  LX
+                                                                                      E(z)−1
+                                                                                             = A ×        ,                                (1)
+sual inspection. For this analysis, the HEASOFT 6.20, XMM-                 1044 erg/s               4 keV
+SAS v16.0.0 and XSPEC v12.9.1 software packages were used.
+                                                                           where the term E(z) = [Ωm (1+z)3 +ΩΛ ]1/2 scales LX accordingly
+                                                                           to account for the redshift evolution of the LX − T scaling rela-
+3.2. Background modeling                                                   tion. The scaling of the temperature term was chosen to be close
+For the Chandra clusters, complementary to the S17 process,                to the median T = 4.5 keV. The exact constant scaling of the
+the ROSAT All-Sky survey maps in seven bands (Snowden et al.               LX values (1044 erg/s) is not important since it is only a multipli-
+1997) were used to better constrain the X-ray background com-              cation factor of the normalization. The exact scaling correction
+ponents. The background value in each of the seven bands was               for the redshift evolution of the LX − T relation [E(z)] is also
+determined within 1◦ − 2◦ around the cluster.                              not particularly significant for consistent redshift distributions
+                                                                           and low-z samples like our own, as discussed later in the paper.
+5
+    Good agreement with MCXC for the vast majority of clusters.            In order to constrain the best-fit parameters the χ2 -minimization
+                                                                       7
+method is used and applied to the logarithmic form of the LX − T                 we follow the method described below. We consider a cone of a
+relation,                                                                        given radius θ (we use θ = 45◦ , 60◦ , 75◦ and 90◦ ) and we only
+                                                                                 consider the clusters that lie within this cone. For instance, if we
+                                                                                 choose a θ = 60◦ cone centered at (l, b) = (150◦ , 30◦ ) then the
+log L0X = log A + B log T 0 .                                         (2)        subsample of clusters consists of all the clusters with an angular
+       0
+                                                                                 separation of ≤ 60◦ from these specific coordinates. By fitting
+Here, LX and T 0 are defined as                                                  the LX − T scaling relation to these clusters, we obtain the nor-
+                                                                                 malization (or H0 ), slope and intrinsic and total scatter for these
+           LX                                   T                                clusters. The extracted best-fit value for the fitted parameter is
+ 0
+LX =      44
+                 E(z)−1         and    T0 =         .                 (3)        assigned at these coordinates.
+        10 erg/s                              4 keV
+                                                                                     Shifting this cone throughout the full sky in steps of ∆l = 1◦
+                                                                                 and ∆b = 1◦ in Galactic coordinates8 , we can obtain the desired
+4.2. Linear regression                                                           parameter values for every region of the sky. We additionally
+                                                                                 apply a statistical weighting on the clusters based on their an-
+The exact form of the χ2 -statistic used to find the best-fit A, B,
+                                                                                 gular separation from the center of the cone.   θ This is given by
+σint and H0 values is given by
+                                                                                                                                   1
+                                                                                 simply dividing their uncertainties by cos          × 90◦ , where θ1
+                                                                                                                                  θ
+                                                2                              is the above-mentioned angular separation. Hence, the weight-
+        N
+        X         0
+            log [LX,obs           0
+                        ] − log [LX,th (T 0 , p)]                                ing cos term is calibrated in such way that it shifts from 1 to 0
+χ2L =                                                 ,               (4)
+              σlog L,i 2 + B2 × σlog T,i 2 + σint 2                              as we move from the center of the cone to its boundaries, inde-
+        i=1
+                                                                                 pendently of the angular size of the cone. This enlargement of
+                                                         0
+where N is the number of clusters used for the fit, LX,obs   and T 0             the uncertainties results in an artificial decrease of the σint which
+are the measured luminosity and temperature values respectively                  is not of relevance here since, as explained before, σint mostly
+(scaled as explained above), L0X,th is the theoretically expected                acts as a nuisance parameter. Nevertheless, we perform tests to
+value for the luminosity based on the measured temperature in                    ensure this does not bias our results, as explained in 9.2.
+addition to the fitted parameters p (A and B, or H0 ). Further-                      All the A maps are plotted based on the A/Aall value, where
+more, σlog L,T,i are the Gaussian logarithmic uncertainties which                Aall is the best-fit A when all the clusters are used independently
+                                                                                 of the direction. Finally, the maps have the same color scale for
+are derived in the same way as in M18 6 , while σint (which was
+                                                                                 easier comparison, except for the θ = 45◦ cone maps for which
+not included in M18) accounts for the intrinsic scatter of the re-
+                                                                                 the color scale is enlarged for better visualization.
+lation.
+     The latter is fitted iteratively, starting from 0 and increas-
+ing step-by-step until there is a combination of p that gives                    4.4. Statistical significance and sigma maps
+χ2red ∼ 1, as in Maughan (2007); Maughan et al. (2012); Zou
+et al. (2016) etc. Under certain conditions, this procedure might                With the desired best-fit values and their uncertainties for every
+return slightly underestimated σint values. However, this should                 sky region at hand, it is easy to identify the direction that shows
+not be a concern since the exact values of σint are not of particu-              the most extreme behavior and assess the statistical significance
+lar importance for this analysis and they are only used to derive                of their deviation. For quantifying the latter in terms of number
+trustworthy parameter uncertainties from our χ2 model.                           of sigma for two different subsamples we use:
+     Additionally, the 1σ uncertainties of the fitted parameters are
+based on the standard ∆χ2 = χ2 − χ2min limits (∆χ2 ≤ 1 or 2.3                                p1 − p2
+                                                                                 No. of σ = q            ,                                           (5)
+for one or two fitted parameters respectively). In the case of the
+slope being free to vary, the projection of the x-axis uncertainties                         σ2p1 + σ2p2
+to the y-axis also varies. This fitting method is comparable to
+the BCES Y|X fitting method described by Akritas & Bershady                      where p1,2 are the best-fit values for the two different subsamples
+(1996).                                                                          and σ2p1,2 are their uncertainties9 .
+     Finally, we should stress that H0 and A cannot be simulta-                      Each time we constrain the anisotropic amplitude of the most
+neously constrained since they are degenerate. One can put ab-                   extreme dipole in the sky, while we also compare the two most
+solute constraints only on the product A × H02 . Therefore, one                  extreme regions in terms of the fitted parameter, regardless of
+needs to fix one of the parameters to investigate the behavior                   their angular separation. This is done by calculating the statis-
+of the other. In Sect. 5 we use a fixed H0 = 70 km s−1 Mpc−1                     tical deviation (in terms of σ) between all the different cone
+to investigate the behavior of A. In Sect. 7 we fix A to its best-               subsamples. The two sky regions for which the largest deviation
+fit value and study the directional behavior of H0 through the                   (highest no. of σ) is found between them, are the ones reported
+χ2 −minimization procedure described above7 .                                    in the following sections as "the most extreme regions". In addi-
+                                                                                 tion, a percentage value (%) is displayed next to each σ devia-
+                                                                                 tion. This value comes from the difference of these two extreme
+4.3. Pinpointing anisotropies via sky scanning                                   regions over the best-fit value for the full sample.
+With the purpose of studying the consistency of the fitted pa-                   8
+                                                                                    360 × 181 = 65160 different cones
+rameters throughout the sky and identifying specific sky patches                 9
+                                                                                    This formulation assumes that p1 and p2 are independent, which is
+that seem to show a significantly different behavior than the rest,              true when the two subsamples do not share any common clusters. This is
+                      +   −
+                                                                                 mostly the case for our results with few exceptions of . 10% common
+6
+   σlog x = log (e)× x 2x
+                       −x
+                          , where x+ and x− are the upper and lower limits       clusters between some compared subsamples. However, this does not
+of the main value x of a quantity, considering its 68.3% uncertainty.            significantly affect the significance especially when one considers that
+ 7
+   This is equivalent to directly converting A values to H0 values, since        the weighting of these clusters is different for each subsamples based
+the product A × H02 remains unchanged.                                           on their distance from the center of the cone.
+
+                                                                             8
+

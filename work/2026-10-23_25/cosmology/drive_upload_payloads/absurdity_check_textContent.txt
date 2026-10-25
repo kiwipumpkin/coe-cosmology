@@ -1,0 +1,303 @@
+# Absurdity check — GM/D³H² vs Migkas amplitude
+
+**Sedov–Taylor anisotropic Hubble / Cosmology agent**  
+**Date:** 2026-09-17 (CT)  
+**Scope:** Bolt-on Phase A ansatz (WRONG/shortcut) vs **time-integrated** central gravity on ST trajectories (PRIMARY).  
+**Target:** Migkas-scale sky variation A ≈ 5%, 10%, 15% in H_obs (or half peak-to-peak of H_obs/H − 1).  
+**H0** = 70 km/s/Mpc. Skeptical; no cheerleading.
+
+---
+
+## 0. Executive verdict (INTEGRATED picture)
+
+### **CONDITIONAL** (leaning **NO-GO for (l,b,A) Migkas-dipole MCMC**)
+
+**One paragraph:** Time-integrating g = −GM/r² along Sedov–Taylor homologous trajectories (frozen ∫g dt, Hubble-drag du/dt+Hu=g, or nonlinear ODE with ST acceleration plus gravity) only rescales the bolt-on peculiar by an **O(1) factor** (effective α ≈ 0.66 with drag, ≈ 1.5 without, vs bolt-on α=1). It does **not** invent a new small-κ regime. To get **5–15%** sky variation in H_obs/H one still needs dimensionless **κ = GM/(D³H²) ≈ 0.03–0.15** (drag/ODE). That corresponds to **M ≈ (0.06–0.3)×M_crit(<D)** — not “10¹⁰× horizon mass” absurd for D ∼ 1–3 Gpc, but **O(1)–O(10)× Hubble-sphere critical mass** if D ∼ 10–14 Gpc. The harder failure is **morphology**: for d ≪ D (CoE beyond horizon, clusters at hundreds of Mpc) the cleaned gravity field produces a **quadrupole (P2)**, not a Migkas-like **dipole**. Pure-dipole amplitude is suppressed by ∼10⁻⁶ at d/D=0.1 in the linear bolt-on map; forcing a dipole fit needs absurd κ∼10⁴. **Therefore:** amplitude alone is CONDITIONAL (borderline OK at few-Gpc D); **matching Migkas as a dipole with this Newtonian central-gravity mechanism is NO-GO**. A 3-parameter **(l,b,A) dipole MCMC is not worth doing** on this forward model until either (i) the template is quadrupole, or (ii) a different homology-breaking mechanism supplies a true dipole.
+
+| Question | Answer |
+|----------|--------|
+| Is bolt-on κ absurd? | **Labeled WRONG model**; κ∼0.03–0.1 for 5–15% *variation* is not wildly absurd, but model is shortcut |
+| Does integration fix / worsen? | **O(1) only** — same ballpark |
+| Migkas dipole morphology? | **NO-GO** (model → quadrupole for distant CoE) |
+| Proceed to (l,b,A) dipole MCMC? | **No** — wrong sky pattern |
+| Overall program gate | **CONDITIONAL** — need different anisotropy source or accept quad + CMB adversary next |
+
+---
+
+## 1. What was searched in the draft / workspace
+
+- `draft.txt` §3.9–3.12: Hubble-time impulse `u ∼ g/H` only (the bolt-on).
+- Outline bullet **“Central force integration”** (draft ~L2444) — listed, **not implemented**.
+- `phase_a_derivation.md`: flags 3.10 as ansatz; recommends dynamical u before MCMC.
+- No prior numerical trajectory integrator found under `/workspace/cosmology/`.
+
+Chris correction (binding): large instantaneous gravity “absurdity” is partly an artifact of the bolt-on he used because he could not integrate. Intended physics = integrate central gravity from the blast along trajectories.
+
+---
+
+## 2. PRIMARY model — time-integrated gravity
+
+### 2.1 Setup and approximations
+
+1. Background ST: R_ST ∝ t^{2/5}, H=2/(5t), homologous r(t)=χ t^{2/5}.
+2. Extra central point mass M with g=−GM/r² r̂ (not a self-consistent ST+gravity similarity solution; risk of double-counting blast mass).
+3. Three treatments:
+   - **(F) Frozen path, no drag:** Δv = ∫_{t_i}^{t_f} g(r_bg(t)) dt.
+   - **(D) Hubble drag:** du/dt + H u = g on the homologous background.
+   - **(O) Nonlinear ODE:** r̈ = −(6/25)r/t² − GM/r² (ST radial acceleration that preserves homology when M=0, plus gravity).
+4. Observe at t_f: Euclidean H_obs = v_los/d, Ψ = H_obs − H.
+5. Start time η = t_i/t_f = 10^{-3} (fiducial); integrals converge as η→0.
+
+### 2.2 Analytic effective α vs bolt-on u = α GM/(r² H)
+
+Along r ∝ t^{2/5}:
+
+| Treatment | α_eff (η→0) | α_eff (η=10^{-3}) |
+|-----------|-------------|---------------------|
+| Frozen ∫g dt | 2 | ≈ 1.50 |
+| Drag du/dt+Hu=g | 2/3 | ≈ 0.66 |
+| Bolt-on Phase A | α free ∼ O(1) | 1 (reference) |
+
+**Consequence:** κ required for a fixed sky amplitude scales as 1/α_eff. Integration **cannot** reduce κ by orders of magnitude on this background.
+
+### 2.3 Nonlinear ODE checks
+
+- M=0: homology preserved to ∼10^{-5}; H_obs isotropic (null pass).
+- Finite κ: ODE half-peak-to-peak amplitudes track the drag-effective bolt-on within ∼ tens of percent (same κ ballpark).
+
+### 2.4 Required κ for A = 5%, 10%, 15% (PRIMARY)
+
+**Metric:** half peak-to-peak of (H_obs/H − 1) on a lat–lon sky grid at fixed observer–source distance d (captures quadrupole-dominated variation). Dipole-only A is reported separately (Appendix) and is **not** the right Migkas proxy for this field when d ≪ D.
+
+Fiducial η=10^{-3}, d/D=0.1:
+
+| Target half-ptp | κ bolt-on α=1 | κ frozen-int | κ drag-int | κ nonlinear ODE |
+|-----------------|---------------|--------------|------------|-----------------|
+| 5% | 0.030 | 0.020 | 0.046 | ≈ 0.048 |
+| 10% | 0.060 | 0.040 | 0.092 | ≈ 0.100 |
+| 15% | 0.090 | 0.060 | 0.137 | ≈ 0.156 |
+
+At d/D=0.3, ODE κ is slightly lower (≈ 0.036 / 0.076 / 0.119 for 5/10/15%).
+
+### 2.5 Physical mass (drag-integrated / ODE — use these)
+
+Relation: M = 2κ M_crit(<D) because M_crit(<D)=(4π/3)ρ_c D³ implies G M_crit/(D³ H²)=1/2.
+
+**Hubble radius** D_H = c/H_0 ≈ 4282.7 Mpc; M_crit(D_H) ≈ 4.475e+22 M_☉.
+
+**Model `bolt_alpha1`, target half-ptp = 0.05, κ = 0.0300**
+
+| D (Gpc) | M (M☉) | M / M_crit(<D) | M / M_crit(D_H) | vs 10¹⁵ M☉ cluster |
+|---------|--------|----------------|-----------------|--------------------|
+| 1 | 3.423e+19 | 0.060 | 7.650e-04 | 3.423e+04× |
+| 3 | 9.242e+20 | 0.060 | 2.065e-02 | 9.242e+05× |
+| 10 | 3.423e+22 | 0.060 | 7.650e-01 | 3.423e+07× |
+| 14 | 9.393e+22 | 0.060 | 2.099e+00 | 9.393e+07× |
+
+**Model `frozen_int`, target half-ptp = 0.05, κ = 0.0201**
+
+| D (Gpc) | M (M☉) | M / M_crit(<D) | M / M_crit(D_H) | vs 10¹⁵ M☉ cluster |
+|---------|--------|----------------|-----------------|--------------------|
+| 1 | 2.286e+19 | 0.040 | 5.108e-04 | 2.286e+04× |
+| 3 | 6.171e+20 | 0.040 | 1.379e-02 | 6.171e+05× |
+| 10 | 2.286e+22 | 0.040 | 5.108e-01 | 2.286e+07× |
+| 14 | 6.272e+22 | 0.040 | 1.402e+00 | 6.272e+07× |
+
+**Model `drag_int`, target half-ptp = 0.05, κ = 0.0458**
+
+| D (Gpc) | M (M☉) | M / M_crit(<D) | M / M_crit(D_H) | vs 10¹⁵ M☉ cluster |
+|---------|--------|----------------|-----------------|--------------------|
+| 1 | 5.217e+19 | 0.092 | 1.166e-03 | 5.217e+04× |
+| 3 | 1.409e+21 | 0.092 | 3.148e-02 | 1.409e+06× |
+| 10 | 5.217e+22 | 0.092 | 1.166e+00 | 5.217e+07× |
+| 14 | 1.432e+23 | 0.092 | 3.199e+00 | 1.432e+08× |
+
+**Model `bolt_alpha1`, target half-ptp = 0.1, κ = 0.0601**
+
+| D (Gpc) | M (M☉) | M / M_crit(<D) | M / M_crit(D_H) | vs 10¹⁵ M☉ cluster |
+|---------|--------|----------------|-----------------|--------------------|
+| 1 | 6.846e+19 | 0.120 | 1.530e-03 | 6.846e+04× |
+| 3 | 1.848e+21 | 0.120 | 4.131e-02 | 1.848e+06× |
+| 10 | 6.846e+22 | 0.120 | 1.530e+00 | 6.846e+07× |
+| 14 | 1.879e+23 | 0.120 | 4.198e+00 | 1.879e+08× |
+
+**Model `frozen_int`, target half-ptp = 0.1, κ = 0.0401**
+
+| D (Gpc) | M (M☉) | M / M_crit(<D) | M / M_crit(D_H) | vs 10¹⁵ M☉ cluster |
+|---------|--------|----------------|-----------------|--------------------|
+| 1 | 4.571e+19 | 0.080 | 1.022e-03 | 4.571e+04× |
+| 3 | 1.234e+21 | 0.080 | 2.758e-02 | 1.234e+06× |
+| 10 | 4.571e+22 | 0.080 | 1.022e+00 | 4.571e+07× |
+| 14 | 1.254e+23 | 0.080 | 2.803e+00 | 1.254e+08× |
+
+**Model `drag_int`, target half-ptp = 0.1, κ = 0.0916**
+
+| D (Gpc) | M (M☉) | M / M_crit(<D) | M / M_crit(D_H) | vs 10¹⁵ M☉ cluster |
+|---------|--------|----------------|-----------------|--------------------|
+| 1 | 1.043e+20 | 0.183 | 2.332e-03 | 1.043e+05× |
+| 3 | 2.817e+21 | 0.183 | 6.296e-02 | 2.817e+06× |
+| 10 | 1.043e+23 | 0.183 | 2.332e+00 | 1.043e+08× |
+| 14 | 2.863e+23 | 0.183 | 6.399e+00 | 2.863e+08× |
+
+**Model `bolt_alpha1`, target half-ptp = 0.15, κ = 0.0901**
+
+| D (Gpc) | M (M☉) | M / M_crit(<D) | M / M_crit(D_H) | vs 10¹⁵ M☉ cluster |
+|---------|--------|----------------|-----------------|--------------------|
+| 1 | 1.027e+20 | 0.180 | 2.295e-03 | 1.027e+05× |
+| 3 | 2.773e+21 | 0.180 | 6.196e-02 | 2.773e+06× |
+| 10 | 1.027e+23 | 0.180 | 2.295e+00 | 1.027e+08× |
+| 14 | 2.818e+23 | 0.180 | 6.297e+00 | 2.818e+08× |
+
+**Model `frozen_int`, target half-ptp = 0.15, κ = 0.0602**
+
+| D (Gpc) | M (M☉) | M / M_crit(<D) | M / M_crit(D_H) | vs 10¹⁵ M☉ cluster |
+|---------|--------|----------------|-----------------|--------------------|
+| 1 | 6.857e+19 | 0.120 | 1.532e-03 | 6.857e+04× |
+| 3 | 1.851e+21 | 0.120 | 4.137e-02 | 1.851e+06× |
+| 10 | 6.857e+22 | 0.120 | 1.532e+00 | 6.857e+07× |
+| 14 | 1.882e+23 | 0.120 | 4.205e+00 | 1.882e+08× |
+
+**Model `drag_int`, target half-ptp = 0.15, κ = 0.1374**
+
+| D (Gpc) | M (M☉) | M / M_crit(<D) | M / M_crit(D_H) | vs 10¹⁵ M☉ cluster |
+|---------|--------|----------------|-----------------|--------------------|
+| 1 | 1.565e+20 | 0.275 | 3.498e-03 | 1.565e+05× |
+| 3 | 4.226e+21 | 0.275 | 9.444e-02 | 4.226e+06× |
+| 10 | 1.565e+23 | 0.275 | 3.498e+00 | 1.565e+08× |
+| 14 | 4.295e+23 | 0.275 | 9.598e+00 | 4.295e+08× |
+
+**Model `nonlinear_ode`, target half-ptp = 0.05, κ = 0.0478**
+
+| D (Gpc) | M (M☉) | M / M_crit(<D) | M / M_crit(D_H) | vs 10¹⁵ M☉ cluster |
+|---------|--------|----------------|-----------------|--------------------|
+| 1 | 5.449e+19 | 0.096 | 1.218e-03 | 5.449e+04× |
+| 3 | 1.471e+21 | 0.096 | 3.288e-02 | 1.471e+06× |
+| 10 | 5.449e+22 | 0.096 | 1.218e+00 | 5.449e+07× |
+| 14 | 1.495e+23 | 0.096 | 3.341e+00 | 1.495e+08× |
+
+**Model `nonlinear_ode`, target half-ptp = 0.1, κ = 0.1000**
+
+| D (Gpc) | M (M☉) | M / M_crit(<D) | M / M_crit(D_H) | vs 10¹⁵ M☉ cluster |
+|---------|--------|----------------|-----------------|--------------------|
+| 1 | 1.140e+20 | 0.200 | 2.547e-03 | 1.140e+05× |
+| 3 | 3.077e+21 | 0.200 | 6.876e-02 | 3.077e+06× |
+| 10 | 1.140e+23 | 0.200 | 2.547e+00 | 1.140e+08× |
+| 14 | 3.127e+23 | 0.200 | 6.988e+00 | 3.127e+08× |
+
+**Model `nonlinear_ode`, target half-ptp = 0.15, κ = 0.1556**
+
+| D (Gpc) | M (M☉) | M / M_crit(<D) | M / M_crit(D_H) | vs 10¹⁵ M☉ cluster |
+|---------|--------|----------------|-----------------|--------------------|
+| 1 | 1.772e+20 | 0.311 | 3.961e-03 | 1.772e+05× |
+| 3 | 4.785e+21 | 0.311 | 1.069e-01 | 4.785e+06× |
+| 10 | 1.772e+23 | 0.311 | 3.961e+00 | 1.772e+08× |
+| 14 | 4.863e+23 | 0.311 | 1.087e+01 | 4.863e+08× |
+
+
+### 2.6 Absurdity flags (integrated)
+
+| D | κ∼0.05 (∼5%) | κ∼0.1 (∼10%) | Flag |
+|---|--------------|--------------|------|
+| 1 Gpc | M∼0.1 M_crit(D); ≪ M_crit(D_H) | M∼0.2 M_crit(D) | **Not absurd** as a central overdensity scale; still huge vs clusters |
+| 3 Gpc | similar fraction of M_crit(D) | — | **Borderline OK** for Newtonian toy |
+| 10 Gpc | M ∼ 1× M_crit(D_H) | ∼ 2× M_crit(D_H) | **Large** — order Hubble mass inside beyond-horizon radius |
+| 14 Gpc (∼particle-horizon scale) | ∼ 3× M_crit(D_H) | ∼ 6× | **Stretched** — O(1)–O(10) Hubble masses; not 10¹⁰×, but not “light” |
+
+**Galaxy-cluster comparison:** all required M are ∼10⁴–10⁸ times a 10¹⁵ M☉ cluster — expected for a cosmic-center mass, not a local halo.
+
+**κ ≫ 1?** Not required for 5–15% *sky variation* (quadrupole). κ ≫ 1 **is** required if one insists on a **pure dipole** at d≪D (Appendix) — that path is absurd.
+
+---
+
+## 3. Morphology (decides MCMC)
+
+At fixed κ=0.01, α=1 bolt-on (same spatial structure as integrated with α_eff):
+
+| d/D | Dipole A | Quadrupole Q (P2 coeff) | A/(ακ) | Q/(ακ) |
+|-----|----------|-------------------------|--------|--------|
+| 0.01 | 5.95e-10 | 0.0200 | 0.000 | 2.000 |
+| 0.05 | 2.96e-09 | 0.0200 | 0.000 | 2.000 |
+| 0.10 | 5.83e-09 | 0.0200 | 0.000 | 2.000 |
+| 0.20 | 1.10e-08 | 0.0200 | 0.000 | 2.000 |
+| 0.50 | 1.88e-08 | 0.0200 | 0.000 | 2.001 |
+| 1.00 | 1.49e-02 | -0.0048 | 1.486 | -0.478 |
+| 2.00 | 6.25e-03 | -0.0009 | 0.625 | -0.094 |
+
+**Analytic tidal limit (d→0):** Ψ/H = ακ(3μ²−1) = 2ακ P₂(μ) — **pure quadrupole**, zero dipole.
+
+For a CoE **beyond the horizon** (d/D ∼ 0.01–0.1 for Migkas depths), this gravity mechanism predicts **quadrupolar** H_obs, not Migkas’s reported **dipole**. That is a structural mismatch independent of κ tuning.
+
+---
+
+## 4. Null tests
+
+| Test | Result |
+|------|--------|
+| Bolt-on M=0 | Ψ=0 everywhere (pass) |
+| Bolt-on α=0 | Ψ=0 (pass) |
+| ODE M=0 | homology + isotropic H_obs (pass) |
+
+---
+
+## 5. Appendix — WRONG/shortcut bolt-on model (Phase A eqs 3.10–3.12′)
+
+**Label: SHORTCUT.** Instantaneous u=−α GM/(r² H) with α∼O(1). Kept as honest lower/upper bar and regression baseline. Chris’s “couldn’t integrate” artifact lives here.
+
+### 5.1 Forward model (cleaned)
+
+g = −G m(r) r^{−2} r̂,  
+u = −α [G m(r)/(r² H)] r̂,  
+v_los = H d + [u(r)−u(D)]·n̂,  
+H_obs = H + δv/d.
+
+Code: `/workspace/cosmology/forward_model.py`.
+
+### 5.2 Required κ (bolt-on) — half-ptp vs pure dipole
+
+At α=1, d/D=0.1:
+
+| Target | κ for half-ptp≈target | κ for dipole A≈target |
+|--------|----------------------|-------------------------|
+| 5% | ≈ 0.030 | ∼ 3×10⁴ (**absurd**) |
+| 10% | ≈ 0.060 | ∼ 5×10⁴ |
+| 15% | ≈ 0.090 | ∼ 8×10⁴ |
+
+Dipole-forced masses at D=1 Gpc exceed 10¹⁹–10²⁰ M☉ with κ≫1 — **NO-GO** if Migkas is interpreted as requiring this model’s *dipole* coefficient.
+
+Half-ptp masses match §2.5 order (α=1).
+
+### 5.3 Extended m(r) (eq 3.13)
+
+With r_s=0.3 D, amplitudes stay the same order as point mass (no rescue).
+
+---
+
+## 6. Code artifacts
+
+| File | Role |
+|------|------|
+| `/workspace/cosmology/forward_model.py` | Bolt-on forward model + κ scan + nulls |
+| `/workspace/cosmology/integrated_gravity.py` | Frozen / drag α_eff + nonlinear ODE + sky maps |
+| `/workspace/cosmology/absurdity_results.json` | Bolt-on numerical dump |
+| `/workspace/cosmology/integrated_results.json` | Integrated numerical dump |
+
+---
+
+## 7. Implications for (l,b,A) MCMC
+
+1. **Do not** run a 3-parameter Migkas **dipole** MCMC on this gravity forward model: the model’s leading sky pattern at beyond-horizon D is **quadrupole**.
+2. **Optional** next: fit a **quadrupole template** amplitude, or move D into the prior so d/D∼O(1) (CoE not far beyond survey depth) and re-check dipole content — that conflicts with the “beyond horizon” ontology.
+3. **CMB adversary** remains unaddressed; even CONDITIONAL amplitude OK does not clear go/no-go Gate E.
+4. Integration was the right physics step; it **does not** green-light the narrative that “κ absurdity was only a shortcut artifact” as a path to small M — α_eff is O(1), not ≪1.
+
+---
+
+## 8. Bottom line
+
+- **PRIMARY (integrated): CONDITIONAL** on amplitude at D∼1–3 Gpc (κ∼0.05–0.15, M∼0.1–0.3 M_crit(D)); **NO-GO** as an explanation of a **Migkas dipole** for beyond-horizon CoE.
+- **Bolt-on appendix:** same κ ballpark for variation; dipole-only fit absurd; model explicitly labeled WRONG/shortcut.
+- **(l,b,A) dipole MCMC:** **not worth doing** on this mechanism as currently formulated.
+
+---
+
+*End of absurdity check.*

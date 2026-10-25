@@ -1,0 +1,843 @@
+                                    General Disclaimer
+
+    One or more of the Following Statements may affect this Document
+
+
+
+      This document has been reproduced from the best copy furnished by the
+      organizational source. It is being released in the interest of making available as
+      much information as possible.
+
+
+
+      This document may contain data, which exceeds the sheet parameters. It was
+      furnished in this condition by the organizational source and is the best copy
+      available.
+
+
+
+      This document may contain tone-on-tone or color graphs, charts and/or pictures,
+      which have been reproduced in black and white.
+
+
+
+      This document is paginated as submitted by the original source.
+
+
+
+      Portions of this document are not fully legible due to the historical nature of some
+      of the material. However, it is the best reproduction available from the original
+      submission.
+
+
+
+
+Produced by the NASA Center for Aerospace Information (CASI)
+     NASA TECHNICAL
+      MEMORANDUM
+
+
+     NASA TM X-73378
+
+
+     (biSI-Ttl-X- 73378) TECHbIQUkS OF GLCEIL                   N77-22029
+     ANALYSIS APPLIEE TC GSIYITATICh THEMES: B
+     COSlSCLOGICAL ELACK HOLE? (N1SA) 19 p HC
+     A02/Kf 101                           :.SCL 03E             Onclas
+                                                      G3/90 24448
+
+     TECHNIQUES OF GLOBAL ANALYSIS APPLIED TO GRAVITATION
+     THEOR I ES: A COSMOLOG I CAL BLACK HOLE?
+
+
+     By George Debney
+     Space Sciences Laboratory
+
+
+
+
+     February 1977
+
+                                                        APR 10M
+                                                        RECEIVED
+     NASA                                             NASA STI FOUTY
+                                                       INPUT BRANCH
+
+
+
+
+     George C. Marshall Space Flight Centor
+     Marshall Space Flight Center, Alabama
+
+
+     MSFC - Form 3190 (Rv% June 1971)
+sk
+I . REPORT NO.                             2, GOVERNMENT ACCESSION NO.                        3.    RECIPIENT'S CATALOG NO.
+      NASA TM X-73378
+A     TITLE AND SUBTITLE                                                                      S. REPORT DATE
+      Techniques of Global Analysis Applied to Gravitation                                          February 1977
+                                                                                              6. PERFORMING ORGANIZATION C(OE
+      Theories: A Cosmological Black Hole?
+7. AUTNOR(S)                                                                                  & PERFORMING ORGANIZATION REPO f #
+      George Debney*
+9. PERFORMING ORGANIZATION NAME AND ADDRESS                                                  10. WORK UNIT NO.
+
+      George C. Marshall Space Flight Center                                                  11. CONTRACT OR GRANT NO.
+      Marshall Space Flight Center, Alabama 35812
+                                                                                             13. TYPE OF REPOR        Q PERIOD COVERED
+12. SPONSORING AGENCY NAME AND ADDRESS
+                                                                                                   Technical Memorandum
+      National Aeronautics and Space Administration
+                                                                                              14. SPONSORING AGENCY CODE
+      Washington, D.C. 20546
+15. SUPPLEMENTARY NOTES
+      Prepared by Space Sciences Laboratory, Science and Engineering
+      *Permanent Address: Virginia Polytechnic Institute and State University, Blacksburg,
+16.   ABSTRACT
+
+
+                An elementary model of freely falling observers and emitters within a black hole's
+      radius is examined to determine the redshift spectrum reaching a typical observer. The
+      model is independent of scale, the fundamental unit being the radius (mass) of the black
+      hole. The observers/emitters all follow the same kinds of trajectories: radially inward
+      and starting from rest at spatial infinity. The ''test-particle'' role is assumed throughout;
+      i. e. , the observers/emitters do not themselves contribute to the gravitational field of
+      the system. By means of redshift formulas and luminosity distance to the emitters, a
+      picture of actual redshifts and blueshifts, with their intensities, emerges for an observer
+      within the black hole's radius. No luminosity distances greater than approximately
+      one-half the radius are considered in this particular study; nevertheless, redshifts and
+      blueshifts up to approximately 0.6 are seen in portions of the observer's celestial sphere
+      (i.e., his sky) . An exotic application can be made, as a curiosity, to a black hole the
+      size of the universe, resulting in a particular anisotropic "cosmology.
+
+
+
+
+17. KEt WORDS                                                     16, DISTRIBUTION STATEMENT
+
+
+
+                                                                            Unclassifi d — /Unlimited
+
+
+
+19.   SECURITY CLASSIF. (ot this repartl   20,   SECURITY CLASSIF. (or this psge)             21.   NO. OF PAGES      22.   PRICE
+
+           Unclassified                                 Unclassified                                   19               NTIS
+MSFC • Form 3292 (Rev December 1979)                     for sate by National Technical Informatinn Service, Springfield, Virginia 22151
+                     TABLE OF CONTENTS
+
+                                                         Page
+INTRODUCTION ......................................        1
+ANALYTICAL PRELIMINARIES ...........................       1
+LUMINOSITY DISTANCE ................................       6
+NUMERICAL RESULTS .................................        9
+DISCUSSION ........................................        9
+AN EXOTIC APPLICATION: COSMOLOGICAL SCALING ..........    14
+REFERENCES.......................................         15
+
+
+
+
+                             iii
+                      TECHNICAL MEMORANDUM X-73378
+
+
+
+  TECHNIQUES OF GLOBAL ANALYSIS APPLIED TO GRAVITATION
+         THEORIES: A COSMOLOGICAL BLACK HOLE?
+
+
+                                INTRODUCTION
+        In the past several years a great number of theoretical studies of black
+holes have appeared in the literature. Astrophysical applications have involved,
+for the most part, models where the observer is placed far away from one of
+these collapsed objects. Although there is apparently a lower limit to the mass
+of an existing black hole formed in the "big bang" 11, 2] , it is not clear what a
+reasonable upper limit might be. Models of collapsed stars and collapsed
+galaxies seem to have received, however, the greatest attention.
+
+        The investigation considered here takes a different ( albeit elementary)
+approach to a black-hole phenomenon. One first excludes from the context any
+requirement that there be far-away static observers or emitters of photons and
+replaces it with the requirement that all emitters and observers are falling
+radially inward, through the horizon surface at r = 2 m, and toward the singu-
+larity at the center where r = 0. Instead of using the typical Friedmann model
+for a collapsing dust, it is assumed that the masses of the infalling particles
+are negligible and that these are all test particles in the local Schwarzschild
+geometry.
+
+        The primary results of this study are manifested in the pattern and
+intensity of redshifted objects in the sky of a typical observer who has fallen
+into the black hole. None of these results depend upon the mass of the black
+hole, although the mass determines the scale of the whole model. To date no
+results have been computed for emitters which are placed at greater distances
+than r=4m.
+
+
+                       k.1ALYTI CAL PRELIMINARIES
+
+        Consider a spherically symmetric collapsed mass around which a horizon
+at r = 2 m has formed and restrict the future to contain only noninteracting test
+particles. Suppose all families of test particles are falling radially inward
+toward r = 0, having started from rest at r = ^. This gives rise to a geometry
+which is the standard Schwarzschild metric filled with test particles and
+dominated by the mass m of the black hole. ( The uniform boundary condition
+at r = - merely sets up an "average" case to analyze.)
+
+        The most convenient form in which to express the geometry here is that
+of the E ddington- Finkelstein ingoing Schwarzschild metric:
+
+
+       ds2 = gµvdxu dxv = dr2 ^ r2 ( d0 2 4 sin2 o d02) - dt 2 + 2m ( dr + dt) 2
+                                                                   r
+                                                                                   (1)
+
+
+where t =_ t + 2m - 1n ( r/2m) - 11 and t is the standard time for a faraway
+static observer. Removing the factor of 2m eliminates the mass dependence of
+the scale so that coordinates, R, T defined by 2mR = r, 2m T = t, and 2mS = s
+can be utilized. Hence, equation ( 1) reduces to
+
+       (2m) -2 ds2 = dS 2 = dR2 + R2 ( d02 + sin2 o d(2) - dT2 + R ( dR + dT) 2
+
+                                                                                   (2)
+The horizon surface of the black hole now lies at R = 1.
+
+        Any curve or trajectory in this space uses the fundamental form ( equation
+(2) J to compute the length of its tangent vector. For the null (photon) trajec-
+tories the "length" is zero. Such a curve would possess (R(v), o(v), ON,
+T(v) J as its formula, w h ere v is a parameter along the curve. In this latter
+case the tangent vector K = (R, b, ^, IT) would obey:
+
+
+       0 = RZ +RZ (O 2 +sin2 0;2) -TZ +k (R+T)2              .                     (3)
+
+where d/dv = "dot." For non-null trajectories one simply uses S as the
+parameter so that the curve is given through [R(S), O(S), Q( S), T (S) J and its
+tangent vector obtained by taking d,/dS. The analogous result to equation (3) is
+then:
+
+
+
+
+2
+         fl =
+                \
+                    dR
+                         ^2
+                              +R2 [( LO ) l +sin2 g^dS     -   laslz+R d + 2 1
+                                                                                   ,T
+
+                                                                                 (4)
+
+where ±1 indicates the spacelike or timelike nature, respectively, of the curve
+under consideration. Particles going less than the speed of light are timelike.
+        A feature of the Schwarzschild metric is that null trajectories, no matter
+what their individual properties, fall into two classes. This is most easily
+demonstrated by taking © _ $ = 0 in equation (3) to produce radial photon tra-
+jectories. In this case one obtains two tangent vectors, K IN and OUT , at each
+                                                                  K
+point (R, 0, 0, T) in the space; i.e., assuming K is future-pointing (T > 0)
+produces:
+
+
+
+                    (-1, 0, 0 , 1)                                       )
+          IN                              POUT      (_11 0 ' 0 ' 1 - R           (5)
+
+Notice that if R > 1, then K IN points "inward" and             points 'outward" on
+                                                       KOUT
+a simple R-T coordinate graph. If R < 1, then both vectors point "inward" but
+the names of the classes still persist. If R = 1, a limiting proces s must be
+used since equation (5) would be invalid for           In this case KOUT
+                                              KOUT'
+(0, 0, 0, 1), whereas KIN is the same throughout. These two classes exist
+at each point of the space for the other directions when 4 or ; is not zero,
+but are somewhat harder to see. In summary, all future-pointing (past-pointing)
+null vectors at each point form the future (past) null cone of that point, but
+roughly half the vectors comprise an IN class, the other half forming an OUT
+class.
+
+        For the model one wishes to study here, the timelike radially infalling
+geodesics are the observers and emitters, whereas the (generally nonradial)
+null geodesics are the paths of photons through which these sources "see" one
+another. Because of the spherical symmetry, it is sufficient to study only
+equatorial (0 = 7r/2) trajectories to obtain the entire picture. Hence, the 0 com-
+ponents of all subsequent vector quantities are suppressed.
+
+         To get the results for redshift behavior, one integrates the equations of
+motion for various geodesics in the Schwarzschild geometry to obtain, from the
+first integrals, the tangent vectors of the radial timelike sources and the tangent
+
+
+
+
+                                                                                   3
+I
+
+                                                                                          V
+
+
+
+
+    vectors of the null paths which would connect them. Each radial observer or
+    emitter has tangent vector:
+
+
+           U                        1 1, 0, 1 + R }                                 (6)
+                 C d—S , 0,         ^/R \            1+^R/
+
+
+    Each photon trajectory has tangent vector x, _ (R,           expressed as one of
+
+                                                                                    (7)
+
+
+    where (f) denotes the OUT or IN class, respectively. The parameter p is the
+    angular momentum of the photon and is constant along any given photon trajectory.
+    If # = 0, then it is a radial photon. The function n depends upon the coordinate
+    R along any given photon trajectory but also depends upon the trajectory itself,
+    through p,
+
+                                            i12
+                        [1+ (±)
+
+    The result [ equation (7) ] is valid for K_ throughout the space but is valid for
+    K+ only inside the black hole, i. e. , for R < 1.
+
+           Suppose an observer at R 0 receives a signal from an emitter which was
+    at R E . Then there is one more degree of freedom to be determined since RE
+    could lie anywhere on a circle; that degree of freedom is fixed by next choosing
+    a value of R. Hence, the signal received by the fixed observer is characterized
+    by a value for R E and a value for g. However, the direction from which the
+    observer receives the signal is only a function of /s, i.e. , the choice of photon
+    trajectory going through R O . If one follows a particular photon trajectory
+    (R fixed) away from RO , he runs over all possible R E 's that could have
+    emitted that direction-dependent signal. It is the redshift seen by the observer
+    that contains both the parameter P and the emitter position RE . The correct
+    redshift Z is contained in the formula:
+
+
+
+
+    4
+                    f (R E , O )
+        1+ Z } = f}(R0,13)                                                     (8)
+
+where
+
+
+
+
+Inside the black hole, a can run from 0 to co . We define 1 + ZCO = limit of
+(1 + Z) as a — - so that
+
+
+                    R
+                                    0
+        1 + Z^ = 0                                                             (9)
+                    RE 1-
+                        -R E
+
+
+completes equation (8) for all P.
+        By going to the local Lorentz frame of the observer (two dimensions of
+space, one of time), one can see the relationship of the direction parameter a
+"look angle" w of the observer's celestial circle. The observer imagines the
+sum total of all directions he must look as being on a circle with him at the
+center. (This would be a sphere if we did not suppress the third dimension at
+the outset. ) His loca', Lorentz frame is just a nonrotating set of two spatial
+directions and one time dimension (his clock) . Suppose, without loss of
+generality, one of his spatial coordinate directions is the radially inward pro-
+jection of the spacetinie R-axis into his l(,^al frame. Then this direction could
+be called "ahead" of him and the opposite direction would be "behind" as he falls
+toward the center o f the black hole; these are taken to be w = 0 and w = 180 0 ,
+respectively. All K + rays from f)= 0 to P = m then impinge on the observer
+at the angles w : 0 { w    w,,, , and the K rays from P = 0 to R = - at the
+                s
+angles w - : w D ce < 180° . The dependence of w + upon 1; is given by
+
+
+                                ^ r} (R 0 , ^^)   1
+                        ^'^ 0
+        cos I w I -                                                          (10)
+               '        (Y(ROpI}) _+ ti^R
+
+
+
+
+                                                                                 5
+       coslw^l = If-R--             ,
+
+
+W. giving the direction where the two ray classes interface on the null cone.
+These directions fill one half of his celestial circle; the celestial sphere would
+be constructed by rotating this circle about the diameter P = 0 with Q = constant
+# 0 corresponding to a whole ring of directions in the "sky" ( Fig. 1) .
+
+       The relationships in equations (8) , (9) , and (10) allow one to put together
+an analysis of possible redshifts and blueshifts in a given direction (p) by looking
+at ranges of values of R E for each case. The picture is fixed by choosing at
+the outset a value for R 0 inside the black hole. Some details of this viewpoint
+are analyzed in Reference 3.
+
+
+                           LUMINOSITY DISTANCE
+         Before any realistic evaluation of the redshift formulas in equations (8)
+and (9) can be made, it is necessary to answer the question: "What are the
+intensities of the redshifts in the various directions from the observer?" That
+is, if the rays from certain sources spread out too quickly, they may not be
+seen at all; therefore, the redshift is purely academic.
+
+        To solve this problem, one must tie luminosity distance to the redshift
+as various directions from the observer are investigated. Luminosity distance
+involves integrating along a single photon trajectory from emitter to observer
+so as to express the manner in which a small solid angle of rays at the emitter
+( pencil of rays) spreads and distorts on its way toward intercepting the observer.
+This is a complicated theoretical problem in nonlinear geometry and propagation
+of frames, but it is workable. Some of the preliminaries can be found in
+Reference 4. (No details leading to the results are to be given here but are
+postponed for a subsequent publication in collaboration with D. L. Farnsworth.)
+
+       For radial photons, the luminosity distance d is given by
+
+                               RE
+       d} _ (1 + Z) -1      f           %TR dR ,                               (11)
+                          R01 f 11R
+
+
+
+
+6
+                   8
+                 o^
+                 r^
+                 ^a 3
+
+
+
+
+    LL
+    a
+    u
+    3
+
+
+
+    Y
+                        a
+    Y
+                        'a
+                        .Y)
+                        t0
+
+                         N
+                        d
+                         V
+                         y
+                         Ol
+
+
+
+                         t!1
+
+
+
+                         rl
+
+
+                            H
+
+
+                         .ti
+                         ^t
+
+
+
+
+             O
+             O
+         O   ^
+
+         ^s 3
+
+
+
+
+                               7
+
+
+
+
+r
+                                                                                        V
+
+
+
+
+where ( t) refers to the ray classes earlier, and 1 + Z is computed from equa-
+tion (S) with Q = 0.
+        For the /3 = W case, the luminosity distance is found to be
+
+                          2R sin (AO)                                             1/2
+dm = (1 + Z^ )-i 0                         (^t^ - E + tanh -1 E - tanh`• E)
+
+                                                                                (12)
+
+
+where AO is the equatorial angle of travel of the photon:
+
+        AO = sin'' (2R E - 1) - sin -' (2R 0 - 1)
+
+
+
+       All other photon directions have an elliptic integral for the angle of
+travel AO ( where "a" means simply a ( R, (3) ] :
+
+                     RE
+        AO =        f     R       dR
+                RO
+
+
+The luminosity distance in the two (t) cases is given through
+
+
+                                      D sin ( AO ) RE tirR . (a t ^)                        i
+        (d})   2_
+                     (1 + Z t)
+                                 zR
+                                       sin w.,E Rf       (v • (1 - R)           (13)
+                                                 0
+
+where
+
+
+        sin w = 1--RE
+               E • RE a (R E' '3) } E
+
+This is, again, an elliptic integral expression. For the study of these proper-
+ties, a digital computer was utilized.
+
+
+
+8
+A-                       - 1      -       1                                              .•
+
+
+
+
+                               NUMER I CAL RESULTS
+
+        The data may now be tabulated to make a proper comparison of redshift/
+blueshift anisotropy at various luminosity distances. The procedure is to choose
+first an observer (R 0) . Next, a direction (p) of his celestial circle is fixed.
+By starting with values of R E and going out in steps from R E --t; R0 , one computes
+th.e redshift Z and luminosity distance d for an emitter at that value of R E , as
+seen in that w direction from the observer. The full equatorial coordinate values
+of the emitter are R = R E and 0 = A0. This computation must be done twice,
+once for the K_ ray directions and once for the K+ ray directions.
+
+       Table 1 contains a summary of these data. The data are presented in
+steps of luminosity distance for greater ease of interpretation. Each set
+corresponds to a given 'look angle" w or w +, determined uniquely by (; and
+received by the observer at R O = 2/3, ¢ = 0°;
+
+
+       d_, d+ = luminosity distance of emitter at (R E , 0O) in units of (r/2m)
+                  times 1000
+
+        Z_, Z+ = redshi ft/blue shift at the given d_, d
+
+       Ao = angular coordinate of emitter = azimuth angle of travel of photon
+             (in degrees)
+
+        RE = radial coordinate of emitter in units of (r/2m) times 1000.
+
+
+                                      DISCUSSION
+
+        Consider first the diagram depicted in Figure 2. The observer imagines
+"spheres" of constant radius about him, each of which corresponds to a certain
+"distance away. " This hitter distance is luminosity distance; therefore, an
+object he sees is placed on a sphere corresponding to that particular value of d
+in the particular direction u, from which it came to him. To this same object,
+there is a redshift Z assigned, and so forth, so that along any specified line of
+sight various redshifts occur. The intensity of these redshifts is completely
+
+
+
+
+                                                                                     9
+                   TABLE 1. REDSHIFT/BLUESMFT DATA
+
+                    Z_        40                                    Ao
+         d-                              RE     d+     Z+                 RE
+     (9 = 0 )               w_ = 180°                  w+ = 00
+
+
+       101         0.083      0          900    8    0.126          0     695
+       200         0.149      0         1140   194   0.231          0     715
+       300         0.204      0         1390   307   0.453          0     750
+       400         0.249      0         1640   398   0.747          0     785
+       480         0.281      G         1840   499   1.758          0     855
+                                                                           ,.
+     (Q = 05)
+           .0            w = 170°                     w+ _, 1 0
+       104         0.078   1.1     900         101   0.102            1   690
+       200         0.137   1.7    1120         200   0.211          0.'   714
+       303         0.190   2.2    1360         301   0.383          0.4   740
+       398         0.230   2.5    1580         408   0.609          0.6   770
+       502         0.269   2.8    1820         505   0.903          0.7     0
+     ((3= 0.1)              w- = 161°                 w+ = 20
+       102         0.062       2.2     890     101   0.101          0.3   690
+       200         0.116       3.4    1110     200   0.225          0.6   714
+       302         0.163       4.3    1340     301   0.381          0.8   740
+       399         0.202       5.0    1560     408   0.607          1.1   770
+       465         0. 226      5. 1 1 1710     505   0.900          1.4   800
+     ( Q = 0.2)          w_ = 143°                    w+ = 40
+       101         0.014    4.0     870        101   0.100          0.6   690
+       199         0.042     6.4   1070        200   0.222          1.1   714
+       302         0.075     8,-   1280        299   0.376          1.7   740
+       398         0.104     9.1   1490        407   0.599          2.3   770
+       499         0.132   1f ..5  1690        505   0.889          2.8   R00
+     (Q = 0. 3)           w = 128°                    ctl+ =   60
+       103        •-0.041    5.4         850   100   0.098          0.8   690
+       199        -0.044     8.8        1020   200   0.219          1.6   715
+       300        -0.033    11.4        1200   299   0.367          2.5   740
+       400        -0.018    13.3        1380   406   0.586          3.3   770
+       499          0.00    14.8        1560   505   0.871          4.2   800
+
+
+
+
+10
+                              TABLE 1. ( Continued)
+
+
+
+  d-          Z-
+                               AO
+                                       RE
+                                               d            Z+
+                                                                       AO
+                                                                              RE
+(Q = 0.5)                 w    =104°                        co =9°
+  105        -0.119            7.0      810   100         0.093        1.3   691
+  199        -0.'72           11.5      930   217         0.230        2.8   720
+  302        -0.203           15.3     1060   294         0.343        3.9   740
+  398        -0.218           18.1     1180   404         0.550        5.3   770
+  500        -0.226           20.6     1310   504         0.820        6.6   800
+( j3= 1.0)                w = 73°                           w = 16°
+  100        -0.127            7.1     750    100         0.079        2.3   695
+  198        -0.212           12.5     820    205         0.181        4.6   720
+  305        -0.280           17.4     896    300         0.297        6.6   735
+  404        -0.329           21.3     950    393         0.441        8.6   770
+  471        -0.357           23.7     990    499         0.665       11.0   800
+(a = 1.5)    60*
+               w =                                          co = 200
+   97        -0.093         6.5        730    120         0.081        3.4   700
+  207        -0.170        12.4        790    194         0.142        5.4   720
+  300        -0.221        16.8        835    307         0.256        8.4   750
+  402        -0.269        21.1        880    400         0.375       11.0   775
+  500        -0.307        24.8        920    492         0.534       13.4   800
+(p= 2.5)              w = 49°                               w+ = 250
+  103        -0.058         6.1        720    109         0.054        3.8   700
+  193        -0.096        10.8        760    215         0.120        7.3   730
+  295        -0.131        15.6        800    300         0.186       10.0   763
+  400        -0.160        20.1        836    400         0.283       13.2   780
+  506        -0.184        24.2        870    515         0.430   1   16.8   810
+(R = 5.0)                 w42°
+                           -=                              w30°
+                                                            +=
+   98        -0.024         5.2        71U     99         0.029        4.0   700
+  203        -0.040        10.3        750    196         0.068        7.7   730
+  292        -0.046        14.2        780    302         0.122       11.6   760
+  400        -0.049        19.0        815    4;4         0.196       15.5   790
+  496        -0.047   1    22.5        840    492     1   0.261       18.3   810
+
+
+
+
+                                                                                   11
+t
+
+
+
+
+                                  TABLE 1. ( Concluded)
+
+                                                              r,
+                        Z_                 RE        d+       `+                  RE
+
+         (a = 10.0)              w = 39°                       w+ = 32°                    t,
+
+
+
+           106         -0.009     5.3      710     100      0.018       4.4     702
+           200         -0.009     9.6      743     200      0.046       8.5     734
+           300         -0.002    13.8      775     300      0.083     12.3      764
+           4.3          0.011    17.9      804     396      0.128     15.9      790
+           497          0.030    21.6      830     513      0.201     20.2      820
+         ( j3= 25.0)             w-= 36°                       w+ = 340
+           111         0.0        5.4      710     100      0.011       4.6     704
+           199         0.008      9.2      740     210      0.033       9.2     740
+           296         0.023     13.2      770     311      0.062      13.2     770
+           401         0.048     17.4      800     400      0.096      16.6     794
+           500         0.079     21.2      826     499      0.143      20.3     820
+         P=   CO                W-= w+ = 350
+           100          0.005     4.7      705
+           204          0.020     9.2      740
+           303          0.042    13.2      770
+           400          0.072    17.0      797
+           500          0.112    20.8      823
+
+
+
+
+    specified by the luminosity distance, and vice-versa. Redshifts (and blueshifts)
+    at "large" (luminosity) distances are too weak to be seen, whereas those which
+    are closer are seen more easily by the observer.
+
+            The data in Figure 2 are based on a standard unit of one black-hole radius
+    for the scale of distance applied to values of d. The anisotropy of redshifts is
+    clearly apparent. Towards the location of the center of the black hole (w = 0°) ,
+    the observer sees the highest redshifts in his sky. There is a local clustering
+    of redshifts in the diametrically opposite directior. (w = 180 ) , but these are not
+    as great as the former. This axis (w = 0° and w = 180 0 ) forms the axis of
+    symmetry about which the rest of the figure can be rotated to form the observer's
+    celestial spheres of constant distance away.
+
+            No redshifts occur in the section of the sky corresponding to w between
+    35 0 and 1400 , and blueshifts achieve a maximum near the ring corresponding to
+    w = 73 0 in that region.
+
+    12
+ 0.0              S . 1 -0 If.l. . 11901
+
+
+
+
+                                                        up)
+
+
+
+                                                        j - 730)
+
+
+
+
+                                                        k- - 1040)
+
+
+
+
+ 0-0 fw--IIrjO)
+
+
+
+
+Figure 2. Red (blue) shifts at luminosity distance d.
+
+                                                                     13
+         AN EXOTIC APPLICATION: COSMOLOGICAL SCALING
+        Speculation about the universe as a black hole still has the status of
+folklore at this time, but this model is particularly adaptable to the examination   >
+of some of these ideas.
+
+         A spherical collapse of approximately one-tenth the mass of the universe
+at some early epoch would form a black hole whose horizon radius (= 2m) would
+be close to 1010 light years. The strength of the tidal forces within the horizon
+would then be near the normal forces experienced in a simple Friedmann model,
+at least in the region m < r < 2m. One does obtain a kind of cosmology with
+anisotropy if galaxies are the test particles. The time scale is quite large so
+that an observer needs to fall 10 8 years before appreciably changing his distance
+to the singularity at r = 0. His sky would contain a large number of redshifted
+objects, clustered about the two antipodal points of his celestial sphere
+(w = 0° and w = 180° ) . A large ring of bltleshifts would occur around w = 730.
+Fennellyi interprets certain observational data on redshift anisotropy to point
+toward a maximum Z and minimum Z at two antipodal points of the sky.
+
+       The most obvious weakness here is the lack of mechanisms in this model
+to account for well-known isotiapic phenomena, such as the microwave back-
+ground and the distribution of QSO's. Also, work on the mass spectrum of
+primordial black holes [5] suggests that such a large black hole would be
+merely a fantastic coincidence.
+
+
+
+
+1. Fennelly, A. J.: Private communication. To be published in Mon. Not. R.
+    A str. Soc. , 1977.
+
+
+
+
+14
+                                                                                   r
+
+
+                                  REFERENCES
+
+    1.   Carr, B. J., and Hawking, S. W.: Mon. Not. R. Astr. Soc. , vol. 168,
+.        1974, p. 399.
+
+    2.   Hawking, S. W.: Comm. Math. Phys. , vol. 43, 1975, p. 199.
+.
+    3.   Debney, G.: Man. Not. R. Astr. Soc., vol. 176, September 1976,
+         pp. 560-569.
+
+    4.   Kristian, J., and Sacks, R. K.: Astrophysical J. , vol. 143, 1966,
+         pp. 379-399.
+
+    5.   Carr, B. J.: Astrophysical J., vol. 201, 1975, pp. 1-19.
+
+
+
+
+                                                                              15
+                                                                                  ^ M
+
+
+
+
+                                        APPROVAL
+
+     TECHNIQUES OF GLOBAL ANALYSIS APPLIED TO GRAVITATION
+             'HEORIES: A COSMOLOGICAL BLACK HOLE?
+                                       By George Debney                                     I
+
+
+        The information in this report has been reviewed for security classifi-
+cation. Review of any information concerning Department of Defense or Atomic
+Energy Commission programs has been made by the MSFC Security Classifica-
+tion Officer. This report, in its entirety, has been determined to be unclassi-
+fied.
+
+          This document has also been reviewed and approved for technical
+accuracy.
+
+
+
+
+      u     41                    ,,
+EUG E W. URBAN
+Chie , Cryogenic Physics Branch
+
+
+
+
+RUDOLF DE HER
+Chief, Spac Physics Division                                                            I
+
+                  v/
+
+CHARLES A. LUNDQUIST
+Director, Space Sciences Laboratory
+
+
+
+
+16
+     *U.S. GOVERNMENT PRINTING OFFICE 1977-740-0491236 REGION NO. 4
+

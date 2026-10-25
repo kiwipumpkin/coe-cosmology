@@ -1,0 +1,38 @@
+{
+  "minmax": {
+    "A_hratio": [
+      0.9052319458734106,
+      1.2103354902879573
+    ],
+    "A_invsq": [
+      0.6689251805292447,
+      1.1958297041422334
+    ],
+    "B": [
+      0.8104015217213463,
+      1.197845635474059
+    ],
+    "frac": [
+      -0.2307402174066594,
+      0.02853464282635909
+    ]
+  },
+  "Q_P2_frac": 0.16011518056258214,
+  "A_dipole_frac": 0.00483895020757,
+  "A_x_moment_frac": 0.004838950207570006,
+  "ratio_A_over_Q": 0.030221682857102125,
+  "sine_diagnostic_variants": [
+    "sheet",
+    "local_density"
+  ],
+  "sine_disclaimer": "sheet sine rotation diagnostic \u2014 not derived from Gauss; not first-principles gravity",
+  "outputs": {
+    "npz": "/workspace/cosmology/fullsky_AB/fullsky_AB_maps.npz",
+    "metadata": "/workspace/cosmology/fullsky_AB/metadata.json",
+    "note": "/workspace/cosmology/fullsky_AB/NOTE.md",
+    "mollweide_model_physics": "/workspace/cosmology/fullsky_AB/mollweide_AB_model_frame.png",
+    "mollweide_sky_physics": "/workspace/cosmology/fullsky_AB/mollweide_AB_sky_frame.png",
+    "mollweide_sine_sheet": "/workspace/cosmology/fullsky_AB/mollweide_sine_sheet_DIAGNOSTIC.png",
+    "mollweide_sine_local_density": "/workspace/cosmology/fullsky_AB/mollweide_sine_local_density_DIAGNOSTIC.png"
+  }
+}

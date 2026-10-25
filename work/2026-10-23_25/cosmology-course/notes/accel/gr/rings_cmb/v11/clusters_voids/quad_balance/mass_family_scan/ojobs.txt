@@ -1,0 +1,7 @@
+outer 1
+outer 3
+outer 10
+outer 30
+slope 0
+slope -0.04
+slope -0.3

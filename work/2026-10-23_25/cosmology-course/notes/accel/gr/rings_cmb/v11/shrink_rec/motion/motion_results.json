@@ -1,0 +1,77 @@
+[
+ {
+  "case": "model only",
+  "motion_lb": null,
+  "amp_xPlanck": 1.7221636936093643,
+  "hot_lb": [
+   180.0,
+   -14.99673312218824
+  ],
+  "offset_from_Planck_hot_deg": 97.24099934568905,
+  "offset_from_CoE_deg": 0.003266877699904654
+ },
+ {
+  "case": "motion only (toward Planck hot)",
+  "amp_xPlanck": 1.0005285792419645,
+  "hot_lb": [
+   264.02,
+   48.24999999999999
+  ]
+ },
+ {
+  "case": "motion toward CoE (aligned)",
+  "motion_lb": [
+   180.0,
+   -14.999999999999998
+  ],
+  "amp_xPlanck": 2.7292825597489956,
+  "hot_lb": [
+   180.0,
+   -14.997201018547914
+  ],
+  "offset_from_Planck_hot_deg": 97.24134771127882,
+  "offset_from_CoE_deg": 0.0027989815003237216
+ },
+ {
+  "case": "motion away from CoE (opposite)",
+  "motion_lb": [
+   0.0,
+   14.999999999999998
+  ],
+  "amp_xPlanck": 0.7150428559987527,
+  "hot_lb": [
+   180.0,
+   -14.994947579882206
+  ],
+  "offset_from_Planck_hot_deg": 97.2396699435343,
+  "offset_from_CoE_deg": 0.005052420074283848
+ },
+ {
+  "case": "motion toward observed Planck dipole (264.02, +48.25)",
+  "motion_lb": [
+   264.02,
+   48.24999999999999
+  ],
+  "amp_xPlanck": 1.8770914236865264,
+  "hot_lb": [
+   200.87905578428348,
+   9.154083352532757
+  ],
+  "offset_from_Planck_hot_deg": 65.4364469146204,
+  "offset_from_CoE_deg": 31.806984734029943
+ },
+ {
+  "case": "motion chosen to minimise (2-angle fit)",
+  "motion_lb": [
+   0.0011066431179642677,
+   14.99953046743758
+  ],
+  "amp_xPlanck": 0.7150428554948669,
+  "hot_lb": [
+   179.9984565513593,
+   -14.99560236231133
+  ],
+  "offset_from_Planck_hot_deg": 97.24115274434878,
+  "offset_from_CoE_deg": 0.00464348115507837
+ }
+]

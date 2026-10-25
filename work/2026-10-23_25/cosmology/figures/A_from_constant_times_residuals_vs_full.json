@@ -1,0 +1,11 @@
+{
+  "png": "/workspace/cosmology/figures/A_from_constant_times_residuals_vs_full.png",
+  "pdf": "/workspace/cosmology/figures/A_from_constant_times_residuals_vs_full.pdf",
+  "F_rot": "A_rotated_smooth / AF_smooth (axisymmetric geometry \u2192 after rotation)",
+  "F_2ell": "A_after/A_before = 1 + eps*sin(2*ell+psi); eps=-0.043250215186672894, psi_deg=175.81002098938055",
+  "A_from_1": "1 * F_rot * F_2ell",
+  "A_fully_transformed": "A_after from best_fit_2ell_multiplier.npz (AF path after rotation and 2ell)",
+  "R2_after_rotation_stage": 0.7460715630358834,
+  "R2_fully_transformed": 0.8745872706697891,
+  "note": "Analytic Amp\u00d7sin (Amp1,phi1) is NOT used as F_rot here: that template does not equal A_rotated/AF on disk. F_rot is the actual rotation residual ratio from the axisymmetric path."
+}

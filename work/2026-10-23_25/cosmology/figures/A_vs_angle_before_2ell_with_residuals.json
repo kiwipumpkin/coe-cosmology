@@ -1,0 +1,10 @@
+{
+  "R2_before": 0.7460715630358834,
+  "RMSE_before": 0.03829379729268774,
+  "Amp1": -0.06,
+  "phi1": 0.295,
+  "source_npz": "/workspace/cosmology/map_compare/amp_mean_param_noise/best_fit_2ell_multiplier.npz",
+  "figure_path": "/workspace/cosmology/figures/A_vs_angle_before_2ell_with_residuals.png",
+  "figure_copy_path": "/workspace/cosmology/map_compare/amp_mean_param_noise/A_vs_angle_before_2ell_with_residuals.png",
+  "script_path": "/workspace/cosmology/figures/make_A_vs_angle_before_2ell_residuals.py"
+}

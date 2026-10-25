@@ -1,0 +1,25 @@
+In the concentric-shell geometry an observer between Rin and Rout sees an angular disk toward the CoE in
+which lines of sight hit the inner shell only, eclipsing the outer shell. For the illustrative ratios Rin = 1,
+Rout = 3, D = 1.8, the half-angle is α = arcsin(Rin /D) ≈ 33.7◦ . Outside that disk, rays strike the outer shell.
+This eclipse partition selects which emitting surface contributes along each direction and therefore enters the
+Doppler multipole that must cancel the gravitational kill.
+
+
+
+
+Figure 12: Inner-shell eclipse of the outer shell toward the CoE. Sky disk |θ| < α (and its 360◦ − α twin): lines of sight
+hit the inner shell only.
+
+
+3    Results
+Table 1 summarises the Newtonian and relativistic shell-plus-core fits to Migkas A(ℓ): Newtonian, Ωs free:
+D ≈ 93.7 Gpc, Ωs ≈ 1.01, ℓ0 ≈ 12.8◦ , R2 versus Migkas 0.909, R2 versus AF 0.987. Newtonian, Ωs = 0.049:
+D ≈ 49.2 Gpc, Ωs = 0.049, ℓ0 ≈ 13.0◦ , R2 versus Migkas 0.893, R2 versus AF 0.977. Relativistic LTB,
+Ωs = 0.049: D ≈ 32.9 Gpc, Ωs = 0.049, ℓ0 ≈ 13.5◦ , R2 versus Migkas 0.885, R2 versus AF 0.963.
+   For the Newtonian Ωs = 0.049 CoE+shell fit, the solved geometry matching Migkas A(ℓ) is
+
+                D ≈ 49.17 Gpc,      Rin ≈ 34.48 Gpc,     Rout ≈ 70.27 Gpc,      Ωs = 0.049,    ℓ0 = 13◦ .
+
+
+                                                           14
+

@@ -1,0 +1,81 @@
+{
+  "created_local": "2026-09-18 06:33 PM CDT (UTC-0500)",
+  "families": [
+    "conenative",
+    "angle"
+  ],
+  "n_samp": 64,
+  "theta_deg": 75.0,
+  "baseline": {
+    "x": 5.9,
+    "f_u": 0.94,
+    "alpha": 1.0,
+    "eps": 0.1
+  },
+  "kappa": 0.23058828928336284,
+  "sigma_u_frac_primary": 0.05,
+  "sigma_d_rel_primary": 0.15,
+  "legacy": {
+    "vs_conenative_baseline_max_abs": 0.07337821316249427,
+    "vs_ref_max_abs": 1.6887814513255606e-05,
+    "conenative_vs_ref_max_abs": 0.07337817724485918,
+    "vs_angle_baseline_max_abs": 0.29684579876744777
+  },
+  "spans_conenative": {
+    "baseline": [
+      0.8878561856317553,
+      1.0825607385808798
+    ],
+    "vel_s05": [
+      0.8926111413822966,
+      1.0836889375084453
+    ],
+    "vel_s10": [
+      0.8775922814344694,
+      1.078887862032741
+    ],
+    "dist_s15": [
+      0.8881772148244441,
+      1.082756355869963
+    ],
+    "dist_s25": [
+      0.8877481273504622,
+      1.0830391047216774
+    ],
+    "both_s05_s15": [
+      0.8941356263153446,
+      1.086023664667004
+    ]
+  },
+  "spans_angle": {
+    "baseline": [
+      0.6520991428452252,
+      1.165749982756694
+    ],
+    "vel_s05": [
+      0.5417571116884101,
+      1.2639079627574747
+    ],
+    "vel_s10": [
+      0.45319533119444955,
+      1.6585995187533797
+    ],
+    "dist_s15": [
+      0.6494588953092442,
+      1.1662768876125846
+    ],
+    "dist_s25": [
+      0.6422205604367742,
+      1.1659660170220814
+    ],
+    "both_s05_s15": [
+      0.5551179262280332,
+      1.2618247827233184
+    ]
+  },
+  "strip_conenative": "/workspace/cosmology/map_compare/cone_param_noise/STRIP_conenative_baseline_vel_dist_both_invsq.png",
+  "strip_angle": "/workspace/cosmology/map_compare/cone_param_noise/STRIP_angle_baseline_vel_dist_both_invsq.png",
+  "grid": "/workspace/cosmology/map_compare/cone_param_noise/GRID_conenative_vs_angle_invsq.png",
+  "npz": "/workspace/cosmology/map_compare/cone_param_noise/cone_param_noise_maps.npz",
+  "elapsed_s": 4.34
+}

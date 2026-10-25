@@ -1,0 +1,99 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,graphicx}
+\pagestyle{empty}
+\begin{document}
+\section*{Harmonic fit of Migkas $A(\ell)$ set equal to the Sedov--Taylor + Gauss tidal model}
+
+\paragraph{Notation.} $r$: radius of our vision shell (horizon), centred on us, $r\simeq14.3$ Gpc $\simeq46.5$ Gly comoving.
+$D$: our distance from the CoE ($D\neq r$). $d$: source (cluster) depth from us. $R$: distance from the CoE; $R_S$ for a source.
+$L$: density scale length. $\kappa\equiv GM(<D)/(H_0^2D^3)=M(<D)/[2M_{\rm crit}(<D)]$ (definition used in the numerical model; uniform $\Omega_m$ gives $\kappa=\Omega_m/2$).
+
+\paragraph{Model.} Let $\vec D$ point from the CoE to us, so $\hat D$ is the anti-CoE axis $(\ell_0,b_0)$, and let $\mu=\hat n\cdot\hat D=\cos\theta$ for line of sight $\hat n$.
+A source at $\vec R_S=\vec D+d\,\hat n$ has (law of cosines) $R_S^2=D^2+d^2+2Dd\,\mu$. For a point-mass ($1/R^2$) field the peculiar velocity is $\vec u=-k\vec R/R^3$, and
+$\delta H=(\vec u_S-\vec u_O)\cdot\hat n/d=(k/D^3)\left[(3\mu^2-1)+\tfrac{d}{D}\left(\tfrac92\mu-\tfrac{15}{2}\mu^3\right)+O(d^2/D^2)\right]$
+(checked numerically: next-order coefficients $4.5000,\,-7.5000$), hence
+\begin{equation}
+\frac{A}{A_{\rm all}} = N\left[1+\alpha\kappa\,(3\mu^2-1)+\alpha\kappa\,\frac{d}{D}\left(\tfrac92\mu-\tfrac{15}{2}\mu^3\right)\right].
+\end{equation}
+In the Galactic plane, $\mu=c\cos x$ with $c\equiv\cos b_0$, $x\equiv\ell-\ell_0$. Using
+$\cos^2x=\tfrac12(1+\cos2x)$ and $\cos^3x=\tfrac14(3\cos x+\cos3x)$, and the $90^\circ$ sector window
+$W_m=\dfrac{\sin(m\pi/4)}{m\pi/4}$ ($W_1=0.900,\ W_2=0.637,\ W_3=0.300$):
+\begin{align}
+\frac{A}{A_{\rm all}} ={}& N\left[1+\alpha\kappa\left(\tfrac32c^2-1\right)\right]
++ N\alpha\kappa\,\frac{d}{D}\,c\left(\tfrac92-\tfrac{45}{8}c^2\right)W_1\cos x \nonumber\\
+&+ N\alpha\kappa\,\tfrac32c^2\,W_2\cos2x
+- N\alpha\kappa\,\frac{d}{D}\,\tfrac{15}{8}c^3\,W_3\cos3x .
+\end{align}
+
+\paragraph{Data.} Linear least squares to the 71 digitized points of Migkas et al.\ (2020), Fig.~6:
+\begin{equation}
+\frac{A}{A_{\rm all}} = 0.9965 + 0.0296\cos\ell + 0.0434\sin\ell + 0.0636\cos2\ell + 0.0366\sin2\ell - 0.0299\cos3\ell - 0.0114\sin3\ell,
+\end{equation}
+$R^2=0.915$ (dipole+quadrupole only: $R^2=0.814$). Quadrupole phase: $\ell_2=15.0^\circ$.
+
+\paragraph{Term-by-term equality} (data coefficient of $\cos m(\ell-15^\circ)$):
+\begin{align}
+m=0:&\quad 0.9965 = N\left[1+\alpha\kappa\left(\tfrac32c^2-1\right)\right]\\
+m=1:&\quad +0.0398 = N\alpha\kappa\,\frac{d}{D}\,c\left(\tfrac92-\tfrac{45}{8}c^2\right)W_1\\
+m=2:&\quad +0.0733 = N\alpha\kappa\,\tfrac32c^2\,W_2\\
+m=3:&\quad -0.0292 = -N\alpha\kappa\,\frac{d}{D}\,\tfrac{15}{8}c^3\,W_3
+\end{align}
+
+\paragraph{Manipulations.}
+\begin{align}
+\frac{m=1}{m=3}:&\quad \frac{\left(\tfrac92-\tfrac{45}{8}c^2\right)W_1}{-\tfrac{15}{8}c^2W_3}=\frac{0.0398}{-0.0292}
+\;\Rightarrow\; c^2=0.695,\ |b_0|=33.5^\circ\\
+\frac{m=3}{m=2}:&\quad \frac{0.0292}{0.0733}=\tfrac54\,c\,\frac{W_3}{W_2}\,\frac{d}{D}
+\;\Rightarrow\; \frac{d}{D}=0.81\\
+m=2:&\quad N\alpha\kappa=\frac{0.0733}{\tfrac32c^2W_2}=0.1105\\
+m=0:&\quad N=0.9918,\qquad \alpha\kappa=0.111
+\end{align}
+
+\paragraph{Solution.} $\ell_0=15.0^\circ$, $|b_0|=33.5^\circ$, $d/D=0.81$, $\alpha\kappa=0.111$, $N=0.992$;
+all four equations are satisfied exactly; $R^2=0.780$ against the 71 points.
+The components perpendicular to the axis (coefficients of $\sin m(\ell-15^\circ)$: $+0.0342,\,-0.0001,\,+0.0131$)
+cannot be produced by any axisymmetric model; the dipole direction $\ell_1=56^\circ$ is $41^\circ$ off axis.
+
+
+\paragraph{Physical solution: $d$, $D$, $r$, $M$, $L$.}
+The fit fixes ratios; the scale comes from the Migkas sample, median heliocentric redshift
+$z=0.075$ (Migkas et al.\ 2020, Sect.~2), with $H_0=70\ \mathrm{km\,s^{-1}\,Mpc^{-1}}$:
+\begin{align}
+d &\simeq \frac{cz}{H_0}=\frac{(2.998\times10^5)(0.075)}{70}\ \mathrm{Mpc}= 321\ \mathrm{Mpc}\approx 1.05\ \mathrm{Gly}\\
+D &= \frac{d}{d/D}=\frac{321\ \mathrm{Mpc}}{0.81\ (\text{analytic})\text{--}0.76\ (\text{full})}\approx 396\text{--}423\ \mathrm{Mpc}\approx 1.29\text{--}1.38\ \mathrm{Gly}\\
+r &\simeq 14.3\ \mathrm{Gpc}\approx 46.5\ \mathrm{Gly}\ \ (\text{vision shell, centred on us}),\quad \frac{D}{r}\approx\frac{0.396\text{--}0.423}{14.3}\approx 0.03\\
+M(<D) &= 2\kappa\,\tfrac{4\pi}{3}\,\rho_{\rm crit}\,D^3,\qquad \rho_{\rm crit}=\frac{3H_0^2}{8\pi G}=2.775\times10^{11}h^2=1.36\times10^{11}\,M_\odot\,\mathrm{Mpc^{-3}}\nonumber\\
+&= (0.90\text{--}0.94)\times(3.5\text{--}4.3)\times10^{19}\,M_\odot\approx(3.2\text{--}4.1)\times10^{19}\,M_\odot\quad(\kappa=0.45\text{--}0.47).
+\end{align}
+The density scale length of the exponential core, $\rho(R)=\rho_c\,e^{-R/L}+\rho_u$ ($R$ measured from the CoE; uniform-floor fraction $f_u=0.94$, local match $\rho(D)=0.3\rho_{\rm crit}$ before the fit rescales the mass by $\kappa/\kappa_{\rm base}=0.458/0.385=1.19$, i.e.\ $\rho(D)\approx0.36\rho_{\rm crit}$ at the best fit), follows from the full-model $D/L=7.62$:
+\begin{equation}
+L=\frac{D}{D/L}=\frac{396\text{--}423}{7.62}\ \mathrm{Mpc}\approx 52\text{--}56\ \mathrm{Mpc}\approx 170\text{--}180\ \mathrm{Mly}.
+\end{equation}
+$L$ is degenerate with $\kappa$ along the ridge $D/L\approx6$--$9$ ($\kappa\approx0.7$--$0.3$), i.e.\ $L\approx44$--$71$ Mpc; the analytic solve does not fix $L$.
+Here $\kappa\approx0.45$ is from the full numerical model at $b_0=0^\circ$ (the analytic solve fixes only $\alpha\kappa=0.111$).
+CoE direction: $\ell\approx195^\circ$, $|b|\lesssim15^\circ$ ($b_0=0^\circ$ and $15^\circ$ fit equally well; sign of $b$ not fixed by $A(\ell)$).
+For comparison, $\Omega_m=0.3$ within the same radius gives $(1.1\text{--}1.3)\times10^{19}\,M_\odot$, so
+$M(<D)=2\kappa/0.3\approx3\times$ the $\Lambda$CDM mean ($\bar\rho(<D)\approx0.92\rho_{\rm crit}$).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{geometry_D_r_d.pdf}
+\caption{Geometry. (a) To scale with the fitted numbers ($d=321$ Mpc, $d/D=0.76$, $D=423$ Mpc, $r=14\,300$ Mpc): the CoE, O and S all sit in a box $\sim$2\% of the shell radius. (b) The configuration the model intends, CoE beyond the horizon ($D>r$), not to scale. $R_S^2=D^2+d^2+2Dd\cos\theta$, $\theta$ measured from the anti-CoE axis.}
+\end{figure}
+
+\paragraph{Implication (read literally).} With $d$ = cluster depth, $d/D\approx0.76$--$0.81$ gives $D\approx400$ Mpc $\ll r\approx14\,300$ Mpc ($D/r\approx0.03$): the CoE would be \emph{inside} our vision shell, at $z\approx0.1$.
+This conflicts with a CoE beyond the horizon. Conversely, $D>r$ with $d=321$ Mpc forces $d/D<0.022$; then the $m=3$ term ($\propto d/D$) would be $\approx-0.0008$, not the measured $-0.029$,
+and keeping $d/D\approx0.8$ with $D>r$ would need $d\gtrsim11$ Gpc, far beyond the clusters.
+So either the CoE is at $D\approx0.4$ Gpc, or the fitted $d/D$ is an effective shape parameter (it sets the $m=3$/$m=2$ ratio) and is \emph{not} the cluster-depth-to-CoE-distance ratio; in that case $D$, $M(<D)$ and $L$ above are not physical values.
+A single effective depth is used; the sample spans $z=0.003$--$0.45$, and a per-cluster-redshift calculation could shift $D$.
+
+\paragraph{Caveats.}
+(i) The tidal form is first order in $d/D$, and the solution has $d/D\approx0.8$.
+The full numerical model (all orders) gives a positive in-plane dipole at $b_0=0^\circ$--$15^\circ$ and
+re-optimized $R^2=0.776\ (0^\circ),\ 0.777\ (15^\circ),\ 0.752\ (33.5^\circ)$, so $|b_0|=33.5^\circ$ is an
+artifact of truncation; $b_0=0^\circ$--$15^\circ$ is not resolved. Full model at $b_0=0^\circ$: $\kappa\approx0.45$--$0.46$, $d/D\approx0.76$, $D/L\approx7.6$, $\ell_0\approx14.4^\circ$;
+at $b_0=15^\circ$: $\kappa\approx0.27$, $d/D\approx0.74$, $D/L\approx11.3$ ($d/D=0.79$ is the first-order analytic free fit, not the full model).
+At $d/D=0.76$ the two-term series is poor near $\mu=-1$ (point mass: exact $21.5$ vs series $4.3$ in units of $k/D^3$).
+(ii) The coefficients $\tfrac92,\tfrac{15}{2}$ are point-mass values. (iii) The 71 sector points overlap and are not independent.
+\end{document}

@@ -1,0 +1,63 @@
+{
+  "time_local": "2026-09-18 ~10:52 AM CDT",
+  "steering": "skipped duplicate letter Doc; polished R2 panels",
+  "letter": {
+    "local": "/workspace/cosmology/letter_cp_shot.md",
+    "word_count_approx": 1188,
+    "drive_fileId": "1FIJWQ4_XevvkCwXYsw2Zhuyv2zxR3-DTwJjJfDZFG-E",
+    "drive_url": "https://docs.google.com/document/d/1FIJWQ4_XevvkCwXYsw2Zhuyv2zxR3-DTwJjJfDZFG-E/edit",
+    "note": "existing Doc used; no duplicate created"
+  },
+  "r2_polish": {
+    "A_R2_before": 0.402,
+    "A_R2_prior_280": 0.502,
+    "A_R2_best": 0.536,
+    "A_best_phi0_deg": 103.5,
+    "B_R2_best": 0.058,
+    "actions": [
+      "added \u03c60=280 prior markers to migkas_r2_vs_rotation.png",
+      "created letter-ready 2\u00d72 migkas_r2_letter_panels.png",
+      "patched migkas_r2_rotation_fit.py for regenerable polish",
+      "updated local letter figure list only"
+    ]
+  },
+  "figures_for_letter": [
+    {
+      "fig": 1,
+      "file": "geometry.png",
+      "local": "/workspace/cosmology/figures/geometry.png"
+    },
+    {
+      "fig": 2,
+      "file": "migkas_r2_letter_panels.png",
+      "local": "/workspace/cosmology/figures/migkas_r2_letter_panels.png",
+      "drive_id": "1V6rLCxGkkgIBGnXo5guYFk90i2wuG9XC",
+      "drive_url": "https://drive.google.com/file/d/1V6rLCxGkkgIBGnXo5guYFk90i2wuG9XC/view"
+    },
+    {
+      "fig": 3,
+      "file": "migkas_r2_vs_rotation.png (polished)",
+      "local": "/workspace/cosmology/figures/migkas_r2_vs_rotation.png",
+      "drive_id": "1uieTp24GB3_dweVZYQJXLCYa8w1idsDM",
+      "drive_url": "https://drive.google.com/file/d/1uieTp24GB3_dweVZYQJXLCYa8w1idsDM/view"
+    },
+    {
+      "fig": "optional",
+      "file": "density_mass.png or sky_mollweide.png"
+    }
+  ],
+  "uploads": [
+    {
+      "name": "migkas_r2_letter_panels.png",
+      "id": "1V6rLCxGkkgIBGnXo5guYFk90i2wuG9XC"
+    },
+    {
+      "name": "migkas_r2_vs_rotation_polished.png",
+      "id": "1uieTp24GB3_dweVZYQJXLCYa8w1idsDM"
+    },
+    {
+      "name": "migkas_r2_letter_panels.pdf",
+      "id": "1Ttu4rS0GKCyQs36dE9xMqossXo9FKJdf"
+    }
+  ]
+}

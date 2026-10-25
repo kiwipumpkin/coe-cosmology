@@ -1,0 +1,74 @@
+{
+ "formula": "A/A_all = a_f / <a_f>, no sine, no extra multipoles",
+ "frozen": {
+  "ell0_deg": 15.1629523788697,
+  "mcc": 0.0017121308626185587,
+  "Omega_s": 0.049,
+  "R_in_Gpc": 0.5,
+  "R_out_today_Gpc": 72.83442650308822
+ },
+ "D_and_R_source": "/workspace/cosmology-course/notes/universe-storyboard.json",
+ "skipped_crossing": {
+  "t_after_Gyr": 0.0,
+  "D_Gpc": 2.5,
+  "R_Gpc": 0.0,
+  "note": "R=0, no profile. Integrator divides by R/D, so the crossing is not plotted."
+ },
+ "D_minus_R_below_Rin_any": false,
+ "epochs": [
+  {
+   "t_after_Gyr": 0.4,
+   "D_Gpc": 3.598989828122194,
+   "R_Gpc": 0.0934640522875817,
+   "A_pp": 0.15487024343126377,
+   "D_minus_R_Gpc": 3.505525775834612,
+   "R_out_Gpc": 3.6924538804097757,
+   "D_minus_R_below_Rin": false
+  },
+  {
+   "t_after_Gyr": 1.1,
+   "D_Gpc": 5.20020955762976,
+   "R_Gpc": 0.2570261437908497,
+   "A_pp": 0.1582297868488689,
+   "D_minus_R_Gpc": 4.94318341383891,
+   "R_out_Gpc": 5.45723570142061,
+   "D_minus_R_below_Rin": false
+  },
+  {
+   "t_after_Gyr": 5.0,
+   "D_Gpc": 11.674193059614852,
+   "R_Gpc": 1.1683006535947713,
+   "A_pp": 0.16524017442945516,
+   "D_minus_R_Gpc": 10.505892406020081,
+   "R_out_Gpc": 12.842493713209624,
+   "D_minus_R_below_Rin": false
+  },
+  {
+   "t_after_Gyr": 10.0,
+   "D_Gpc": 17.914300520731636,
+   "R_Gpc": 2.3366013071895426,
+   "A_pp": 0.16963978384617595,
+   "D_minus_R_Gpc": 15.577699213542093,
+   "R_out_Gpc": 20.25090182792118,
+   "D_minus_R_below_Rin": false
+  },
+  {
+   "t_after_Gyr": 30.0,
+   "D_Gpc": 36.39477387442148,
+   "R_Gpc": 7.009803921568627,
+   "A_pp": 0.17977965570242682,
+   "D_minus_R_Gpc": 29.384969952852856,
+   "R_out_Gpc": 43.40457779599011,
+   "D_minus_R_below_Rin": false
+  },
+  {
+   "t_after_Gyr": 61.2,
+   "D_Gpc": 58.18211757621444,
+   "R_Gpc": 14.3,
+   "A_pp": 0.1900534623517044,
+   "D_minus_R_Gpc": 43.88211757621444,
+   "R_out_Gpc": 72.83442650308822,
+   "D_minus_R_below_Rin": false
+  }
+ ]
+}

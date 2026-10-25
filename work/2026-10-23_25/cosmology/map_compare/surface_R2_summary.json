@@ -1,0 +1,29 @@
+{
+  "direction": {
+    "ours": [
+      275,
+      -15
+    ],
+    "migkas": [
+      280,
+      -20
+    ],
+    "d_l_deg": -5,
+    "d_b_deg": 5,
+    "angular_sep_deg": 6.907919542763682
+  },
+  "R2_pearson_sheet": 0.32564127244406915,
+  "R2_affine_sheet": 0.3256412724440696,
+  "affine": {
+    "a": 1.650004523761423,
+    "b": -0.6426854496013279
+  },
+  "R2_pearson_physics": 0.16152170747036373,
+  "R2_affine_physics": 0.16152170747036376,
+  "n_points": 1755,
+  "migkas_digitized_range": [
+    0.85,
+    1.2
+  ],
+  "caveat": "Migkas surface from colorbar digitization of Fig.8 PNG; projection mapping approximate"
+}

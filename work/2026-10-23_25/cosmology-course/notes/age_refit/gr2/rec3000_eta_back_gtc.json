@@ -1,0 +1,1155 @@
+{
+ "tag": "eta_back_gtc",
+ "chi2": 14.619114957917072,
+ "sigma": 3.786825482983977,
+ "l0": 18.589896284716662,
+ "Uo_c": 1.000000035304858,
+ "D_Gpc": 4.543637107881525,
+ "age_obs_Gyr": 14.819284546528486,
+ "interior_r0_max": 0.0,
+ "status_counts": {
+  "integrator_stop": 60
+ },
+ "rows": [
+  {
+   "ell": 0.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 6.137645197320273,
+   "flight_Gyr": 8.681639349208213,
+   "r0_e": 7.455430460582983,
+   "R_e_over_D": 1.1506752357228027,
+   "phi_e_deg": 0.0,
+   "U_e": 10.749285663960151,
+   "diag": {
+    "W2": 116.54714143221366,
+    "A": 3.51895874882594e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.10704736136047932
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 6.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 6.134764402598876,
+   "flight_Gyr": 8.68452014392961,
+   "r0_e": 7.44190606844134,
+   "R_e_over_D": 1.1485878841401582,
+   "phi_e_deg": 1.8983886296127024,
+   "U_e": 10.726226851790184,
+   "diag": {
+    "W2": 116.05194162130863,
+    "A": 5.094967671428209e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.1070828835899322
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 12.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 6.126093280327942,
+   "flight_Gyr": 8.693191266200543,
+   "r0_e": 7.4013728936184515,
+   "R_e_over_D": 1.1423319797265912,
+   "phi_e_deg": 3.806481583180268,
+   "U_e": 10.657164519235323,
+   "diag": {
+    "W2": 114.5751547306111,
+    "A": 6.366142203958616e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.10718980204442757
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 18.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 6.111545165795898,
+   "flight_Gyr": 8.707739380732587,
+   "r0_e": 7.333952946314695,
+   "R_e_over_D": 1.1319263201254317,
+   "phi_e_deg": 5.73417523824024,
+   "U_e": 10.54244439166582,
+   "diag": {
+    "W2": 112.14313288402826,
+    "A": 2.2630498319907487e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.10736918157187092
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 24.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 6.090974051273843,
+   "flight_Gyr": 8.728310495254643,
+   "r0_e": 7.239855889073463,
+   "R_e_over_D": 1.1174033475251977,
+   "phi_e_deg": 7.691757843562201,
+   "U_e": 10.382653368557492,
+   "diag": {
+    "W2": 108.79949009300755,
+    "A": 5.320683939250035e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.10762283173655914
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 30.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 6.064172283413755,
+   "flight_Gyr": 8.75511226311473,
+   "r0_e": 7.119391931533004,
+   "R_e_over_D": 1.0988108646543302,
+   "phi_e_deg": 9.6901252499011,
+   "U_e": 10.178641167248633,
+   "diag": {
+    "W2": 104.60473511813137,
+    "A": 4.016279366232872e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.10795330449024236
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 36.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 6.030867234845458,
+   "flight_Gyr": 8.788417311683027,
+   "r0_e": 6.97298540385982,
+   "R_e_over_D": 1.0762143832665307,
+   "phi_e_deg": 11.741021934736132,
+   "U_e": 9.93154255921241,
+   "diag": {
+    "W2": 99.63553669321044,
+    "A": 1.3038240114242895e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.10836396360814658
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 42.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.990717002748653,
+   "flight_Gyr": 8.828567543779833,
+   "r0_e": 6.801194923284565,
+   "R_e_over_D": 1.0497001523126697,
+   "phi_e_deg": 13.85731820652323,
+   "U_e": 9.642809797032193,
+   "diag": {
+    "W2": 93.98377984646103,
+    "A": 2.551677810468901e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.10885902860579985
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 48.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.943305108090968,
+   "flight_Gyr": 8.875979438437518,
+   "r0_e": 6.604737605348242,
+   "R_e_over_D": 1.0193788373339454,
+   "phi_e_deg": 16.053336951164177,
+   "U_e": 9.314250257036665,
+   "diag": {
+    "W2": 87.75525688760878,
+    "A": 5.795716942983868e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.1094436331849572
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 54.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.888134190402167,
+   "flight_Gyr": 8.931150356126318,
+   "r0_e": 6.384516615472102,
+   "R_e_over_D": 0.9853898018841051,
+   "phi_e_deg": 18.345246801749372,
+   "U_e": 8.948067321955614,
+   "diag": {
+    "W2": 81.06790780193097,
+    "A": 4.98149368332441e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11012390588688449
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 60.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.824618787077178,
+   "flight_Gyr": 8.99466575945131,
+   "r0_e": 6.141651961489191,
+   "R_e_over_D": 0.9479059398070402,
+   "phi_e_deg": 20.751543135443374,
+   "U_e": 8.546903382207951,
+   "diag": {
+    "W2": 74.04955638908048,
+    "A": 6.094547497878319e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11090706950857544
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 66.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.752077407964429,
+   "flight_Gyr": 9.067207138564056,
+   "r0_e": 5.877515545418884,
+   "R_e_over_D": 0.9071389742178606,
+   "phi_e_deg": 23.293644718792287,
+   "U_e": 8.113885453379732,
+   "diag": {
+    "W2": 66.83513606830468,
+    "A": 5.550501535356696e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11180152460411891
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 72.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.669724328833703,
+   "flight_Gyr": 9.149560217694784,
+   "r0_e": 5.593767293021271,
+   "R_e_over_D": 0.8633450924291322,
+   "phi_e_deg": 25.99664194621394,
+   "U_e": 7.652666738370784,
+   "diag": {
+    "W2": 59.56330707140535,
+    "A": 9.835378969236233e-11,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.1128169579960653
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 78.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.576661961931524,
+   "flight_Gyr": 9.24262258459696,
+   "r0_e": 5.292392629988883,
+   "R_e_over_D": 0.8168307583564752,
+   "phi_e_deg": 28.890243129986576,
+   "U_e": 7.167463055603851,
+   "diag": {
+    "W2": 52.372525451529384,
+    "A": 8.836750943594386e-11,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11396444177478625
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 84.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.471875316782708,
+   "flight_Gyr": 9.347409229745777,
+   "r0_e": 4.975740312575884,
+   "R_e_over_D": 0.7679584651538972,
+   "phi_e_deg": 32.00997839464559,
+   "U_e": 6.663080757591999,
+   "diag": {
+    "W2": 45.396643903787,
+    "A": 1.8748743243457353e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11525648851619645
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 90.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.354231411277282,
+   "flight_Gyr": 9.465053135251203,
+   "r0_e": 4.6465574209454505,
+   "R_e_over_D": 0.7171521972469536,
+   "phi_e_deg": 35.39873419659945,
+   "U_e": 6.144929160997011,
+   "diag": {
+    "W2": 38.76015302469767,
+    "A": 4.0362499609616617e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11670706741496856
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 96.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.22248853075228,
+   "flight_Gyr": 9.596796015776206,
+   "r0_e": 4.30802078812772,
+   "R_e_over_D": 0.6649022680620672,
+   "phi_e_deg": 39.10870344510206,
+   "U_e": 5.619014551882908,
+   "diag": {
+    "W2": 32.573323057720245,
+    "A": 7.736552823167346e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11833148810710421
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 102.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.0753239536304475,
+   "flight_Gyr": 9.743960592898038,
+   "r0_e": 3.963762225551081,
+   "R_e_over_D": 0.6117691897029831,
+   "phi_e_deg": 43.20383502384669,
+   "U_e": 5.09190991184456,
+   "diag": {
+    "W2": 26.927544945548505,
+    "A": 4.5178282166410777e-11,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.12014605313279558
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 108.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 4.911394880091034,
+   "flight_Gyr": 9.907889666437452,
+   "r0_e": 3.617884161973358,
+   "R_e_over_D": 0.558386168875759,
+   "phi_e_deg": 47.76282945451906,
+   "U_e": 4.570693891956017,
+   "diag": {
+    "W2": 21.89124089574977,
+    "A": 3.712246560477399e-11,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.12216732451002386
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 114.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 4.72945703413084,
+   "flight_Gyr": 10.089827512397648,
+   "r0_e": 3.274963937517401,
+   "R_e_over_D": 0.5054596650153972,
+   "phi_e_deg": 52.88260343933667,
+   "U_e": 4.062855983026205,
+   "diag": {
+    "W2": 17.506796796495564,
+    "A": 5.728626252407692e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.12441063846953072
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 120.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 4.528579870984438,
+   "flight_Gyr": 10.290704675544047,
+   "r0_e": 2.940038702765096,
+   "R_e_over_D": 0.45376710078400845,
+   "phi_e_deg": 58.681830420871144,
+   "U_e": 3.5761571287396325,
+   "diag": {
+    "W2": 13.788897645852854,
+    "A": 7.555813368109671e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.12688745776661564
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 126.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 4.308514788891491,
+   "flight_Gyr": 10.510769757636995,
+   "r0_e": 2.618560200554611,
+   "R_e_over_D": 0.4041499011916941,
+   "phi_e_deg": 65.30347639434471,
+   "U_e": 3.1184351667922976,
+   "diag": {
+    "W2": 10.72463546028297,
+    "A": 5.457647616206218e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.12960083509576847
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 132.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 4.070283157032068,
+   "flight_Gyr": 10.749001389496419,
+   "r0_e": 2.3162952998574178,
+   "R_e_over_D": 0.3574981347072447,
+   "phi_e_deg": 72.9139550304918,
+   "U_e": 2.697332688334051,
+   "diag": {
+    "W2": 8.275600885352176,
+    "A": 1.3846200757269168e-09,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.13253815980314249
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 138.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 3.8170229901966533,
+   "flight_Gyr": 11.002261556331833,
+   "r0_e": 2.0391273193413646,
+   "R_e_over_D": 0.31471981541321575,
+   "phi_e_deg": 81.6945959803608,
+   "U_e": 2.3199099925406146,
+   "diag": {
+    "W2": 6.381979254008651,
+    "A": 5.260850640313827e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.13566070066367356
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 144.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 3.555004962722403,
+   "flight_Gyr": 11.264279583806083,
+   "r0_e": 1.7926928009461185,
+   "R_e_over_D": 0.2766848998792547,
+   "phi_e_deg": 91.81955657077204,
+   "U_e": 1.9921006865769286,
+   "diag": {
+    "W2": 4.96846159715485,
+    "A": 5.083066605658786e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.13889110135259505
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 150.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 3.2944468959685365,
+   "flight_Gyr": 11.52483765055995,
+   "r0_e": 1.5818119620079183,
+   "R_e_over_D": 0.24413733550068495,
+   "phi_e_deg": 103.41640032294843,
+   "U_e": 1.7180230322742842,
+   "diag": {
+    "W2": 3.95159911807142,
+    "A": 6.543392068539143e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.14210332440952886
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 156.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 3.049439431068973,
+   "flight_Gyr": 11.769845115459512,
+   "r0_e": 1.4097989768090344,
+   "R_e_over_D": 0.21758863342167237,
+   "phi_e_deg": 116.51582108665178,
+   "U_e": 1.4993241577685865,
+   "diag": {
+    "W2": 3.2479684180564585,
+    "A": 2.0723088394820455e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.145123602074604
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 162.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 2.836392182985931,
+   "flight_Gyr": 11.982892363542554,
+   "r0_e": 1.2779692646818703,
+   "R_e_over_D": 0.19724182918004254,
+   "phi_e_deg": 131.01275110600193,
+   "U_e": 1.3349593206469843,
+   "diag": {
+    "W2": 2.7821114103262383,
+    "A": 2.2636916332588285e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.147749642688799
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 168.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 2.671272410331711,
+   "flight_Gyr": 12.148012136196774,
+   "r0_e": 1.1857511647054566,
+   "R_e_over_D": 0.18300871156882395,
+   "phi_e_deg": 146.6643418681299,
+   "U_e": 1.2217935078035538,
+   "diag": {
+    "W2": 2.49277401114372,
+    "A": 2.6589893966417735e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.1497847090078458
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 174.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 2.566867828180724,
+   "flight_Gyr": 12.252416718347762,
+   "r0_e": 1.1314994936593756,
+   "R_e_over_D": 0.1746353881400444,
+   "phi_e_deg": 163.1271054788182,
+   "U_e": 1.1559584396812037,
+   "diag": {
+    "W2": 2.336234292485635,
+    "A": 1.4018469033650504e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.15107135306235733
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 180.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.6685568804073165,
+   "flight_Gyr": 9.15072766612117,
+   "r0_e": 0.0062016786608677515,
+   "R_e_over_D": 3.625261870141538e-05,
+   "phi_e_deg": 8.053963159829338e-11,
+   "U_e": 0.16409957388840277,
+   "diag": {
+    "W2": 0.9998475222157573,
+    "A": 19.286997358851586,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.0001471135234519571
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 186.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 2.5668678273667354,
+   "flight_Gyr": 12.252416719161749,
+   "r0_e": 1.131499493807179,
+   "R_e_over_D": 0.1746353880765505,
+   "phi_e_deg": -163.12710549652573,
+   "U_e": 1.1559584398597937,
+   "diag": {
+    "W2": 2.3362342928985185,
+    "A": 8.000236762157321e-11,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.15107135298409075
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 192.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 2.671272409781696,
+   "flight_Gyr": 12.14801213674679,
+   "r0_e": 1.1857511646542862,
+   "R_e_over_D": 0.18300871152347647,
+   "phi_e_deg": -146.66434188073288,
+   "U_e": 1.2217935077411946,
+   "diag": {
+    "W2": 2.4927740109913383,
+    "A": 2.415106622497219e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.14978470897837468
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 198.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 2.8363921833807892,
+   "flight_Gyr": 11.982892363147696,
+   "r0_e": 1.2779692625988286,
+   "R_e_over_D": 0.19724182921561004,
+   "phi_e_deg": -131.01275111867076,
+   "U_e": 1.3349593180734558,
+   "diag": {
+    "W2": 2.782111403455127,
+    "A": 4.281938428126503e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.14774964300026444
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 204.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 3.0494394310133885,
+   "flight_Gyr": 11.769845115515096,
+   "r0_e": 1.4097989772452513,
+   "R_e_over_D": 0.21758863341604992,
+   "phi_e_deg": -116.5158210750823,
+   "U_e": 1.4993241583172736,
+   "diag": {
+    "W2": 3.247968419701778,
+    "A": 1.7451309273641194e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.14512360201774618
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 210.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 3.2944468957183055,
+   "flight_Gyr": 11.524837650810179,
+   "r0_e": 1.5818119697811932,
+   "R_e_over_D": 0.24413733547167182,
+   "phi_e_deg": -103.41640031167432,
+   "U_e": 1.718023042259605,
+   "diag": {
+    "W2": 3.9515991523814415,
+    "A": 2.0006202598246633e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.14210332356673602
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 216.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 3.5550049628832516,
+   "flight_Gyr": 11.264279583645234,
+   "r0_e": 1.7926927981751992,
+   "R_e_over_D": 0.2766848999008771,
+   "phi_e_deg": -91.81955658371845,
+   "U_e": 1.992100682935152,
+   "diag": {
+    "W2": 4.968461582645279,
+    "A": 6.419472767245974e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.1388911016173546
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 222.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 3.8170229906379896,
+   "flight_Gyr": 11.002261555890497,
+   "r0_e": 2.039127332811886,
+   "R_e_over_D": 0.3147198154823063,
+   "phi_e_deg": -81.69459596671237,
+   "U_e": 2.319910010666337,
+   "diag": {
+    "W2": 6.3819793381087395,
+    "A": 6.260864772002095e-11,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.1356606996335306
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 228.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 4.070283157090462,
+   "flight_Gyr": 10.749001389438023,
+   "r0_e": 2.3162953314779573,
+   "R_e_over_D": 0.3574981347178735,
+   "phi_e_deg": -72.91395503944315,
+   "U_e": 2.6973327318846425,
+   "diag": {
+    "W2": 8.275601120293045,
+    "A": 5.19383509626071e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.1325381576671592
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 234.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 4.308514788155424,
+   "flight_Gyr": 10.510769758373062,
+   "r0_e": 2.618560190562266,
+   "R_e_over_D": 0.40414990103679893,
+   "phi_e_deg": -65.30347639896407,
+   "U_e": 3.11843515271803,
+   "diag": {
+    "W2": 10.724635372503588,
+    "A": 7.385723042290648e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.12960083563101626
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 240.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 4.52857987114081,
+   "flight_Gyr": 10.290704675387676,
+   "r0_e": 2.940038702773312,
+   "R_e_over_D": 0.4537671008217402,
+   "phi_e_deg": -58.681830420326826,
+   "U_e": 3.5761571287514524,
+   "diag": {
+    "W2": 13.788897645937396,
+    "A": 7.584795963084218e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.12688745777674726
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 246.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 4.729457034844696,
+   "flight_Gyr": 10.089827511683788,
+   "r0_e": 3.274963923175505,
+   "R_e_over_D": 0.5054596652111071,
+   "phi_e_deg": -52.88260343387371,
+   "U_e": 4.062855961982813,
+   "diag": {
+    "W2": 17.506796625503025,
+    "A": 7.82181717742994e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.12441063916208028
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 252.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 4.911394879653154,
+   "flight_Gyr": 9.907889666875331,
+   "r0_e": 3.6178841024385924,
+   "R_e_over_D": 0.5583861687407026,
+   "phi_e_deg": -47.76282945518002,
+   "U_e": 4.570693802998547,
+   "diag": {
+    "W2": 21.891240082555054,
+    "A": 6.699752640212908e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.12216732685816335
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 258.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.07532395455581,
+   "flight_Gyr": 9.743960591972677,
+   "r0_e": 3.963762197011949,
+   "R_e_over_D": 0.6117691900209407,
+   "phi_e_deg": -43.203835017779454,
+   "U_e": 5.091909868483672,
+   "diag": {
+    "W2": 26.927544503969028,
+    "A": 3.14358804526934e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.12014605421835957
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 264.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.22248853197475,
+   "flight_Gyr": 9.596796014553735,
+   "r0_e": 4.308020794954188,
+   "R_e_over_D": 0.6649022685255833,
+   "phi_e_deg": -39.10870343835838,
+   "U_e": 5.61901456241374,
+   "diag": {
+    "W2": 32.573323176066054,
+    "A": 7.452982297164616e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11833148796782575
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 270.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.35423141261118,
+   "flight_Gyr": 9.465053133917307,
+   "r0_e": 4.646557465664491,
+   "R_e_over_D": 0.7171521978000577,
+   "phi_e_deg": -35.39873418838606,
+   "U_e": 6.144929230942925,
+   "diag": {
+    "W2": 38.76015388432306,
+    "A": 1.4443687756430075e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11670706617653792
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 276.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.471875315563471,
+   "flight_Gyr": 9.347409230965013,
+   "r0_e": 4.9757401482045465,
+   "R_e_over_D": 0.767958464605699,
+   "phi_e_deg": -32.00997840211709,
+   "U_e": 6.663080497259871,
+   "diag": {
+    "W2": 45.39664043455908,
+    "A": 1.0645869327700326e-09,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11525649293708734
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 282.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.576661960972109,
+   "flight_Gyr": 9.242622585556378,
+   "r0_e": 5.292392550946035,
+   "R_e_over_D": 0.816830757892444,
+   "phi_e_deg": -28.89024313698975,
+   "U_e": 7.167462928996098,
+   "diag": {
+    "W2": 52.37252363661662,
+    "A": 4.531860544834851e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.1139644437231385
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 288.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.669724329210559,
+   "flight_Gyr": 9.149560217317928,
+   "r0_e": 5.5937672663464015,
+   "R_e_over_D": 0.8633450926237336,
+   "phi_e_deg": -25.996641945719116,
+   "U_e": 7.652666695209434,
+   "diag": {
+    "W2": 59.5633064108065,
+    "A": 2.1639376961753206e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11281695865778672
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 294.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.752077406538127,
+   "flight_Gyr": 9.067207139990359,
+   "r0_e": 5.877515581994824,
+   "R_e_over_D": 0.9071389734369268,
+   "phi_e_deg": -23.293644725343796,
+   "U_e": 8.113885513099056,
+   "diag": {
+    "W2": 66.83513703741619,
+    "A": 3.9388978519781326e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11180152368499723
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 300.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.824618787077178,
+   "flight_Gyr": 8.99466575945131,
+   "r0_e": 6.141651961489191,
+   "R_e_over_D": 0.9479059398070402,
+   "phi_e_deg": -20.751543135443374,
+   "U_e": 8.546903382207951,
+   "diag": {
+    "W2": 74.04955638908048,
+    "A": 6.094547497878319e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11090706950857544
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 306.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.888134189320546,
+   "flight_Gyr": 8.93115035720794,
+   "r0_e": 6.384516761247068,
+   "R_e_over_D": 0.9853898012310277,
+   "phi_e_deg": -18.345246802909667,
+   "U_e": 8.948067563595425,
+   "diag": {
+    "W2": 81.0679121263496,
+    "A": 1.9603054465438553e-11,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.11012390284003687
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 312.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.9433051066915725,
+   "flight_Gyr": 8.875979439836915,
+   "r0_e": 6.60473772389001,
+   "R_e_over_D": 1.019378836454399,
+   "phi_e_deg": -16.053336955587028,
+   "U_e": 9.314250454755504,
+   "diag": {
+    "W2": 87.75526057081431,
+    "A": 2.124563792478133e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.10944363076730504
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 318.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 5.990717002226592,
+   "flight_Gyr": 8.828567544301894,
+   "r0_e": 6.801194813365337,
+   "R_e_over_D": 1.049700151972952,
+   "phi_e_deg": -13.857318206074012,
+   "U_e": 9.642809612710536,
+   "diag": {
+    "W2": 93.98377629170372,
+    "A": 5.535258519568325e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.10885903065140216
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 324.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 6.030867234966295,
+   "flight_Gyr": 8.78841731156219,
+   "r0_e": 6.972985304353327,
+   "R_e_over_D": 1.0762143833474886,
+   "phi_e_deg": -11.741021934275148,
+   "U_e": 9.931542391589382,
+   "diag": {
+    "W2": 99.63553336369996,
+    "A": 3.9320487767670936e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.10836396544524844
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 330.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 6.064172283270281,
+   "flight_Gyr": 8.755112263258205,
+   "r0_e": 7.119391795552329,
+   "R_e_over_D": 1.0988108645557806,
+   "phi_e_deg": -9.690125250112837,
+   "U_e": 10.178640937311872,
+   "diag": {
+    "W2": 104.60473043724383,
+    "A": 7.426785610394174e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.10795330691923866
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 336.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 6.090974050099103,
+   "flight_Gyr": 8.728310496429383,
+   "r0_e": 7.239856086056658,
+   "R_e_over_D": 1.1174033467021622,
+   "phi_e_deg": -7.691757845541887,
+   "U_e": 10.382653702669382,
+   "diag": {
+    "W2": 108.79949703094351,
+    "A": 4.239963409144782e-11,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.10762282819400573
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 342.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 6.1115451636134255,
+   "flight_Gyr": 8.70773938291506,
+   "r0_e": 7.333952807636983,
+   "R_e_over_D": 1.1319263185728052,
+   "phi_e_deg": -5.734175240902169,
+   "U_e": 10.54244415589276,
+   "diag": {
+    "W2": 112.14312791277956,
+    "A": 5.290027510733952e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.10736918382581906
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 348.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 6.126093281718705,
+   "flight_Gyr": 8.69319126480978,
+   "r0_e": 7.401373001968332,
+   "R_e_over_D": 1.1423319807267338,
+   "phi_e_deg": -3.8064815822489657,
+   "U_e": 10.657164703754766,
+   "diag": {
+    "W2": 114.57515866351929,
+    "A": 4.0234723739788213e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.1071898002823783
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  },
+  {
+   "ell": 354.0,
+   "status": "integrator_stop",
+   "ncross": 0,
+   "t_e_Gyr": 6.134764402519277,
+   "flight_Gyr": 8.684520144009209,
+   "r0_e": 7.441906225324276,
+   "R_e_over_D": 1.1485878840825396,
+   "phi_e_deg": -1.8983886296517243,
+   "U_e": 10.726227119227998,
+   "diag": {
+    "W2": 116.05194735850604,
+    "A": 1.5134924065886784e-10,
+    "lnrho_rel": 1000.0,
+    "tau_since_bang_frac": 0.1070828809146553
+   },
+   "class": "c_no_solution:integrator_stop",
+   "image_order": null
+  }
+ ]
+}

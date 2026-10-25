@@ -1,0 +1,6 @@
+case,R2_A,R2_B,Amp_A,Amp_B,phi_deg,notes
+geometry_or_AN_alone,0.543000,0.483000,,,,no Amp×sin
+best_A_solo,0.746095,,-0.0600,,11.46,A Amp×φ scan peak
+best_B_solo,,0.789753,,-0.0600,184.86,B Amp_B×φ scan peak
+shared_opp_at_A_best,0.746095,0.789520,-0.0600,0.0600,11.46,Amp_B=-Amp_A
+A_plus_2ell,0.875000,,-0.0600,,11.46,2ℓ tuned on A residuals

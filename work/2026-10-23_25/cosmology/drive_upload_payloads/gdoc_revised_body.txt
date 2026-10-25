@@ -1,0 +1,209 @@
+# Anisotropic Hubble Expansion from a Central-Mass Sedov–Taylor Model of the Universe (New Draft)
+
+**Author working hypothesis:** Chris — Cosmology agent program  
+**Draft date:** 2026-09-17 (America/Chicago); **language revised** same day (spherical decreasing-\(\rho\) LIVE clarification).  
+**Status:** Complete new prose draft superseding the unfinished 2020s outline/extract. Incorporates cleaned Phase A equations, decreasing-\(\rho\) baseline (3.13), Gauss gravity, time-integrated peculiar velocities, \(\kappa_{\mathrm{natural}}\), and multipole honesty. Old draft.txt left untouched. **Binding 2026-09-17:** decreasing \(\rho(r)\) (eq. 3.13) + Gauss \(g=-Gm(r)/r^2\); uniform ball rejected. **Spherical decreasing-\(\rho\) is LIVE** (amplitude GO; Migkas-like angular curve exists); remaining caveat is multipole morphology vs a *pure dipole*, not a veto of spherical variable-density cosmology.  
+**Tone:** Skeptical graduate thesis / paper draft. Not a discovery claim.
+
+---
+
+
+## Abstract
+
+The cosmological principle asserts that the Universe has no preferred center and that a suitably defined Hubble expansion is isotropic about every comoving observer. Late-time probes—especially directional analyses of X-ray galaxy-cluster scaling relations (Migkas et al. 2020, 2021)—have reported apparent anisotropies at the several-to-tens-of-percent level in effective Hubble parameters or luminosity distances. Those claims remain contested: bulk flows, selection, scatter, and simulation-based null tests can all mimic directional signals. This draft develops, and then stress-tests, a concrete alternative ontology: the Universe expands as a Sedov–Taylor (ST) blast wave about a **real geometric center of expansion (CoE)** that lies beyond the observable horizon, and we are an **off-center observer**.
+
+Starting from classical ST similarity and a homologous interior velocity field \(\vec{v}=H(t)\,\vec{r}\), we prove a elementary but decisive kinematic result: pure homology yields an **isotropic** apparent Hubble parameter \(H_{\mathrm{obs}}=H\) for *any* observer offset. Anisotropy therefore cannot come from geometry alone; it requires a homology-breaking mechanism. The working mechanism studied here follows from **Gauss’s law / Newton’s shell theorem** together with a **centrally concentrated, radially decreasing density** \(\rho(r)\) (baseline ontology—not a uniform ball). Under spherical symmetry,
+\[
+\vec{g}=-\frac{G M(<r)}{r^2}\,\hat{r},
+\]
+with \(M(<r)=\int_0^r 4\pi s^2\rho(s)\,ds\). Chris identifies the relevant enclosure with the mass toward the CoE; at observer scale this sets \(\kappa_{\mathrm{natural}}=G M_{\mathrm{enc}}(<D)/(D^3 H^2)=\Omega_m/2=0.15\) (\(\Omega_m=0.3\)). The default profile is the Phase A extended law (eq. 3.13)—incomplete-gamma cumulative of \(\rho\propto e^{-r/r_s}\)—or any similar ST-motivated decreasing profile. Peculiar velocities are **time-integrated** along ST trajectories. **Why decreasing density matters:** uniform \(\rho\Rightarrow M(<r)\propto r^3\Rightarrow g\propto -r\Rightarrow\) monopole-only \(H_{\mathrm{obs}}\) (no anisotropy). Decreasing \(\rho\) makes \(M(<r)\) grow slower than \(r^3\), so near \(r\sim D\) the field retains tidal \(1/r^2\) structure and **restores** sky anisotropy (leading quadrupole at \(d\ll D\)).
+
+For this baseline Gauss + decreasing-\(\rho\) model beyond the horizon, the predicted sky is **not** a clean Migkas dipole: leading anisotropy is a **quadrupole** \(C_2\approx 2\alpha\kappa\), full-sky Legendre \(C_1\approx 0\) at \(\mathcal{O}(d/D)\). Fitted Migkas-style \(A\sim 0.1\) can appear as **selection / footprint leakage** without a true orthogonal dipole. Relative acceleration versus angle—Chris’s intended Migkas-curve mechanism—is presented honestly, then confronted with this multipole structure.
+
+Parameters \((D,M_{\mathrm{enc}},\xi,\alpha_{\mathrm{eff}})\) remain largely unconstrained. The CMB remains the main adversary of a real beyond-horizon center. This draft does **not** claim to have smoked the cosmological principle. It states the working hypothesis clearly, corrects errors in the unfinished draft, and defines which analyses are worth doing next and which are not.
+
+---
+
+
+
+---
+
+**Full continuous draft:** see Drive PDF *Anisotropic Hubble Expansion — New Draft (LaTeX, revised).pdf*, the revised `.tex`, and the revised `.md` in this folder. Google Docs MCP payload limits prevent pasting the entire ~45 kB manuscript into one Doc; below are the **revised §§4–5 and §§8–9** (language-fix focus). Unchanged §§1–3, 6–7 match the PDF/`.md`.
+
+**Companion note:** *Language fix — spherical decreasing-ρ is live*
+
+---
+
+## 4. Predicted sky structure
+
+**Baseline throughout this section:** decreasing \(\rho(r)\) (eq. 3.13), Gauss \(g=-G m(r)/r^2\), \(\kappa=\kappa_{\mathrm{natural}}=0.15\), \(\alpha_{\mathrm{eff}}\sim\mathcal{O}(1)\). In the tidal / exterior regime \(m(r)\approx M_{\mathrm{enc}}\) so \(g\approx -GM_{\mathrm{enc}}/r^2\). Section 4.1 is the rejected uniform special case only.
+
+### 4.1 Rejected special case: uniform \(\rho\Rightarrow g\propto -r\Rightarrow\) monopole only
+
+If \(\rho=\mathrm{const}\), then \(M(<r)\propto r^3\) and Gauss gives \(g=-(4\pi G\rho/3)r\). Differential peculiar motion yields
+
+\[
+H_{\mathrm{obs}}=H(1-\alpha\kappa)
+\]
+
+independent of \(\hat{n}\)—**monopole only; anisotropy vanishes**. This is why uniform density is **not** the baseline. Decreasing \(\rho\) is required to restore angular structure (abstract / §3.5).
+
+### 4.2 Baseline decreasing-\(\rho\) / Gauss model: leading quadrupole at \(d\ll D\)
+
+With \(m(r)\approx M_{\mathrm{enc}}\) (or exact \(m(r)\) from 3.13) and \(\kappa_{\mathrm{natural}}\), the tidal limit \(\varepsilon=d/D\to 0\) yields
+
+\[
+\frac{H_{\mathrm{obs}}}{H}-1=\alpha\kappa\,(3\mu^2-1)=2\alpha\kappa\,P_2(\mu),
+\]
+
+where \(\mu=\hat{n}\cdot\hat{D}\). This is a **pure quadrupole**: \(C_2\to 2\alpha\kappa\), \(C_1\to 0\). Series in \(\varepsilon\):
+
+\[
+\mathrm{frac}=\alpha\kappa(3\mu^2-1)+\alpha\kappa\,\varepsilon\,(4.5\,\mu-7.5\,\mu^3)+\mathcal{O}(\varepsilon^2).
+\]
+
+The \(\mathcal{O}(\varepsilon)\) odd piece projects onto \(P_3\) (octupole): \(C_3\approx -3\alpha\kappa\,\varepsilon\). **Full-sky Legendre dipole \(C_1=0\) at this order.**
+
+At \(\kappa_{\mathrm{natural}}=0.15\), \(\alpha=1\), \(d/D=0.1\): \(C_2\approx 0.30\), half peak-to-peak \(\approx 0.25\) (Migkas-*scale variation* natural under the baseline decreasing-\(\rho\) Gauss model), while dipole amplitude \(A\sim 10^{-7}\) (useless as a true Migkas dipole). Drag \(\alpha_{\mathrm{eff}}\approx 0.66\) scales amplitudes by \(\alpha_{\mathrm{eff}}\) without changing morphology. Finite \(r_s\) in (3.13) softens the core; multipole ordering at \(d\ll D\) remains quadrupole-led.
+
+### 4.3 When a large true dipole appears
+
+A substantial full-sky dipole under this baseline spherical model appears only when \(d/D\gtrsim 1\) (sources reach toward / past the CoE scale). That regime conflicts with the beyond-horizon ontology for Migkas cluster depths (hundreds of Mpc with \(D\) beyond the horizon \(\Rightarrow d/D\sim 0.01\)–\(0.1\)). Near-CoE singularities of a pure \(M=\mathrm{const}\) exterior law are softened by any finite core in \(m(r)\), but the beyond-horizon multipole conclusion is unchanged.
+
+### 4.4 Fitted Migkas dipoles vs orthogonal multipoles
+
+**Distinguish carefully:**
+
+- **Full-sky Legendre \(C_1\):** orthogonal dipole coefficient. \(\approx 0\) at \(d\ll D\) for the baseline decreasing-\(\rho\) tidal field.
+- **Fitted Migkas \(A\):** coefficient in \(A\cos\phi\) or \(M+A\mu\) on a sky mask. Can be large even when \(C_1\approx 0\).
+
+On a CoE-facing hemisphere at \(d/D=0.1\), \(\kappa=0.15\), \(\alpha=1\): fake \(A_{\mathrm{moment}}\approx 0.11\) and \(A_{\mathrm{Migkas}}(M+A\mu)\approx 0.41\), while full-sky \(C_1\sim 10^{-8}\). Equatorial \(\phi\)-uniform Fourier leaks octupole into \(a_1\sim\mathcal{O}(d/D)\) (\(A_{\mathrm{leak}}\approx 0.375\,C_3\approx -0.017\) at \(d/D=0.1\))—nonzero fitted \(A\) without true \(C_1\), but still below typical Migkas \(A\sim 0.05\)–\(0.15\) targets on full sky.
+
+Pure-dipole Migkas template on **full sky** at \(d/D\le 0.2\): \(R^2_{\mathrm{dip}}\lesssim 0.02\), while quadrupole template \(R^2_Q\gtrsim 0.92\). Same template at \(d/D=2\): \(R^2_{\mathrm{dip}}\approx 0.98\)—but then the CoE is not beyond survey depth.
+
+**Softened language.** Do not say “a quadrupole has no dipole.” Say: full-sky Legendre \(C_1\approx 0\) at \(\mathcal{O}(d/D)\); fitted Migkas \(A\) can still be nonzero on partial sky or \(\phi\)-uniform measure.
+
+### 4.5 Relative acceleration vs distance to CoE (Chris’s Migkas-curve mechanism)
+
+Chris’s intended mechanism for the Migkas angular curve is that sources at different angles sit at different distances from the CoE and therefore experience different time-integrated Gauss accelerations from decreasing \(\rho\); the observer-centric \(H_{\mathrm{obs}}(\phi)=\Delta v_{\mathrm{los}}/d\) then varies with angle. That kinematics is exactly what Sections 3.5–3.7 and 4.2 expand under the primary force law.
+
+Presented honestly: the mechanism **does** produce an angular curve of Migkas-relevant *variation amplitude* at natural \(\kappa\) on the baseline decreasing-\(\rho\) model. **Spherical decreasing-\(\rho\) is therefore viable** as a cosmology skeleton: amplitude GO, angular curve exists. Multipole honesty then requires stating that for beyond-horizon \(D\) and spherical \(M_{\mathrm{enc}}\), that curve is **quadrupole-led**, not a pure \(A\cos\phi\) dipole—so the fair test is a \(P_2\) comparison, not a dipole-only MCMC. (Uniform \(\rho\) would give no curve at all—§4.1.) Visual resemblance after Mollweide rotation, noise, and binning—as in the unfinished draft’s demos—is not a multipole identification.
+
+---
+
+## 5. Comparison with Migkas et al.
+
+### 5.1 What matches visually
+
+Unfinished-draft demos (recession curves vs angle; 3D surfaces; Mollweide maps rotated toward Migkas-like axes; cone binning; noise; Gaussian smoothing) can be made to *look* like published anisotropy maps. At \(\kappa\sim\kappa_{\mathrm{natural}}\) on the baseline decreasing-\(\rho\) model, half peak-to-peak sky variation of order \(10\%\)–\(25\%\) is available from the tidal quadrupole. Direction can be rotated by hand to \((l,b)\sim(280^\circ,-20^\circ)\) or joint \(\sim(303^\circ,-27^\circ)\). None of that constitutes a likelihood fit.
+
+### 5.2 What fails as a *pure dipole* (not a veto of spherical decreasing-\(\rho\))
+
+**Important:** the items below constrain matching Migkas as a clean full-sky *dipole*, not the viability of spherical variable-density cosmology. Spherical decreasing-\(\rho\) remains LIVE; the predicted sky is quadrupole-led. For the baseline decreasing-\(\rho\) Gauss model + beyond-horizon CoE:
+
+1. Full-sky orthogonal anisotropy is a **leading quadrupole** (\(C_2\approx 2\alpha\kappa\)), not Migkas’s reported dipole. (Uniform \(\rho\) special case: monopole only—§4.1.)
+2. Pure-dipole template fits on full sky at Migkas depths have \(R^2\approx 0\).
+3. Forcing a true dipole coefficient of Migkas size at \(d\ll D\) requires absurd \(\kappa\sim 10^4\)–\(10^5\) even with enclosed-mass \(\kappa_{\mathrm{natural}}\) language.
+4. Hemisphere / cone selection can manufacture fake fitted \(A\sim 0.1\)–\(0.4\) from a pure \(P_2\) sky under the baseline model—systematic channel, not a clean CP probe.
+
+### 5.3 Verdict: spherical decreasing-\(\rho\) LIVE; CONDITIONAL vs Migkas as a pure dipole
+
+| Question | Answer |
+|----------|--------|
+| Spherical decreasing-\(\rho\) cosmology viable? | **LIVE / GO** — amplitude natural; Migkas-like angular curve exists |
+| Amplitude at natural \(\kappa\) (decreasing \(\rho\))? | **GO** — \(\kappa_{\mathrm{natural}}=0.15\); \(\sim 10\%\) variation natural |
+| Predicted full-sky multipole at \(d\ll D\)? | **Quadrupole-led** (\(C_2\approx 2\alpha\kappa\); \(C_1\approx 0\)) |
+| Time integration rescue to tiny \(\kappa\)? | **No** — \(\mathcal{O}(1)\) only |
+| Clean full-sky Migkas *dipole* \((l,b,A)\) from baseline? | **CONDITIONAL NO** at \(d\ll D\) — wrong template; not a veto of the spherical model |
+| Uniform \(\rho\) as working model? | **Rejected** — monopole only |
+| Fake fitted \(A\) under selection? | **Yes** — quantified; not a smoking gun |
+| Dipole-only MCMC on baseline spherical model? | **Do not run** — fits the wrong template |
+| Right next test vs Migkas? | **\(P_2\) / quadrupole comparison** at \(\kappa\sim\kappa_{\mathrm{natural}}\) |
+| Smoking CP via Migkas dipole MCMC on spherical? | **No claim** — over-broad “NO-GO for spherical” language retired; morphology caveat only |
+| Non-spherical mass / lopsided blast? | **Open** — not yet computed |
+
+**Language fix (binding).** Decreasing / variable \(\rho\) *fixes* the uniform-spherical monopole-only problem. **Spherical + decreasing \(\rho\) is LIVE.** The remaining caveat is *only* that at \(d\ll D\) the full-sky Legendre dipole \(C_1\approx 0\) and the leading multipole is quadrupole. “NO” applies to a clean full-sky Migkas \((l,b,A)\) *dipole* MCMC—**not** to spherical variable-density cosmology as a whole. Preferred summary: *Spherical decreasing-\(\rho\) is viable; predicted sky is quadrupole-led; CONDITIONAL vs Migkas as a pure dipole; do not run dipole-only MCMC; \(P_2\) comparison is the right test.* Selection / \(\phi\)-uniform leakage / \(d/D\gtrsim 1\) remain systematic or ontology channels, not licenses to claim a smoked CP. Open for non-spherical mass (dipole mass moment, lopsided blast).
+
+Bulk-flow degeneracy (Migkas 2021) and FLAMINGO-style nulls further weaken any claim that matching a Migkas map equals locating a CoE.
+
+---
+
+
+
+---
+
+## 8. Discussion: can this smoke the cosmological principle?
+
+### 8.1 What would smoking the CP require?
+
+To smoke the cosmological principle with this program one would need, at minimum: (1) a reproducible late-time anisotropy not explained by bulk flow or systematics; (2) a centered dynamical model that predicts that anisotropy’s multipole structure and redshift dependence; (3) CMB compatibility or a sharp, tested mechanism for near-isotropy at \(z\sim 1100\); (4) evidence ratios favoring a CoE over FLRW + bulk flow. None of (2)–(4) are satisfied today. Item (1) remains contested.
+
+### 8.2 Where the present model stands
+
+**Strengths.** Clear ontology; cleaned homology theorem preventing a common frame error; natural \(\kappa\) under enclosed-mass; time-integrated gravity at \(\mathcal{O}(1)\) relative to bolt-on; quantitative multipole and footprint-leakage results; falsification gates stated up front.
+
+**Caveats (not a spherical veto).** Baseline spherical decreasing-\(\rho\) is **LIVE** (amplitude GO; angular curve exists) but does **not** produce a clean full-sky Migkas *dipole* at beyond-horizon \(D\)—the sky is quadrupole-led. Migkas “matches” remain visual; parameters unconstrained; ST≠cosmology; CMB adversary uncomputed; Copernican / causal cost of a beyond-horizon center unpaid.
+
+**Honest answer to the section title.** Not yet—and **not** because spherical decreasing-\(\rho\) is dead. Amplitude is no longer absurd; the morphology caveat is against treating Migkas as a pure dipole MCMC target. Smoking the CP remains the *goal* of the program, not an accomplished result of this draft. The right next step on the spherical channel is a **\(P_2\) comparison** at \(\kappa_{\mathrm{natural}}\) (do not run dipole-only MCMC). Paths that remain open: that quadrupole-template test; non-spherical mass; selection-aware reanalysis of Migkas; and—decisively—the CMB calculation that may kill the idea.
+
+### 8.3 Relation to dark energy
+
+The unfinished draft suggested the framework might offer an alternative to ΛCDM for accelerated expansion. This draft does **not** endorse that oversell. Acceleration, SN+BAO joint fits, and dark-energy elimination are out of scope until the anisotropy channel itself is viable and CMB-compatible.
+
+---
+
+## 9. Conclusions and next work
+
+### 9.1 Conclusions
+
+1. Working hypothesis: real CoE beyond the horizon; off-center observer; ST blast-wave expansion plus central gravity from enclosed cosmic mass.
+2. Pure homologous ST ⇒ isotropic \(H_{\mathrm{obs}}\) for any offset (eqs 3.6–3.8). The unfinished draft’s claim that offset alone anisotropizes \(H_{\mathrm{obs}}\) is false.
+3. Gravity must be time-integrated along ST trajectories; bolt-on is a shortcut. Integration changes amplitudes by \(\mathcal{O}(1)\) only.
+4. Baseline: **decreasing \(\rho(r)\)** (eq. 3.13) + Gauss \(g=-G m(r)/r^2\); \(M_{\mathrm{enc}}\) toward CoE; \(\kappa_{\mathrm{natural}}=0.15\). Decreasing density restores anisotropy; uniform \(\rho\) is rejected (monopole only).
+5. **Spherical decreasing-\(\rho\) is LIVE.** Beyond-horizon \(D\): leading **quadrupole**, full-sky \(C_1\approx 0\). Fitted Migkas dipoles can appear from selection/leakage/\(d\sim D\)—a morphology caveat, not a veto of the spherical model.
+6. Relative acceleration vs angle produces a Migkas-relevant angular curve at natural \(\kappa\); multipole honesty says the prediction is quadrupole-led, not a pure dipole.
+7. Comparison with Migkas: **CONDITIONAL** vs a pure-dipole template; spherical variable-density cosmology as a whole is **not** NO-GO. Do not run \((l,b,A)\) dipole-only MCMC; **\(P_2\) comparison is the right test.**
+8. Parameters largely unconstrained. CMB is the main adversary. The CP is not smoked.
+
+### 9.2 Next work (ordered)
+
+1. Quadrupole (\(P_2\)) forward template at \(\kappa\sim\kappa_{\mathrm{natural}}\) with drag \(\alpha_{\mathrm{eff}}\); compare to Migkas maps/residuals without forcing a dipole.
+2. Footprint leakage study: fake \(A\) from pure \(P_2\) under Migkas-like masks (partially started in living notes; fold into any comparison).
+3. One-page quantitative CMB adversary memo for fiducial \((D,\kappa_{\mathrm{natural}})\) using Alnes/Kodama-style estimates as a lower bar, then a proper light-cone calculation.
+4. Non-spherical / dipolar mass-moment forward model (only if 1–3 still leave a viable path).
+5. Redshift-dependent forecasts vs bulk flow for eROSITA / SN Ia.
+6. Only then: MCMC on a template that matches the model’s actual multipole content.
+
+### 9.3 Assets
+
+- Old unfinished draft (untouched): `/workspace/cosmology/draft.txt`
+- This new draft: `/workspace/cosmology/new_draft.md` and Google Doc (this file)
+- Living notes: `phase_a_derivation.md`, `absurdity_check.md`, `enclosed_mass_multipoles.md`, `dipole_fraction.md`, `literature_map.md`, `project_status_development_plan.md`
+
+---
+
+
+
+---
+
+## References
+
+1. Migkas, K., et al. (2020). Probing cosmic isotropy with a new X-ray galaxy cluster sample through the \(L_X\)–\(T\) relation. *Astronomy & Astrophysics*, 636, A15.
+2. Migkas, K., et al. (2021). Cosmic anisotropy with ten cluster scaling relations. *Astronomy & Astrophysics*, 649, A151.
+3. Sedov, L. I. (1946). Propagation of strong shock waves.
+4. Taylor, G. I. (1950). The formation of a blast wave by a very intense explosion. *Proc. R. Soc. A*, 201(1065), 159–174.
+5. Saadeh, D., Feeney, S. M., Pontzen, A., Peiris, H. V., & McEwen, J. D. (2016). How isotropic is the Universe? *Physical Review Letters*, 117, 131302.
+6. Planck Collaboration (2020). Planck 2018 results. VII. Isotropy and statistics of the CMB. *Astronomy & Astrophysics*, 641, A7.
+7. Alnes, H., & Amarzguioui, M. (2006). CMB anisotropies seen by an off-center observer in a spherically symmetric inhomogeneous universe. *Physical Review D* (astro-ph/0607334).
+8. Kodama, H., et al. (2010). Analytic formulae for CMB anisotropies in general spherically symmetric spacetimes. arXiv:1004.3089.
+9. Watkins, R., Feldman, H. A., & Hudson, M. J. (2009). Consistently large cosmic flows on scales of \(100\,h^{-1}\,\mathrm{Mpc}\). *Monthly Notices of the Royal Astronomical Society*.
+10. Kashlinsky, A., et al. (2008+). Cluster kinetic SZ bulk-flow claims (contested systematics). *Astrophysical Journal*.
+11. FLAMINGO / related A&A (2025) analyses of scaling relations as isotropy tracers — simulation reassessment of apparent cluster anisotropies.
+12. Pandya, A., et al. (2024). Related cluster \(\sigma_v\) scaling dipole claims.
+13. Boubel, P., et al. (2025). Tully–Fisher \(H_0\) variation constraints.
+14. Living analysis notes (2026-09-17 CT): Phase A derivation; absurdity check; enclosed-mass multipoles; dipole fraction vs \(d/D\); literature map; project status & development plan.
+
+---
+
+*End of new draft. Supersedes unfinished draft prose claims where they conflict; retains ST + CoE ontology as working hypothesis under active skeptical test.*
+

@@ -1,0 +1,5 @@
+s=open('run.py').read()
+s=s.replace("return lambda m:hp.get_interp_val(m,vec[:,0],vec[:,1],vec[:,2])","th_,ph_=hp.vec2ang(vec);return lambda m:1e6*hp.get_interp_val(m,th_,ph_)")
+s=s.replace("ΔT [map units]","ΔT [µK]").replace("plt.rcParams.update({'font.size':16});","")
+s=s.replace("import matplotlib.pyplot as plt\n","import matplotlib.pyplot as plt;plt.rcParams.update({'font.size':16})\n",1)
+open('run.py','w').write(s)

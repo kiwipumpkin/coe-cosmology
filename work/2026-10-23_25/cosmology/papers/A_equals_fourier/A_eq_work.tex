@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.55in,paperwidth=8.5in,paperheight=14.6in]{geometry}
+\usepackage{amsmath,amssymb}
+\pagestyle{empty}\setlength{\parindent}{0pt}
+\begin{document}
+\textbf{\large Our model $A(\hat n)$ = Fourier fit, term by term (worked)}\\[3pt]
+Sources on the vision shell ($d=r$). \ $\psi\equiv\ell-\ell_0$, \ $c\equiv\cos b_0$, \ $\mu=c\cos\psi$, \ $\kappa=GM(<D)/(H_0^2D^3)$.
+
+\medskip\textbf{Step 1. Expand the model in $\cos m\psi$}
+\[
+\frac{A}{A_{\rm all}}=N\Big[1+\alpha\kappa(3\mu^2-1)+\alpha\kappa\tfrac{r}{D}\big(\tfrac92\mu-\tfrac{15}{2}\mu^3\big)\Big]
+\]
+Identities: \quad $\cos^2\psi=\tfrac12(1+\cos2\psi)$, \qquad $\cos^3\psi=\tfrac14(3\cos\psi+\cos3\psi)$
+\[
+\mu^2=\tfrac{c^2}{2}(1+\cos2\psi),\qquad \mu^3=\tfrac{c^3}{4}(3\cos\psi+\cos3\psi)
+\]
+\[
+3\mu^2-1=\big(\tfrac32c^2-1\big)+\tfrac32c^2\cos2\psi
+\]
+\[
+\tfrac92\mu-\tfrac{15}{2}\mu^3=\tfrac92c\cos\psi-\tfrac{15}{2}\cdot\tfrac{c^3}{4}(3\cos\psi+\cos3\psi)
+=c\big(\tfrac92-\tfrac{45}{8}c^2\big)\cos\psi-\tfrac{15}{8}c^3\cos3\psi
+\]
+\[
+\frac{A}{N}=\underbrace{1+\alpha\kappa(\tfrac32c^2-1)}_{m=0}
++\underbrace{\alpha\kappa\tfrac rD c(\tfrac92-\tfrac{45}{8}c^2)}_{m=1}\cos\psi
++\underbrace{\alpha\kappa\tfrac32c^2}_{m=2}\cos2\psi
+\underbrace{-\alpha\kappa\tfrac rD\tfrac{15}{8}c^3}_{m=3}\cos3\psi
+\]
+90$^\circ$ sector averaging multiplies harmonic $m$ by
+$W_m=\dfrac{\sin(m\pi/4)}{m\pi/4}$: \quad $W_1=0.9003,\ W_2=0.6366,\ W_3=0.3001$.
+
+\medskip\textbf{Step 2. Rotate the Fourier fit onto the model axis ($\ell_0=15^\circ$, the $m{=}2$ peak)}
+\[
+A_{\rm fit}=0.9965+0.0296\cos\ell+0.0434\sin\ell+0.0636\cos2\ell+0.0366\sin2\ell-0.0299\cos3\ell-0.0114\sin3\ell
+\]
+\[
+c_m\cos m\ell+s_m\sin m\ell=C_m\cos m\psi+S_m\sin m\psi,\quad
+C_m=c_m\cos m\ell_0+s_m\sin m\ell_0,\ \ S_m=-c_m\sin m\ell_0+s_m\cos m\ell_0
+\]
+\begin{align*}
+C_1&=0.0296\cos15^\circ+0.0434\sin15^\circ=0.02859+0.01123=+0.0398\\
+C_2&=0.0636\cos30^\circ+0.0366\sin30^\circ=0.05508+0.01830=+0.0734\\
+C_3&=-0.0299\cos45^\circ-0.0114\sin45^\circ=-0.02114-0.00806=-0.0292\\[3pt]
+S_1&=-0.0296\sin15^\circ+0.0434\cos15^\circ=-0.00766+0.04192=+0.0343\\
+S_2&=-0.0636\sin30^\circ+0.0366\cos30^\circ=-0.03180+0.03170=-0.0001\\
+S_3&=+0.0299\sin45^\circ-0.0114\cos45^\circ=+0.02114-0.00806=+0.0131
+\end{align*}
+
+\medskip\textbf{Step 3. Set equal, harmonic by harmonic} (model has only $\cos m\psi$ terms)
+\begin{align*}
+m=0:&\quad 0.9965=N\big[1+\alpha\kappa(\tfrac32c^2-1)\big]\\
+m=1:&\quad C_1/W_1=0.0398/0.9003=0.04423=N\alpha\kappa\tfrac rD\,c(\tfrac92-\tfrac{45}{8}c^2)\\
+m=2:&\quad C_2/W_2=0.0734/0.6366=0.11526=N\alpha\kappa\,\tfrac32c^2\\
+m=3:&\quad C_3/W_3=-0.0292/0.3001=-0.09731=-N\alpha\kappa\tfrac rD\tfrac{15}{8}c^3
+\end{align*}
+
+\medskip\textbf{Step 4. Solve (4 equations, 4 unknowns: $N,\ \alpha\kappa,\ r/D,\ c$)}\\[2pt]
+\emph{(a) $m{=}1\,\div\,m{=}3$ cancels $N\alpha\kappa\,r/D$ and one power of $c$:}
+\[
+\frac{0.04423}{-0.09731}=-0.4546=\frac{\tfrac92-\tfrac{45}{8}c^2}{-\tfrac{15}{8}c^2}
+\;\Rightarrow\; 0.8523\,c^2=\tfrac92-5.625\,c^2
+\;\Rightarrow\; c^2=\frac{4.5}{6.4773}=0.6947,\quad |b_0|=\arccos(0.8335)=33.5^\circ
+\]
+\emph{(b) $m{=}2$ gives $N\alpha\kappa$:}
+\[
+N\alpha\kappa=\frac{0.11526}{\tfrac32(0.6947)}=\frac{0.11526}{1.0421}=0.1106
+\]
+\emph{(c) $m{=}3$ gives $r/D$:}
+\[
+\frac rD=\frac{0.09731}{N\alpha\kappa\cdot\tfrac{15}{8}c^3}=\frac{0.09731}{0.1106\times1.875\times0.5790}=\frac{0.09731}{0.1201}=0.810
+\;\Rightarrow\;\frac Dr=1.234,\quad D=1.234\times14.3=17.6\ \text{Gpc}
+\]
+\emph{(d) $m{=}0$ gives $N$, then $\alpha\kappa$:}
+\[
+N=0.9965-N\alpha\kappa(\tfrac32c^2-1)=0.9965-0.1106(0.0421)=0.9918,\qquad
+\alpha\kappa=\frac{0.1106}{0.9918}=0.1115
+\]
+\emph{Check $m{=}1$:} \ $0.1106\times0.810\times0.8335\times(4.5-3.908)\times0.9003=0.0398$ \ $\checkmark$
+
+\medskip\textbf{Step 5. What the model cannot match}\\
+An axisymmetric model has no $\sin m\psi$ terms, so $S_1=+0.034,\ S_2=-0.000,\ S_3=+0.013$ are left over.
+$S_1$ is why the data dipole points at $\ell\approx56^\circ$ instead of along $\ell_0=15^\circ$.
+
+\medskip\textbf{Caveats.} $\ell_0$ is set from the $m{=}2$ peak, not solved. Four equations in four unknowns match the $C_m$ exactly by construction, so the test is whether the solved values are physical and how large the $S_m$ are.
+The analytic form is a small-$r/D$ expansion used at $r/D\approx0.8$; the full numeric model gives $R^2=0.776$ at $D/r\approx1.32$.
+\end{document}

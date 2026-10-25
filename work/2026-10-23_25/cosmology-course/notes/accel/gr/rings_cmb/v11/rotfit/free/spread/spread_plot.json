@@ -1,0 +1,127 @@
+{
+ "tilt about the axis through l = 90\u00b0, \u221210\u00b0 to +10\u00b0 (no tilt: hot 255.5\u00b0, cold 174.6\u00b0) | -10\u00b0": {
+  "hot": 254.2758751048092,
+  "cold": 174.30723389028108,
+  "dhot": -1.2133061961209535,
+  "dcold": -0.25865606229592686
+ },
+ "tilt about the axis through l = 90\u00b0, \u221210\u00b0 to +10\u00b0 (no tilt: hot 255.5\u00b0, cold 174.6\u00b0) | -5\u00b0": {
+  "hot": 254.76130877450518,
+  "cold": 174.565889952577,
+  "dhot": -0.7278725264249601,
+  "dcold": 0.0
+ },
+ "tilt about the axis through l = 90\u00b0, \u221210\u00b0 to +10\u00b0 (no tilt: hot 255.5\u00b0, cold 174.6\u00b0) | +5\u00b0": {
+  "hot": 255.97425069473888,
+  "cold": 174.565889952577,
+  "dhot": 0.48506939380874314,
+  "dcold": 0.0
+ },
+ "tilt about the axis through l = 90\u00b0, \u221210\u00b0 to +10\u00b0 (no tilt: hot 255.5\u00b0, cold 174.6\u00b0) | +10\u00b0": {
+  "hot": 256.45918205932117,
+  "cold": 174.565889952577,
+  "dhot": 0.9700007583910235,
+  "dcold": 0.0
+ },
+ "same tilt, larger angles (where the spread becomes real) | +0\u00b0": {
+  "hot": 255.48918130093014,
+  "cold": 174.565889952577,
+  "dhot": 0.0,
+  "dcold": 0.0
+ },
+ "same tilt, larger angles (where the spread becomes real) | +30\u00b0": {
+  "hot": 257.913192560573,
+  "cold": 172.49711265950054,
+  "dhot": 2.4240112596428673,
+  "dcold": -2.068777293076465
+ },
+ "same tilt, larger angles (where the spread becomes real) | +60\u00b0": {
+  "hot": 267.8265920721365,
+  "cold": 154.74194268811405,
+  "dhot": 12.337410771206379,
+  "dcold": -19.82394726446296
+ },
+ "same tilt, larger angles (where the spread becomes real) | +90\u00b0": {
+  "hot": 317.0106736903888,
+  "cold": 137.01067369038878,
+  "dhot": 61.52149238945864,
+  "dcold": -37.555216262188225
+ },
+ "for contrast: tilt about the axis through l = 0\u00b0, \u221210\u00b0 to +10\u00b0 (pinch) | -10\u00b0": {
+  "hot": 257.913192560573,
+  "cold": 178.44711119745472,
+  "dhot": 2.4240112596428673,
+  "dcold": 3.8812212448777075
+ },
+ "for contrast: tilt about the axis through l = 0\u00b0, \u221210\u00b0 to +10\u00b0 (pinch) | -5\u00b0": {
+  "hot": 256.7015973673696,
+  "cold": 176.37685666795278,
+  "dhot": 1.212416066439431,
+  "dcold": 1.8109667153757698
+ },
+ "for contrast: tilt about the axis through l = 0\u00b0, \u221210\u00b0 to +10\u00b0 (pinch) | +5\u00b0": {
+  "hot": 254.2758751048092,
+  "cold": 172.75564611031265,
+  "dhot": -1.2133061961209535,
+  "dcold": -1.8102438422643559
+ },
+ "for contrast: tilt about the axis through l = 0\u00b0, \u221210\u00b0 to +10\u00b0 (pinch) | +10\u00b0": {
+  "hot": 253.06161091817808,
+  "cold": 170.94636100811462,
+  "dhot": -2.427570382752066,
+  "dcold": -3.619528944462388
+ },
+ "best combination found (grid of 15\u00b0 steps) | paper axis (no rotation)": {
+  "hot": 255.48918130093014,
+  "cold": 174.565889952577,
+  "dhot": 0.0,
+  "dcold": 0.0
+ },
+ "best combination found (grid of 15\u00b0 steps) | yaw 15\u00b0, tilt 45\u00b0 about l = 0\u00b0, tilt 90\u00b0 about l = 90\u00b0": {
+  "hot": 262.752792144564,
+  "cold": 84.92793997841605,
+  "dhot": 7.26361084363387,
+  "dcold": -89.63794997416096
+ },
+ "best": {
+  "antiCoE": [
+   359.0070271956363,
+   -68.9094188210009
+  ],
+  "CoE": [
+   179.0070271956363,
+   68.9094188210009
+  ],
+  "motion": [
+   271.21518060573703,
+   0.17717032924675513
+  ],
+  "full": {
+   "dip_hot": [
+    180.79322732828427,
+    68.92132664470515
+   ],
+   "hot_off": 43.58257763814927,
+   "cold_off": 43.58257763814927,
+   "quad": [
+    169.23039064016368,
+    68.4867843574485
+   ],
+   "quad_off": 37.91394532720502,
+   "amp_over_Planck": 89.13723876680338
+  },
+  "residual": {
+   "dip_hot": [
+    271.21784314069487,
+    0.17949677721717427
+   ],
+   "hot_off": 48.47336507563881,
+   "quad": [
+    169.2303906401637,
+    68.48678435744847
+   ],
+   "quad_off": 37.91394532720502,
+   "amp_over_Planck": 1.000003024589486
+  }
+ }
+}

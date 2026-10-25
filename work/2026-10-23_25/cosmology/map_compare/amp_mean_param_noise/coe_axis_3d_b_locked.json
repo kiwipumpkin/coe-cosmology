@@ -1,0 +1,27 @@
+{
+  "longitude_from_ampsin_deg": {
+    "hot_antiCoE": 78.5,
+    "cold_CoE": 258.5
+  },
+  "degeneracy": "For A(ell)-only data, b_CoE is degenerate with dipole amplitude; phase fixes ell.",
+  "b_lock_method": "Set |b|=Planck 48.253 deg on the Amp\u00d7sin longitude axis, then refit ell on that latitude.",
+  "CoE_cold": [
+    236.5,
+    -48.25
+  ],
+  "antiCoE_hot": [
+    56.5,
+    48.25
+  ],
+  "R2_migkas_A": 0.27075894521932037,
+  "c1": -0.09625236182549538,
+  "Planck_hot": [
+    264.021,
+    48.253
+  ],
+  "Planck_cold": [
+    84.021,
+    -48.253
+  ],
+  "interpretation": "CMB heating max=antiCoE, min=CoE. Sign vs Planck: our cold near Planck hot longitudes (swap)."
+}

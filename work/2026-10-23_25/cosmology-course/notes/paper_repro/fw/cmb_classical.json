@@ -1,0 +1,913 @@
+{
+ "framework": "classical",
+ "params": {
+  "DR": 2.6004407158781677,
+  "mu": 2.068763479322016,
+  "alpha": 0.3000000000015357,
+  "l0": 20.060678032460416
+ },
+ "D_Gpc": 37.18755791864274,
+ "with_mass": {
+  "meta": {
+   "t0_Gyr": 2.578225799869643,
+   "c_code": 0.02125674964178136,
+   "V0": 1.4614552535170406,
+   "inner_outward_layer_q": 0.000712036055132849
+  },
+  "observer_distance_D": 1.0000001419337796,
+  "observer_speed_over_c": 8.683713751620111,
+  "cases": {
+   "0.0": {
+    "f": 0.0,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 299,
+     "gravity_factor_negative": 1
+    },
+    "max_sky_fraction_with_emission": 0.4694757302104438,
+    "example_gravity_factor": -3.570076663626911,
+    "example_Phi_over_c2": [
+     -26788.33823920781,
+     -26783.768162544184
+    ],
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2762..2762 K"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "mean T never 2.725 K; valid mean T range 3000..3000 K"
+     }
+    }
+   },
+   "0.1": {
+    "f": 0.1,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 297,
+     "gravity_factor_negative": 3
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_gravity_factor": -558.0074919794756,
+    "example_Phi_over_c2": [
+     -27342.77565452366,
+     -26783.768162544184
+    ],
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "mean T never 2.725 K; valid mean T range 9481..9481 K"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2794..2996 K"
+     }
+    }
+   },
+   "0.2": {
+    "f": 0.2,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 295,
+     "gravity_factor_negative": 5
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_gravity_factor": -980.1936362662404,
+    "example_Phi_over_c2": [
+     -27764.961798810426,
+     -26783.768162544184
+    ],
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "mean T never 2.725 K; valid mean T range 3.858e+04..3.858e+04 K"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2432..2997 K"
+     }
+    }
+   },
+   "0.3": {
+    "f": 0.3,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 292,
+     "gravity_factor_negative": 8
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_gravity_factor": -1432.3644777516638,
+    "example_Phi_over_c2": [
+     -28217.132640295848,
+     -26783.768162544184
+    ],
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2.895e+04..2.895e+04 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 4639..4639 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 1975..2997 K"
+     }
+    }
+   },
+   "0.4": {
+    "f": 0.4,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 288,
+     "gravity_factor_negative": 12
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_gravity_factor": -1808.369469686316,
+    "example_Phi_over_c2": [
+     -28593.1376322305,
+     -26783.768162544184
+    ],
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2.563e+04..2.563e+04 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 3423..3423 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 1496..2997 K"
+     }
+    }
+   },
+   "0.5": {
+    "f": 0.5,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 283,
+     "gravity_factor_negative": 17
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_gravity_factor": -2064.3211956107966,
+    "example_Phi_over_c2": [
+     -28849.08935815498,
+     -26783.768162544184
+    ],
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "mean T never 2.725 K; valid mean T range 4.706e+04..4.706e+04 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 3151..3151 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 1057..2997 K"
+     }
+    }
+   },
+   "0.6": {
+    "f": 0.6,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 275,
+     "gravity_factor_negative": 25
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_gravity_factor": -2237.7673737296736,
+    "example_Phi_over_c2": [
+     -29022.53553627386,
+     -26783.768162544184
+    ],
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "mean T never 2.725 K; valid mean T range 3.592e+04..3.592e+04 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 3050..3050 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 650.6..2997 K"
+     }
+    }
+   },
+   "0.7": {
+    "f": 0.7,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 261,
+     "gravity_factor_negative": 39
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_gravity_factor": -2312.0102010526307,
+    "example_Phi_over_c2": [
+     -29096.778363596815,
+     -26783.768162544184
+    ],
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "mean T never 2.725 K; valid mean T range 1.256e+04..1.256e+04 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 3010..3010 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 264.2..2997 K"
+     }
+    }
+   },
+   "0.8": {
+    "f": 0.8,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 232,
+     "gravity_factor_negative": 68
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_gravity_factor": -2324.4774145660394,
+    "example_Phi_over_c2": [
+     -29109.245577110225,
+     -26783.768162544184
+    ],
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2032..6167 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2995..2995 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 50.04..2997 K"
+     }
+    }
+   },
+   "0.9": {
+    "f": 0.9,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 140,
+     "gravity_factor_negative": 160
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_gravity_factor": -5554.645833138837,
+    "example_Phi_over_c2": [
+     -32339.413995683022,
+     -26783.768162544184
+    ],
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "mean T never 2.725 K; valid mean T range 16.59..116 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2993..2993 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "sky_fraction_used": 1.0,
+      "n_roots": 1,
+      "R_rec_Mpc": 33.91643259187967,
+      "stretch_range": [
+       1005.790795771407,
+       1197.0014283478658
+      ],
+      "swing_1e5_stretch": 8726.652760450661,
+      "doppler_range": [
+       -6.806851929373077,
+       10.489856279054537
+      ],
+      "swing_1e5_doppler": 35744109.896919735,
+      "gravity_factor": -2324.7087163796755,
+      "Phi_over_c2_emitter": -29109.47687892386,
+      "Phi_over_c2_observer": -26783.768162544184,
+      "through_space_speed_c_toward_CoE": 12.667010629168171,
+      "through_space_speed_c_away_from_CoE": 15.551420856704135,
+      "los_speed_c_toward_CoE": -12.667010629168171,
+      "los_speed_c_away": 15.551420856704135,
+      "emitter_through_space_speed_c_max": 16.419792231866147,
+      "observer_through_space_speed_c": 0.8683713751620109,
+      "travel_delay_Gyr": [
+       2.5774085289467714,
+       2.5775520961916008
+      ],
+      "deg6": {
+       "full_amp_1e5": 8742.476328961922,
+       "dipole_1e5": 8706.851035724601,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 378.8677653340741
+      },
+      "deg1": {
+       "full_amp_1e5": 8742.476328961922,
+       "dipole_1e5": 8706.854483870497,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 378.8633843301335
+      }
+     }
+    }
+   },
+   "1.0": {
+    "f": 1.0,
+    "rays_left_layer_grid": 0,
+    "R_rec_scan": {
+     "no_emission_seen": 102,
+     "gravity_factor_negative": 198
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_gravity_factor": -6141.1449268299175,
+    "example_Phi_over_c2": [
+     -32925.9130893741,
+     -26783.768162544184
+    ],
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "sky_fraction_used": 1.0,
+      "n_roots": 1,
+      "R_rec_Mpc": 33.94105305240118,
+      "stretch_range": [
+       980.8242506063332,
+       1223.3781818219527
+      ],
+      "swing_1e5_stretch": 11095.700732156116,
+      "doppler_range": [
+       1.0,
+       1.0
+      ],
+      "swing_1e5_doppler": 0.0,
+      "gravity_factor": -2324.708713298395,
+      "Phi_over_c2_emitter": -29109.476875842578,
+      "Phi_over_c2_observer": -26783.768162544184,
+      "through_space_speed_c_toward_CoE": 0.0,
+      "through_space_speed_c_away_from_CoE": 0.0,
+      "los_speed_c_toward_CoE": 0.0,
+      "los_speed_c_away": 0.0,
+      "emitter_through_space_speed_c_max": 0.0,
+      "observer_through_space_speed_c": 0.0,
+      "travel_delay_Gyr": [
+       2.5764196742143746,
+       2.5767774703568125
+      ],
+      "deg6": {
+       "full_amp_1e5": 11127.078305388668,
+       "dipole_1e5": 11059.865090554842,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 591.2096808280577
+      },
+      "deg1": {
+       "full_amp_1e5": 11127.078305388668,
+       "dipole_1e5": 11059.866312059872,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 591.2172982649454
+      }
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "sky_fraction_used": 1.0,
+      "n_roots": 1,
+      "R_rec_Mpc": 33.94105305240118,
+      "stretch_range": [
+       980.8242506063332,
+       1223.3781818219527
+      ],
+      "swing_1e5_stretch": 11095.700732156116,
+      "doppler_range": [
+       1.0,
+       1.0
+      ],
+      "swing_1e5_doppler": 0.0,
+      "gravity_factor": -2324.708713298395,
+      "Phi_over_c2_emitter": -29109.476875842578,
+      "Phi_over_c2_observer": -26783.768162544184,
+      "through_space_speed_c_toward_CoE": 0.0,
+      "through_space_speed_c_away_from_CoE": 0.0,
+      "los_speed_c_toward_CoE": 0.0,
+      "los_speed_c_away": 0.0,
+      "emitter_through_space_speed_c_max": 0.0,
+      "observer_through_space_speed_c": 0.0,
+      "travel_delay_Gyr": [
+       2.5764196742143746,
+       2.5767774703568125
+      ],
+      "deg6": {
+       "full_amp_1e5": 11127.078305388668,
+       "dipole_1e5": 11059.865090554842,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 591.2096808280577
+      },
+      "deg1": {
+       "full_amp_1e5": 11127.078305388668,
+       "dipole_1e5": 11059.866312059872,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 591.2172982649454
+      }
+     }
+    }
+   }
+  }
+ },
+ "no_mass": {
+  "meta": {
+   "t0_Gyr": 2.578225799869643,
+   "c_code": 0.02125674964178136,
+   "V0": 1.4614552535170406,
+   "inner_outward_layer_q": 1.0169689660466482e-05
+  },
+  "observer_distance_D": 1.461455253517053,
+  "observer_speed_over_c": 68.75252699238959,
+  "cases": {
+   "0.0": {
+    "f": 0.0,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 299,
+     "doppler_factor_negative": 1
+    },
+    "max_sky_fraction_with_emission": 0.4433983930750146,
+    "example_doppler_range": [
+     -0.2498712018919995,
+     -0.10673714654647008
+    ],
+    "example_max_through_space_speed_c": 96.45066844189495,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "mean T never 2.725 K; valid mean T range 3000..3000 K"
+     }
+    }
+   },
+   "0.1": {
+    "f": 0.1,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 298,
+     "ok": 1,
+     "doppler_factor_negative": 1
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_doppler_range": [
+     -22.765936316557973,
+     1.0777324515172717
+    ],
+    "example_max_through_space_speed_c": 66.09372570282181,
+    "variants": {
+     "all_effects": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 3222..3222 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 3222..3222 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2792..2997 K"
+     }
+    }
+   },
+   "0.2": {
+    "f": 0.2,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 295,
+     "ok": 1,
+     "doppler_factor_negative": 4
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_doppler_range": [
+     -0.01606878343488293,
+     -0.009544349985113536
+    ],
+    "example_max_through_space_speed_c": 109.8370560554363,
+    "variants": {
+     "all_effects": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 3018..3018 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 3018..3018 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2425..2997 K"
+     }
+    }
+   },
+   "0.3": {
+    "f": 0.3,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 293,
+     "ok": 1,
+     "doppler_factor_negative": 6
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_doppler_range": [
+     -6.735664139731045,
+     0.7869452526205464
+    ],
+    "example_max_through_space_speed_c": 87.27340410818012,
+    "variants": {
+     "all_effects": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2997..2997 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2997..2997 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 1962..2997 K"
+     }
+    }
+   },
+   "0.4": {
+    "f": 0.4,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 289,
+     "ok": 1,
+     "doppler_factor_negative": 10
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_doppler_range": [
+     -0.845285120696491,
+     5.837239444281416
+    ],
+    "example_max_through_space_speed_c": 82.47437556252235,
+    "variants": {
+     "all_effects": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2994..2994 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2994..2994 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 1588..2997 K"
+     }
+    }
+   },
+   "0.5": {
+    "f": 0.5,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 283,
+     "ok": 1,
+     "doppler_factor_negative": 16
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_doppler_range": [
+     -0.018554563695280888,
+     -0.014936849431653685
+    ],
+    "example_max_through_space_speed_c": 68.73898764027328,
+    "variants": {
+     "all_effects": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2994..2994 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2994..2994 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 1040..2997 K"
+     }
+    }
+   },
+   "0.6": {
+    "f": 0.6,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 275,
+     "ok": 1,
+     "doppler_factor_negative": 24
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_doppler_range": [
+     -0.02445740192319685,
+     -0.01880259847752521
+    ],
+    "example_max_through_space_speed_c": 54.9620832503478,
+    "variants": {
+     "all_effects": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2995..2995 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2995..2995 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 634.4..2997 K"
+     }
+    }
+   },
+   "0.7": {
+    "f": 0.7,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 262,
+     "ok": 2,
+     "doppler_factor_negative": 36
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_doppler_range": [
+     -0.059712379362024524,
+     -0.02587140751342129
+    ],
+    "example_max_through_space_speed_c": 41.23540712479276,
+    "variants": {
+     "all_effects": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2996..3150 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2996..3150 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 272..2997 K"
+     }
+    }
+   },
+   "0.8": {
+    "f": 0.8,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 234,
+     "ok": 5,
+     "doppler_factor_negative": 61
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_doppler_range": [
+     -0.050417646897521554,
+     -0.03861605798904704
+    ],
+    "example_max_through_space_speed_c": 27.488993821991585,
+    "variants": {
+     "all_effects": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2727..3712 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 2727..3712 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 50..2997 K"
+     }
+    }
+   },
+   "0.9": {
+    "f": 0.9,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 144,
+     "ok": 21,
+     "doppler_factor_negative": 135
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "example_doppler_range": [
+     -0.0802401546000124,
+     -0.07872702825044343
+    ],
+    "example_max_through_space_speed_c": 13.74767020191451,
+    "variants": {
+     "all_effects": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 1172..2997 K"
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "not_computable": "mean T never 2.725 K; valid mean T range 1172..2997 K"
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "sky_fraction_used": 1.0,
+      "n_roots": 1,
+      "R_rec_Mpc": 49.375955824146466,
+      "stretch_range": [
+       1014.7955126714163,
+       1187.8970760207721
+      ],
+      "swing_1e5_stretch": 7892.736593799625,
+      "doppler_range": [
+       -20.047883072450176,
+       11.697214596071111
+      ],
+      "swing_1e5_doppler": -27265207.90034827,
+      "gravity_factor": 1.0,
+      "Phi_over_c2_emitter": -0.0,
+      "Phi_over_c2_observer": -0.0,
+      "through_space_speed_c_toward_CoE": 6.803243844415886,
+      "through_space_speed_c_away_from_CoE": 9.419155940655276,
+      "los_speed_c_toward_CoE": -6.803243844415886,
+      "los_speed_c_away": 9.419155940655276,
+      "emitter_through_space_speed_c_max": 16.294408639894232,
+      "observer_through_space_speed_c": 6.875252699238957,
+      "travel_delay_Gyr": [
+       2.577048455303284,
+       2.5772374667587243
+      ],
+      "deg6": {
+       "full_amp_1e5": 7904.390565938798,
+       "dipole_1e5": 7878.393410275466,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 308.43425018978274
+      },
+      "deg1": {
+       "full_amp_1e5": 7904.390565938798,
+       "dipole_1e5": 7878.398592987293,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 308.439085529454
+      }
+     }
+    }
+   },
+   "1.0": {
+    "f": 1.0,
+    "rays_left_layer_grid": 0,
+    "R_rec_scan": {
+     "no_emission_seen": 101,
+     "ok": 199
+    },
+    "max_sky_fraction_with_emission": 1.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": true,
+      "sky_fraction_used": 1.0,
+      "n_roots": 1,
+      "R_rec_Mpc": 49.39087084913619,
+      "stretch_range": [
+       989.9758977220965,
+       1214.032889423775
+      ],
+      "swing_1e5_stretch": 10237.412492824136,
+      "doppler_range": [
+       1.0,
+       1.0
+      ],
+      "swing_1e5_doppler": 0.0,
+      "gravity_factor": 1.0,
+      "Phi_over_c2_emitter": -0.0,
+      "Phi_over_c2_observer": -0.0,
+      "through_space_speed_c_toward_CoE": 0.0,
+      "through_space_speed_c_away_from_CoE": 0.0,
+      "los_speed_c_toward_CoE": 0.0,
+      "los_speed_c_away": 0.0,
+      "emitter_through_space_speed_c_max": 0.0,
+      "observer_through_space_speed_c": 0.0,
+      "travel_delay_Gyr": [
+       2.5756214504831716,
+       2.5761020986064116
+      ],
+      "deg6": {
+       "full_amp_1e5": 10261.909479760365,
+       "dipole_1e5": 10210.064201730474,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 500.12007288745053
+      },
+      "deg1": {
+       "full_amp_1e5": 10261.909479760365,
+       "dipole_1e5": 10210.068416549097,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 500.1188868971545
+      }
+     },
+     "without_gravity": {
+      "full_sky": true,
+      "sky_fraction_used": 1.0,
+      "n_roots": 1,
+      "R_rec_Mpc": 49.39087084913619,
+      "stretch_range": [
+       989.9758977220965,
+       1214.032889423775
+      ],
+      "swing_1e5_stretch": 10237.412492824136,
+      "doppler_range": [
+       1.0,
+       1.0
+      ],
+      "swing_1e5_doppler": 0.0,
+      "gravity_factor": 1.0,
+      "Phi_over_c2_emitter": -0.0,
+      "Phi_over_c2_observer": -0.0,
+      "through_space_speed_c_toward_CoE": 0.0,
+      "through_space_speed_c_away_from_CoE": 0.0,
+      "los_speed_c_toward_CoE": 0.0,
+      "los_speed_c_away": 0.0,
+      "emitter_through_space_speed_c_max": 0.0,
+      "observer_through_space_speed_c": 0.0,
+      "travel_delay_Gyr": [
+       2.5756214504831716,
+       2.5761020986064116
+      ],
+      "deg6": {
+       "full_amp_1e5": 10261.909479760365,
+       "dipole_1e5": 10210.064201730474,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 500.12007288745053
+      },
+      "deg1": {
+       "full_amp_1e5": 10261.909479760365,
+       "dipole_1e5": 10210.068416549097,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 500.1188868971545
+      }
+     },
+     "stretch_only": {
+      "full_sky": true,
+      "sky_fraction_used": 1.0,
+      "n_roots": 1,
+      "R_rec_Mpc": 49.39087084913619,
+      "stretch_range": [
+       989.9758977220965,
+       1214.032889423775
+      ],
+      "swing_1e5_stretch": 10237.412492824136,
+      "doppler_range": [
+       1.0,
+       1.0
+      ],
+      "swing_1e5_doppler": 0.0,
+      "gravity_factor": 1.0,
+      "Phi_over_c2_emitter": -0.0,
+      "Phi_over_c2_observer": -0.0,
+      "through_space_speed_c_toward_CoE": 0.0,
+      "through_space_speed_c_away_from_CoE": 0.0,
+      "los_speed_c_toward_CoE": 0.0,
+      "los_speed_c_away": 0.0,
+      "emitter_through_space_speed_c_max": 0.0,
+      "observer_through_space_speed_c": 0.0,
+      "travel_delay_Gyr": [
+       2.5756214504831716,
+       2.5761020986064116
+      ],
+      "deg6": {
+       "full_amp_1e5": 10261.909479760365,
+       "dipole_1e5": 10210.064201730474,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 500.12007288745053
+      },
+      "deg1": {
+       "full_amp_1e5": 10261.909479760365,
+       "dipole_1e5": 10210.068416549097,
+       "hot_l": 200.06067803246043,
+       "leftover_rms_1e5": 500.1188868971545
+      }
+     }
+    }
+   }
+  }
+ }
+}

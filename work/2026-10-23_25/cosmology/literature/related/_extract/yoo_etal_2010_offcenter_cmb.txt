@@ -1,0 +1,1076 @@
+                                                                                                                                                1
+
+
+
+                                                      Analytic Formulae for the Off-Center CMB Anisotropy
+                                                          in a General Spherically Symmetric Universe
+
+                                                        Hideo Kodama∗)(a) , Keiki Saito∗∗)(b) and Akihiro Ishibashi∗∗∗)(a)
+                                                     (a) KEK Theory Center, Institute of Particle and Nuclear Studies, KEK,
+arXiv:1004.3089v2 [astro-ph.CO] 9 Jul 2010
+
+
+
+
+                                                                    1-1 Oho, Tsukuba, Ibaraki, 305-0801, Japan
+                                                                 (b) Department of Particles and Nuclear Physics,
+
+                                                         The Graduate University for Advanced Studies (SOKENDAI),
+                                                                 1-1 Oho, Tsukuba, Ibaraki 305-0801, Japan
+
+                                                    The local void model has recently attracted considerable attention because it can explain
+                                                the apparent accelerated expansion of the present universe without introducing dark energy.
+                                                However, in order to justify this model as an alternative to the standard ΛCDM cosmology,
+                                                the model should be tested by various observations, such as the CMB temperature anisotropy,
+                                                besides the distance-redshift relation of SNIa. For this purpose, we derive analytic formulae
+                                                for the dipole and quadrupole moments of the CMB temperature anisotropy that hold for
+                                                any spherically symmetric universe model and can be used to compare consequences of such
+                                                a model with observations of the CMB temperature anisotropy rigorously. We check that our
+                                                formulae are consistent with the numerical studies previously made for the CMB temperature
+                                                anisotropy in the void model. We also update the constraints concerning the location of the
+                                                observers in the void model by applying our analytic dipole formula with the latest WMAP
+                                                data.
+
+                                                                                  §1.   Introduction
+
+                                                  In modern cosmology, it is commonly assumed that our universe be isotropic
+                                             and homogeneous on large scales and accordingly be described by the Friedmann-
+                                             Lemaı̂tre-Robertson-Walker (FLRW) metric as a first approximation. Then, together
+                                             with consequences of various cosmological observations such as the power spectrum of
+                                             Cosmic Microwave Background (CMB) temperature anisotropy, the distance-redshift
+                                             relation of type Ia supernovae (SNIa) indicates that the expansion of the present uni-
+                                             verse is accelerated. We are then led to introduce “dark energy,” which has negative
+                                             pressure and behaves just like a positive cosmological constant, thus having the stan-
+                                             dard ΛCDM model. However, there does not appear to be any satisfactory theory
+                                             that can naturally explain the origin of dark energy and its magnitude required by
+                                             observations. It is therefore tempting to seek alternative explanations of the ap-
+                                             parent cosmic acceleration, more specifically, the SNIa luminosity distance-redshift
+                                             relation, without invoking dark energy. (For a number of approaches to the dark
+                                             energy problem, see e.g., 1) and references therein).
+                                                  One of such attempts is a “local void model” proposed by Tomita,2), 3) also in-
+                                             dependently by Celerier,4) and by Goodwin et al.5) In this model, our universe is
+                                             no longer assumed to be homogeneous, having instead an under-dense local void in
+
+                                                ∗)
+                                                   Email address: hideo.kodama@kek.jp
+                                               ∗∗)
+                                                   Email address: saitok@post.kek.jp
+                                              ∗∗∗)
+                                                   Email address: akihiro.ishibashi@kek.jp
+
+                                                                                                       typeset using P T P TEX.cls hVer.0.9i
+2
+
+the surrounding overdense universe.∗) The isotropic nature of cosmological observa-
+tions on large scales is realized by assuming the spherical symmetry and demanding
+that we live close to the center of the void. Furthermore, the model is supposed
+to contain only ordinary dust like cosmic matter, describing, say, the CDM com-
+ponent. Since such a spacetime can be described by the Lemaı̂tre-Tolman-Bondi
+(LTB) metric,23)–25) we also call this model the “LTB cosmological model.”∗∗) Since
+the rate of expansion in the void region is larger than that in the outer overdense
+region, this model can account for the observed dimming of SNIa luminosity. In
+fact, recent numerical analyses28)–32), 34)–40), 42), 43) have shown that the LTB model
+can accurately reproduce the SNIa distance-redshift relation. For this reason, de-
+spite the relinquishment of the widely accepted Copernican/cosmological principle,
+the local void/LTB model has recently attracted considerable attention.
+     However, in order to justify the LTB model as a viable alternative to the stan-
+dard ΛCDM model, one has to test this model by various observations other than
+the SNIa distance-redshift relation. A number of papers for this purpose have ap-
+peared recently, studying constraints from observations, such as the CMB tem-
+perature anisotropy,31)–33), 43) the baryon acoustic oscillation,41)–43) the kinematic
+Sunyaev-Zeldovich effect,44), 45) the galaxy count-redshift relation,46)–49) etc. Many
+LTB models with a small, a few hundreds Mpc size void are already ruled out, but at
+present, the models with a huge, Gpc size void still remain to be tested. More details
+of the current status of the LTB models are discussed in 6). Most of these analyses
+have been performed for various types of LTB models by using numerical methods,
+and it does not seem to be straightforward to compare analyses for each different
+model so as to have a coherent understanding of the results. In order to have general
+consequences of the LTB cosmology and systematically examine its viability, it is
+desirable to develop some general, analytic methods that can apply, independently
+of the details of each specific model.
+     Apart from the quest of alternatives to dark energy, the LTB metric may also
+serve as a toy model for getting some insights into the dynamics and possible observa-
+tional effects of non-linear perturbations in the standard ΛCDM cosmology. The LTB
+metric can incorporate a cosmological constant in a straightforward manner, hence
+being able to describe, as an exact solution, highly non-linear inhomogeneities—
+almost arbitrary in magnitude, as long as being spherically symmetric—in the FLRW
+universe with dark energy. In view of this, it is also worth attempting to derive some
+analytic formulae that can be used to make theoretical predictions of the Λ-LTB
+spacetimes and rigorous comparison with cosmological observations.
+     The purpose of this paper is to derive analytic formulae for the dipole and
+quadrupole moments of the CMB temperature anisotropy in general spherically
+    ∗)
+       See, e.g., 6) for earlier work along a similar line. For other proposals that also attempt to
+exploit the effects of inhomogeneities to solve the dark energy problem, interests and criticisms
+thereof, see e.g., 7)–19), 21), 22).
+   ∗∗)
+       In fact, the LTB metric has been considered in the cosmological context even much before
+the present form of the dark energy problem was raised by the results of SNIa observations. For
+example, an early proposal of the void model constructed by the LTB metric was made by Moffat
+and Tatarski.26), 27)
+                                                                                      3
+
+symmetric inhomogeneous spacetimes, including the Λ-LTB spacetime as a partic-
+ular case. In the standard cosmology, basic properties of the CMB temperature
+anisotropy are derived by inspecting perturbations of the Einstein and Boltzmann
+equations in the FLRW background universe. Ideally, it is desirable to do the same
+thing in the LTB background. However, perturbations in a LTB spacetime, let alone
+those in a general spherically symmetric spacetime, have not been very well studied
+mainly because the perturbation equations are much more involved to solve in the
+spherical but inhomogeneous background, though the linear perturbation formulae
+themselves have long been available50), 51) ∗) . In this paper, we are not going to deal
+with perturbations of the LTB metric. Instead, we will exploit the key requirement
+of the LTB cosmology that we, observers, are restricted to be around very near the
+center of the spherical symmetry: Namely, we first note that the small distance be-
+tween the symmetry center and an off-center observer gives rise to a corresponding
+deviation in the photon distribution function. Then, by taking ‘Taylor-expansions’
+of the photon distribution function at the center with respect to the deviation, we
+can read off the CMB temperature anisotropy caused by the deviation in the photon
+distribution function. By doing so, we can, in principle, construct the l-th order
+multiple moment of the CMB temperature anisotropy from the (up to) l-th order
+expansion coefficients, with the help of the background null geodesic equations and
+the Boltzmann equation. We will do so for the first and second-order expansions to
+find the CMB dipole and quadrupole moments. We also provide the concrete expres-
+sion of the corresponding formulae for the LTB cosmological model. Our formulae
+are then checked to be consistent with the numerical analyses of the CMB temper-
+ature anisotropy in the LTB model, previously made by Alnes and Amarzguioui.53)
+We then apply our formulae to place the constraint on the distance between an ob-
+server and the symmetry center of the void, by using the latest Wilkinson Microwave
+Anisotropy Probe (WMAP) data, thereby updating the results of the previous anal-
+yses.
+     In the next section, we derive analytic formulae for the CMB temperature
+anisotropy in the most general spherically symmetric spacetime. In §3, we obtain
+analytic formulae for the CMB temperature anisotropy in the LTB model, and some
+constraints concerning the position of the observer. §4 is devoted to summary. Ap-
+pendix discusses the regularity of the photon distribution function and the behavior
+of some geometric quantities at the symmetry center.
+
+        §2.   The CMB temperature anisotropy in spherically symmetric
+                                  spacetimes
+
+     In this section, we will derive analytic formulae for the dipole and quadrupole mo-
+ments of the CMB temperature anisotropy. We first briefly discuss the null geodesic
+equations, the photon distribution function and its relation to the CMB photon tem-
+perature in the most general spherically symmetric spacetime. Next, inspecting the
+first-order derivatives of the photon distribution function at the center of the spher-
+
+   ∗)
+        See also for some recent paper relevant to the LTB cosmology.52)
+4
+
+ical symmetry and using the null geodesic equations, we derive the dipole formula
+for the CMB. Then, taking further derivatives, we derive the quadrupole formula of
+the CMB temperature anisotropy in general spherically symmetric spacetimes.
+2.1. The photon distribution function in a general spherically symmetric spacetime
+    The most general spherically symmetric metric can be written in the following
+form
+          ds2 = −N 2 (t, r)dt2 + S 2 (t, r)dr 2 + R2 (t, r)(dθ 2 + sin2 θdφ2 ). (2.1)
+In this background, the relevant geodesic equations are given by
+
+                 dpt    Ṅ        2N ′ t r S Ṡ r 2  Ṙ
+                     = − (pt )2 −     p p − 2 (p ) − 2 p2⊥ ,                     (2.2)
+                 dλ     N          N         N      N R
+                 dpr    NN′         2Ṡ t r S ′ r 2  R′
+                     = − 2 (pt )2 −     p p − (p ) + 2 p2⊥ ,                     (2.3)
+                 dλ      S           S        S     S R
+where pµ = dxµ /dλ, pµ pµ = 0, with λ being an affine parameter, and p⊥ is given
+by p2⊥ ≡ R2 {(pθ )2 + (pφ )2 sin2 θ}. Here and in the rest of the paper, prime and dot
+denote the derivatives with respect to r and t, respectively.
+     We are concerned with the distribution function, F (x, p), for the CMB photons
+that leave the “last scattering surface” appropriately defined, say, t = ti hypersur-
+face, in the universe modelled by the above metric and that eventually reach an
+“observer” very near the symmetry center. We assume that the photon distribution
+function F (x, p) is spherically symmetric, respecting the symmetry of the background
+geometry, so that
+
+                                   F (x, p) = F0 (t, r, ω, µ),                   (2.4)
+
+where ω ≡ pt and µ ≡ Spr /(N ω). Note that from the above geodesic equations, we
+have
+                           N
+                  ṙ = µ     ,                                                   (2.5)
+                           S                                       !
+                             Ṅ      N′     Ṡ           Ṙ
+                  ω̇ = −ω       + 2µ    + µ2 + (1 − µ2 )    ,                    (2.6)
+                             N       S      S            R
+                                (                          !)
+                                 N R′ N ′
+                                               
+                                                     Ṙ Ṡ
+                              2
+                  µ̇ = (1 − µ )          −       +µ     −      .                 (2.7)
+                                  S R      N         R S
+
+In particular, it follows from the above equations
+
+                                 ∂ω ṙ = ∂ω µ̇ = 0,   ∂r µ̇ = 0,                 (2.8)
+
+where the last one holds for the radial null geodesics, for which µ = ±1.
+    Now, suppose the universe is locally in thermal equilibrium, that is, F is given
+as the Planck distribution function, Φ, at the last scattering surface, as required in
+most of the known LTB models. Then, given a photon geodesic γ, the ratio of the
+                                                                                                5
+
+temperature T of the photon and its energy ω is preserved along the trajectory γ.
+Therefore, ω comes in F in the form
+
+                                         F = Φ(ω/T ).                                       (2.9)
+
+Then, the CMB temperature anisotropy δT /T is generally given by
+                            (                                    )
+                                         1 δT 2
+                                            
+                               δT
+          (1)     (2)
+     (δF ) + (δF ) + · · · = − ω∂ω +                      2
+                                                   (ω∂ω ) + · · · Φ.                       (2.10)
+                                T        2 T
+
+Now, suppose that an observer lives at a distance of δxi from the symmetry center.
+Then, the left-side are written as
+                                                        1
+                  (δF )(1) = δxi (∂i F )0 ,   (δF )(2) = δxi δxj (∂i ∂j F )0 ,             (2.11)
+                                                        2
+where here and in the following, the subscript ‘0’ implies the value evaluated at the
+center (r = 0) at the present time (t = t0 ). The CMB temperature anisotropy dipole
+(δT /T )(1) and quadrupole (δT /T )(2) are therefore given by
+              (1)
+               δT          δxi (∂i F )0
+                      =−                ,                                      (2.12)
+                T            ω∂ω F0
+              (2)                                 (  )2
+               δT          1 δxi δxj (∂i ∂j F )0 1    δT (1)   (ω∂ω )2 F0
+                      =−                        +                         .    (2.13)
+                T          2       ω∂ω F0         2    T         ω∂ω F0
+
+Since (2.4) implies ∂i F = (∂i r)∂r F0 + (∂i ω)∂ω F0 + (∂i µ)∂µ F0 , (∂i F )0 , (∂i ∂j F )0 in the
+right-hand side of the above equations are given by ∂α F0 and ∂α ∂β F0 (α, β = r, ω, µ).
+Therefore, our task is to find the concrete expressions of ∂α F0 and ∂α ∂β F0 in terms
+of relevant geometric quantities.
+2.2. The CMB dipole formula
+     First, we will obtain the CMB temperature dipole formula. For this purpose,
+we derive the expression for ∂α F0 . Our stating point is the Boltzmann equation for
+F0 (t, r, ω, µ),
+                        d
+                          F0 = ∂t F0 + ṙ∂r F0 + ω̇∂ω F0 + µ̇∂µ F0 = 0,          (2.14)
+                       dt
+where ṙ, ω̇, µ̇ are defined for a given null geodesic curve γ. By differentiating this
+equation by α = r, ω, µ, and using the formula (2.8), we obtain the first order
+differential equations for ∂α F ,
+                                                                    
+                        ∂ F               ∂ω ω̇    0     0         ∂ω F0
+                  d  ω 0 
+                        ∂r F0    = −  ∂r ω̇ ∂r ṙ       0   ∂r F0  .         (2.15)
+                  dt
+                        ∂µ F0             ∂µ ω̇ ∂µ ṙ ∂µ µ̇        ∂µ F0
+The set of these equations can easily be integrated along the given photon trajectory
+γ to yield the solutions
+
+   ω∂ω F0 = (ω∂ω F0 )i ,                                                                   (2.16)
+6
+                                                              Z t
+      ∂r F0 = e −P (t,ti )
+                             (∂r F0 )i + (ω∂ω F0 )i                 dt1 e−P (t,t1 ) A(t1 ),                                      (2.17)
+                                                           ti
+                                                        Z t                                                     
+                −Q(t,ti )                                                   −Q(t,t1 )−P (t1 ,ti )            N
+      ∂µ F0 = e              (∂µ F0 )i + (∂r F0 )i                 dt1 e                                   −
+                                                              ti                                             S       t1
+                                 Z t                      (                             Z t1                                   )
+                                            −Q(t,t1 )                               N                        −P (t1 ,t2 )
+               +(ω∂ω F0 )i             dt1 e                   B(t1 ) −                                dt2 e                A(t2 ) ,
+                                  ti                                                S    t1       ti
+                                                                                                                                 (2.18)
+
+where                                               !′                          (                              !)
+                              Ṅ    N ′ Ṡ                                          N′            Ṙ Ṡ
+                  A≡             ±2    +                  ,        B≡2                 ±            −                 ,          (2.19)
+                              N     S    S                                          S             R S
+and
+                                           Z t2                   ′
+                                                          N
+                     P (t1 , t2 ) ≡ ∓               dt                  ,                                                        (2.20)
+                                               t1         S
+                                          Z t2        (                )
+                                                N R′ N ′
+                                                           
+                                                                 Ṙ Ṡ
+                    Q(t1 , t2 ) ≡ 2      dt ±           −     + −
+                                      t1        S R       N      R S
+                                          t2    Z t2            !
+                                         R                Ṅ   Ṡ
+                                = 2 ln         +2      dt    −      ,                                                            (2.21)
+                                         N t1      t1     N    S
+
+and where the subscript ‘i’ denotes the value evaluated at the last scattering surface.
+    Note that ω∂ω F0 is constant for any null geodesics, as in (2.16). Furthermore,
+as shown in Appendix, by inspecting the regularity of F at the center, as well as
+the behavior of some relevant geometric quantities near the center, we can observe
+that ∂r F0 does not contribute to the leading behavior of ∂i F in the limit r → 0.
+Therefore, we only need to find the expression of ∂µ F .
+    Using the null geodesic equation for a radial geodesic, µ = ±1, dt/dr = ±S/N ,
+we find that (2.20) and (2.21) become
+
+                      S t2                                    R t2
+                                                            
+    P (t1 , t2 ) = ln      + U (t1 , t2 ), Q(t1 , t2 ) = 2 ln      + 2U (t1 , t2 ), (2.22)
+                      N t1                                    N t1
+
+where                                                     Z t2                           !
+                                                                              Ṅ   Ṡ
+                                       U (t1 , t2 ) ≡               dt           −            .                                  (2.23)
+                                                              t1              N    S
+Substituting these into (2.18), we have
+                                                          Z t
+           R2 Ni2 −2U (t,ti )            R 2 Ni
+                                                                        
+                                                                     NS
+ ∂µ F0 =           e          (∂  F  )
+                                 µ 0 i −        (∂ F
+                                                  r 0 i)      dt 1            e−2U (t,t1 )−U (t1 ,ti )
+           N 2 Ri2                       N 2 Si            ti        R 2
+                                                                           t1
+               2           Z t        2                           Z t1                          
+            R                          N      −2U (t,t1 )                      −U (t1 ,t2 )
+           + 2 (ω∂ω F0 )i        dt1         e              B(t1 ) −      dt2 e             A(t2 ) .
+            N                 ti       R2 t1                          ti
+                                                                                               (2.24)
+                                                                                             7
+
+Here we note that the second and third terms in the right-side of the above equation
+have the form
+                       Z t                   Z r      
+                               V (t, t1 )             S    V (r, r1 )
+                I(r) ≡      dt1 2         =±     dr1                  ,       (2.25)
+                         ti    R (t1 )        ri      N r1 R2 (r1 )
+
+where V (r, r1 ) is a function of r and r1 that is regular at 0 ≤ r ≤ r1 . For the radial
+geodesic that reaches r = 0 at t = t0 , I(r) behaves as
+                                                  1 S0 V (0, 0)
+                                       I(r) ≃ −                 .                       (2.26)
+                                                  r N0 (R0′ )2
+Substituting the above expression of ∂µ F0 into
+
+                           pi            pi ∂µ F0
+                                                 
+                  ∂i F ≃ S0 (fν )0 = S0               ,             as r → 0,           (2.27)
+                           p             p     r    0
+
+which is derived in Appendix (see (A.16)), we have
+                                                            Z ri
+              S02 pi Ni −U (t0 ,ti )
+                                                                                        
+                                                                     −U (t0 ,t)
+ (∂i F )0 ≃ ∓           e            (∂r F0 )i + (ω∂ω F0 )i       dre           A(t) − B0 .
+              N0 p S i                                        0
+                                                                                         (2.28)
+Thus, using this expression, we can write (2.12) as
+            (1)                                   Z ri                        
+        δT        δLn · Ω Ni −U (t0 ,ti ) ∂r F0                −U (t0 ,t)
+              =∓                e                   +       dre           A(t) − B0 ,
+         T          N0       Si            ω∂ω F0 i     0
+                                                                                   (2.29)
+where δLn is the position vector of the observer. This is our dipole formula for the
+CMB temperature anisotropy in the most general spherically symmetric spacetime.
+The regularity of the metric, (2.1) at the symmetry center implies that N 2 ≃ C1 +
+O(r 2 ), R/r ≃ C2 + O(r 2 ), and S 2 ≃ (R/r)2 + O(r 2 ) near the center, with C1 , C2
+being some constants with respect to r. Using these estimations, we can check that
+the right-hand side of (2.29) is convergent, hence well-defined.
+2.3. The CMB quadrupole formula
+    Next, we will derive the CMB quadrupole formula by inspecting the second-
+order derivatives, ∂α ∂β F0 , (α, β = r, ω, µ). By differentiating the first row of (2.15)
+with respect to ln ω, r, and µ, we obtain
+                    d
+                       {(ω∂ω )2 F0 } = 0,                                               (2.30)
+                    dt
+                                           ′
+                      d                    N
+                        (ω∂ω ∂r F0 ) = ∓       ω∂ω ∂r F0 + A(ω∂ω )2 F0 ,                (2.31)
+                     dt                    S
+                                         (                           )
+                                            N R′ N ′
+                                                        
+                     d                                       Ṙ Ṡ
+                        (ω∂ω ∂µ F0 ) = 2 ±         −       + −           ω∂ω ∂µ F0
+                     dt                     S R        N     R S
+                                         N
+                                     −     ω∂ω ∂r F0 + B(ω∂ω )2 F0 ,                    (2.32)
+                                         S
+8
+
+for a radial geodesic for which µ = ±1. We can easily integrate this set of equations,
+and get the solutions
+
+(ω∂ω )2 F0 = {(ω∂ω )2 F0 }i ,                                                                                      (2.33)
+                                                              Z t
+ω∂ω ∂r F0 = e−P (t,ti ) (ω∂ω ∂r F0 )i + {(ω∂ω )2 F0 }i              dt1 e−P (t,t1 ) A(t1 ),                        (2.34)
+                                                               ti
+                                                              Z t                                        
+                −Q(t,ti )                                                 −Q(t,t1 )−P (t1 ,ti )       N
+ω∂ω ∂µ F0 = e               (ω∂ω ∂µ F0 )i − {ω∂ω ∂r F0 }i           dt1 e
+                                                               ti                                     S       t1
+                                   Z t                    (                   Z t1                                 )
+                                                                          N
+              +{(ω∂ω )2 F0 }i            dt1 e−Q(t,t1 )   B(t1 ) −                       dt2 e−P (t1 ,t2 ) A(t2 ) .
+                                    ti                                    S    t1   ti
+
+                                                                                                                   (2.35)
+
+Similarly, we can get the ordinary differential equations
+                       ′           ′′
+     d 2               N              N
+        (∂r F0 ) = ∓2        2
+                            ∂r F0 ∓        ∂r F0 + A′ (ω∂ω F0 )i + 2Aω∂ω ∂r F0 , (2.36)
+     dt                S              S
+                   "          (                               )#
+                       N ′          N R′ N ′
+                                                 
+  d                                                      Ṙ Ṡ                 N
+     (∂r ∂µ F0 ) = ∓         +2 ±           −          + −         ∂r ∂µ F0 − ∂r2 F0
+  dt                   S             S R       N         R S                   S
+                                                ′
+                                                 N
+                   +Bω∂ω ∂r F0 + Aω∂ω ∂µ F0 −           ∂r F0 + C∂µ F0 + B ′ (ω∂ω F0 )i ,
+                                                 S
+                                                                                    (2.37)
+                    (      ′                    )
+                                  N′
+                                     
+     d 2               N R               Ṙ Ṡ                 N
+        (∂µ F0 ) = 4 ±         −       + −         ∂µ2 F0 − 2 ∂r ∂µ F0 + 2Bω∂ω ∂µ F0
+     dt                S R        N      R S                   S
+                                        !
+                                 Ṡ Ṙ
+                   +D∂µ F0 + 2     −      (ω∂ω F0 )i ,                              (2.38)
+                                 S R
+
+for a radial geodesic, µ = ±1. We can also integrate this set of equations, and obtain
+the solutions
+
+    ∂r2 F0 = e−2P (t,ti ) (∂r2 F0 )i
+               Z t                       ′′                                    
+                                          N
+             +     dt1 e   −2P (t,t1 )
+                                        ∓               ′
+                                               ∂r F0 + A (ω∂ω F0 )i + 2Aω∂ω ∂r F0     , (2.39)
+                ti                        S                                        t1
+∂r ∂µ F0 = e−P (t,ti )−Q(t,ti ) (∂r ∂µ F0 )i
+              Z t                            (
+                         −P (t,t1 )−Q(t,t1 )     N
+            +     dt1 e                       − ∂r2 F0 + Bω∂ω ∂r F0 + Aω∂ω ∂µ F0
+               ti                                S
+                                                  ′                                    )
+                                                   N
+                                               −         ∂r F0 + C∂µ F0 + B ′ (ω∂ω F0 )i    , (2.40)
+                                                   S
+                                                                                          t
+                                     Z t                 (                             ! 1
+                                                              N                Ṡ Ṙ
+   ∂µ2 F0 = e−2Q(t,ti ) (∂µ2 F0 )i +      dt1 e−2Q(t,t1 ) −2 ∂r ∂µ F0 + 2        −       (ω∂ω F0 )i
+                                       ti                      S               S R
+                                                                                              9
+                                                                               )
+                                                     +2Bω∂ω ∂µ F0 + D∂µ F0            ,   (2.41)
+                                                                                 t1
+
+where
+          (                                )′                                      !
+                     R′ N ′                                     R′ N ′
+                                                                      
+         N                         Ṙ Ṡ             N                      Ṙ Ṡ
+  C ≡2 ±               −          + −       ,    D≡2              −   ±6      −      .
+         S           R   N         R S               S          R   N       R S
+                                                                                  (2.42)
+                                              2
+     Thus, we have the six solutions, (ω∂ω ) F0 , ω∂ω ∂r F0 , etc. However, we note that
+(ω∂ω )2 F0 is just constant. Furthermore, by inspecting the regularity of F0 at the
+center, as well as the behavior of some geometric quantities near the center, we can
+find that only ∂r2 F0 becomes relevant to the evaluation of ∂i ∂j F in the limit r → 0.
+In fact, as we show in Appendix (see (A.30)),
+                                       i j                pi pj
+                                            
+                                     2p p
+                 ∂i ∂j F → 2 δij − S0 2 (f2 )0 + S02 2 (∂r2 F0 )0
+                                       p                   p
+                                                        p pj
+                                                         i
+                              ′′       ′′
+                                                             
+                                a⊥ N
+                           +        −           δij + C0 2 (ω∂ω F0 )i ,           (2.43)
+                                a⊥     N 0               p
+
+where f2 = ∂r2 F (see (A.7) in Appendix), and a⊥ ≡ R/r, which corresponds to the
+‘scale factor’ perpendicular to the radial direction. Then, in terms of f2 and ∂r2 F0 ,
+the CMB quadrupole formula (2.13) is written as
+         (2)                     "
+          δT          1 δxi δxj
+                  =−                 2(δij − Ωi Ωj )(f2 )0 + Ωi Ωj (∂r2 F0 )0
+           T          2 (ω∂ω F0 )i
+                                      ′′                                             #
+                                       a⊥                         Ωi Ωj
+                                           δij + a⊥ S ′′ − a′′⊥
+                                                                
+                                   +                                        (ω∂ω F0 )i
+                                       a⊥                          S2 0
+                        (  )2
+                      1    δT (1)        {(ω∂ω )2 F0 }i
+                    +                                   ,                                (2.44)
+                      2     T              (ω∂ω F0 )i
+
+where Ωi ≡ δij xj /r. So, the remaining task is to find the expressions of the leading
+behavior of f2 and ∂r2 F0 at the center r → 0.
+   First, we note from (A.28) that (f2 )0 is given by
+                                                     
+                                      1 ∂r F0 ∂µ F0
+                             (f2 )0 =         ∓ 2         .                      (2.45)
+                                      2   r       r     0
+
+In the limit r → 0, from (2.18), the second term of this equation can be written as
+
+          a⊥ 20 Ni2 −2U (t0 ,ti )             a⊥ 20 ri N 2 e−2U (t0 ,t)
+                                                                                             
+∂µ F0                                                                                S
+                                                    Z
+      → 2 2e                      (∂µ F0 )i ∓ 2        dr 2                  −∂r F0 + Bω∂ω F0
+  r2      N 0 Ri                              N0 0          r         a2⊥            N
+             2    2                               2  −2U (t  ,t  )
+                                                                                      
+          a⊥ 0 Ni −2U (t0 ,ti )               a⊥ 0 e       0   i              S
+      =             e             (∂µ F0 )i ±                        −∂r F0 + Bω∂ω F0
+          N02 Ri2                             a⊥ 2i    ri                     N          i
+10
+                                      
+              1              S
+          ∓       −∂r F0 + Bω∂ω F0
+              r              N               0
+                 Z t0          (                                )
+               2           2     −2U (t  ,t)
+                                             
+            a⊥ 0         N d e         0               S
+          ± 2         dt                       −∂r F0 + Bω∂ω F0    .                          (2.46)
+            N0 ti         r dt     a2⊥                 N
+
+From the second row of (2.15), we have
+                        (                      !  )
+                                          N a′⊥    N ′ ∂r F0 −2U (t0 ,t)
+      
+   d ∂r F0 −2U (t0 ,t)         Ṡ Ṙ Ṅ
+            e           =  2     −    − ∓        ∓          e
+   dt   a2⊥                    S R N      S a⊥     S    a2⊥
+                                  A
+                                + 2 e−2U (t0 ,t) (ω∂ω F0 )i .                                 (2.47)
+                                 a⊥
+Thus, (f2 )0 becomes
+                 1 a⊥ 20 Ni2 −2U (t0 ,ti )
+                                                                       
+                                                           1S
+      (f2 )0 = ∓             e              (∂µ F0 )i +        Bω∂ω F0
+                 2 N02 Ri2                                 rN             0
+                    2
+                 a⊥ e    −2U (t0 ,ti )  
+                                                     S
+                                                                
+               − 02                       −∂r F0 + Bω∂ω F0
+                 a⊥ i      2ri                      N             i
+                                         " (                              !  )
+                                                                                   N ′
+                       2  Z t0         2
+                 1 a⊥ 0           N               Ṡ Ṙ Ṅ          N a′⊥
+               −              dt          −   2       −    −     ∓           +                ∂r F0
+                 2 N02 ti           r             S R N              S a⊥          S
+                                            (                    !
+                                                          Ṅ   Ṡ S
+                                          + −A − 2           −         B
+                                                          N    S N
+                                                                               #
+                                                                                 e−2U (t0 ,t)
+                                                              
+                                                 2 d       SB
+                                               +a⊥           2      (ω∂ω F0 )i                . (2.48)
+                                                    dt N a⊥                         a2⊥
+
+Next, from (2.39), we obtain
+
+     (∂r2 F0 )0 = e−2P (t0 ,ti ) (∂r2 F0 )i
+                    Z t0                                                   ′′      
+                                                                            N
+                  +       dte    −2P (t0 ,t)                 ′
+                                              2Aω∂ω ∂r F0 + A (ω∂ω F0 )i ±       ∂r F0 . (2.49)
+                     ti                                                     S
+    Thus, substituting (2.48) and (2.49) with (2.17) and (2.34) into (2.44), we finally
+obtain the quadrupole formula for the CMB temperature anisotropy. As in the dipole
+formula case, under the assumption that our metric (2.1) is regular at the symmetry
+center, we can check that the above quadrupole formula is well-defined.
+
+          §3.   The CMB temperature anisotropy in the LTB model
+
+     In this section, the CMB temperature anisotropy formulae obtained in the pre-
+vious section will be given concrete expressions for the LTB cosmological models,
+and then will be applied in some specific LTB models considered in the numeri-
+cal analyses of Alnes and Amarzguioui,53) to check the consistency of the formulae.
+Further, the constraint on the location of off-center observers will be derived by our
+                                                                                                  11
+
+analytic formulae with the latest WMAP data, thereby updating the previous results
+numerically obtained. But before doing so, we will first briefly recapitulate the LTB
+metric.
+3.1. The LTB spacetime
+    A spherically symmetric spacetime with only non-relativistic matter, or dust, is
+described by the LTB metric, which may be given by setting in (2.1),
+                                                       R′ (t, r)
+                                N 2 = 1,     S=                  ,                              (3.1)
+                                                     1 − k(r)r 2
+with k(r) begin an arbitrary function of r. Then, the Einstein equations reduce to
+                     !2
+                  Ṙ      2GM (r) k(r)r 2                   M ′ (r)
+                        =           −        ,  4πρ(t, r) =         ,         (3.2)
+                  R          R3         R2                   R2 R′
+
+where M (r) is an arbitrary function of only r, and ρ(t, r) is the energy density of the
+dust fluid. The solutions to (3.2) depend on the sign of k(r) and can be expressed
+in parametric form: For k(r) > 0, we have
+                      M (r)                                        M (r)
+          R(t, r) =           (1 − cos η),        t − ts (r) =              3   (η − sin η),    (3.3)
+                      k(r)r 2                                    {k(r)r 2 } 2
+where ts (r) is an arbitrary function of only r. For k(r) = 0, we have
+                                      1
+                                      9 3   1                 2
+                           R(t, r) =      M 3 (r){t − ts (r)} 3 .                               (3.4)
+                                      2
+For k(r) < 0, we have
+                  M (r)                                           M (r)
+     R(t, r) =            (cosh η − 1),      t − ts (r) =                  3    (sinh η − η).   (3.5)
+                 −k(r)r 2                                   {−k(r)r 2 } 2
+The area radius R(t, r) vanishes at t = ts (r), so that ts (r) is called the big-bang
+time. The solutions admit three arbitrary functions k(r), M (r) and ts (r), but due
+to one degree of freedom in rescaling r, only two of them are independent. By
+appropriately choosing the profile of these two arbitrary functions, one can construct
+LTB cosmological models that can reproduce the observed SNIa distance-redshift
+relation.
+3.2. The analytic formula for the CMB dipole
+    In the LTB cosmological model, in addition to a⊥ = R/r defined previously,
+we also introduce the ‘scale factor along the radial direction’ by a// (t, r) ≡ R′ (t, r).
+Accordingly, we also define two Hubble expansion rates in the radial and azimuthal
+direction, respectively, by
+
+                                    Ṡ   ȧ//               Ṙ   ȧ⊥
+                            H// ≡      =      ,     H⊥ ≡       =     .                          (3.6)
+                                    S    a//                R    a⊥
+12
+
+     From (2.19) and (2.23), we obtain
+                              Z t2
+             U (t1 , t2 ) = −      dtH// , A = H/′/ ,         B = ±2(H// − H⊥ ).               (3.7)
+                                 t1
+
+Then, the analytic formula for the CMB temperature anisotropy dipole (2.29) takes
+the form
+       (1)               (                            Z ri                  )
+                             e−U (t0 ,ti )
+                                                   
+       δT                                     ∂r F0
+              = ∓δLn · Ω                              +          ′ −U (t0 ,t)
+                                                             drH// e            . (3.8)
+        T                        Si          ω∂ω F0 i    0
+
+     Now, using this formula, we derive some constraints concerning the position of
+off-center observers. In general, the CMB temperature anisotropy    P        can be decom-
+posed in terms of the spherical harmonics Ylm by δT /T =               l,m lm Ylm . We are
+                                                                          a
+                                                      .
+interested in a10 as the dipole moment. From (3 8), we obtain
+                    r       (                             Z ri                  )
+                              e−U (t0 ,ti )
+                                                    
+                      4π                       ∂r F0
+            a10 = ∓      δL                             +          ′ −U (t0 ,t)
+                                                               drH// e            .   (3.9)
+                       3         Si           ω∂ω F0 i     0
+
+Assuming that the universe is locally in thermal equilibrium at the last scattering
+surface, the first term in the bracket is of the order of (∂r T /T )i because F0 is isotropic
+and depends only on ω/Ti . In the models we consider in the present paper, this term
+can be neglected because the void size is sufficiently smaller than the horizon size
+and therefore, the observed region of the LTB universe is homogeneous with good
+accuracy on the last scattering surface. Furthermore, in order to estimate this term
+correctly, we have to specify the universe model before the last scattering. This is
+beyond the scope of this paper. Therefore, we have only estimated the contribution
+of the second term numerically. For the LTB model considered in 53), we have
+found that the induced a10 is about 1.23 × 10−3 or less, according to WMAP data,54)
+which implies that the distance from the observer to the center, δL, has to be,
+δL <∼ 16Mpc. This is consistent with the numerical result of 53). We have also
+applied this formula to various LTB models, and found, for example, δL <           ∼ 14Mpc
+in the Garfinkle model,35) and δL <  ∼   12Mpc    in the GBH    model.  39)
+
+
+3.3. The analytic formula for the CMB quadrupole
+    As for the quadrupole moment in the LTB model, from (2.48) and (2.49), we
+obtain
+                 1 a20 −2U (t0 ,ti )              a20 e−2U (t0 ,ti )
+                                                                                              
+                                                                                  a//
+      (f2 )0 = ∓       e             (∂µ F0 )i −                       −∂r F0 +        Bω∂ω F0
+                 2 Ri2                           a⊥ 2i     2ri                     ξ             i
+                     Z t0     "                                    ′ 
+                 a 2        1                               ξ a⊥′
+                                                                            ξ
+               − 0        dt − 2 H// − H⊥ ∓                           +             ∂r F0
+                 2 ti       r                              a// a⊥          a//
+                                     
+                                                       a//
+                                + −H/′/ + 2H// B
+                                                        ξ
+                                                                          #
+                                                                            e−2U (t0 ,t)
+                                                         
+                                          2 d      SB
+                                       +a⊥                    (ω∂    F  )
+                                                                    ω 0 i                ,     (3.10)
+                                             dt N a2⊥                          a2⊥
+                                                                                              13
+
+   (∂r2 F0 )0 = e−2P (t0 ,ti ) (∂r2 F0 )i
+                  Z t0                                                         ′′      
+                               −2P (t0 ,t)      ′               ′′               ξ
+                +       dte                  2H// ω∂ω ∂r F0 + H// (ω∂ω F0 )i +       ∂r F0 ,
+                   ti                                                           a//
+                                                                                           (3.11)
+                                          p
+where a0 ≡ S0 = a// 0 = a⊥0 , and ξ ≡ 1 − k(r)r 2 , just for notational simplicity,
+and where                                  Z t2  ′
+                                                   ξ
+                          P (t1 , t2 ) = ∓     dt      ,                    (3.12)
+                                            t1    a //
+
+
+which is obtained from (2.20). Thus, we now have the analytic formula for the
+quadrupole moment of the CMB temperature anisotropy in the LTB model: (2.44)
+together with (3.10) and (3.11).
+    From (2.44), we derive
+                   r
+                     16π (δL)2                 (∂r2 F0 )0   (S ′′ − a′′⊥ )0
+                                                                           
+                                    2(f2 )0
+          a20 = −                −           +            +
+                      45 2a20      (ω∂ω F0 )i (ω∂ω F0 )i          a0
+                   (a10 )2 ((ω∂ω )2 F0 )i
+                  + √                     .                                               (3.13)
+                   2 5π (ω∂ω F0 )i
+If the universe is locally in thermal equilibrium at the beginning, we can set (∂α ∂µ F0 )i
+to be zero. Further, for the same reason as we explained for the dipole formula, we
+neglect the term (∂α ∂r F0 )i in the present paper. Under these assumption, we have
+estimated the quadrupole moment using this formula numerically for the model in
+53), and found that a20 ≃ 8.61 × 10−7 . This is consistent with the numerical result
+of 53). For other models, for example, a20 ≃ 5.51 × 10−6 in the Garfinkle model,35)
+and a20 ≃ −9.27 × 10−7 in the GBH model.39)
+
+                           §4.   Summary and discussions
+
+     In this paper, we have derived the analytic formulae for the dipole (2.29) and
+quadrupole (2.44) moments of the CMB temperature anisotropy in general spheri-
+cally symmetric spacetimes, including the LTB cosmological model as a special case.
+The formulae can be used to compare consequences of the LTB/local void models
+with observations of the CMB temperature anisotropy rigorously. The formulae also
+enable us to identify physical origins of the CMB temperature anisotropy in the LTB
+models. For example, in the CMB dipole formula (2.29), the first term comes from
+the initial (spherical) inhomogeneity at the last scattering surface, while the sec-
+ond term represents the integrated Sachs-Wolfe effect. Note that the first term also
+contains a contribution that reduces to the second-order ISW effect in the spatially
+homogeneous case.
+     We have checked the consistency of our formulae for both dipole and quadrupole,
+with the widely-used recent numerical results for the special LTB model by H. Alnes
+and M. Amarzguioui.53) Furthermore, we applied our formulae to other LTB models,
+such as those in 35), 39) and in particular, for the dipole moment, we found the
+14
+
+constraints on the distance between the void center and an off-center observer, by
+using the latest WMAP data.
+     We can also utilize our analytic quadrupole formula to discuss the relevance of
+the LTB model to observed anomalies. For example, the observed magnitude of the
+quadrupole is known to be significantly lower than the ΛCDM model predicts. This
+is usually understood as a cosmic variance, i.e., to be produced by a special feature
+of our Universe, one particular realization of the statistical ensemble. Because the
+local void model is one of such realization with a very low probability in the standard
+ΛCDM model, it is tempting to see whether the quadrupole anomaly of the CMB
+anisotropy can be explained by a local void model. Unfortunately, however, the above
+analysis of the constraint on the observer offset by the dipole moment implies that the
+observed anomaly cannot be explained solely by the induced quadrupole moment in
+LTB models such as those in 35), 39), 53). Nevertheless, this result is not conclusive.
+For example, we have implicitly assumed that the off-center observer stays at a fixed
+comoving position. If the observer has a peculiar velocity pointed toward the center
+of the void, however, the value of δL could be chosen to be much larger than the
+case with no peculiar velocity. If it is the case, then the observed anomaly of the
+quadrupole could be explained within the LTB models of 35), 39), 53). Therefore, it
+would also be worth attempting to develop other analytic formulae concerning CMB
+polarizations, lensing effects, etc. (cf. 55)) that can be used to distinguish the LTB
+and FLRW cosmologies.
+
+                                Acknowledgements
+
+    We would like to thank Eiichiro Komatsu for useful information and Hajime
+Goto for discussions and comments. We also would like to thank all participants of
+the workshop Λ-LTB Cosmology (LLTB2009) held at KEK from 20 to 23 October
+2009 for enlightening and joyful discussions. This work was supported in part by the
+project Shinryoiki of the SOKENDAI Hayama Center for Advanced Studies and the
+MEXT Grant-in-Aid for Scientific Research on Innovative Areas (No. 21111006).
+
+                                  Appendix A
+                The regularity and derivatives of F0 near the center
+
+     In this appendix, we discuss the regularity of the distribution function F at
+the symmetry center, and find which of ∂α F (resp. ∂α ∂β F ), α, β = r, ω, µ, become
+relevant in the leading behavior of the first- (resp. second-) order derivatives of F
+in the limit r → 0.
+     Mathematically, the distribution function can become singular at some radius
+including at the center. Furthermore, some authors concluded that a C 2− -class
+singularity of the metric should be allowed at the center in order to construct a
+model with accelerated expansion exactly at the center.36) However, such a model
+can be easily made smooth by appropriate smoothing and the original singular model
+can be recovered as a limit such that the smoothing length approaches zero. Hence,
+the final formulae for the dipole and quadrupole anisotropy of CMB given in the
+                                                                                       15
+
+present paper can be applied also to models with singularity in the metric or the
+distribution function if the results are finite. Hence, in this appendix, we assume
+that the metric and the distribution function are regular and smooth everywhere in
+Cartesian-type space coordinates on which the rotational symmetry group acts as
+on the standard Cartesian coordinates of the Euclidean space.
+     In such a coordinate system x = (xi ), the spatial part of the metric (2.1),
+denoted here by gij , can be written as
+
+                             gij = S 2 Ωi Ωj + a2⊥ (δij − Ωi Ωj ),                   (A.1)
+
+where Ω i ≡ xi /r and a⊥ ≡ R/r. For any smooth and rotationally invariant function
+h in this coordinate system, when it is Taylor expanded as
+
+                              h = h0 + hi xi + hij xi xj + · · · ,                   (A.2)
+
+each coefficient hij··· must be a rotationally invariant constant tensor. Hence, these
+coefficient tensors vanish for odd ranks and can be written as the sum of products
+of the Kronecker delta δij for even ranks. This implies that h is a smooth function
+of r 2 = δij xi xj .
+      Similarly, a smooth distribution function in this coordinate system can be Taylor
+expanded as
+
+                 F (t, x, p) = b0 (t, p) + bi (t, p)xi + bij (t, p)xi xj + · · · ,   (A.3)
+
+where p = (pi ). When F is rotationally invariant, each term on the right-hand side
+is rotationally invariant separately. This implies that each bi1 ···il is an SO(3) tensor
+depending only on the non-trivial vector pi and therefore, can be written as the sum
+of products of the Kronecker delta δij and the vector p = (pi ). This implies that F
+can be written
+                            F (t, x, p) = f˜(t, xi xi , |p|, xi pi ),               (A.4)
+where xi xi = r 2 and |p| = (δij pi pj )1/2 . Here, from
+
+                           p2 ≡ gij pi pj = C(xi pi )2 + a2⊥ δij pi pj ,             (A.5)
+
+where C is a smooth function defined by
+
+                                                  S 2 − a2⊥
+                                     C(t, r) ≡              ,                        (A.6)
+                                                      r2
+it follows that |p| is a smooth function of t, ω = p, xi pi and r 2 . Therefore, the
+regularity of F at the center is equivalent to the condition that the corresponding
+function F0 (t, r, ω, µ) can be written in terms of a smooth function f with the four
+arguments t, r 2 , y ≡ ln ω, ν ≡ rµ = Sxi pi /p
+
+                                F0 (t, r, ω, µ) = f (t, r 2 , y, ν).                 (A.7)
+
+Then,
+                      ∂i F = ∂i f = {∂i (r 2 )}f2 + (∂i y)fy + (∂i ν)fν ,            (A.8)
+16
+
+where f2 ≡ ∂r2 f, fy ≡ ∂y f , and fν ≡ ∂ν f . Here, because the spatial derivative of p2
+can be written
+                                        (a2⊥ )′
+                           ′                            
+                             C
+                     2
+                ∂i (p ) =          r 2
+                                (rp ) +              j k
+                                                δjk p p xi + 2C(rpr )pi ,         (A.9)
+                              r            r
+we have
+               ∂i (r 2 ) = 2xi ,                                                               (A.10)
+                                 N′    a′⊥             Ca′⊥  µr 2          µr pi
+                                               ′                 
+                                                C
+             ∂i (ln ω) = −          +        +     −                  xi + C       ,           (A.11)
+                                rN    ra⊥       2r     ra⊥      S            S p
+                             pi       xi p r        ∂i (p2 )
+                   ∂i ν = S + rS ′           − rSpr          .                                 (A.12)
+                             p        r p            2p3
+In particular, in the limit r → 0, we see
+                                         C               → {a⊥ (S ′′ − a′′⊥ )}0 ,              (A.13)
+                          ∂i (p2 ), ∂i (r 2 ), ∂i (ln ω) → O(r),                               (A.14)
+                                                             pi
+                                       ∂i ν              → S0 .                                (A.15)
+                                                             p
+Therefore, from (A.8), we find that the first derivative of F0 behaves at the center
+as
+                                 pi            pi ∂µ F0
+                                                        
+                       ∂i F → S0 (fν )0 = S0                 .                (A.16)
+                                  p             p     r    0
+    Next we study the second order derivatives of F with respect to xi , which are
+written as
+        ∂i ∂j F = {∂i ∂j (r 2 )}f2 + {∂j (r 2 )} {∂i (r 2 )}f22 + (∂i y)f2y + (∂i ν)f2ν
+                                                                                       
+
+                  +(∂i ∂j y)fy + (∂j y) {∂i (r 2 )}fy2 + (∂i y)fyy + (∂i ν)fyν
+                                                                                  
+
+                  +(∂i ∂j ν)fν + (∂i ν) {∂i (r 2 )}fν2 + (∂i y)fνy + (∂i ν)fνν .          (A.17)
+                                                                                  
+
+We find that
+       ∂i ∂j (r 2 ) = 2δij ,                                                                     (A.18)
+                      "                                 ′
+                                                                     #
+                          C′ ′                   (a2⊥ )′                 xj     C′
+                                                        
+       ∂i ∂j (p2 ) =               (rpr )2 +                δkl pk pl xi + 2 (rpr )(pi xj + pj xi )
+                           r                       r                      r      r
+                                           (a2 )′
+                          ′                                
+                            C
+                      +        (rpr )2 + ⊥ δkl pk pl δij + 2Cpi pj ,                             (A.19)
+                             r               r
+                                                            ′ ′ i
+                      ∂i ∂j (p2 ) ∂i (p2 )∂j (p2 )           N        x j     N′
+     ∂i ∂j (ln ω) =                −                    −               x   −    δij ,           (A.20)
+                         2p2              2(p2 )2            rN       r       rN
+                                                                                  ′ ′ r i j
+                      S ′ xi pj + 2xj pi rpr j
+                          
+                                                                                        S  rp x x
+           ∂i ∂j ν =                         − 3 {x ∂i (p2 ) + xi ∂j (p2 )} +
+                       r            p             2p                                    r   p r
+                          S                                      rp r 
+                                                                                      3
+                                                                                                  
+                                 i      2      j       2                      2           2     2
+                      − 3 {p ∂j (p ) + p ∂i (p )} − S 3 ∂i ∂j (p ) − 2 ∂i (p )∂j (p ) .
+                         2p                                      2p                 2p
+                                                                                                 (A.21)
+                                                                                           17
+
+In particular, in the limit r → 0,
+
+                         ∂i ∂j (r 2 ) → 2δij ,                                        (A.22)
+                                          ′′ 
+                                            a⊥
+                                  2
+                         ∂i ∂j (p ) → 2           p2 δij + 2C0 pi pj ,                (A.23)
+                                            a⊥ 0
+                                                                  pi pj
+                                         ′′
+                                          a⊥ N ′′
+                                                    
+                       ∂i ∂j (ln ω) →          −         δij + C0 2 ,                 (A.24)
+                                          a⊥     N 0               p
+                          ∂i ∂j (ν) → O(r).                                           (A.25)
+
+From these we find that in the limit r → 0,
+
+                                               pi pj          pi pj
+                           ′′
+                            a⊥ N ′′
+                                                    
+  ∂i ∂j F → 2δij (f2 )0 +       −      δij + C0 2 (fy )0 + S02 2 (fνν )0 . (A.26)
+                            a⊥    N 0           p              p
+
+Now, from (A.7), we find that ∂r F0 = 2rf2 + µfν , ∂µ F0 = rfν , ω∂ω F0 = fy , and
+∂r2 F0 = 2f2 + 4r 2 f22 + 4rµf2ν + µ2 fνν , and hence in the limit r → 0,
+                                         
+                                   ∂µ F0
+                           fν →               ,                            (A.27)
+                                      r     0
+                                                     
+                                 1 ∂r F0        ∂µ F0
+                           f2 →              −µ 2         ,                (A.28)
+                                 2      r         r     0
+                                                               
+                                  1             ∂r F0     µ
+                          fνν → 2 ∂r2 F0 −            + 2 ∂µ F0
+                                 µ                r      r        0
+                                  1
+                              = 2 ∂r2 F0 − 2f2 0 .                         (A.29)
+                                                   
+                                 µ
+Thus, we finally obtain
+
+                                            pi pj  pi pj 2
+                                                   
+                 ∂i ∂j F → 2       δij − S02 2          (f2 )0 + S02
+                                                        (∂ F0 )0
+                                     p              p2 r
+                                                 pi pj
+                              ′′
+                               a⊥ N ′′
+                                                      
+                           +       −     δij + C0 2 (ω∂ω F0 )i .                      (A.30)
+                               a⊥    N 0          p
+
+
+                                            References
+     1) E.J. Copeland, M. Sami, and S. Tsujikawa, Int. J. Mod. Phys. D 15, 1753 (2006).
+     2) K. Tomita, Astrophys. J. 529, 26 (2000).
+     3) K. Tomita, Astrophys. J. 529, 38 (2000).
+     4) M. N. Célérier, Astron. Astrophys. 353, 63 (2000).
+     5) S. P. Goodwin, A. J. Barber, J. Griffin and L. I. Onuora, arXiv: astro-ph/9906187.
+     6) K. Tomita, arXiv: astro-ph/0906.1325.
+     7) T. Buchert, Gen. Rel. Grav. 32, 105 (2000).
+     8) T. Buchert and M. Carfore, Phys. Rev. Lett. 90, 031101 (2003).
+     9) G. F. Ellis and T. Buchert, arXiv: gr-qc/0506.106.
+    10) S. Räsänen, JCAP 0402, 003 (2004).
+    11) E. W. Kolb, S. Matarrese, A. Notari and A. Riotto, Mod. Phys. Lett. A 20, 2705 (2005).
+    12) E. W. Kolb, S. Matarrese and A. Riotto, New J. Phys. 8, 322 (2006).
+    13) M. Kasai, Phys. Rev. Lett. 69, 2330 (1992).
+18
+
+     14) Y. Nambu, Phys. Rev. D 62, 104010 (2000).
+     15) T. Kai, H. Kozaki, K. Nakao, Y. Nambu and C.-M. Yoo, Prog. Theor. Phys. 117, 229
+         (2007).
+     16) M. Tanimoto and Y. Nambu, Class. Quant. Grav. 24, 3843 (2007).
+     17) D.L. Wiltshire, arXiv: gr-qc/0503099.
+     18) E.E. Flanagan, Phys. Rev. D 71, 103521 (2005).
+     19) C.M. Hirata and U. Seljak, Phys. Rev. D 72, 023517 (2005).
+     20) E.R. Siegel and J.N. Fry, Astrophys. J. 628, L1 (2005).
+     21) A. Ishibashi and R.M. Wald, Class. Quantum Phys. 23, 235 (2006).
+     22) M. Kasai, H. Asada and T. Futamase, Prog. Theor. Phys, 115 827 (2006).
+     23) G. Lemaı̂tre, Ann. Soc. Sci. Brux 53, 51 (1933).
+     24) R. C. Tolman, Proc. Nat. Acad. Sci. USA. 20, 169 (1934).
+     25) H. Bondi, Mon. Not. Roy. Astron. Soc. 107, 410 (1947).
+     26) J.W. Moffat and D.C. Tatarski, Phys. Rev. D 45, 3512 (1992).
+     27) J. W. Moffat and D. C. Tatarski, Astrophys. J. 453, 17 (1995).
+     28) K. Tomita, MNRAS 326, 287 (2001).
+     29) H. Iguchi, T. Nakamura and K. Nakao, Prog. Theor. Phys. 108, 809 (2002).
+     30) M. Kasai, Prog. Theor. Phys. 117, 1067 (2007).
+     31) H. Alnes, M. Amarzguioui and Ø. Grøn, Phys. Rev. D 73, 083519 (2006).
+     32) J. W. Moffat, JCAP 0510, 012 (2005).
+     33) K. Tomita, Astrophys. J. 584, 580 (2003).
+     34) R. Mansouri, arXiv: astro-ph/0512605.
+     35) D. Garfinkle, Class. Quant. Grav. 23, 4811 (2006).
+     36) R. A. Vanderveld, É. É. Flanagan and I. Wasserman, Phys. Rev. D 74, 023506 (2006).
+     37) T. Biswas, R. Mansouri and A. Notari, JCAP 0712, 017 (2007).
+     38) C.-M. Yoo, T. Kai and K. Nakao, Prog. Theor. Phys. 120, 937 (2008).
+     39) J. Garcı́a-Bellido and T. Haugbølle, JCAP 0804, 003 (2008).
+     40) T. Clifton, P. G. Ferreira and K. Land, Phys. Rev. Lett. 101, 131302 (2008).
+     41) E. Gaztañaga, R. Miquel and E. Sánchez, arXiv: astro-ph/0808.1921.
+     42) J. P. Zibin, A. Moss and D. Scott, Phys. Rev. Lett. 101, 251303 (2008).
+     43) S. Alexander, T. Biswas, A. Notari and D. Vaid, JCAP 0909, 025 (2009).
+     44) B. A. Benson et al, arXiv: astro-ph/0303510.
+     45) J. Garcı́a-Bellido and T. Haugbølle, JCAP 0809, 016 (2008).
+     46) A. E. Romano, Phys. Rev. D 76, 103525 (2007).
+     47) A. E. Romano, JCAP 1001, 004 (2010).
+     48) A. E. Romano, arXiv: astro-ph/0912.2866.
+     49) A. E. Romano, arXiv: astro-ph/0912.4108.
+     50) U. Gerlach and U. Sengupta, Phys. Rev. D 19, 2268 (1979).
+     51) U. Gerlach and U. Sengupta, Phys. Rev. D 20, 3009 (1979).
+     52) C. Clarkson, T. Clifton and S. February, JCAP 0906, 025 (2009).
+     53) H. Alnes and M. Amarzguioui, Phys. Rev. D 74, 103520 (2006).
+     54) G. Hinshaw et al, Astrophys. J. Suppl. 170, 288 (2007).
+     55) H. Goto and H. Kodama, work in progress
+

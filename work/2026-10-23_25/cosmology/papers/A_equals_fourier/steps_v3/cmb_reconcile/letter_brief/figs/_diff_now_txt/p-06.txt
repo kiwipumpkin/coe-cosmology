@@ -1,0 +1,16 @@
+2.4    Sky orientation
+The model must be placed on the Galactic sky. Starting from an untilted, no-roll configuration, we apply
+a +15◦ tilt, then a radial gradient, then an +80.8◦ roll about the CoE axis. Figure 5 shows that sequence;
+Figure 6 overlays the predicted MAX/MIN bands on Migkas Fig. 8 as one intact three-panel stack.
+
+
+
+
+Figure 5: Sky orientation sequence: untilted; +15◦ tilt; tilt with gradient; tilt, gradient, and +80.8◦ roll. Each row shows
+the model frame, the Mollweide sky map, and a 3D view.
+
+
+
+
+                                                             6
+

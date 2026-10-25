@@ -1,0 +1,400 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[margin=1.7cm]{geometry}
+\setlength{\columnsep}{0.6cm}
+\setcounter{topnumber}{1}\setcounter{bottomnumber}{1}\setcounter{totalnumber}{1}\renewcommand{\bottomfraction}{0.7}\renewcommand{\topfraction}{0.96}\renewcommand{\textfraction}{0.03}\renewcommand{\floatpagefraction}{0.95}\renewcommand{\dbltopfraction}{0.88}\renewcommand{\dblfloatpagefraction}{0.8}\setcounter{dbltopnumber}{1}
+\usepackage{stfloats}\usepackage{amsmath,amssymb,graphicx,booktabs,caption,hyperref}
+\setcounter{dblbotnumber}{1}\def\dblbotfraction{0.72}
+\captionsetup{font=small,labelfont=bf}
+\newcommand{\FIG}[4]{\begin{figure*}[t]\centering\fig{\textwidth}{#2\textheight}{fig/#1}\caption{#3}\label{#4}\end{figure*}}
+\newcommand{\FIGc}[4]{\begin{figure}[tb]\centering\fig{\columnwidth}{#2\textheight}{fig/#1}\caption{#3}\label{#4}\end{figure}}
+\newcommand{\fig}[2]{\includegraphics[width=#1,height=#2,keepaspectratio]}
+\newcommand{\why}[1]{\par\noindent\textit{Validity.} #1\par}
+\newcommand{\flag}[1]{\textsf{[unverified: #1]}}
+\title{Off-centre CoE cosmology: the mathematical workflow from geometry to the Planck $TT$ spectrum}
+\author{Working notes for C.\,A. \quad (revision 5, compiled 24 October 2026)}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+\begin{center}\itshape Can the universe appear to accelerate its expansion without actually accelerating?\end{center}
+\noindent The inferred acceleration, attributed to dark energy or $\Lambda$, comes from residuals of supernova distances relative to a decelerating homogeneous model. We pose the question of whether an off-centre observer in an inhomogeneous expansion could read an apparent acceleration out of those same residuals. The method throughout is to treat residuals as features: with data $Y$ and model $M$, the residual $R=Y-M$ is what remains once known contributions are modelled out, and its structure becomes the observable for the next step of an iterative loop (observation $\to$ model $\to$ residual analysis $\to$ hypothesis $\to$ revised model).\par\medskip
+These notes take each step of the off-centre centre-of-expansion (CoE) workflow and derive it: inputs, intermediate steps, the meaning and units of each term, a numerical example using the values actually used in the code, and the conditions under which each approximation holds or fails. The order follows the inverse problem: the question and its set-up, with every symbol defined; geometry and the radiation/matter history; the observables $A/A_{\rm all}$ and $B/B_{\rm all}$ against angle; density laws and the CatWISE lock used in the Migkas fit; the rings, the Migkas overlay and the rotation (tilt, gradient, roll) of the model on the sky; the second inverse problem posed by a flat CMB; spherical harmonics, $C_\ell$, $D_\ell$ and cosmic variance; a realistic void/cluster web and the Monte-Carlo kernel ladder; the stochastic density field, Poisson's equation, the moving-lens source and its exact and Limber projections; the fixed low-$\ell$ background $D^{\rm fix}_\ell$; the acoustic and damped half-scale fits; and the residual decomposition. Goodness of fit is reported only as $\chi^2$ and Pearson $r^2$, both defined in \S\ref{sec:stats}. These notes contain no pass/fail verdicts. Where a figure carries such a label, it is described as a label produced by the plotting script. Items that could not be traced to code or data are marked \flag{\ldots}.
+\end{abstract}
+
+\section*{Introduction: residuals as features}
+The accelerating expansion is itself a residual. Supernova distances lie above what a decelerating homogeneous model predicts, and that excess, $R=Y-M$, is read as acceleration and assigned to dark energy or $\Lambda$. These notes ask whether the same residual could instead be geometric: whether an observer who is off the centre of an inhomogeneous expansion would see an apparent acceleration without any acceleration taking place. This is posed as a question. The notes do not claim to have answered it.
+
+The approach follows a long tradition of treating residuals as signals rather than noise. Tukey (1977) made the inspection of residuals central to exploratory data analysis, Box (1976) described science as an iteration in which the inadequacies of a model guide its revision, and Mayo (1996) asked when a discrepancy is severe enough to count as real. The historical precedents are familiar: Kepler's orbits came from residuals that circles could not remove, Le Verrier predicted Neptune from residuals in the motion of Uranus, and the residual precession of Mercury pointed to general relativity. A residual can also be an artefact of the data or the model, and part of the work below is to say which residuals survive and which may not.
+
+In practice each section models out a known contribution and examines what is left. The work is posed as two inverse problems. The first starts from the observed anisotropy of the cluster scaling relation and asks what off-centre geometry, built only from ordinary matter and classical laws, would produce it. The second follows from the first: the same geometry, carried to last scattering, would make the CMB as anisotropic as the clusters, yet the observed CMB is flat to $\sim10^{-5}$. The setup defines the terms; the geometry places the off-centre observer; the observables are $A$ and $B$ against angle; the rings and the rotated overlay compare the model's morphology with the Migkas maps; the cluster-scaling data give a residual dipole that the CoE density law is fitted to; the CMB spectrum is built up as a fixed background plus acoustic and damped terms, with the residual of each fit motivating the next; and the remaining A and B residuals are peeled with harmonics $n=1$, 2, 3 and the leftover map is compared with independent sky anomalies. Tensions are reported as they stand.
+
+\begin{table}[tb]\centering\small\caption{Parameters and symbols.}\label{tab:par}\begin{tabular}{@{}p{0.27\columnwidth}p{0.63\columnwidth}@{}}\toprule
+$D$, $d$ & observer--CoE distance 58.2; vision radius 14.3005\,Gpc\\
+$R$, $\chi$ & source-sphere radius; distance from observer\\
+$a_{\rm eq}$ & equality scale factor, 1/3400\\
+$L$, $g$ & density scale length, shape\\
+$\epsilon$, $s_R$ & web amplitude fraction; tidal sky at $R$\\
+$\lg A$, $n$ & source amplitude, tilt\\
+$A_w$, $r_s$, $\phi$ & acoustic amplitude, scale, phase\\
+$k_D$ & damping cutoff\\
+$R_c$, $w$ & window centre, width\\
+$B$, $k_B$, $r_2$, $\phi_2$ & damped mode\\
+$K_M$ & moving-lens kernel\\
+$c_\ell$ & exact/Limber ratio\\
+$D^{\rm fix}_\ell$ & deterministic background, $\ell\le30$\\
+$\Delta\ell$, $L$ & residual period, envelope\\\bottomrule
+\end{tabular}\end{table}
+\section{The question as an inverse problem: set-up and symbols}\label{sec:setup}
+\noindent\emph{Residual in view.} The residual here is the supernova excess itself. The forward route assumes a homogeneous model and fits a dark-energy term to what is left. The inverse route starts from the observables and asks which finite geometry of ordinary matter, under classical laws and seen from off its centre, would leave the same residual, without dark matter or dark energy.
+
+\paragraph{The question.} We separate \emph{physical} expansion, the true radial motion of matter away from a centre of expansion, from \emph{inferred} expansion, what an off-centre observer reconstructs from redshifts and luminosity distances under homogeneous--isotropic assumptions. The question is whether the second can look accelerated when the first is not. The geometry of Fig.~\ref{fig:setup} is the candidate; nothing in it is new physics.
+
+\paragraph{Terms and symbols.}
+\textbf{CoE}: centre of expansion, the point from which matter moves radially outward.
+\textbf{$D$}: distance from the observer to the CoE; working value 58.2\,Gpc.
+\textbf{$d$}: the observer's vision (sampling) radius for the cluster data, 14.3005\,Gpc, fixed at the Migkas sample depth and not fitted, so lines of sight sample radii $D-d\le r\le D+d$ from the CoE.
+\textbf{$R$}: radius of the CMB source sphere around the observer (comoving distance to last scattering in this model), explored at $R=4$, 8, 14\,Gpc.
+\textbf{Shell and core}: the observer sits inside a thick shell of ordinary matter around the CoE; the core is the matter nearer the CoE than the shell.
+\textbf{$\rho(r)$}: matter density as a function of distance $r$ from the CoE, written $\rho_0g(r/L)$ with scale length $L$ and shape $g$ (\S\ref{sec:laws}).
+\textbf{$V_E$}: the expansion (free-fall) velocity of matter relative to the CoE at radius $r$; at the observer's position it is the observer's own velocity $\vec V_O$, at a galaxy it is $\vec V_g$.
+\textbf{$V_s(\psi)$}: the recession velocity the observer measures along a line of sight at angle $\psi$, the local Hubble velocity $\vec V_H=\vec V_g-\vec V_O$ projected on that line.
+\textbf{$\psi$}: angle between a line of sight and the observer--CoE axis; $\psi=0$ points away from the CoE (anti-CoE), $\psi=180^\circ$ toward it.
+\textbf{$l$, $b$}: Galactic longitude and latitude, the sky coordinates in which the data are given; the CoE axis points to longitude $l_0$, so $\psi$ is a function of $(l,b)$.
+\textbf{$A$, $B$}: normalisation and slope of the cluster $L_X$--$T$ scaling relation, $L_X\propto A\,T^{B}$; $A/A_{\rm all}$ and $B/B_{\rm all}$ are their values in a sky cone relative to the all-sky fit.
+Symmetry is axial about the CoE axis, not spherical about the observer, so the sky anisotropy is an off-centre sampling of radial structure, not a direction-dependent scale factor.
+
+\begin{figure}[tb]\centering
+\begin{minipage}[c]{0.49\columnwidth}\centering\includegraphics[width=\linewidth]{fig/Fig01a_geometry_top_test.png}\end{minipage}\hfill
+\begin{minipage}[c]{0.49\columnwidth}\centering\includegraphics[width=\linewidth]{fig/Fig01a_geometry_bot_test.png}\end{minipage}\\[3pt]
+\includegraphics[width=0.8\columnwidth]{fig/Fig01b_geometry.png}
+\caption{Set-up. Top: Hubble velocity vectors for the CoE, the observer and a galaxy, $\vec V_H=\vec V_g-\vec V_O$. Bottom: the observer inside a thick ordinary-matter shell at distance $D$ from the CoE, with its vision sphere. Restored from the original preprint (Figs.~1--2 there).}\label{fig:setup}\end{figure}
+
+\paragraph{Forward versus inverse.} The forward route assumes FLRW or $\Lambda$CDM, predicts $D_L(z)$ and fits $H_0$, $\Omega_m$, $w$. The inverse route, in the sense of the Ellis--Stoeger fitting problem, starts from observables, proposes a geometry consistent with them, and then derives new observables that the same geometry must face. Here the first observables are $A$ and $B$ against angle (\S\ref{sec:obs}); the second set is the CMB (\S\ref{sec:flatcmb}).
+
+\section{Geometry and time dependence}
+\noindent\emph{Residual in view.} The reference model is a homogeneous expansion seen from its centre. This section sets out the geometry for an observer at distance $D$ from the centre, which is what any residual relative to the homogeneous model has to be computed from.
+
+\paragraph{Set-up and symbols.} $D$: distance from the observer to the centre of expansion (CoE); working value $D=58.2$\,Gpc. $R$: the observer's vision radius, i.e.\ the comoving distance to the CMB source surface, explored at $R=4$, 8, 14\,Gpc. Outer edge of the matter: $1.25D$ (the figure uses 72.83\,Gpc). No cosmological constant; dynamics are matter plus early radiation.
+
+\paragraph{Volumes (worked).} A sphere of radius $r$ has $V=\tfrac43\pi r^3$. Observer sphere, $R=4$: $V_R=4.18879\times64=268.1$\,Gpc$^3$. Sphere to $D+R=62.2$\,Gpc: $4.18879\times62.2^3=1.008\times10^6$\,Gpc$^3$, so $V_R/V_{D+R}=268.1/1.008\times10^6=0.0266\%$. Outer sphere $72.83$\,Gpc: $1.618\times10^6$\,Gpc$^3$, so $V_R/V_{\rm out}=0.0166\%$. (Arithmetic checked here; the 72.83 vs $1.25\times58.2=72.75$ difference is in the source figure.)
+
+\paragraph{Radiation and matter densities.} Inputs: $a(t)$, the scale factor ($a=1$ today), and $a_{\rm eq}=1/3400$. \emph{Step 1}: matter is conserved particles in a volume $\propto a^3$, so $\rho_m=\rho_{m,0}a^{-3}$. \emph{Step 2}: photons are also diluted as $a^{-3}$, but each photon's energy $h\nu\propto a^{-1}$ (redshift), so $\rho_r\propto a^{-4}$. \emph{Step 3}: write $\rho_r=\rho_{r,0}a^{-4}$ and define equality by $\rho_r(a_{\rm eq})=\rho_m(a_{\rm eq})$. Then $\rho_{r,0}=a_{\rm eq}\rho_{m,0}$, so
+\begin{equation}
+\frac{\rho_r}{\rho_{m,0}}=\frac{a_{\rm eq}}{a^4},\qquad\frac{\rho_m}{\rho_{m,0}}=\frac{1}{a^3}.
+\end{equation}
+Example: at $a=10^{-4}$, $\rho_r/\rho_{m,0}=2.94\times10^{12}$ and $\rho_m/\rho_{m,0}=10^{12}$, so radiation dominates by a factor of $a_{\rm eq}/a=2.94$.
+
+\paragraph{From densities to $a(t)$.} The Friedmann equation without $\Lambda$ or curvature is $H^2\equiv(\dot a/a)^2=\tfrac{8\pi G}{3}(\rho_r+\rho_m)$. Substituting Eq.~(1) gives $H=H_*\sqrt{a_{\rm eq}a^{-4}+a^{-3}}=H_*a^{-2}\sqrt{a_{\rm eq}+a}$ with $H_*^2=8\pi G\rho_{m,0}/3$. Since $dt=da/(aH)$,
+\begin{equation}
+H_*t(a)=\int_0^a\frac{a'\,da'}{\sqrt{a_{\rm eq}+a'}}=\tfrac23(a-2a_{\rm eq})\sqrt{a+a_{\rm eq}}+\tfrac43a_{\rm eq}^{3/2}.
+\end{equation}
+The intermediate step is the substitution $u=a'+a_{\rm eq}$, giving $\int(u-a_{\rm eq})u^{-1/2}du$. $H_*$ is chosen so that $t(1)=13.8$\,Gyr; this is an assumption, not an output. Plugging in: $t(a_{\rm eq})=40.8$\,kyr and $t(1/1090)=297.5$\,kyr (recombination). Limits: for $a\ll a_{\rm eq}$, $H_*t\approx a^2/(2\sqrt{a_{\rm eq}})$, so $a\propto t^{1/2}$; for $a\gg a_{\rm eq}$, $H_*t\approx\tfrac23a^{3/2}$, so $a\propto t^{2/3}$.
+\why{Standard homogeneous FRW dilution. It is put in by assumption for the CoE universe. It would fail if the CoE dynamics are not FRW-like (inhomogeneous LTB shells evolve at different rates) or if $D(t)$ from the Newtonian integrator differs; that replacement is listed as future work.}
+
+\paragraph{Volume growth rates.} If a length $\propto t^p$, then $V\propto t^{3p}\equiv t^n$ and $\dot V/V=n/t$. Radiation era $p=\tfrac12$, so $n=\tfrac32$. For $D$ in the matter era $p=\tfrac23$, so $n=2$; today $2/13.8\,{\rm Gyr}=0.145$\,Gyr$^{-1}$. For the horizon $R\propto t$, so $n=3$.
+\FIGc{f02.png}{0.43}{Volume versus time with radiation + matter (no $\Lambda$). Top: volumes of the $D$ sphere, $D{+}R$ sphere and outer sphere from $a(t)$ of Eq.~(2). Middle: $V_R$ as a percentage of the larger volumes. Bottom: $\dot V/V=n/t$. Vertical lines: equality (41\,kyr), recombination (297\,kyr).}{fig:vol}
+\FIG{d4_radmat.png}{0.29}{Eq.~(1) (left, units of today's matter density) and Eq.~(2) (right) for $a_{\rm eq}=1/3400$, $t_0=13.8$\,Gyr. Dotted: the limits $t^{1/2}$ and $t^{2/3}$.}{fig:radmat}
+
+\section{Observables: $A/A_{\rm all}$ and $B/B_{\rm all}$ versus angle}\label{sec:obs}
+\noindent\emph{Residual in view.} For an isotropic universe both ratios would be 1 in every direction. What the data show is the residual from 1, and that residual, not a fitted curve, is the input to the inverse problem.
+
+Migkas et al.\ test sky isotropy with the X-ray luminosity--temperature relation of galaxy clusters. $L_X$ depends on luminosity distance and $T$ does not, so a directional change in the normalisation $A$ traces a directional distance or expansion scale. With $A\,H_0^2$ held fixed, $H/H_{\rm ref}=1/\sqrt{A/A_{\rm all}}$, so troughs in $A/A_{\rm all}$ are directions of higher apparent expansion rate, provided the variation is cosmological rather than a cluster or X-ray systematic. The slope $B$ is set more by sample composition. Both are given in sliding cones of width $\Delta l=90^\circ$ against Galactic longitude (their Fig.~6), digitised here at 71 points (Fig.~\ref{fig:obsAB}).
+
+Two features matter for what follows. $A/A_{\rm all}$ has two humps and two troughs over $360^\circ$, with its deepest low near $l\approx255$--$270^\circ$; $B/B_{\rm all}$ varies more slowly, with one broad low and one broad high. The curves in Fig.~\ref{fig:obsAB} are the author's spreadsheet model with a one-cycle phase rotation, $(1\mp{\rm Amp}\,\sin(l+\varphi))$ times the shell series, Amp $=\mp0.06$, $\varphi=0.35$\,rad; it is a diagnostic phase alignment, not a free dipole fit. Against the spreadsheet series the rotation raises $R^2$ for A from 0.501 to 0.739 and for B from 0.372 to 0.733; against the digitised points, from 0.446 to 0.712 (A) and from 0.483 to 0.785 (B). Source: \texttt{migkas\_bars\_rotation\_summary.json}.
+
+\begin{figure}[tb]\centering\fig{\columnwidth}{0.5\textheight}{fig/migkas_bars_rotation_overlay.png}\caption{The observables. Top: Migkas $A/A_{\rm all}$ against Galactic longitude (digitised, $\Delta l=90^\circ$ cones, black with error bars). Bottom: $B/B_{\rm all}$. Solid: spreadsheet shell model with the one-cycle sine rotation (Amp $=\mp0.06$, $\varphi=0.35$\,rad); dashed: best shared-$\varphi$ scan. $R^2$ before and after rotation is given in each panel. Restored from \texttt{cosmology/figures}.}\label{fig:obsAB}\end{figure}
+
+\section{Density laws, the CatWISE lock and the Migkas fit}\label{sec:laws}
+\FIG{d1_migkas_laws.png}{0.32}{CatWISE-locked laws $\rho/\rho_{\rm crit}$ versus distance from the CoE (left) and zoom on $D\pm d$ (right), plotted from \texttt{catwise-density-levelset.csv} and \texttt{catwise-eta-density.csv}. $D=58.2$\,Gpc (line), $d=14.3005$\,Gpc (band).}{fig:laws}
+\noindent\emph{Residual in view.} Relative to an isotropic sky, the Migkas normalisation $A/A_{\rm all}$ has a residual dependence on direction. Here that residual is the observable, and the CoE density law is the model fitted to it; what the fit leaves is carried to the A/B decomposition in \S\ref{sec:skyres}.
+
+\paragraph{Observable.} Migkas et al.\ measure the galaxy-cluster scaling-relation normalisation $A$ in sky regions relative to its all-sky value, $y_i=A/A_{\rm all}$, in 71 bins of galactic longitude $l$ with errors $\sigma_i$. In the CoE picture, a line of sight at angle $\psi$ to the CoE axis crosses a different matter density and recession velocity from one at $\pi-\psi$, which produces a dipole-like modulation.
+
+\paragraph{Line-of-sight geometry.} Put the CoE at the origin and the observer at $\mathbf D$. A point at distance $s$ from the observer in direction $\hat n$ has $r(s,\hat n)=|\mathbf D+s\hat n|=\sqrt{D^2+s^2+2Ds\cos\psi}$, where $\cos\psi=\hat D\cdot\hat n$. Averaging a response $f$ over the cluster depth distribution $p(s)$,
+\begin{equation}
+\frac{A}{A_{\rm all}}(\hat n)=\frac{\int ds\,p(s)\,f[\rho(r(s,\hat n))]}{\big\langle\int ds\,p(s)\,f[\rho]\big\rangle_{\rm sky}} .
+\end{equation}
+The denominator normalises the all-sky mean to 1. Because the scale lengths below are $L\gg s$, expanding to first order gives $\rho(r)\approx\rho(D)[1+(\rho'/\rho)_D\,s\cos\psi]$: a pure dipole in $\cos\psi$ with amplitude set by the local logarithmic gradient. \flag{the exact form of $f$ and $p(s)$ in the Migkas scripts was not re-derived here}.
+
+\paragraph{CatWISE lock (worked derivation).} Inputs: shape $g(x)$, $x=r/L$; $D=58.2$\,Gpc; vision radius $d=14.3005$\,Gpc; $\Omega_m=0.3$, $H_0=70$. \emph{Step 1, normalisation}: $\rho(r)=\rho_0g(r/L)$ with $\rho(D)=0.3\rho_{\rm crit}$, so $\rho_0=0.3\rho_{\rm crit}/g(D/L)$. \emph{Step 2, contrast}: require
+\begin{equation}
+\delta\equiv\frac{\rho(D-d)-\rho(D+d)}{\rho(D)}=0.031 .
+\end{equation}
+This is twice the CatWISE number-count dipole $\mathcal D=0.01554$ (Secrest et al.\ 2021; $2\mathcal D=0.03108$, rounded). The factor 2 converts a dipole amplitude (peak-to-mean) into the peak-to-peak difference. \emph{Step 3, exponential}: $g=e^{-x}$ gives $\rho(D\mp d)/\rho(D)=e^{\pm d/L}$, so $\delta=e^{d/L}-e^{-d/L}=2\sinh(d/L)$ and
+\begin{equation}
+L=\frac{d}{\operatorname{arcsinh}(\delta/2)}=\frac{14.3005}{0.0154994}=922.65\ \text{Gpc}.
+\end{equation}
+Then $L/D=15.85$, $\rho_0/\rho_{\rm crit}=0.3\,e^{58.2/922.65}=0.3195$, and the local gradient is $\rho'/\rho|_D=-1/L=-0.001084$\,Gpc$^{-1}$. With $d=3$\,Gpc instead, $L=193.56$\,Gpc. \emph{Step 4, other shapes}: Eq.~(4) is solved numerically for $L$ with the shape parameters held fixed (table). Every law reproduces $\delta=0.031$ to $10^{-15}$.
+\begin{center}\small\begin{tabular}{@{}llrr@{}}
+law & $g(x)$ & $L$ [Gpc] & $\rho_0/\rho_{\rm c}$\\\hline
+exp & $e^{-x}$ & 922.6 & 0.3195\\
+power & $(1+x)^{-n}$, $n{=}1.20$ & 1049.3 & 0.3201\\
+cored & $(1+x^2)^{-1}$ & 321.9 & 0.3098\\
+Gauss & $e^{-x^2/2}$ & 231.5 & 0.3096\\
+soft & $(1+x^{\alpha})^{-\beta}$, $\alpha{=}0.30$, $\beta{=}1$ & 5109.6 & 0.3784\\
+stretched & $e^{-x^{\eta}}$, $\eta{=}0.25$ & 15246 & 0.3847\\
+$\eta$-edge & $e^{-x^{\eta}}$, $\eta{=}0.0500$ & 0.849 & 1.0319\\
+\end{tabular}\end{center}
+\emph{Meaning}: across $D\pm d$ all laws have $\rho'/\rho\approx-0.00106$ to $-0.00109$\,Gpc$^{-1}$. The lock fixes the local gradient, which is what the dipole measures, so inside the window the laws are indistinguishable (Fig.~\ref{fig:laws}). They differ only near the CoE, where no data constrain them. The level-set scan imposed $\eta\ge0.25$; the $\eta$-edge solution comes from a separate free-$\eta$ fit. Sources: \texttt{catwise-density-levelset-fit.json}, \texttt{catwise-eta-migkas-fit.json}.
+\why{The first-order expansion needs $d\ll L$. For exp, $d/L=0.0155$, so it holds. For the $\eta$-edge, $L=0.849$\,Gpc$\ll d$, so the law is far from linear across the window, even though $\delta$ is still met exactly.}
+
+\paragraph{Fit.} $\chi^2=\sum_{i=1}^{71}(y_i-m_i)^2/\sigma_i^2$ (\S\ref{sec:stats}). The null model $m_i=1$ gives $\chi^2=45.14$. At fixed axis longitude $l_0=15.2^\circ$, with $D$ refitted (so not 58.2) and $L$ locked: exp 11.61 ($D=48.26$), power 11.58 ($D=47.86$), soft 10.43 ($D=39.11$), stretched $\eta{=}0.25$ 10.39 ($D=38.47$). With $l_0$ free ($\approx21.7^\circ$): cored 11.60 ($D=59.5$), Gauss 11.61 ($D=59.8$). Free $\eta$-edge: 9.28 ($D=34.96$, $l_0=19.9^\circ$). The direct fits of Fig.~\ref{fig:mig} give 10.79 ($l_0=100^\circ$) and 7.67 ($l_0=15.6^\circ$), the latter equal to a reference sinusoid.
+\FIGc{f07.jpg}{0.32}{Migkas $A/A_{\rm all}$ (71 bins, black) with CoE direct fits. Red: smooth polynomial in $\cos\psi$, $\chi^2=10.79$, $l_0=100^\circ$. Green dashed: best variant, $\chi^2=7.67$, $l_0=15.6^\circ$. Blue dashed: reference sinusoid (amplitudes 0.041/0.035), $\chi^2=7.67$. The two humps come from $\cos\psi(l)$ at fixed galactic latitude.}{fig:mig}
+
+\begin{figure*}[t]\centering\fig{\textwidth}{0.62\textheight}{fig/Fig04_amp_full.png}\caption{Full Migkas $A/A_{\rm all}$ profile against Galactic longitude with the model curves; coloured vertical bands mark the predicted MAX/MIN longitude bands. Bottom: residual bars, $100(A-A_F)/A_F$, with low-order harmonic fits ($M\le5,6,7$). Pre-made figure from the original preprint.}\label{fig:ampfull}\end{figure*}
+
+\section{Rings, the Migkas overlay and rotation}\label{sec:rings}
+\noindent\emph{Residual in view.} The fit above matches $A$ along longitude only. The residual it leaves is in the morphology on the full sky: where the maxima, minima and rings fall. That is tested here, with the geometry held fixed.
+
+\paragraph{Rings.} Off-centre placement gives closed curves of constant phase $\varphi(\psi)$ on the sky: rings about the CoE axis. In the original preprint the low-redshift ring and the longitude dependence of $A/A_{\rm all}$ were fixed from the geometry before the comparison with the Migkas maps (its Fix Point~1); the Migkas data were not used to add a morphological degree of freedom.
+
+\begin{figure*}[t]\centering\fig{\textwidth}{0.7\textheight}{fig/Fig05_sky_orientation_four_row.jpg}\caption{Sky-orientation sequence: untilted configuration, then $+15^\circ$ tilt, radial gradient, and $+80.8^\circ$ roll about the CoE axis. Restored from the original preprint (its Fig.~5).}\label{fig:orient}\end{figure*}
+
+\paragraph{Tilt, gradient and roll.} The full longitude profile, with the band positions and the residual bars they leave, is shown in Fig.~\ref{fig:ampfull}. The model is placed on the sky in three steps, starting from an untilted configuration with no roll: a $+15^\circ$ tilt of the CoE axis (anti-CoE near $(l,b)=(0^\circ,+15^\circ)$), a radial gradient, and a $+80.8^\circ$ roll (yaw) about the CoE axis (Fig.~\ref{fig:orient}). Fig.~\ref{fig:overlay} overlays the resulting maximum and minimum bands on Migkas Fig.~8. Each band is $18^\circ$ end to end ($\pm9^\circ$, 5\% of $360^\circ$). The Migkas maxima include $(17^\circ,-9^\circ)$ and $(185^\circ,0^\circ)$. The residual maps in \S\ref{sec:skyres} use a later orientation of the same kind, a $15^\circ$ lift and a $45^\circ$ counterclockwise rotation; the two orientations are reported as they were made and have not been reconciled.
+
+\paragraph{How much the rotation adds.} In the original preprint's fits to $A/A_{\rm all}$ (null $\chi^2=45.14$), a point mass at the CoE without rotation gives $R^2=0.521$; with rotation and the one-cycle phase factor $R^2$ rises to 0.845 (exponential law, CatWISE lock) and 0.870 (soft core). These are unweighted $R^2$ values from that draft and are not recomputed here. The amplitude is partly set by how the construction is normalised (the density--distance trade); the morphology is the part that was not tuned.
+
+\begin{figure*}[p]\centering\fig{\textwidth}{0.9\textheight}{fig/Fig06_overlay_one.png}\caption{Predicted MAX/MIN bands on Migkas Fig.~8 (two MAX and two MIN bands, each $18^\circ$ wide) for the $+15^\circ$ tilt alone (top), tilt with gradient (middle), and tilt, gradient and $+80.8^\circ$ roll (bottom). Regenerated from code (the original preprint's Fig.~6).}\label{fig:overlay}\end{figure*}
+
+\section{The second inverse problem: a flat CMB}\label{sec:flatcmb}
+\noindent\emph{Residual in view.} If the off-centre geometry is real, the anisotropy it puts into $A$ and $B$ should also appear on the last-scattering surface. The observed CMB is isotropic to $\sim10^{-5}$ after the dipole. That near-absence is the residual the rest of these notes work on.
+
+Holding the geometry fixed and carrying it to last scattering ($z_\star\approx1100$), the original preprint found a geometric multipole of several percent on the CMB sky, orders of magnitude above the Planck isotropy level. Geometry alone is therefore incomplete. That draft then added special-relativistic Doppler and central-mass gravitational redshift, which together cancelled 95.9\% of the geometric RMS while keeping the low-$z$ morphology (its Fix Point~2). This poses a second inverse problem: what distribution of matter around an off-centre observer gives a nearly flat CMB sky and, at the same time, the Planck $TT$ spectrum? The following sections build the tools (harmonics, cosmic variance, $\chi^2$), a realistic void/cluster web, the stochastic field and its projection, and then fit the spectrum as a fixed background plus acoustic and damped terms. The residuals that remain are taken back to the $A$/$B$ sky in \S\ref{sec:skyres}.
+
+\section{Spherical harmonics, $C_\ell$, $D_\ell$ and cosmic variance}\label{sec:harm}
+\noindent\emph{Residual in view.} Spherical harmonics are the bookkeeping for sky residuals: they separate a map into scales, and cosmic variance sets how large a residual at each $\ell$ has to be before it means anything.
+
+\paragraph{Expansion.} Input: a sky map $\Theta(\hat n)\equiv\Delta T/T$ (dimensionless). Since the $Y_{\ell m}$ are orthonormal on the sphere,
+\begin{equation}
+\Theta(\hat n)=\sum_{\ell m}a_{\ell m}Y_{\ell m}(\hat n),\quad a_{\ell m}=\!\int\!d\Omega\,\Theta Y^*_{\ell m}.
+\end{equation}
+$\ell$ is the number of nodal lines; a mode of degree $\ell$ has angular half-wavelength $\theta\approx180^\circ/\ell$, so $\ell=220$ gives $0.82^\circ$. For a statistically isotropic sky, $\langle a_{\ell m}a^*_{\ell'm'}\rangle=C_\ell\delta_{\ell\ell'}\delta_{mm'}$, and the estimator from one sky is $\hat C_\ell=\frac{1}{2\ell+1}\sum_m|a_{\ell m}|^2$.
+
+\paragraph{From $C_\ell$ to $D_\ell$.} The map variance is $\langle\Theta^2\rangle=\sum_\ell\frac{2\ell+1}{4\pi}C_\ell$. Converting the sum to an integral over $\ln\ell$ gives $\sum_\ell\frac{2\ell+1}{4\pi}C_\ell\approx\int d\ln\ell\,\frac{\ell(2\ell+1)}{4\pi}C_\ell\approx\int d\ln\ell\,\frac{\ell(\ell+1)}{2\pi}C_\ell$. So
+\begin{equation}
+D_\ell\equiv\frac{\ell(\ell+1)}{2\pi}C_\ell\,T_0^2\quad[\mu{\rm K}^2]
+\end{equation}
+is the temperature variance per unit $\ln\ell$, with $T_0=2.7255\times10^6\,\mu$K. A scale-invariant Sachs--Wolfe plateau has $C_\ell\propto1/[\ell(\ell+1)]$, so its $D_\ell$ is flat, which is why the plots use $D_\ell$. Example: $C_\ell=10^{-10}$ at $\ell=10$ gives $D_\ell=17.5\times10^{-10}\times7.43\times10^{12}=1.30\times10^4\,\mu$K$^2$. In code, $D_\ell$ is computed from the map with \texttt{healpy.anafast} after removing the monopole and dipole. The dipole is removed because the observer's motion dominates it.
+
+\paragraph{Cosmic variance.} If the $a_{\ell m}$ are Gaussian, $(2\ell+1)\hat C_\ell/C_\ell$ is $\chi^2$-distributed with $2\ell+1$ degrees of freedom (the $m$ modes are real combinations). That distribution has variance $2(2\ell+1)$, so
+\begin{equation}
+\frac{\Delta C_\ell}{C_\ell}=\sqrt{\frac{2}{2\ell+1}} .
+\end{equation}
+Values: 63\% at $\ell=2$, 31\% at 10, 18\% at 30, 6.7\% at 220, 3.2\% at 1000. This is the irreducible scatter of one sky about its ensemble mean, and it is the $\pm1\sigma$ band drawn around every CoE curve.
+\why{It is exact for a Gaussian, isotropic, full-sky field. It underestimates the scatter for non-Gaussian skies, e.g.\ a few dominant voids or the axisymmetric CoE background, and for masked skies. It does not apply to a deterministic component, which has no ensemble scatter at all.}
+
+\paragraph{Primers and the inverse problem.} An axisymmetric pattern ($m=0$) is a sum of Legendre polynomials $P_\ell(\cos\theta)$, so a single $P_\ell$ puts all its power in one $\ell$ (Fig.~\ref{fig:h1}). $N$ equal masses equally spaced on a ring have azimuthal Fourier power only at multiples of $N$ (aliasing). Binary mixtures and quadrature masses behave the same way. \emph{Inverse problem}: given a target $C_\ell$, find over-/under-densities that produce it. Because $C_\ell$ discards the phases of the $a_{\ell m}$, the solution is degenerate (Figs.~\ref{fig:h1}--\ref{fig:inv}).
+\FIGc{f11.png}{0.5}{Single axisymmetric harmonics $\ell=0\ldots7$ drawn as density on a ring (blue over-, orange under-density) with the power bar at that $\ell$.}{fig:h1}
+\begin{figure*}[t]\centering\fig{\textwidth}{0.55\textheight}{fig/f12.png}\caption{Inverse problem solved numerically: a fixed mass at $1.55R$ plus fitted clumps/voids reproduce target angular profiles (half, $1\tfrac12$, $2\tfrac12$, two waves).}\label{fig:inv}\end{figure*}
+\section{Goodness-of-fit statistics}\label{sec:stats}
+\noindent\emph{Residual in view.} $\chi^2$ is the weighted sum of squared residuals and Pearson $r^2$ measures how much shape they share with the data; neither by itself says what structure a residual has, which is why the residuals are also plotted.
+
+\paragraph{$\chi^2$.} Inputs: data $d_\ell$, model $m_\ell$, Planck errors. Planck low-$\ell$ errors are asymmetric ($\sigma^-_\ell$, $\sigma^+_\ell$), so the code uses the error on the side where the model lies:
+\begin{equation}
+\chi^2=\sum_\ell\frac{(m_\ell-d_\ell)^2}{\sigma_\ell^2},\quad\sigma_\ell=\begin{cases}\sigma^+_\ell&m_\ell>d_\ell\\\sigma^-_\ell&m_\ell\le d_\ell\end{cases}.
+\end{equation}
+Meaning: each term is the squared distance in units of measurement error. For $N$ independent Gaussian points and a correct model, $\langle\chi^2\rangle\approx N-p$, with $p$ the number of fitted parameters. Example: ΛCDM over $\ell$ 2--30 (29 points) gives 20.1. Here $\chi^2$ uses Planck errors only, because Planck's errors already include cosmic variance for ΛCDM. The stochastic-field inverse fits also used $\chi^2_{\rm CV}$, which adds the model's own cosmic variance $\tfrac{2}{2\ell+1}D_{\rm field}^2$ in quadrature.
+\why{It assumes independent Gaussian errors. It fails at low $\ell$, where the likelihood is skewed (hence the asymmetric errors), and for the binned $\ell\ge30$ file, where bins are not fully independent. Read $\chi^2$ as a comparison measure, not an exact probability.}
+\begin{figure*}[t]\centering\fig{\textwidth}{0.5\textheight}{fig/f13.png}\caption{Inverse problem solved numerically: a non-axisymmetric source shell at $r=1.012R$ (gravitational potential, not temperature) built from 3D clumps/voids reproduces a prescribed peak at $\ell=220$ with widths $\sigma_\ell=32$ and 8.}\label{fig:inv2}\end{figure*}
+
+\paragraph{Pearson $r^2$.} With means $\bar d$, $\bar m$,
+\begin{equation}
+r^2=\frac{\big[\sum(d_\ell-\bar d)(m_\ell-\bar m)\big]^2}{\sum(d_\ell-\bar d)^2\sum(m_\ell-\bar m)^2}.
+\end{equation}
+It is the squared linear correlation and is invariant under $m\to am+b$. It measures shape agreement and ignores amplitude and offset; it is \emph{not} a fit $R^2$. Example: ΛCDM at $\ell$ 2--30 has $r^2=0.012$ although $\chi^2=20.1$, because the data there are scatter around a nearly flat curve. Over $\ell$ 2--2500, where the peaks dominate the variance, ΛCDM has $r^2=0.983$. So $r^2$ is informative only where the signal varies a lot compared with the noise.
+
+\FIGc{f15.png}{0.2}{First stochastic-field fit (stage A: Gaussian random field riding the CoE flow, $R=4$\,Gpc, $\ell$ 2--30, CoE background included, $\lambda=100$). Blue: ensemble mean with $\pm1\sigma$ cosmic-variance band ($\chi^2_{\rm Planck+CV}=10.8$, $\chi^2_{\rm Planck}=17.6$, Pearson $r^2=0.032$); red dashed: deterministic CoE background; black: ΛCDM ($\chi^2=20.1$, $r^2=0.012$); points: Planck 2018.}{fig:ac}
+
+\section{A realistic web of voids and clusters}
+\noindent\emph{Residual in view.} Hand-placed masses are a model whose residuals depend on the hand. A statistical web replaces them so that whatever structure remains in the projected field is not an artefact of where objects were put.
+
+\paragraph{Purpose.} Hand-placed masses are replaced by a statistically realistic population. Each body sources a Newtonian potential, and the sky signal is the gravitational field sampled on spheres around the observer.
+
+\paragraph{Ingredients (from \texttt{realweb/build.py}, \texttt{cosmo.py}).} Background: $h=0.7$, $\Omega_m=0.31$, $\Omega_b=0.049$, $n_s=0.965$, $\sigma_8=0.8$, $\bar\rho_m=\Omega_m\,2.775\times10^{11}h^2=4.215\times10^{10}\,M_\odot$Mpc$^{-3}$. Linear spectrum $P(k)=Ak^{n_s}T_{\rm EH}^2(k)$ (Eisenstein--Hu no-wiggle transfer function). $A$ is fixed by $\sigma^2(R)=\int\frac{k^2dk}{2\pi^2}P(k)W^2(kR)=0.8^2$ at $R=8/h$\,Mpc, with the top-hat $W(x)=3(\sin x-x\cos x)/x^3$.
+
+\FIG{d2_web.png}{0.26}{Web ingredients recomputed from \texttt{cosmo.py}: halo mass function (left), void size function (middle), compensated void mass placement (right).}{fig:webd}
+\emph{Clusters}, Press--Schechter. A region of mass $M=\tfrac43\pi R^3\bar\rho_m$ collapses when its linear overdensity exceeds $\delta_c=1.686$. The fraction above threshold is ${\rm erfc}(\nu/\sqrt2)$ with $\nu=\delta_c/\sigma(M)$; differentiating with respect to $\ln M$ and multiplying by $\bar\rho_m/M$ gives
+\begin{equation}
+\frac{dn}{d\ln M}=\sqrt{\tfrac2\pi}\frac{\bar\rho_m}{M}\nu\Big|\frac{d\ln\sigma}{d\ln M}\Big|e^{-\nu^2/2},
+\end{equation}
+for $M=10^{14}$--$2\times10^{15}M_\odot$ (41 bins). The peak-background bias is $b=1+(\nu^2-1)/\delta_c$: halos are more numerous where the large-scale $\delta_{\rm lin}>0$.
+
+\FIG{d5_mod.png}{0.32}{CoE modulation $m(r)=\exp\sum_kc_k(\min(r/42,R_b)-1)^{k+1}$ of the web number density. $r$ is measured from the axis point $42\hat a$\,Gpc, $\hat a\propto(1,0,\tan15^\circ)$; $c=[-0.041,-0.035,0.1353,0]$, $R_b=1.5(1+1/2.937)$. Normalised to mean 1 in each grid shell. Black dot: Earth at $r=42$\,Gpc ($m=1$); red dashed: tangent there, slope $-9.8\times10^{-4}$\,Gpc$^{-1}$ (cf.\ CatWISE-locked $\rho'/\rho\approx-0.00106$); gold band: how far we see in either direction, $r=42\pm14.3$\,Gpc ($d=14.3$\,Gpc, the $D\pm d$ reach of \S\ref{sec:laws}).}{fig:mod}
+\emph{Voids}, Sheth--van de Weygaert (2004). This is the two-barrier excursion-set size function with void threshold $\delta_v=-2.7$, evaluated at linear radius $R_L=R/1.7$ for $R=10$--50\,Mpc. Bias $-1.5$. A void of radius $R_v$ has interior contrast $-0.85$, i.e.\ mass deficit $M_d=0.85\bar\rho_m\tfrac{4\pi}{3}R_v^3$. Example: $R_v=30$\,Mpc gives $M_d=4.0\times10^{15}M_\odot$. It is painted as $-M_d$ at the centre plus 8 random points of $+M_d/8$ on a shell at $1.25R_v$, so each void is compensated (net mass zero).
+
+\FIGc{f06.png}{0.62}{Realistic web: slab $|z|<0.4$\,Gpc of a 20\,Gpc box (seed 2000, 1\% mass cut, 3904 clusters, 10568 void--cluster links). Circle: 14.3\,Gpc sphere; $+$: observer. Bottom: zoom ($\pm9$\,Gpc). \flag{whether this figure used the same \texttt{build.py} as above (whose grids use seeds 11, 12)}.}{fig:web}
+\emph{Placement.} Counts per cell are Poisson with mean
+\begin{equation}
+\lambda=\frac{dn}{d\ln X}\Delta\ln X\,\Delta V\,\max(0,1+b\,\delta_{\rm lin})\,m(\mathbf x)\,f ,
+\end{equation}
+with $X=M$ or $R_v$, thinning $f=1/100$, and $m(\mathbf x)$ the CoE modulation of Fig.~\ref{fig:mod}. The painted $\rho$ is mean-subtracted inside the region (zero net mass), then $\Phi$ is found by FFT Poisson (\S\ref{sec:field}).
+
+\paragraph{The kernel ladder: what ``kernel at $R$'' means.} From \texttt{realweb/build.py} (\texttt{skyfrom}) and \texttt{mc/mc.py}, \texttt{mc\_samples.py}. \emph{Step 1, acceleration}: $\mathbf a=-\nabla\Phi$ on the grid, from Poisson in Fourier space, $\mathbf a_k=-i\mathbf k\,(4\pi G\rho_k/k^2)$, with a Gaussian of cell width applied to represent finite body size. \emph{Step 2, radial tidal signal on a sphere}: for each HEALPix direction $\hat n$ ($N_{\rm side}=32$, 12{,}288 directions) and each radius $R\in\{0.5,0.9,2,4,8,14\}$\,Gpc,
+\begin{equation}
+s_R(\hat n)=\big[\mathbf a(R\hat n)-\mathbf a(\mathbf 0)\big]\cdot\hat n-\langle\cdot\rangle_{\rm sky}.
+\end{equation}
+This is the radial component of the acceleration at distance $R$ \emph{relative to the observer's own acceleration}: a tidal (differential) field, since a uniform acceleration is unobservable. ``Kernel at $R$ Gpc'' therefore means that the web's sky imprint is evaluated on the sphere of radius $R$. Small $R$ weights nearby structure; large $R$ samples the field near the source surface. The map is multiplied by $M_\odot/K_G\cdot R_V^2$ ($K_G=7.7\times10^{51}/0.0039$, $R_V=14.3$) to put it in the same dimensionless units as the deterministic ``red'' map. \flag{the physical origin of the constant $K_G$}. \emph{Step 3, Monte-Carlo universe}: each universe has a new Gaussian $\delta_{\rm lin}$ and Poisson halos in 8 mass bins (voids omitted in the fast variant, $N=256$ grids, seeds $500000+i$). \emph{Step 4, the \% levels}: the sky analysed is
+\begin{figure}[!t]\centering\fig{\columnwidth}{0.9\textheight}{fig/f19mc3b_stack.png}\caption{Red + Monte-Carlo web \#3, kernel $R=0.5$, 0.9, 2.0, 4, 8, 14\,Gpc (top to bottom); key in text.}\label{fig:ladder}\end{figure}
+
+\noindent\emph{Reading Fig.~\ref{fig:ladder}.} Coloured curves: $D_\ell$ of $\Theta_{\rm red}+\epsilon s_R$ for the listed $\epsilon$; magenta: best $\epsilon$; red dashed: smooth red alone; black line: ΛCDM ($\chi^2=20.1$); points: Planck. The title colours and ``my guess'' labels come from the plotting script.
+\begin{equation}
+\Theta_\epsilon(\hat n)=\Theta_{\rm red}(\hat n)+\epsilon\,s_R(\hat n),
+\end{equation}
+with $\Theta_{\rm red}$ the smooth axisymmetric CoE background (\texttt{sm\_red}, $\Theta_{\rm red}=e^{-S(\psi)}/\langle e^{-S}\rangle-1$, with $S$ a spline in angle $\psi$ from the axis). For each $\epsilon\in\{100,50,20,10,5,2,1,0.5,0.2,0.05\}\%$ the code computes $D_\ell$ via Eq.~(7) and $\chi^2$ via Eq.~(9). So ``10\%'' means the web field is scaled to one tenth of its natural (strength-1) amplitude before being added to the background; since $D_\ell$ is quadratic in the map, its web part scales as $\epsilon^2$. The ``best'' curve minimises $\chi^2$ over 60 log-spaced $\epsilon$ from $10^{-3.5}$ to $10^{0.3}$ (0.03\%--200\%). \emph{Reading the ladder}: as $\epsilon\to0$ the curves converge on the smooth-red spectrum (dashed red, $\chi^2=471.4$ in the figure legends), whose power sits in odd $\ell$ because it is axisymmetric. Increasing $\epsilon$ fills in the even $\ell$ and raises the overall level.
+
+\FIG{f05.png}{0.6}{Passing-universe domains at $R=4$, 8, 14\,Gpc overlaid (top; bands are spreads over realisations; $\ell=3$ and the $R=8$ $\ell$ 8--12 maxima clipped) and the density of sky-plane domains (bottom) against Planck.}{fig:pass}
+\paragraph{Labels on Fig.~\ref{fig:ladder}.} The panel titles carry ``my guess: PASS/FAIL'' labels written by \texttt{mc\_samples.py}. Its rule is: PASS if $\chi^2_{\rm best}\le100$, $|$slope of $\ln D_\ell$ vs $\ell$ over $\ell$ 4--30$|<0.05$, and $\max D_{2..4}/\max D^{\rm Planck}_{2..4}<2.5$. These are the script's labels, reproduced in the figure; no verdict is drawn here. Recorded values for universe \#3 (\texttt{samples/guesses.json}), as $R$: $\epsilon_{\rm best}$, $\chi^2$: 0.5: 29.0\%, 441.6; 0.9: 25.0\%, 411.5; 2: 25.0\%, 177.2; 4: 21.6\%, 69.6; 8: 52.5\%, 85.0; 14: 45.3\%, 47.2. \flag{at 8\,Gpc the JSON records the low-$\ell$ ratio 2.99, which exceeds the coded 2.5 threshold, yet the label is PASS: the JSON and the script as now written disagree}.
+
+\section{Stochastic field and sky projection}\label{sec:field}
+\noindent\emph{Residual in view.} A random field predicts only an ensemble mean $C_\ell$, so the residual between one realisation and the mean is expected and is bounded by cosmic variance; only residuals beyond that band are informative.
+
+\paragraph{Why a random field.} Instead of placing objects, the density contrast $\delta(\mathbf x)=\rho/\bar\rho-1$ is treated as a zero-mean Gaussian random field. In Fourier space $\langle\delta_{\mathbf k}\delta^*_{\mathbf k'}\rangle=(2\pi)^3\delta^3(\mathbf k-\mathbf k')P_\delta(k)$, where $P_\delta$ [Gpc$^3$] is the variance per mode. The model predicts the \emph{ensemble mean} $C_\ell$; one sky scatters about it by Eq.~(8).
+
+\paragraph{Poisson equation.} Newtonian gravity: $\nabla^2\Phi=4\pi G\bar\rho\,\delta$. Fourier transforming ($\nabla\to i\mathbf k$, so $\nabla^2\to-k^2$),
+\begin{equation}
+\Phi_{\mathbf k}=-\frac{4\pi G\bar\rho}{k^2}\delta_{\mathbf k}\ \Rightarrow\ P_\Phi=\frac{(4\pi G\bar\rho)^2}{k^4}P_\delta .
+\end{equation}
+Code units: $G=4.30\times10^{-12}$\,Gpc(km/s)$^2M_\odot^{-1}$ and $\bar\rho=4.215\times10^{19}M_\odot$Gpc$^{-3}$, so $4\pi G\bar\rho=2.278\times10^9$\,(km/s)$^2$Gpc$^{-2}$. Example: a mode with $k=1$\,Gpc$^{-1}$ and $\delta_k=10^{-4}$ gives $|\Phi|=2.28\times10^5$\,(km/s)$^2$, i.e.\ $\Phi/c^2=2.5\times10^{-6}$. Meaning: the $k^{-2}$ makes the potential dominated by large scales.
+\FIG{d3_stoch.png}{0.29}{Fitted $P_\delta$ split into its terms (left) and the radial window $W(\chi)$ (right).}{fig:pdelta}
+\why{Valid for $|\Phi|/c^2\ll1$, non-relativistic sources, and scales well inside the horizon ($kR\gg1$). At $\ell\lesssim3$, where $k\sim1/R$, relativistic (GR) corrections are not negligible. The code also evaluates the moving lens with the full CoE radial velocity, which is superluminal ($\dot R\approx4c$ today per the stage-A notes); the Newtonian treatment of that regime is a model assumption, not a derived result.}
+
+\paragraph{Source terms and the moving lens.} A photon crossing a potential picks up (i) Sachs--Wolfe $\Theta=\Phi/3c^2$ at the source, (ii) integrated Sachs--Wolfe $\frac{2}{c^2}\int\dot\Phi\,dt$ if $\Phi$ evolves, and (iii) the moving-lens term. If the lens moves with transverse velocity $\mathbf u$, the potential the photon sees changes during the crossing, giving $\Theta\propto\frac{2}{c^2}\int d\chi\,(\text{time per }d\chi)\,\mathbf u\cdot\nabla\Phi$. In \texttt{fwd.py} this is the kernel $K_M(\chi)=\frac{2}{c^2}\big[-\frac{\bar A}{a}\frac{\Delta t}{\Delta\chi}\,42\,R_d\big]$ multiplying $\mathbf u\cdot\nabla\Phi_0$ [(km/s)$^2$/Gpc]. Here $\bar A$ is the growth factor $D/a$, $\Delta t/\Delta\chi$ the time spent per unit path, $42\,R_d$ the CoE radial-velocity factor tabulated from \texttt{flowR.py}, and $\chi$ the distance from the observer. The stage-A README reports that the moving lens is $\ge99.99\%$ of the field's power (SW+ISW $\le9\times10^{-5}$), so only $K_M$ is kept in the Limber part. \flag{the closed form of $R_d$; it is taken from tabulated \texttt{tab.npz}}.
+
+\emph{The $k^2/3$ factor.} $\mathbf u\cdot\nabla\Phi\to i(\mathbf k\cdot\mathbf u)\Phi_{\mathbf k}$. Averaging over random orientations of $\hat k$ relative to $\mathbf u$: $\langle(\hat k\cdot\hat u)^2\rangle=\frac{1}{4\pi}\int\cos^2\theta\,d\Omega=\tfrac13$, so the power is multiplied by $u^2k^2/3$, with $u$ absorbed into $K_M$.
+
+\paragraph{Radial window.} The field is confined to a shell, $\Phi(\chi\hat n)=W(\chi)\phi_g$, with
+\begin{equation}
+W(\chi)=\exp\!\Big[-\frac{(\chi-R_c)^2}{2w^2}\Big],
+\end{equation}
+centre $R_c$ and width $w$ [Gpc]. \emph{Why Gaussian}: two parameters, smooth (no edge artefacts in $\ell$), and its derivative $W'=-W(\chi-R_c)/w^2$ is analytic. That derivative is needed because $\mathbf u\cdot\nabla(W\phi)=W\,\mathbf u\cdot\nabla\phi+\phi\,W'(\hat n\cdot\mathbf u)$. Fitted: $R_c=3.5715$, $w=0.3355$\,Gpc with $R=4$. The source surface at 4\,Gpc is $(4-3.5715)/0.3355=1.28w$ above the centre, so the path truncates the Gaussian. That truncation is why Limber needs correcting (below).
+\why{A Gaussian is a parametrisation, not a derived shell profile. It fails to represent sharp-edged or multi-shell structures.}
+
+\paragraph{Exact projection (derivation).} \emph{Step 1}: the line-of-sight integral is $\Theta(\hat n)=\int d\chi\,K(\chi)W(\chi)\,\Phi(\chi\hat n)$. \emph{Step 2}: Fourier expand, $\Phi(\chi\hat n)=\int\frac{d^3k}{(2\pi)^3}\Phi_{\mathbf k}e^{i\mathbf k\cdot\hat n\chi}$, and use the plane-wave expansion $e^{i\mathbf k\cdot\hat n\chi}=4\pi\sum_{\ell m}i^\ell j_\ell(k\chi)Y_{\ell m}(\hat n)Y^*_{\ell m}(\hat k)$. \emph{Step 3}: read off $a_{\ell m}=\frac{i^\ell}{2\pi^2}\int d^3k\,\Phi_{\mathbf k}Y^*_{\ell m}(\hat k)\Delta_\ell(k)$ with $\Delta_\ell(k)=\int d\chi\,KWj_\ell(k\chi)$. \emph{Step 4}: take $\langle|a_{\ell m}|^2\rangle$ with the power-spectrum definition. The $\delta^3$ collapses one $k$ integral and $\int d\Omega_k|Y_{\ell m}|^2=1$, giving
+\begin{equation}
+C_\ell=\frac{2}{\pi}\int k^2dk\,P_\Phi(k)\,|\Delta_\ell(k)|^2 .
+\end{equation}
+$j_\ell$ is the spherical Bessel function: the radial profile of a plane wave's $\ell$-th multipole. For the moving lens, $P_\Phi\to\frac{k^2}{3}P_\Phi$, and \texttt{fwd.py} evaluates the $W'$ term exactly with $\cos\theta$ Gaunt couplings to $\ell\pm1$. This is used for $\ell\le50$.
+
+\paragraph{Limber approximation (derivation).} For large $\ell$, $j_\ell(k\chi)$ is sharply peaked at $k\chi\approx\nu\equiv\ell+\tfrac12$. Using the closure relation $\int k^2dk\,j_\ell(k\chi)j_\ell(k\chi')=\frac{\pi}{2\chi^2}\delta(\chi-\chi')$, and assuming $P_\Phi$ varies slowly over the width of $j_\ell$ so it can be evaluated at $k=\nu/\chi$, Eq.~(17) collapses to a single integral:
+\begin{equation}\begin{split}
+D_\ell\simeq&\frac{\ell(\ell+1)T_0^2}{2\pi}\int d\chi\\
+&\times\frac{[K_MW]^2}{\chi^2}\frac{k^2}{3}P_\Phi(k)\Big|_{k=\nu/\chi}.
+\end{split}\end{equation}
+Meaning: each multipole receives power only from the wavenumber that projects to angle $1/\ell$ at distance $\chi$. Only transverse modes contribute; radial modes cancel along the line of sight.
+\why{It requires the kernel $K_MW$ to vary slowly compared with $j_\ell$'s oscillation $\sim\chi/\nu$, i.e.\ $\ell\gg R_c/w=3.5715/0.3355=10.6$, and no sharp edges. Checks in \texttt{acoustic\_limber\_check*.json}: interior or broad shells agree within 3\% for $\ell\ge150$, and a 0.5\,Gpc shell within 0.3\% even at $\ell=20$. Shells cut off at the path end (as here) are overestimated by about $1.5$--$5\times$ below $\ell=150$ and by up to $\pm20\%$ near $\ell=300$.}
+\FIGc{f17.png}{0.28}{Low multipoles (linear axes): ΛCDM (black), Planck (grey), CoE one-sky realisation (red) in its $\pm1\sigma$ cosmic-variance band (Eq.~8) with faint ensemble mean. Bottom: full spectrum.}{fig:low}
+
+\paragraph{Exact/Limber correction.} Hence $D^{\rm used}_\ell=c_\ell D^{\rm Limber}_\ell$ for $\ell>50$, with $c_\ell=C^{\rm exact}_\ell/C^{\rm Limber}_\ell$ computed by Eq.~(17) at 69 nodes. The nodes are $\ell=50,55,60,70,80,90,100,115,130,150,175$, then 200 to 2480 in steps of 40. $c_\ell$ is interpolated in $\ln\ell$ and recomputed after each fit pass, because it depends on $R_c$ and $w$.
+
+\paragraph{Fitted source spectrum.} 
+\begin{equation}\begin{split}
+P_\delta=&10^{\lg A}k^{n}e^{-(k/k_D)^2}\big[1+A_w\cos(kr_s+\phi)\\
+&+Be^{-k/k_B}\cos(kr_2+\phi_2)\big],
+\end{split}\end{equation}
+\FIG{f03.png}{0.28}{The same source parameters with $R=4$, 5, 6\,Gpc (shell at 3.944, 4.944, 5.944\,Gpc): peaks [227, 530, 831, 1131, 1431], [284, 412, 663, 1042, 1417], [341, 419, 797, 1252, 1703]. Moving the shell without refitting $r_s$ changes $\chi_{\rm eff}$ in Eq.~(20).}{fig:acl}
+with $k$ in Gpc$^{-1}$ and $P_\delta$ in Gpc$^3$. Term by term: $k^n$ is the broadband tilt; $e^{-(k/k_D)^2}$ is a small-scale damping cutoff; $A_w\cos(kr_s+\phi)$ is an oscillation in $k$ with period $2\pi/r_s$, i.e.\ a preferred comoving separation $r_s$ (acoustic-like); the $B$ term is a second, decaying oscillation. Fitted ($r_2$ free, \texttt{acoustic\_half\_fixed.json}): $\lg A=-8.282$, $n=-0.183$, $A_w=0.311$, $r_s=79.5$\,Mpc, $\phi=1.367$, $k_D=335$\,Gpc$^{-1}$, $B=0.815$, $k_B=138$\,Gpc$^{-1}$, $r_2=42.1$\,Mpc, $\phi_2=3.640$. Example: at $k=100$\,Gpc$^{-1}$, $10^{-8.282}\times100^{-0.183}\times e^{-0.089}=2.2\times10^{-9}$\,Gpc$^3$ before the bracket.
+
+\paragraph{Mapping $\Delta\ell\leftrightarrow r$ via $\ell\approx k\chi$.} From Limber, a wavenumber $k$ at distance $\chi$ appears at $\ell\approx k\chi$. An oscillation $\cos(kr_s)$ has period $\Delta k=2\pi/r_s$, so on the sky its peaks are spaced by
+\begin{equation}
+\Delta\ell\approx\chi_{\rm eff}\Delta k=2\pi\chi_{\rm eff}/r_s .
+\end{equation}
+Example: acoustic fit, $R_c=3.944$\,Gpc, $r_s=0.0819$\,Gpc, gives $\Delta\ell=302.6$; the model peaks 227, 530, 831, 1131, 1431 are spaced 300--303. For the final fit, $R_c=3.5715$ and $r_s=0.0795$ give 282, whereas the model peaks are spaced $\approx300$. That implies $\chi_{\rm eff}=300\times0.0795/2\pi\approx3.8$\,Gpc, larger than $R_c$ because $K_M$ rises toward the source and the truncated window is skewed. Conversely, an angular feature at $\ell$ has physical size $\chi\theta$ with $\theta=\pi/\ell$. For $\ell=220$: 57.1, 114.2, 199.9\,Mpc at $\chi=4$, 8, 14\,Gpc.
+\why{It holds where Limber holds and for thin kernels. It fails at low $\ell$ and for broad kernels, where many $\chi$ contribute and $\chi_{\rm eff}$ is ambiguous.}
+
+\section{The fixed low-$\ell$ background $D^{\rm fix}_\ell$}
+\begin{figure*}[b]\centering\fig{\textwidth}{0.3\textheight}{fig/f14.png}\caption{Parameter degeneracies. Left: shell position vs amplitude ($\Delta\chi^2=2.3,6.2,11.8$, i.e.\ 1, 2, 3$\sigma$ for two parameters). A farther shell needs a different amplitude because $K_M$ varies with $\chi$. Right: tilt vs amplitude at the chosen window.}\label{fig:deg}\end{figure*}
+\noindent\emph{Residual in view.} The deterministic, axisymmetric part of the CoE sky is modelled out once as $D^{\rm fix}_\ell$, so that the later fits work on the residual above this background.
+
+\paragraph{Definition (from \texttt{fit.py}).} The CoE sky has a deterministic, axisymmetric part: the smooth red map plus an \texttt{rs\_cc} map. Its spectrum is computed once,
+\begin{equation}
+D^{\rm fix}_\ell=\frac{\ell(\ell+1)}{2\pi}T_0^2\,\hat C_\ell\big[\Theta_{\rm red}+\Theta_{\rm rs\_cc}\big],\quad 2\le\ell\le30,
+\end{equation}
+with the dipole removed, and stored in \texttt{fit\_l30\_bg.json}. It is added to the field: $D^{\rm model}_\ell=c_\ell D^{\rm field}_\ell+D^{\rm fix}_\ell$. \emph{Why add powers}: the field has zero mean and is independent of the background, so $\langle|a^{\rm bg}+a^{\rm f}|^2\rangle=|a^{\rm bg}|^2+\langle|a^{\rm f}|^2\rangle$ (the cross term averages to zero). \emph{Values}: $\ell=3$: 1506.4\,$\mu$K$^2$; $\ell=2$: 0.1; all others $\le5.1$, with odd $\ell$ (5, 7, \ldots) carrying 0.3--5.1 and even $\ell\ge4$ essentially 0. The odd/even pattern is the axisymmetric signature: an odd-parity profile about the axis projects onto odd Legendre polynomials. It is held fixed (no free parameters) and has no cosmic-variance band, since it is deterministic. Above $\ell=30$ it is set to zero; its power is already negligible above $\ell=3$. \flag{the physical definition of \texttt{rs\_cc}}.
+
+\section{Acoustic fit and residual decomposition}
+\noindent\emph{Residual in view.} After the fixed background, an acoustic stochastic term is fitted. Its residual against Planck is still large (the $\chi^2$ and $r^2$ below are worse than ΛCDM), and the oscillatory structure left in that residual is what the damped model of the next section is built to describe.
+\begin{figure*}[t]\centering\fig{\textwidth}{0.62\textheight}{fig/f18.png}\caption{Damped-harmonic fits to $\epsilon_\ell$ with 7, 8, 9 harmonics ($\Delta\ell=593$, $L=990$) and Pearson $r^2$ versus number of harmonics (bottom).}\label{fig:damp}\end{figure*}
+
+\paragraph{Acoustic fit.} Eq.~(19) without the $B$ term, eight free parameters with $R_c$ and $w$ free (``free\_W''). Result: $r_s=81.9$\,Mpc, $R_c=3.944$\,Gpc; $\chi^2_{2-2500}=11{,}772$, Pearson $r^2=0.871$ (ΛCDM: 2{,}558, 0.983). Peaks: CoE 227, 530, 831, 1131, 1431 vs Planck 224, 535, 821, 1122, 1412.
+
+\paragraph{Residuals.} Normalised residual: $\epsilon_\ell=(D^{\rm P}_\ell-D^{\rm CoE}_\ell)/\sigma_\ell$, dimensionless (in $\sigma$). Two linear models with $s_j(\ell)=\sin(2\pi j\ell/\Delta\ell+\phi_j)$:
+\begin{align}
+\text{undamped: }&\epsilon_\ell=\textstyle\sum_ja_js_j(\ell),\\
+\text{damped: }&\epsilon_\ell=e^{-\ell/L}\textstyle\sum_ja_js_j(\ell).
+\end{align}
+\emph{Why harmonics}: if the model's peak spacing or shape is slightly off, the residual is periodic in $\ell$ with the spacing error. $j=2$ is the half period, which is the signature of an odd/even peak alternation. \emph{Why damping}: $\sigma_\ell$ shrinks and the signal falls with $\ell$, so the misfit in $\sigma$ units decays. A single envelope $e^{-\ell/L}$ adds one parameter. \emph{Fit}: for fixed $(\Delta\ell,L)$ the model is linear in $a_j\cos\phi_j$, $a_j\sin\phi_j$ (least squares), and $\Delta\ell$, $L$ are scanned. Results: undamped plateaus at $r^2=0.551$; damped, 1--9 harmonics give $r^2=$ 0.797, 0.813, 0.831, 0.834, 0.835, 0.836, 0.836, 0.837, 0.837, with $\Delta\ell\approx593$ and $L\approx990$. Starting amplitudes ($\sigma$): 34.6, 5.6, 5.7, 2.2, 1.3, 1.0, 1.2, 0.4, 0.5. \flag{these values were taken from the earlier figure set; the script was not re-run}. The decomposition is purely descriptive. It fails where the residual structure is not stationary, e.g.\ the late troughs at $\ell\sim1400$, 2000, which the shared envelope has already suppressed.
+
+\paragraph{Mapping to source parameters.} Using Eq.~(20) with $\chi\approx3.94$\,Gpc: a residual period $\Delta\ell=593$ corresponds to $r_2=2\pi\times3.94/593=0.0417$\,Gpc $=41.7$\,Mpc$\,\approx r_s/2$. An envelope $e^{-\ell/L}$ with $\ell=k\chi$ becomes $e^{-k\chi/L}$, so $k_B=L/\chi=990/3.94=251$\,Gpc$^{-1}=0.25$\,Mpc$^{-1}$. These were the starting values for the damped term.
+
+\par\medskip\noindent\begin{minipage}{\columnwidth}\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\captionof{table}{Fit statistics (Planck errors). Pearson $r^2$ over $\ell$ 2--2500.}
+\begin{tabular}{lccc}\toprule
+Model & $\chi^2_{2-2500}$ & $r^2$ & $\chi^2_{2-30}$\\\midrule
+CoE $r_2$ free & 3{,}787 & 0.976 & 137\\
+CoE half ($r_2=r_s/2$) & 4{,}131 & 0.966 & 49.1\\
+CoE acoustic (no $B$) & 11{,}772 & 0.871 & --\\
+ΛCDM & 2{,}558 & 0.983 & 20.1\\\bottomrule
+\end{tabular}\\[6pt]
+\begin{tabular}{cccc}\toprule
+peak & Planck & CoE $r_2$ free & CoE half\\\midrule
+1&228 (5726)&218 (5927)&207 (5223)\\
+2&544 (2580)&531 (2449)&537 (2383)\\
+3&823 (2525)&813 (2466)&818 (2433)\\
+4&1121 (1239)&1130 (1293)&1132 (1260)\\
+5&1417 (814)&1420 (822)&1426 (861)\\\bottomrule
+\end{tabular}\\[2pt]
+Lower: peak $\ell$ ($D_\ell$ in $\mu$K$^2$).
+\end{minipage}\par\medskip
+\section{Damped half-scale model}
+\noindent\emph{Residual in view.} The second damped mode is a hypothesis taken from the acoustic-fit residual. Here it is added to the model and refitted, and the question is how much of that residual structure it removes.
+\begin{figure*}[t]\centering\fig{\textwidth}{0.62\textheight}{fig/f01.png}\caption{Final model: acoustic field + damped half-scale term ($r_2$ free), exact/Limber-corrected projection, $R\approx4$\,Gpc, plus $D^{\rm fix}_\ell$. Top: low $\ell$ (linear). Bottom: full spectrum. ΛCDM black, Planck grey, CoE one-sky realisation red in its $\pm1\sigma$ band. $\chi^2_{2-2500}=3{,}787$, Pearson $r^2=0.976$.}\label{fig:final}\end{figure*}
+
+\paragraph{Model and fit.} Eq.~(19) with all 12 parameters $(\lg A,n,A_w,r_s,\phi,k_D,R_c,w,B,k_B,r_2,\phi_2)$ floated in one $\chi^2$ minimisation over $\ell=2$--2500 (Eq.~9). The ``half'' variant ties $r_2=r_s/2$ (11 parameters). Result ($r_2$ free): $r_2=42.1$\,Mpc vs $r_s/2=39.8$; $k_B=0.138$\,Mpc$^{-1}$, against the starting 0.25. The resulting model is shown in Fig.~\ref{fig:final}.
+
+\paragraph{The $\ell=50$ step.} A ratio $c_\ell$ computed for an earlier, narrower shell had been left in place when the fit widened the shell, which produced a step at $\ell=50$ (reported as 43\%). Recomputing $c_\ell$ on the 69 nodes at each pass reduces the 50$\to$51 change to $\approx1.1\%$. \flag{the 43\% and 1.1\% figures come from the run log; not re-measured here}.
+\paragraph{Remaining structure.} The odd/even alternation is absent from the new residual. What remains: a slow wave with $\Delta\ell\approx1{,}384$ ($\pm8$--$11\sigma$), and $\ell=2$--3 raised to $\approx3{,}300\,\mu$K$^2$, which dominates $\chi^2_{2-30}=137$; part of the $\ell=3$ level is $D^{\rm fix}_3=1506$. \flag{the $\Delta\ell\approx1384$ amplitude and the 3300\,$\mu$K$^2$ level were read from the earlier figures}.
+
+\section{Residual harmonics against independent sky anomalies}\label{sec:skyres}
+\noindent\emph{Residual in view.} The A and B residuals left by the CoE model are peeled layer by layer, $F_1+F_2+F_3$ for $n=1$, 2, 3, each fitted to what the previous layer left. The leftover map is then compared with sky anomalies found independently. Agreement there is qualitative and is reported as such.
+
+\subsection{Residual decomposition of A and B}
+Start from the A and B reconstructions (313 clusters, Migkas error bars) minus the CoE model (A: AF\_smooth; B: sheet BL). Harmonics $n=1$, 2, 3 in $\ell$ are fitted jointly to both residuals, weighted by the Migkas errors, each on the residual left by the previous one. Each harmonic has a shared amplitude and phase and a separate offset for A and B. $n=1$ (amplitude 0.0382, peak at $\ell=102.8^\circ$) is a dipole in $\ell$: it tilts the model and corrects the depth of the A trough near $\ell\approx100^\circ$. $n=2$ (0.0140, peaks at $54.5^\circ$ and $234.5^\circ$) is a quadrupole that reshapes the two humps. $n=3$ (0.0064, peaks at $82.7^\circ$, $202.7^\circ$, $322.7^\circ$) is a small fine correction. For A, $\chi^2$ falls from 25.54 to 15.30, 12.06 and 11.46. For B the values are 13.68, 8.67, 10.04 and 10.24 (Fig.~\ref{fig:decomp}). For B, $\chi^2$ is lowest after $n=1$ and rises slightly with the shared $n=2$ and 3 terms. The residual used below is $100\,(\mathrm{data}-\mathrm{model})/\mathrm{data}$ after the three harmonics, averaged over $\pm25^\circ$ in $\ell$. Code: \texttt{dumpM.py}, \texttt{recon\_n3.py}, \texttt{cum2.py}.
+
+\subsection{Sky anomalies}
+The A and B residuals after removing the $n=1$--3 harmonics are drawn on the sky. The model map is lifted $15^\circ$ (anti-CoE up) and rotated $45^\circ$ counterclockwise about the CoE axis; observed anomalies stay at their published $(\ell,b)$. Regions already used in the Migkas fit are excluded. Each spot is tied to A or B by a qualitative physical assignment and scored by sign only: a hot spot needs residual $>0$, a cold spot $<0$. Result: A 4/5, B 7/7, total 11/12; the CMB dipole cold pole sits on the zero line ($+0.02\%$) and is marked ``?''. In Fig.~\ref{fig:decomp} the points are the reconstruction from 313 clusters with Migkas Fig.~6 error bars; the CoE model is AF\_smooth for A and the sheet BL for B; the shared harmonics come from a joint error-weighted fit to A and B with shared amplitude and phase and separate offsets (\texttt{cum2.py}/\texttt{recon\_n3.py}), giving $C_1=0.0382$ ($102.8^\circ$), $C_2=0.0140$ ($109.0^\circ$), $C_3=0.0064$ ($248.2^\circ$). Residual panels give the RMS and show the next component; dashed curves are the previous step; shading marks $\ell$ 15--80$^\circ$ and 260--335$^\circ$. Bootstrap $1\sigma$ per spot is 3--6 percentage points (2000 resamples of the 313 clusters).
+\begin{figure*}[t]\centering\fig{\textwidth}{0.8\textheight}{fig/recon_n3_2c4r.png}\caption{Harmonic decomposition: A (left column) and B (right column). Rows: CoE model before harmonics (with its residual strip beneath), $+n=1$, $+n=1$--2, and after all shared harmonics $n=1$--3. $\chi^2$ and Pearson $r^2$ on each model panel.}\label{fig:decomp}\end{figure*}
+
+\paragraph{Qualitative assignment of spots to A or B.}
+\textbf{A = normalisation of the $L$--$T$ relation (distance / expansion rate / velocity).} A spot is tied to A when it measures motion or distance along the line of sight.
+\begin{itemize}\setlength\itemsep{0pt}
+\item CMB dipole (hot and cold poles): our velocity relative to the CMB rest frame, a kinematic quantity.
+\item Bulk flow (toward and away): peculiar velocities of galaxies and clusters, i.e.\ recession velocity.
+\item CMB Cold Spot: associated with the Eridanus supervoid, an underdensity that alters expansion and photon path along that sightline (distance/expansion effect).
+\end{itemize}
+\textbf{B = slope of the $L$--$T$ relation (sample composition).} A spot is tied to B when it reflects source counts, sample makeup or foreground contamination.
+\begin{itemize}\setlength\itemsep{0pt}
+\item NVSS and CatWISE dipoles: number-count dipoles of radio sources and quasars, set by how many sources pass a flux cut in each direction (selection/sample effect).
+\item Hemispherical power asymmetry: a difference in fluctuation amplitude between sky halves, a property of the population rather than a velocity.
+\item Loop I / North Polar Spur: Galactic foreground changing $N_{\rm H}$ absorption and soft X-ray background, shifting luminosities differently with temperature (slope change).
+\end{itemize}
+Assignments were made from the physics before reading any residual sign.
+
+\section{Parameters and status}
+
+\paragraph{Predicted vs fitted.} Fitted: $D$, the density-law shape and $l_0$ (Migkas); the 12 source and shell parameters (CMB). Derived given those: the two-hump Migkas shape, the CatWISE-locked $L$, and the full $D_\ell$ via Eqs.~(17)--(18). The data require a second damped mode at $r_2\approx42$\,Mpc $\approx r_s/2$ decaying at $k_B\approx0.14$\,Mpc$^{-1}$; a physical shell model would have to supply it.
+\paragraph{Central proposition.} The working principle of these notes is that a residual is information: once the known contributions are modelled out, whatever structure remains is the next thing to explain. Applied here, the apparent acceleration is treated as a residual of the homogeneous model that an off-centre geometry might account for. The Migkas dipole, the CMB residuals and the leftover A/B sky structure are the places where that idea is tested. Some residuals shrink under the CoE model and some, notably the acoustic-fit $\chi^2$ against ΛCDM, do not, so the question in the abstract stays open.
+\begin{figure*}[t]\centering\fig{\textwidth}{0.45\textheight}{fig/sky_angle.png}\\[2pt]\fig{0.495\textwidth}{0.3\textheight}{fig/sky_mapA_al.png}\hfill\fig{0.495\textwidth}{0.3\textheight}{fig/sky_mapB_al.png}\caption{Top: A and B running-mean residuals vs model-frame angle ($\pm15/25/35^\circ$). Bottom: residual maps (Galactic Mollweide, $\ell=0$ at centre, increasing to the left) lifted $15^\circ$ and rotated $45^\circ$ about the CoE axis, with spots at published $(\ell,b)$; left A, right B.}\label{fig:skyspots}\end{figure*}
+
+\paragraph{Next steps.} (1) Exact projection throughout, and control of low $\ell$ in the $r_2$-free fit. (2) An analytic thin-shell projection to see which parameters the geometry fixes. (3) $D(t)$ from the Newtonian integrator. (4) Reconcile the PASS label at 8\,Gpc with the coded rule.
+
+\section{Conclusion}\label{sec:concl}
+The question in the abstract was whether the universe can appear to accelerate its expansion without actually accelerating. These notes do not answer it. What they do is set it up as an inverse problem and follow the residuals through each step.
+
+\paragraph{First inverse problem.} The observables are $A/A_{\rm all}$ and $B/B_{\rm all}$ against Galactic longitude. Against the isotropic expectation of 1, $A$ has a residual with two humps and two troughs and $B$ a slower variation (Fig.~\ref{fig:obsAB}). The CoE geometry, with an observer at $D$ inside a shell of ordinary matter and a density law locked to the CatWISE dipole, turns that residual into a fit: the null $\chi^2=45.14$ falls to about 10--12 for the locked laws and to 7.67 for the best direct fit. The rotation of the model on the sky (tilt, gradient, roll) improves the agreement further in the earlier draft, and the ring and band morphology can be compared with the Migkas maps (Figs.~\ref{fig:orient}--\ref{fig:overlay}). The residual left over is not zero, and part of the amplitude comes from how the construction is normalised.
+
+\paragraph{Second inverse problem.} The same geometry, carried to last scattering, predicts a CMB far less uniform than the one observed. The CMB sections treat that flatness as the next residual: the spectrum is built as a fixed low-$\ell$ background plus acoustic and damped half-scale terms, each fitted to what the previous one left. This is where the residual does not shrink enough: the acoustic fit has $\chi^2=11{,}772$ and $r^2=0.871$ against $2{,}558$ and $0.983$ for $\Lambda$CDM, and the damped mode the data require still needs a physical origin (Parameters and status).
+
+\paragraph{Back to the sky.} The $A$ and $B$ residuals left by the CoE model are reduced by shared harmonics $n=1$--3 ($\chi^2$ for A from 25.54 to 11.46; for B lowest after $n=1$ at 8.67). The leftover is drawn on the sky and its sign agrees with 11 of 12 independently known anomalies under an assignment made before the signs were read. That is a qualitative agreement, not a test with a stated false-positive rate.
+
+\paragraph{Proposition.} The apparent acceleration is a residual of the homogeneous model that an off-centre geometry of ordinary matter might account for. The cluster anisotropy supports trying it; the flat CMB and the acoustic-fit tension are the residuals that still stand against it.
+\end{document}

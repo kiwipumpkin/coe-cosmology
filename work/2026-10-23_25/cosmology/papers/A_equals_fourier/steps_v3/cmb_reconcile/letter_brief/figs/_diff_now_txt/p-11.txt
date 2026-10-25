@@ -1,0 +1,27 @@
+                                                                                                               P
+Figure 9: Same multipole basis for gravity and EM kill. Temperature anisotropy expands as (∆T /T )(θ) = ℓ aℓ Pℓ (µ)
+with µ = cos θ. The gravitational last-scattering multipole (static potential plus kinematic Doppler) defines the kill K(θ)
+as its demeaned opposite; moving shells or plates supply an electromagnetic Doppler multipole. The coexistence target is
+aEM
+ ℓ    = −agrav
+          ℓ    after monopole removal.
+
+Both the gravitational last-scattering residual and the electromagnetic Doppler pattern from concentric plates
+or shells admit the same Legendre expansion about the CoE axis. Writing
+                                        ∆T            X
+                                                (θ) =       aℓ Pℓ (µ),   µ = cos θ,
+                                          T
+                                                        ℓ
+
+the gravitational coefficients agrav
+                                ℓ    encode static and Doppler contributions on the emission sphere, while the
+kill function is the demeaned opposite of that series. A kinematic EM pattern from moving emitters supplies
+aEM                                         EM = −agrav for ℓ ≥ 2. Exploratory partners through ℓ ≤ 4 already
+ ℓ ; term-by-term cancellation requires aℓ           ℓ
+remove most of the demeaned power at large D, but the residual peaks remain ≫ 10−5 .
+
+
+
+
+                                                              11
+

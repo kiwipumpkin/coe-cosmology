@@ -1,0 +1,20 @@
+Figure 3: Migkas A(ℓ) in three redshift slices (0.03–0.07, z > 0.07, and all-z), with the CoE model recomputed at each
+slice’s median distance (fit parameters fixed), plus the D–core-mass degeneracy.
+
+
+4    Einstein and Friedmann equations for the CoE+shell
+The LTB metric is written about the CoE, not about us. The observer (US) sits at comoving distance D from
+that centre. Sky anisotropy is an off-centre sampling of radial structure β(r), not a direction-dependent scale
+factor a(t, θ). Einstein’s equation is
+                                                  Gµν = 8πG Tµν .                                                 (1)
+For concentric dust shells about the CoE the Lemaı̂tre–Tolman–Bondi line element is[4, 5, 6]
+                                                     (R′ )2
+                                   ds2 = −dt2 +              dr2 + R(t, r)2 dΩ2 ,                                 (2)
+                                                   1 + 2E(r)
+with areal radius R(t, r), R′ ≡ ∂r R, and Ṙ ≡ ∂t R. Each shell obeys the Friedmann-like constraint
+                                                              2GM (r)
+                                              Ṙ2 = 2E(r) +           .                                           (3)
+                                                                R
+
+                                                          4
+

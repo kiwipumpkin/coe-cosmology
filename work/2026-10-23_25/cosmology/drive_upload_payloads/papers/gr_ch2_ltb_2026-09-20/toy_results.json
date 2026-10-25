@@ -1,0 +1,36 @@
+{
+  "geometry": {
+    "observer_offset_over_Dunit": 1.0,
+    "source_circle_s_over_D": 0.5,
+    "D_over_L": 6.0,
+    "profile": "M(r)=M_inf[1-exp(-r/L)(1+r/L)], dust FLRW-shell H(r)",
+    "approximation": "H at source CoE-radius on observer-centered circle; sheet AF A=H_obs/<H_obs>; no full null geodesics"
+  },
+  "migkas_fit": {
+    "R2_geometry_phase_only": 0.4295642260684809,
+    "best_phase_deg": 84.0,
+    "R2_with_Amp_sin_diagnostic": 0.49433811928169813,
+    "Amp_best": -0.15,
+    "phi_amp_rad": 2.5132741228718345,
+    "A_model_minmax": [
+      0.4833416297910427,
+      2.2489004302095825
+    ],
+    "note": "Amp x sin is diagnostic residual, not a free GR parameter"
+  },
+  "cmb": {
+    "grad_lnH_per_Mpc": -0.00048486487915501983,
+    "D_phys_Mpc_assumed": 3000.0,
+    "dipole_raw_at_d_eq_D": 1.4545946374650596,
+    "dipole_raw_at_d_eq_0.5D": 0.7272973187325298,
+    "dipole_alnes_scaled_at_d_eq_D": 0.27999999999999997,
+    "dipole_alnes_scaled_at_d_eq_0.5D": 0.13999999999999999,
+    "d_max_raw_Mpc_for_obs_dipole": 2.536789222893472,
+    "CMB_dipole_obs": 0.00123,
+    "alnes_ceiling_Mpc": 15.0
+  },
+  "H_contrast": {
+    "H_at_observer_over_Hbg": 2.133441527179289,
+    "H_near_center_over_Hbg": 98.37513513856713
+  }
+}

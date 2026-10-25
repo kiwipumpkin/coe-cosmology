@@ -1,0 +1,19 @@
+6    Time evolution and the CMB
+In the donut-universe picture the CoE is fixed while thick shells expand outward faster than light in a coordinate
+sense; the sphere of events visible to us grows at c. Recombination is a spherical surface of fixed physical radius
+around the CoE. The observer remains mid-shell between the inner and outer edges (S1 and S2). The Hubble-
+bubble volume about US satisfies VHB = 0 until the observer passes Drecomb ; afterward the visible sphere grows
+at c. Scale may be tracked through the volumes VHB (t), VS1 (t), and VS2 (t) and their fractions. Frames A–D
+show shells crossing that recombination surface while the visible sphere grows more slowly.
+
+
+
+
+Figure 7: Donut-universe time sequence (A–D): fixed recombination surface about the CoE; shells expand through it;
+VHB = 0 until US passes Drecomb ; S2 is filled in every frame; the observer sits mid-shell.
+
+
+
+
+                                                        8
+

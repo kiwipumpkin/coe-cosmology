@@ -1,0 +1,2696 @@
+[
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "power_law",
+  "M": 0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "power_law",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.58766658642072e-10,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "power_law",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.58766658642072e-07,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "power_law",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0005587666586420719,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "power_law",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.055876665864207205,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "A+B_r3",
+  "M": 0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "A+B_r3",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 1.0194753495655888e-09,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "A+B_r3",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 1.0194753495655889e-06,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "A+B_r3",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0010194753495655889,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "A+B_r3",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": false,
+  "max_abs_phi": 0.1019475349565589,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "quadratic_clipped",
+  "M": 0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "quadratic_clipped",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.564008136910994e-10,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "quadratic_clipped",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.564008136910992e-07,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "quadratic_clipped",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0005564008136910992,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "quadratic_clipped",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.05564008136910993,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "step",
+  "M": 0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "step",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 1.4591608565813199e-09,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "step",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 1.45916085658132e-06,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "step",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.00145916085658132,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "step",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": false,
+  "max_abs_phi": 0.145916085658132,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "uniform",
+  "M": 0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "uniform",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.468738046468764e-10,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "uniform",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.468738046468763e-07,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "uniform",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0005468738046468763,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0,
+  "law": "uniform",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.05468738046468763,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.25,
+  "law": "power_law",
+  "M": 0,
+  "directions_defined": 96,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 85,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   2366.614164087192,
+   2608.6103929120386
+  ],
+  "doppler_range": [
+   5.6334199909770986e-11,
+   7.544273872046232e-11
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.969999999999555,
+   13.969999999999699
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "power_law",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 2.437390807405303e+24,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "power_law",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 2.4373908074053026e+27,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "power_law",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 2.4373908074053026e+30,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "power_law",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 2.4373908074053035e+32,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.25,
+  "law": "A+B_r3",
+  "M": 0,
+  "directions_defined": 96,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 85,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   2366.614164087192,
+   2608.6103929120386
+  ],
+  "doppler_range": [
+   5.6334199909770986e-11,
+   7.544273872046232e-11
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.969999999999555,
+   13.969999999999699
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "A+B_r3",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 9.47823719367204e+24,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "A+B_r3",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 9.478237193672039e+27,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "A+B_r3",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 9.478237193672039e+30,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "A+B_r3",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 9.478237193672041e+32,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "quadratic_clipped",
+  "M": 0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "quadratic_clipped",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.564008136910994e-10,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "quadratic_clipped",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.564008136910992e-07,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "quadratic_clipped",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0005564008136910992,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "quadratic_clipped",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.05564008136910993,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.25,
+  "law": "step",
+  "M": 0,
+  "directions_defined": 96,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 85,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   2366.614164087192,
+   2608.6103929120386
+  ],
+  "doppler_range": [
+   5.6334199909770986e-11,
+   7.544273872046232e-11
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.969999999999555,
+   13.969999999999699
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "step",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 9.636565913805922e+24,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "step",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 9.636565913805922e+27,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "step",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 9.636565913805922e+30,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "step",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 9.636565913805922e+32,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.25,
+  "law": "uniform",
+  "M": 0,
+  "directions_defined": 96,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 85,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   2366.614164087192,
+   2608.6103929120386
+  ],
+  "doppler_range": [
+   5.6334199909770986e-11,
+   7.544273872046232e-11
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.969999999999555,
+   13.969999999999699
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "uniform",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 9.636565913805922e+24,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "uniform",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 9.636565913805922e+27,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "uniform",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 9.636565913805922e+30,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.25,
+  "law": "uniform",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 9.636565913805922e+32,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.5,
+  "law": "power_law",
+  "M": 0,
+  "directions_defined": 99,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 82,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   2352.467781759492,
+   2725.032176791767
+  ],
+  "doppler_range": [
+   0.0003669680303912527,
+   0.00042508549042605677
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.969997475652482,
+   13.96999811871956
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "power_law",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 25244.48343751736,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "power_law",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 25244483.437517356,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "power_law",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 25244483437.517357,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "power_law",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 2524448343751.7363,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.5,
+  "law": "A+B_r3",
+  "M": 0,
+  "directions_defined": 99,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 82,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   2352.467781759492,
+   2725.032176791767
+  ],
+  "doppler_range": [
+   0.0003669680303912527,
+   0.00042508549042605677
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.969997475652482,
+   13.96999811871956
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "A+B_r3",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 39045.299473276886,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "A+B_r3",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 39045299.473276876,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "A+B_r3",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 39045299473.27688,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "A+B_r3",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 3904529947327.6875,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "quadratic_clipped",
+  "M": 0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "quadratic_clipped",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.564008136910994e-10,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "quadratic_clipped",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.564008136910992e-07,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "quadratic_clipped",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0005564008136910992,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "quadratic_clipped",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.05564008136910993,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.5,
+  "law": "step",
+  "M": 0,
+  "directions_defined": 99,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 82,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   2352.467781759492,
+   2725.032176791767
+  ],
+  "doppler_range": [
+   0.0003669680303912527,
+   0.00042508549042605677
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.969997475652482,
+   13.96999811871956
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "step",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 39697.529647558724,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "step",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 39697529.64755873,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "step",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 39697529647.55872,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "step",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 3969752964755.8726,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.5,
+  "law": "uniform",
+  "M": 0,
+  "directions_defined": 99,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 82,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   2352.467781759492,
+   2725.032176791767
+  ],
+  "doppler_range": [
+   0.0003669680303912527,
+   0.00042508549042605677
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.969997475652482,
+   13.96999811871956
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "uniform",
+  "M": 1000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 39697.52964546365,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "uniform",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 39697529.64546364,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "uniform",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 39697529645.46364,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "uniform",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 3969752964546.3647,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.75,
+  "law": "power_law",
+  "M": 0,
+  "directions_defined": 108,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 73,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   2272.2277405503596,
+   3026.465722036818
+  ],
+  "doppler_range": [
+   0.06913341984255543,
+   0.07606479082513691
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.96953234285056,
+   13.969680883682727
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.75,
+  "law": "power_law",
+  "M": 1000000000000.0,
+  "directions_defined": 108,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 73,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.006997504061847298,
+  "stretch_range": [
+   2272.2277405503596,
+   3026.465722036818
+  ],
+  "doppler_range": [
+   0.06913341984255543,
+   0.07606479082513691
+  ],
+  "grav_range": [
+   0.9930024964969194,
+   0.9977260522787086
+  ],
+  "delay_Gyr": [
+   13.96953234285056,
+   13.969680883682727
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "power_law",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 6.997504061847296,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "power_law",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 6997.504061847296,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "power_law",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 699750.4061847297,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.75,
+  "law": "A+B_r3",
+  "M": 0,
+  "directions_defined": 108,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 73,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   2272.2277405503596,
+   3026.465722036818
+  ],
+  "doppler_range": [
+   0.06913341984255543,
+   0.07606479082513691
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.96953234285056,
+   13.969680883682727
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.75,
+  "law": "A+B_r3",
+  "M": 1000000000000.0,
+  "directions_defined": 108,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 73,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.007999174290247093,
+  "stretch_range": [
+   2272.2277405503596,
+   3026.465722036818
+  ],
+  "doppler_range": [
+   0.06913341984255543,
+   0.07606479082513691
+  ],
+  "grav_range": [
+   0.9920008267292283,
+   0.9974575456491318
+  ],
+  "delay_Gyr": [
+   13.96953234285056,
+   13.969680883682727
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "A+B_r3",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 7.99917429024709,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "A+B_r3",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 7999.174290247091,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "A+B_r3",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 799917.429024709,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.75,
+  "law": "quadratic_clipped",
+  "M": 0,
+  "directions_defined": 72,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 73,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   2272.2277405503596,
+   2926.7812669037357
+  ],
+  "doppler_range": [
+   0.06990955371898316,
+   0.07606479082513691
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.96953234285056,
+   13.969666310096024
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.75,
+  "law": "quadratic_clipped",
+  "M": 1000000000000.0,
+  "directions_defined": 72,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 73,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0018850387775865163,
+  "stretch_range": [
+   2272.2277405503596,
+   2926.7812669037357
+  ],
+  "doppler_range": [
+   0.06990955371898316,
+   0.07606479082513691
+  ],
+  "grav_range": [
+   0.9981149617788143,
+   0.9987248417431314
+  ],
+  "delay_Gyr": [
+   13.96953234285056,
+   13.969666310096024
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "quadratic_clipped",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 145,
+  "weak_field_ok": false,
+  "max_abs_phi": 1.8850387775865165,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "quadratic_clipped",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 145,
+  "weak_field_ok": false,
+  "max_abs_phi": 1885.0387775865163,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "quadratic_clipped",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 145,
+  "weak_field_ok": false,
+  "max_abs_phi": 188503.8777586516,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.75,
+  "law": "step",
+  "M": 0,
+  "directions_defined": 108,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 73,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   2272.2277405503596,
+   3026.465722036818
+  ],
+  "doppler_range": [
+   0.06913341984255543,
+   0.07606479082513691
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.96953234285056,
+   13.969680883682727
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.75,
+  "law": "step",
+  "M": 1000000000000.0,
+  "directions_defined": 108,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 73,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.008133611279875656,
+  "stretch_range": [
+   2272.2277405503596,
+   3026.465722036818
+  ],
+  "doppler_range": [
+   0.06913341984255543,
+   0.07606479082513691
+  ],
+  "grav_range": [
+   0.9918663901792852,
+   0.9974143393505011
+  ],
+  "delay_Gyr": [
+   13.96953234285056,
+   13.969680883682727
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "step",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 8.133611279875653,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "step",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 8133.611279875656,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "step",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 813361.1279875656,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.75,
+  "law": "uniform",
+  "M": 0,
+  "directions_defined": 108,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 73,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   2272.2277405503596,
+   3026.465722036818
+  ],
+  "doppler_range": [
+   0.06913341984255543,
+   0.07606479082513691
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.96953234285056,
+   13.969680883682727
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 0.75,
+  "law": "uniform",
+  "M": 1000000000000.0,
+  "directions_defined": 108,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 73,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.008131443236757865,
+  "stretch_range": [
+   2272.2277405503596,
+   3026.465722036818
+  ],
+  "doppler_range": [
+   0.06913341984255543,
+   0.07606479082513691
+  ],
+  "grav_range": [
+   0.9918685573101159,
+   0.9974164028202568
+  ],
+  "delay_Gyr": [
+   13.96953234285056,
+   13.969680883682727
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "uniform",
+  "M": 1000000000000000.0,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 8.131443236757864,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "uniform",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 8131.443236757863,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 0.75,
+  "law": "uniform",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 813144.3236757865,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "power_law",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242415355211591,
+  "dipole": 0.5587736361863364,
+  "resid": 0.140903769674854
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "power_law",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.356374860231182e-06,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9999946441839064,
+   0.9999998456727182
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.2424131062561923,
+  "dipole": 0.5587761944013826,
+  "resid": 0.14090400601032008
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "power_law",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.005356374860231182,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9946441839064275,
+   0.9998456727181183
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.2401663998128143,
+  "dipole": 0.561336485737991,
+  "resid": 0.1411405333175487
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 1.0,
+  "law": "power_law",
+  "M": 1e+18,
+  "directions_defined": 65,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 116,
+  "weak_field_ok": false,
+  "max_abs_phi": 5.356374860231182,
+  "stretch_range": [
+   1144.2963589778126,
+   2156.153677652457
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.0023219209915390504,
+   0.8456727181182645
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.963520861928528
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 1.0,
+  "law": "power_law",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 535.6374860231182,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "A+B_r3",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242415355211591,
+  "dipole": 0.5587736361863364,
+  "resid": 0.140903769674854
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "A+B_r3",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 6.476773639239057e-06,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9999935242458361,
+   0.9999987609530417
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242411744355008,
+  "dipole": 0.5587762041069462,
+  "resid": 0.14090400656579252
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "A+B_r3",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0064767736392390566,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9935242458361105,
+   0.9987609530417301
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.2388044986287041,
+  "dipole": 0.5613490342636368,
+  "resid": 0.14114135053165075
+ },
+ {
+  "note": "no directions defined",
+  "f": 1.0,
+  "law": "A+B_r3",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 6.476773639239057,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 1.0,
+  "law": "A+B_r3",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 647.6773639239058,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "quadratic_clipped",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242415355211591,
+  "dipole": 0.5587736361863364,
+  "resid": 0.140903769674854
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "quadratic_clipped",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.336807819609523e-06,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9999946637485813,
+   0.9999998494178541
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242413114742859,
+  "dipole": 0.5587761900442849,
+  "resid": 0.1409040063538939
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "quadratic_clipped",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.005336807819609523,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9946637485812042,
+   0.9998494178541638
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.240174886479341,
+  "dipole": 0.561332103256467,
+  "resid": 0.14114087587457474
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 1.0,
+  "law": "quadratic_clipped",
+  "M": 1e+18,
+  "directions_defined": 65,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 116,
+  "weak_field_ok": false,
+  "max_abs_phi": 5.336807819609523,
+  "stretch_range": [
+   1144.2963589778126,
+   2156.153677652457
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.008145573333114275,
+   0.8494178541637669
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.963520861928528
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 1.0,
+  "law": "quadratic_clipped",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 533.6807819609523,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "step",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242415355211591,
+  "dipole": 0.5587736361863364,
+  "resid": 0.140903769674854
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "step",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 7.60154607274257e-06,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9999923999130881,
+   0.9999992754413831
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.2424106881210404,
+  "dipole": 0.5587767759672296,
+  "resid": 0.1409045104687574
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "step",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.007601546072742569,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.992399913088114,
+   0.9992754413830782
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.237748264660953,
+  "dipole": 0.5619252441919796,
+  "resid": 0.14164754438718558
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 1.0,
+  "law": "step",
+  "M": 1e+18,
+  "directions_defined": 20,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 161,
+  "weak_field_ok": false,
+  "max_abs_phi": 7.601546072742569,
+  "stretch_range": [
+   1144.2963589778126,
+   1262.3608248424468
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.026730432491486544,
+   0.2754413830781828
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.958933426802552
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 1.0,
+  "law": "step",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 760.1546072742568,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "uniform",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242415355211591,
+  "dipole": 0.5587736361863364,
+  "resid": 0.140903769674854
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "uniform",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.3909610034983305e-06,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9999946095858703,
+   0.9999998553433183
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242413125275054,
+  "dipole": 0.5587762093537795,
+  "resid": 0.14090399715149132
+ },
+ {
+  "note": "",
+  "f": 1.0,
+  "law": "uniform",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.005390961003498331,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9946095858703063,
+   0.999855343318249
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.240185418674611,
+  "dipole": 0.5613514257302048,
+  "resid": 0.1411316550074579
+ },
+ {
+  "note": "partial sky: stats not computed",
+  "f": 1.0,
+  "law": "uniform",
+  "M": 1e+18,
+  "directions_defined": 65,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 116,
+  "weak_field_ok": false,
+  "max_abs_phi": 5.39096100349833,
+  "stretch_range": [
+   1144.2963589778126,
+   2156.153677652457
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.029118272096698705,
+   0.8553433182489671
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.963520861928528
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ },
+ {
+  "note": "no directions defined",
+  "f": 1.0,
+  "law": "uniform",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 539.0961003498331,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null
+ }
+]

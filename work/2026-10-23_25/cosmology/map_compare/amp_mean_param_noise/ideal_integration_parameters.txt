@@ -1,0 +1,18 @@
+IDEAL INTEGRATION — parameters (expanding, drag du/dt+Hu=g, sheet AF ∝ H_obs/H)
+
+PHYSICS / PROFILE
+  1. M or κ     — enclosed mass scale (κ = G M_enc/(D³ H²)). MOVES: curve amplitude.
+  2. d/D        — source distance / observer–CoE distance. MOVES: weak at small d/D; shape when d/D → 1.
+  3. D/L (x)    — concentration of decreasing ρ. MOVES: κ and mild shape.
+  4. f_u        — twoscale uniform-floor fraction. MOVES: mostly amplitude via κ.
+
+INTEGRATION
+  5. η = t_i/T  — when the pull starts. MOVES: overall amplitude (α_eff).
+  (branch: drag vs frozen — fixed to drag here; frozen is stronger kick at same M.)
+
+ROTATION / NON-RADIAL DIAGNOSTIC (optional on top of AF)
+  6. Amp        — sine amplitude. MOVES: modulation depth along ℓ.
+  7. φ          — sine phase. MOVES: slides the pattern along ℓ.
+
+HELD FIXED IN THESE PLOTS
+  H, G, D units; expanding H_bg>0; sheet AF map (not invsq); Δℓ=90° boxcar; no bolt-on.

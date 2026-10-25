@@ -1,0 +1,5445 @@
+[
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "power_law",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242415355211591,
+  "dipole": 0.5587736361863364,
+  "resid": 0.140903769674854,
+  "resid_l1": 0.1409055581239317,
+  "resid_l2": 0.05870959433702146,
+  "boost_beta": 0.5462105681813841,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.038206048169533484,
+  "mean_after_boost": 1.3161828462240703,
+  "best_boost": 0.5462146777215078,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.35203370111040977,
+  "rms_after_best_boost": 0.038206056459816444,
+  "mean_after_best_boost": 1.3161828462645526,
+  "raw_multipoles": {
+   "a1": 0.5587452653285665,
+   "a2": 0.286404231010787,
+   "a3": 0.1407864522067343,
+   "a4": 0.06719140977654649
+  },
+  "boosted_multipoles": {
+   "a1": -5.459104517940502e-06,
+   "a2": 0.0849042238413246,
+   "a3": -0.01009397775285179,
+   "a4": 0.005209666262246105
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "power_law",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.356374860231182e-06,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9999946441839064,
+   0.9999998456727182
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.2424131062561923,
+  "dipole": 0.5587761944013826,
+  "resid": 0.14090400601032008,
+  "resid_l1": 0.1409057944623975,
+  "resid_l2": 0.05870969528683364,
+  "boost_beta": 0.5462121150999539,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.03820546761237979,
+  "mean_after_boost": 1.3161810899755702,
+  "best_boost": 0.546216188964238,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.3520351492021185,
+  "rms_after_best_boost": 0.03820547590526041,
+  "mean_after_best_boost": 1.3161810900105606,
+  "raw_multipoles": {
+   "a1": 0.5587478234137232,
+   "a2": 0.28640470885298874,
+   "a3": 0.14078669346048286,
+   "a4": 0.06719152635660727
+  },
+  "boosted_multipoles": {
+   "a1": -5.411728153725988e-06,
+   "a2": 0.08490295675565805,
+   "a3": -0.010093625797530384,
+   "a4": 0.005209421984597994
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "power_law",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.005356374860231182,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9946441839064275,
+   0.9998456727181183
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.2401663998128143,
+  "dipole": 0.561336485737991,
+  "resid": 0.1411405333175487,
+  "resid_l1": 0.14114232477179595,
+  "resid_l2": 0.05881072703376821,
+  "boost_beta": 0.5477561794475049,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.037623937746122486,
+  "mean_after_boost": 1.3144274468060817,
+  "best_boost": 0.5477558360019809,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.35348461521804764,
+  "rms_after_best_boost": 0.0376239463088264,
+  "mean_after_best_boost": 1.3144274468959036,
+  "raw_multipoles": {
+   "a1": 0.5613079847555419,
+   "a2": 0.286882938879666,
+   "a3": 0.1410281430147054,
+   "a4": 0.06730820103574503
+  },
+  "boosted_multipoles": {
+   "a1": 4.577542546315566e-07,
+   "a2": 0.08363327039672341,
+   "a3": -0.009743769685758557,
+   "a4": 0.004963934947130908
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "partial sky: stats not computed",
+  "f": 0,
+  "law": "power_law",
+  "M": 1e+18,
+  "directions_defined": 65,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 116,
+  "weak_field_ok": false,
+  "max_abs_phi": 5.356374860231182,
+  "stretch_range": [
+   1144.2963589778126,
+   2156.153677652457
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.0023219209915390504,
+   0.8456727181182645
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.963520861928528
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "no directions defined",
+  "f": 0,
+  "law": "power_law",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 535.6374860231182,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "A+B_r3",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242415355211591,
+  "dipole": 0.5587736361863364,
+  "resid": 0.140903769674854,
+  "resid_l1": 0.1409055581239317,
+  "resid_l2": 0.05870959433702146,
+  "boost_beta": 0.5462105681813841,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.038206048169533484,
+  "mean_after_boost": 1.3161828462240703,
+  "best_boost": 0.5462146777215078,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.35203370111040977,
+  "rms_after_best_boost": 0.038206056459816444,
+  "mean_after_best_boost": 1.3161828462645526,
+  "raw_multipoles": {
+   "a1": 0.5587452653285665,
+   "a2": 0.286404231010787,
+   "a3": 0.1407864522067343,
+   "a4": 0.06719140977654649
+  },
+  "boosted_multipoles": {
+   "a1": -5.459104517940502e-06,
+   "a2": 0.0849042238413246,
+   "a3": -0.01009397775285179,
+   "a4": 0.005209666262246105
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "A+B_r3",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 6.476773639239057e-06,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9999935242458361,
+   0.9999987609530417
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242411744355008,
+  "dipole": 0.5587762041069462,
+  "resid": 0.14090400656579252,
+  "resid_l1": 0.140905795017877,
+  "resid_l2": 0.05870969825502614,
+  "boost_beta": 0.5462121208052347,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.038205466203469755,
+  "mean_after_boost": 1.3161796494921476,
+  "best_boost": 0.5462161945374137,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.35203515455945383,
+  "rms_after_best_boost": 0.038205474496359804,
+  "mean_after_best_boost": 1.3161796495271172,
+  "raw_multipoles": {
+   "a1": 0.558747833118794,
+   "a2": 0.28640470717740146,
+   "a3": 0.14078669998183527,
+   "a4": 0.0671915308949885
+  },
+  "boosted_multipoles": {
+   "a1": -5.411552710776757e-06,
+   "a2": 0.0849029543870301,
+   "a3": -0.010093618581460738,
+   "a4": 0.005209417109934696
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "A+B_r3",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0064767736392390566,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9935242458361105,
+   0.9987609530417301
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.2388044986287041,
+  "dipole": 0.5613490342636368,
+  "resid": 0.14114135053165075,
+  "resid_l1": 0.1411431419962707,
+  "resid_l2": 0.05881381494778406,
+  "boost_beta": 0.5477635667587438,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.03762189653763418,
+  "mean_after_boost": 1.3129869699233327,
+  "best_boost": 0.5477630567710146,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.35349158375162043,
+  "rms_after_best_boost": 0.037621905099520375,
+  "mean_after_best_boost": 1.3129869700596526,
+  "raw_multipoles": {
+   "a1": 0.561320532644056,
+   "a2": 0.2868817841637156,
+   "a3": 0.14103494879814887,
+   "a4": 0.06731288090050493
+  },
+  "boosted_multipoles": {
+   "a1": 6.797344878082048e-07,
+   "a2": 0.08362950751680975,
+   "a3": -0.009736137619407146,
+   "a4": 0.004958741925720501
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "no directions defined",
+  "f": 0,
+  "law": "A+B_r3",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 6.476773639239057,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "no directions defined",
+  "f": 0,
+  "law": "A+B_r3",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 647.6773639239058,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "quadratic_clipped",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242415355211591,
+  "dipole": 0.5587736361863364,
+  "resid": 0.140903769674854,
+  "resid_l1": 0.1409055581239317,
+  "resid_l2": 0.05870959433702146,
+  "boost_beta": 0.5462105681813841,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.038206048169533484,
+  "mean_after_boost": 1.3161828462240703,
+  "best_boost": 0.5462146777215078,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.35203370111040977,
+  "rms_after_best_boost": 0.038206056459816444,
+  "mean_after_best_boost": 1.3161828462645526,
+  "raw_multipoles": {
+   "a1": 0.5587452653285665,
+   "a2": 0.286404231010787,
+   "a3": 0.1407864522067343,
+   "a4": 0.06719140977654649
+  },
+  "boosted_multipoles": {
+   "a1": -5.459104517940502e-06,
+   "a2": 0.0849042238413246,
+   "a3": -0.01009397775285179,
+   "a4": 0.005209666262246105
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "quadratic_clipped",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.336807819609523e-06,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9999946637485813,
+   0.9999998494178541
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242413114742859,
+  "dipole": 0.5587761900442849,
+  "resid": 0.1409040063538939,
+  "resid_l1": 0.14090579480597576,
+  "resid_l2": 0.05870969428639471,
+  "boost_beta": 0.5462121129472567,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.03820546873820893,
+  "mean_after_boost": 1.316181098015663,
+  "best_boost": 0.5462161868617669,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.35203514703439537,
+  "rms_after_best_boost": 0.03820547703108588,
+  "mean_after_best_boost": 1.3161810980506607,
+  "raw_multipoles": {
+   "a1": 0.5587478190568468,
+   "a2": 0.28640471072331447,
+   "a3": 0.14078669095061655,
+   "a4": 0.06719152541739326
+  },
+  "boosted_multipoles": {
+   "a1": -5.411794850967468e-06,
+   "a2": 0.08490295891327083,
+   "a3": -0.01009362891170736,
+   "a4": 0.005209424802272931
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "quadratic_clipped",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.005336807819609523,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9946637485812042,
+   0.9998494178541638
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.240174886479341,
+  "dipole": 0.561332103256467,
+  "resid": 0.14114087587457474,
+  "resid_l1": 0.14114266733316996,
+  "resid_l2": 0.05880972409889272,
+  "boost_beta": 0.5477540244407084,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.03762506376493015,
+  "mean_after_boost": 1.314435484717289,
+  "best_boost": 0.5477537296115527,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.3534824322546197,
+  "rms_after_best_boost": 0.0376250723276615,
+  "mean_after_best_boost": 1.3144354847938764,
+  "raw_multipoles": {
+   "a1": 0.5613036024965316,
+   "a2": 0.2868848093083893,
+   "a3": 0.1410256269663337,
+   "a4": 0.06730725932825882
+  },
+  "boosted_multipoles": {
+   "a1": 3.929552416142082e-07,
+   "a2": 0.0836354354884963,
+   "a3": -0.009746892990192175,
+   "a4": 0.004966768896953275
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "partial sky: stats not computed",
+  "f": 0,
+  "law": "quadratic_clipped",
+  "M": 1e+18,
+  "directions_defined": 65,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 116,
+  "weak_field_ok": false,
+  "max_abs_phi": 5.336807819609523,
+  "stretch_range": [
+   1144.2963589778126,
+   2156.153677652457
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.008145573333114275,
+   0.8494178541637669
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.963520861928528
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "no directions defined",
+  "f": 0,
+  "law": "quadratic_clipped",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 533.6807819609523,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "step",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242415355211591,
+  "dipole": 0.5587736361863364,
+  "resid": 0.140903769674854,
+  "resid_l1": 0.1409055581239317,
+  "resid_l2": 0.05870959433702146,
+  "boost_beta": 0.5462105681813841,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.038206048169533484,
+  "mean_after_boost": 1.3161828462240703,
+  "best_boost": 0.5462146777215078,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.35203370111040977,
+  "rms_after_best_boost": 0.038206056459816444,
+  "mean_after_best_boost": 1.3161828462645526,
+  "raw_multipoles": {
+   "a1": 0.5587452653285665,
+   "a2": 0.286404231010787,
+   "a3": 0.1407864522067343,
+   "a4": 0.06719140977654649
+  },
+  "boosted_multipoles": {
+   "a1": -5.459104517940502e-06,
+   "a2": 0.0849042238413246,
+   "a3": -0.01009397775285179,
+   "a4": 0.005209666262246105
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "step",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 7.60154607274257e-06,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9999923999130881,
+   0.9999992754413831
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.2424106881210404,
+  "dipole": 0.5587767759672296,
+  "resid": 0.1409045104687574,
+  "resid_l1": 0.14090629892723777,
+  "resid_l2": 0.058710076569983144,
+  "boost_beta": 0.5462127830156923,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.03820572293073432,
+  "mean_after_boost": 1.3161787259190394,
+  "best_boost": 0.5462168563028986,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.35203565881327525,
+  "rms_after_best_boost": 0.03820573122359948,
+  "mean_after_best_boost": 1.3161787259507562,
+  "raw_multipoles": {
+   "a1": 0.5587484049500422,
+   "a2": 0.2864055588879261,
+   "a3": 0.14078754241274297,
+   "a4": 0.067192149440138
+  },
+  "boosted_multipoles": {
+   "a1": -5.410960778877427e-06,
+   "a2": 0.08490353407441689,
+   "a3": -0.010093672400290937,
+   "a4": 0.005209187313556713
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "step",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.007601546072742569,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.992399913088114,
+   0.9992754413830782
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.237748264660953,
+  "dipole": 0.5619252441919796,
+  "resid": 0.14164754438718558,
+  "resid_l1": 0.14164934227677153,
+  "resid_l2": 0.059193789345548684,
+  "boost_beta": 0.548428240265992,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.037878530373993254,
+  "mean_after_boost": 1.3120630314378887,
+  "best_boost": 0.5484057440132036,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.35399885763132166,
+  "rms_after_best_boost": 0.03787853453032646,
+  "mean_after_best_boost": 1.312063048138345,
+  "raw_multipoles": {
+   "a1": 0.5618967133162405,
+   "a2": 0.287737110076163,
+   "a3": 0.14188076486791085,
+   "a4": 0.06793385957666044
+  },
+  "boosted_multipoles": {
+   "a1": 2.9990969490609025e-05,
+   "a2": 0.08420849153491027,
+   "a3": -0.009788776807937846,
+   "a4": 0.004725123470641567
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "partial sky: stats not computed",
+  "f": 0,
+  "law": "step",
+  "M": 1e+18,
+  "directions_defined": 20,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 161,
+  "weak_field_ok": false,
+  "max_abs_phi": 7.601546072742569,
+  "stretch_range": [
+   1144.2963589778126,
+   1262.3608248424468
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.026730432491486544,
+   0.2754413830781828
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.958933426802552
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "no directions defined",
+  "f": 0,
+  "law": "step",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 760.1546072742568,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "uniform",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242415355211591,
+  "dipole": 0.5587736361863364,
+  "resid": 0.140903769674854,
+  "resid_l1": 0.1409055581239317,
+  "resid_l2": 0.05870959433702146,
+  "boost_beta": 0.5462105681813841,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.038206048169533484,
+  "mean_after_boost": 1.3161828462240703,
+  "best_boost": 0.5462146777215078,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.35203370111040977,
+  "rms_after_best_boost": 0.038206056459816444,
+  "mean_after_best_boost": 1.3161828462645526,
+  "raw_multipoles": {
+   "a1": 0.5587452653285665,
+   "a2": 0.286404231010787,
+   "a3": 0.1407864522067343,
+   "a4": 0.06719140977654649
+  },
+  "boosted_multipoles": {
+   "a1": -5.459104517940502e-06,
+   "a2": 0.0849042238413246,
+   "a3": -0.01009397775285179,
+   "a4": 0.005209666262246105
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "uniform",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 5.3909610034983305e-06,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9999946095858703,
+   0.9999998553433183
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.242413125275054,
+  "dipole": 0.5587762093537795,
+  "resid": 0.14090399715149132,
+  "resid_l1": 0.1409057856034563,
+  "resid_l2": 0.05870969354132372,
+  "boost_beta": 0.5462121171244592,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.03820545760918629,
+  "mean_after_boost": 1.3161811124251899,
+  "best_boost": 0.5462161909405963,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.3520351535672159,
+  "rms_after_best_boost": 0.038205465902072425,
+  "mean_after_best_boost": 1.316181112460173,
+  "raw_multipoles": {
+   "a1": 0.558747838365361,
+   "a2": 0.28640468885240394,
+   "a3": 0.1407866890027709,
+   "a4": 0.06719152489774162
+  },
+  "boosted_multipoles": {
+   "a1": -5.411664303993195e-06,
+   "a2": 0.08490293595949425,
+   "a3": -0.010093609858853145,
+   "a4": 0.005209412692303029
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "",
+  "f": 0,
+  "law": "uniform",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.005390961003498331,
+  "stretch_range": [
+   1144.2963589778126,
+   3817.3474332189485
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.9946095858703063,
+   0.999855343318249
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.966340386682901
+  ],
+  "mean": 1.240185418674611,
+  "dipole": 0.5613514257302048,
+  "resid": 0.1411316550074579,
+  "resid_l1": 0.14113344634901545,
+  "resid_l2": 0.058808976841653156,
+  "boost_beta": 0.5477581460565195,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.037613961451454944,
+  "mean_after_boost": 1.3144498984540613,
+  "best_boost": 0.5477577588329057,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.3534889784323541,
+  "rms_after_best_boost": 0.03761397001613935,
+  "mean_after_best_boost": 1.3144498985559527,
+  "raw_multipoles": {
+   "a1": 0.5613229239892007,
+   "a2": 0.28686289503449014,
+   "a3": 0.14102367359266527,
+   "a4": 0.06730673776030041
+  },
+  "boosted_multipoles": {
+   "a1": 5.161133211769794e-07,
+   "a2": 0.08361250890646832,
+   "a3": -0.00972776075540538,
+   "a4": 0.004954572335158228
+  }
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "partial sky: stats not computed",
+  "f": 0,
+  "law": "uniform",
+  "M": 1e+18,
+  "directions_defined": 65,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 116,
+  "weak_field_ok": false,
+  "max_abs_phi": 5.39096100349833,
+  "stretch_range": [
+   1144.2963589778126,
+   2156.153677652457
+  ],
+  "doppler_range": [
+   1.0,
+   1.0
+  ],
+  "grav_range": [
+   0.029118272096698705,
+   0.8553433182489671
+  ],
+  "delay_Gyr": [
+   13.957791608007959,
+   13.963520861928528
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0,
+  "F": 1.0,
+  "note": "no directions defined",
+  "f": 0,
+  "law": "uniform",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 539.0961003498331,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "power_law",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.1911711422362627,
+  "dipole": 0.5246750123165852,
+  "resid": 0.13964688404940678,
+  "resid_l1": 0.13964865654521413,
+  "resid_l2": 0.05690654348655763,
+  "boost_beta": 0.5261416599297676,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.04677804367854942,
+  "mean_after_boost": 1.254305081220156,
+  "best_boost": 0.5261366372490912,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.33355765272744164,
+  "rms_after_best_boost": 0.04677805040326692,
+  "mean_after_best_boost": 1.2543050823978736,
+  "raw_multipoles": {
+   "a1": 0.524648372763131,
+   "a2": 0.28514318991168625,
+   "a3": 0.13804758888151702,
+   "a4": 0.06212054544012871
+  },
+  "boosted_multipoles": {
+   "a1": 6.3730298384126124e-06,
+   "a2": 0.10293361060269896,
+   "a3": -0.020444636952166702,
+   "a4": 0.008950922501749687
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "power_law",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 6.242391348394863e-06,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   0.9999937581674183,
+   0.9999998105346699
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.19116857862647,
+  "dipole": 0.5246780303770984,
+  "resid": 0.13964713548891916,
+  "resid_l1": 0.1396489079879179,
+  "resid_l2": 0.05690666426804843,
+  "boost_beta": 0.5261436002178865,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.0467773518570924,
+  "mean_after_boost": 1.2543030572809137,
+  "best_boost": 0.5261385160499875,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.33355934039373014,
+  "rms_after_best_boost": 0.04677735857788745,
+  "mean_after_best_boost": 1.2543030584802766,
+  "raw_multipoles": {
+   "a1": 0.5246513906704071,
+   "a2": 0.2851436850452592,
+   "a3": 0.1380478810853611,
+   "a4": 0.062120678759667106
+  },
+  "boosted_multipoles": {
+   "a1": 6.451069565187144e-06,
+   "a2": 0.10293209776618044,
+   "a3": -0.020444301690230045,
+   "a4": 0.008950696470018303
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "power_law",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0062423913483948615,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   0.9937581674182637,
+   0.9998105346699405
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.1886075324433028,
+  "dipole": 0.5276995757270864,
+  "resid": 0.13989886677364155,
+  "resid_l1": 0.13990064246778963,
+  "resid_l2": 0.05702758522546385,
+  "boost_beta": 0.5280796696747448,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.046083321296921546,
+  "mean_after_boost": 1.2522830631210855,
+  "best_boost": 0.5281223134697605,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.33524933179314986,
+  "rms_after_best_boost": 0.046083316670940254,
+  "mean_after_best_boost": 1.2522831053172083,
+  "raw_multipoles": {
+   "a1": 0.5276727826061538,
+   "a2": 0.2856393903297227,
+   "a3": 0.13834042232582705,
+   "a4": 0.062254152236923835
+  },
+  "boosted_multipoles": {
+   "a1": -5.4356353198787254e-05,
+   "a2": 0.10141144753903479,
+   "a3": -0.020127024368943196,
+   "a4": 0.008728355088044417
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "partial sky: stats not computed",
+  "f": 0.1,
+  "law": "power_law",
+  "M": 1e+18,
+  "directions_defined": 60,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 121,
+  "weak_field_ok": false,
+  "max_abs_phi": 6.242391348394863,
+  "stretch_range": [
+   1164.122015008685,
+   2037.8321063507537
+  ],
+  "doppler_range": [
+   0.9459137447094552,
+   0.9525135520968668
+  ],
+  "grav_range": [
+   0.0021664155030095555,
+   0.8105346699405589
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.963521205283252
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "no directions defined",
+  "f": 0.1,
+  "law": "power_law",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 624.2391348394863,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "A+B_r3",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.1911711422362627,
+  "dipole": 0.5246750123165852,
+  "resid": 0.13964688404940678,
+  "resid_l1": 0.13964865654521413,
+  "resid_l2": 0.05690654348655763,
+  "boost_beta": 0.5261416599297676,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.04677804367854942,
+  "mean_after_boost": 1.254305081220156,
+  "best_boost": 0.5261366372490912,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.33355765272744164,
+  "rms_after_best_boost": 0.04677805040326692,
+  "mean_after_best_boost": 1.2543050823978736,
+  "raw_multipoles": {
+   "a1": 0.524648372763131,
+   "a2": 0.28514318991168625,
+   "a3": 0.13804758888151702,
+   "a4": 0.06212054544012871
+  },
+  "boosted_multipoles": {
+   "a1": 6.3730298384126124e-06,
+   "a2": 0.10293361060269896,
+   "a3": -0.020444636952166702,
+   "a4": 0.008950922501749687
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "A+B_r3",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 7.376172875678259e-06,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   0.9999926248465997,
+   0.9999987233828457
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.1911672699317049,
+  "dipole": 0.5246780448380706,
+  "resid": 0.13964713443858345,
+  "resid_l1": 0.13964890693756885,
+  "resid_l2": 0.056906666933884756,
+  "boost_beta": 0.5261436079888813,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.046777347700391804,
+  "mean_after_boost": 1.2543016821540158,
+  "best_boost": 0.5261385235742824,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.33355934753600897,
+  "rms_after_best_boost": 0.04677735442117125,
+  "mean_after_best_boost": 1.2543016833534648,
+  "raw_multipoles": {
+   "a1": 0.524651405130645,
+   "a2": 0.2851436798137551,
+   "a3": 0.13804788700095516,
+   "a4": 0.062120682787384855
+  },
+  "boosted_multipoles": {
+   "a1": 6.451382687408004e-06,
+   "a2": 0.10293209007772408,
+   "a3": -0.020444291571810425,
+   "a4": 0.008950690226598836
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "A+B_r3",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0073761728756782585,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   0.9926248465996713,
+   0.9987233828456934
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.187298837678448,
+  "dipole": 0.5277174143001853,
+  "resid": 0.1398980910189884,
+  "resid_l1": 0.13989986670329005,
+  "resid_l2": 0.0570303930377993,
+  "boost_beta": 0.5280895359398153,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.04607838674667871,
+  "mean_after_boost": 1.2509079599340631,
+  "best_boost": 0.5281315694637113,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.3352583674722505,
+  "rms_after_best_boost": 0.04607838192281291,
+  "mean_after_best_boost": 1.2509080020677252,
+  "raw_multipoles": {
+   "a1": 0.5276906202735272,
+   "a2": 0.28563468816916343,
+   "a3": 0.13834667964617797,
+   "a4": 0.06225834019824655
+  },
+  "boosted_multipoles": {
+   "a1": -5.3579791073027176e-05,
+   "a2": 0.10140207888971312,
+   "a3": -0.020116383495249864,
+   "a4": 0.008721762808210458
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "no directions defined",
+  "f": 0.1,
+  "law": "A+B_r3",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 7.3761728756782565,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "no directions defined",
+  "f": 0.1,
+  "law": "A+B_r3",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 737.6172875678259,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "quadratic_clipped",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.1911711422362627,
+  "dipole": 0.5246750123165852,
+  "resid": 0.13964688404940678,
+  "resid_l1": 0.13964865654521413,
+  "resid_l2": 0.05690654348655763,
+  "boost_beta": 0.5261416599297676,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.04677804367854942,
+  "mean_after_boost": 1.254305081220156,
+  "best_boost": 0.5261366372490912,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.33355765272744164,
+  "rms_after_best_boost": 0.04677805040326692,
+  "mean_after_best_boost": 1.2543050823978736,
+  "raw_multipoles": {
+   "a1": 0.524648372763131,
+   "a2": 0.28514318991168625,
+   "a3": 0.13804758888151702,
+   "a4": 0.06212054544012871
+  },
+  "boosted_multipoles": {
+   "a1": 6.3730298384126124e-06,
+   "a2": 0.10293361060269896,
+   "a3": -0.020444636952166702,
+   "a4": 0.008950922501749687
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "quadratic_clipped",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 6.214207677897962e-06,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   0.9999937863487229,
+   0.9999998146495498
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.1911685882906078,
+  "dipole": 0.5246780229972113,
+  "resid": 0.13964713653564353,
+  "resid_l1": 0.13964890903465557,
+  "resid_l2": 0.05690666309996829,
+  "boost_beta": 0.5261435966073045,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.04677735438976972,
+  "mean_after_boost": 1.2543030660177137,
+  "best_boost": 0.5261385125537882,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.3335593369626174,
+  "rms_after_best_boost": 0.04677736111057199,
+  "mean_after_best_boost": 1.2543030672170357,
+  "raw_multipoles": {
+   "a1": 0.5246513832908946,
+   "a2": 0.28514368877356056,
+   "a3": 0.13804787812248334,
+   "a4": 0.0621206777691119
+  },
+  "boosted_multipoles": {
+   "a1": 6.450924378368847e-06,
+   "a2": 0.1029321025931987,
+   "a3": -0.020444306748846473,
+   "a4": 0.008950700524422737
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "quadratic_clipped",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.006214207677897962,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   0.9937863487229157,
+   0.999814649549777
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.1886171965811003,
+  "dipole": 0.5276921554317601,
+  "resid": 0.13989991345815525,
+  "resid_l1": 0.1399016891655886,
+  "resid_l2": 0.05702641365573708,
+  "boost_beta": 0.5280760638813923,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.046085862324854045,
+  "mean_after_boost": 1.252291790992278,
+  "best_boost": 0.5281188613335351,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.33524587538562145,
+  "rms_after_best_boost": 0.04608585798257492,
+  "mean_after_best_boost": 1.2522918326198775,
+  "raw_multipoles": {
+   "a1": 0.5276653626875812,
+   "a2": 0.28564312260354546,
+   "a3": 0.13833745070963244,
+   "a4": 0.062253158470223016
+  },
+  "boosted_multipoles": {
+   "a1": -5.455145560939734e-05,
+   "a2": 0.1014162893479009,
+   "a3": -0.020132122914460426,
+   "a4": 0.008732444409310295
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "partial sky: stats not computed",
+  "f": 0.1,
+  "law": "quadratic_clipped",
+  "M": 1e+18,
+  "directions_defined": 60,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 121,
+  "weak_field_ok": false,
+  "max_abs_phi": 6.214207677897962,
+  "stretch_range": [
+   1164.122015008685,
+   2037.8321063507537
+  ],
+  "doppler_range": [
+   0.9459137447094552,
+   0.9525135520968668
+  ],
+  "grav_range": [
+   0.007989991397803875,
+   0.8146495497769979
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.963521205283252
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "no directions defined",
+  "f": 0.1,
+  "law": "quadratic_clipped",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 621.4207677897963,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "step",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.1911711422362627,
+  "dipole": 0.5246750123165852,
+  "resid": 0.13964688404940678,
+  "resid_l1": 0.13964865654521413,
+  "resid_l2": 0.05690654348655763,
+  "boost_beta": 0.5261416599297676,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.04677804367854942,
+  "mean_after_boost": 1.254305081220156,
+  "best_boost": 0.5261366372490912,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.33355765272744164,
+  "rms_after_best_boost": 0.04677805040326692,
+  "mean_after_best_boost": 1.2543050823978736,
+  "raw_multipoles": {
+   "a1": 0.524648372763131,
+   "a2": 0.28514318991168625,
+   "a3": 0.13804758888151702,
+   "a4": 0.06212054544012871
+  },
+  "boosted_multipoles": {
+   "a1": 6.3730298384126124e-06,
+   "a2": 0.10293361060269896,
+   "a3": -0.020444636952166702,
+   "a4": 0.008950922501749687
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "step",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 8.537684151842236e-06,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   0.999991463775009,
+   0.9999991070780443
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.191166175404376,
+  "dipole": 0.5246785049221783,
+  "resid": 0.13964755411397836,
+  "resid_l1": 0.1396493266182906,
+  "resid_l2": 0.056907011779672806,
+  "boost_beta": 0.5261441736219131,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.046777584987541164,
+  "mean_after_boost": 1.2543006732495017,
+  "best_boost": 0.5261390529973525,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.33355976446718466,
+  "rms_after_best_boost": 0.0467775917058953,
+  "mean_after_best_boost": 1.2543006744616663,
+  "raw_multipoles": {
+   "a1": 0.5246518651913927,
+   "a2": 0.2851443633106245,
+   "a3": 0.13804861413649036,
+   "a4": 0.06212130749053589
+  },
+  "boosted_multipoles": {
+   "a1": 6.497328406457684e-06,
+   "a2": 0.10293265102736224,
+   "a3": -0.02044416560646307,
+   "a4": 0.008950590642891365
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "step",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.008537684151842235,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   0.9914637750090144,
+   0.9991070780443306
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.1862043103496398,
+  "dipole": 0.5281822273978153,
+  "resid": 0.14031999962643468,
+  "resid_l1": 0.14032178066589512,
+  "resid_l2": 0.057377001068045795,
+  "boost_beta": 0.5286570638263955,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.04631582991193982,
+  "mean_after_boost": 1.2499000883326064,
+  "best_boost": 0.528691493690357,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.33567841290922384,
+  "rms_after_best_boost": 0.04631582905868053,
+  "mean_after_best_boost": 1.249900113767199,
+  "raw_multipoles": {
+   "a1": 0.5281554097709988,
+   "a2": 0.2863214971504568,
+   "a3": 0.13907713247264686,
+   "a4": 0.06288578348643772
+  },
+  "boosted_multipoles": {
+   "a1": -4.389707151476654e-05,
+   "a2": 0.10196183399374266,
+   "a3": -0.019998935372034163,
+   "a4": 0.008619215725575384
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "partial sky: stats not computed",
+  "f": 0.1,
+  "law": "step",
+  "M": 1e+18,
+  "directions_defined": 12,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 169,
+  "weak_field_ok": false,
+  "max_abs_phi": 8.537684151842235,
+  "stretch_range": [
+   1164.122015008685,
+   1203.5300610427012
+  ],
+  "doppler_range": [
+   0.9521901500404637,
+   0.9525135520968668
+  ],
+  "grav_range": [
+   0.012405052023366947,
+   0.10707804433066359
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.958987111245172
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "no directions defined",
+  "f": 0.1,
+  "law": "step",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 853.7684151842234,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "uniform",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.1911711422362627,
+  "dipole": 0.5246750123165852,
+  "resid": 0.13964688404940678,
+  "resid_l1": 0.13964865654521413,
+  "resid_l2": 0.05690654348655763,
+  "boost_beta": 0.5261416599297676,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.04677804367854942,
+  "mean_after_boost": 1.254305081220156,
+  "best_boost": 0.5261366372490912,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.33355765272744164,
+  "rms_after_best_boost": 0.04677805040326692,
+  "mean_after_best_boost": 1.2543050823978736,
+  "raw_multipoles": {
+   "a1": 0.524648372763131,
+   "a2": 0.28514318991168625,
+   "a3": 0.13804758888151702,
+   "a4": 0.06212054544012871
+  },
+  "boosted_multipoles": {
+   "a1": 6.3730298384126124e-06,
+   "a2": 0.10293361060269896,
+   "a3": -0.020444636952166702,
+   "a4": 0.008950922501749687
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "uniform",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 6.301995895066205e-06,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   0.9999936985509787,
+   0.9999998216706505
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.1911685918618595,
+  "dipole": 0.5246780580179439,
+  "resid": 0.13964712590852418,
+  "resid_l1": 0.13964889840740136,
+  "resid_l2": 0.05690666286010768,
+  "boost_beta": 0.5261436096990268,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.046777337169017046,
+  "mean_after_boost": 1.2543030760218912,
+  "best_boost": 0.5261385252315587,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.333559350875074,
+  "rms_after_best_boost": 0.046777343889794494,
+  "mean_after_best_boost": 1.2543030772213597,
+  "raw_multipoles": {
+   "a1": 0.524651418309849,
+   "a2": 0.28514366299273175,
+   "a3": 0.13804787753949768,
+   "a4": 0.06212067747968475
+  },
+  "boosted_multipoles": {
+   "a1": 6.4514499079626475e-06,
+   "a2": 0.10293206770758612,
+   "a3": -0.02044428237596989,
+   "a4": 0.008950685247713272
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "",
+  "f": 0.1,
+  "law": "uniform",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.006301995895066205,
+  "stretch_range": [
+   1164.122015008685,
+   3783.0242600003407
+  ],
+  "doppler_range": [
+   0.9444046888618807,
+   1.0
+  ],
+  "grav_range": [
+   0.9936985509787385,
+   0.9998216706504994
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.966525986355546
+  ],
+  "mean": 1.1886207678330885,
+  "dipole": 0.5277272421756023,
+  "resid": 0.13988926346027156,
+  "resid_l1": 0.13989103903252767,
+  "resid_l2": 0.05702617292091392,
+  "boost_beta": 0.5280890439006323,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.04606862489849682,
+  "mean_after_boost": 1.2523018286688132,
+  "best_boost": 0.5281313393024983,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.335259840367497,
+  "rms_after_best_boost": 0.04606862007218563,
+  "mean_after_best_boost": 1.2523018711169178,
+  "raw_multipoles": {
+   "a1": 0.5277004476499492,
+   "a2": 0.2856172850125766,
+   "a3": 0.13833686560434394,
+   "a4": 0.06225286802466941
+  },
+  "boosted_multipoles": {
+   "a1": -5.391455451871259e-05,
+   "a2": 0.10138139414722093,
+   "a3": -0.020107529118826694,
+   "a4": 0.008717005292701167
+  }
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "partial sky: stats not computed",
+  "f": 0.1,
+  "law": "uniform",
+  "M": 1e+18,
+  "directions_defined": 60,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 121,
+  "weak_field_ok": false,
+  "max_abs_phi": 6.301995895066203,
+  "stretch_range": [
+   1164.122015008685,
+   2037.8321063507537
+  ],
+  "doppler_range": [
+   0.9459137447094552,
+   0.9525135520968668
+  ],
+  "grav_range": [
+   0.028963910751396038,
+   0.8216706504994634
+  ],
+  "delay_Gyr": [
+   13.958611488476246,
+   13.963521205283252
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.1,
+  "F": 0.9926405223883161,
+  "note": "no directions defined",
+  "f": 0.1,
+  "law": "uniform",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 630.1995895066204,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "power_law",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.1036589134348447,
+  "dipole": 0.45483855110906646,
+  "resid": 0.1409361789400664,
+  "resid_l1": 0.1409379678005052,
+  "resid_l2": 0.05908607378203756,
+  "boost_beta": 0.48281230143161447,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.06813955860274866,
+  "mean_after_boost": 1.1489547155796944,
+  "best_boost": 0.4827641346712919,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.298028739860532,
+  "rms_after_best_boost": 0.0681395542600854,
+  "mean_after_best_boost": 1.1489547320518825,
+  "raw_multipoles": {
+   "a1": 0.45481545739274515,
+   "a2": 0.2860967317907889,
+   "a3": 0.14526403120492287,
+   "a4": 0.06198050415107132
+  },
+  "boosted_multipoles": {
+   "a1": 5.524840228042331e-05,
+   "a2": 0.15003325277963073,
+   "a3": -0.030891472128944282,
+   "a4": 0.004636462941276256
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "power_law",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 8.547583712691144e-06,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   0.999991452975054,
+   0.999999712632911
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.103655528079589,
+  "dipole": 0.45484277903707027,
+  "resid": 0.14093646853433967,
+  "resid_l1": 0.14093825739845414,
+  "resid_l2": 0.059086257176563385,
+  "boost_beta": 0.48281540918765653,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.06813862771433944,
+  "mean_after_boost": 1.148951982353322,
+  "best_boost": 0.4827670561640292,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.2980310275851728,
+  "rms_after_best_boost": 0.06813862330126057,
+  "mean_after_best_boost": 1.1489519989809596,
+  "raw_multipoles": {
+   "a1": 0.4548196851060827,
+   "a2": 0.28609725566038213,
+   "a3": 0.14526447822253646,
+   "a4": 0.061980704685082516
+  },
+  "boosted_multipoles": {
+   "a1": 5.54623180009043e-05,
+   "a2": 0.1500311536774659,
+   "a3": -0.030891400967290948,
+   "a4": 0.004636257657263328
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "power_law",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.008547583712691143,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   0.9914529750539675,
+   0.999712632910941
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.1002735581789982,
+  "dipole": 0.45907947472246124,
+  "resid": 0.14122668000167757,
+  "resid_l1": 0.14122847254935875,
+  "resid_l2": 0.0592700321579468,
+  "boost_beta": 0.4859159298725296,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.06720286262407858,
+  "mean_after_boost": 1.1462238694263387,
+  "best_boost": 0.4859161772072753,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.3003248571979586,
+  "rms_after_best_boost": 0.0672028674183452,
+  "mean_after_best_boost": 1.1462238694086846,
+  "raw_multipoles": {
+   "a1": 0.45905616567987406,
+   "a2": 0.2866222116301216,
+   "a3": 0.14571242284057678,
+   "a4": 0.06218165455441274
+  },
+  "boosted_multipoles": {
+   "a1": -2.854075913417964e-07,
+   "a2": 0.14791093527601853,
+   "a3": -0.03088546416658628,
+   "a4": 0.004447900120192123
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "partial sky: stats not computed",
+  "f": 0.3,
+  "law": "power_law",
+  "M": 1e+18,
+  "directions_defined": 49,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 132,
+  "weak_field_ok": false,
+  "max_abs_phi": 8.547583712691143,
+  "stretch_range": [
+   1203.767640167226,
+   1801.0231342905163
+  ],
+  "doppler_range": [
+   0.8523539860897628,
+   0.8788298188252897
+  ],
+  "grav_range": [
+   0.03333856783616329,
+   0.7126329109410319
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.96345095948653
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "no directions defined",
+  "f": 0.3,
+  "law": "power_law",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 854.7583712691144,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "A+B_r3",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.1036589134348447,
+  "dipole": 0.45483855110906646,
+  "resid": 0.1409361789400664,
+  "resid_l1": 0.1409379678005052,
+  "resid_l2": 0.05908607378203756,
+  "boost_beta": 0.48281230143161447,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.06813955860274866,
+  "mean_after_boost": 1.1489547155796944,
+  "best_boost": 0.4827641346712919,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.298028739860532,
+  "rms_after_best_boost": 0.0681395542600854,
+  "mean_after_best_boost": 1.1489547320518825,
+  "raw_multipoles": {
+   "a1": 0.45481545739274515,
+   "a2": 0.2860967317907889,
+   "a3": 0.14526403120492287,
+   "a4": 0.06198050415107132
+  },
+  "boosted_multipoles": {
+   "a1": 5.524840228042331e-05,
+   "a2": 0.15003325277963073,
+   "a3": -0.030891472128944282,
+   "a4": 0.004636462941276256
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "A+B_r3",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 9.725592694487464e-06,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   0.9999902754267809,
+   0.9999986214640966
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.1036543056949601,
+  "dipole": 0.45484281246560593,
+  "resid": 0.1409364639635663,
+  "resid_l1": 0.14093825282762276,
+  "resid_l2": 0.059086259749475616,
+  "boost_beta": 0.48281542871123334,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.06813861563545545,
+  "mean_after_boost": 1.1489507154031413,
+  "best_boost": 0.4827670745264917,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.29803104242895984,
+  "rms_after_best_boost": 0.06813861122193712,
+  "mean_after_best_boost": 1.148950732031735,
+  "raw_multipoles": {
+   "a1": 0.45481971853292125,
+   "a2": 0.2860972417467972,
+   "a3": 0.14526448422243454,
+   "a4": 0.06198070805964436
+  },
+  "boosted_multipoles": {
+   "a1": 5.546365210432058e-05,
+   "a2": 0.1500311287746173,
+   "a3": -0.03089138514214256,
+   "a4": 0.0046362478854738405
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "A+B_r3",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.009725592694487462,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   0.9902754267808621,
+   0.9986214640965881
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.099051173550003,
+  "dipole": 0.4591177553960414,
+  "resid": 0.1412224153887998,
+  "resid_l1": 0.14122420788235152,
+  "resid_l2": 0.05927282027123659,
+  "boost_beta": 0.4859387533223555,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.06718967029384892,
+  "mean_after_boost": 1.1449569644479811,
+  "best_boost": 0.4859376563623485,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.3003423569689984,
+  "rms_after_best_boost": 0.06718967508450448,
+  "mean_after_best_boost": 1.1449569645415818,
+  "raw_multipoles": {
+   "a1": 0.4590944444098127,
+   "a2": 0.2866088236368335,
+   "a3": 0.14571894608004468,
+   "a4": 0.062185266749928136
+  },
+  "boosted_multipoles": {
+   "a1": 1.2658759201440023e-06,
+   "a2": 0.14788358837260562,
+   "a3": -0.03086923009302675,
+   "a4": 0.004437709255827606
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "no directions defined",
+  "f": 0.3,
+  "law": "A+B_r3",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 9.725592694487464,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "no directions defined",
+  "f": 0.3,
+  "law": "A+B_r3",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 972.5592694487464,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "quadratic_clipped",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.1036589134348447,
+  "dipole": 0.45483855110906646,
+  "resid": 0.1409361789400664,
+  "resid_l1": 0.1409379678005052,
+  "resid_l2": 0.05908607378203756,
+  "boost_beta": 0.48281230143161447,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.06813955860274866,
+  "mean_after_boost": 1.1489547155796944,
+  "best_boost": 0.4827641346712919,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.298028739860532,
+  "rms_after_best_boost": 0.0681395542600854,
+  "mean_after_best_boost": 1.1489547320518825,
+  "raw_multipoles": {
+   "a1": 0.45481545739274515,
+   "a2": 0.2860967317907889,
+   "a3": 0.14526403120492287,
+   "a4": 0.06198050415107132
+  },
+  "boosted_multipoles": {
+   "a1": 5.524840228042331e-05,
+   "a2": 0.15003325277963073,
+   "a3": -0.030891472128944282,
+   "a4": 0.004636462941276256
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "quadratic_clipped",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 8.487717524148233e-06,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   0.9999915128388767,
+   0.9999997174832025
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.1036555429829769,
+  "dipole": 0.4548427589717856,
+  "resid": 0.14093647173149212,
+  "resid_l1": 0.14093826059564718,
+  "resid_l2": 0.059086255292094665,
+  "boost_beta": 0.4828153978063209,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.06813863523857017,
+  "mean_after_boost": 1.148951994550767,
+  "best_boost": 0.4827670454574813,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.29803101888977196,
+  "rms_after_best_boost": 0.06813863082574768,
+  "mean_after_best_boost": 1.1489520111778373,
+  "raw_multipoles": {
+   "a1": 0.4548196650418165,
+   "a2": 0.286097265480149,
+   "a3": 0.14526447332073272,
+   "a4": 0.06198070345420767
+  },
+  "boosted_multipoles": {
+   "a1": 5.546154263086529e-05,
+   "a2": 0.15003116909280964,
+   "a3": -0.030891411238168492,
+   "a4": 0.004636265408260165
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "quadratic_clipped",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.00848771752414823,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   0.9915128388766654,
+   0.9997174832025141
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.100288461566949,
+  "dipole": 0.45905929064802353,
+  "resid": 0.1412298813322068,
+  "resid_l1": 0.1412316739205215,
+  "resid_l2": 0.05926813944930046,
+  "boost_beta": 0.48590459839782524,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.06721042969004314,
+  "mean_after_boost": 1.1462360431014036,
+  "best_boost": 0.48590551396774073,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.30031607850260444,
+  "rms_after_best_boost": 0.067210434480654,
+  "mean_after_best_boost": 1.1462360430424277,
+  "raw_multipoles": {
+   "a1": 0.45903598263025114,
+   "a2": 0.28663205433673616,
+   "a3": 0.14570749996903407,
+   "a4": 0.062180417190985535
+  },
+  "boosted_multipoles": {
+   "a1": -1.0564792960621877e-06,
+   "a2": 0.1479264123755896,
+   "a3": -0.03089589260863823,
+   "a4": 0.004455756127396091
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "partial sky: stats not computed",
+  "f": 0.3,
+  "law": "quadratic_clipped",
+  "M": 1e+18,
+  "directions_defined": 50,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 131,
+  "weak_field_ok": false,
+  "max_abs_phi": 8.48771752414823,
+  "stretch_range": [
+   1203.767640167226,
+   1821.8453623387586
+  ],
+  "doppler_range": [
+   0.8513393688659288,
+   0.8788298188252897
+  ],
+  "grav_range": [
+   0.005137838869869293,
+   0.7174832025140336
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.96352748877657
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "no directions defined",
+  "f": 0.3,
+  "law": "quadratic_clipped",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 848.7717524148231,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "step",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.1036589134348447,
+  "dipole": 0.45483855110906646,
+  "resid": 0.1409361789400664,
+  "resid_l1": 0.1409379678005052,
+  "resid_l2": 0.05908607378203756,
+  "boost_beta": 0.48281230143161447,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.06813955860274866,
+  "mean_after_boost": 1.1489547155796944,
+  "best_boost": 0.4827641346712919,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.298028739860532,
+  "rms_after_best_boost": 0.0681395542600854,
+  "mean_after_best_boost": 1.1489547320518825,
+  "raw_multipoles": {
+   "a1": 0.45481545739274515,
+   "a2": 0.2860967317907889,
+   "a3": 0.14526403120492287,
+   "a4": 0.06198050415107132
+  },
+  "boosted_multipoles": {
+   "a1": 5.524840228042331e-05,
+   "a2": 0.15003325277963073,
+   "a3": -0.030891472128944282,
+   "a4": 0.004636462941276256
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "step",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 1.0983167773671822e-05,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   0.9999890182913872,
+   0.999998634957153
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.1036531594685415,
+  "dipole": 0.45484305810271797,
+  "resid": 0.1409366913729195,
+  "resid_l1": 0.1409384802398624,
+  "resid_l2": 0.05908647724142106,
+  "boost_beta": 0.48281575757002354,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.06813876158611397,
+  "mean_after_boost": 1.1489495830835257,
+  "best_boost": 0.48276735862851133,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.2980312749290312,
+  "rms_after_best_boost": 0.06813875715566972,
+  "mean_after_best_boost": 1.1489495997362833,
+  "raw_multipoles": {
+   "a1": 0.4548199641575611,
+   "a2": 0.28609757725949714,
+   "a3": 0.14526491009060666,
+   "a4": 0.06198115877495945
+  },
+  "boosted_multipoles": {
+   "a1": 5.551498610390816e-05,
+   "a2": 0.15003149798661675,
+   "a3": -0.030891109508203184,
+   "a4": 0.004636429970113423
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "step",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.010983167773671821,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   0.9890182913871848,
+   0.9986349571530081
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.0979049471315714,
+  "dipole": 0.45936914166356635,
+  "resid": 0.14145156124229824,
+  "resid_l1": 0.1414533566443292,
+  "resid_l2": 0.05949191305537991,
+  "boost_beta": 0.4862705019435239,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.0673350764929274,
+  "mean_after_boost": 1.143826546932147,
+  "best_boost": 0.4862704698880002,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.30057822550406704,
+  "rms_after_best_boost": 0.06733508127799234,
+  "mean_after_best_boost": 1.1438265469254558,
+  "raw_multipoles": {
+   "a1": 0.4593458179135932,
+   "a2": 0.28694662705135393,
+   "a3": 0.14614751839960644,
+   "a4": 0.06263855540065036
+  },
+  "boosted_multipoles": {
+   "a1": 3.7004871318233046e-08,
+   "a2": 0.14824986851047295,
+   "a3": -0.030607849731088037,
+   "a4": 0.004618887003591397
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "no directions defined",
+  "f": 0.3,
+  "law": "step",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 10.98316777367182,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "no directions defined",
+  "f": 0.3,
+  "law": "step",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 1098.316777367182,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "uniform",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.1036589134348447,
+  "dipole": 0.45483855110906646,
+  "resid": 0.1409361789400664,
+  "resid_l1": 0.1409379678005052,
+  "resid_l2": 0.05908607378203756,
+  "boost_beta": 0.48281230143161447,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.06813955860274866,
+  "mean_after_boost": 1.1489547155796944,
+  "best_boost": 0.4827641346712919,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.298028739860532,
+  "rms_after_best_boost": 0.0681395542600854,
+  "mean_after_best_boost": 1.1489547320518825,
+  "raw_multipoles": {
+   "a1": 0.45481545739274515,
+   "a2": 0.2860967317907889,
+   "a3": 0.14526403120492287,
+   "a4": 0.06198050415107132
+  },
+  "boosted_multipoles": {
+   "a1": 5.524840228042331e-05,
+   "a2": 0.15003325277963073,
+   "a3": -0.030891472128944282,
+   "a4": 0.004636462941276256
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "uniform",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 8.683704753477285e-06,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   0.9999913168421203,
+   0.9999997272464722
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.1036555225889868,
+  "dipole": 0.4548428465026378,
+  "resid": 0.1409364571390447,
+  "resid_l1": 0.14093824600301458,
+  "resid_l2": 0.05908625721361757,
+  "boost_beta": 0.482815447134727,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.06813860066696226,
+  "mean_after_boost": 1.1489519878317447,
+  "best_boost": 0.48276709185650296,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.2980310565164871,
+  "rms_after_best_boost": 0.06813859625302925,
+  "mean_after_best_boost": 1.1489520044612758,
+  "raw_multipoles": {
+   "a1": 0.4548197525682245,
+   "a2": 0.2860972275573752,
+   "a3": 0.14526447844883755,
+   "a4": 0.061980704393749766
+  },
+  "boosted_multipoles": {
+   "a1": 5.5464908969016236e-05,
+   "a2": 0.15003109607260512,
+   "a3": -0.03089137715025926,
+   "a4": 0.004636242222488211
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "",
+  "f": 0.3,
+  "law": "uniform",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.008683704753477283,
+  "stretch_range": [
+   1203.767640167226,
+   3716.810221853537
+  ],
+  "doppler_range": [
+   0.841998381211636,
+   1.0
+  ],
+  "grav_range": [
+   0.9913168421203273,
+   0.999727246472235
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.966878070276877
+  ],
+  "mean": 1.1002680675770289,
+  "dipole": 0.4591471691416746,
+  "resid": 0.14121525374527494,
+  "resid_l1": 0.14121704614792607,
+  "resid_l2": 0.05927007023159459,
+  "boost_beta": 0.4859535656983479,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.067175681598336,
+  "mean_after_boost": 1.1462294268952733,
+  "best_boost": 0.4859515980193156,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.3003539771594434,
+  "rms_after_best_boost": 0.06717568637932186,
+  "mean_after_best_boost": 1.1462294270812698,
+  "raw_multipoles": {
+   "a1": 0.4591238566620093,
+   "a2": 0.28659402472051065,
+   "a3": 0.14571265207372006,
+   "a4": 0.062181363327500884
+  },
+  "boosted_multipoles": {
+   "a1": 2.2707674284510454e-06,
+   "a2": 0.14785314160237628,
+   "a3": -0.03086102089728336,
+   "a4": 0.004432178020658403
+  }
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "partial sky: stats not computed",
+  "f": 0.3,
+  "law": "uniform",
+  "M": 1e+18,
+  "directions_defined": 50,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 131,
+  "weak_field_ok": false,
+  "max_abs_phi": 8.683704753477283,
+  "stretch_range": [
+   1203.767640167226,
+   1821.8453623387586
+  ],
+  "doppler_range": [
+   0.8513393688659288,
+   0.8788298188252897
+  ],
+  "grav_range": [
+   0.02613405560543336,
+   0.7272464722349499
+  ],
+  "delay_Gyr": [
+   13.960112084683658,
+   13.96352748877657
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.3,
+  "F": 0.9779215671649485,
+  "note": "no directions defined",
+  "f": 0.3,
+  "law": "uniform",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 868.3704753477283,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "power_law",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.027797968407952,
+  "dipole": 0.37669038551478184,
+  "resid": 0.14510508588858934,
+  "resid_l1": 0.14510692766370742,
+  "resid_l2": 0.06925137730265046,
+  "boost_beta": 0.4262750569202765,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09401345729020119,
+  "mean_after_boost": 1.0576687961799434,
+  "best_boost": 0.4261602896630931,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.26144477251624376,
+  "rms_after_best_boost": 0.0940134294154873,
+  "mean_after_best_boost": 1.0576688714986013,
+  "raw_multipoles": {
+   "a1": 0.37667125964938897,
+   "a2": 0.2851157901779811,
+   "a3": 0.16683233884462523,
+   "a4": 0.08105990366890432
+  },
+  "boosted_multipoles": {
+   "a1": 0.00011668741378399218,
+   "a2": 0.20995653194731648,
+   "a3": -0.007315648884066453,
+   "a4": -0.0025499120352292575
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "power_law",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 1.1836587944646006e-05,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   0.999988163970822,
+   0.9999995603117593
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.027793413568266,
+  "dipole": 0.376696357335465,
+  "resid": 0.1451054335614341,
+  "resid_l1": 0.14510727534096507,
+  "resid_l2": 0.06925167856387276,
+  "boost_beta": 0.42628021137306493,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09401230817724643,
+  "mean_after_boost": 1.0576650112338268,
+  "best_boost": 0.4261650446929604,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.2614478334882832,
+  "rms_after_best_boost": 0.09401228007989201,
+  "mean_after_best_boost": 1.0576650872321134,
+  "raw_multipoles": {
+   "a1": 0.37667723116686236,
+   "a2": 0.2851163089822196,
+   "a3": 0.16683305577194837,
+   "a4": 0.08106027250908197
+  },
+  "boosted_multipoles": {
+   "a1": 0.00011709473584724239,
+   "a2": 0.2099539408463454,
+   "a3": -0.007316380393761868,
+   "a4": -0.002550526291245307
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "power_law",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.011836587944646001,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   0.9881639708220127,
+   0.9995603117592741
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.02324312872222,
+  "dipole": 0.3826887624330906,
+  "resid": 0.14545438730953153,
+  "resid_l1": 0.14545623351822728,
+  "resid_l2": 0.06955397890186098,
+  "boost_beta": 0.4314215759584813,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09284956515215524,
+  "mean_after_boost": 1.0538920971428565,
+  "best_boost": 0.4314629125474922,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.2645244287223776,
+  "rms_after_best_boost": 0.09284956429983166,
+  "mean_after_best_boost": 1.0538921039651583,
+  "raw_multipoles": {
+   "a1": 0.3826693320094876,
+   "a2": 0.2856369014996788,
+   "a3": 0.16755245428949372,
+   "a4": 0.08143038405102464
+  },
+  "boosted_multipoles": {
+   "a1": -4.237271677460033e-05,
+   "a2": 0.20732536880838293,
+   "a3": -0.008281981886015186,
+   "a4": -0.0031712899467231962
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "partial sky: stats not computed",
+  "f": 0.5,
+  "law": "power_law",
+  "M": 1e+18,
+  "directions_defined": 39,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 142,
+  "weak_field_ok": false,
+  "max_abs_phi": 11.836587944646002,
+  "stretch_range": [
+   1243.2887792922136,
+   1622.7272570971427
+  ],
+  "doppler_range": [
+   0.7761645409055029,
+   0.8259853141440234
+  ],
+  "grav_range": [
+   0.007665959011979306,
+   0.5603117592740834
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.963509029235965
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "power_law",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 1183.6587944646003,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "A+B_r3",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.027797968407952,
+  "dipole": 0.37669038551478184,
+  "resid": 0.14510508588858934,
+  "resid_l1": 0.14510692766370742,
+  "resid_l2": 0.06925137730265046,
+  "boost_beta": 0.4262750569202765,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09401345729020119,
+  "mean_after_boost": 1.0576687961799434,
+  "best_boost": 0.4261602896630931,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.26144477251624376,
+  "rms_after_best_boost": 0.0940134294154873,
+  "mean_after_best_boost": 1.0576688714986013,
+  "raw_multipoles": {
+   "a1": 0.37667125964938897,
+   "a2": 0.2851157901779811,
+   "a3": 0.16683233884462523,
+   "a4": 0.08105990366890432
+  },
+  "boosted_multipoles": {
+   "a1": 0.00011668741378399218,
+   "a2": 0.20995653194731648,
+   "a3": -0.007315648884066453,
+   "a4": -0.0025499120352292575
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "A+B_r3",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 1.3096556738295175e-05,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   0.9999869044627371,
+   0.9999984665003933
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.0277922556180394,
+  "dipole": 0.3766964305730642,
+  "resid": 0.14510542507378899,
+  "resid_l1": 0.14510726685321224,
+  "resid_l2": 0.06925168245773716,
+  "boost_beta": 0.42628026463484264,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09401228430605262,
+  "mean_after_boost": 1.057663829832622,
+  "best_boost": 0.4261650894172252,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.26144786395036224,
+  "rms_after_best_boost": 0.09401225620639808,
+  "mean_after_best_boost": 1.0576639058404274,
+  "raw_multipoles": {
+   "a1": 0.3766773044007429,
+   "a2": 0.28511628265786115,
+   "a3": 0.1668330652503822,
+   "a4": 0.0810602767496054
+  },
+  "boosted_multipoles": {
+   "a1": 0.00011710343127941877,
+   "a2": 0.20995388788216343,
+   "a3": -0.007316362795811257,
+   "a4": -0.0025505446317187624
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "A+B_r3",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.013096556738295176,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   0.9869044627370543,
+   0.9984665003932226
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.0220851784956988,
+  "dipole": 0.3827691979444658,
+  "resid": 0.14544625766668598,
+  "resid_l1": 0.14544810377219458,
+  "resid_l2": 0.06955823700171736,
+  "boost_beta": 0.43148013192626955,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09282410480414358,
+  "mean_after_boost": 1.0527108731363755,
+  "best_boost": 0.4315504351140853,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.26455874815550445,
+  "rms_after_best_boost": 0.09282410120200588,
+  "mean_after_best_boost": 1.0527108905494298,
+  "raw_multipoles": {
+   "a1": 0.38274976343687556,
+   "a2": 0.2856110199468343,
+   "a3": 0.16756280067618315,
+   "a4": 0.08143506756267416
+  },
+  "boosted_multipoles": {
+   "a1": -7.207051569888857e-05,
+   "a2": 0.20726837484386335,
+   "a3": -0.00828186285124781,
+   "a4": -0.0031908839042899223
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "A+B_r3",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 13.096556738295176,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "A+B_r3",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 1309.6556738295174,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "quadratic_clipped",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.027797968407952,
+  "dipole": 0.37669038551478184,
+  "resid": 0.14510508588858934,
+  "resid_l1": 0.14510692766370742,
+  "resid_l2": 0.06925137730265046,
+  "boost_beta": 0.4262750569202765,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09401345729020119,
+  "mean_after_boost": 1.0576687961799434,
+  "best_boost": 0.4261602896630931,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.26144477251624376,
+  "rms_after_best_boost": 0.0940134294154873,
+  "mean_after_best_boost": 1.0576688714986013,
+  "raw_multipoles": {
+   "a1": 0.37667125964938897,
+   "a2": 0.2851157901779811,
+   "a3": 0.16683233884462523,
+   "a4": 0.08105990366890432
+  },
+  "boosted_multipoles": {
+   "a1": 0.00011668741378399218,
+   "a2": 0.20995653194731648,
+   "a3": -0.007315648884066453,
+   "a4": -0.0025499120352292575
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "quadratic_clipped",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 1.1709829234832455e-05,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   0.999988290727166,
+   0.9999995657930348
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.0277934411854648,
+  "dipole": 0.3766963074951232,
+  "resid": 0.1451054402891367,
+  "resid_l1": 0.1451072820687531,
+  "resid_l2": 0.06925167480218683,
+  "boost_beta": 0.42628017598690754,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09401232496377504,
+  "mean_after_boost": 1.0576650327926778,
+  "best_boost": 0.42616501497618187,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.26144781328610794,
+  "rms_after_best_boost": 0.09401229686794912,
+  "mean_after_best_boost": 1.0576651087845876,
+  "raw_multipoles": {
+   "a1": 0.37667718132905104,
+   "a2": 0.28511633066805414,
+   "a3": 0.16683304583588146,
+   "a4": 0.08106027017718792
+  },
+  "boosted_multipoles": {
+   "a1": 0.00011708896137657514,
+   "a2": 0.20995397798618046,
+   "a3": -0.007316396109000759,
+   "a4": -0.00255050994025355
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "quadratic_clipped",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.011709829234832454,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   0.9882907271659812,
+   0.9995657930348488
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.0232707459209982,
+  "dipole": 0.3826385400748453,
+  "resid": 0.1454611271177356,
+  "resid_l1": 0.14546297341197767,
+  "resid_l2": 0.0695501925193634,
+  "boost_beta": 0.43138642503820745,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09286653114538623,
+  "mean_after_boost": 1.0539135438900442,
+  "best_boost": 0.43143124112650294,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.26450391736244994,
+  "rms_after_best_boost": 0.09286652953536102,
+  "mean_after_best_boost": 1.0539135520930074,
+  "raw_multipoles": {
+   "a1": 0.3826191122012043,
+   "a2": 0.28565866913176824,
+   "a3": 0.16754245489062644,
+   "a4": 0.08142803186125028
+  },
+  "boosted_multipoles": {
+   "a1": -4.5936289573084155e-05,
+   "a2": 0.20736288419435367,
+   "a3": -0.00829724784601234,
+   "a4": -0.003154647750654342
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "partial sky: stats not computed",
+  "f": 0.5,
+  "law": "quadratic_clipped",
+  "M": 1e+18,
+  "directions_defined": 39,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 142,
+  "weak_field_ok": false,
+  "max_abs_phi": 11.709829234832453,
+  "stretch_range": [
+   1243.2887792922136,
+   1622.7272570971427
+  ],
+  "doppler_range": [
+   0.7761645409055029,
+   0.8259853141440234
+  ],
+  "grav_range": [
+   0.013492215298871235,
+   0.5657930348488777
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.963509029235965
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "quadratic_clipped",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 1170.9829234832455,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "step",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.027797968407952,
+  "dipole": 0.37669038551478184,
+  "resid": 0.14510508588858934,
+  "resid_l1": 0.14510692766370742,
+  "resid_l2": 0.06925137730265046,
+  "boost_beta": 0.4262750569202765,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09401345729020119,
+  "mean_after_boost": 1.0576687961799434,
+  "best_boost": 0.4261602896630931,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.26144477251624376,
+  "rms_after_best_boost": 0.0940134294154873,
+  "mean_after_best_boost": 1.0576688714986013,
+  "raw_multipoles": {
+   "a1": 0.37667125964938897,
+   "a2": 0.2851157901779811,
+   "a3": 0.16683233884462523,
+   "a4": 0.08105990366890432
+  },
+  "boosted_multipoles": {
+   "a1": 0.00011668741378399218,
+   "a2": 0.20995653194731648,
+   "a3": -0.007315648884066453,
+   "a4": -0.0025499120352292575
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "step",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 1.4487001229821441e-05,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   0.999985514457931,
+   0.9999978941866768
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.0277910959823466,
+  "dipole": 0.3766965446604888,
+  "resid": 0.14510547011880076,
+  "resid_l1": 0.14510731189879575,
+  "resid_l2": 0.06925173601807436,
+  "boost_beta": 0.426280385720868,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09401230227204874,
+  "mean_after_boost": 1.0576626557557645,
+  "best_boost": 0.42616518769898454,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.26144794374263663,
+  "rms_after_best_boost": 0.09401227417034548,
+  "mean_after_best_boost": 1.0576627317919227,
+  "raw_multipoles": {
+   "a1": 0.376677418482375,
+   "a2": 0.2851163322330455,
+   "a3": 0.16683316885506175,
+   "a4": 0.08106037275232957
+  },
+  "boosted_multipoles": {
+   "a1": 0.00011712656359611114,
+   "a2": 0.2099539337735113,
+   "a3": -0.007316257687591145,
+   "a4": -0.002550432361540698
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "step",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.01448700122982144,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   0.9855144579310351,
+   0.9978941866768
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.0209255428027713,
+  "dipole": 0.38289095044445637,
+  "resid": 0.14549208881939069,
+  "resid_l1": 0.14549393550662026,
+  "resid_l2": 0.06961261018099466,
+  "boost_beta": 0.43160807819276376,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09283949287008765,
+  "mean_after_boost": 1.0515375547604862,
+  "best_boost": 0.43174146983959016,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.264642661893392,
+  "rms_after_best_boost": 0.09283945854360673,
+  "mean_after_best_boost": 1.0515376113394899,
+  "raw_multipoles": {
+   "a1": 0.38287150975507345,
+   "a2": 0.2856614904718135,
+   "a3": 0.1676679309622609,
+   "a4": 0.08153214160161822
+  },
+  "boosted_multipoles": {
+   "a1": -0.00013677639138811107,
+   "a2": 0.20730776868937023,
+   "a3": -0.008216432658610348,
+   "a4": -0.0030787415730022154
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "step",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 14.48700122982144,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "step",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 1448.7001229821444,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "uniform",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.027797968407952,
+  "dipole": 0.37669038551478184,
+  "resid": 0.14510508588858934,
+  "resid_l1": 0.14510692766370742,
+  "resid_l2": 0.06925137730265046,
+  "boost_beta": 0.4262750569202765,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09401345729020119,
+  "mean_after_boost": 1.0576687961799434,
+  "best_boost": 0.4261602896630931,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.26144477251624376,
+  "rms_after_best_boost": 0.0940134294154873,
+  "mean_after_best_boost": 1.0576688714986013,
+  "raw_multipoles": {
+   "a1": 0.37667125964938897,
+   "a2": 0.2851157901779811,
+   "a3": 0.16683233884462523,
+   "a4": 0.08105990366890432
+  },
+  "boosted_multipoles": {
+   "a1": 0.00011668741378399218,
+   "a2": 0.20995653194731648,
+   "a3": -0.007315648884066453,
+   "a4": -0.0025499120352292575
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "uniform",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 1.2103772805379837e-05,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   0.9999878967740684,
+   0.999999579092377
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.0277933739302172,
+  "dipole": 0.37669649478249934,
+  "resid": 0.14510542006509244,
+  "resid_l1": 0.1451072618444521,
+  "resid_l2": 0.06925168216951844,
+  "boost_beta": 0.42628031369529207,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09401226454061275,
+  "mean_after_boost": 1.0576649898257457,
+  "best_boost": 0.42616513059974526,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.26144789200749124,
+  "rms_after_best_boost": 0.09401223643883762,
+  "mean_after_best_boost": 1.057665065842492,
+  "raw_multipoles": {
+   "a1": 0.37667736860691775,
+   "a2": 0.2851162702636527,
+   "a3": 0.16683306482038213,
+   "a4": 0.08106027593977858
+  },
+  "boosted_multipoles": {
+   "a1": 0.00011711145438786721,
+   "a2": 0.20995384364992764,
+   "a3": -0.007316361853820716,
+   "a4": -0.0025505545653548853
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "",
+  "f": 0.5,
+  "law": "uniform",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.012103772805379836,
+  "stretch_range": [
+   1243.2887792922136,
+   3653.736254889084
+  ],
+  "doppler_range": [
+   0.7453437492742123,
+   1.0
+  ],
+  "grav_range": [
+   0.9878967740684248,
+   0.9995790923769933
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.96720519340513
+  ],
+  "mean": 1.0232034906733538,
+  "dipole": 0.38282705816747736,
+  "resid": 0.1454408565837608,
+  "resid_l1": 0.1454427026207151,
+  "resid_l2": 0.06955761237712337,
+  "boost_beta": 0.43152305461292706,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.09280539966152161,
+  "mean_after_boost": 1.0538710148792245,
+  "best_boost": 0.4315891975323405,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.2645836834767229,
+  "rms_after_best_boost": 0.09280539208829051,
+  "mean_after_best_boost": 1.0538710365819393,
+  "raw_multipoles": {
+   "a1": 0.38280762072212493,
+   "a2": 0.2855980294164542,
+   "a3": 0.16756157118152182,
+   "a4": 0.08143384447480748
+  },
+  "boosted_multipoles": {
+   "a1": -6.780820050756795e-05,
+   "a2": 0.20722650566034334,
+   "a3": -0.008280930991697908,
+   "a4": -0.0032002646258965607
+  }
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "partial sky: stats not computed",
+  "f": 0.5,
+  "law": "uniform",
+  "M": 1e+18,
+  "directions_defined": 40,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 141,
+  "weak_field_ok": false,
+  "max_abs_phi": 12.103772805379835,
+  "stretch_range": [
+   1243.2887792922136,
+   1640.5948976622376
+  ],
+  "doppler_range": [
+   0.7735329562315162,
+   0.8259853141440234
+  ],
+  "grav_range": [
+   0.0009021516107166061,
+   0.5790923769933148
+  ],
+  "delay_Gyr": [
+   13.961441406853057,
+   13.963582406201809
+  ],
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.5,
+  "F": 0.9632026119415807,
+  "note": "no directions defined",
+  "f": 0.5,
+  "law": "uniform",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 1210.3772805379836,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "power_law",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.8698800470895444,
+  "dipole": 0.11402087114993242,
+  "resid": 0.12873513095773184,
+  "resid_l1": 0.12873676495394618,
+  "resid_l2": 0.0993877806562886,
+  "boost_beta": 0.1335829009367077,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.1253954292982208,
+  "mean_after_boost": 0.8720868399402222,
+  "best_boost": 0.1337530572708113,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.14459125707201592,
+  "rms_after_best_boost": 0.1253954067189981,
+  "mean_after_best_boost": 0.8720867972985367,
+  "raw_multipoles": {
+   "a1": 0.11401508191846434,
+   "a2": 0.1829531850445484,
+   "a3": 0.17744964171230598,
+   "a4": 0.15340179971102522
+  },
+  "boosted_multipoles": {
+   "a1": -0.00014534492655403526,
+   "a2": 0.20209459847681216,
+   "a3": 0.1653343711854404,
+   "a4": 0.13494752833116297
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "power_law",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 2.3528384890437168e-05,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   0.9999764721738762,
+   0.9999989414120106
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.869871428541272,
+  "dipole": 0.11403281900078108,
+  "resid": 0.1287356476322331,
+  "resid_l1": 0.12873728163500542,
+  "resid_l2": 0.09938865626588975,
+  "boost_beta": 0.13359662413639184,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.12539525909777102,
+  "mean_after_boost": 0.8720786590783809,
+  "best_boost": 0.13376620985716237,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.14459485772689495,
+  "rms_after_best_boost": 0.12539523575230993,
+  "mean_after_best_boost": 0.8720786176848976,
+  "raw_multipoles": {
+   "a1": 0.11402702916267952,
+   "a2": 0.1829526246081621,
+   "a3": 0.17745116068280462,
+   "a4": 0.1534031758247038
+  },
+  "boosted_multipoles": {
+   "a1": -0.00014485492138246146,
+   "a2": 0.20209496349639686,
+   "a3": 0.16533479374590204,
+   "a4": 0.13494664228900116
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "power_law",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.023528384890437164,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   0.9764721738762214,
+   0.9989414120105796
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.8612614988171639,
+  "dipole": 0.1260881632557313,
+  "resid": 0.12925919012520826,
+  "resid_l1": 0.12926083077314762,
+  "resid_l2": 0.10027214614240929,
+  "boost_beta": 0.14740387392653176,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.1251959223768624,
+  "mean_after_boost": 0.8639326108817882,
+  "best_boost": 0.14728847108242935,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.1483497110661572,
+  "rms_after_best_boost": 0.12519591282952955,
+  "mean_after_best_boost": 0.8639325874809056,
+  "raw_multipoles": {
+   "a1": 0.126081761326373,
+   "a2": 0.1823871460417879,
+   "a3": 0.17898379717998658,
+   "a4": 0.15479167023584348
+  },
+  "boosted_multipoles": {
+   "a1": 9.879841343196812e-05,
+   "a2": 0.20243748434752892,
+   "a3": 0.1657578020152735,
+   "a4": 0.13396466270065677
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "no directions defined",
+  "f": 0.9,
+  "law": "power_law",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 23.52838489043717,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "no directions defined",
+  "f": 0.9,
+  "law": "power_law",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 2352.838489043717,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "A+B_r3",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.8698800470895444,
+  "dipole": 0.11402087114993242,
+  "resid": 0.12873513095773184,
+  "resid_l1": 0.12873676495394618,
+  "resid_l2": 0.0993877806562886,
+  "boost_beta": 0.1335829009367077,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.1253954292982208,
+  "mean_after_boost": 0.8720868399402222,
+  "best_boost": 0.1337530572708113,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.14459125707201592,
+  "rms_after_best_boost": 0.1253954067189981,
+  "mean_after_best_boost": 0.8720867972985367,
+  "raw_multipoles": {
+   "a1": 0.11401508191846434,
+   "a2": 0.1829531850445484,
+   "a3": 0.17744964171230598,
+   "a4": 0.15340179971102522
+  },
+  "boosted_multipoles": {
+   "a1": -0.00014534492655403526,
+   "a2": 0.20209459847681216,
+   "a3": 0.1653343711854404,
+   "a4": 0.13494752833116297
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "A+B_r3",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 2.5198760976315017e-05,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   0.999974802258499,
+   0.9999978469474493
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.8698703396477261,
+  "dipole": 0.1140331066099414,
+  "resid": 0.12873563461082926,
+  "resid_l1": 0.1287372686134363,
+  "resid_l2": 0.09938867501006339,
+  "boost_beta": 0.13359694415750456,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.12539523060847596,
+  "mean_after_boost": 0.8720775783107266,
+  "best_boost": 0.1337665165658432,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.1445949217379354,
+  "rms_after_best_boost": 0.12539520724514472,
+  "mean_after_best_boost": 0.8720775369464397,
+  "raw_multipoles": {
+   "a1": 0.11402731675723678,
+   "a2": 0.18295252789265082,
+   "a3": 0.17745119901644676,
+   "a4": 0.1534032021646164
+  },
+  "boosted_multipoles": {
+   "a1": -0.00014484350079838927,
+   "a2": 0.2020948898409406,
+   "a3": 0.16533482468928276,
+   "a4": 0.1349466103847986
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "A+B_r3",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.02519876097631501,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   0.9748022584990346,
+   0.9978469474493293
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.8601726052712644,
+  "dipole": 0.12639427584614626,
+  "resid": 0.12924696400614524,
+  "resid_l1": 0.12924860449890213,
+  "resid_l2": 0.10029221951545073,
+  "boost_beta": 0.147741878280015,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.1251659423061656,
+  "mean_after_boost": 0.8628531407910531,
+  "best_boost": 0.14764148657404902,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.1484258676799896,
+  "rms_after_best_boost": 0.12516593576118654,
+  "mean_after_best_boost": 0.8628531215913169,
+  "raw_multipoles": {
+   "a1": 0.12638785837439973,
+   "a2": 0.1822886243030995,
+   "a3": 0.1790245031687393,
+   "a4": 0.1548200648060034
+  },
+  "boosted_multipoles": {
+   "a1": 8.596877105789512e-05,
+   "a2": 0.20236562386821255,
+   "a3": 0.1657894916768069,
+   "a4": 0.13392393721125562
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "no directions defined",
+  "f": 0.9,
+  "law": "A+B_r3",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 25.19876097631501,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "no directions defined",
+  "f": 0.9,
+  "law": "A+B_r3",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 2519.8760976315016,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "quadratic_clipped",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.8698800470895444,
+  "dipole": 0.11402087114993242,
+  "resid": 0.12873513095773184,
+  "resid_l1": 0.12873676495394618,
+  "resid_l2": 0.0993877806562886,
+  "boost_beta": 0.1335829009367077,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.1253954292982208,
+  "mean_after_boost": 0.8720868399402222,
+  "best_boost": 0.1337530572708113,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.14459125707201592,
+  "rms_after_best_boost": 0.1253954067189981,
+  "mean_after_best_boost": 0.8720867972985367,
+  "raw_multipoles": {
+   "a1": 0.11401508191846434,
+   "a2": 0.1829531850445484,
+   "a3": 0.17744964171230598,
+   "a4": 0.15340179971102522
+  },
+  "boosted_multipoles": {
+   "a1": -0.00014534492655403526,
+   "a2": 0.20209459847681216,
+   "a3": 0.1653343711854404,
+   "a4": 0.13494752833116297
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "quadratic_clipped",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 2.2987824214415328e-05,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   0.9999770127321864,
+   0.9999989472031235
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.8698715462142564,
+  "dipole": 0.11403256791259601,
+  "resid": 0.12873566361826588,
+  "resid_l1": 0.12873729762124111,
+  "resid_l2": 0.09938863696925306,
+  "boost_beta": 0.13359634760966024,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.12539528823285906,
+  "mean_after_boost": 0.8720787675924591,
+  "best_boost": 0.13376594487173576,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.14459480595588567,
+  "rms_after_best_boost": 0.12539526490283825,
+  "mean_after_best_boost": 0.8720787261737794,
+  "raw_multipoles": {
+   "a1": 0.11402677808724285,
+   "a2": 0.18295273325337347,
+   "a3": 0.17745111331622135,
+   "a4": 0.1534031547939103
+  },
+  "boosted_multipoles": {
+   "a1": -0.0001448648192963614,
+   "a2": 0.20209504949915658,
+   "a3": 0.16533474808369295,
+   "a4": 0.1349466769418523
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "quadratic_clipped",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.02298782421441533,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   0.9770127321863984,
+   0.9989472031235406
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.861379171801691,
+  "dipole": 0.1258329527009458,
+  "resid": 0.12927497851655168,
+  "resid_l1": 0.12927661936488832,
+  "resid_l2": 0.10025254026450625,
+  "boost_beta": 0.14712558823528585,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.1252259896336519,
+  "mean_after_boost": 0.8640400609291534,
+  "best_boost": 0.14698699881774888,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.14829122793966956,
+  "rms_after_best_boost": 0.12522596847281559,
+  "mean_after_best_boost": 0.8640400426945495,
+  "raw_multipoles": {
+   "a1": 0.1258265637295044,
+   "a2": 0.18249693964096494,
+   "a3": 0.1789357542341789,
+   "a4": 0.1547702424166998
+  },
+  "boosted_multipoles": {
+   "a1": 0.00011865331586851519,
+   "a2": 0.2025197639263428,
+   "a3": 0.16571267408184598,
+   "a4": 0.13400781150783309
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "no directions defined",
+  "f": 0.9,
+  "law": "quadratic_clipped",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 22.98782421441533,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "no directions defined",
+  "f": 0.9,
+  "law": "quadratic_clipped",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 2298.782421441533,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "step",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.8698800470895444,
+  "dipole": 0.11402087114993242,
+  "resid": 0.12873513095773184,
+  "resid_l1": 0.12873676495394618,
+  "resid_l2": 0.0993877806562886,
+  "boost_beta": 0.1335829009367077,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.1253954292982208,
+  "mean_after_boost": 0.8720868399402222,
+  "best_boost": 0.1337530572708113,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.14459125707201592,
+  "rms_after_best_boost": 0.1253954067189981,
+  "mean_after_best_boost": 0.8720867972985367,
+  "raw_multipoles": {
+   "a1": 0.11401508191846434,
+   "a2": 0.1829531850445484,
+   "a3": 0.17744964171230598,
+   "a4": 0.15340179971102522
+  },
+  "boosted_multipoles": {
+   "a1": -0.00014534492655403526,
+   "a2": 0.20209459847681216,
+   "a3": 0.1653343711854404,
+   "a4": 0.13494752833116297
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "step",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 2.6669213665715046e-05,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   0.9999733322454951,
+   0.9999967988777246
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.8698692857317816,
+  "dipole": 0.11403327015774296,
+  "resid": 0.12873563228821683,
+  "resid_l1": 0.12873726629079438,
+  "resid_l2": 0.09938868155844109,
+  "boost_beta": 0.13359712944985744,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.12539521891955396,
+  "mean_after_boost": 0.8720765280452498,
+  "best_boost": 0.13376670768519575,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.14459496266230842,
+  "rms_after_best_boost": 0.12539519554441297,
+  "mean_after_best_boost": 0.8720764866946358,
+  "raw_multipoles": {
+   "a1": 0.1140274802967346,
+   "a2": 0.18295250193715662,
+   "a3": 0.17745121372189016,
+   "a4": 0.15340321544254626
+  },
+  "boosted_multipoles": {
+   "a1": -0.00014484842873606178,
+   "a2": 0.20209487811667276,
+   "a3": 0.16533482603197833,
+   "a4": 0.13494658880145696
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "step",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.026669213665715046,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   0.9733322454951415,
+   0.996798877724674
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.859118689326703,
+  "dipole": 0.12657503415660365,
+  "resid": 0.1292453573246799,
+  "resid_l1": 0.1292469977970437,
+  "resid_l2": 0.10029999849519863,
+  "boost_beta": 0.1479458686604938,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.12515335753233242,
+  "mean_after_boost": 0.861803549289575,
+  "best_boost": 0.14777020686282508,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.14847580471544894,
+  "rms_after_best_boost": 0.12515330873417743,
+  "mean_after_best_boost": 0.8618035227309908,
+  "raw_multipoles": {
+   "a1": 0.1265686075071365,
+   "a2": 0.18226152957673034,
+   "a3": 0.1790413226652511,
+   "a4": 0.15483524701261148
+  },
+  "boosted_multipoles": {
+   "a1": 0.00015047275578514846,
+   "a2": 0.20233384458990872,
+   "a3": 0.1658034639583722,
+   "a4": 0.13391220468099166
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "no directions defined",
+  "f": 0.9,
+  "law": "step",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 26.669213665715034,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "no directions defined",
+  "f": 0.9,
+  "law": "step",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 2666.9213665715038,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "uniform",
+  "M": 0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.0,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   1.0,
+   1.0
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.8698800470895444,
+  "dipole": 0.11402087114993242,
+  "resid": 0.12873513095773184,
+  "resid_l1": 0.12873676495394618,
+  "resid_l2": 0.0993877806562886,
+  "boost_beta": 0.1335829009367077,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.1253954292982208,
+  "mean_after_boost": 0.8720868399402222,
+  "best_boost": 0.1337530572708113,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.14459125707201592,
+  "rms_after_best_boost": 0.1253954067189981,
+  "mean_after_best_boost": 0.8720867972985367,
+  "raw_multipoles": {
+   "a1": 0.11401508191846434,
+   "a2": 0.1829531850445484,
+   "a3": 0.17744964171230598,
+   "a4": 0.15340179971102522
+  },
+  "boosted_multipoles": {
+   "a1": -0.00014534492655403526,
+   "a2": 0.20209459847681216,
+   "a3": 0.1653343711854404,
+   "a4": 0.13494752833116297
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "uniform",
+  "M": 1000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 2.439293013840942e-05,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   0.9999756076167354,
+   0.9999989686203645
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.8698712213929054,
+  "dipole": 0.11403327665331112,
+  "resid": 0.12873563499002785,
+  "resid_l1": 0.1287372689926397,
+  "resid_l2": 0.09938868481481548,
+  "boost_beta": 0.1335971372536757,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.12539522140470857,
+  "mean_after_boost": 0.8720784687967582,
+  "best_boost": 0.13376670162756354,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.14459496677535302,
+  "rms_after_best_boost": 0.12539519803059282,
+  "mean_after_best_boost": 0.8720784274500132,
+  "raw_multipoles": {
+   "a1": 0.11402748679197282,
+   "a2": 0.1829525025979387,
+   "a3": 0.177451215236054,
+   "a4": 0.15340321799348125
+  },
+  "boosted_multipoles": {
+   "a1": -0.00014483660379673198,
+   "a2": 0.20209487684085864,
+   "a3": 0.1653348290179985,
+   "a4": 0.13494659469908873
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "",
+  "f": 0.9,
+  "law": "uniform",
+  "M": 1000000000000000.0,
+  "directions_defined": 181,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 0,
+  "weak_field_ok": true,
+  "max_abs_phi": 0.024392930138409416,
+  "stretch_range": [
+   1321.4142701153341,
+   3536.5353054127518
+  ],
+  "doppler_range": [
+   0.508699218922921,
+   1.0
+  ],
+  "grav_range": [
+   0.9756076167353952,
+   0.9989686203644792
+  ],
+  "delay_Gyr": [
+   13.96365003431251,
+   13.967787387496829
+  ],
+  "mean": 0.8610543504505372,
+  "dipole": 0.12655340219192035,
+  "resid": 0.12924691579591624,
+  "resid_l1": 0.12924855628806126,
+  "resid_l2": 0.10030119953639238,
+  "boost_beta": 0.1479210768207145,
+  "boost_dir": "away from CoE",
+  "resid_after_boost": 0.12515621150292747,
+  "mean_after_boost": 0.8637443785715053,
+  "best_boost": 0.14782811199546894,
+  "best_boost_dir": "away from CoE",
+  "raw_rms": 0.14847101492696016,
+  "rms_after_best_boost": 0.12515619544001558,
+  "mean_after_best_boost": 0.8637443533405229,
+  "raw_multipoles": {
+   "a1": 0.1265469766407823,
+   "a2": 0.18226375043968748,
+   "a3": 0.17903927774845566,
+   "a4": 0.15483460484302528
+  },
+  "boosted_multipoles": {
+   "a1": 7.958888858232427e-05,
+   "a2": 0.20235297338935043,
+   "a3": 0.16579279768310745,
+   "a4": 0.13390560387462008
+  }
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "no directions defined",
+  "f": 0.9,
+  "law": "uniform",
+  "M": 1e+18,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 24.392930138409415,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ },
+ {
+  "beta": 0.9,
+  "F": 0.9337647014948454,
+  "note": "no directions defined",
+  "f": 0.9,
+  "law": "uniform",
+  "M": 1e+20,
+  "directions_defined": 0,
+  "of": 181,
+  "events_rejected_doppler_or_grav": 181,
+  "weak_field_ok": false,
+  "max_abs_phi": 2439.293013840942,
+  "stretch_range": null,
+  "doppler_range": null,
+  "grav_range": null,
+  "delay_Gyr": null,
+  "mean": null,
+  "dipole": null,
+  "resid": null,
+  "boost_beta": null,
+  "resid_l1": null,
+  "resid_l2": null
+ }
+]

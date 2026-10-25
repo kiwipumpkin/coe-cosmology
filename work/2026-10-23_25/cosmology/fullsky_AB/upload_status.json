@@ -1,0 +1,104 @@
+{
+  "folderId": "1wZYStJhpdowbcjTkkS9TOImAtt9_GvzD",
+  "uploaded_at_local": "2026-09-18 01:19 PM CDT (UTC-0500)",
+  "task": "fullsky_AB first-principles A(n)/B(n) + sheet sine DIAGNOSTIC",
+  "baseline": {
+    "profile": "twoscale_fu0.94",
+    "D_over_L": 5.9,
+    "f_u": 0.94,
+    "kappa": 0.23058828928336284,
+    "alpha": 1.0,
+    "d_over_D": 0.1,
+    "af_primary": "hratio",
+    "af_secondary": "invsq",
+    "B_proxy": "AN = m(r_src)/M_enc mean-renorm (NOT Migkas L_X-T slope B)",
+    "Amp_sin_in_primary": false,
+    "sine_diagnostic_retained": true
+  },
+  "multipoles_frac_model_frame": {
+    "A_dipole": 0.00483895020757,
+    "A_x_moment": 0.004838950207570006,
+    "Q_P2": 0.16011518056258214,
+    "ratio_A_over_Q": 0.030221682857102125,
+    "note": "|C1|\u226a|C2| as expected at d/D=0.1"
+  },
+  "minmax": {
+    "A_hratio": [
+      0.9052319458734106,
+      1.2103354902879573
+    ],
+    "A_invsq": [
+      0.6689251805292447,
+      1.1958297041422334
+    ],
+    "B": [
+      0.8104015217213463,
+      1.197845635474059
+    ],
+    "frac": [
+      -0.2307402174066594,
+      0.02853464282635909
+    ]
+  },
+  "files": [
+    {
+      "name": "mollweide_AB_model_frame.png",
+      "id": "1Lv5ie7Ju7QhtYkxT0iMfhlMcOTHxOoyI",
+      "link": "https://drive.google.com/file/d/1Lv5ie7Ju7QhtYkxT0iMfhlMcOTHxOoyI/view?usp=drivesdk",
+      "role": "physics-only model frame 2x2"
+    },
+    {
+      "name": "mollweide_AB_sky_frame.png",
+      "id": "17VZoaLwdHkHEo3xNcn48fgHL3A3mRyXk",
+      "link": "https://drive.google.com/file/d/17VZoaLwdHkHEo3xNcn48fgHL3A3mRyXk/view?usp=drivesdk",
+      "role": "physics-only sky frame 2x2 (pref axis l=280,b=-20)"
+    },
+    {
+      "name": "mollweide_sine_sheet_DIAGNOSTIC.png",
+      "id": "1JRBfarwnCRE9y7yN7lhVzhQCa75x-Eiu",
+      "link": "https://drive.google.com/file/d/1JRBfarwnCRE9y7yN7lhVzhQCa75x-Eiu/view?usp=drivesdk",
+      "role": "DIAGNOSTIC sheet Amp_A=-0.06 Amp_B=+0.06 phi=0.35 \u2014 NOT first-principles"
+    },
+    {
+      "name": "mollweide_sine_local_density_DIAGNOSTIC.png",
+      "id": "1dnz0NEkGXFTdhOK1qXnZVroLPsOQDtYE",
+      "link": "https://drive.google.com/file/d/1dnz0NEkGXFTdhOK1qXnZVroLPsOQDtYE/view?usp=drivesdk",
+      "role": "DIAGNOSTIC local-density Amp_A=+0.07 Amp_B=-0.07 phi~212.82\u00b0 \u2014 NOT first-principles"
+    },
+    {
+      "name": "fullsky_AB_NOTE.md",
+      "id": "1H_wnRFbRki9YF_smYmM4ePxn46vi20cy",
+      "link": "https://drive.google.com/file/d/1H_wnRFbRki9YF_smYmM4ePxn46vi20cy/view?usp=drivesdk"
+    },
+    {
+      "name": "fullsky_AB_maps.npz",
+      "id": "11N7XBQAzLjVsplDnEjN-UDzzRRjqxjb8",
+      "link": "https://drive.google.com/file/d/11N7XBQAzLjVsplDnEjN-UDzzRRjqxjb8/view?usp=drivesdk"
+    },
+    {
+      "name": "fullsky_AB_metadata.json",
+      "id": "1BKMeP6I3AWLaZIuMTWkl7Yjoxc0S9u6Q",
+      "link": "https://drive.google.com/file/d/1BKMeP6I3AWLaZIuMTWkl7Yjoxc0S9u6Q/view?usp=drivesdk"
+    },
+    {
+      "name": "mollweide_sky_A_hratio.png",
+      "id": "1DNVNyrdkLLE5ztR7SMVWKOOJcCZq99P-",
+      "link": "https://drive.google.com/file/d/1DNVNyrdkLLE5ztR7SMVWKOOJcCZq99P-/view?usp=drivesdk",
+      "role": "physics-only sky A_hratio"
+    },
+    {
+      "name": "mollweide_sky_B.png",
+      "id": "10R-OASD7hjPm5et3dlrPE517IuBEo23q",
+      "link": "https://drive.google.com/file/d/10R-OASD7hjPm5et3dlrPE517IuBEo23q/view?usp=drivesdk",
+      "role": "physics-only sky B_AN"
+    },
+    {
+      "name": "mollweide_sky_frac.png",
+      "id": "1Z3BG9EX0FHG-N3hJ-iJY7v29ljFVR4rd",
+      "link": "https://drive.google.com/file/d/1Z3BG9EX0FHG-N3hJ-iJY7v29ljFVR4rd/view?usp=drivesdk",
+      "role": "physics-only sky frac"
+    }
+  ],
+  "local_dir": "/workspace/cosmology/fullsky_AB/",
+  "blockers": []
+}

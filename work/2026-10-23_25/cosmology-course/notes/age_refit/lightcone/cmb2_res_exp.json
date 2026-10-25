@@ -1,0 +1,63 @@
+{
+ "law": "exp",
+ "src": "res_exp.json",
+ "Ri": 0.001,
+ "t_star_over_tn": 3.959218483112596e-05,
+ "U_c": 1.211627841309468,
+ "n_emitter": 51,
+ "n_beyond_CoE": 0,
+ "n_no_emitter": 9,
+ "no_emitter_dirs": [
+  156.0,
+  162.0,
+  168.0,
+  174.0,
+  180.0,
+  186.0,
+  192.0,
+  198.0,
+  204.0
+ ],
+ "stops": {
+  "156.0": "reached_tmin",
+  "162.0": "reached_tmin",
+  "168.0": "reached_tmin",
+  "174.0": "reached_tmin",
+  "180.0": "reached_tmin",
+  "186.0": "reached_tmin",
+  "192.0": "reached_tmin",
+  "198.0": "reached_tmin",
+  "204.0": "reached_tmin"
+ },
+ "n_plasma": 0,
+ "n_no_matter": 0,
+ "T_range_K": [
+  0.9224111155560041,
+  5.260907377188703
+ ],
+ "T_mean_K": 4.122714123095502,
+ "K_needed_linear": 1.8011496257772386,
+ "z_range": [
+  0.7659858898298476,
+  1.1559798018911416
+ ],
+ "Temit_range": [
+  1.9091100782667116,
+  10.239767530919625
+ ],
+ "te_over_tn_range": [
+  0.4035351705854158,
+  0.5910342140749869
+ ],
+ "dTT_rms_m1rem": 0.17184303036170637,
+ "target_rms_m1rem": 0.041942276544449604,
+ "resid_rms": 0.14452204087495552,
+ "cancel_pct": -244.57366834104457,
+ "corr_with_Gm1": -0.9200730260474659,
+ "order": {
+  "te0": 1.1511452560020414,
+  "ell_coe_side": 150.0,
+  "te_coe": 0.8410026542879244,
+  "zero_first": false
+ }
+}

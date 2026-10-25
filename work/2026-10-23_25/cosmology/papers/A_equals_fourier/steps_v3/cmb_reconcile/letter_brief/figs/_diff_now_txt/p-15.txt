@@ -1,0 +1,53 @@
+The preferred relativistic headline quoted in the geometry section is D ≈ 32.9 Gpc, Rin ≈ 18.1 Gpc, Rout ≈
+49.7 Gpc. In both cases the fitted D lies above the shell-rule bound D ≳ 14.7 Gpc (with vision radius R ≈
+14.3 Gpc), and the observer sits mid-shell between Rin and Rout .
+    The redshift-slice tests (Fig. 3) show that the CoE model, recomputed at each slice’s median distance with
+fit parameters held fixed, tracks the Migkas A(ℓ) pattern across the low-z, high-z, and all-z samples; the loci
+of the A(ℓ) maxima and minima therefore move with sampling distance. The D–core-mass degeneracy is made
+explicit in that figure: increasing D while lowering the compact core mass (or vice versa) can preserve a similar
+local quadrupole at cluster scales. We constrain that trade-off first by fixing the shell density contrast to
+a baryon-like Ωs = 0.049 (or by leaving Ωs free and reporting both), which collapses the family of Migkas-
+compatible (D, Mc ) pairs onto the rows of Table 1. A stronger external check is the CMB multipole itself: once
+D and the shell edges are chosen, the gravitational last-scattering multipole and its kill function are predicted
+without retuning to Planck, so a geometry that fits Migkas but cannot approach 10−5 under a full light-cone
+calculation is ruled out independently of the M –D trade.
+    The full amplitude profile and residuals (Fig. 4) confirm that both the Newtonian Ωs = 0.049 and relativistic
+LTB curves follow the Migkas longitude dependence without being tuned to the CMB. On the sky, the untilted-
+to-tilted-to-rolled sequence (Fig. 5) places the model MAX/MIN loci into agreement with Migkas Fig. 8 once
+the +15◦ tilt, radial gradient, and +80.8◦ roll are applied (Fig. 6).
+    For the CMB stress test, exploratory two-emitter and multipole-partner constructions follow the kill-function
+morphology at large D and remove most of the demeaned power through ℓ ≤ 4 (Figs. 8–11), but they do not
+yet reach the CMB bound of order 10−5 . Term by term, a dipole-plus-P2 partner cancels a large fraction of
+the demeaned peak at headline D ∼ 49 Gpc, and extending the partner through ℓ ≤ 4 improves that fraction
+further (to ∼ 85% in the exploratory fixed-R scan); the residual peaks nevertheless remain of order 10−2 –10−1 ,
+many orders of magnitude above 10−5 . Higher multipoles beyond ℓ = 4 would continue to chip away at the
+residual, but there is no indication in the present toys that a finite low-order truncation alone closes the gap.
+The morphological match between the gravitational kill and the electromagnetic Doppler pattern is already
+present; closing the residual to 10−5 on the full light cone remains the open calculation.
+
+
+4    Discussion
+The Migkas anisotropy is interpreted here as a gravitational effect: free-fall relative to an off-centre CoE. On
+the last-scattering sky that same gravity produces a temperature multipole. Separately, a pure electromagnetic
+Doppler pattern—from radial motion of emitting surfaces—has nearly the same angular shape. The kill function
+is precisely that electromagnetic temperature multipole written opposite in sign to the gravitational residual.
+The result of the present stress test is that this gravitational kill tracks the electromagnetic Doppler morphology
+across the distances scanned. That morphological agreement is unexpected if gravity and the photon bath are
+unrelated, and it suggests a geometric route to CMB flatness that does not discard the Migkas fit. The open
+light-cone problem is whether that morphological match can be driven to the 10−5 amplitude required by Planck
+once gravitational and kinematic contributions are integrated together along null geodesics.
+    The apparent accelerated expansion of the late universe is, in this geometry, an illusion. No dark-energy
+component and no actual outward acceleration of the material shell are required. What looks like acceleration
+is a geometric artefact of off-centre sampling of the expansion field by an observer at distance D from the CoE.
+A contracting universe under analogous off-centre and light-cone sampling would also present, on average, the
+appearance of accelerated expansion, but with a different angular signature on the sky. That difference is a
+natural distinguisher for future comparison against directional Hubble and supernova data.
+    In the donut-universe time evolution, VHB = 0 until US passes Drecomb ; afterward the visible sphere grows
+at c while the shells continue to expand faster than light in the coordinate sense used here. Volume fractions
+VHB /Vann , VHB /VS1 , and VS2 /VS1 provide a compact language for tracking how the Hubble bubble fills the shell
+annulus relative to the outer and inner spheres as the geometry evolves.
+    The stance remains coexistence. The cosmological principle does not explain the directional Hubble mea-
+surements; those measurements fix the CoE+shell. The Planck CMB isotropy remains a hard external con-
+
+                                                        15
+

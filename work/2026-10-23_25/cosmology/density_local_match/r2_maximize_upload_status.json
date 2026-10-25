@@ -1,0 +1,55 @@
+{
+  "folderId": "1wZYStJhpdowbcjTkkS9TOImAtt9_GvzD",
+  "uploaded_at_local": "2026-09-18 12:17 PM CT (UTC-0500)",
+  "task": "r2_maximize under rho(D)=Omega_m rho_crit",
+  "winners": {
+    "A_only_R2": 0.7413,
+    "B_only_R2": 0.7868,
+    "pair_min_R2": [
+      0.7413,
+      0.7473
+    ],
+    "pair_mean_R2": [
+      0.7285,
+      0.7822
+    ],
+    "kappa_pair_min": 0.4438
+  },
+  "files": [
+    {
+      "name": "migkas_best_A_only.png",
+      "id": "1rboT3Ay6v8mhPqNKfBXblxgyMCGg5jPG",
+      "link": "https://drive.google.com/file/d/1rboT3Ay6v8mhPqNKfBXblxgyMCGg5jPG/view?usp=drivesdk"
+    },
+    {
+      "name": "migkas_best_B_only.png",
+      "id": "1FnpJUzJ73GL1pPQGEPw3rXMn9ho0AHan",
+      "link": "https://drive.google.com/file/d/1FnpJUzJ73GL1pPQGEPw3rXMn9ho0AHan/view?usp=drivesdk"
+    },
+    {
+      "name": "migkas_best_pair.png",
+      "id": "1adrzGCB5PTg9DbAcFj29xi6Vra7prOu7",
+      "link": "https://drive.google.com/file/d/1adrzGCB5PTg9DbAcFj29xi6Vra7prOu7/view?usp=drivesdk"
+    },
+    {
+      "name": "migkas_best_pair_scatter.png",
+      "id": "1Tc2w7F6ov9kTcfEHfljUH7kH1nRq0r8-",
+      "link": "https://drive.google.com/file/d/1Tc2w7F6ov9kTcfEHfljUH7kH1nRq0r8-/view?usp=drivesdk"
+    },
+    {
+      "name": "r2_maximize_summary.json",
+      "id": "1nNsAR5DZcBZ6TSd08qjFzqdx6b5sr1px",
+      "link": "https://drive.google.com/file/d/1nNsAR5DZcBZ6TSd08qjFzqdx6b5sr1px/view?usp=drivesdk"
+    },
+    {
+      "name": "r2_maximize_NOTE.md",
+      "id": "1zeR2R0nsyEiAKk7vJE-_PLzu9fMXe_T5",
+      "link": "https://drive.google.com/file/d/1zeR2R0nsyEiAKk7vJE-_PLzu9fMXe_T5/view?usp=drivesdk"
+    },
+    {
+      "name": "run_r2_maximize.py",
+      "id": "1MScUtZIqArmLzjAXXxwL00lLFJCKbSqL",
+      "link": "https://drive.google.com/file/d/1MScUtZIqArmLzjAXXxwL00lLFJCKbSqL/view?usp=drivesdk"
+    }
+  ]
+}

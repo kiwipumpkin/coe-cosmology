@@ -1,0 +1,408 @@
+                                                    Shock-Wave Cosmology Inside a Black Hole
+                                                                       October 17, 2002
+
+                                                               Joel Smoller 1 Blake T emple2
+arXiv:astro-ph/0210105v2 6 Nov 2002
+
+
+
+
+                                                                           Abstract
+                                                We construct a class of global exact solutions of the Einstein equa-
+                                            tions that extend the Oppeheimer-Snyder (OS) model to the case of
+                                            non-zero pressure, inside the Black Hole, by incorporating a shock
+                                            wave at the leading edge of the expansion of the galaxies, arbitrar-
+                                            ily far beyond the Hubble length in the Friedmann-Robertson-Walker
+                                            (FRW) spacetime. Here the expanding FRW universe emerges be-
+                                            hind a subluminous blast wave that explodes outward from the FRW
+                                            center at the instant of the Big Bang. The total mass behind the
+                                            shock decreases as the shock wave expands, and the entropy condi-
+                                            tion implies that the shock wave must weaken to the point where it
+                                            settles down to an OS interface, (bounding a finite total mass), that
+                                            eventually emerges from the White Hole event horizon of an ambi-
+                                            ent Schwarzschild spacetime. The entropy condition breaks the time
+                                            symmetry of the Einstein equations, selecting the explosion over the
+                                            implosion. These shock wave solutions indicate a new cosmological
+                                            model in which the Big Bang arises from a localized explosion oc-
+                                            curring inside the Black Hole of an asymptotically flat Schwarzschild
+                                            spacetime.
+
+
+                                      1     Introduction
+                                      We describe a new cosmological model based on matching a critically expanding
+                                      FRW metric to a metric which we call the Tolman-Oppenheimer-Volkoff (TOV)
+                                      metric inside the Black Hole, across a shock wave that lies beyond one Hubble
+                                         1
+                                           Department of Mathematics, University of Michigan, Ann Arbor, MI 48109; Supported
+                                      in part by NSF Applied Mathematics Grant Number DMS-010-3998, and by the Institute
+                                      of Theoretical Dynamics, UC-Davis.
+                                         2
+                                           Department of Mathematics, University of California, Davis, Davis CA 95616; Sup-
+                                      ported in part by NSF Applied Mathematics Grant Number DMS-010-2493, and by the
+                                      Institute of Theoretical Dynamics, UC-Davis.
+
+                                                                                1
+length from the center of the FRW spacetime. This implies that the spacetime
+beyond the shock wave must lie inside a Black Hole, thus extending the shock
+matching limit of one Hubble length that we identified in [7].
+    In the exact solutions constructed in this paper, the expanding FRW universe
+emerges behind a subluminous blast wave that explodes outward from the origin
+r̄ = 0 at the instant of the Big Bang t = 0, at a distance beyond one Hubble
+length3 . The shock wave then continues to weaken as it expands outward until
+the Hubble length eventually catches up to the shock, and this marks the event
+horizon of a Black Hole in the TOV metric beyond the shock. From this time
+onward, the shock wave is approximated by a zero pressure (k = 0) Oppenheimer-
+Snyder (OS) interface, and thus the OS solution gives the large time asymptotics
+of these solutions. Surprisingly, the equation of state p = 13 ρ of early Big Bang
+physics, is distinguished by the differential equations, and only for this equation of
+state does the shock wave emerge from the Big Bang at a finite nonzero speed, the
+speed of light. This is surprising because the equation of state p = 31 ρ played no
+special role in shock matching outside the Black Hole, [5]. We find it interesting
+that such a shock wave emerging from the Big Bang beyond the Hubble length,
+would thermalize the radiation in a region well beyond the light cone of an observer
+positioned at the FRW center, even though the model does not invoke inflation.
+Details will appear in our forthcoming paper [8]; we wish here to summarize this
+work, and describe its physical interpretation.
+
+
+2       Statement of the Problem
+If there is a shock wave at the leading edge of the expansion of the galaxies, then
+we can ask what is the critical radius r̄crit at each fixed time t in a k = 0 FRW
+metric such that the total mass inside a shock wave positioned beyond that radius
+puts the universe inside a Black Hole? (There must be such a critical radius
+because the total mass M (r̄, t) inside radius r̄ in the FRW metric at fixed time t
+increases like r̄ 3 , and so at each fixed time t we must have r̄ > 2M (r̄, t) for small
+enough r̄, while the reverse inequality holds for large r̄. We let r̄ = r̄crit denote
+the smallest radius at which r̄crit = 2M (r̄crit , t).) We show that when k = 0, r̄crit
+equals the Hubble length. Thus we cannot match a critically expanding FRW
+metric to a classical TOV metric beyond one Hubble length without continuing the
+    3
+    We let (t, r) denote standard FRW coordinates, so that r̄ = rR(t) measures arclength
+distance at each fixed value of the FRW time t, where R denotes the cosmological scale
+factor. Barred coordinates also refer to TOV standard coordinates, in which case r̄ = rR(t)
+also holds as a consequence of shock matching.
+
+
+                                            2
+TOV solution into a Black Hole—and we showed in [6] that the standard TOV
+metric cannot be continued into a Black Hole. Thus to do shock matching with
+a k = 0 FRW metric beyond one Hubble length, we introduce the TOV metric
+inside the Black Hole.
+
+
+3       The TOV Metric Inside the Black Hole
+When the metric anzatz is taken to be of the TOV form
+
+
+                     ds2 = −B(r̄)dt̄2 + A−1 (r̄)dr̄ 2 + r̄ 2 dΩ2 ,                  (3.1)
+
+and the stress tensor T is taken to be that of a perfect fluid co-moving with the
+metric, the Einstein equations G = κT, inside the Black Hole, take the form
+
+                                    p̄ + ρ̄ N ′
+                              p̄′ =               ,                                 (3.2)
+                                       2 N −1 
+                                         N
+                                       
+                             N′   = −       + κp̄r̄ ,                               (3.3)
+                                         r̄
+                             B′          1      N
+                                                        
+                                  = −               + κρ̄ .                         (3.4)
+                             B         N − 1 r̄
+We let ρ̄, p̄ denote the density and pressure, and r̄ is taken to be the timelike
+variable because we assume
+
+
+                                      2M (r̄)
+                       A(r̄) = 1 −            ≡ 1 − N (r̄) < 0.                     (3.5)
+                                        r̄
+Here, M (r̄) has the interpretation as the total mass inside the ball of radius r̄
+when r̄ > 2M, but M does not have the same interpretation inside the Black Hole4
+because r̄ < 2M. The system (3.2)-(3.4) defines the simplest class of gravitational
+metrics that contain matter, and evolve inside the Black Hole.
+    4
+    System (3.2)-(3.4) for A < 0 differs substantially from the TOV equations for A > 0
+because, for example, the energy density T 00 is equated with the timelike component Grr
+when A < 0, but with Gtt when A > 0. In particular, this implies that M ′ = −4π p̄r̄2
+when A < 0, versus M ′ = 4π ρ̄r̄2 when A > 0, the latter being the equation that gives the
+mass function its physical interpretation outside the Black Hole.
+
+
+
+
+                                             3
+4      Shock Matching Inside the Black Hole
+Matching a given k = 0 FRW metric to a TOV metric inside the Black Hole across
+a shock interface, leads to the system of ODE’s
+
+         du      (1 + u)              (3u − 1)(σ − u)N + 6u(1 + u)
+                                                                 
+            =−                                                     ,             (4.1)
+         dN    2(1 + 3u)N                  (σ − u)N + (1 + u)
+
+                               dr̄               1   r̄
+                                      = −               ,                        (4.2)
+                               dN             1 + 3u N
+with conservation constraint
+                               −σ (1 + u) + (σ − u)N
+                         v=                          .                           (4.3)
+                                (1 + u) + (σ − u)N
+Here
+                                 p̄     ρ̄   p
+                            u=      , v= , σ= ,                                  (4.4)
+                                 ρ      ρ    ρ
+ρ and p denote the (known) FRW density and pressure, σ = p/ρ, and all variables
+are evaluated at the shock. Solutions of (4.1)-(4.3) determine the (unknown) TOV
+metrics that match the given FRW metric Lipschitz continuously across a shock
+interface, such that conservation of energy and momemtum hold across the shock,
+and such that there are no delta function sources at the shock, [2, 6].
+    For such solutions, the speed of the shock interface relative to the fluid comov-
+ing on the FRW side of the shock, is given by
+                                      √ σ − u
+                            s = Rṙ = N              .                           (4.5)
+                                            1+u
+Note that the dependence of (4.1)-(4.3) on the FRW metric is only through the vari-
+able σ. Since solutions of (4.1)-(4.3) are formally time-reversible but shock waves
+are not, system (4.1)-(4.3) must be augmented by entropy condition for shocks
+that breaks the time symmetry. Since we are interested in solutions that model
+the “Big Bang” as a localized explosion with an outgoing blast wave emanating
+from r̄ = 0 at time t = 0, we impose the entropy conditions,
+
+
+                           0 < p̄ < p,     0 < ρ̄ < ρ.                           (4.6)
+Condition (4.6) for outgoing shock waves implies that the shock wave is com-
+pressive, and is sufficient to rule out unstable rarefaction shocks in classical gas
+dynamics.
+
+                                          4
+5     Exact Shock Wave Solutions Inside the
+      Black Hole
+In the case when the FRW pressure is given by the equation of state
+
+
+                                        p = σρ,                                (5.1)
+σ assumed constant, 0 < σ < 1, the FRW equations have the exact solutions
+
+                                               4     1
+                                       ρ = 3κ(1+σ)2 t2 ,                       (5.2)
+                                                   2
+                                              t   3(1+σ)
+                                    R=       t0            ,                   (5.3)
+
+which assumes an expanding universe, (Ṙ > 0), and initial conditions R = 0
+at t = 0, and R = 1, at t = t0 . Since σ is constant, equation (4.1) uncouples
+from (4.2), and thus solutions of system (4.1)-(4.3) are determined by the scalar
+non-autonomous equation (4.1). Making the change of variable S = 1/N, which
+transforms the “Big Bang” N → ∞ over to rest point at S → 0, c.f. [7], we obtain,
+
+           du           (1 + u)         (3u − 1)(σ − u) + 6u(1 + u)S
+                                                                    
+              =                                                            ,   (5.4)
+           dS         2(1 + 3u)S             (σ − u) + (1 + u)S
+We take as entropy condition (4.6), and in addition, we require that the TOV
+equation of state meet the physical bound
+                                         0 < p̄ < ρ̄.                          (5.5)
+Note that the conditions N > 1 and 0 < p̄ < p restrict the domain of (5.4) to the
+region 0 < u < σ < 1, 0 < S < 1. Inequalities (4.6) and (5.5) are both implied by
+the single condition
+                                       1−u        σ−u
+                                                        
+                             S<                       .                        (5.6)
+                                       1+u        σ+u
+We prove the following theorem:
+
+Theorem 1 For every σ, 0 < σ < 1, there exists a unique solution uσ (S) of (5.4),
+such that (5.6) holds on the solution for all S, 0 < S < 1, and on this solution,
+0 < uσ (S) < ū, limS→0 uσ (S) = ū, where ū = M in {1/3, σ} . and
+                               lim p̄ = 0 = lim ρ̄.                            (5.7)
+                               S→1                S→1
+
+
+                                              5
+Concerning the the shock speed, we have:
+
+Theorem 2 Let 0 < σ < 1. Then the shock wave is everywhere subluminous, that
+is, the shock speed sσ (S) ≡ s(uσ (S)) < 1 for all 0 < S ≤ 1, if and only if σ ≤ 1/3.
+
+By a careful analysis of the asymptotics of the solution near S = 0, we can prove
+
+Theorem 3 The shock speed at the Big Bang S = 0 is given by:
+
+                           lim sσ (S) = 0,    σ < 1/3,                          (5.8)
+                           S→0
+
+
+
+                          lim sσ (S) = ∞,     σ > 1/3,                          (5.9)
+                          S→0
+
+
+
+                           lim sσ (S) = 1,    σ = 1/3,                        (5.10)
+                           S→0
+
+
+6     Bounds on the Shock Position
+Let r∗ be the FRW radial position of the shock wave at the instant of the Big
+Bang, (the arclength distance r̄∗ = r∗ R(0) = 0 when R(0) = 0). The analysis
+implies that the shock wave will first become visible at the FRW center r̄ = 0 at
+the moment t = t0 , (R(t0 ) = 1), when the Hubble length H0−1 = H −1 (t0 ) satisfies
+
+                                 1    1 + 3σ
+                                    =        r∗ ,                               (6.1)
+                                 H0      2
+where r∗ is the FRW position of the shock at the instant
+                                                   √     of the Big Bang. At this
+time, we prove that the number of Hubble lengths N 0 from the FRW center to
+the shock wave at time t = t0 can be estimated by
+                           2    √        2    √   1+3σ
+                   1≤          ≤ N0 ≤        e 3σ( 1+σ ) .
+                        1 + 3σ        1 + 3σ
+Thus, in particular, the shock wave will still lie beyond the Hubble length 1/H0
+at the FRW time t0 when it first becomes visible. Furthermore, we prove that the
+time tcrit > t0 at which the shock wave will emerge from the White Hole given
+that t0 is the first instant at which the shock becomes visible at the FRW center,
+can be estimated by
+
+
+
+                                          6
+                         2         tcrit      2
+                                                             √
+                              1                    2 3σ
+                             e4σ ≤       ≤        e 1+σ ,                     (6.2)
+                      1 + 3σ        t0     1 + 3σ
+for 0 < σ ≤ 1/3, and by the better estimate
+                                 √
+                                     6   tcrit    3
+                                e4 ≤           ≤ e2 ,                         (6.3)
+                                          t0
+in the case σ = 1/3. For example, (6.2), (6.3) imply that at the OS limit σ = 0,
+                                p               tcrit
+                                  N0 = 2,             = 2,
+                                                 t0
+and in the limit σ = 1/3,
+                               tcrit           p
+                       1.8 ≤         ≤ 4.5, 1 < N0 ≤ 4.5,
+                                t0
+     We conclude in these shock wave cosmological models, that the moment t0
+when the shock wave first becomes visible at the FRW center, it must lie within
+4.5 Hubble lengths of the center. Throughout the expansion up until this time,
+the expanding universe must lie entirely within a Black Hole—the universe will
+eventually emerge from this Black Hole, but not until some later time tcrit, where
+tcrit does not exceed 4.5t0 .
+
+
+7     Concluding Remarks
+We have constructed global exact solutions of the Einstein equations in which
+the expanding FRW universe extends out to a shock wave that lies arbitrarily far
+beyond the Hubble length. The distance to the shock wave at any given value of
+the Hubble constant is determined by one free paramenter which can be taken to
+be the FRW position of the shock wave at the instant of the Big Bang.
+    The critical OS solution inside the Black Hole is obtained in the limit of zero
+pressure, and provides the large time asymptotics, but the shock wave solutions
+differ qualitatively from the OS solution. For example, the shock wave models con-
+tain matter, and thus do not rely on any portion of the empty space Schwarzschild
+metric inside the Black Hole for their construction. In both models, the interface
+propagates outward from the FRW center r̄ = 0 at the instant of the Big Bang,
+but in the shock wave model the mass function M (r̄, t) is infinite at the instant
+of the Big Bang, and immediately becomes a finite decreasing function of FRW
+
+                                            7
+time, for all future times t > 0. And although the OS solution is time reversible,
+the directional orientation of the shock interface relative to the various observers
+is determined by an entropy condition, [3, 1, 4]. The entropy condition selects
+the explosion over the implosion, and the condition that the entropy condition be
+satisfied globally, determines a unique solution. Since the TOV radial coordinate
+r̄ is timelike inside the Black Hole, we can also say that the density ρ̄(r̄) and mass
+M (r̄) are both constant at each fixed time in the TOV spacetime beyond the shock
+wave.
+      The shock interface that marks the boundary of the FRW expansion continues
+out through the White Hole event horizon of an ambient Schwarzschild metric
+at the instant when the wave is exactly one Hubble length from the FRW center
+r̄ = 0, and then continues on out to infinity along a geodesic of the Schwarzschild
+metric outside the Black Hole. These solutions thus indicate a scenario for the
+Big Bang in which the expanding universe emerges from an explosion emanating
+from a White Hole singularity inside the event horizon of an asymptotically flat
+Schwarzschild spacetime of finite mass. The model does not require the physically
+implausible assumption that the uniformly expanding portion of the universe is
+of infinite mass and extent at every fixed time, and it has the nice feature that it
+embeds the Big Bang singularity of cosmology within the event horizon of a larger
+spacetime, the Schwarzschild spacetime. Moreover, the model also allows for the
+uniform expansion of arbitrarily large densities within an arbitrarily large mass
+extended over an arbitrary number of Hubble lengths early on in the Big Bang, a
+prerequisite for the standard physics of the Big Bang at early times.
+      We conclude that these shock wave solutions give the global dynamics of strong
+gravitational fields in an exact solution, the dynamics is qualitatively different from
+the dynamics of solutions when the pressure p ≡ 0, the solution suggests a Big
+Bang cosmological model in which the expanding universe is bounded throughout
+its expansion, and the equation of state most relevant at the Big Bang, p = 31 ρ,
+is distinguished by the differential equations. But these solutions are only rough
+qualitative models because the equation of state on the TOV side is determined
+by the equations, and therefore cannot be imposed. That is, the TOV density ρ̄
+and pressure p̄ only satisfy the entropy conditions (4.6), together with the loose
+physical bounds (5.5); and on the FRW side, the equation of state is taken to
+be p = σρ, σ ≡ const., 0 < σ < 1. Nevertheless, these bounds imply that the
+equations of state are qualitatively reasonable, and we expect that these solutions
+will capture the gross dynamics of solutions when more general equations of state
+are imposed. For more general equations of state, other waves, (e.g. rarefaction
+waves), would need to be present to meet the conservation constraint, and thereby
+mediate the transition across the shock wave. Such transitional waves would be
+
+
+                                          8
+pretty much impossible to model in an exact solution, but the fact that we can
+find global solutions that meet our physical bounds, and that are qualitatively the
+same, for all values of σ ∈ (0, 1), and all initial shock positions, leads us to expect
+that such a shock wave would be the dominant wave in a large class of problems.
+    As a final remark, we note that because Einstein’s theory by itself does not
+choose an orientation for time, it follows that if we believe that a Black Hole can
+exist in the forward time collapse of a mass through an event horizon as t → ∞,
+(the time t as observed in the far field), then we must also allow for the possibility of
+the time reversal of this process, a White Hole explosion of matter out through an
+event horizon coming from t → −∞. That is, if we are willing to accept Black Holes
+in the forward time dynamics of astrophysical objects whose collapse appears so
+great as to form an event horizon in the future, then by symmetry, we may well also
+be forced to accept White Holes in the backward time dynamics of astrophysical
+objects which, like the expanding universe, appear to have expansions so great as
+to have emerged from an event horizon in the past. Given this, it is natural to
+wonder if there is a connection between the mass that disappears into Black Hole
+singularities, and the mass that emerges from White Hole singularities.
+
+
+References
+ [1] J. Glimm, Solutions in the large for nonlinear hyperbolic systems of equations,
+     Comm. Pure Appl. Math., 18(1965), pp. 697-715.
+
+ [2] W. Israel, Singular hypersurfaces and thin shells in General Relativity, IL
+     Nuovo Cimento, Vol. XLIV B, N. 1, 1-14 (1966).
+
+ [3] P.D. Lax, Hyperbolic systems of conservation laws, II , Comm. Pure Appl.
+     Math., 10, pp. 537–566 (1957).
+
+ [4] J. Smoller, Shock-Waves and Reaction-Diffusion Equations, Springer Verlag,
+     1983.
+
+ [5] J. Smoller and B. Temple Astrophysical shock-wave solutions of the Einstein
+     equations, Phys. Rev. D, 51, No. 6, 2733-2743 (1995).
+
+ [6] J. Smoller and B. Temple Shock-wave solutions of the Einstein equations that
+     extend the Oppenheimer-Snyder model, Arch. Rat. Mech. Anal., 138, 239-277
+     (1997).
+
+ [7] J. Smoller and B. Temple, Cosmology with a shock-wave, Comm. Math. Phys.,
+     210, 275-308 (2000).
+
+                                           9
+[8] J. Smoller and B. Temple, Cosmology, black holes, and shock waves beyond
+    the Hubble length, (preprint).
+
+[9] S. Weinberg, Gravitation and Cosmology: Principles and Applications of the
+    General Theory of Relativity, John Wiley & Sons, New York, 1972.
+
+
+
+
+                                     10
+

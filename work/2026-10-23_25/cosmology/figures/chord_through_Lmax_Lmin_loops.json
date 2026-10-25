@@ -1,0 +1,13 @@
+{
+  "Lmax": 30.0,
+  "Lmin": 260.0,
+  "dL_short_deg": 130.0,
+  "identity": "max chord length <=> max angular separation <=> min |midpoint| (closest to diameter)",
+  "equator_theta_deg": 130.0,
+  "theta_at_b80_opposite_sign": 171.58291496174112,
+  "note": "Global maximum is the N-S diameter (poles lie on every meridian). No central diameter hits both non-polar meridians when Delta-ell != 180.",
+  "best_central_axis_from_emax_minus_emin_lb": [
+    55.0,
+    0.0
+  ]
+}

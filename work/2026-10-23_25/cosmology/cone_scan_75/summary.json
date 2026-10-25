@@ -1,0 +1,350 @@
+{
+  "created_local": "2026-09-18 01:22 PM CDT (UTC-0500)",
+  "theta_deg": 75.0,
+  "theta_definition": "Migkas cone RADIUS = angular separation from center (\u00a74.3: 'cone of a given radius \u03b8'; \u03b8=75\u00b0)",
+  "weighting": "solid-angle cos(lat) weights from fullsky maps; equal-weight idealization \u2014 NOT Migkas cluster selection / distance-from-center weighting",
+  "B_caveat": "B is mass-proxy AN = m(r_src)/M_enc mean-renorm, NOT Migkas L_X-T slope",
+  "sine_caveat": "sheet Amp\u00d7sin is DIAGNOSTIC \u2014 not derived from Gauss; not first-principles gravity",
+  "blocker_2d_cone_maps": "Migkas Figs 8\u20139 / 21\u201323 2D cone A/B maps not digitised; comparison is vs Fig.6 strips + our cone Mollweides only",
+  "axes": {
+    "sample_280m20": {
+      "label": "sample (280\u00b0, \u221220\u00b0)",
+      "l": 280.0,
+      "b": -20.0,
+      "layers": {
+        "physics": {
+          "kind": "physics",
+          "disclaimer": "PHYSICS-ONLY ST+Gauss; B=mass-proxy AN (not Migkas slope); cone avg = cos(lat) equal-weight idealization",
+          "minmax_cone": {
+            "A_hratio": [
+              0.9843939790183992,
+              1.0365445859940945
+            ],
+            "A_invsq": [
+              0.9241248469606032,
+              1.0270739804339784
+            ],
+            "B": [
+              0.8788235550527905,
+              1.1225275094530762
+            ]
+          },
+          "R2_cone_at_migkas_b": {
+            "A": 0.645687311607598,
+            "B": 0.4360381004467327,
+            "b_deg": -20.0
+          },
+          "R2_cone_at_b0": {
+            "A": 0.5940975305716393,
+            "B": 0.4361128918094963
+          },
+          "R2_boxcar90_strip": {
+            "A": 0.5618456326929877,
+            "B": 0.43722101297492505
+          },
+          "R2_min_cone": 0.4360381004467327,
+          "R2_sum_cone": 1.0817254120543307,
+          "files": {
+            "mollweide": "/workspace/cosmology/cone_scan_75/mollweide_cone75_sample_280m20__physics.png",
+            "overlay": "/workspace/cosmology/cone_scan_75/overlay_fig6_cone75_sample_280m20__physics.png",
+            "scatter": "/workspace/cosmology/cone_scan_75/scatter_fig6_vs_cone75_sample_280m20__physics.png"
+          }
+        },
+        "sine_sheet": {
+          "kind": "sine_diagnostic",
+          "disclaimer": "DIAGNOSTIC \u2014 sheet sine DIAGNOSTIC (Amp_A=-0.06, Amp_B=+0.06, \u03c6=0.35) \u2014 NOT derived from Gauss; B=mass-proxy AN; cone avg equal-weight idealization",
+          "minmax_cone": {
+            "A_hratio": [
+              0.9525758912464003,
+              1.0660334176155635
+            ],
+            "A_invsq": [
+              0.8911798872791682,
+              1.0587319106145412
+            ],
+            "B": [
+              0.8448816016865349,
+              1.1666368309977027
+            ]
+          },
+          "R2_cone_at_migkas_b": {
+            "A": 0.009045369541482332,
+            "B": 0.32944987504687323,
+            "b_deg": -20.0
+          },
+          "R2_cone_at_b0": {
+            "A": 0.02539138849614679,
+            "B": 0.32934615153601543
+          },
+          "R2_boxcar90_strip": {
+            "A": 0.023970750184868543,
+            "B": 0.32813225623778747
+          },
+          "R2_min_cone": 0.009045369541482332,
+          "R2_sum_cone": 0.33849524458835556,
+          "files": {
+            "mollweide": "/workspace/cosmology/cone_scan_75/mollweide_cone75_sample_280m20__sine_sheet.png",
+            "overlay": "/workspace/cosmology/cone_scan_75/overlay_fig6_cone75_sample_280m20__sine_sheet.png",
+            "scatter": "/workspace/cosmology/cone_scan_75/scatter_fig6_vs_cone75_sample_280m20__sine_sheet.png"
+          }
+        },
+        "sine_local_density": {
+          "kind": "sine_diagnostic",
+          "disclaimer": "DIAGNOSTIC \u2014 local-density sine DIAGNOSTIC (Amp_A=+0.07, Amp_B=-0.07, \u03c6\u2248212.82\u00b0) \u2014 NOT derived from Gauss; B=mass-proxy AN; cone avg equal-weight idealization",
+          "minmax_cone": {
+            "A_hratio": [
+              0.9410892445979948,
+              1.0687905342927744
+            ],
+            "A_invsq": [
+              0.8891244878290929,
+              1.071287942483768
+            ],
+            "B": [
+              0.8430846242195873,
+              1.1685516770093118
+            ]
+          },
+          "R2_cone_at_migkas_b": {
+            "A": 0.028226902858799065,
+            "B": 0.2690702899759906,
+            "b_deg": -20.0
+          },
+          "R2_cone_at_b0": {
+            "A": 0.04742429751836805,
+            "B": 0.26876537507226483
+          },
+          "R2_boxcar90_strip": {
+            "A": 0.006022790630021193,
+            "B": 0.2657002035972026
+          },
+          "R2_min_cone": 0.028226902858799065,
+          "R2_sum_cone": 0.29729719283478967,
+          "files": {
+            "mollweide": "/workspace/cosmology/cone_scan_75/mollweide_cone75_sample_280m20__sine_local_density.png",
+            "overlay": "/workspace/cosmology/cone_scan_75/overlay_fig6_cone75_sample_280m20__sine_local_density.png",
+            "scatter": "/workspace/cosmology/cone_scan_75/scatter_fig6_vs_cone75_sample_280m20__sine_local_density.png"
+          }
+        }
+      }
+    },
+    "joint_303m27": {
+      "label": "joint (303\u00b0, \u221227\u00b0)",
+      "l": 303.0,
+      "b": -27.0,
+      "layers": {
+        "physics": {
+          "kind": "physics",
+          "disclaimer": "PHYSICS-ONLY ST+Gauss; B=mass-proxy AN (not Migkas slope); cone avg = cos(lat) equal-weight idealization",
+          "minmax_cone": {
+            "A_hratio": [
+              0.9844977106591719,
+              1.0362660294687345
+            ],
+            "A_invsq": [
+              0.9247852625271553,
+              1.0270091633406848
+            ],
+            "B": [
+              0.879125990312465,
+              1.1222144538889223
+            ]
+          },
+          "R2_cone_at_migkas_b": {
+            "A": 0.2914566366336074,
+            "B": 0.6781404680530744,
+            "b_deg": -27.0
+          },
+          "R2_cone_at_b0": {
+            "A": 0.3553942332278096,
+            "B": 0.6781846328580293
+          },
+          "R2_boxcar90_strip": {
+            "A": 0.37994466533043336,
+            "B": 0.6785545058424209
+          },
+          "R2_min_cone": 0.2914566366336074,
+          "R2_sum_cone": 0.9695971046866818,
+          "files": {
+            "mollweide": "/workspace/cosmology/cone_scan_75/mollweide_cone75_joint_303m27__physics.png",
+            "overlay": "/workspace/cosmology/cone_scan_75/overlay_fig6_cone75_joint_303m27__physics.png",
+            "scatter": "/workspace/cosmology/cone_scan_75/scatter_fig6_vs_cone75_joint_303m27__physics.png"
+          }
+        },
+        "sine_sheet": {
+          "kind": "sine_diagnostic",
+          "disclaimer": "DIAGNOSTIC \u2014 sheet sine DIAGNOSTIC (Amp_A=-0.06, Amp_B=+0.06, \u03c6=0.35) \u2014 NOT derived from Gauss; B=mass-proxy AN; cone avg equal-weight idealization",
+          "minmax_cone": {
+            "A_hratio": [
+              0.9442099672665739,
+              1.0562705672676727
+            ],
+            "A_invsq": [
+              0.9005600693087082,
+              1.0694146609941289
+            ],
+            "B": [
+              0.8533246841530047,
+              1.1552377531886593
+            ]
+          },
+          "R2_cone_at_migkas_b": {
+            "A": 0.0363273869069376,
+            "B": 0.5365186817344529,
+            "b_deg": -27.0
+          },
+          "R2_cone_at_b0": {
+            "A": 0.06165294952806427,
+            "B": 0.5340276193626942
+          },
+          "R2_boxcar90_strip": {
+            "A": 0.0011982351042197456,
+            "B": 0.5301556192551223
+          },
+          "R2_min_cone": 0.0363273869069376,
+          "R2_sum_cone": 0.5728460686413905,
+          "files": {
+            "mollweide": "/workspace/cosmology/cone_scan_75/mollweide_cone75_joint_303m27__sine_sheet.png",
+            "overlay": "/workspace/cosmology/cone_scan_75/overlay_fig6_cone75_joint_303m27__sine_sheet.png",
+            "scatter": "/workspace/cosmology/cone_scan_75/scatter_fig6_vs_cone75_joint_303m27__sine_sheet.png"
+          }
+        },
+        "sine_local_density": {
+          "kind": "sine_diagnostic",
+          "disclaimer": "DIAGNOSTIC \u2014 local-density sine DIAGNOSTIC (Amp_A=+0.07, Amp_B=-0.07, \u03c6\u2248212.82\u00b0) \u2014 NOT derived from Gauss; B=mass-proxy AN; cone avg equal-weight idealization",
+          "minmax_cone": {
+            "A_hratio": [
+              0.9347800091183325,
+              1.0557951588946934
+            ],
+            "A_invsq": [
+              0.9022997589495027,
+              1.0802061250721533
+            ],
+            "B": [
+              0.8546036295787673,
+              1.15318818691944
+            ]
+          },
+          "R2_cone_at_migkas_b": {
+            "A": 0.05671758667114416,
+            "B": 0.4727169377909115,
+            "b_deg": -27.0
+          },
+          "R2_cone_at_b0": {
+            "A": 0.08754778759552899,
+            "B": 0.4689248732411361
+          },
+          "R2_boxcar90_strip": {
+            "A": 0.0012292896685853652,
+            "B": 0.4625821690908598
+          },
+          "R2_min_cone": 0.05671758667114416,
+          "R2_sum_cone": 0.5294345244620556,
+          "files": {
+            "mollweide": "/workspace/cosmology/cone_scan_75/mollweide_cone75_joint_303m27__sine_local_density.png",
+            "overlay": "/workspace/cosmology/cone_scan_75/overlay_fig6_cone75_joint_303m27__sine_local_density.png",
+            "scatter": "/workspace/cosmology/cone_scan_75/scatter_fig6_vs_cone75_joint_303m27__sine_local_density.png"
+          }
+        }
+      }
+    }
+  },
+  "recommendation": "LETTER: lead with PHYSICS \u03b8=75\u00b0 cone Mollweides (geometry result); best Fig.6-strip shape match is physics @ sample (280\u00b0,-20\u00b0) (R\u00b2_A=0.646, R\u00b2_B=0.436). Caveat: cone A amplitude washed to 0.17\u00d7 Fig.6 ptp (quadrupole averaged over 75\u00b0). Sine Amp\u00d7sin is retained only as labeled DIAGNOSTIC \u2014 it loses Fig.6 match under cone averaging (best sine R\u00b2_A=0.036). Prefer sample axis (280\u00b0,-20\u00b0) over joint (303\u00b0,-27\u00b0) for A; joint wins B alone. Blocker: Migkas 2D cone maps (Figs 8\u20139) not digitised.",
+  "scoreboard": [
+    {
+      "axis": "sample_280m20",
+      "layer": "physics",
+      "R2_A": 0.645687311607598,
+      "R2_B": 0.4360381004467327,
+      "R2_min": 0.4360381004467327,
+      "R2_sum": 1.0817254120543307,
+      "kind": "physics"
+    },
+    {
+      "axis": "sample_280m20",
+      "layer": "sine_sheet",
+      "R2_A": 0.009045369541482332,
+      "R2_B": 0.32944987504687323,
+      "R2_min": 0.009045369541482332,
+      "R2_sum": 0.33849524458835556,
+      "kind": "sine_diagnostic"
+    },
+    {
+      "axis": "sample_280m20",
+      "layer": "sine_local_density",
+      "R2_A": 0.028226902858799065,
+      "R2_B": 0.2690702899759906,
+      "R2_min": 0.028226902858799065,
+      "R2_sum": 0.29729719283478967,
+      "kind": "sine_diagnostic"
+    },
+    {
+      "axis": "joint_303m27",
+      "layer": "physics",
+      "R2_A": 0.2914566366336074,
+      "R2_B": 0.6781404680530744,
+      "R2_min": 0.2914566366336074,
+      "R2_sum": 0.9695971046866818,
+      "kind": "physics"
+    },
+    {
+      "axis": "joint_303m27",
+      "layer": "sine_sheet",
+      "R2_A": 0.0363273869069376,
+      "R2_B": 0.5365186817344529,
+      "R2_min": 0.0363273869069376,
+      "R2_sum": 0.5728460686413905,
+      "kind": "sine_diagnostic"
+    },
+    {
+      "axis": "joint_303m27",
+      "layer": "sine_local_density",
+      "R2_A": 0.05671758667114416,
+      "R2_B": 0.4727169377909115,
+      "R2_min": 0.05671758667114416,
+      "R2_sum": 0.5294345244620556,
+      "kind": "sine_diagnostic"
+    }
+  ],
+  "best_physics": {
+    "axis": "sample_280m20",
+    "layer": "physics",
+    "R2_A": 0.645687311607598,
+    "R2_B": 0.4360381004467327,
+    "R2_min": 0.4360381004467327,
+    "R2_sum": 1.0817254120543307,
+    "kind": "physics"
+  },
+  "best_sine_diagnostic": {
+    "axis": "joint_303m27",
+    "layer": "sine_sheet",
+    "R2_A": 0.0363273869069376,
+    "R2_B": 0.5365186817344529,
+    "R2_min": 0.0363273869069376,
+    "R2_sum": 0.5728460686413905,
+    "kind": "sine_diagnostic"
+  },
+  "best_overall": {
+    "axis": "sample_280m20",
+    "layer": "physics",
+    "R2_A": 0.645687311607598,
+    "R2_B": 0.4360381004467327,
+    "R2_min": 0.4360381004467327,
+    "R2_sum": 1.0817254120543307,
+    "kind": "physics"
+  },
+  "amplitude_ratio_cone_over_fig6": {
+    "axis": "sample_280m20",
+    "layer": "physics",
+    "A_ptp_cone": 0.0519407967845934,
+    "B_ptp_cone": 0.21559983074432143,
+    "A_ptp_fig6": 0.3101999999999999,
+    "B_ptp_fig6": 0.1846,
+    "A_ratio": 0.1674429296730929,
+    "B_ratio": 1.1679297440104086,
+    "note": "\u03b8=75\u00b0 cone averaging strongly washes quadrupole A amplitude (~5% ptp vs Migkas ~20%); R\u00b2 is shape correlation only"
+  },
+  "sine_transfer_finding": "Amp\u00d7sin sheet/local-density parameters that raise R\u00b2 on 1D circle+\u0394\u2113=90\u00b0 boxcar do NOT transfer to full-sky cone averages: sine layers score R\u00b2_A\u22480 vs Fig.6. Physics-only cone @ (280\u00b0,-20\u00b0) wins overall.",
+  "updated_local": "2026-09-18 01:23 PM CDT (UTC-0500)"
+}

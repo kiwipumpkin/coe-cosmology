@@ -1,0 +1,16 @@
+2.5   Time evolution, donut universe, and CMB stress test
+In the donut-universe picture the CoE is fixed while thick shells expand outward; the sphere of events visible
+to us grows at c. Recombination is a spherical surface of fixed physical radius around the CoE. The observer
+remains mid-shell between the inner and outer edges (S1 and S2). Critically, the Hubble-bubble volume about
+US satisfies VHB = 0 until the observer passes Drecomb (the CoE distance at which vision turns on). After that
+crossing, the visible sphere grows at c. Scale discussion may be framed in terms of the time-dependent volumes
+VHB (t), VS1 (t), and VS2 (t) and the corresponding volume fractions of the Hubble bubble relative to the shell
+annulus and the outer sphere. How long the post-recombination “oven” ran before an observer existed remains
+an open timing question; the letter does not fix that interval, only the geometric sequence of shells crossing a
+fixed recombination surface while Rvis grows at c.
+
+
+
+
+                                                       8
+

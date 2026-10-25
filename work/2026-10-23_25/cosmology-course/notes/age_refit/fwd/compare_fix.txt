@@ -1,0 +1,24 @@
+SIGN-FIX + GR RERUN: before (old sign Phi_o-Phi_e, unoriented global CMB) | Newton fixed | exact Schwarzschild (Cosmology)
+Migkas fits: no potential term -> identical chi2 before/after (rerun reproduced to all digits).
+law/limit: chi2 | rs/D (enc) | rs/D (pt) | global-traced cancel%  before / newton / GR | Tmean K before/newton/GR
+exp v<=c: chi2 16.09 | 1.60e-02 | 2.95e-04 | nan / nan / -2.836e+04 | inf/0/1739
+soft v<=c: chi2 17.99 | 8.60e-02 | 8.56e-02 | -3.085e+04 / -1.542e+04 / -2.022e+04 | 671.8/89.28/227.1
+eta v<=c: chi2 8.54 | 1.81e-03 | 1.78e-03 | -89.46 / -117.5 / -117.7 | 2665/2666/2666
+pl v<=c: chi2 17.99 | 8.55e-02 | 8.53e-02 | -3.145e+04 / -1.031e+04 / -1.972e+04 | 1370/58.79/221.7
+exp nolim: chi2 13.62 | 5.32e+22 | 3.69e+20 INSIDE r_s! | nan / nan / -3.284e+04 | inf/0/9661
+soft nolim: chi2 13.90 | 7.03e+13 | 4.22e+10 INSIDE r_s! | nan / nan / -2.961e+04 | inf/0/5280
+eta nolim: chi2 14.00 | 1.26e+17 | 2.26e+16 INSIDE r_s! | nan / nan / -2.48e+04 | inf/0/1.629e+04
+pl nolim: chi2 13.75 | 1.43e+22 | 1.31e+20 INSIDE r_s! | nan / nan / -3.28e+04 | inf/0/4230
+LOCAL-SR CMB (q=R/D 0.23; cancel% phi=l0 / phi free): before | newton | GR
+exp v<=c: no full sky (161/360) | no full sky (161/360) | no full sky (161/360)
+soft v<=c: no full sky (175/360) | no full sky (175/360) | no full sky (175/360)
+eta v<=c: 6.00 / 6.04 | 6.00 / 6.04 | 5.93 / 5.97
+pl v<=c: no full sky (175/360) | no full sky (175/360) | no full sky (175/360)
+bracket before: B end chi2 43.6 cancel 22.7% M 1.2e+47 kg gk 7.99 | best cancel on path 22.7% at f=1.00 (chi2 43.6)
+bracket after_newton: B end chi2 44.8 cancel 0.7% M 3.4e+42 kg gk 0.000495 | best cancel on path 0.7% at f=1.00 (chi2 44.8)
+bracket after_gr: B end chi2 27.9 cancel 5.9% M 2.2e+46 kg gk 1.82 | best cancel on path 5.9% at f=1.00 (chi2 27.9)
+bracket_sr before: B end chi2 39.6 cancel 42.6% M 4.8e+49 kg gk 0.00341 | best cancel on path 42.6% at f=1.00 (chi2 39.6)
+bracket_sr after_newton: B end chi2 39.6 cancel 42.6% M 4.8e+49 kg gk 0.00341 | best cancel on path 42.6% at f=1.00 (chi2 39.6)
+bracket_sr after_gr: B end chi2 44.7 cancel 36.2% M 5.8e+48 kg gk 0.000208 | best cancel on path 36.2% at f=1.00 (chi2 44.7)
+STEP 2 same-universe (unified2): cancel% before -> after sign fix
+exp -13.4->-13.4 ; soft -85.5->-108.4 ; eta -13.4->-13.4 ; pl -64.9->-64.9 ; exp_lock -13.4->-13.4 ; soft_lock -1320.1->-1455.7 ; eta_lock -3140.3->-3184.0 ; pl_lock -2741.5->-2745.6

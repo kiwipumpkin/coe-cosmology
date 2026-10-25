@@ -1,0 +1,506 @@
+{
+ "tag": "pl_back_gtc",
+ "x": [
+  2.0455272539021906e-10,
+  1.1827291565684634,
+  25.074934246259325,
+  3.787070874214261,
+  3.2712491174668434,
+  5.1377577748301535
+ ],
+ "chi2": 14.619114228886492,
+ "sigma": 3.7868255597441896,
+ "l0": 18.589896433592614,
+ "Uo_c": 1.0000000004710001,
+ "D_Gpc": 4.543640772412037,
+ "flight_time_Gyr": 14.805933246851659,
+ "t_rec_after_obs_bang_Gyr": 0.013459939315319363,
+ "age_obs_Gyr": 14.819393186166977,
+ "n_dir": 60,
+ "n_reached": 0,
+ "n_unborn": 0,
+ "max_land_err_after": null,
+ "rows": [
+  {
+   "ell": 0.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.5863595677963138,
+   "stop_label_r0": 7.455335082762177,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 6.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.586554139435696,
+   "stop_label_r0": 7.441811025056084,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 12.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.5871397953518487,
+   "stop_label_r0": 7.40127835150645,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 18.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.5881223893868077,
+   "stop_label_r0": 7.333859282571326,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 24.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.589511782392057,
+   "stop_label_r0": 7.2397640439279005,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 30.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.591322000074205,
+   "stop_label_r0": 7.119301858983778,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 36.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.5935714562122184,
+   "stop_label_r0": 6.972897479614604,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 42.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.5962832432114158,
+   "stop_label_r0": 6.801109691119626,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 48.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.5994854907022324,
+   "stop_label_r0": 6.604655315238406,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 54.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6032117912744497,
+   "stop_label_r0": 6.384437681767432,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 60.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6075016880348696,
+   "stop_label_r0": 6.141576671155243,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 66.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6124012100099869,
+   "stop_label_r0": 5.877444012431389,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 72.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6179634261555145,
+   "stop_label_r0": 5.593699654037964,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 78.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6242489614705415,
+   "stop_label_r0": 5.292329147510508,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 84.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6313263699501376,
+   "stop_label_r0": 4.975681065124769,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 90.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6392721752854549,
+   "stop_label_r0": 4.64650249277884,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 96.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6481702454172388,
+   "stop_label_r0": 4.30797027437123,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 102.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6581099194554737,
+   "stop_label_r0": 3.963715939172299,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 108.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6691818927871247,
+   "stop_label_r0": 3.6178420780620257,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 114.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6814702062142145,
+   "stop_label_r0": 3.274925950514348,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 120.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6950377105084171,
+   "stop_label_r0": 2.940004631114927,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 126.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.7099011960589771,
+   "stop_label_r0": 2.618529782367934,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 132.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.7259916759467432,
+   "stop_label_r0": 2.3162684012762935,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 138.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.7430971990859478,
+   "stop_label_r0": 2.039103602922755,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 144.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.7607942254423197,
+   "stop_label_r0": 1.7926721079535086,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 150.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.7783926136783127,
+   "stop_label_r0": 1.5817940462145428,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 156.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.7949406412776947,
+   "stop_label_r0": 1.4097836585899297,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 162.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.8093299534107863,
+   "stop_label_r0": 1.2779565107680744,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 168.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.8204820576896351,
+   "stop_label_r0": 1.1857412634486226,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 174.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.827533136646977,
+   "stop_label_r0": 1.1314937439996733,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 180.0,
+   "reached_rec": false,
+   "ncross": 1,
+   "stop_t_frac_of_flight": 0.8283269818712471,
+   "stop_label_r0": 1.1255720279142545,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 186.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.8275331366451459,
+   "stop_label_r0": 1.131493743993077,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 192.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.8204820576945288,
+   "stop_label_r0": 1.1857412634319275,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 198.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.8093299534165264,
+   "stop_label_r0": 1.2779565084300255,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 204.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.7949406412804811,
+   "stop_label_r0": 1.4097836595161632,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 210.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.7783926136796925,
+   "stop_label_r0": 1.5817940506533845,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 216.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.7607942254407223,
+   "stop_label_r0": 1.7926721032988049,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 222.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.7430971990849461,
+   "stop_label_r0": 2.0391036200414434,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 228.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.7259916759449123,
+   "stop_label_r0": 2.3162683893730276,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 234.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.7099011960572386,
+   "stop_label_r0": 2.6185298066544633,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 240.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.695037710516743,
+   "stop_label_r0": 2.9400046259609827,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 246.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6814702062117841,
+   "stop_label_r0": 3.2749259327357936,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 252.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6691818927824683,
+   "stop_label_r0": 3.6178420625631698,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 258.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.658109919453142,
+   "stop_label_r0": 3.963715881998674,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 264.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6481702454267185,
+   "stop_label_r0": 4.307970229913176,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 270.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6392721752644732,
+   "stop_label_r0": 4.646502499894269,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 276.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6313263699396483,
+   "stop_label_r0": 4.975681111360176,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 282.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6242489614744186,
+   "stop_label_r0": 5.292329077388558,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 288.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6179634261673806,
+   "stop_label_r0": 5.593699626256745,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 294.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.61240121001054,
+   "stop_label_r0": 5.87744401424105,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 300.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6075016880348696,
+   "stop_label_r0": 6.141576671155243,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 306.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.6032117912625143,
+   "stop_label_r0": 6.38443769010652,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 312.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.599485490689181,
+   "stop_label_r0": 6.604655503032375,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 318.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.596283243199626,
+   "stop_label_r0": 6.801109728703984,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 324.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.593571456197028,
+   "stop_label_r0": 6.972897512329308,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 330.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.5913220000703608,
+   "stop_label_r0": 7.119301756758128,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 336.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.589511782382214,
+   "stop_label_r0": 7.239764037932009,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 342.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.5881223893807432,
+   "stop_label_r0": 7.3338592878364794,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 348.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.5871397953503442,
+   "stop_label_r0": 7.401278466274109,
+   "stop_label_unborn_at_trec": true
+  },
+  {
+   "ell": 354.0,
+   "reached_rec": false,
+   "ncross": 0,
+   "stop_t_frac_of_flight": 0.5865541394396521,
+   "stop_label_r0": 7.441810926052484,
+   "stop_label_unborn_at_trec": true
+  }
+ ],
+ "all_emitters_formed": false
+}

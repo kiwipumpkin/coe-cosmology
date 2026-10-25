@@ -1,0 +1,97 @@
+\documentclass[10pt]{article}
+\usepackage[letterpaper,margin=0.45in]{geometry}
+\usepackage{array}
+\usepackage{amsmath,amssymb,booktabs}
+\pagestyle{empty}\setlength{\parindent}{0pt}\setlength{\parskip}{2pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{document}
+{\large\bfseries Current model (ordinary-matter shell + CoE core) vs.\ $A_F$, term by term}\hfill{\footnotesize worked sheet, 27 Sep 2026}\\[-2pt]
+\rule{\textwidth}{0.4pt}
+{\small
+\textbf{1. Model and where each term comes from.} Sedov--Taylor flow $\vec V=k\,\vec x$ (position from the CoE; Taylor 1950; Sedov 1959), decelerated by a point core $M_c$ at the CoE and a uniform shell $\Omega_s$ between $R_{\rm in}$ and $R_{\rm out}$ (fixed in space; Earth and all sources inside it). Spherical symmetry makes the field radial, $\vec V=h(q)\,\vec q$, with $q=s/D$ ($D$ = CoE--Earth distance). Linear perturbation of the code's integration (from $\tau_i=0.01$, $H t\simeq1$):
+\[
+\frac{h(q)}{k}\simeq1-\tfrac12\Big[\underbrace{\tfrac{M_c}{M_{\rm crit}(D)}\big(\tfrac1{\tau_i}-1\big)q^{-3}}_{\text{core tidal term}}+\Omega_s\Big(\underbrace{\tfrac12}_{\text{uniform: }m=0\text{ only}}\ \underbrace{-\tfrac32 r_{\rm in}^2q^{-2}+r_{\rm in}^3q^{-3}}_{\text{hole }(r_{\rm in}=R_{\rm in}/D)}\Big)\Big],\qquad
+\beta\equiv\frac{h'}{h}\Big|_{q=1},\ \ \gamma\equiv\frac{h''}{h}\Big|_{q=1}.
+\]
+Chris's $A$: $a_f=|\Delta\vec V|/{\rm separation}$ with sources at $R=14.3$~Gpc, $\varepsilon\equiv R/D$, $\mu=\cos b_0\cos\psi$, $\psi=\ell-\ell_0$ ($\ell_0$ = anti-CoE direction). Exactly $a_f\propto|h(q_s)(\hat x+\varepsilon\hat n)-h(1)\hat x|/\varepsilon$; to first order in $\varepsilon$ (the higher orders are the $r/D$ terms):
+\[
+a_f^2\propto1+B\mu^2+\varepsilon\,(P\mu+Q\mu^3),\qquad B=2\beta+\beta^2,\ \ P=\beta(3+\beta),\ \ Q=(1+\beta)(\gamma+\beta)-2\beta .
+\]
+Take the square root, then use $\cos^2\psi=\tfrac12(1+\cos2\psi)$, $\cos^3\psi=\tfrac14(3\cos\psi+\cos3\psi)$, $\cos^4\psi=\tfrac38+\tfrac12\cos2\psi+\tfrac18\cos4\psi$, $\cos^5\psi=\tfrac1{16}(10\cos\psi+5\cos3\psi+\cos5\psi)$ ($b_0=0$ as in the code):
+\[
+\frac{a_f}{\langle a_f\rangle}=1+a_1\cos\psi+a_2\cos2\psi+a_3\cos3\psi+\dots,\quad
+a_2=\frac{\frac B4-\frac{B^2}{16}}{m_0},\ \
+a_1=\frac{\varepsilon}{2m_0}\Big[P+\tfrac34\big(Q-\tfrac{PB}2\big)-\tfrac{5QB}{16}\Big],\ \
+a_3=\frac{\varepsilon}{2m_0}\Big[\tfrac14\big(Q-\tfrac{PB}2\big)-\tfrac{5QB}{32}\Big],
+\]
+with $m_0=1+\frac B4-\frac{3B^2}{64}$. For a pure point mass ($\gamma=-4\beta$, $\beta\to3K$) this is the earlier line-of-sight form $K[(3\mu^2-1)+\varepsilon(\frac92\mu-\frac{15}2\mu^3)]$. The geometry gives only $\cos m\psi$ terms: even harmonics set by $\beta$, odd ones by $\varepsilon Q$. \emph{Rotation} (the sine factor, $A=a_f[1-{\rm Amp}\sin(\psi+\varphi)]$) adds
+$C_1\!=\!a_1-{\rm Amp}\sin\varphi(1+\tfrac{a_2}2)$, $S_1\!=\!-{\rm Amp}\cos\varphi(1-\tfrac{a_2}2)$, $C_3\!=\!a_3-\tfrac{{\rm Amp}\,a_2}2\sin\varphi$, $S_3\!=\!-\tfrac{{\rm Amp}\,a_2}2\cos\varphi$ ($C_m,S_m$: $\cos m\psi,\sin m\psi$ parts).
+\textbf{Latitude:} the code evaluates the model in the Galactic plane only (one direction per degree, no $|b|$ cut, no sector average), so the match is done the same way. A tilt $b_0$ would give $B\to B\cos^2b_0$ and $\varepsilon$-terms $\propto\cos b_0,\cos^3b_0$, degenerate with $\beta$ and $\varepsilon Q$; therefore $b_0=0$.
+
+
+\textbf{2. Term-by-term solution} (Newtonian, series above, point-core shape $\gamma=-4\beta$; exact least-squares in brackets):
+\begin{center}\footnotesize\setlength{\tabcolsep}{3pt}\begin{tabular}{llll}\toprule
+Term & $A_F$ coefficient & Analytic expression & Solved value\\\midrule
+$2\ell$ phase & $\ell_2=14.96^\circ$ & $\ell_0$ (axis; $\beta>0$: fast along it) & $\ell_0=14.96^\circ$ \ (12.8$^\circ$)\\
+$2\ell$ amplitude & $C_2=0.0734$ & $a_2(\beta)$ & $\beta=0.161$ \ (0.210)\\
+$1\ell$ (rotation) & $C_1=0.0398$, $S_1=0.0343$ & $C_1,S_1$ of Sec.~1 & Amp $=-0.068$, $\varphi=1.02$ \ (-0.072, 1.03)\\
+$3\ell$ cos & $C_3=-0.0292$ & $a_3(\varepsilon Q)-\frac{{\rm Amp}\,a_2}2\sin\varphi$ & $\varepsilon Q=-0.308$ $\Rightarrow$ $\varepsilon=0.348$, $D=41$~Gpc \ (47)\\
+$3\ell$ sin & $S_3=0.0130$ & $-\frac{{\rm Amp}\,a_2}2\cos\varphi$ (check) & predicted $0.0013$: \textbf{not produced}\\
+$m=0$ & $A_0=0.9965$ & $N[1-\frac12{\rm Amp}\,a_1\sin\varphi]$ & $N=0.9971$\\\midrule
+mass & -- & $\beta\simeq\frac{3K}{1-K}$, $K=\frac12\frac{M_c}{M_{\rm crit}(D)}(\frac1{\tau_i}-1)$ & $M_c/M_{\rm crit}(D)\approx0.0010$ (linear; $\approx$0.0017 nonlinear)\\\bottomrule
+\end{tabular}\end{center}
+\vspace{6pt}
+
+\textbf{3. Input parameters implied by the term-by-term solution vs.\ Table~1} of universe\_bestfit\_thinshell.pdf. Each column keeps that fit's shell assumption. Newtonian $\Omega_s$ free: $\Omega_s=1.012$, thin shell $R_{\rm in}=D-R$, $R_{\rm out}=D+R$. Newtonian $\Omega_s$=0.049: $R_{\rm in}=D-1.028\,R$, $R_{\rm out}=D+1.475\,R$. The unknowns are solved from the Sec.~2 equations ($2\ell$ phase $\to\ell_0$, $2\ell$ amplitude $\to\beta\to M_c/M_{\rm crit}$, $1\ell\to$ Amp, $\varphi$, $3\ell$ cos $\to\varepsilon Q\to D$; $C_m,S_m$, $m=1$--3, by least squares). The $a_m(\beta,\gamma)$ come from the code's exact $h(q)$, not the linear formula. Masses use $H_0=70$, $\rho_s=\Omega_s\rho_c$.
+\begin{center}\footnotesize\setlength{\tabcolsep}{5pt}\begin{tabular}{lllll}\toprule
+ & \multicolumn{2}{c}{Newtonian, $\Omega_s$ free} & \multicolumn{2}{c}{Newtonian, $\Omega_s$=0.049}\\
+Quantity & term-by-term & Table 1 & term-by-term & Table 1\\\midrule
+$D/R$ & 6.474 & 6.554 & 2.589 & 3.439\\
+$D$ & $2.857{\times}10^{24}$ km & $2.892{\times}10^{24}$ km & $1.143{\times}10^{24}$ km & $1.517{\times}10^{24}$ km\\
+ & (92.6 Gpc) & (93.7 Gpc) & (37.0 Gpc) & (49.2 Gpc)\\
+$R_{\rm in}$ & 78.3 Gpc & 79.4 Gpc & 22.3 Gpc & 34.5 Gpc\\
+$R_{\rm out}$ & 106.9 Gpc & 108.0 Gpc & 58.1 Gpc & 70.3 Gpc\\
+$M_c$ & $2.38{\times}10^{54}$ kg & $2.47{\times}10^{54}$ kg & $9.41{\times}10^{52}$ kg & $2.31{\times}10^{53}$ kg\\
+ & $1.20{\times}10^{24}$ $M_\odot$ & $1.24{\times}10^{24}$ $M_\odot$ & $4.73{\times}10^{22}$ $M_\odot$ & $1.16{\times}10^{23}$ $M_\odot$\\
+$M_c/M_{\rm crit}(D)$ & 0.00265 & 0.00265 & 0.00164 & 0.00171\\
+$M(<D)$, total & $3.62{\times}10^{56}$ kg & $3.72{\times}10^{56}$ kg & $2.29{\times}10^{54}$ kg & $4.56{\times}10^{54}$ kg\\
+$M_{\rm shell}$, total & $8.50{\times}10^{56}$ kg & $8.71{\times}10^{56}$ kg & $1.03{\times}10^{55}$ kg & $1.70{\times}10^{55}$ kg\\
+$M$ within $R$ & $3.35{\times}10^{54}$ kg & $3.35{\times}10^{54}$ kg & $1.62{\times}10^{53}$ kg & $1.62{\times}10^{53}$ kg\\
+$\Omega_s$ & 1.012$^a$ & 1.012 & 0.049$^a$ & 0.049\\
+$\ell_0$ & 13.2$^\circ$ & 12.8$^\circ$ & 12.8$^\circ$ & 13.0$^\circ$\\
+Amp & $-0.1246$ & $-0.1240$ & $-0.0637$ & $-0.0622$\\
+$\varphi$ & 1.267 rad & 1.264 rad & 0.941 rad & 0.929 rad\\
+$R^2$ vs Migkas & 0.909 & 0.909 & 0.881 & 0.893\\
+$R^2$ vs $A_F$ & 0.987 & 0.987 & 0.970 & 0.977\\
+\bottomrule
+\end{tabular}\end{center}
+\vspace{-3pt}
+{\footnotesize $^a$ Held fixed (that column's shell assumption). The harmonic solve weights $C_m,S_m$ equally, not the 71 points, so its $R^2$ can sit slightly below the point fit.}
+
+
+\textbf{4. Model vs.\ generally accepted values.} Model columns use the Table~1 values of the two Newtonian fits (their saved results and code; $H_0=70$). $R=14.3$ Gpc is the comoving radius of the observable universe.
+\begin{center}\footnotesize\setlength{\tabcolsep}{3.5pt}\renewcommand{\arraystretch}{1.12}\begin{tabular}{>{\raggedright\arraybackslash}p{4.4cm}>{\raggedright\arraybackslash}p{4.1cm}l>{\raggedright\arraybackslash}p{4.25cm}>{\raggedright\arraybackslash}p{4.25cm}}\toprule
+Quantity & Accepted value & Source & Newt.\ $\Omega_s$ free (0.909) & Newt.\ $\Omega_s$=0.049 (0.893)\\\midrule
+Ordinary-matter mass within $R$ & $1.51{\times}10^{53}$ kg & [1]$^a$ & $3.35{\times}10^{54}$ kg (22$\times$) & $1.62{\times}10^{53}$ kg (1.07$\times$)\\
+Total matter mass within $R$ & $9.67{\times}10^{53}$ kg & [1]$^a$ & $3.35{\times}10^{54}$ kg$^b$ & $1.62{\times}10^{53}$ kg$^b$\\
+Ordinary-matter density $\rho_b$ & $4.20{\times}10^{-28}$ kg\,m$^{-3}$ & [1] & $9.32{\times}10^{-27}$ kg\,m$^{-3}$ & $4.51{\times}10^{-28}$ kg\,m$^{-3}$\\
+$\Omega_b$ & 0.0493 & [1] & 1.012 ($=\Omega_s$) & 0.049 ($=\Omega_s$)\\
+Total matter $\Omega_m$ & $0.3153\pm0.0073$ & [1] & 1.012 ($=\Omega_s$, no dark matter) & 0.049 ($=\Omega_s$, no dark matter)\\
+Critical density $\rho_c$ & $8.52{\times}10^{-27}$ kg\,m$^{-3}$ at $H_0$=67.36 & [1] & $9.20{\times}10^{-27}$ kg\,m$^{-3}$ at $H_0$=70 & $9.20{\times}10^{-27}$ kg\,m$^{-3}$ at $H_0$=70\\
+$H_0$ [km\,s$^{-1}$\,Mpc$^{-1}$] & $67.36\pm0.54$ (CMB);\newline $73.04\pm1.04$ (local) & [1]; [2] & 70 (input) & 70 (input)\\
+Earth (Sun) speed relative to the CMB & $369.82\pm0.11$ km\,s$^{-1}$ & [3] & $V_O=k D$ = $5.90{\times}10^{6}$ km\,s$^{-1}$ = 19.7\,$c$ & $V_O=kD$ = $3.24{\times}10^{6}$ km\,s$^{-1}$ = 10.8\,$c$\\
+\quad ratio $V_O$/(CMB dipole speed) & 1 &  & 15{,}958 & 8{,}757\\
+Local Group speed relative to the CMB & $620\pm15$ km\,s$^{-1}$ & [3] & -- (not modelled) & -- (not modelled)\\
+Bulk flow within $150\,h^{-1}$ Mpc & $395\pm29$ km\,s$^{-1}$ & [4] & 5.7 km\,s$^{-1}$$^c$ & 0.3 km\,s$^{-1}$$^c$\\
+Core mass $M_c$ (vs.\ ordinary mass within $R$) & -- &  & $2.47{\times}10^{54}$ kg (16$\times$) & $2.31{\times}10^{53}$ kg (1.5$\times$)\\
+Mass inside $D$ (vs.\ ordinary mass within $R$) & -- &  & $3.72{\times}10^{56}$ kg (2{,}460$\times$) & $4.56{\times}10^{54}$ kg (30$\times$)\\
+Age / $k^{-1}$ & $13.797\pm0.023$ Gyr & [1] & $k^{-1}$ = 13.97 Gyr; integration age 13.83 Gyr & $k^{-1}$ = 13.97 Gyr; integration age 13.89 Gyr\\
+\bottomrule
+\end{tabular}\end{center}
+\vspace{-3pt}
+{\footnotesize $^a$ Derived from [1]: $\Omega_b h^2=0.02237$, $\Omega_m=0.3153$, $H_0=67.36$, times the volume of the $R=14.3$ Gpc sphere. Ratios in brackets: model / accepted ordinary-matter mass within $R$. $^b$ The model has no dark matter, so total = ordinary. $^c$ Mean of $\Delta\vec V$ over a $150\,h^{-1}$ Mpc ball around Earth ($h=0.70$), from the code's exact expansion-rate profile $h(q)$ (second order in radius/$D$; the first-order term averages to zero). The sine factor is not a velocity and is not included.
+
+\textbf{Sources.} [1] Planck Collaboration 2020, A\&A, 641, A6 (Planck 2018 VI, TT,TE,EE+lowE+lensing). [2] Riess, A.~G., et al. 2022, ApJL, 934, L7 (SH0ES). [3] Planck Collaboration 2020, A\&A, 641, A1 (Planck 2018 I; Local Group value after Kogut et al. 1993, ApJ, 419, 1). [4] Watkins, R., et al. 2023, MNRAS, 524, 1885 (CosmicFlows-4). Sedov--Taylor: Taylor, G.~I. 1950, Proc.\ R.\ Soc.\ Lond.\ A, 201, 159; Sedov, L.~I. 1959, Similarity and Dimensional Methods in Mechanics (Academic Press).}
+
+}
+\end{document}

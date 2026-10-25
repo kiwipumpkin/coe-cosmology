@@ -1,0 +1,82 @@
+{
+  "png": "/workspace/cosmology/papers/A_equals_fourier/steps_v3/figs/coe_rings_half_loops_tilt15.png",
+  "pdf": "/workspace/cosmology/papers/A_equals_fourier/steps_v3/figs/coe_rings_half_loops_tilt15.pdf",
+  "script": "/workspace/cosmology/papers/A_equals_fourier/steps_v3/figs/make_coe_rings_half_loops.py",
+  "geometry_module": "/workspace/cosmology/papers/A_equals_fourier/steps_v3/figs/coe_half_loop_geometry.py",
+  "HALF_LOOPS": true,
+  "half_loop_rule": "\u03b8-ray side: keep (n\u00b7\u0176)*sin(\u03b8_mid)>=0 (Panel A: ey*sin(\u03b8_mid)>=0; TOP if sin\u03b8>0, BOTTOM if sin\u03b8<0)",
+  "axis_tilt_b_deg": 15.0,
+  "roll_about_coe_deg": 0.0,
+  "migkas_max_lb_deg": [
+    [
+      17.0,
+      -9.0
+    ],
+    [
+      185.0,
+      0.0
+    ]
+  ],
+  "migkas_min_lb_deg": [
+    [
+      115.0,
+      0.0
+    ],
+    [
+      274.0,
+      -22.0
+    ]
+  ],
+  "strip_theta_max_deg": [
+    30.0,
+    185.0
+  ],
+  "strip_theta_min_deg": [
+    115.0,
+    265.0
+  ],
+  "band_half_width_deg": 9.0,
+  "band_full_width_deg": 18.0,
+  "max_bands_deg": [
+    [
+      21.0,
+      39.0
+    ],
+    [
+      176.0,
+      194.0
+    ]
+  ],
+  "min_bands_deg": [
+    [
+      106.0,
+      124.0
+    ],
+    [
+      256.0,
+      274.0
+    ]
+  ],
+  "CoE_lb_deg": [
+    180.0,
+    -15.0
+  ],
+  "anti_CoE_lb_deg": [
+    0.0,
+    15.0
+  ],
+  "D_hat_galactic_xyz": [
+    0.9659258262890683,
+    0.0,
+    0.25881904510252074
+  ],
+  "angular_sep_migkas_max0_min1_deg": 98.476384,
+  "orientation": "anti-CoE at (0\u00b0, +15\u00b0), CoE at (180\u00b0, \u221215\u00b0); theta-ray-side half-loops (n\u00b7Y)*sin(theta)>=0; roll about CoE = 0\u00b0 CCW",
+  "plot_convention": "Migkas Galactic Mollweide: lon_disp=-ell_wrapped (ell increases LEFT)",
+  "colors": {
+    "MAX_30": "#c0392b",
+    "MAX_185": "#ec7063",
+    "MIN_115": "#1a5276",
+    "MIN_265": "#5dade2"
+  }
+}

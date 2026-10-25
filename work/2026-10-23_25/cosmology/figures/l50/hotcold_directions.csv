@@ -1,0 +1,15 @@
+dataset,feature,type,l,b,source,url,A_region,B_region
+CMB,Dipole (hot pole),high,264.021,48.253,"Planck Collab. 2020, A&A 641 A1, arXiv:1807.06205 (value as quoted in Secrest+2022)",https://arxiv.org/abs/1807.06205,high,high
+CMB,Dipole antipode (cold pole),low,84.021,-48.253,"Planck Collab. 2020, A&A 641 A1, arXiv:1807.06205 (value as quoted in Secrest+2022) antipode",https://arxiv.org/abs/1807.06205,high,low
+CMB,Cold Spot,low,209,-57,"Cruz et al. 2005, MNRAS 356, 29, astro-ph/0405341",https://arxiv.org/abs/astro-ph/0405341,low,high
+CMB,Quadrupole/octopole axis (axis of evil),axis,260,60,"Land & Magueijo 2005, PRL 95, 071301, astro-ph/0502237 ((b,l)=(60,-100))",https://arxiv.org/abs/astro-ph/0502237,low,high
+CMB,"Hemispherical power asymmetry (approx, secondary quote)",high,230,-20,Quoted in Migkas+2020 A&A 636 A15 citing Planck 2014/2016,https://arxiv.org/abs/2004.03305,low,high
+CatWISE quasars,Number-count dipole,high,238,31,"Secrest et al. 2022, ApJL 937, L31, arXiv:2206.05624",https://arxiv.org/abs/2206.05624,low,high
+NVSS radio,Number-count dipole,high,196,46,"Secrest et al. 2022, ApJL 937, L31, arXiv:2206.05624",https://arxiv.org/abs/2206.05624,low,high
+NVSS+WISE,Shared dipole,high,233,34,"Secrest et al. 2022, ApJL 937, L31",https://arxiv.org/abs/2206.05624,low,high
+Migkas 2020 LX-T,Faintest A region (low),low,277,-11,"Migkas et al. 2020, A&A 636, A15, arXiv:2004.03305",https://arxiv.org/abs/2004.03305,high,low
+Migkas 2020 LX-T,Brightest A region (high),high,32,8,"Migkas et al. 2020, A&A 636, A15",https://arxiv.org/abs/2004.03305,high,low
+Migkas 2020 joint 842 clusters,Max anisotropy (low A),low,303,-27,"Migkas et al. 2020, A&A 636, A15",https://arxiv.org/abs/2004.03305,high,low
+Migkas 2021 multi-relation,H0 anisotropy direction (~9% low H0),low,280,-15,"Migkas et al. 2021, A&A 649, A151, arXiv:2103.13904",https://arxiv.org/abs/2103.13904,high,low
+Peculiar velocities,Bulk flow 50 Mpc/h (407 km/s),high,287,8,"Watkins, Feldman & Hudson 2009, MNRAS 392, 743, arXiv:0809.4041",https://arxiv.org/abs/0809.4041,high,low
+Galactic foreground,Loop I / NPS centre,high,329,17.5,Berkhuijsen et al. 1971 (via Bhat & Gupta 2001),,low,high

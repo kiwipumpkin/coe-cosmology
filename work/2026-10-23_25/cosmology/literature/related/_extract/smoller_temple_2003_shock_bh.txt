@@ -1,0 +1,1218 @@
+                                      Mon. Not. R. Astron. Soc. 000, 000–000 (2003)       Printed 12 September 2018     (MN LATEX style file v1.4)
+
+
+
+
+                                      Galactic cannibalism in the galaxy cluster C0337-2522
+                                      at z = 0.59⋆
+
+                                      C. Nipoti1,2, M. Stiavelli2, L. Ciotti1,3, T. Treu4, and P. Rosati5
+                                      1 Dipartimento di Astronomia, Università di Bologna, via Ranzani 1, 40127 Bologna, Italy
+arXiv:astro-ph/0306082v1 4 Jun 2003
+
+
+
+
+                                      2 Space Telescope Science Institute, 3700 San Martin Drive, Baltimore, MD 21218
+
+
+                                      3 Scuola Normale Superiore, Piazza dei Cavalieri 7, 56126 Pisa, Italy
+
+
+                                      4 California Institute of Technology, Astronomy Department, MS 105-24, Pasadena, CA 91125
+
+
+                                      5 European Southern Observatory, Karl-Schwarzschild-Strasse 2, 85748 Garching, Germany
+
+
+
+
+                                      June 4, 2003 accepted
+
+
+
+
+                                                                         ABSTRACT
+
+
+                                                                             According to the galactic cannibalism model, cD galaxies are formed in
+                                                                         the center of galaxy clusters by merging of massive galaxies and accretion of
+                                                                         smaller stellar systems: however, observational examples of the initial phases
+                                                                         of this process are lacking. We have identified a strong candidate for this early
+                                                                         stage of cD galaxy formation: a group of five elliptical galaxies in the core of
+                                                                         the X-ray cluster C0337-2522 at redshift z = 0.59. With the aid of numeri-
+                                                                         cal simulations, in which the galaxies are represented by N-body systems, we
+                                                                         study their dynamical evolution up to z = 0; the cluster dark matter distri-
+                                                                         bution is also described as a N-body system. We explore the hypothesis that
+                                                                         some of the five galaxies will have merged before z = 0, making reasonable
+                                                                         assumptions on the structural and dynamical characteristics of the cluster.
+                                                                         We then compare the properties of the merger remnant with those of real
+                                                                         ellipticals (such as its accordance with the Fundamental Plane, the Faber-
+                                                                         Jackson, and the MBH -σ0 relations) and, in particular, we check whether the
+                                                                         remnant has the surface brightness profile typical of cD galaxies. We find that
+                                                                         a multiple merging event in the considered group of galaxies will take place
+                                                                         before z = 0 and that the merger remnant preserves the Fundamental Plane
+                                                                         and the Faber–Jackson relations, while its behavior with respect to the MBH -
+                                                                         σ0 relation is quite sensitive to the details of black hole merging. However,
+                                                                         the end–products of our simulations are more similar to a “normal” giant
+
+                                      c 2003 RAS
+2    C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+                                 elliptical than to a cD galaxy with its characteristic diffuse luminous halo,
+                                 thus confirming previous indications that the formation of cD galaxies is not
+                                 a necessary consequence of galaxy merging at the cluster center.
+
+                                 Key words:
+                                 galaxies: elliptical and lenticular, cD – galaxies: evolution – galaxies: formation
+                                 – galaxies: kinematics and dynamics – galaxies: clusters: general – black hole
+                                 physics
+
+
+
+
+1    INTRODUCTION
+
+Among the various scenarios proposed for the formation of the brightest cluster galaxies
+(BCGs), and in particular of cD galaxies, perhaps the most prominent is the so–called
+“galactic cannibalism” model (Ostriker & Tremaine 1975, Hausman & Ostriker 1978). In this
+picture super-luminous ellipticals (hereafter Es) are formed in the center of galaxy clusters
+by merging of massive galaxies and by accretion of smaller stellar systems. Indeed, numerical
+simulations have shown that galactic cannibalism is able to reproduce many properties of
+the observed BCGs (see, e.g., Miller 1983, Merritt 1984, Malumuth & Richstone 1984, Bode
+et al. 1994, Athanassoula, Garijo & Garcia Gomez 2001). However, there are still some
+significant discrepancies between the predictions of these simulations and the observations:
+in particular, if one considers the available numerical simulations it is apparent that only a
+small fraction of the simulations ending in a merging event do produce a cD-like galaxy, while
+observations reveal that the presence of a cD galaxy is quite a common property of galaxy
+clusters (see, e.g., Dressler 1984, and references therein). In addition, Thuan & Romanishin
+(1981) pointed out that BCGs in poor clusters do not show the diffuse luminous envelope
+typical of cDs, and this could be an important additional indication that the end–product
+of galactic cannibalism not necessarily consists in a cD galaxy.
+    Observational tracers of the late stages of cD galaxy formation have already been found:
+for example, the high frequency of multiple nuclei in cD galaxies is considered an indication
+of recent merging (see, e.g., Matthews, Morgan & Schmidt 1964, Schneider, Gunn & Hoessel
+1983, Laine et al. 2003). On the contrary, observational examples of the initial stages of
+cD galaxy formation are lacking: according to the scenario depicted above, such systems
+⋆ This paper is partially based on data collected at the European Southern Observatory Very Large Telescope at Paranal
+
+(proposals 63.O-0591 and 64.O-0298)
+
+
+
+
+                                                                                   c 2003 RAS, MNRAS 000, 000–000
+                                 Galactic cannibalism in the cluster C0337-2522 at z = 0.59   3
+would appear as groups of galaxies located in the core of clusters and spiraling, as an effect
+of dynamical friction, towards the cluster center. We have identified a strong candidate
+for such an evolutionary stage: a group of five Es located within a region of a few kpc of
+(projected) linear size near the center of the X-ray selected cluster C0337-2522 at redshift
+z = 0.59 (ROSAT Deep Cluster Survey; Rosati et al. 1998).
+   The main goal of this work is to explore, as a function of the initial conditions and of the
+structural and dynamical characteristics of their parent cluster, how many (if any) of the
+five galaxies under consideration will have merged before z = 0. In addition, we investigate
+whether the remnant has the surface brightness (SB) profile typical of cD galaxies, i.e., it
+possesses a diffuse low luminosity halo. Finally, we check whether some features of Es, such
+as the Fundamental Plane (FP; Djorgovski & Davis 1987; Dressler et al. 1987), the Faber-
+Jackson relation (FJ; Faber & Jackson 1976), the MBH -σ0 relation (Gebhardt et al. 2000;
+Ferrarese & Merritt 2000) and the metallicity gradient (Peletier 1989, Carollo, Danziger
+& Buson 1993), are preserved during the process. This kind of investigation is motivated
+by the fact that BCGs, both giant Es and cDs, follow quite closely the FP and the FJ
+relation determined by less luminous Es (see, e.g., Oegerle & Hoessel 1991), though there
+are indications that a significant fraction of BCGs are brighter than would be expected from
+the FJ relation of normal Es (Malumuth & Kirshner 1981, 1985). BCGs have also metallicity
+gradients consistent with those of normal Es (Fisher, Franx & Illingworth 1995), and those
+for which the mass of the central supermassive black hole (BH) has been measured do follow
+the MBH -σ0 relation (e.g., M87; Gebhardt et al. 2000, Ferrarese & Merritt 2000).
+   We try to address the questions above with the aid of numerical simulations in which the
+galaxies are represented by N-body systems, and the initial conditions are constrained by
+the imaging and kinematic information from our ESO-VLT data. The observations provide,
+for each galaxy, only three phase–space coordinates (the two projected positions and the
+line–of–sight velocity); thus, some assumptions are needed in order to assign the remaining
+initial conditions. In principle, one could make use of non-parametric estimators (see Merritt
+& Trembley 1994); however, given the small number of objects involved, such estimators are
+not practical for our application. To overcome this problem, we modeled the cluster where
+the five galaxies reside as a spherical dark matter (DM) density distribution with adjustable
+total mass, scale length and amount of radial orbital anisotropy in the velocity distribution:
+in order to explore the effects of the dynamical friction of the galaxies against the cluster
+DM, also the cluster is represented as a live N-body system.
+c 2003 RAS, MNRAS 000, 000–000
+4     C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+
+
+
+
+                                                                  C0337-1
+
+
+
+                                         C0337-2
+
+
+
+                                                                        C0337-4
+
+
+                                         C0337-5
+
+
+                                                                      C0037-3
+
+
+
+
+                    5 arcsec
+
+
+Figure 1. VLT-FORS1 I-band image of the galaxy cluster C0337-2522 (N up, E left). The five galaxies are named as in Table 1.
+
+
+
+    This paper is organized as follows. The observations and the galaxy models are presented
+in Section 2 and Section 3, respectively. A description of the simulations is given in Section 4
+and the results are discussed in Section 5. Our conclusions are presented in Section 6.
+
+
+2    OBSERVATIONS AND DATA REDUCTION
+
+The five galaxies that we have considered are located in the core of the X-ray galaxy cluster
+C0337-2522. The I-band image, shown in Fig. 1, was obtained in September 1999, using the
+Focal Reducer and Spectrograph 1 (FORS1) at the ESO Very Large Telescope (VLT) with
+exposure time 2×300s and seeing 0.9′′ . The image was reduced with standard procedure and
+a catalogue of the objects was carried out with the SExtractor package (Bertin & Arnouts
+1996). Spectra for the five elliptical galaxies were obtained in January 2000 with FORS1
+at VLT, using the grism R600 and a 1′′ wide slit with a resolution of ≈ 90 − 100 km s−1 ;
+exposure times were in the range 2700 − 7200 s. The reduction of the spectroscopic data
+and the measurement of the redshifts (reported in Table 1) were performed following the
+
+                                                                                        c 2003 RAS, MNRAS 000, 000–000
+                                       Galactic cannibalism in the cluster C0337-2522 at z = 0.59                                 5
+
+Table 1. Known data for the five galaxies. Positions and velocities are relative to the center of mass of the system. For reference,
+the center of galaxy C0337-4 is at α = 03h37m45.15s and δ = −25o 22′ 36.′′ 1 (J2000). I-band aperture photometry within a 1′′
+diameter aperture together with its random uncertainty is listed in the last column (the zero point of the magnitude scale is
+accurate to 0.1 mags).
+
+                     Galaxy      redshift      x          y          vz         x         y            I
+                                            (arcsec)   (arcsec)    (km/s)     (kpc)     (kpc)        (mag)
+
+                     C0337-1      0.589       0.51       3.78       284.7       3.63   27.00     20.55 ± 0.05
+                     C0337-2      0.578      -0.36       0.94      -1892.9     -4.51    6.71     20.02 ± 0.06
+                     C0337-3      0.590      -0.01       -1.24      473.3      -0.09    -8.86    19.98 ± 0.12
+                     C0337-4      0.592       1.63       -1.04      850.2     11.63     -7.43    20.03 ± 0.05
+                     C0337-5      0.589      -1.49       -2.44      284.7     -10.66   -17.43    20.11 ± 0.05
+
+procedures described in Treu et al. (2001). We note that, due to poor weather conditions and
+reduced reflectivity during the early-stages of operations (see, e.g., Labbé et al. 2003), the
+S/N ratio of the spectroscopic data does not allow us to measure with sufficient accuracy the
+central velocity dispersions for all the five galaxies. Thus, in the present work we are unable
+to use velocity dispersion measurements in order to constrain the total mass of the galaxies
+and their internal dynamics. The details of the photometric measurements will be presented
+in a separate paper (Treu et al. 2003). For the aim of this paper it suffices to say that the
+five galaxies have very similar (within ∼ 0.5 mag, see Table 1) I-band magnitudes, typical of
+bright cluster E/S0 at that redshift (see, e.g., Kelson et al. 1997). We have no information
+about other low–luminosity members of the cluster, and so we decided to consider only the
+five galaxies in the simulations, except for a special simulation described in Section 6. Note
+also that some doubt about the cluster membership of galaxy C0337-2 could be reasonably
+raised by considering its negative and high barycentric velocity: however, the cluster X-ray
+emission (Rosati et al. 1998; see also Vikhlinin et al. 1998) strongly points towards the
+physical association of the central group of galaxies. We decided to consider also galaxy
+C0337-2 as a member of the cluster: its “special” dynamical status will be however evident
+when discussing the results of the simulations.
+
+
+3    MODELS
+
+The initial conditions for the cluster and the galaxies are spherically symmetric density
+distributions. In particular, for the cluster DM distribution we use a Hernquist (1990) model:
+note that in the central regions it is indistinguishable from the Navarro, Frenk & White
+(1996) density profile, while characterized by finite total mass. Thus,
+              Mcl,tot rcl
+ρcl (r) =                 ,                                                                                                    (1)
+            2πr(rcl + r)3
+
+
+c 2003 RAS, MNRAS 000, 000–000
+6      C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+                         2
+Mcl (r)       r
+            
+        =                     ,                                                                (2)
+Mcl,tot   rcl + r
+            GMcl,tot
+Ψcl (r) =            ,                                                                         (3)
+            rcl + r
+where ρcl (r) is the cluster density profile, Mcl (r) and Mcl,tot are the mass within the radius r
+and the total cluster mass, respectively, Ψcl (r) is the relative (positive) potential, and rcl is
+the so–called “core radius”. For the galaxies we use both one and two–component Hernquist
+models (Ciotti 1996), and so the galaxy stellar and DM components are also described
+by equations (1)-(3), where the subscripts “*” and “h” now identify the two distributions,
+respectively. In the two–component models we always assume Mh,tot ≡ 5M∗,tot and rh ≡ 3r∗ .
+    We note that a certain amount of radial orbital anisotropy is expected in some of the cur-
+rent structure formation scenarios of Es (see, e.g., van Albada 1982, Barnes 1992, Hernquist
+1993) and clusters (see, e.g., Crone, Evrard & Richstone 1994, Cole & Lacey 1996, Ghigna
+et al. 1998). However, there exist observational and theoretical indications that the amount
+of radial anisotropy should be modest in the both cases (see, e.g., Carollo et al. 1995, Ciotti
+& Lanzoni 1997, van der Marel et al. 2000, Gerhard et al. 2001, Nipoti, Londrillo & Ciotti
+2002, hereafter NLC02), even at significant look-back times (Koopmans & Treu 2003). Ac-
+cordingly, in a subset of simulations, the cluster and/or the galaxy stellar components are
+radially anisotropic, while for sake of simplicity the galactic DM halo component is always
+isotropic. In practice, radial orbital anisotropy is introduced by using the Osipkov-Merritt
+parameterization (Osipkov 1979; Merritt 1985), where the supporting distribution function
+(DF) for the density profile ρ is given by
+             1 d Z Q d̺   dΨT
+f (Q) = √               √       ,                                                              (4)
+             8π dQ 0 dΨT Q − ΨT
+               2
+
+with
+          r2
+                  !
+̺(r) = 1 + 2 ρ(r),                                                                             (5)
+          ra
+and f (Q) = 0 for Q ≤ 0. The quantity Q is defined as Q ≡ E − L2 /2ra2, where E = ΨT − v 2 /2
+is the relative (positive) energy per unit mass, v is the modulus of the velocity vector, ΨT
+is the relative total gravitational potential, and L is the modulus of the angular momentum
+per unit mass. The parameter ra is the so–called “anisotropy radius”. For r ≫ ra the velocity
+dispersion tensor is radially anisotropic, while for r ≪ ra it is nearly isotropic. The isotropic
+DF is given by equation (4) in the limit ra → ∞. Following the adopted notation, we indicate
+the anisotropy radius of the cluster and of the galaxies as ra,cl and ra,∗ , respectively.
+
+                                                                     c 2003 RAS, MNRAS 000, 000–000
+                                        Galactic cannibalism in the cluster C0337-2522 at z = 0.59                       7
+4     NUMERICAL SIMULATIONS
+
+4.1     Initial conditions
+
+The coordinate system adopted to describe Fig. 1 is defined so that the x-axis runs east–
+west, the y-axis runs south–north, and the z-axis is along the line–of–sight. Observations
+provide only 3 of the required 6 initial phase–space coordinates of the center of mass of each
+galaxy, namely two positions in the (x, y) projected plane and the line–of–sight velocity vz .
+The problem of the orbital evolution of the five galaxies is thus underdetermined, and the
+missing initial coordinates force us towards a probabilistic approach, where several initial
+conditions compatible with the observational constraints are used to evolve the system from
+z = 0.59 to the present. We assume, for simplicity, that the five galaxies have equal masses
+(see Section 2), and that in the inertial reference system centered on the cluster center
+    xi =        yi =       zi =         vx,i =       vy,i =       vz,i = 0, summing over the five galaxies. In
+P           P          P            P            P            P
+
+Table 1 we report the values of the known coordinates for the five galaxies, reduced to the
+reference system (we adopted Ωm = 0.3, ΩΛ = 0.7, and H0 = 65 km s−1 Mpc−1 ).
+      In order to fix the missing coordinates (zi , vx,i , vy,i ) of the galaxies, as a first step we
+constrain the structural and dynamical properties of the cluster model, by choosing the
+values of the parameters sa,cl , rcl , and Mcl,tot (see Section 3). We investigated two cases
+for the DF of the cluster: the isotropic case (corresponding to sa,cl ≡ ra,cl /rcl = ∞) and the
+radially anisotropic case with sa,cl = 1.8, a value that fiducially corresponds to the maximum
+degree of radial anisotropy compatible with stability for the one–component Hernquist model
+(see, e.g., NLC02, and references therein). For rcl , we adopted the values 100 kpc and 300
+kpc (corresponding to half-mass radius rM,cl ≃ 241 kpc and rM,cl ≃ 724 kpc, respectively):
+note that, at least in projection, all the five galaxies are well within rcl . Obviously, for a
+fixed rcl there is a minimum cluster mass (Mmin ) for which all the five galaxies are bound,
+under the implicit assumption that the cluster DM is virialized (consistently with the time
+independence of the cluster potential)† . For each galaxy, the lower limit to the cluster mass
+corresponds to the case of vanishing vx , vy and z: then Mmin is given by the maximum of
+these 5 lower limits. From the values in Table 1 and from equation (3), Mmin ≃ 4.4×1013 M⊙ ,
+when rcl = 100 kpc, and Mmin ≃ 1.28 × 1014 M⊙ , in the case rcl = 300 kpc. It is clear that in
+
+† This condition will be relaxed in a set of 4 simulations described in Section 6, in which we study the evolution of the 5
+
+galaxies in a collapsing cluster DM distribution. Also, in Section 6 we present a simulation in which a population of small
+galaxies is added to the cluster.
+
+
+
+c 2003 RAS, MNRAS 000, 000–000
+8    C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+the limiting case Mcl,tot = Mmin , the least bound of the galaxies has a vanishing phase–space
+volume available: for this reason, in the numerical simulations, for each choice of rcl and sa,cl ,
+                             > Mmin and Mcl,tot ∼ 2Mmin . In the first case one of the galaxies
+we explore the cases Mcl,tot ∼
+is weakly bound, while in the second case all the galaxies are expected to be well bound.
+The exact values of Mcl,tot are reported, for each simulation, in Table 2.
+    Now that the properties of the cluster are fixed, we can use general physical principles
+to constrain the missing phase–space information. A first basic requirement that we impose
+on the unknown coordinates (z, vx , vy ) of each galaxy is that they correspond to objects
+bound to the cluster, i.e., for each galaxy vx2 + vy2 < 2Ψcl (x, y, z) − vz2 , where we neglected the
+galaxy–to–galaxy contribution to the binding energy. In principle, for a given cluster density
+profile, and without extra assumptions on the dynamical status of the five galaxies, all the
+sets of phase–space coordinates corresponding to bound galaxies and to a null barycentric
+motion should be accepted. Under the hypothesis that the five galaxies follow the same DF
+as the cluster DM , we can proceed with a more detailed discussion on the selection of the
+initial conditions.
+    In our approach, we first obtain the coordinate z for each galaxy, by applying the von
+Neumann rejection method (see, e.g., Aarseth, Henon & Wielen 1974) to the mass profile
+of the cluster. Once the position of the galactic center of mass is fixed, we recover the two
+unknown velocities vx and vy , again by application of the von Neumann rejection method
+to the cluster DF, where r and vz are fixed. As a rule, when extracting the initial condi-
+tions, we discard the realizations in which the barycenter position of the group of the 5
+galaxies deviates from the cluster center more than 0.1rcl and/or its velocity is larger than
+0.1(GMcl,tot /rcl )1/2 . We also performed a few simulations in which the barycentric property
+of the five galaxies is perfectly realized, finding that the results of interest are not affected
+by the assumed tolerance on the center of mass of the system.
+    At the beginning of each simulation the five galaxies are identical Hernquist models with
+core radius r∗ ≃ 2.2 kpc (which corresponds to an effective radius Re ≃ 4 kpc). In the
+one–component case the total stellar mass of each galaxy is M∗,tot = 4 × 1011 M⊙ , while in
+the two–component case is reduced to M∗,tot = 2 × 1011 M⊙ , and the galactic DM halo is
+more massive and more extended than the stellar component (Mh,tot = 1012 M⊙ and rh ≃ 6.6
+kpc). When using two–component galaxy models, we reduce the diffuse dark component of
+the cluster by an amount corresponding to 5Mh,tot , so that the total amount of DM in the
+N-body simulations is the same as in the one–component case. We also explore some cases
+                                                                       c 2003 RAS, MNRAS 000, 000–000
+                                 Galactic cannibalism in the cluster C0337-2522 at z = 0.59          9
+of (one–component) radially anisotropic galaxy models, by assuming sa,∗ ≡ ra,∗ /r∗ = 1.8.
+We define the half–mass dynamical time of the galaxies as
+         s
+               3π
+Tdyn ≡             ,                                                                               (6)
+             16GρM
+                                  3
+where ρM = 3(M∗,tot + Mh,tot )/8πrM is the mean density inside the half–mass radius rM of
+the total (stellar plus DM) distribution. With the adopted values of the parameters, the
+half–mass dynamical time of the galaxies is Tdyn ≃ 2.0 × 107 yr and Tdyn ≃ 4.8 × 107 yr in
+the one and two–component case, respectively.
+   Summarizing, our initial conditions are characterized by the properties of the cluster,
+which are fully determined by the three parameters (rcl , Mcl,tot , sa,cl ), by those of the galaxies
+(presence or absence of galactic DM halos, sa,∗ ), and by the particular realization considered.
+Clearly, the results of the simulations depend, for a given set of cluster and galaxies param-
+eters, also on the specific values of the initial positions and velocities of the five galaxies.
+Thus, it is natural to wonder about the statistical significance that should be associated
+to the result of a single simulation or to a set of simulations relative to given cluster and
+galaxies parameters.
+   In order to address this issue, we start by considering the idealized case in which the
+whole available parameter space is explored by the simulations. In this case, any result
+of interest R (e.g., the number of merging galaxies or the time of the last merging) is a
+function of the missing phase–space coordinates: R = R(w1 , w2 , w3 , w4 , w5 ), where wi =
+(zi , vx,i , vy,i ) for i = 1, 5. Under the additional assumption that the dynamical evolution
+of each galaxy is independent of the initial positions and velocities of the other galaxies
+(justified in the considered scenario, in which the dominant dynamical mechanism is the
+dynamical friction of the galaxies against the diffuse cluster DM), the statistical weight
+of each simulation can be obtained by considering the product of the five reduced DFs,
+fi (wi ) = f (xi,0 , yi,0 , vz,i,0, wi ). Accordingly, the statistically weighted result can be written
+                                          Q5
+hRi = N −1 R(w1 , w2 , w3 , w4 , w5 )                    3
+                                            i=1 fi (wi )d wi , where the normalization N is given by
+                R
+
+      R Q5              3
+N =        i=1 fi (wi )d wi . In case of a finite number of simulations N, the previous relations
+
+become
+            N                                       5
+         1 X                                       Y
+hRi =          R(w1,k , w2,k , w3,k , w4,k , w5,k ) fi (wi,k ),                                    (7)
+         N k=1                                     i=1
+
+where now
+      N Y
+      X 5
+N =             fi (wi,k ).                                                                        (8)
+      k=1 i=1
+
+c 2003 RAS, MNRAS 000, 000–000
+10      C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+In practice, we considered as a rule just 2 realizations for each set of parameters (see Table 2),
+while in one case we explored 7 different realizations (simulations #7-13). In any case, we
+will use equations (7) and (8) in order to quantify the expected merging time.
+
+
+4.2     Numerical methods
+
+For the numerical N-body simulations we used both the serial and parallel versions of the
+Springel, Yoshida & White (2001) GADGET code. Once the position and velocity of the
+center of mass of each galaxy were fixed by using the approach described in Section 4.1,
+the numerical realization of the initial conditions for the galaxies and for the cluster DM
+distribution was obtained by following the scheme described in NLC02.
+      For the purpose of this work we are interested in the dynamical evolution of the system
+up to z = 0. Thus, the total time of each simulation is ttot = t(0) − t(zcl ), where zcl = 0.59
+is the redshift of the cluster. In the adopted standard ΛCDM cosmology (see Section 4.1)
+ttot ≃ 6.1 Gyr, a time of the order of 100 Tdyn for the galaxies (see equation 6) and of
+10 − 50 Tdyn for the cluster (depending on Mcl,tot and rcl ). All the relevant properties of
+the numerical simulations are reported in Table 2, where the results within each group
+correspond to different realizations of the initial conditions for the same cluster parameters.
+      The choice of the number of particles was determined by computational time limits and
+by the requirement that all the particles (DM and “stars”) have the same mass. For these
+reasons, simulations characterized by different cluster and galaxy parameters were run with
+different number of particles. We note that in case of high mass ratio between the cluster
+and the galaxies (for example, when rcl = 300 kpc and Mcl,tot ∼ 2Mmin ) even a quite large
+number of cluster particles (Ncl ∼ 2 × 105 ) implies a small number of stellar galaxy particles
+(N∗ = 256).
+      Five parameters characterize GADGET simulations: the cell–opening parameter α, the
+minimum and the maximum time step ∆tmin and ∆tmax , the time step tolerance parameter
+αtol , and the softening parameter ε (Springel et al. 2001). We adopted α = 0.02, ∆tmin = 0,
+∆tmax = Tdyn /100 (where Tdyn is evaluated for the initial conditions of the galaxies), αtol =
+0.05, and ε = Re /5 ≃ 0.36r∗ (where Re is the initial effective radius of the galaxies). With
+these choices we obtained a conservation of the total energy with deviations that do not
+exceed |∆E/E| ≃ 1% over the entire simulation.
+
+
+
+
+                                                                     c 2003 RAS, MNRAS 000, 000–000
+                                     Galactic cannibalism in the cluster C0337-2522 at z = 0.59                                11
+
+
+
+
+Figure 2. Top panels: snapshots of the initial (z = 0.59, left panel) and final (z = 0, right panel) distribution of the stellar
+particles in the projected plane (x,y) for simulation #7. Bottom panels: the same as top panels, but for simulation #7f. We
+recall here that the two simulations have identical initial conditions, the only difference being that in simulation #7 the cluster
+DM is represented with particles, while in simulation #7f as a fixed potential (see Table 2). The effect of dynamical friction is
+apparent when comparing the final snapshots.
+
+
+
+5     RESULTS
+
+5.1     Merging statistics and time-scales
+
+The first goal of this work is to investigate whether any, a few, or all of the five galaxies
+will have merged into a unique system before z = 0, to verify whether the studied system
+is indeed a good candidate to represent a case of galactic cannibalism. In Column 11 of
+
+c 2003 RAS, MNRAS 000, 000–000
+12      C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+
+Table 2. Simulations parameters.
+          #        rcl   Mcl,tot    sa,cl      Ncl    M∗,tot    sa,∗     N∗     Mh,tot /M∗,tot      Nh    Nmerg     Tlast
+
+          1       100        4.8     1.8    235520       4        ∞     2048           0             -       4        3.0
+          2       100        4.8     1.8     29440       4        ∞      256           0             -       4        1.0
+          1a      100        4.8     1.8     58880       4       1.8     512           0             -       4        3.0
+          1h      100        4.8     1.8    107520       2        ∞      512           5          2560       4        2.0
+
+          3       100        5.3      ∞     130560       4        ∞     1024           0             -       4        1.5
+          4       100        5.3      ∞      32640       4        ∞      256           0             -       4        2.0
+          3a      100        5.3      ∞      65280       4       1.8     512           0             -       4        1.5
+          3h      100        5.3      ∞     120320       2        ∞      512           5          2560       4        1.0
+
+          5       100        9.6     1.8     60160       4        ∞      256           0             -       5        3.0
+          6       100        9.6     1.8    120320       4        ∞      512           0             -       5        3.5
+          5a      100        9.6     1.8    120320       4       1.8     512           0             -       5        3.0
+          6h      100        9.6     1.8    115200       2        ∞      256           5          1280       5        3.5
+
+          7       100       10.6      ∞     266240       4        ∞     1024           0             -       5        2.5
+          8       100       10.6      ∞      66560       4        ∞      256           0             -       5        4.5
+          9       100       10.6      ∞      66560       4        ∞      256           0             -       5        3.5
+          10      100       10.6      ∞      66560       4        ∞      256           0             -       5        4.0
+          11      100       10.6      ∞      66560       4        ∞      256           0             -       5        2.0
+          12      100       10.6      ∞      66560       4        ∞      256           0             -       5        2.5
+          13      100       10.6      ∞      33280       4        ∞      128           0             -       5        2.5
+          7a      100       10.6      ∞     133120       4       1.8     512           0             -       5        2.5
+          7h      100       10.6      ∞     128000       2        ∞      256           5          1280       5        2.5
+
+          14      300       13.5     1.8     85120       4        ∞      256           0             -       4        1.5
+          15      300       13.5     1.8     85120       4        ∞      256           0             -       4        2.5
+          14a     300       13.5     1.8    170240       4       1.8     512           0             -       4        1.5
+          14h     300       13.5     1.8    165120       2        ∞      256           5          1280       4        1.5
+
+          16      300       15.3      ∞      96640       4        ∞      256           0             -       4        2.5
+          17      300       15.3      ∞     193280       4        ∞      512           0             -       3        2.0
+          16a     300       15.3      ∞      96640       4       1.8     256           0             -       4        2.5
+          17h     300       15.3      ∞     188160       2        ∞      256           5          1280       5        5.5
+
+          18      300       27.0     1.8    171520       4        ∞      256           0             -       4        3.0
+          19      300       27.0     1.8    171520       4        ∞      256           0             -       5        6.0
+          18a     300       27.0     1.8    171520       4       1.8     256           0             -       4        3.0
+          18h     300       27.0     1.8    168960       2        ∞      128           5           640       5        5.5
+
+          20      300       30.6      ∞     194560       4        ∞      256           0             -       3        1.0
+          21      300       30.6      ∞     194560       4        ∞      256           0             -       4        1.5
+          20a     300       30.6      ∞     194560       4       1.8     256           0             -       3        1.0
+          20h     300       30.6      ∞     192000       2        ∞      128           5           640       3        1.0
+
+          3c      100        5.3      ∞     130560       4        ∞     1024           0              -      4        1.5
+          3cc     100        5.3      ∞     130560       4        ∞     1024           0              -      5        6.0
+          17c     300       15.3      ∞     193280       4        ∞      512           0              -      4        5.0
+          17cc    300       15.3      ∞     193280       4        ∞      512           0              -      4        5.0
+
+          1s      100        4.8     1.8    235520       4        ∞     2048           0              -      4        2.5
+
+          1f      100        4.8        -      -         4        ∞     2048           0              -      2        1.5
+          7f      100       10.6        -      -         4        ∞     1024           0              -      2        0.5
+
+
+First column: name of the simulation. rcl : cluster core radius in kpc. Mcl,tot : cluster mass in units of 1013 M⊙ . sa,cl : cluster
+anisotropy parameter. Ncl : number of cluster particles. M∗,tot : galaxy stellar mass in units of 1011 M⊙ . sa,∗ : galaxy
+anisotropy parameter. N∗ : number of stellar particles per galaxy. Mh,tot : galaxy halo mass in units of 1011 M⊙ . Nh : number
+of halo particles per galaxy. Nmerg : number of merging galaxies. Tlast : time elapsed from the beginning of the simulation
+when the last merging occurs (in Gyrs). The subscript “a” to the simulation name indicates that the galaxies are anisotropic,
+while “h” indicates the presence of galactic DM halos; “c” and “cc” mean that the cluster DM distribution is collapsing, with
+initial virial ratio 2T /|W | = 0.8 and 2T /|W | = 0.5, respectively; the subscript “s” indicates that a population of small
+galaxies is added to the diffuse DM to represent the cluster; finally, “f” means that the cluster potential is maintained fixed
+during the simulation.
+
+
+
+
+                                                                                             c 2003 RAS, MNRAS 000, 000–000
+                             Galactic cannibalism in the cluster C0337-2522 at z = 0.59         13
+Table 2 we report the number Nmerg of galaxies involved in a merging within the total time
+of the simulation (6.1 Gyr), and, in Column 12, the time Tlast at which the last merging
+occurs (calculated from the beginning of the simulation, with a resolution of 0.5 Gyr). A
+first inspection of Table 2 (leaving out the “special” simulations #1f, #7f, #3c,cc, #17c,cc,
+and #1s) reveals that, in all the performed simulations, at least 3 galaxies merge before
+z = 0, thus suggesting that a multiple merging event in the central group of five galaxies in
+the cluster C0337-2522 will take place in the next few Gyrs.
+   As already pointed out in the Introduction, in our investigation we considered the possi-
+bility that the driving mechanism leading to merging is the dynamical friction of the galaxies
+against the cluster DM, making them spiral towards the cluster center. In order to test this
+hypothesis, we also ran two simulations by modeling the cluster as a frozen DM distribution:
+these two simulations (#1f and #7f) have the same initial conditions as simulations #1 and
+#7, respectively. We found that, at variance with simulations #1 and #7, in simulations #1f
+and #7f only 2 galaxies merge before z = 0, and on the basis of these results we confirm
+that the dynamical friction of the galaxies against the cluster DM is the primary mechanism
+responsible for the galactic cannibalism. The merging of two galaxies in case of frozen halo
+can thus be interpreted as a result of the less important effect of galaxy–galaxy interaction.
+In Fig. 2 we plot, as an example, the initial (left panels) and final (right panels) distributions
+in the projected plane (x,y) of the stellar particles for simulations #7 and #7f: at z = 0 a
+single galaxy is formed in case of live cluster DM (upper right panel in Fig. 2), while four
+distinct stellar systems are still present in case of frozen cluster DM (lower right panel in
+Fig. 2).
+   As already pointed out in Section 4.1, for fixed cluster parameters we explored, as a
+rule, 2 (but in one case 7) different realizations of the initial conditions, identified in Table 2
+by groups separated by horizontal lines. One of the realizations in each group is also used
+as initial condition for simulations with anisotropic galaxy models (named in Table 2 with
+the number of the corresponding isotropic simulation with the subscript “a”); similarly, in
+order to explore the effects of the presence of galactic DM halos, for each group we ran
+also a simulation with two–component galaxy models (named in Table 2 with the number
+of the corresponding one–component simulation with the subscript “h”). As expected, the
+number of merging galaxies Nmerg and the characteristic merging time-scale do not change
+if anisotropic galaxy models are used in the initial conditions. We recall here that the choice
+of exploring cases with anisotropic initial galaxy models was aimed at investigating possible
+c 2003 RAS, MNRAS 000, 000–000
+14     C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+effects on the properties of the end–products (see following Sections). As also expected,
+in the two–component simulations (in which by construction more massive galaxy models
+are used) dynamical friction is more effective than in absence of galactic DM. In some of
+the two–component cases more galaxies merge than in the corresponding one–component
+simulations, while in others Nmerg is the same, but Tlast is shorter (of 0.5 − 1 Gyr). We note
+that Tlast is by definition dependent on the number of merging and it is not a direct measure
+of the dynamical friction time-scale (Tfric, that we define empirically as the time in which a
+galaxy reaches the center of the cluster as a consequence of the interaction with the diffuse
+DM). This can be seen, for example, by considering simulations #3 and #7. In the former, 4
+galaxies merge in 1.5 Gyr, while, in the latter, 5 galaxies merge in 2.5 Gyr. In this case, the
+dynamical friction time-scale, as defined above, is of course shorter in the case of 5 merging
+galaxies, even if Tlast is larger.
+     A more detailed analysis is required to address the dependence of the number of merging
+galaxies, and of the merging time-scales, on the cluster parameters and on the particular
+realization considered. We found that Tlast depends on both the cluster parameters and
+the realization. This is not surprising, since the dynamical friction time-scale is a function
+of both the cluster density and the initial velocity of the galaxies. The general trend is
+that the number of merging galaxies is nearly independent of the specific realization for
+given cluster parameters, and does not depend strongly on the cluster properties either. In
+general, Nmerg is found to be insensitive to the adoption of the “minimum mass” hypothesis
+         > Mmin instead of Mcl,tot ∼ 2Mmin ). However, one could ask what is special with the
+(Mcl,tot ∼
+set of simulations from #5 to #13, in all of which 5 galaxies merge. In order to answer this
+question it is necessary to try a rough quantitative evaluation of the dynamical friction time-
+scale Tfric . As it is well known, Tfric ∝ v 3 /ρcl , where v is the modulus of the velocity vector
+of the galaxy and ρcl is the cluster density (see, e.g., Binney & Tremaine 1987): roughly
+ρcl ∼ Mcl,tot /rcl3 , and so Tfric ∝ v 3 rcl3 /Mcl,tot . Thus, it is clear that for fixed galaxy velocity the
+dynamical friction time-scale decreases for decreasing cluster radius and for increasing cluster
+mass, and the factor rcl3 /Mcl,tot is minimized, in our exploration, for cluster parameters of
+simulations from #5 to #13. We also note that in the cases in which 4 galaxies merge it is
+always galaxy C0337-2 (characterized at t = 0 by the highest absolute value of line–of–sight
+velocity, see Table 1) that survives as an individual object for the time interval covered by
+the simulations: a clear consequence of its high velocity.
+     Finally, on the basis of the discussion at the end of Section 4.1., we can determine, for
+                                                                             c 2003 RAS, MNRAS 000, 000–000
+                             Galactic cannibalism in the cluster C0337-2522 at z = 0.59        15
+each set of simulations with the same cluster and galaxy properties, the statistically weighted
+value of the merging time-scale. As an example, we focus here on the set of 7 simulations
+from #7 to #13, in all of which 5 galaxies merge. By applying equation (7), considering
+as result of interest the time of last merging Tlast , we find that in this case the statistically
+weighted last merging time is hTlast i ≃ 2.3 ± 0.3 Gyrs, where the uncertainty has been
+computed by assuming an uncertainty of 0.5 Gyr associated to Tlast in each simulation.
+
+
+5.2     Properties of the end–products
+
+We define end–product of a simulation the stellar system composed by the bound particles
+initially belonging to the galaxies involved in the merging process. In evaluating the binding
+energy of the particles, we consider the gravitational potential of both the cluster and the
+remnant galaxy mass distribution. We found that the fraction of unbound particles is negli-
+gible (in any case smaller than 0.2 per cent), and thus the mass of the remnant is given by
+the sum of the masses of its progenitors.
+      We measured some intrinsic and projected quantities of the end–products: the intrinsic
+axis ratios c/a and b/a (where a, b, c are respectively the longest, intermediate and shortest
+axis of the associated inertia tensor), the angle–averaged half mass radius, the virial velocity
+dispersion and the total angular momentum, and, for a set of 50 random projections, the
+circularized effective radius, the projected central velocity dispersion, the ellipticity and the
+circularized SB profile. In the treatment of the outputs of the numerical simulations we
+followed the scheme described in NLC02, and, in order to limit the uncertainties due to
+discreteness effects, we analysed the intrinsic and “observational” properties of the end–
+products with at least n × 512 particles (where n is the number of galaxies involved in
+merging). To satisfy this condition and to explore the properties of the end–products of all
+the considered initial conditions, we ran, for each choice of the cluster parameters, at least
+one simulation with 512 stellar particles per galaxy. The only exception is the case (rcl = 300
+kpc, Mcl,tot ∼ 2Mmin ) in which we used 256 stellar particles per galaxy.
+
+
+5.2.1 Structural and dynamical parameters
+
+The end–product is in general well described by a triaxial ellipsoid with axis ratios in the
+range 0.5 <
+          ∼ c/a <
+                ∼ 0.9. In a few cases we found oblate systems with c/a ≃ c/b ≃ 0.5 − 0.7.
+These oblate systems are mainly flattened by rotation: their angular momenta (normalized
+
+
+c 2003 RAS, MNRAS 000, 000–000
+16      C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+to the typical scales of the system: total mass M, virial velocity dispersion σV , and half
+mass radius rM ) are, in modulus, among the highest observed in the sample. In addition, a
+significant degree of alignment between the angular momentum and the minor axis of the
+inertia tensor is observed in these cases.
+     In the case of isotropic one–component initial models, the end–products of merging of 5
+galaxies (with total stellar mass M∗,tot ≃ 2 × 1012 M⊙ ) have circularized effective radius in
+the range 12 <      < 21 kpc, and central velocity dispersion (measured inside an aperture
+             ∼ hRie ∼
+of equivalent radius hRie /4)‡ in the range 320 <    < 410 km s−1 . In case of merging of 3
+                                                ∼ σ0 ∼
+or 4 galaxies (M∗,tot ≃ 1.2 × 1012 M⊙ and M∗,tot ≃ 1.6 × 1012 M⊙ , respectively) we found
+10 <      < 12 kpc, and 290 <
+   ∼ hRie ∼                      < 392 km s−1 ; approximately the same ranges are spanned
+                            ∼ σ0 ∼
+by hRie and σ0 of the end–products of merging of radially anisotropic galaxy models. The
+main characteristics of the end–products of two–component galaxies are not substantially
+different from those of the corresponding one–component cases, with the only exception of
+the central velocity dispersion, which is in general quite high (300 <    < 491 km s−1 ), while
+                                                                     ∼ σ0 ∼
+as a rule 7 <      < 17 kpc.
+            ∼ hRie ∼
+     Thus, the values of hRie are always comparable with those measured in real luminous Es
+(see, e.g., Jørgensen, Franx & Kjærgaard 1996). In case of one–component progenitors, also
+σ0 lies in the same range as those measured in observations, while in a few simulations with
+two–component galaxies, the remnant is characterized by very large values of σ0 , unusual
+even for giant Es and cD galaxies in the center of clusters, which have σ0 <         −1
+                                                                           ∼ 400 km s (see,
+e.g., Oegerle & Hoessel 1991).
+
+
+5.2.2 Surface brightness profiles
+
+One of the motivations for this work was to test the hypothesis that the system of five
+galaxies under investigation could be considered the progenitor of a cD galaxy. The most
+recognizable feature of cD galaxies is their SB profile, characterized by the R1/4 law in
+the inner part and by a systematic deviation from this law in the outer part (roughly
+for hRi/hRie >
+             ∼ 3, where hRi is the circularized projected radius), due to the presence of a
+diffuse luminous halo (see, e.g., Sarazin 1986, Tonry 1987). We analysed the circularized SB
+profiles of three different projections (along the three principal axes) of each end–product,
+
+‡ Note that the simulated aperture is of the order of the adopted softening length ε (see Section 4.2). We ran a subset of
+
+simulations with ε/4: while the number of merging galaxies and the merging times resulted unaffected, σ0 resulted increased
+at most by a factor of 1.15, less than the observational scatter and/or projection effects in Figs 4, 5, 6.
+
+
+                                                                                             c 2003 RAS, MNRAS 000, 000–000
+                                   Galactic cannibalism in the cluster C0337-2522 at z = 0.59                           17
+
+
+
+
+Figure 3. Circularized SB profiles of the end–product of 5 merging galaxies (simulation #7) projected along its major axis
+(a; solid squares) and minor axis (c; empty circles). The dashed and dotted curves are the corresponding R1/4 best–fits. For
+clarity, an artificial vertical shift has been applied to the first profile.
+
+
+
+by fitting them with the standard de Vaucouleurs (1948) R1/4 law over the radial range
+0.2 <          < 10: overall, the R1/4 fits can be considered in good agreement with the
+    ∼ hRi/hRie ∼
+profiles (see, e.g., Fig. 3, where we plot the circularized SB profiles of the end–product of
+simulation #7), even though the average residuals between the data and the fits were found
+                 ∼ h∆µi <
+in the range 0.2 <                       −2
+                        ∼ 0.5 (mag arcsec ). These residuals are not small, but the deviation
+from the R1/4 law is not a systematic excess at large radii, as can be seen from Fig. 3. We
+also fitted the profiles with the Sersic (1968) R1/m law:
+                   "                1/m #
+                    R
+                              
+I(R) = I0 exp −b(m)                          ,                                                                          (9)
+                    Re
+where b(m) ≃ 2m−1/3+4/(405m) (Ciotti & Bertin 1999). Thanks to the additional param-
+eter m, we obtained better fits of the SB profiles with the best–fitting parameter m in the
+range 3.5 <
+          ∼m<
+            ∼ 6.8 and 0.05 <
+                           ∼ h∆µi <
+                                                    −2
+                                  ∼ 0.25 (mag arcsec ), while for the Hernquist profile
+of the initial galaxies we found m ≃ 3.5, always over the radial range 0.2 <
+                                                                           ∼ hRi/hRie <
+                                                                                      ∼ 10.
+Thus, the trend is of m increasing with merging, in agreement with what found by Londrillo,
+Nipoti & Ciotti 2003 and Nipoti, Londrillo & Ciotti (2003a, hereafter NLC03a), who con-
+sider higher resolution N-body simulations of merging hierarchies. Also the end–products
+obtained from merging of anisotropic initial systems have SB profiles fitted quite well by
+the R1/4 law up to hRi ≃ 10hRie, with average residuals 0.1 <     < 0.6 (mag arcsec−2 ).
+                                                            ∼ h∆µi∼
+Adopting the Sersic law as fitting function, we find the best–fitting parameter in the range
+
+c 2003 RAS, MNRAS 000, 000–000
+18      C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+
+
+
+
+Figure 4. K-band FP: observational best–fit relation (solid line; Pahre et al. 1998) and its scatter (dotted lines). Filled circle:
+initial conditions. Empty circles and squares: end–products of the merging of isotropic and anisotropic one–component galaxy
+models, respectively (simulations #1, 3, 6, 7, 17, 1a, 3a, 5a, 7a, 14a). Crosses: end–products in the two–component case
+(simulations #1h, 3h, 6h, 7h, 14h, 17h). Triangles and diamonds: merger remnants of simulations #3c and #1s, respectively.
+The plot represents 8 random projections of each end–product.
+
+
+
+3.7 < < 6.4. In addition, there is no significant difference in the light distribution of one
+    ∼m∼
+and two–component end–products: also in the presence of galactic DM halos, there is no
+evidence of any systematic excess at large radii in the SB profile.
+     On the basis of these results, we find no indications that the merger remnant will be
+similar to a cD galaxy. In contrast, it seems that the product of a multiple merging like that
+considered is more similar to a “normal” giant elliptical. This is in agreement with Zhang
+et al. (2002) who have shown, for a different set of initial conditions, that collapse with
+substructure is unable to produce a cD halo (see also Section 6).
+
+
+5.2.3 Fundamental Plane and Faber–Jackson relations
+
+The previous analysis showed that the merging end–products have SB profiles more similar
+to Es than to cDs. However, as briefly discussed in the Introduction, real Es follow well
+
+                                                                                             c 2003 RAS, MNRAS 000, 000–000
+                                    Galactic cannibalism in the cluster C0337-2522 at z = 0.59                              19
+
+
+
+
+Figure 5. Central velocity dispersion of the final system vs. its total K-band luminosity in case of isotropic progenitors,
+progenitors with DM halo, and anisotropic progenitors (for the same subset of simulations as in Fig. 4 and adopting the same
+symbols). LK,i and σ0,i are the common luminosity and central velocity dispersion of each progenitor. The solid and dotted
+lines represent the observed near-infrared FJ relation with its r.m.s. scatter, respectively. Vertical bars span the whole range
+of values of σ0 due to the orientation of the line–of–sight with respect to each end–product: the horizontal split in each group
+of vertical bars is artificial, and it is introduced for clarity.
+
+
+
+defined scaling relations. Thus, it is of particular interest to investigate whether the end–
+products satisfy the FP and the FJ relations. We consider the FP relation in the near-infrared
+K-band, with observational best–fit
+
+log hRie = 1.53 log σ0 + 0.314 hµie − 8.24,                                                                               (10)
+
+where hµie = −2.5 log LK /2πhRie2 is expressed in mag arcsec−2 , σ0 in km s−1 and hRie in kpc
+(LK is the total luminosity in the K-band, the additive constant is evaluated for h = 0.65,
+and the scatter of log hRie around the best–fit has r.m.s.=0.096; Pahre, Djorgovski & de
+Carvalho 1998). In the following we also consider the K-band FJ relation given by Pahre et
+al. (1998):
+
+LK ∝ σ04.14 ,                                                                                                             (11)
+
+with a reported scatter of 0.72 mag (for Coma cluster Es).
+
+c 2003 RAS, MNRAS 000, 000–000
+20     C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+     The FP and FJ relations are known to evolve with redshift consistently with passive
+evolution of the stellar populations in Es: however, in our discussion about the position of
+the end–products with respect to the FP and the FJ, for simplicity the mass–to–light ratio
+Υ∗,K ≡ M∗,tot /LK is maintained constant in the progenitors and in the end–products. Thus,
+in order to place the isotropic one–component progenitors (Re ≃ 4 kpc, M∗,tot = 4×1011 M⊙ ,
+σ0 ≃ 259 km s−1 ) on the FP, we assume Υ∗,K ≃ 1.5 (in the K-band), while the anisotropic
+one–component (Re ≃ 4 kpc, M∗,tot = 4×1011 M⊙ , σ0 ≃ 271 km s−1 ) and the two–component
+(Re ≃ 4 kpc, M∗,tot = 2 × 1011 M⊙ , σ0 ≃ 279 km s−1 ) models require Υ∗,K ≃ 1.4 and
+Υ∗,K ≃ 0.65, respectively. With this choice, the progenitors are placed in all simulations on
+the filled circle at the bottom left of Fig. 4, where equation (10) with its scatter is shown.
+     The position of the end–products (generally not spherically symmetric) in the parameter
+space where the FP is defined depends on the line–of–sight direction: as a consequence, each
+end–product, owing to projection effects, determines a two dimensional region in Fig. 4 where
+it is represented by a set of points corresponding to 8 random projections. A first interesting
+result is that the projection effects, though important, are not larger than the observed FP
+scatter, in accordance with other numerical and analytical explorations (NLC03a, Lanzoni
+& Ciotti 2003). In addition, the behavior of the end–products with respect to the FP shows
+a certain dependence on the characteristics of the initial galaxies. In particular, although
+the accordance with the FP is remarkable for all our simulations (in agreement with what
+found in case of binary merging; NLC03a, Nipoti, Londrillo & Ciotti 2003b, Dantas et al.
+2003, Gonzalez-Garcia & van Albada 2003) the end–products of isotropic one–component
+and two–component galaxy models (empty circles and crosses in Fig. 4, respectively) stay
+preferentially below the FP best–fit, while most of the end–products of anisotropic one–
+component galaxies (empty squares) are found above the FP best–fit.
+     As well known, the fact that a galaxy lies on the edge–on FP does not imply that it
+satisfies the FJ relation too, because the latter contains also information about the position
+of Es on the face–on FP. In Fig. 5 we plot the position of the end–products with respect to
+the near infra-red FJ relation (solid line): the central velocity dispersion and the luminosity
+are normalized to those of the progenitors, which are placed at the origin, while the vertical
+bars in the diagram indicate the range in σ0 associated to each end–product, owing to
+projection effects. Figure 5 shows that, as for the FP, the end–products of the simulations
+do reproduce well the observed FJ. This behavior could be considered at variance with what
+found in NLC03a and Nipoti et al. (2003b), where it was shown that in merging hierarchies
+                                                                   c 2003 RAS, MNRAS 000, 000–000
+                             Galactic cannibalism in the cluster C0337-2522 at z = 0.59      21
+the edge–on FP is usually well reproduced but the FJ is not, in the sense that the end–
+products are characterized by too low σ0 for their mass (luminosity). However, it should be
+noted that the (expected!) deviation from the FJ as a consequence of dissipationless merging
+becomes apparent only after several steps of merging. Indeed, NLC03a found the merging
+end-products to be in accordance with the FJ relation when restricting to only one or two
+merging events.
+
+
+5.3     Multiple merging and the MBH -σ0 relation
+
+As outlined in the Introduction, a question naturally raised in the considered scenario is
+whether the MBH -σ0 relation is preserved by multiple dissipationless merging. This relation,
+between the mass of the central BH and the central velocity dispersion of the host galaxy
+or bulge, can be written in the form
+
+MBH ∝ σ0α ,                                                                                (12)
+
+where the exact value of α is still matter of debate, but seems to be in the range 4 − 5 (see,
+e.g., Gebhardt et al. 2000; Ferrarese & Merritt 2000, Merritt & Ferrarese 2001, Tremaine et
+al. 2002). As in NLC03a, here we try to get some indications about the effects of multiple
+mergings on the MBH -σ0 relation, by using the results of our numerical simulations, though
+in them we do not explicitly take into account the presence of BHs. The plausibility of our
+approach is due to the fact that at the equilibrium the presence of a BH has no significant
+influence on σ0 , as the sphere of influence of a central BH with mass MBH has a fiducial
+radius rBH ≡ GMBH /σ02 , about one order of magnitude smaller than the typical aperture
+radius used to determine σ0 . In addition, Milosavljevic & Merritt (2001) showed that the
+BH binary, a natural consequence of galaxy merging, though modifying the inner density
+profile, does not affect significantly the projected central velocity dispersion measured within
+standard apertures.
+      On the basis of these considerations, we simply assume that each of the five galaxies con-
+tains a BH, whose mass is related to the galaxy central velocity dispersion by equation (12),
+and the merger remnant contains a BH obtained by the merging of the BHs of the progeni-
+tors. As in Ciotti & van Albada (2001) and NLC03a, we consider two extreme situations for
+the BH mass addition: the case of classical combination of masses (MBH,1+2 = MBH,1 +MBH,2 ,
+with no emission of gravitational waves), and the case of maximally efficient radiative merg-
+                              2         2       2
+ing of two non–rotating BHs (MBH,1+2 = MBH,1 + MBH,2 ). Following this choice, in Fig. 6
+
+c 2003 RAS, MNRAS 000, 000–000
+22      C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+
+
+
+
+Figure 6. Left panels: galactic central velocity dispersion vs. BH mass for classical BH merging, in case of isotropic progenitors
+(upper panel), progenitors with DM halo (intermediate panel), and anisotropic progenitors (lower panel); σ0,i and MBH,i are
+the central velocity dispersion and BH mass of the progenitors, respectively. The simulations shown and the symbols are the
+same as in Figs 4 and 5. The bars indicate the range spanned by projection effects: as in Fig. 5, each group of bars is artificially
+split. Dashed and dotted lines represent the MBH -σ0 relation (equation 12) for α = 4 and α = 5, respectively. Right panels:
+same data as in left panels, but for maximally radiative BH merging.
+
+
+
+we plot the central velocity dispersion of the mergers versus the mass of the resulting BH,
+in the case of classical (left panels) and maximally radiative (right panels) BH merging. In
+the diagrams the dashed and dotted lines correspond to α = 4 and α = 5 in equation (12),
+respectively. We note that, owing to the (relatively) small range of galaxy masses explored,
+the difference between the values of σ0 predicted for these two values of the exponent are
+
+                                                                                             c 2003 RAS, MNRAS 000, 000–000
+                             Galactic cannibalism in the cluster C0337-2522 at z = 0.59       23
+always smaller than the projection effects on σ0 of the models (vertical bars): for this reason,
+our considerations will be in practice independent of the exact value of α.
+   We start up considering the case of classical combination of BH masses (Fig. 6, left
+panels). In this case it is obvious that, due to the striking similarity between the exponents
+of the MBH -σ0 and the FJ relations, all the comments made in Section 5.2.3 apply also here.
+The situation changes substantially if maximally radiative BH merging is considered (Fig. 6,
+right panels): in this case the BH mass does not increase linearly with the (stellar) galaxy
+mass and, as a consequence, the MBH -σ0 relation would predict a lower σ0 for the merger
+remnant of given luminosity, with respect to the classical addition case. It is important to
+note that in the present exploration the behavior of the mergers is in better accordance
+with the MBH -σ0 relation in case of a classical addition law than in the case of a maximally
+radiative BH merging, again at variance with the results presented in NLC03a. The origin
+of this seemingly different behavior can be again traced back directly to the preservation of
+the FJ relation discussed in Section 5.2.3.
+   All the results presented in this Section are based on the assumption that the BHs of all
+the merging galaxies will contribute to the formation of the final BH, leading of course to an
+oversimplified scenario. In fact, there are at least two basic mechanisms that could be effective
+in expelling the central BHs in a binary or multiple merging. The first is the slingshot effect:
+if a third galaxy is accreted by a merger remnant still hosting a BH binary, then the escape
+of one of the three BHs is highly possible (see, e.g., Haehnelt & Kauffmann 2002, Volonteri,
+Haardt & Madau 2003). Clearly, this process could be particularly effective in the considered
+situation of multiple merging: from our simulations it results that multiple mergings are
+expected to happen in few Gyrs, i.e., with time-scales hardly longer than those of BH
+merging (see, e.g., Yu 2002). A second physical mechanism that could produce the ejection
+of the resulting BH is the so–called “kick-velocity” effect: if, in a gravitationally radiative
+BH merging, a fraction (even a few thousandths) of the mass of the BH binary is emitted
+anisotropically as gravitational waves, the recoil due to linear momentum conservation is
+sufficient to expel the two merging BHs from the remnant (see, e.g., Flanagan & Hughes
+1998, Ciotti & van Albada 2001). We note that, in any case, a substantial amount of BH
+ejection during merging would necessarily lead to the violation of the observed linear relation
+between the mass of the central BH and the mass of the host bulge or galaxy (the so–called
+Magorrian relation; Magorrian et al. 1998). Thus, the preservation of the MBH -σ0 and of the
+
+
+c 2003 RAS, MNRAS 000, 000–000
+24      C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+
+
+
+
+Figure 7. Projected metallicity versus circularized radius. Solid line: initial metallicity distribution of each progenitor galaxy.
+Filled and empty symbols: metallicity distribution of the end–product of simulation #1 projected along the major and minor
+axis, respectively.
+
+
+
+Magorrian relations represents an important (and difficult) astrophysical problem related to
+the formation of BCGs.
+
+
+5.4     Metallicity gradients
+
+As it is well known, metallicity gradients are a common feature of Es (Peletier 1989, Carollo
+et al. 1993), and their robustness in the context of galaxy merging was early recognized as
+an important constraint for scenarios of galaxy formation. For example, White (1980) found
+that the remnant of the merging of two equal mass galaxies has a metallicity gradient ∼ 20
+per cent smaller than its progenitors. This result suggested that in a scenario of (dissipa-
+tionless) hierarchical merging the gradients could be erased in few subsequent mergings. It is
+interesting to extend these considerations to the case of multiple merging like that analysed
+in this work, even if in the present case their constraining power is substantially reduced. In
+fact, BCGs normally reside at the center of clusters, where metal rich intracluster medium
+flows (such as cooling flows) alter considerably the metallicity distribution.
+      From a dynamical point of view, the observed projected gradients correspond to phase–
+space projections of the intrinsic metallicity distribution of stars in their orbits. Ciotti,
+Stiavelli & Braccesi (1995) described a simple technique to derive the intrinsic metallicity
+distribution in the case of spherically symmetric galaxies. By adopting the same approach, in
+
+
+                                                                                             c 2003 RAS, MNRAS 000, 000–000
+                             Galactic cannibalism in the cluster C0337-2522 at z = 0.59        25
+the initial conditions of the one–component simulations we assigned to each stellar particle
+a metallicity given by
+Z         Q
+   = 1.3      + 0.8,                                                                         (13)
+Z⊙       Ψ(0)
+where Z⊙ is the solar metallicity, Ψ(0) is the central relative potential of each progenitor, and
+Q is defined below equation (5). This choice corresponds to a projected central metallicity
+Z(R = 0) ≃ 2Z⊙ . In our investigation we assume that the metallicity of each particle
+remains constant during the dynamical evolution of the system. We quantified the projected
+metallicity gradients, in both the initial galaxies and the end–products, by measuring the
+“center-to-edge metallicity difference” as defined by White (1980):
+       hZiin − hZiout
+∆Z =                  ,                                                                      (14)
+            hZi
+where hZi, hZiin , and hZiout are the metallicities averaged over the whole distribution,
+inside the projected radius enclosing 1/3 of the total mass, and outside the projected radius
+enclosing 2/3 of the total mass, respectively. We measured ∆Z of the merger remnants of
+isotropic and anisotropic one–component progenitors, considering the projections along the
+three principal axes. In all the cases we found that it is significantly lower in the end–products
+than in the progenitors: the decrease in ∆Z is in the range 30 − 60% of the initial value.
+This result is presented with an example in Fig. 7, where we plot the projected metallicity
+as a function of the circularized radius for the end–product of the merging of 4 galaxies
+(simulation #1), and, for comparison, for its progenitors. On the basis of the described
+results, we can conclude that in case of multiple merging the observed reduction of the
+metallicity gradient is consistent with the repeated application of “White’s 20% rule”. Note
+also that, if the merging galaxies contain a substantial gas fraction, the metallicity gradient
+could be restored by a significant star formation event. Interestingly, Carollo et al. (1993)
+find that the correlation between mass and the metallicity gradient fails for high mass Es,
+indicating that in some cases very massive galaxies have smaller gradient than less luminous
+Es.
+
+
+6     DISCUSSION AND CONCLUSIONS
+
+From a theoretical point of view, it is well known that galactic cannibalism can be an
+effective mechanism for the formation of BCGs in general and cDs in particular. On the
+other hand, just circumstantial evidence of this process comes from the observations, and
+
+c 2003 RAS, MNRAS 000, 000–000
+26   C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+only of the phase after merging (for example, BCGs with multiple nuclei). In this paper we
+explored, with the aid of N-body simulations based on the observationally available phase–
+space information, the hypothesis that the group of five Es in the core of the X-ray galaxy
+cluster C0337-2252 is a strong candidate for the galactic cannibalism scenario. We summarize
+below the main results and then we discuss, with the aid of a few “ad hoc” simulations, a
+couple of important points raised by the presented results.
+
+  • In all of the explored cases at least 3 galaxies merge before z = 0. For some values of the
+parameters all the 5 galaxies are involved in the merging. The number of merging galaxies
+depends on the cluster structure and, in some cases, also on the particular realization of the
+initial condition for a given cluster model. It is shown that the driving mechanism of the
+merging process is the dynamical friction of the galaxies against the diffuse cluster DM: if
+the live halo is substituted by a fixed potential the number of merging is drastically reduced.
+  • The merger remnants are always similar in their main structural and dynamical prop-
+erties to a real BCG. Their SB profiles are well represented by the de Vaucouleurs law up
+to ∼ 10hRie , with no evidence of the diffuse and extended halo typical of cD galaxies (see
+discussion below).
+  • It is found that the merging end–products nicely follow the K-band FP and FJ relations,
+under the hypothesis that the five galaxies are placed on these two scaling relations, by an
+appropriate choice of the stellar mass-to light ratio. These results are only weakly dependent
+on the specific structure and dynamics of the galaxy models used as initial conditions (i.e.,
+presence of DM, orbital anisotropy).
+  • The behavior of the end–products with respect to the MBH -σ0 relation depends on the
+details of the BH merging. Assuming that each galaxy initially hosts at its center a super-
+massive BH (whose mass follows the observed MBH -σ0 relation) and that all the involved
+BHs finally merge, we found that the MBH -σ0 relation is preserved if the BH masses add
+classically (in accordance with the results on the FJ relation), while the end–products lie
+systematically above the observed MBH -σ0 relation in case of substantial emission of gravi-
+tational waves.
+  • The metallicity gradient in the remnants is 30 − 60% lower than in the initial galaxies.
+This result is consistent with the results of binary merging obtained by White (1980), and
+also with observations (Carollo et al. 1993), reporting a range of metallicity gradients in the
+most massive Es.
+
+
+                                                                   c 2003 RAS, MNRAS 000, 000–000
+                             Galactic cannibalism in the cluster C0337-2522 at z = 0.59     27
+   Thus, the results presented in this paper strongly suggest that the observed system of
+five galaxies in the galaxy cluster C0337-2252 could be a BCG in formation in the phase
+before merging. However, as already pointed out, this quite successful scenario is unable to
+reproduce the diffuse low luminosity halo of cD galaxies, which are a substantial fraction
+of BCGs. It has been speculated that the interaction of a central massive galaxies (like
+that produced in the considered multiple merging) with smaller and lower density galaxies
+could be responsible of its formation; another dynamical aspect that could be important
+in establishing the cD profile is the cosmological collapse of the DM cluster distribution
+during the galactic cannibalism event. In order to qualitatively address these two important
+points, we also ran 5 additional simulations, denominated as #3c,cc, #17c,cc, and #1s
+in Table 2. In particular, in simulation #1s we used the same initial condition as in #1,
+but we also added a population of 50 smaller galaxies (again modeled as one–component
+Hernquist models with M∗,tot = 5 × 1010 M⊙ , r∗ ≃ 0.55 kpc, and N∗ = 256). This additional
+population was distributed in the cluster by extraction from the cluster DF. Two are the
+main results of simulation #1s: the first is the fact that the number of merging galaxies is
+still 4, but also 29 smaller galaxies are cannibalized at the cluster center. Thus, the total
+mass of the end–product is approximately a factor of 1.9 larger than the corresponding
+end–product of simulation #1. The second result is the fact that the SB profile in #1s
+does not present the CD extended halo, while the end–product still nicely obeys the FP
+and FJ relations (diamonds in Figs 4, 5). In the other 4 simulations we explore a few cases
+in which at z = 0.59 the cluster is collapsing. In particular, we reran simulations #3 and
+#17, assuming an initial virial ratio for the cluster DM component 2T /|W | = 0.8 (#3c,
+#17c) and 2T /|W | = 0.5 (#3cc, #17cc). Interestingly, in simulations #3cc, #17c, #17cc,
+the number of merging galaxies increases with respect to the case of a virialized cluster (see
+Table 2). In any case, we found that the structural and dynamical properties of these four
+merger remnants, as well as their behavior with respect to the FP, the FJ and the MBH -σ0
+relations (triangles in Figs 4, 5, 6), are similar to that of the other isotropic galaxy models
+explored. Again, while the general picture of the paper is confirmed, the simulations fail to
+reproduce the characteristic cD envelope.
+   We could then ask whether dissipationless merging, which works quite well in the pre-
+sented case of BCG formation, could be a universal mechanism for the formation of Es in
+general. NLC03a showed that it is unlikely that (binary) dissipationless galaxy merging is
+the dominant mechanism for the formation of normal Es, as it fails to reproduce some of
+c 2003 RAS, MNRAS 000, 000–000
+28     C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+their observed scaling relations over a large range in luminosity. However, NLC03a numerical
+simulations, as well as ours (indicating that many properties of the BCGs are reproduced
+by multiple merging of a few luminous Es), show that few merging events are compatible
+with the existence of the observed thin FP of Es, though the remnants have in general lower
+central velocity dispersion and larger effective radius, with respect to real Es. Remarkably,
+real BCGs do follow quite closely the FP, and, on the other hand, many of them have lower
+σ0 and mean effective SB than predicted by the FJ and the radius-luminosity relation of
+normal Es, respectively (see, e.g., Oegerle & Hoessel 1991).
+     Thus, we conclude that, while all the simulations we ran strongly support one of the two
+ingredients necessary for the formation of a cD galaxy, namely the galactic cannibalism at
+the galaxy center, they are unable to reproduce the peculiar extended halo of cDs. This is not
+at variance with previous works that showed that the halo formation is a more “delicate”
+dynamical phenomenon than the straight galaxy merging. It should be also recalled that
+observations suggest that cDs seem to be common only at the center of rich clusters, while
+in small clusters BCGs have a R1/4 luminosity profile over a large radial range (Thuan &
+Romanishin 1981). Perhaps very high resolution simulations of satellite accretion in different
+environments will be able to reveal the dynamical conditions necessary for the formation of
+cDs, along a line of research already started (see, e.g., Athanassoula et al. 2001).
+
+
+ACKNOWLEDGMENTS
+
+We would like to thank Andrew Benson, Oleg Gnedin, Pasquale Londrillo, Jeremiah Ostriker,
+and the anonymous referee for their useful comments on the manuscript. C.N. is grateful
+to STScI (Baltimore) for its hospitality, and to CINECA (Bologna) for assistance with the
+use of the Cray T3E and of the IBM Linux Cluster. C.N. was supported by the STScI
+Collaborative Visitors Program; L.C. by MURST Cofin 2000. M.S. is partially supported by
+NASA NAG5-12458.
+
+
+REFERENCES
+Aarseth S.J., Henon M., Wielen R., 1974, A&A, 37, 183
+Athanassoula E., Garijo A., Garcia Gomez C., 2001, MNRAS, 321, 353
+Barnes J.E., 1992, ApJ, 393, 484
+Bertin E., Arnouts S., 1996, A&AS, 117, 393
+Binney J.J., Tremaine S.D., 1987, Galactic Dynamics, Princeton University Press, Princeton
+
+
+
+                                                                                       c 2003 RAS, MNRAS 000, 000–000
+                                        Galactic cannibalism in the cluster C0337-2522 at z = 0.59               29
+Bode P.W., Berrington R.C., Cohn H.N., Lugger P.M., 1994, ApJ, 433, 479
+Carollo C.M., Danziger I.J., Buson L., 1993, MNRAS, 265, 553
+Carollo C.M., de Zeeuw P.T., van der Marel R.P., Danziger I.J., Qian E.E., 1995, ApJ, 441, L25
+Ciotti L., 1996, ApJ, 471, 68
+Ciotti L., Bertin G., 1999, A&A, 352, 447
+Ciotti L., Lanzoni B., 1997, A&A, 321, 724
+Ciotti L., van Albada T.S., 2001, ApJ, 552, L13
+Ciotti L., Stiavelli M., Braccesi A., 1995, MNRAS, 276, 961
+Cole S., Lacey C., 1996, MNRAS, 281, 716
+Crone M.M., Evrard A.E., Richstone D.O., 1994, ApJ, 434, 402
+Dantas C.C., Capelato H.V., Ribeiro A.L.B., de Carvalho R.R., 2003, MNRAS, 340, 398
+de Vaucouleurs G., 1948, Ann. d’Astroph., 11, 247
+Djorgovski S., Davis M., 1987, ApJ, 313, 59
+Dressler A., 1984, ARAA, 22, 185
+Dressler A., Lynden-Bell D., Burstein D., Davies R.L., Faber S.M., Terlevich R., Wegner G., 1987, ApJ, 313, 42
+Faber S.M., Jackson R.E., 1976, ApJ, 204, 668
+Ferrarese L., Merritt D., 2000, ApJ, 539, L9
+Fisher D., Franx M., Illingworth G., 1995, ApJ, 448, 119
+Flanagan E.E., Hughes S.A., 1998, PhRvD, 57, 4535
+Gebhardt K. et al., 2000, ApJ, 539, L13
+Gerhard O., Kronawitter A., Saglia R.P., Bender R., 2001, AJ, 121, 1936
+Ghigna S., Moore B., Governato F., Lake G., Quinn T., Stadel J., 1998, MNRAS, 300, 146
+Gonzalez-Garcia A.C., van Albada T.S., 2003, submitted to MNRAS
+Haehnelt M.G., Kauffmann G., 2002, MNRAS, 336, L61
+Hausman M.A., Ostriker J.P., 1978, ApJ, 224, 320
+Hernquist L., 1990, ApJ, 356, 359
+Hernquist L., 1993, ApJ, 409, 548
+Jørgensen I., Franx M., Kjærgaard P., 1996, MNRAS, 280, 167
+Kelson D.D., van Dokkum P.G., Franx M., Illingworth G.D., Fabricant D., 1997, ApJ, 478, L13
+Koopmans L.V.E., Treu T., 2003, ApJ, 583, 606
+Labbé I. et al., 2003, AJ, 125, 1107
+Laine S., van der Marel R.P., Lauer T.R., Postman M., O’Dea C.P., Owen F.N., 2003, AJ, 125, 478
+Lanzoni B., Ciotti L., 2003, A&A, in press (astro-ph/0303553)
+Londrillo P., Nipoti C., Ciotti L., 2003, in press (astro-ph/0212130)
+Magorrian J. et al., 1998, AJ, 115, 2285
+Malumuth E.M., Kirshner R.P., 1981, ApJ, 251, 508
+Malumuth E.M., Kirshner R.P., 1985, ApJ, 291, 8
+Malumuth E.M., Richstone D.O., 1984, ApJ, 276, 413
+Matthews T.A., Morgan W.W., Schmidt M., 1964, ApJ, 139, 781
+Merritt D., 1984, ApJ, 276, 26
+Merritt D., 1985, AJ, 90, 102
+Merritt D., Ferrarese L., 2001, Apj, 547,140
+Merritt D., Trembley B., 1994, AJ, 108, 514
+Miller G.E., 1983, ApJ, 268, 495
+Milosavljevic M., Merritt D., 2001, ApJ, 563, 34
+
+
+
+c 2003 RAS, MNRAS 000, 000–000
+30      C. Nipoti, M. Stiavelli, L. Ciotti, T. Treu and P. Rosati
+Navarro J.F., Frenk C.S., White S.D.M., 1996, ApJ, 462, 563
+Nipoti C., Londrillo P., Ciotti L., 2002, MNRAS, 332, 901 (NLC02)
+Nipoti C., Londrillo P., Ciotti L., 2003a, MNRAS, in press (astro-ph/0302423; NLC03a)
+Nipoti C., Londrillo P., Ciotti L., 2003b, in The Mass of Galaxies at Low and High Redshift, Proceedings of the ESO Workshop
+     held in Venice, Italy, 24-26 October 2001, R. Bender and A. Renzini eds (Berlin: Springer), 70
+Oegerle W.R., Hoessel J.G., 1991, ApJ, 375, 150
+Osipkov L.P., 1979, Soviet Astron. Lett., 5, 42
+Ostriker J.P., Tremaine S.D., 1975, ApJ, 202, L13
+Pahre M.A., Djorgovski S.G., de Carvalho R.R., 1998, AJ, 116, 1591
+Peletier R., 1989, PhD thesis, Univ. Groningen
+Rosati P., della Ceca R., Norman C., Giacconi R., 1998, ApJ, 492, L21
+Springel V., Yoshida N., White S.D.M., 2001, New Astronomy, 6, 79
+Sarazin C.L., 1986, Rev. Mod. Phys., 58, 1
+Schneider D.P., Gunn J.E., Hoessel J.G., 1983, ApJ, 268, 476
+Sersic J.L., 1968, Atlas de galaxias australes. Observatorio Astronomico, Cordoba
+Thuan T.X., Romanishin W., 1981, ApJ, 248, 439
+Tonry J.L., 1987, IAUS, 127, 89
+Treu T., Stiavelli M., Møller P., Casertano S., Bertin G., 2001, MNRAS, 326, 221
+Treu T. et al., 2003, in preparation
+Tremaine S.D. et al. 2002, ApJ, 574, 740
+van Albada, T.S., 1982, MNRAS, 201, 939
+van der Marel R.P., Magorrian J., Carlberg R.G., Yee H.K.C., Ellingson E., 2000, AJ, 119, 2038
+Vikhlinin A., McNamara B.R., Forman W., Jones C., Quintana H., Hornstrup A., 1998, ApJ, 502, 558
+Volonteri M., Haardt F., Madau P., 2003, ApJ, 582, 559
+White S.D.M, 1980, MNRAS, 191, 1
+Yu Q., 2002, MNRAS, 331, 953
+Zhang B., Wyse R.F.G., Stiavelli M., Silk J., 2002, MNRAS, 332, 647
+
+
+
+
+                                                                                         c 2003 RAS, MNRAS 000, 000–000
+

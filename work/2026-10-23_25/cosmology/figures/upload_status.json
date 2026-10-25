@@ -1,0 +1,61 @@
+{
+  "folderId": "1wZYStJhpdowbcjTkkS9TOImAtt9_GvzD",
+  "local_dir": "/workspace/cosmology/figures/",
+  "regenerate": "python3 make_figures.py (venv: /workspace/cosmology/.venv)",
+  "figures": [
+    {
+      "local": "/workspace/cosmology/figures/geometry.png",
+      "drive_title": "Fig1 geometry \u2014 CoE and observer.png",
+      "fileId": "1UrPP2QrlODqgDPDcuMpPZMCCIRvZuo9c",
+      "url": "https://drive.google.com/file/d/1UrPP2QrlODqgDPDcuMpPZMCCIRvZuo9c/view?usp=drivesdk",
+      "caption": "2D schematic: CoE at origin, observer at (D,0), sources on circle about observer; labels d, r, \u03c6, D\u0302."
+    },
+    {
+      "local": "/workspace/cosmology/figures/density_mass.png",
+      "drive_title": "Fig2 density_mass \u2014 rho and m(r) eq 3.13.png",
+      "fileId": "1MT_yLWqMnAEzzj7qJx_r5R7TCco4-cOC",
+      "url": "https://drive.google.com/file/d/1MT_yLWqMnAEzzj7qJx_r5R7TCco4-cOC/view?usp=drivesdk",
+      "caption": "Phase A eq. 3.13: \u03c1/\u03c10=e^{-r/rs} and m(r)/M cumulative; mark r=D (D/rs=3)."
+    },
+    {
+      "local": "/workspace/cosmology/figures/Hobs_vs_angle.png",
+      "drive_title": "Fig3 Hobs_vs_angle \u2014 P2 vs poor dipole fit.png",
+      "fileId": "16zn-yYQJNT9vMP2ORblNjEbtz1B2Aujn",
+      "url": "https://drive.google.com/file/d/16zn-yYQJNT9vMP2ORblNjEbtz1B2Aujn/view?usp=drivesdk",
+      "caption": "H_obs/H\u22121 vs \u03c6: flat homology; P2-like at \u03ba=0.15,\u03b1=1,d/D=0.1; dashed A cos\u03c6 is poor Migkas template."
+    },
+    {
+      "local": "/workspace/cosmology/figures/multipoles.png",
+      "drive_title": "Fig4 multipoles \u2014 C0 C1 C2 C3 at dD=0.1.png",
+      "fileId": "1teOKhdku9hDB3xCyYsweLZh401EC4gaQ",
+      "url": "https://drive.google.com/file/d/1teOKhdku9hDB3xCyYsweLZh401EC4gaQ/view?usp=drivesdk",
+      "caption": "Bar chart C0\u2026C3 at d/D=0.1, \u03ba=0.15: C2=0.30 dominant, C1\u22480, C3=\u22120.045."
+    },
+    {
+      "local": "/workspace/cosmology/figures/sky_mollweide.png",
+      "drive_title": "Fig5 sky_mollweide \u2014 P2 pattern preferred axis.png",
+      "fileId": "1Vtxb06NO9Dtb8wHK3aZwlZGamR5OEK0L",
+      "url": "https://drive.google.com/file/d/1Vtxb06NO9Dtb8wHK3aZwlZGamR5OEK0L/view?usp=drivesdk",
+      "caption": "Mollweide map of leading P2 anisotropy with preferred axis D\u0302; quadrupole lobes, not a dipole."
+    },
+    {
+      "local": "/workspace/cosmology/figures/kappa_amplitude.png",
+      "drive_title": "Fig6 kappa_amplitude \u2014 half-ptp vs kappa.png",
+      "fileId": "1Sg6zktaCmUfub7YgbsQm9MNuZlnli7wk",
+      "url": "https://drive.google.com/file/d/1Sg6zktaCmUfub7YgbsQm9MNuZlnli7wk/view?usp=drivesdk",
+      "caption": "Half peak-to-peak anisotropy vs \u03ba; \u03ba_natural=0.15 marked (half-ptp\u22480.25)."
+    }
+  ],
+  "combined_pdf": {
+    "local": "/workspace/cosmology/figures/ST_centered_universe_figures.pdf",
+    "drive_title": "ST centered-universe figures \u2014 combined.pdf",
+    "fileId": "1vVd_nx0nFOeS3XCjt-lD-pxhvtBRUJpv",
+    "url": "https://drive.google.com/file/d/1vVd_nx0nFOeS3XCjt-lD-pxhvtBRUJpv/view?usp=drivesdk"
+  },
+  "captions_md": {
+    "local": "/workspace/cosmology/figures/captions.md",
+    "drive_title": "ST figures captions.md",
+    "fileId": "1b4oeaQLsKnZ80RTSwLigHWwAkSNsztOZ",
+    "url": "https://drive.google.com/file/d/1b4oeaQLsKnZ80RTSwLigHWwAkSNsztOZ/view?usp=drivesdk"
+  }
+}

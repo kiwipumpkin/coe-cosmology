@@ -1,0 +1,14 @@
+Figure 10: CoE Doppler term plus a multipole partner: residuals after a dipole+P2 cancellation and after an ℓ ≤ 4
+partner.
+
+
+7    What is interesting
+The Migkas anisotropy is a gravitational effect: free-fall relative to an off-centre CoE. On the last-scattering sky
+that same gravity produces a temperature multipole. Separately, a pure electromagnetic Doppler pattern—from
+radial motion of emitting surfaces—has nearly the same angular shape. The kill function is that electromag-
+netic temperature multipole written opposite in sign to the gravitational residual. Today’s result is that this
+gravitational kill tracks the electromagnetic Doppler morphology across the distances scanned. That morpho-
+
+
+                                                        11
+

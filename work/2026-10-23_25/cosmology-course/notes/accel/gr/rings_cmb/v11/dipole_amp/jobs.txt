@@ -1,0 +1,21 @@
+SIMUL=0.25 python3 dist2.py s0.25 soft 4.362106762731466 own 5 s_0.25.npz
+SIMUL=0.5 python3 dist2.py s0.5 soft 4.362106762731466 own 5 s_0.5.npz
+SIMUL=0.75 python3 dist2.py s0.75 soft 4.362106762731466 own 5 s_0.75.npz
+SIMUL=0.9 python3 dist2.py s0.9 soft 4.362106762731466 own 5 s_0.9.npz
+SIMUL=0.95 python3 dist2.py s0.95 soft 4.362106762731466 own 5 s_0.95.npz
+SIMUL=0.99 python3 dist2.py s0.99 soft 4.362106762731466 own 5 s_0.99.npz
+SIMUL=1 python3 dist2.py s1 soft 4.362106762731466 own 5 s_1.npz
+RREC=0.3 TMIN=1e-7 python3 dist2.py r0.3 soft 4.362106762731466 own 5 r_0.3.npz
+RREC=0.2 TMIN=1e-7 python3 dist2.py r0.2 soft 4.362106762731466 own 5 r_0.2.npz
+RREC=0.1 TMIN=1e-7 python3 dist2.py r0.1 soft 4.362106762731466 own 5 r_0.1.npz
+RREC=0.05 TMIN=1e-7 python3 dist2.py r0.05 soft 4.362106762731466 own 5 r_0.05.npz
+RREC=0.02 TMIN=1e-7 python3 dist2.py r0.02 soft 4.362106762731466 own 5 r_0.02.npz
+RREC=0.01 TMIN=1e-7 python3 dist2.py r0.01 soft 4.362106762731466 own 5 r_0.01.npz
+RREC=0.005 TMIN=1e-7 python3 dist2.py r0.005 soft 4.362106762731466 own 5 r_0.005.npz
+RREC=0.002 TMIN=1e-7 python3 dist2.py r0.002 soft 4.362106762731466 own 5 r_0.002.npz
+RREC=0.001 TMIN=1e-7 python3 dist2.py r0.001 soft 4.362106762731466 own 5 r_0.001.npz
+U=1 python3 dist2.py u1 soft 4.362106762731466 own 5 u_1.npz
+U=2 python3 dist2.py u2 soft 4.362106762731466 own 5 u_2.npz
+U=8 python3 dist2.py u8 soft 4.362106762731466 own 5 u_8.npz
+U=16 python3 dist2.py u16 soft 4.362106762731466 own 5 u_16.npz
+U=30 python3 dist2.py u30 soft 4.362106762731466 own 5 u_30.npz

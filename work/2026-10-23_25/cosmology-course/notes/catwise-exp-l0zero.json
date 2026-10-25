@@ -1,0 +1,29 @@
+{
+  "name": "pure_exp_DL_mc_l0zero",
+  "chi2": 20.740374919739907,
+  "nu": 68,
+  "n_free": 3,
+  "free_params": [
+    "D",
+    "L",
+    "mc"
+  ],
+  "R2_unweighted": 0.5596092167243049,
+  "R2_weighted": 0.5361361086199803,
+  "Delta_chi2_vs_null": 24.3962480924473,
+  "Delta_nu_vs_null": 3,
+  "p_value_nested": 2.0646242087270916e-05,
+  "sigma_nested_one_sided": 4.100126232707209,
+  "sigma_sqrt_Delta_chi2": 4.9392558237499,
+  "D_Gpc": 28.43696102898273,
+  "LD": 0.17992734593388984,
+  "L_Gpc": 5.11658692437032,
+  "mc": 0.11603365065956718,
+  "l0_fixed": 0.0,
+  "Ob": 0.0,
+  "chi2_null": 45.13662301218721,
+  "chi2_l0free": 8.4753,
+  "Delta_chi2_cost_vs_l0free": 12.265074919739906,
+  "sigma_l0_vs_l0zero": 3.3129940673013847,
+  "vrmin": 0.3726015909796321
+}

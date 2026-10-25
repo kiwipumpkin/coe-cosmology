@@ -1,0 +1,19 @@
+{
+ "tag": "pl_back_le",
+ "trec_Gyr": 0.0,
+ "n_backward_rays_reaching": 0,
+ "n_forward_hits": 1,
+ "theta_covered": [
+  190
+ ],
+ "hits": [
+  {
+   "lab": 1.0010070344942064,
+   "psi": 25.515719711335922,
+   "z": 0.3952994964299596,
+   "theta": 191.92215873647203,
+   "emit_phi": -0.13152640286644085
+  }
+ ],
+ "fwd_check": null
+}

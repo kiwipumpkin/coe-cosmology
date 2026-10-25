@@ -1,0 +1,21 @@
+{
+  "D": 49.17456190433319,
+  "R_in": 34.47900196614479,
+  "R_out": 70.27463103261002,
+  "R2": 0.8930292412303976,
+  "H_mean": 71.24796874856278,
+  "H_mean_units": "km/s/Mpc",
+  "Os": 0.049,
+  "Rs": 14.30048287260589,
+  "kin": 1.0276268339399446,
+  "kout": 1.4754794866889613,
+  "mcc": 0.0017144539494289297,
+  "l0": 13.0,
+  "amp": -0.06215675197136938,
+  "phi": 0.9287741031515075,
+  "Ht": 0.9941533885724765,
+  "age_Gyr": 13.885837004880004,
+  "vrmin": 0.6046978954390786,
+  "method": "ptshell/prof_core homologous Newtonian weak-field M(r); a_f=|dV|/sep mean-normalised; stored Amp\u00d7sin from Rs14.3|sine; H_mean=70*(af.mean()/Ht)",
+  "source_fit": "universe_newt_omb.json Rs14.3|sine"
+}

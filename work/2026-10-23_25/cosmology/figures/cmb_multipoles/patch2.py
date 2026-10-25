@@ -1,0 +1,5 @@
+s=open('run.py').read()
+s=s.replace("rho=np.corrcoef(a,b)[0,1]","rho=np.ptp(a+b)/(np.ptp(a)+np.ptp(b))")
+s=s.replace("ℓ2, ℓ3 corr ρ={best[0]:.2f}","ptp(ℓ2+ℓ3)/(ptp ℓ2+ptp ℓ3)={best[0]:.2f}; shaded = opposite sign (cancelling)")
+s=s.replace("ax[1].plot(u,a+b,'k',lw=3,label='ℓ=2 + ℓ=3')","ax[1].plot(u,a+b,'k',lw=3,label='ℓ=2 + ℓ=3');ax[1].fill_between(u,-1e3,1e3,where=a*b<0,color='grey',alpha=0.15);ax[1].set_ylim(1.2*min(a.min(),b.min(),(a+b).min()),1.2*max(a.max(),b.max(),(a+b).max()))")
+open('run.py','w').write(s)

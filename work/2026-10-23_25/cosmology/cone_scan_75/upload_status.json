@@ -1,0 +1,161 @@
+{
+  "folderId": "1wZYStJhpdowbcjTkkS9TOImAtt9_GvzD",
+  "uploaded_at_local": "2026-09-18 01:24 PM CDT (UTC-0500)",
+  "task": "\u03b8=75\u00b0 cone scan of full-sky A/B vs Migkas Fig.6 (physics + sine DIAGNOSTIC)",
+  "theta_deg": 75.0,
+  "theta_definition": "Migkas cone RADIUS (angular separation)",
+  "best_physics": {
+    "axis": "sample_280m20",
+    "layer": "physics",
+    "R2_A": 0.645687311607598,
+    "R2_B": 0.4360381004467327,
+    "R2_min": 0.4360381004467327,
+    "R2_sum": 1.0817254120543307,
+    "kind": "physics"
+  },
+  "best_sine_diagnostic": {
+    "axis": "joint_303m27",
+    "layer": "sine_sheet",
+    "R2_A": 0.0363273869069376,
+    "R2_B": 0.5365186817344529,
+    "R2_min": 0.0363273869069376,
+    "R2_sum": 0.5728460686413905,
+    "kind": "sine_diagnostic"
+  },
+  "amplitude_ratio": {
+    "axis": "sample_280m20",
+    "layer": "physics",
+    "A_ptp_cone": 0.0519407967845934,
+    "B_ptp_cone": 0.21559983074432143,
+    "A_ptp_fig6": 0.3101999999999999,
+    "B_ptp_fig6": 0.1846,
+    "A_ratio": 0.1674429296730929,
+    "B_ratio": 1.1679297440104086,
+    "note": "\u03b8=75\u00b0 cone averaging strongly washes quadrupole A amplitude (~5% ptp vs Migkas ~20%); R\u00b2 is shape correlation only"
+  },
+  "blocker": "Migkas Figs 8\u20139 / 21\u201323 2D cone A/B maps not digitised; comparison is vs Fig.6 strips + our cone Mollweides only",
+  "recommendation": "LETTER: lead with PHYSICS \u03b8=75\u00b0 cone Mollweides (geometry result); best Fig.6-strip shape match is physics @ sample (280\u00b0,-20\u00b0) (R\u00b2_A=0.646, R\u00b2_B=0.436). Caveat: cone A amplitude washed to 0.17\u00d7 Fig.6 ptp (quadrupole averaged over 75\u00b0). Sine Amp\u00d7sin is retained only as labeled DIAGNOSTIC \u2014 it loses Fig.6 match under cone averaging (best sine R\u00b2_A=0.036). Prefer sample axis (280\u00b0,-20\u00b0) over joint (303\u00b0,-27\u00b0) for A; joint wins B alone. Blocker: Migkas 2D cone maps (Figs 8\u20139) not digitised.",
+  "files": [
+    {
+      "name": "cone_scan_75_NOTE.md",
+      "id": "1WT8FlGMTJyt7Uu4yAa-NV6rmmGU8qekX",
+      "link": "https://drive.google.com/file/d/1WT8FlGMTJyt7Uu4yAa-NV6rmmGU8qekX/view?usp=drivesdk",
+      "role": "NOTE"
+    },
+    {
+      "name": "cone_scan_75_summary.json",
+      "id": "1txniHdidBF5h3wzEPgPsIyyL-yGeMyV-",
+      "link": "https://drive.google.com/file/d/1txniHdidBF5h3wzEPgPsIyyL-yGeMyV-/view?usp=drivesdk",
+      "role": "summary"
+    },
+    {
+      "name": "mollweide_cone75_sample_280m20__physics.png",
+      "id": "1e1ZaTN_hEGPvAcr8XyTt3GlHlDzy5bXb",
+      "link": "https://drive.google.com/file/d/1e1ZaTN_hEGPvAcr8XyTt3GlHlDzy5bXb/view?usp=drivesdk",
+      "role": "physics mollweide sample"
+    },
+    {
+      "name": "mollweide_cone75_sample_280m20__sine_sheet.png",
+      "id": "1Mf8Aj9LnIKloxxj8yzDKAprgzTpMYOQf",
+      "link": "https://drive.google.com/file/d/1Mf8Aj9LnIKloxxj8yzDKAprgzTpMYOQf/view?usp=drivesdk",
+      "role": "sine sheet mollweide sample DIAGNOSTIC"
+    },
+    {
+      "name": "mollweide_cone75_sample_280m20__sine_local_density.png",
+      "id": "1IU6MVfp1XZF9txENLC0c6aDPDhVPdsmF",
+      "link": "https://drive.google.com/file/d/1IU6MVfp1XZF9txENLC0c6aDPDhVPdsmF/view?usp=drivesdk",
+      "role": "sine local_density mollweide sample DIAGNOSTIC"
+    },
+    {
+      "name": "mollweide_cone75_joint_303m27__physics.png",
+      "id": "1przA60bRxX8nKtvF9a5FJV6-QVpTBLI8",
+      "link": "https://drive.google.com/file/d/1przA60bRxX8nKtvF9a5FJV6-QVpTBLI8/view?usp=drivesdk",
+      "role": "physics mollweide joint"
+    },
+    {
+      "name": "mollweide_cone75_joint_303m27__sine_sheet.png",
+      "id": "1seONoxu0q_nLdbs9iXTbzLJv4mDvLoYM",
+      "link": "https://drive.google.com/file/d/1seONoxu0q_nLdbs9iXTbzLJv4mDvLoYM/view?usp=drivesdk",
+      "role": "sine sheet mollweide joint DIAGNOSTIC"
+    },
+    {
+      "name": "mollweide_cone75_joint_303m27__sine_local_density.png",
+      "id": "16B1uK4J8-lRRLcBPsZpc0-wJwqgr0dIe",
+      "link": "https://drive.google.com/file/d/16B1uK4J8-lRRLcBPsZpc0-wJwqgr0dIe/view?usp=drivesdk",
+      "role": "sine local_density mollweide joint DIAGNOSTIC"
+    },
+    {
+      "name": "overlay_fig6_cone75_sample_280m20__physics.png",
+      "id": "1cBBunPlBS29QSJBAYwq9_b8IY6sm7EBd",
+      "link": "https://drive.google.com/file/d/1cBBunPlBS29QSJBAYwq9_b8IY6sm7EBd/view?usp=drivesdk",
+      "role": "Fig.6 overlay physics sample"
+    },
+    {
+      "name": "overlay_fig6_cone75_sample_280m20__sine_sheet.png",
+      "id": "1soMDf0bnr97Etlta51tj76vl7Bvmnn-k",
+      "link": "https://drive.google.com/file/d/1soMDf0bnr97Etlta51tj76vl7Bvmnn-k/view?usp=drivesdk",
+      "role": "Fig.6 overlay sine sheet sample DIAGNOSTIC"
+    },
+    {
+      "name": "overlay_fig6_cone75_sample_280m20__sine_local_density.png",
+      "id": "1KO-T1J4uxKqakax_9Fp324cDdWbOwgOs",
+      "link": "https://drive.google.com/file/d/1KO-T1J4uxKqakax_9Fp324cDdWbOwgOs/view?usp=drivesdk",
+      "role": "Fig.6 overlay sine local_density sample DIAGNOSTIC"
+    },
+    {
+      "name": "overlay_fig6_cone75_joint_303m27__physics.png",
+      "id": "15acPKVV8_XRIz1f0jWRzM1RmBR77724O",
+      "link": "https://drive.google.com/file/d/15acPKVV8_XRIz1f0jWRzM1RmBR77724O/view?usp=drivesdk",
+      "role": "Fig.6 overlay physics joint"
+    },
+    {
+      "name": "overlay_fig6_cone75_joint_303m27__sine_sheet.png",
+      "id": "1jFg4DqyFWLZ45w7lOeXRTeLZHAykQxv9",
+      "link": "https://drive.google.com/file/d/1jFg4DqyFWLZ45w7lOeXRTeLZHAykQxv9/view?usp=drivesdk",
+      "role": "Fig.6 overlay sine sheet joint DIAGNOSTIC"
+    },
+    {
+      "name": "overlay_fig6_cone75_joint_303m27__sine_local_density.png",
+      "id": "1YyL3PJCHp25wbILKf3HB3SC_-YVj5Z-u",
+      "link": "https://drive.google.com/file/d/1YyL3PJCHp25wbILKf3HB3SC_-YVj5Z-u/view?usp=drivesdk",
+      "role": "Fig.6 overlay sine local_density joint DIAGNOSTIC"
+    },
+    {
+      "name": "scatter_fig6_vs_cone75_sample_280m20__physics.png",
+      "id": "154jNdUZiWQtxECdGJ0c0XUS72P1-bbQI",
+      "link": "https://drive.google.com/file/d/154jNdUZiWQtxECdGJ0c0XUS72P1-bbQI/view?usp=drivesdk",
+      "role": "scatter physics sample"
+    },
+    {
+      "name": "scatter_fig6_vs_cone75_sample_280m20__sine_sheet.png",
+      "id": "1OSQ3tLy_mjt83IpYiWkV79g-W-tY1Fqd",
+      "link": "https://drive.google.com/file/d/1OSQ3tLy_mjt83IpYiWkV79g-W-tY1Fqd/view?usp=drivesdk",
+      "role": "scatter sine sheet sample DIAGNOSTIC"
+    },
+    {
+      "name": "scatter_fig6_vs_cone75_sample_280m20__sine_local_density.png",
+      "id": "1Z5X2U4koqdBvZC8Gcqam0DB3hCYHkB12",
+      "link": "https://drive.google.com/file/d/1Z5X2U4koqdBvZC8Gcqam0DB3hCYHkB12/view?usp=drivesdk",
+      "role": "scatter sine local_density sample DIAGNOSTIC"
+    },
+    {
+      "name": "scatter_fig6_vs_cone75_joint_303m27__physics.png",
+      "id": "1c7d_6yn35pOuUnVb-ZJJZCXAu8TqRy48",
+      "link": "https://drive.google.com/file/d/1c7d_6yn35pOuUnVb-ZJJZCXAu8TqRy48/view?usp=drivesdk",
+      "role": "scatter physics joint"
+    },
+    {
+      "name": "scatter_fig6_vs_cone75_joint_303m27__sine_sheet.png",
+      "id": "1gkLKzH36_qcwHgAIWh8WMAQlHyOPQ3Bm",
+      "link": "https://drive.google.com/file/d/1gkLKzH36_qcwHgAIWh8WMAQlHyOPQ3Bm/view?usp=drivesdk",
+      "role": "scatter sine sheet joint DIAGNOSTIC"
+    },
+    {
+      "name": "scatter_fig6_vs_cone75_joint_303m27__sine_local_density.png",
+      "id": "11_RDsOv6Gl8zLRMV5H2MumlRPKCvy01f",
+      "link": "https://drive.google.com/file/d/11_RDsOv6Gl8zLRMV5H2MumlRPKCvy01f/view?usp=drivesdk",
+      "role": "scatter sine local_density joint DIAGNOSTIC"
+    }
+  ],
+  "n_uploaded": 20
+}

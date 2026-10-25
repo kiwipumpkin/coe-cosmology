@@ -1,0 +1,43 @@
+                              Centre-of-Expansion shell cosmology:
+                             from Migkas anisotropy to a flat CMB
+                                                 Chris Alameddin
+
+                                                30 September 2026
+Directional Hubble measurements from Migkas et al.[1] fix an off-centre Sedov–Taylor[2, 3] / Lemaı̂tre–Tolman–
+Bondi (LTB)[4, 5, 6] shell geometry about a Centre of Expansion (CoE). The same geometry is then subjected
+to an independent consistency check against the cosmic microwave background (CMB)[7]. This letter treats
+both the Migkas sky-dependent cluster Hubble rate and the Planck-level CMB isotropy of order 10−5 as correct
+empirical facts. The CoE is the geometric origin of the radial shell structure; the observer (US) sits off-
+centre inside a thick ordinary-matter shell—the donut-universe configuration. We ask whether the gravitational
+multipole implied by that placement can be cancelled by a kill function: an electromagnetic temperature
+multipole (∆T /T of kinematic–Doppler character) opposite in sign to the gravitational last-scattering multipole
+and sharing its angular shape. Apparent late-time accelerated expansion is, in this geometry, an illusion
+requiring neither dark energy nor outward shell acceleration.
+
+
+1     Problem and stance
+Migkas et al. report a sky-dependent cluster Hubble rate. Standard cosmology assumes large-scale isotropy, and
+the CMB is isotropic to ∼ 10−5 [7]. This letter takes both seriously: the cosmological principle alone does not
+account for the Migkas anisotropy, and the goal is coexistence with a flat last-scattering sky, not replacement of
+either dataset. The LTB origin is the CoE, not US; the observer sits at r = D, and anisotropy is an off-centre
+sampling of β(r).
+
+
+2     Best-fit geometry
+Local Hubble velocity is free-fall toward the CoE minus our motion, V    ⃗H = V⃗g − V
+                                                                                    ⃗O . The observer (“US”) sits
+inside a thick shell; vision radius R ≈ 14.3 Gpc; shell rule D ≳ 14.7 Gpc. Preferred relativistic fit: D ≈ 32.9 Gpc,
+Rin ≈ 18.1 Gpc, Rout ≈ 49.7 Gpc.
+
+
+
+
+            Figure 1: Geometry: CoE, observer (US) inside a thick shell, and the vision sphere of radius R.
+
+
+3     Approach
+    1. Migkas A/Aall vs. Galactic ℓ (and Fig. 8); slice fits by redshift, with the model recomputed at each slice’s
+       median sampling distance.
+
+                                                          1
+

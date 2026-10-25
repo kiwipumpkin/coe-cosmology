@@ -1,0 +1,43 @@
+                              Centre-of-Expansion shell cosmology:
+                             from Migkas anisotropy to a flat CMB
+                                                 Chris Alameddin
+
+                                                  1 October 2026
+
+
+                                                      Abstract
+      Directional Hubble measurements from Migkas et al.[1] fix an off-centre Sedov–Taylor[2, 3] / Lemaı̂tre–
+      Tolman–Bondi (LTB)[4, 5, 6] shell geometry about a Centre of Expansion (CoE), then checked against the
+      CMB[7]. Both the Migkas sky-dependent Hubble rate and Planck isotropy of order 10−5 are taken as facts;
+      the goal is coexistence, not replacement. The observer (US) sits off-centre inside a thick ordinary-matter
+      shell—the donut-universe—and we ask whether the gravitational last-scattering multipole can be cancelled
+      by a kill function: an electromagnetic ∆T /T multipole of kinematic–Doppler character, opposite in sign
+      and matching in angular shape. Apparent late-time acceleration is an off-centre sampling illusion (no dark
+      energy); a contracting geometry would share the average appearance but differ in angular signature.
+
+
+1     Introduction
+Migkas et al. report a directional cluster Hubble rate[1]; Planck finds CMB isotropy to ∼ 10−5 [7]. We treat both
+as correct: Migkas anisotropy is free-fall about an off-centre CoE (Table 1; Figs. 2–4), and the CMB stress-tests
+that geometry. Observer at r = D; anisotropy samples β(r), not a(t, θ). Open problem: keep Migkas A(ℓ)
+while CMB multipoles stay ∼ 10−5 .
+
+
+2     Methods and model
+2.1   Geometry and kinematic picture
+Local Hubble velocity: V⃗H = V ⃗g − V
+                                    ⃗O . US sits mid-shell at comoving D from the CoE. Vision radius R ≈
+14.3 Gpc; shell rule D ≳ 14.7 Gpc. Preferred relativistic fit: D ≈ 32.9 Gpc, Rin ≈ 18.1 Gpc, Rout ≈ 49.7 Gpc.
+
+
+
+
+                                                                                      ⃗ Panels (b)–(c) continue next
+Figure 1: Geometry panel (a): Hubble velocity vectors about the CoE, observer (US) at D.
+page.
+
+
+
+
+                                                          1
+

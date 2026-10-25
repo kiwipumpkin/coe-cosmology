@@ -1,0 +1,104 @@
+{
+ "geometry": {
+  "D_Gpc": 58.19699837268826,
+  "l0_deg": 15.1629523788697,
+  "mcc": 0.0017121308626185587,
+  "Rin_Gpc": 0.499774693006799,
+  "Rout_Gpc": 72.83442650308822,
+  "kin": 4.034634647911553,
+  "kout": 1.0235618098210888,
+  "Omega_s": 0.049,
+  "R_Gpc": 14.30048287260589,
+  "source": "exact wls_fit in migkas-geometry-fit.json; not refit"
+ },
+ "weights": "sigma=(A_err_low+A_err_high)/2, w=1/sigma^2, chi2=sum((model-data)/sigma)^2",
+ "R2": "unweighted: 1-SS_res/SS_tot about the unweighted mean; weighted: same with w, about the weighted mean",
+ "modulation": "1 + a_m cos(m*ell) + b_m sin(m*ell), ell galactic longitude in radians. Equivalent 1 + C cos(m*ell - psi), C=hypot(a,b), psi=atan2(b,a). Paper sine 1 - Amp sin(m*ell + phi), Amp=-C, phi=atan2(a,b) wrapped to [0, 360). Angles in degrees. Multipoles multiply geometry x the fixed dipole, not geometry alone.",
+ "fixed_dipole": {
+  "Amp": -0.06,
+  "phi_deg": 11.5,
+  "convention": "1 - Amp * sin(ell_rad + phi_rad)",
+  "refit": false
+ },
+ "n_bins": 71,
+ "cases": {
+  "geometry": {
+   "free_parameters": 0,
+   "R2_unweighted": 0.5456268309812682,
+   "R2_weighted": 0.5807290671992491,
+   "chi2": 18.7465256529584,
+   "n_bins": 71,
+   "note": "frozen WLS geometry"
+  },
+  "geometry_x_fixed_dipole": {
+   "free_parameters": 0,
+   "R2_unweighted": 0.8211011729074769,
+   "R2_weighted": 0.8381063653894668,
+   "chi2": 7.238620512048049,
+   "n_bins": 71,
+   "note": "Amp=-0.06 and phi=11.5 deg held fixed; not refit",
+   "Amp": -0.06,
+   "phi_deg": 11.5
+  },
+  "geometry_x_fixed_dipole_x_m4": {
+   "free_parameters": 2,
+   "R2_unweighted": 0.8230439383696175,
+   "R2_weighted": 0.8411678893974135,
+   "chi2": 7.101733039385129,
+   "n_bins": 71,
+   "coefficients": {
+    "4": {
+     "a": 0.003152262568803368,
+     "b": -0.004786702288376858,
+     "C": 0.005731428975415386,
+     "psi_deg": -56.633266737178104,
+     "Amp": -0.005731428975415386,
+     "phi_deg": 146.6332667371781
+    }
+   }
+  },
+  "geometry_x_fixed_dipole_x_m6": {
+   "free_parameters": 2,
+   "R2_unweighted": 0.8257184097025176,
+   "R2_weighted": 0.8422056695454655,
+   "chi2": 7.055331606217249,
+   "n_bins": 71,
+   "coefficients": {
+    "6": {
+     "a": -0.0065630389597131624,
+     "b": -0.001093349279710406,
+     "C": 0.0066534872836848565,
+     "psi_deg": -170.5418446071096,
+     "Amp": -0.0066534872836848565,
+     "phi_deg": 260.54184460710957
+    }
+   }
+  },
+  "geometry_x_fixed_dipole_x_m4_m6": {
+   "free_parameters": 4,
+   "R2_unweighted": 0.828398162171622,
+   "R2_weighted": 0.8456990042498677,
+   "chi2": 6.899136927485331,
+   "n_bins": 71,
+   "coefficients": {
+    "4": {
+     "a": 0.002725406522265177,
+     "b": -0.005501355604592443,
+     "C": 0.006139442499102524,
+     "psi_deg": -63.645892693726545,
+     "Amp": -0.006139442499102524,
+     "phi_deg": 153.64589269372655
+    },
+    "6": {
+     "a": -0.006811780003249009,
+     "b": -0.0017888902435430135,
+     "C": 0.0070427604755597395,
+     "psi_deg": -165.28541683519913,
+     "Amp": -0.0070427604755597395,
+     "phi_deg": 255.2854168351991
+    }
+   }
+  }
+ },
+ "diagnostics_not_proofs": true
+}

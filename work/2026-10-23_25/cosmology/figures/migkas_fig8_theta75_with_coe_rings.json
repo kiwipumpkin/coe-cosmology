@@ -1,0 +1,253 @@
+{
+  "png": "/workspace/cosmology/figures/migkas_fig8_theta75_with_coe_rings.png",
+  "script": "/workspace/cosmology/figures/make_migkas_fig8_coe_rings_overlay.py",
+  "source_image": "/workspace/cosmology/map_compare/FULL_migkas_theta75.png",
+  "convention": "Galactic Mollweide; lon_disp=-wrap(ell); ell increases LEFT (Migkas Fig.8)",
+  "axis_tilt_b_deg": 30.0,
+  "anti_CoE_lb_deg": [
+    0.0,
+    30.0
+  ],
+  "CoE_lb_deg": [
+    180.0,
+    -30.0
+  ],
+  "D_hat_galactic_xyz": [
+    0.8660254037844387,
+    0.0,
+    0.49999999999999994
+  ],
+  "axis_tilt_reason": "Chris 2026-09-22 \u2014 markers fixed, rings rotate up 30\u00b0",
+  "migkas_max_lb_deg": [
+    [
+      17.0,
+      -9.0
+    ],
+    [
+      185.0,
+      0.0
+    ]
+  ],
+  "migkas_min_lb_deg": [
+    [
+      115.0,
+      0.0
+    ],
+    [
+      274.0,
+      -22.0
+    ]
+  ],
+  "theta_max_from_plus_x_deg": [
+    30.0,
+    185.0
+  ],
+  "theta_min_from_plus_x_deg": [
+    115.0,
+    265.0
+  ],
+  "band_half_width_deg": 9.0,
+  "band_full_width_deg": 18.0,
+  "band_width_note": "5% of 360\u00b0 = 18\u00b0 end-to-end = \u00b19\u00b0 about each MAX/MIN center",
+  "max_bands_deg": [
+    [
+      21.0,
+      39.0
+    ],
+    [
+      176.0,
+      194.0
+    ]
+  ],
+  "min_bands_deg": [
+    [
+      106.0,
+      124.0
+    ],
+    [
+      256.0,
+      274.0
+    ]
+  ],
+  "band_intervals": {
+    "MAX_30": [
+      21.0,
+      39.0
+    ],
+    "MAX_185": [
+      176.0,
+      194.0
+    ],
+    "MIN_115": [
+      106.0,
+      124.0
+    ],
+    "MIN_265": [
+      256.0,
+      274.0
+    ]
+  },
+  "colors": {
+    "MAX_30": "#00e5ff",
+    "MAX_185": "#ff2d95",
+    "MIN_115": "#b8f200",
+    "MIN_265": "#4fc3f7",
+    "palette": "magma-popping cyan/magenta/lime/sky (no reds/oranges)"
+  },
+  "mu_max_bands": [
+    [
+      0.9335804264972017,
+      0.7771459614569709
+    ],
+    [
+      -0.9975640502598242,
+      -0.9702957262759965
+    ]
+  ],
+  "mu_min_bands": [
+    [
+      -0.27563735581699905,
+      -0.5591929034707467
+    ],
+    [
+      -0.24192189559966779,
+      0.06975647374412522
+    ]
+  ],
+  "scan_stop_source": "best_fit_2ell_multiplier.npz A_after extrema (two max, two min); each drawn as one transparent 18\u00b0 end-to-end highlight (\u00b19\u00b0 = 5% of 360\u00b0) + one solid mid-stroke; matches three-panel Panel B; no companion",
+  "matches_three_panel": "/workspace/cosmology/figures/make_coe_rings_migkas_pin_axis.py",
+  "oval_seed_bbox": {
+    "x0": 179,
+    "x1": 1533,
+    "y0": 356,
+    "y1": 1152,
+    "cx": 856.0,
+    "cy": 754.0,
+    "Rx": 677.0,
+    "Ry": 398.5
+  },
+  "registration": {
+    "cx": 863.0,
+    "cy": 763.25,
+    "Rx": 693.9927,
+    "Ry": 392.542425,
+    "ceq_median_px": 1.0,
+    "registration_source": "hard-set GOOD_REG (pre medial-axis retune)",
+    "ceq_residual_before_registration": {
+      "cx": 863.0,
+      "cy": 763.25,
+      "Rx": 693.9927,
+      "Ry": 392.542425
+    },
+    "rejected_medial_axis_reg": {
+      "cx": 865.6,
+      "cy": 766.4,
+      "Rx": 706.19,
+      "Ry": 393.7,
+      "note": "medial-axis / achromatic DT-ridge retune; blew up Rx; reverted"
+    },
+    "dofs": [
+      "cx",
+      "cy",
+      "Rx",
+      "Ry"
+    ],
+    "drawing": {
+      "dec0_drawn": false,
+      "dec0_note": "not drawn; use Migkas published celestial equator",
+      "coe_axis_inset": 1.0,
+      "rings_inset": 0.97,
+      "note": "CoE axis geometric inset=1; rings mild inset; no Dec=0 overlay"
+    },
+    "method": "oval seed detect + hard-set to pre-retune visually-good (cx,cy,Rx,Ry); medial-axis Rx stretch rejected; Dec=0 NOT overlaid (published CEQ kept); CoE-axis inset=1.0; rings inset~0.97"
+  },
+  "landmark_checks": {
+    "landmarks_px": {
+      "center": {
+        "ell": 0.0,
+        "b": 0.0,
+        "px": 863.0,
+        "py": 763.25
+      },
+      "ell90": {
+        "ell": 90.0,
+        "b": 0.0,
+        "px": 516.00365,
+        "py": 763.25
+      },
+      "ell270": {
+        "ell": 270.0,
+        "b": 0.0,
+        "px": 1209.99635,
+        "py": 763.25
+      },
+      "north": {
+        "ell": 0.0,
+        "b": 90.0,
+        "px": 863.0,
+        "py": 370.707575
+      },
+      "south": {
+        "ell": 0.0,
+        "b": -90.0,
+        "px": 863.0,
+        "py": 1155.792425
+      },
+      "migkas_max0": {
+        "ell": 17.0,
+        "b": -9.0,
+        "px": 797.9553672670747,
+        "py": 811.6016206375474
+      },
+      "migkas_max1": {
+        "ell": 185.0,
+        "b": 0.0,
+        "px": 1537.7151250000002,
+        "py": 763.25
+      },
+      "migkas_min0": {
+        "ell": 115.0,
+        "b": 0.0,
+        "px": 419.61577500000004,
+        "py": 763.25
+      },
+      "migkas_min1": {
+        "ell": 274.0,
+        "b": -22.0,
+        "px": 1179.4349358022826,
+        "py": 880.5100357173818
+      }
+    },
+    "migkas_max0_rgb_mean": [
+      237.0,
+      166.33333333333334,
+      0.0
+    ],
+    "migkas_min1_rgb_mean": [
+      96.61728395061728,
+      0.0,
+      205.39506172839506
+    ]
+  },
+  "drawing": "Exactly 4 features. Each = ONE smooth transparent PolyCollection band (\u03b8\u00b19\u00b0, 18\u00b0 end-to-end) + ONE solid mid-stroke at center \u03b8. Fill alpha\u22480.30. Mid-stroke: thin white underlay (lw+1.5) then color (lw=2.8). NO black outer rim; NO thick white halo stacks; NO dual boundary-edge strokes. Colors: cyan/magenta/lime/sky for magma. No 283\u00b0 companion. Dec=0 NOT overlaid.",
+  "legend_summary": "four highlight bands, each 18\u00b0 end-to-end (\u00b19\u00b0 = 5% of 360%); MAX cyan+magenta, MIN lime+sky; intervals [21,39]/[176,194]/[106,124]/[256,274]",
+  "notes": [
+    "Exactly 4 features matching three-panel Panel B geometry/width",
+    "Each = ONE smooth transparent PolyCollection ribbon (\u00b19\u00b0) + ONE solid mid-stroke only",
+    "Clean draw: fill alpha=0.30; mid-stroke thin white underlay (lw+1.5) + color lw=2.8; no black rim; no boundary-edge halos",
+    "No multi-stroke scribble wash; no 283\u00b0 companion; no Dec=0 overlay",
+    "MAX bands [21,39] & [176,194]; MIN bands [106,124] & [256,274]",
+    "Colors: MAX_30=#00e5ff, MAX_185=#ff2d95, MIN_115=#b8f200, MIN_265=#4fc3f7",
+    "band_half_width_deg=9, band_full_width_deg=18 (5% of 360\u00b0)",
+    "Exact n\u00b7x\u0302=\u03bc small-circles; seam-split polygon fill; mid via plot_closed_ring",
+    "No ellipse-fit, no interior chords, no decorative oval-rim loops",
+    "No blocking text box on the map; legend below",
+    "Colorbar preserved from source (overlays stay on oval)",
+    "Overlays clip_path = registered Ellipse(cx,cy,Rx,Ry); rings stroke inset 0.97",
+    "Dec=0 NOT drawn (Migkas Fig.8 already has celestial equator); CoE axis = great circle through \u00b1D (tilted +30\u00b0) at inset=1.0",
+    "axis_tilt_b_deg=30; anti-CoE (0\u00b0,+30\u00b0), CoE (180\u00b0,\u221230\u00b0); Migkas markers fixed at true sky positions",
+    "Registration hard-set to pre medial-axis params (863,763.25,693.9927,392.542425); DT-ridge fit rejected",
+    "Limb markers inset toward colored-oval center so halo stays inside",
+    "Points culled at COLOR_R=0.978 of seed oval; limb markers inset to fit halo"
+  ]
+}

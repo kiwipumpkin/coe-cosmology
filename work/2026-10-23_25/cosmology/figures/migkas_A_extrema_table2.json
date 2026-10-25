@@ -1,0 +1,300 @@
+{
+  "source": "Migkas et al. 2020, Table 2 (published A extrema directions)",
+  "coordinate_system": "Galactic (\u2113, b) degrees",
+  "mollweide_convention": "lon_disp = -wrap(\u2113); \u2113=0 at center; \u2113 increases LEFT (matches Migkas Fig. 8)",
+  "note": "These are published Migkas 2D map extrema from Table 2 \u2014 not CoE model rings or Amp\u00d7sin curves.",
+  "style": {
+    "high_A": "red star",
+    "low_A": "blue inverted triangle",
+    "dipole": "gold circle (where listed)"
+  },
+  "points": [
+    {
+      "id": "all_90",
+      "sample": "Our sample All 90\u00b0",
+      "panel": "A",
+      "label": "90\u00b0",
+      "low_A": {
+        "ell_deg": 272.0,
+        "b_deg": -8.0
+      },
+      "high_A": {
+        "ell_deg": 47.0,
+        "b_deg": 22.0
+      },
+      "dipole": {
+        "ell_deg": 230.0,
+        "b_deg": -20.0
+      }
+    },
+    {
+      "id": "all_75",
+      "sample": "Our sample All 75\u00b0 (Fig. 8 primary)",
+      "panel": "A",
+      "label": "75\u00b0",
+      "low_A": {
+        "ell_deg": 274.0,
+        "b_deg": -22.0,
+        "A": 0.999,
+        "A_err": 0.05
+      },
+      "high_A": {
+        "ell_deg": 17.0,
+        "b_deg": -9.0,
+        "A": 1.288,
+        "A_err": 0.061
+      },
+      "dipole": {
+        "ell_deg": 263.0,
+        "b_deg": -21.0
+      },
+      "primary": true
+    },
+    {
+      "id": "all_60",
+      "sample": "Our sample All 60\u00b0",
+      "panel": "A",
+      "label": "60\u00b0",
+      "low_A": {
+        "ell_deg": 281.0,
+        "b_deg": -16.0
+      },
+      "high_A": {
+        "ell_deg": 34.0,
+        "b_deg": 4.0
+      },
+      "dipole": {
+        "ell_deg": 260.0,
+        "b_deg": -36.0
+      }
+    },
+    {
+      "id": "all_45",
+      "sample": "Our sample All 45\u00b0",
+      "panel": "A",
+      "label": "45\u00b0",
+      "low_A": {
+        "ell_deg": 280.0,
+        "b_deg": 1.0
+      },
+      "high_A": {
+        "ell_deg": 32.0,
+        "b_deg": 14.0
+      },
+      "dipole": {
+        "ell_deg": 255.0,
+        "b_deg": -53.0
+      }
+    },
+    {
+      "id": "all_75_freeB_c1",
+      "sample": "All 75\u00b0 free B Case 1",
+      "panel": "B",
+      "label": "75\u00b0 free B C1",
+      "low_A": {
+        "ell_deg": 272.0,
+        "b_deg": -21.0
+      },
+      "high_A": {
+        "ell_deg": 26.0,
+        "b_deg": -13.0
+      }
+    },
+    {
+      "id": "all_75_freeB_c2",
+      "sample": "All 75\u00b0 free B Case 2",
+      "panel": "B",
+      "label": "75\u00b0 free B C2",
+      "low_A": {
+        "ell_deg": 269.0,
+        "b_deg": -17.0
+      },
+      "high_A": {
+        "ell_deg": 23.0,
+        "b_deg": -10.0
+      }
+    },
+    {
+      "id": "T2p5_z003_75",
+      "sample": "T>2.5 keV z>0.03 (75\u00b0)",
+      "panel": "B",
+      "label": "T>2.5 z>0.03",
+      "low_A": {
+        "ell_deg": 288.0,
+        "b_deg": -35.0
+      },
+      "high_A": {
+        "ell_deg": 10.0,
+        "b_deg": 16.0
+      }
+    },
+    {
+      "id": "T3_z005_75",
+      "sample": "T>3 keV z>0.05 (75\u00b0)",
+      "panel": "B",
+      "label": "T>3 z>0.05",
+      "low_A": {
+        "ell_deg": 286.0,
+        "b_deg": -36.0
+      },
+      "high_A": {
+        "ell_deg": 9.0,
+        "b_deg": 15.0
+      }
+    },
+    {
+      "id": "Zcore_75",
+      "sample": "Zcore\u22640.59 (75\u00b0)",
+      "panel": "B",
+      "label": "Zcore\u22640.59",
+      "low_A": {
+        "ell_deg": 264.0,
+        "b_deg": -18.0
+      },
+      "high_A": {
+        "ell_deg": 30.0,
+        "b_deg": 23.0
+      }
+    },
+    {
+      "id": "Zout_75",
+      "sample": "Zout\u22640.426 (75\u00b0)",
+      "panel": "B",
+      "label": "Zout\u22640.426",
+      "low_A": {
+        "ell_deg": 270.0,
+        "b_deg": -14.0
+      },
+      "high_A": {
+        "ell_deg": 24.0,
+        "b_deg": 15.0
+      }
+    },
+    {
+      "id": "NH_75",
+      "sample": "NH\u22645.16e20 (75\u00b0)",
+      "panel": "B",
+      "label": "NH\u22645.16e20",
+      "low_A": {
+        "ell_deg": 242.0,
+        "b_deg": -27.0
+      },
+      "high_A": {
+        "ell_deg": 35.0,
+        "b_deg": -15.0
+      }
+    },
+    {
+      "id": "ACC_75",
+      "sample": "ACC 75\u00b0",
+      "panel": "B",
+      "label": "ACC 75\u00b0",
+      "low_A": {
+        "ell_deg": 314.0,
+        "b_deg": -17.0
+      },
+      "high_A": {
+        "ell_deg": 77.0,
+        "b_deg": 15.0
+      }
+    },
+    {
+      "id": "XCS_75",
+      "sample": "XCS-DR1 75\u00b0",
+      "panel": "B",
+      "label": "XCS-DR1 75\u00b0",
+      "low_A": {
+        "ell_deg": 281.0,
+        "b_deg": 24.0
+      },
+      "high_A": {
+        "ell_deg": 31.0,
+        "b_deg": 25.0
+      }
+    },
+    {
+      "id": "joint_ACC_XCS_75",
+      "sample": "Joint+ACC+XCS 75\u00b0",
+      "panel": "B",
+      "label": "Joint+ACC+XCS",
+      "low_A": {
+        "ell_deg": 303.0,
+        "b_deg": -27.0
+      },
+      "high_A": {
+        "ell_deg": 34.0,
+        "b_deg": 26.0
+      },
+      "dipole": {
+        "ell_deg": 265.0,
+        "b_deg": -20.0
+      }
+    },
+    {
+      "id": "joint_freeB_c1",
+      "sample": "Joint free B Case 1",
+      "panel": "B",
+      "label": "Joint free B C1",
+      "low_A": {
+        "ell_deg": 312.0,
+        "b_deg": -21.0
+      },
+      "high_A": {
+        "ell_deg": 45.0,
+        "b_deg": 21.0
+      }
+    }
+  ],
+  "outputs": {
+    "mollweide_png": "/workspace/cosmology/figures/migkas_A_extrema_table2_mollweide.png",
+    "mollweide_pdf": "/workspace/cosmology/figures/migkas_A_extrema_table2_mollweide.pdf",
+    "fig8_overlay_png": "/workspace/cosmology/figures/migkas_fig8_theta75_A_extrema_only.png"
+  },
+  "fig8_overlay": {
+    "source_image": "/workspace/cosmology/map_compare/FULL_migkas_theta75.png",
+    "registration": {
+      "cx": 863.0,
+      "cy": 763.25,
+      "Rx": 693.9927,
+      "Ry": 392.542425
+    },
+    "pixel_checks": {
+      "max_75": {
+        "ell": 17.0,
+        "b": -9.0,
+        "px": [
+          798,
+          812
+        ],
+        "rgb_mean": [
+          237.0,
+          166.25619834710744,
+          0.0
+        ]
+      },
+      "min_75": {
+        "ell": 274.0,
+        "b": -22.0,
+        "px": [
+          1179,
+          881
+        ],
+        "rgb_mean": [
+          96.64462809917356,
+          0.0,
+          205.37190082644628
+        ]
+      },
+      "dipole_75": {
+        "ell": 263.0,
+        "b": -21.0,
+        "px": [
+          1221,
+          875
+        ]
+      },
+      "max_warmer_than_min": true
+    }
+  },
+  "script": "/workspace/cosmology/figures/make_migkas_A_extrema_maps.py"
+}

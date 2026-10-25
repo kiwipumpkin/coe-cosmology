@@ -1,0 +1,89 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alnes and Amarzguioui(2006)]{Alnes2006}
+H.~Alnes and M.~Amarzguioui.
+\newblock {CMB} anisotropies seen by an off-center observer in a spherically
+  symmetric inhomogeneous universe.
+\newblock \emph{Phys.\ Rev.\ D}, 74:\penalty0 103520, 2006.
+
+\bibitem[Alnes and Amarzguioui(2007)]{Alnes2006SN}
+H.~Alnes and M.~Amarzguioui.
+\newblock The supernova {Hubble} diagram for off-center observers in a
+  spherically symmetric inhomogeneous universe.
+\newblock \emph{JCAP}, 02:\penalty0 017, 2007.
+
+\bibitem[Bertschinger(1983)]{Bertschinger1983}
+E.~Bertschinger.
+\newblock Self-similar secondary infall and accretion in an {E}instein--de
+  {S}itter universe.
+\newblock \emph{Astrophys.\ J.}, 268:\penalty0 17--29, 1983.
+
+\bibitem[Blomqvist and M{\"o}rtsell(2010)]{Blomqvist2010}
+M.~Blomqvist and E.~M{\"o}rtsell.
+\newblock Supernovae as seen by off-center observers in a local void.
+\newblock \emph{JCAP}, 05:\penalty0 006, 2010.
+
+\bibitem[Bondi(1947)]{Bondi1947}
+H.~Bondi.
+\newblock Spherically symmetrical models in general relativity.
+\newblock \emph{Mon.\ Not.\ R.\ Astron.\ Soc.}, 107:\penalty0 410--425, 1947.
+
+\bibitem[Heinesen(2021)]{Heinesen2020}
+A.~Heinesen.
+\newblock Multipole decomposition of the general luminosity distance {H}ubble
+  law --- a new mode of observational cosmology.
+\newblock \emph{JCAP}, 05:\penalty0 008, 2021.
+
+\bibitem[Kodama et~al.(2010)Kodama, Saito, and Ishibashi]{Kodama2010}
+H.~Kodama, K.~Saito, and A.~Ishibashi.
+\newblock Analytic formulae for {CMB} anisotropy in {LTB} cosmology.
+\newblock \emph{arXiv e-prints}, 2010.
+\newblock Off-center observer in general spherical symmetry.
+
+\bibitem[Lema{\^\i}tre(1933)]{Lemaitre1933}
+G.~Lema{\^\i}tre.
+\newblock L'univers en expansion.
+\newblock \emph{Ann.\ Soc.\ Sci.\ Bruxelles}, A53:\penalty0 51--85, 1933.
+
+\bibitem[Migkas et~al.(2020)Migkas, Schellenberger, Reiprich, Pacaud,
+  Ramos-Ceja, and Lovisari]{Migkas2020}
+K.~Migkas, G.~Schellenberger, T.~H. Reiprich, F.~Pacaud, M.~E. Ramos-Ceja, and
+  L.~Lovisari.
+\newblock Probing cosmic isotropy with a new {X}-ray galaxy cluster sample
+  through the {$L_X$--$T$} scaling relation.
+\newblock \emph{Astron.\ Astrophys.}, 636:\penalty0 A15, 2020.
+
+\bibitem[Saadeh et~al.(2016)Saadeh, Feeney, Pontzen, Peiris, and
+  McEwen]{Saadeh2016}
+D.~Saadeh, S.~M. Feeney, A.~Pontzen, H.~V. Peiris, and J.~D. McEwen.
+\newblock How isotropic is the {U}niverse?
+\newblock \emph{Phys.\ Rev.\ Lett.}, 117:\penalty0 131302, 2016.
+
+\bibitem[Saito et~al.(2010)Saito, Ishibashi, and Kodama]{Saito2010}
+K.~Saito, A.~Ishibashi, and H.~Kodama.
+\newblock Analytic formulae for the {CMB} anisotropy in {LTB} cosmology.
+\newblock \emph{arXiv e-prints}, 2010.
+
+\bibitem[Smoller and Temple(1998)]{SmollerTemple1998}
+J.~Smoller and B.~Temple.
+\newblock Cosmology with a shock-wave.
+\newblock \emph{Commun.\ Math.\ Phys.}, 210:\penalty0 275--308, 1998.
+
+\bibitem[Smoller and Temple(2003)]{SmollerTemple2002}
+J.~Smoller and B.~Temple.
+\newblock Shock-wave cosmology inside a black hole.
+\newblock \emph{Proc.\ Natl.\ Acad.\ Sci.\ USA}, 100:\penalty0 11216--11218,
+  2003.
+\newblock arXiv:astro-ph/0210105.
+
+\bibitem[Tolman(1934)]{Tolman1934}
+R.~C. Tolman.
+\newblock Effect of inhomogeneity on cosmological models.
+\newblock \emph{Proc.\ Natl.\ Acad.\ Sci.\ USA}, 20:\penalty0 169--176, 1934.
+
+\end{thebibliography}

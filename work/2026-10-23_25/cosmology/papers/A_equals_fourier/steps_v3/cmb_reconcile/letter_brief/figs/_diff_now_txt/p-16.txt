@@ -1,0 +1,55 @@
+straint. Nothing in the present letter claims that the 10−5 bound has been met. The open problem is whether
+a full time-dependent light-cone calculation—evolving D(t), Rin (t), and Rout (t) from the present back through
+recombination, integrating null geodesics, and combining gravitational and kinematic contributions—can keep
+ℓ ≥ 2 below ∼ 10−5 while the low-redshift A(ℓ) pattern remains Migkas-compatible. If a residual remains,
+the next step is to identify the smallest additional degree of freedom (timing of recombination, shell-thickness
+history, or a mild partner multipole) that removes it without reintroducing a fixed-curve conflict across redshift
+slices.
+    Appendix material supports the dynamical and observational reading of the same geometry without changing
+the fit. Figure A1 collects LTB shell-evolution solutions for a flat matter-plus-radiation track together with
+dust branches at E = 0, E > 0 (expand forever), and E < 0 (recollapse). Because the CoE is a fixed direction
+on the sky, it is a place one can point to: from Central Texas that direction rises in the northeast and sets in the
+northwest on a sidereal schedule fixed by the fitted CoE coordinates. Figure A2 compares CoE rise, culmination,
+and set with the Sun through 2026; Table A1 lists the Sun–CoE event crossings for 2027. Figure A3 gives the
+annual local-sky path of the CoE from Plano at noon local mean time through 2026—a large oval locus of a
+fixed celestial direction in horizon coordinates, not a solar figure-eight.
+
+
+5    Conclusions
+Migkas et al. fix an off-centre CoE+shell—the donut-universe geometry with US at r = D—that fits directional
+Hubble across redshift slices. Key Newtonian Ωs = 0.049 parameters are D ≈ 49.17 Gpc, Rin ≈ 34.48 Gpc,
+Rout ≈ 70.27 Gpc, and ℓ0 = 13◦ ; the preferred relativistic headline is D ≈ 32.9 Gpc. Gravity on that geometry
+predicts a last-scattering multipole whose kill function—an electromagnetic temperature multipole opposite in
+sign and matching in angular shape—tracks the kinematic Doppler pattern from the same radii. Apparent
+late-time acceleration is an illusion of off-centre sampling, requiring neither dark energy nor outward shell
+acceleration; a contracting geometry would share the average appearance of acceleration but differ in angular
+signature. The cosmological principle does not account for the Migkas anisotropy; the CMB isotropy remains an
+independent constraint. The open problem is no longer whether the gravitational and electromagnetic shapes
+talk to each other—they do—but whether a full time-dependent light-cone calculation can make them cancel
+at the 10−5 level without spoiling the Migkas anisotropy. The goal is coexistence of both datasets under one
+off-centre shell geometry.
+
+
+References
+ [1] K. Migkas, G. Schellenberger, T. H. Reiprich, F. Pacaud, M. E. Ramos-Ceja, and L. Lovisari, Astron.
+     Astrophys. 636, A15 (2020); arXiv:2004.03305.
+
+ [2] L. I. Sedov, J. Appl. Math. Mech. 10, 241 (1946).
+
+ [3] G. I. Taylor, Proc. R. Soc. Lond. A 201, 159 (1950).
+
+ [4] G. Lemaı̂tre, Ann. Soc. Sci. Bruxelles A53, 51 (1933).
+
+ [5] R. C. Tolman, Proc. Natl. Acad. Sci. USA 20, 169 (1934).
+
+ [6] H. Bondi, Mon. Not. R. Astron. Soc. 107, 410 (1947).
+
+ [7] Planck Collaboration, Astron. Astrophys. 641, A7 (2020).
+
+
+Acknowledgments
+I thank Luke for the important question that sharpened this work, and Dr. Rendler for his support and guidance.
+Computational assistance is gratefully acknowledged.
+
+                                                        16
+

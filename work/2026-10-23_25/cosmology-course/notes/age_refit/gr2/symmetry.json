@@ -1,0 +1,410 @@
+[
+ {
+  "file": "gr2/eta_back_gtc.json",
+  "kind": "3000K",
+  "visible": 0,
+  "note": "too few visible directions"
+ },
+ {
+  "file": "gr2/eta_back_le.json",
+  "kind": "3000K",
+  "visible": 0,
+  "note": "too few visible directions"
+ },
+ {
+  "file": "gr2/eta_fwd_gtc.json",
+  "tag": "eta_fwd_gtc",
+  "kind": "common-event",
+  "visible": 47,
+  "total": 60,
+  "m1_fit_cos": -0.1301647469898974,
+  "m1_fit_sin": -4.4590382524767076e-10,
+  "raw": {
+   "rms_total": 0.10209858008403105,
+   "rms_odd": 4.935726836639787e-08,
+   "rms_even": 0.10154626726757185,
+   "max_abs_odd": 1.0659364829690432e-07,
+   "p2p_even": 0.46599177927558044,
+   "edge_left": [
+    138.0,
+    0.39510256246805553
+   ],
+   "edge_right": [
+    222.0,
+    0.39510245872599903
+   ],
+   "jump_at_180": -1.0374205650087731e-07,
+   "gap_deg": 84.0,
+   "value_at_180": null
+  },
+  "m1removed": {
+   "rms_total": 0.05564739294167479,
+   "rms_odd": 5.1311773924786555e-08,
+   "rms_even": 0.055200122068677755,
+   "max_abs_odd": 1.1776208530545063e-07,
+   "p2p_even": 0.2780219202624749,
+   "edge_left": [
+    138.0,
+    0.22877916314091107
+   ],
+   "edge_right": [
+    222.0,
+    0.22877907103367168
+   ],
+   "jump_at_180": -9.210723939112597e-08,
+   "gap_deg": 84.0,
+   "value_at_180": null
+  }
+ },
+ {
+  "file": "gr2/eta_fwd_le.json",
+  "tag": "eta_fwd_le",
+  "kind": "common-event",
+  "visible": 59,
+  "total": 60,
+  "m1_fit_cos": -0.03885693454390521,
+  "m1_fit_sin": 6.248229360919663e-09,
+  "raw": {
+   "rms_total": 0.028275690412675417,
+   "rms_odd": 2.0681876007634023e-08,
+   "rms_even": 0.028356888492169822,
+   "max_abs_odd": 5.188776541764639e-08,
+   "p2p_even": 0.09505075878500169,
+   "edge_left": [
+    174.0,
+    0.06225711999829375
+   ],
+   "edge_right": [
+    186.0,
+    0.06225714067000787
+   ],
+   "jump_at_180": 2.067171411823665e-08,
+   "gap_deg": 12.0,
+   "value_at_180": null
+  },
+  "m1removed": {
+   "rms_total": 0.006747355925429052,
+   "rms_odd": 2.0250325642182294e-08,
+   "rms_even": 0.006725022181841422,
+   "max_abs_odd": 4.568020545159257e-08,
+   "p2p_even": 0.02918532343822494,
+   "edge_left": [
+    174.0,
+    0.021698271532628155
+   ],
+   "edge_right": [
+    186.0,
+    0.021698292749638748
+   ],
+   "jump_at_180": 2.1217010592877728e-08,
+   "gap_deg": 12.0,
+   "value_at_180": null
+  }
+ },
+ {
+  "file": "gr2/exp_back_gtc.json",
+  "kind": "3000K",
+  "visible": 0,
+  "note": "too few visible directions"
+ },
+ {
+  "file": "gr2/exp_back_le.json",
+  "kind": "3000K",
+  "visible": 0,
+  "note": "too few visible directions"
+ },
+ {
+  "file": "gr2/exp_fwd_gtc.json",
+  "tag": "exp_fwd_gtc",
+  "kind": "common-event",
+  "visible": 51,
+  "total": 60,
+  "m1_fit_cos": 0.6006395105024317,
+  "m1_fit_sin": 3.683369111737783e-10,
+  "raw": {
+   "rms_total": 0.3251356843698444,
+   "rms_odd": 1.761321628134211e-08,
+   "rms_even": 0.3261521336709015,
+   "max_abs_odd": 4.744788212329709e-08,
+   "p2p_even": 1.0384802479692152,
+   "edge_left": [
+    150.0,
+    -0.6641310973506922
+   ],
+   "edge_right": [
+    210.0,
+    -0.664131147708894
+   ],
+   "jump_at_180": -5.035820183074691e-08,
+   "gap_deg": 60.0,
+   "value_at_180": null
+  },
+  "m1removed": {
+   "rms_total": 0.1226347262139439,
+   "rms_odd": 2.892621102278219e-08,
+   "rms_even": 0.12245257409253432,
+   "max_abs_odd": 7.575826288519494e-08,
+   "p2p_even": 0.48939836206262877,
+   "edge_left": [
+    150.0,
+    -0.33492858631264555
+   ],
+   "edge_right": [
+    210.0,
+    -0.33492868578455914
+   ],
+   "jump_at_180": -9.947191359493956e-08,
+   "gap_deg": 60.0,
+   "value_at_180": null
+  }
+ },
+ {
+  "file": "gr2/exp_fwd_le.json",
+  "tag": "exp_fwd_le",
+  "kind": "common-event",
+  "visible": 59,
+  "total": 60,
+  "m1_fit_cos": 0.15766633819074669,
+  "m1_fit_sin": -3.8088959782483644e-11,
+  "raw": {
+   "rms_total": 0.10934896284404522,
+   "rms_odd": 1.059814872844743e-09,
+   "rms_even": 0.10993415444126628,
+   "max_abs_odd": 1.9695329811497686e-09,
+   "p2p_even": 0.3083366030987405,
+   "edge_left": [
+    174.0,
+    -0.1681347720157641
+   ],
+   "edge_right": [
+    186.0,
+    -0.16813476848572861
+   ],
+   "jump_at_180": 3.5300354861433902e-09,
+   "gap_deg": 12.0,
+   "value_at_180": null
+  },
+  "m1removed": {
+   "rms_total": 0.014101008917950223,
+   "rms_odd": 1.0935180885265677e-09,
+   "rms_even": 0.014166467297600318,
+   "max_abs_odd": 2.0787912502484573e-09,
+   "p2p_even": 0.04007945322914391,
+   "edge_left": [
+    174.0,
+    -0.018409193837090387
+   ],
+   "edge_right": [
+    186.0,
+    -0.018409189679507887
+   ],
+   "jump_at_180": 4.157582500496915e-09,
+   "gap_deg": 12.0,
+   "value_at_180": null
+  }
+ },
+ {
+  "file": "gr2/pl_back_gtc.json",
+  "kind": "3000K",
+  "visible": 0,
+  "note": "too few visible directions"
+ },
+ {
+  "file": "gr2/pl_back_le.json",
+  "kind": "3000K",
+  "visible": 0,
+  "note": "too few visible directions"
+ },
+ {
+  "file": "gr2/pl_fwd_gtc.json",
+  "tag": "pl_fwd_gtc",
+  "kind": "common-event",
+  "visible": 47,
+  "total": 60,
+  "m1_fit_cos": -0.14565992320395463,
+  "m1_fit_sin": 8.805305558500934e-09,
+  "raw": {
+   "rms_total": 0.1123897345905059,
+   "rms_odd": 4.275268424003864e-08,
+   "rms_even": 0.11181992680067801,
+   "max_abs_odd": 8.721473920836331e-08,
+   "p2p_even": 0.5091729785867675,
+   "edge_left": [
+    138.0,
+    0.42855563121623974
+   ],
+   "edge_right": [
+    222.0,
+    0.42855578023121077
+   ],
+   "jump_at_180": 1.4901497102925987e-07,
+   "gap_deg": 84.0,
+   "value_at_180": null
+  },
+  "m1removed": {
+   "rms_total": 0.058421664634800516,
+   "rms_odd": 4.3907077315648004e-08,
+   "rms_even": 0.057957224946469724,
+   "max_abs_odd": 9.696823233262819e-08,
+   "p2p_even": 0.29130606276184523,
+   "edge_left": [
+    138.0,
+    0.23988743868003248
+   ],
+   "edge_right": [
+    222.0,
+    0.23988758262530196
+   ],
+   "jump_at_180": 1.4394526948180442e-07,
+   "gap_deg": 84.0,
+   "value_at_180": null
+  }
+ },
+ {
+  "file": "gr2/pl_fwd_le.json",
+  "tag": "pl_fwd_le",
+  "kind": "common-event",
+  "visible": 59,
+  "total": 60,
+  "m1_fit_cos": -0.04145843421638647,
+  "m1_fit_sin": -2.069205902427094e-09,
+  "raw": {
+   "rms_total": 0.02987912378323793,
+   "rms_odd": 8.034177971650317e-08,
+   "rms_even": 0.029991928865695086,
+   "max_abs_odd": 2.0325069194360168e-07,
+   "p2p_even": 0.09868867779999735,
+   "edge_left": [
+    174.0,
+    0.0626610410552828
+   ],
+   "edge_right": [
+    186.0,
+    0.06266112513290234
+   ],
+   "jump_at_180": 8.407761953321824e-08,
+   "gap_deg": 12.0,
+   "value_at_180": null
+  },
+  "m1removed": {
+   "rms_total": 0.006035252176377533,
+   "rms_odd": 7.930238108180465e-08,
+   "rms_even": 0.006012844872551097,
+   "max_abs_odd": 2.0080552287637943e-07,
+   "p2p_even": 0.026218249742298028,
+   "edge_left": [
+    174.0,
+    0.01945311522211579
+   ],
+   "edge_right": [
+    186.0,
+    0.019453195440132243
+   ],
+   "jump_at_180": 8.021801645163862e-08,
+   "gap_deg": 12.0,
+   "value_at_180": null
+  }
+ },
+ {
+  "file": "gr2/soft_back_gtc.json",
+  "kind": "3000K",
+  "visible": 0,
+  "note": "too few visible directions"
+ },
+ {
+  "file": "gr2/soft_back_le.json",
+  "kind": "3000K",
+  "visible": 0,
+  "note": "too few visible directions"
+ },
+ {
+  "file": "gr2/soft_fwd_gtc.json",
+  "tag": "soft_fwd_gtc",
+  "kind": "common-event",
+  "visible": 59,
+  "total": 60,
+  "m1_fit_cos": -0.06134155411218106,
+  "m1_fit_sin": -3.9472565690163707e-10,
+  "raw": {
+   "rms_total": 0.060763964165210675,
+   "rms_odd": 1.0798328803298999e-08,
+   "rms_even": 0.06049399824264945,
+   "max_abs_odd": 3.265346237846245e-08,
+   "p2p_even": 0.2690427506920635,
+   "edge_left": [
+    174.0,
+    0.22747199634515236
+   ],
+   "edge_right": [
+    186.0,
+    0.22747198040253225
+   ],
+   "jump_at_180": -1.5942620112952e-08,
+   "gap_deg": 12.0,
+   "value_at_180": null
+  },
+  "m1removed": {
+   "rms_total": 0.03896934642357628,
+   "rms_odd": 1.0475932832827022e-08,
+   "rms_even": 0.03872097418290589,
+   "max_abs_odd": 3.0711744258837825e-08,
+   "p2p_even": 0.19044635860391973,
+   "edge_left": [
+    174.0,
+    0.15475353784400347
+   ],
+   "edge_right": [
+    186.0,
+    0.1547535227505734
+   ],
+   "jump_at_180": -1.509343006134145e-08,
+   "gap_deg": 12.0,
+   "value_at_180": null
+  }
+ },
+ {
+  "file": "gr2/soft_fwd_le.json",
+  "tag": "soft_fwd_le",
+  "kind": "common-event",
+  "visible": 59,
+  "total": 60,
+  "m1_fit_cos": 0.2582292585880456,
+  "m1_fit_sin": 3.144625941083315e-10,
+  "raw": {
+   "rms_total": 0.17652957828125007,
+   "rms_odd": 1.277210346919129e-09,
+   "rms_even": 0.17758671292435577,
+   "max_abs_odd": 3.1537854550123257e-09,
+   "p2p_even": 0.5011679745893634,
+   "edge_left": [
+    174.0,
+    -0.2696002566206738
+   ],
+   "edge_right": [
+    186.0,
+    -0.26960025683563016
+   ],
+   "jump_at_180": -2.14956386024312e-10,
+   "gap_deg": 12.0,
+   "value_at_180": null
+  },
+  "m1removed": {
+   "rms_total": 0.023972845425133317,
+   "rms_odd": 1.2834840035735146e-09,
+   "rms_even": 0.024067760698422515,
+   "max_abs_odd": 3.714031637791493e-09,
+   "p2p_even": 0.07026519471267567,
+   "edge_left": [
+    174.0,
+    -0.036290330948609006
+   ],
+   "edge_right": [
+    186.0,
+    -0.03629033116887348
+   ],
+   "jump_at_180": -2.2026447332734733e-10,
+   "gap_deg": 12.0,
+   "value_at_180": null
+  }
+ }
+]

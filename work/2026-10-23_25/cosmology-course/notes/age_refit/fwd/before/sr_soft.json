@@ -1,0 +1,46 @@
+{
+ "_vc": {
+  "0.1": {
+   "ok": false,
+   "nfound": 207
+  },
+  "0.23": {
+   "ok": false,
+   "nfound": 175
+  },
+  "0.5": {
+   "ok": false,
+   "nfound": 149
+  },
+  "1.0": {
+   "ok": false,
+   "nfound": 117
+  },
+  "2.0": {
+   "ok": false,
+   "nfound": 0
+  }
+ },
+ "nolimit": {
+  "0.1": {
+   "ok": false,
+   "nfound": 0
+  },
+  "0.23": {
+   "ok": false,
+   "nfound": 0
+  },
+  "0.5": {
+   "ok": false,
+   "nfound": 0
+  },
+  "1.0": {
+   "ok": false,
+   "nfound": 0
+  },
+  "2.0": {
+   "ok": false,
+   "nfound": 0
+  }
+ }
+}

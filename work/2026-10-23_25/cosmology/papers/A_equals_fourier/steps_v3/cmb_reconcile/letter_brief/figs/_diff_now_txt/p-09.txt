@@ -1,0 +1,32 @@
+Time A — before Drecomb .
+CoE at the origin; S1 (outer) and S2 (inner) expand about it with US mid-shell,
+D = (Rin + Rout )/2. Fixed CoE-centred recombination front Rrec (dashed) still outside
+mid-shell. Vision off: Rvis = 0, VHB = 0. Shells exceed c in the coordinate sense used here.
+Time B — US at Drecomb .
+Observer reaches the fixed recombination radius. Vision turns on; bubble radius still
+vanishes, so VHB = 0. Recombination remains a CoE-centred sphere of fixed drawing radius
+while material shells continue outward.
+Time C — early post-recombination.
+Shells have crossed Rrec . Visible sphere about US grows at c; Rin and Rout expand faster
+than light. VHB = 43 πRvis
+                        3 > 0, still a small fraction of the annulus V
+                                                                       ann = VS1 − VS2 .
+
+Time D — later expansion.
+US mid-shell; visible sphere samples a growing fraction of the donut without outrunning the
+> c shells. VHB /Vann and VHB /VS1 rise slowly; VS2 /VS1 fixed by the coast speed ratio.
+Time E — today-like donut.
+Thick shell about the CoE; US mid-shell; visible sphere at c probes the donut without
+overtaking S1/S2. Apparent late-time acceleration is an illusion of off-centre sampling (no
+dark energy, no outward shell acceleration). A contracting analogue would share the average
+appearance but differ in angular signature.
+
+Figure 7: Donut-universe sequence (A–E). Left: whole geometry storyboard
+(CoE fixed; US mid-shell; S1/S2; dashed Rrec ; Rvis = 0 until Drecomb , then at
+c). Right: stage prose.
+
+
+
+
+                      9
+

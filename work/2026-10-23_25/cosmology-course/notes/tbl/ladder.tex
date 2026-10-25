@@ -1,0 +1,27 @@
+\documentclass[border=12pt,varwidth=17cm]{standalone}
+\usepackage{booktabs,amsmath}
+\renewcommand{\arraystretch}{1.35}
+\begin{document}\Large
+\textbf{Migkas $A/A_{\mathrm{all}}$: fit ladder vs flat sky ($\chi^2_{\text{null}}=45.14$, $N=71$)}\\[6pt]
+\begin{tabular}{p{9.2cm}ccc}
+\toprule
+Model & Fitted & $R^2$ & $\sigma$ \\
+\midrule
+Point mass at CoE, axis $\ell_0=0^\circ$ & 2 & 0.397 & 3.5\\
+Point mass at CoE, no shell ($\ell_0=17^\circ$) & 3 & 0.521 & 4.1\\
+Exponential, axis $\ell_0=0^\circ$ & 3 & 0.560 & 4.1\\
+Exponential, axis free ($\ell_0=18.6^\circ$) & 4 & 0.759 & 5.1\\
+\midrule
+Exponential, CatWISE 3\% lock & 3 & 0.716 & 5.1\\
+Power law $(1+r/L)^{-1.2}$, lock & 3 & 0.718 & 5.0\\
+Soft core $1/(1+(r/L)^{0.3})$, lock & 3 & 0.743 & 5.1\\
+Stretched exp $e^{-(r/L)^{0.05}}$, lock & 4 & 0.745 & 5.0\\
+\midrule
+Exponential + rotation \& phase & 5 & 0.845 & 5.3\\
+Power law + rotation \& phase & 5 & 0.846 & 5.0\\
+Soft core + rotation \& phase & 5 & 0.870 & 5.1\\
+Stretched exp + rotation \& phase & 6 & 0.846 & 4.9\\
+\bottomrule
+\end{tabular}\\[6pt]
+\normalsize Rotation: $A/A_{\mathrm{all}}\times[1-A\sin(\ell+\varphi)]$, $A\approx0.036$, $\varphi\approx152^\circ$; alone $\approx1.5\sigma$.
+\end{document}

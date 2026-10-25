@@ -1,0 +1,5 @@
+found 181 of 181
+sky 0: emit pos x=0.9900 y=0.0000, emit dist from us 0.0100 D=0.046 Gpc, today dist 0.1013 D=0.464 Gpc, light travel 0.0961 D=0.440 Gpc, t_emit 0.8547, 1+z 1.1124
+sky 90: emit pos x=0.9900 y=0.0095, emit dist from us 0.0138 D=0.063 Gpc, today dist 0.0096 D=0.044 Gpc, light travel 0.0096 D=0.044 Gpc, t_emit 0.9412, 1+z 1.0101
+sky 180: emit pos x=0.9900 y=0.0000, emit dist from us 0.0100 D=0.046 Gpc, today dist 0.0049 D=0.022 Gpc, light travel 0.0049 D=0.022 Gpc, t_emit 0.9459, 1+z 1.0052
+t0 0.9508 us today 1.0000, cross t 0.9413 at 0.9900, see-radius 0.0095 D=0.044 Gpc

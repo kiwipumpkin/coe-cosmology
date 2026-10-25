@@ -1,0 +1,6 @@
+Pages:           16
+== 12: Figure 15 Figure 16 Figure 17  w=532
+== 13: Figure 18 Table 4 Table 3  w=727
+== 14: Figure 19 Figure 20  w=362
+== 15: Table 5 Figure 21  w=194
+== 16: Figure 22  w=47

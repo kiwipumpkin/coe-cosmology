@@ -1,0 +1,170 @@
+\section{Residuals as features: a framework for scientific discovery}\label{sec:resfeat}
+\subsection{Central Thesis}
+Residuals from a sufficiently accurate model should be treated as observable features worthy of scientific investigation, rather than merely as errors to minimize.
+Every scientific model begins with assumptions, predictions, simplifications, and a limited selection of variables.
+To the extent that the model accurately describes the phenomena it incorporates, the remaining residuals represent aspects of the observations that the model does not explain.
+These may include phenomena that:
+\begin{itemize}\setlength\itemsep{0pt}
+\item Were deliberately excluded for simplicity.
+\item Are known but imperfectly modeled.
+\item Were not recognized as relevant.
+\item Represent previously unidentified physical mechanisms.
+\item Arise from measurement error or irreducible stochastic behavior.
+\end{itemize}
+\emph{The central proposition is that the unexplained remainder of a successful model can itself become an object of scientific investigation.}
+
+\subsection{Mathematical Formulation}
+Consider an observed system: 
+\begin{equation*}Y=M(X,\theta)+R\end{equation*}
+
+where $Y$: observations; $M(X,\theta)$: predictions from the existing model; $R$: residuals representing unexplained variation.
+
+The residuals are: 
+\begin{equation*}\boxed{R=Y-M(X,\theta)}\end{equation*}
+
+Traditional model optimization often seeks to minimize: 
+\begin{equation*}\min_\theta \sum_i R_i^2\end{equation*}
+
+However, scientific discovery introduces a complementary objective: 
+\begin{equation*}\boxed{\text{Identify and characterize structure within }R}\end{equation*}
+
+These objectives are related but distinct.
+A model can produce small residuals while leaving scientifically important systematic patterns unexplained.
+Conversely, a model with relatively large residuals may be scientifically useful if those residuals are understood and characterized.
+Residual magnitude measures unexplained deviation; residual structure may provide information about its origin.
+\subsection{Residuals as Observable Features}
+Residuals should be examined for measurable properties just as the original observations are.
+\begin{table}[tbp]\centering\footnotesize\caption{Residual features and their potential significance.}\label{tab:resfeat}\begin{tabular}{@{}p{0.36\columnwidth}p{0.60\columnwidth}@{}}\toprule
+\textbf{Residual feature} & \textbf{Potential significance}\\\midrule
+Periodicity & Missing oscillatory processes\\
+Spatial correlation & Unmodeled spatial interactions\\
+Directional dependence & Anisotropy or broken symmetry\\
+Temporal correlation & Missing dynamics or memory effects\\
+Systematic curvature & Incorrect functional relationship\\
+Discontinuities & Regime changes or phase transitions\\
+Changing variance & Heteroscedasticity or evolving processes\\
+Spectral structure & Missing characteristic scales or frequencies\\
+Statistical independence & Consistency with noise under the tested assumptions\\
+\bottomrule\end{tabular}\end{table}
+A residual is not automatically evidence of new physics.
+Nevertheless, reproducible structure that survives appropriate statistical testing may indicate missing explanatory variables or mechanisms.
+The appropriate question becomes:
+What physical, mathematical, or observational process could generate the structure remaining after the known contributions have been modeled?
+\subsection{Progressive Isolation of Unexplained Phenomena}
+Suppose a physical system contains several contributions: 
+\begin{equation*}Y=F_1+F_2+F_3+F_4+\epsilon\end{equation*}
+
+An initial model incorporates only two: 
+\begin{equation*}M_1=F_1+F_2\end{equation*}
+
+Its residuals are: 
+\begin{equation*}R_1=F_3+F_4+\epsilon\end{equation*}
+
+After identifying and incorporating another contribution: 
+\begin{equation*}M_2=F_1+F_2+F_3\end{equation*}
+
+The residual becomes: 
+\begin{equation*}R_2=F_4+\epsilon\end{equation*}
+
+As established phenomena are accounted for, previously obscured contributions may become distinguishable.
+This suggests an iterative discovery process: 
+\begin{equation*}\boxed{\begin{array}{c}\text{Observation}\rightarrow\text{Model}\rightarrow\\ \text{Residual analysis}\rightarrow\text{Hypothesis}\rightarrow\text{Revised model}\end{array}}\end{equation*}
+
+The process can repeat as new physical mechanisms are identified.
+Importantly, this decomposition is an idealization. Physical contributions may interact nonlinearly, and statistical fitting may absorb or distort signals from omitted variables.
+\subsection{Historical Examples}
+Several important scientific discoveries illustrate this approach.
+\paragraph{Johannes Kepler --- Planetary Orbits.}
+Kepler encountered an approximately eight-arcminute discrepancy between observations of Mars and the circular orbital models he investigated.
+Rather than dismissing the discrepancy, he pursued an alternative geometric description.
+This contributed to the development of elliptical planetary orbits.
+\textit{Lesson:} Residuals can reveal incorrect assumptions about the mathematical structure of a physical system.
+
+\paragraph{Urbain Le Verrier --- Discovery of Neptune.}
+Unexplained deviations in Uranus's orbit motivated calculations predicting an additional planet.
+Neptune was subsequently observed near its predicted location.
+\textit{Lesson:} Residuals can reveal missing physical objects without requiring replacement of the underlying governing theory.
+
+\paragraph{Albert Einstein --- Mercury's Perihelion.}
+After accounting for known Newtonian gravitational effects, approximately 43 arcseconds per century of Mercury's perihelion precession remained unexplained.
+General relativity subsequently accounted for this discrepancy.
+\textit{Lesson:} Residuals can reveal limitations in otherwise highly successful physical theories.
+
+These examples demonstrate that residual analysis can lead to different classes of discovery:
+\begin{itemize}\setlength\itemsep{0pt}
+\item Previously unrecognized objects.
+\item Previously omitted interactions.
+\item Incorrect mathematical assumptions.
+\item New physical laws.
+\end{itemize}
+\subsection{Researchers and Intellectual Foundations}
+\begin{table}[tbp]\centering\footnotesize\caption{Researchers and intellectual foundations.}\label{tab:researchers}\begin{tabular}{@{}p{0.27\columnwidth}p{0.36\columnwidth}p{0.37\columnwidth}@{}}\toprule
+\textbf{Researcher} & \textbf{Contribution} & \textbf{Relevance}\\\midrule
+John Tukey & Exploratory data analysis & Residuals as sources of discoverable structure\\
+George E. P. Box & Iterative scientific modeling and model criticism & Learning through systematic model inadequacies\\
+Aris Spanos & Statistical misspecification testing & Identifying violated modeling assumptions\\
+Deborah Mayo & Severe testing and scientific inference & Distinguishing genuine discrepancies from statistical artifacts\\
+Johannes Kepler & Planetary orbital analysis & Residuals motivating new mathematical descriptions\\
+Urbain Le Verrier & Prediction of Neptune & Residuals indicating omitted physical entities\\
+Albert Einstein & General relativity & Residuals revealing limitations of established physical laws\\
+\bottomrule\end{tabular}\end{table}
+\paragraph{Particularly Relevant Literature.}
+\textit{John Tukey --- Exploratory Data Analysis (1977):} Emphasizes discovering structure through graphical and statistical examination of observations, including residuals.
+
+\textit{George Box --- Science and Statistics (1976):} Develops the view of scientific modeling as an iterative process involving construction, criticism, and revision.
+
+\textit{Aris Spanos --- Work on Statistical Misspecification:} Investigates how systematic departures from model assumptions can be identified and evaluated.
+
+\textit{Deborah Mayo --- Error and the Growth of Experimental Knowledge (1996):} Examines how rigorous testing of discrepancies supports scientific inference.
+
+These works provide complementary foundations for treating residual analysis as part of scientific discovery.
+\subsection{Distinguishing Prediction from Discovery}
+Two different objectives emerge.
+\textit{Predictive modeling:} The primary objective is to minimize disagreement between observations and predictions. 
+\begin{equation*}\min_\theta L(Y,M)\end{equation*}
+ where L is an appropriate loss function.
+
+A sufficiently flexible model may achieve excellent predictive accuracy without providing a useful physical explanation.
+\textit{Discovery-oriented modeling:} The objective is to explain established phenomena while preserving the ability to recognize previously unidentified structure.
+
+A simplified conceptual formulation is: 
+\begin{equation*}\boxed{\begin{array}{c}\text{Scientific discovery}=\text{Accurate modeling}\\ +\ \text{Systematic investigation of residuals}\end{array}}\end{equation*}
+
+This does not imply that large residuals are desirable.
+Rather, it recognizes that minimizing residual magnitude and understanding residual structure are different scientific activities.
+Overfitting is particularly problematic because it can remove genuine signals before they are recognized as distinct phenomena.
+\subsection{Philosophical Implications}
+The discussion suggests several broader principles.
+\textit{First:} A model need not be complete to be scientifically successful. A model can accurately represent the phenomena it was designed to describe while intentionally excluding other contributions.
+
+\textit{Second:} Residuals are defined relative to the model. They do not constitute an objective separation between known and unknown reality. Different models can produce different residual structures from the same observations.
+
+\textit{Third:} The unexplained remainder can have independent scientific value. Once calculated, residuals can be investigated for correlations, symmetries, characteristic scales, distributions, and temporal evolution.
+
+\textit{Fourth:} A sufficiently accurate model can function as a filter. By accounting for established effects, it may expose phenomena that were previously obscured.
+
+\textit{Fifth:} Discovery requires distinguishing unexplained structure from observational artifacts. A reproducible residual pattern is a candidate for explanation, not automatically evidence of a new physical mechanism.
+
+\subsection{Proposed Research Framework}
+The discussion suggests a systematic methodology:
+\begin{enumerate}\setlength\itemsep{0pt}
+\item \textbf{Construct a defensible baseline model.} Explicitly identify assumptions, simplifications, and omitted effects.
+\item \textbf{Validate the model.} Establish its predictive accuracy and characterize measurement uncertainty.
+\item \textbf{Calculate residuals.} Preserve their relationships to relevant observational variables.
+\item \textbf{Analyze residual features.} Investigate spatial, temporal, spectral, directional, and statistical structure.
+\item \textbf{Test against known omissions.} Determine whether established but excluded mechanisms explain the observed features.
+\item \textbf{Develop alternative hypotheses.} Propose physical mechanisms capable of generating the remaining structure.
+\item \textbf{Test independently.} Evaluate the hypotheses against new observations, withheld data, or independent measurements.
+\item \textbf{Revise the model.} Incorporate supported mechanisms and repeat the analysis.
+\end{enumerate}
+This framework combines predictive modeling, exploratory analysis, statistical testing, and hypothesis generation.
+\subsection{Principal Conclusion}
+The discussion began with the observation that every model necessarily incorporates assumptions and simplifications.
+As a model becomes more accurate, its residuals increasingly characterize the phenomena it does not explain, although they may also contain noise, measurement errors, and artifacts of the modeling procedure.
+Consequently, residuals should not be regarded exclusively as undesirable deviations to eliminate.
+They can be treated as measurable features, investigated systematically, and used to motivate new scientific hypotheses.
+The distinction is between using residuals to judge the quality of a model and using residuals to investigate phenomena beyond the model's explanatory scope.
+\paragraph{Consolidated thesis.}
+\begin{quote}\itshape Every scientific model is necessarily selective in the phenomena it represents. To the extent that a model accurately accounts for its intended physical contributions, its residuals characterize the unexplained remainder of the observations. Rather than treating these residuals exclusively as errors to minimize, researchers can investigate their structure as observable features. Systematic, reproducible patterns may reveal omitted variables, unrecognized interactions, incorrect assumptions, or previously unidentified phenomena. In this sense, a successful model serves not only as an explanation of what is understood, but also as an instrument for investigating what remains unexplained.\end{quote}
+\noindent\textbf{Central proposition:} \emph{The residuals of a good model are not merely measures of its limitations; they are potential observations of phenomena beyond its current explanatory scope.}
+

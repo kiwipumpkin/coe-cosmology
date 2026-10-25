@@ -1,0 +1,517 @@
+{
+ "framework": "sr",
+ "params": {
+  "DR": 2.598398213936363,
+  "K": 1.1391846670270973e-05,
+  "U": 0.00242496984631223,
+  "alpha": 0.3000000000028475,
+  "l0": 20.066218562529052
+ },
+ "D_Gpc": 37.15834915460669,
+ "with_mass": {
+  "meta": {
+   "t_obs_c_units": 602.6939403505842,
+   "t_obs_Gyr": 73043.17947075418,
+   "inner_outward_layer_q": 0.0007489021645663419
+  },
+  "observer_distance_D": 1.0000018373889685,
+  "observer_speed_over_c": 0.00030611302162900463,
+  "cases": {
+   "0.0": {
+    "f": 0.0,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.1": {
+    "f": 0.1,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.2": {
+    "f": 0.2,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.3": {
+    "f": 0.3,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.4": {
+    "f": 0.4,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.5": {
+    "f": 0.5,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.6": {
+    "f": 0.6,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.7": {
+    "f": 0.7,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.8": {
+    "f": 0.8,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.9": {
+    "f": 0.9,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "1.0": {
+    "f": 1.0,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   }
+  }
+ },
+ "no_mass": {
+  "meta": {
+   "t_obs_c_units": 602.6939403505842,
+   "t_obs_Gyr": 73043.17947075418,
+   "inner_outward_layer_q": 1.0169689660466482e-05
+  },
+  "observer_distance_D": 1.4615103344992455,
+  "observer_speed_over_c": 0.002424962715982706,
+  "cases": {
+   "0.0": {
+    "f": 0.0,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.1": {
+    "f": 0.1,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.2": {
+    "f": 0.2,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.3": {
+    "f": 0.3,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.4": {
+    "f": 0.4,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.5": {
+    "f": 0.5,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.6": {
+    "f": 0.6,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.7": {
+    "f": 0.7,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.8": {
+    "f": 0.8,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "0.9": {
+    "f": 0.9,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   },
+   "1.0": {
+    "f": 1.0,
+    "rays_left_layer_grid": 181,
+    "R_rec_scan": {
+     "no_emission_seen": 300
+    },
+    "max_sky_fraction_with_emission": 0.0,
+    "variants": {
+     "all_effects": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "without_gravity": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     },
+     "stretch_only": {
+      "full_sky": false,
+      "not_computable": "no valid R_rec (see R_rec_scan)"
+     }
+    }
+   }
+  }
+ }
+}

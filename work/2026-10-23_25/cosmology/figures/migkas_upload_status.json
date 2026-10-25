@@ -1,0 +1,12 @@
+{
+  "folderId": "1wZYStJhpdowbcjTkkS9TOImAtt9_GvzD",
+  "uploaded_at_local": "2026-09-18 ~10:25 CDT (America/Chicago, UTC-5)",
+  "files": [
+    {"name": "fig6_digitized.csv", "id": "1XrNZoEDM3_QTjY-jc37eZwwBPwQt54lZ", "local": "/workspace/cosmology/migkas/fig6_digitized.csv", "n_points": 71},
+    {"name": "migkas_fig6_model_overlay.png", "id": "1uGiCMoYgG5cd1KGfqg63Spb3rtA3--52", "local": "/workspace/cosmology/figures/migkas_fig6_model_overlay.png"},
+    {"name": "migkas_fig6_A_model_overlay.png", "id": "1WjKAEB3I38RKvME5b7iZM8n6tvFZS7Gx", "local": "/workspace/cosmology/figures/migkas_fig6_A_model_overlay.png"},
+    {"name": "fig6_digitized_README.txt", "id": "1jxxHY0JrnSVoW1rxF9L0xtdvim4fLf69", "local": "/workspace/cosmology/migkas/fig6_digitized_README.txt"}
+  ],
+  "label": "digitised from Migkas et al. 2020 Fig. 6",
+  "model": "ST+Gauss kappa=0.15 alpha=1 d/D=0.1; amp-mapped ptp scale=0.624; phase low at l~266-270; NO dipole"
+}

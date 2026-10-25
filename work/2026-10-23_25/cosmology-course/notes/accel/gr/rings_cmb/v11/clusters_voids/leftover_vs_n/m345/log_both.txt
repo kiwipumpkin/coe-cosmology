@@ -1,0 +1,10 @@
+smooth: dipole x 1.7221325814547672 rms(l1-12) x 5.435961527713568
+{'dipole_xPlanck': np.float64(1.7221325814547672), 'dipole_dTT': np.float64(0.0021243110397545137), 'v_kms': np.float64(636.8524281645414), 'l2_rms_xPlanckRMS': np.float64(5.140868027174002), 'l3_rms_xPlanckRMS': np.float64(0.3935758939714844), 'l4_rms_xPlanckRMS': np.float64(0.020863694399604123), 'l5_rms_xPlanckRMS': np.float64(0.004010432850587344), 'l2_rms_uK': np.float64(9978.690135319075), 'l3_rms_uK': np.float64(763.9511206887687), 'l4_rms_uK': np.float64(40.49750750090494), 'l5_rms_uK': np.float64(7.784457121439539), 'l345_rms_xPlanckRMS': np.float64(0.3941489079410246), 'l345_rms_uK': np.float64(765.0633703740409), 'PlanckRMS_uK': np.float64(1941.051605015522)}
+both m345 1 23.514 mass
+both m345 2 21.7032 void
+both m345 3 20.2904 mass
+both m345 4 16.7898 mass
+both m345 5 11.8104 mass
+both m345 6 6.4051 mass
+both m345 7 2.7401 mass
+both m345 8 0.0469 void

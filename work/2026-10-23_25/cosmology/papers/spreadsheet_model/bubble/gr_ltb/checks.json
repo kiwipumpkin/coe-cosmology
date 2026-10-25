@@ -1,0 +1,14 @@
+{
+ "GR-A": {
+  "first_shell_crossing_t_over_t0": 1.761904761904762,
+  "first_crossing_after_today_Gyr": 6.876567094634616,
+  "min_Rprime_past": 1.2006924728371631e-06,
+  "null_err_max": 5.334426434194083e-11
+ },
+ "GR-B": {
+  "first_shell_crossing_t_over_t0": null,
+  "first_crossing_after_today_Gyr": null,
+  "min_Rprime_past": 6.903161852448479e-07,
+  "null_err_max": 3.382975541520915e-11
+ }
+}

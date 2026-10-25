@@ -1,0 +1,16 @@
+4 0.0 sweep/s4_nomass.npz
+4 0.016605356395718446 sweep/s4_mass.npz
+5 0.0 sweep/s5_nomass.npz
+5 0.016688995614594367 sweep/s5_mass.npz
+6 0.0 sweep/s6_nomass.npz
+6 0.016745386997234428 sweep/s6_mass.npz
+8 0.0 sweep/s8_nomass.npz
+8 0.016818766669869645 sweep/s8_mass.npz
+10 0.0 sweep/s10_nomass.npz
+10 0.016857070731170015 sweep/s10_mass.npz
+15 0.0 sweep/s15_nomass.npz
+15 0.01691345238542505 sweep/s15_mass.npz
+20 0.0 sweep/s20_nomass.npz
+20 0.01694150906854707 sweep/s20_mass.npz
+30 0.0 sweep/s30_nomass.npz
+30 0.016971051989083018 sweep/s30_mass.npz

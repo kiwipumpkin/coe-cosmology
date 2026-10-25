@@ -1,0 +1,104 @@
+{
+ "mu": 2.0284319546492084,
+ "D_now_Gpc": 26.834734192553114,
+ "obs_speed_c": 6.26598605376228,
+ "stretch": {
+  "R_rec_Mpc": 24.473198491765043,
+  "t_rec_Myr": 1.6679277891941124,
+  "mean_T": 2.7249999999999996,
+  "finite_dirs": 360,
+  "stretch_inner": 1100.7008466930656,
+  "stretch_outer": 1101.134058309508,
+  "speed_factor_first_order": [
+   -39.151133943698476,
+   44.02899370334459
+  ],
+  "gamma_defined_dirs": 0,
+  "rel_speed_c_toward_CoE": 40.151133943698476,
+  "rel_speed_c_away_from_CoE": 43.02899370334459,
+  "los_speed_c_toward_CoE": -40.151133943698476,
+  "los_speed_c_away": 43.02899370334459,
+  "emitter_speed_c": [
+   46.41711999746075,
+   49.29497975710687
+  ],
+  "twoGM_rc2_emitter": 0.004106044488078078,
+  "twoGM_rc2_observer": 4434.324675651913,
+  "gravity_factor": null,
+  "delay_needed_Gyr": 2.6635838399283664,
+  "delay_available_Gyr": [
+   2.6635321225898023,
+   2.6636325160698915
+  ],
+  "emit_time_Myr": [
+   1.619251647668886,
+   1.7196451277577516
+  ],
+  "6deg": {
+   "full_amp_1e5": 19.675027580090955,
+   "dipole_1e5": 19.675027389682004,
+   "hot_l": 195.19999999999902,
+   "leftover_rms_1e5": 0.0013686288791508172
+  },
+  "1deg": {
+   "full_amp_1e5": 19.675027580090955,
+   "dipole_1e5": 19.67502738968111,
+   "hot_l": 195.19999999999703,
+   "leftover_rms_1e5": 0.0013686288781808106
+  },
+  "swing_1e5_stretch": 19.67502719927329,
+  "swing_1e5_speed_first_order": 1699172.281079392,
+  "swing_1e5_gamma": null
+ },
+ "dop1": {
+  "R_rec_Mpc": 1515.965430043513,
+  "t_rec_Myr": 103.3756002483703,
+  "mean_T": 2.725000000000766,
+  "finite_dirs": 360,
+  "stretch_inner": 17.76941079847375,
+  "stretch_outer": 17.77613364797375,
+  "speed_factor_first_order": [
+   -39.124007757886694,
+   43.89659987903051
+  ],
+  "gamma_defined_dirs": 0,
+  "rel_speed_c_toward_CoE": 40.124007757886694,
+  "rel_speed_c_away_from_CoE": 42.89659987903051,
+  "los_speed_c_toward_CoE": -40.124007757886694,
+  "los_speed_c_away": 42.89659987903051,
+  "emitter_speed_c": [
+   46.38999381164898,
+   49.16258593279279
+  ],
+  "twoGM_rc2_emitter": 15.14797242129945,
+  "twoGM_rc2_observer": 4434.324675651913,
+  "gravity_factor": null,
+  "delay_needed_Gyr": 2.56187616746919,
+  "delay_available_Gyr": [
+   2.5587932802156192,
+   2.5647842118881607
+  ],
+  "emit_time_Myr": [
+   100.46755582939942,
+   106.45848750194101
+  ],
+  "6deg": {
+   "full_amp_1e5": 11713485.564988932,
+   "dipole_1e5": 1222321.1131971476,
+   "hot_l": 195.19999999999996,
+   "leftover_rms_1e5": 3252418.127691126
+  },
+  "1deg": {
+   "full_amp_1e5": 19936967.312566284,
+   "dipole_1e5": 286891.1783279392,
+   "hot_l": 15.19999999999715,
+   "leftover_rms_1e5": 2401873.231805902
+  },
+  "swing_1e5_stretch": 18.913339504841375,
+  "swing_1e5_speed_first_order": 1735108.134273615,
+  "swing_1e5_gamma": null
+ },
+ "full": {
+  "error": "ValueError('The function value at x=-11.267197851937322 is NaN; solver cannot continue.')"
+ }
+}

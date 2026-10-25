@@ -1,0 +1,993 @@
+                                      Self-consistent models of cuspy triaxial galaxies with dark matter
+                                                                    haloes
+                                                                        R. Capuzzo-Dolcetta
+
+                                                             roberto.capuzzodolcetta@uniroma1.it
+arXiv:astro-ph/0611205v1 7 Nov 2006
+
+
+
+
+                                      Dep. of Physics, University of Roma ’La Sapienza’, P.le A. Moro 5, I-00185, Roma, Italy
+
+                                                                             L. Leccese
+
+                                                                   linda.leccese@uniroma1.it
+                                      Dep. of Physics, University of Roma ’La Sapienza’, P.le A. Moro 5, I-00185, Roma, Italy
+
+                                                                             D. Merritt
+
+                                                                      merritt@astro.rit.edu
+                                      Dep. of Physics, Rochester Inst. of Technology, 84 Lomb Memorial drive, Rochester, NY
+                                                                            14623 - USA
+
+                                                                              A. Vicari
+
+                                                                 alessandrovicari@uniroma1.it
+                                      Dep. of Physics, University of Roma ’La Sapienza’, P.le A. Moro 5, I-00185, Roma, Italy
+
+                                                                           ABSTRACT
+
+                                              We have constructed realistic, self-consistent models of triaxial elliptical
+                                          galaxies embedded in triaxial dark matter haloes. We examined three differ-
+                                          ent models for the shape of the dark matter halo: (i) the same axis ratios as the
+                                          luminous matter (0.7:0.86:1); (ii) a more prolate shape (0.5:0.66:1); (iii) a more
+                                          oblate shape (0.7:0.93:1). The models were obtained by means of the standard
+                                          orbital superposition technique introduced by Schwarzschild. Self-consistent so-
+                                          lutions were found in each of the three cases. Chaotic orbits were found to be
+                                          important in all of the models, and their presence was shown to imply a possible
+                                          slow evolution of the shapes of the haloes. Our results demonstrate for the first
+                                          time that triaxial dark matter haloes can co-exist with triaxial galaxies.
+
+                                          Subject headings: galaxies: elliptical and lenticular, cD - galaxies: kinematics
+                                          and dynamics - methods: numerical
+                                             –2–
+
+
+                                     1.   Introduction
+
+     According to the hierarchical picture of structure formation, galaxies originated from
+baryons that condensed within dark-matter haloes. If this picture is correct, dark matter
+should exist within and around galaxies. In the case of spiral galaxies, this has been widely
+confirmed by the study of rotation curves that remain approximately flat beyond the visible
+disk, suggesting the presence of invisible matter at large distances from the galactic centre
+(Rubin 1991). In the case of elliptical galaxies, the general absence of rotating gas disks
+makes this confirmation more difficult. Giant elliptical galaxies nevertheless show evidence
+of dark matter via stellar kinematics (Kronawitter et al. 2000), X-ray emission (Mathews
+& Brighenti 2003), and gravitational lensing (Keeton 2001). Numerical simulations of disk
+galaxy mergers including dark matter, like the recent work of Dekel et al. (2005), produce
+elliptical galaxies with stellar kinematics similar to what is observed.
+     Large-scale simulations of structure formation typically exclude gas and stars, due to the
+computational complexities associated with gaseous dissipation, radiation, star formation,
+etc. These simulations make well-defined predictions about the structure of baryon-free
+dark matter haloes and the dependence of halo properties on mass and formation redshift
+(Navarro et al. 2004; Diemand, Moore & Stadel 2004).
+     Much recent work has focussed on the shapes of the haloes (Allgood et al. 2006, Macció
+et al. 2006; Bett et al. 2006). Simulated haloes are found to be generically prolate/triaxial.
+The mean short-to-long axis ratio is 0.5 < ∼ hc/ai <∼ 0.7 and the distribution of c/a is ap-
+proximately Gaussian, with a sharp cutoff below c/a ≈ 0.3 that probably reflects the onset
+of a dynamical bending instability (Merritt & Sellwood 1994). There are indications that
+mean halo elongation increases with halo mass (Allgood et al. 2006). The shapes of these
+simulated haloes are apparently supported mainly by anisotropic velocities rather than by
+figure rotation (Warren et al. 1992).
+     To the extent that luminous elliptical galaxies formed in a manner analogous to the
+(simulated) dark-matter haloes – i.e. through dissipationless clustering of smaller galaxies
+– one expects the structure of the two sorts of system to be similar. Confirmation of this
+was recently demonstrated in the case of radial density profiles (Merritt et al. 2005a,b):
+the same fitting function that best describes luminous elliptical galaxies is an equally good
+description of the N-body haloes. Furthermore the simulated haloes appear to lie on the
+same relation between surface brightness and size (the “Kormendy relation”) defined by the
+galaxies (Graham et al. 2006).
+    With regard to shapes, observations of elliptical galaxies yield only the projected isophotes
+and so determination of the intrinsic shape distribution requires either statistical analyses
+                                             –3–
+
+
+based on large samples (e.g. Ryden 1992, 1996; Tremblay & Merritt 1995, 1996; Ryden,
+Lauer & Postman 1993; Alam & Ryden 2002; Vincent & Ryden 2005; Plionis, Basilakos &
+Ragone-Figueroa 2006), or mapping of potentials via detailed kinematical data for individual
+galaxies (e.g. Franx, Illingworth & de Zeeuw 1991; Statler et al. 2004). Isophotal studies
+reveal that luminous and faint elliptical galaxies have significantly different shape distribu-
+tions: the latter have hc/ai ≈ 0.75 while the former are flatter, hc/ai ≈ 0.65 (Tremblay &
+Merritt 1996). The apparent shape distributions are found to be mildly inconsistent with
+axial symmetry in the sense that too few, nearly-round galaxies are observed, but these stud-
+ies do not strongly constrain the degree or distribution of triaxialities. However, detailed
+kinematical studies of individual galaxies sometimes find evidence for significant triaxiality
+(Statler et al. 2004).
+     Still less is known about the true shapes of dark matter haloes, although constraints
+come from X-ray studies, lensing, and Milky Way kinematics (Tasitsiomi 2003). When
+comparing such data to the predictions of the N-body models, it is important to keep in
+mind that halo shapes are likely to be influenced by the presence of the baryons. For
+instance, if baryonic matter accumulates at the center of the dark-matter potential, the halo
+is expected to become rounder and less triaxial (Merritt & Quinlan 1998; Springel, White &
+Hernquist 2004; Kazantzidis et al. 2004).
+     Given these uncertainties, it is worthwhile to investigate new lines of evidence that
+might constrain the shapes of dark-matter haloes. Self-consistency studies constitute one
+such approach, which until now has not been explored. Can stationary, dark-matter haloes
+of arbitrary shape co-exist with a galaxy, or does the existence of a central, baryonic mass
+concentration imply restrictions on the elongation or triaxiality of the halo?
+     In gravitational potentials that respect special symmetries (spherical- or axi-symmetry,
+for instance), isolating integrals of the motion exist in addition to the energy. Jeans’s (1915)
+theorem provides a simple prescription for the construction of steady-state phase-space pop-
+ulations in such potentials: the phase-space density must be a function only of the isolating
+integrals. Orbits in triaxial potentials sometimes respect integrals in addition to the energy
+(Schwarzschild 1979), but the mathematical form of these integrals is typically unknown.
+Further, many orbits in triaxial potentials are observed to respect no integrals aside from
+the energy (Merritt 1980; Valluri & Merritt 1998; Papaphilippou & Laskar 1998).
+     Jeans’s theorem can be generalized to the non-integrable case: a steady-state galaxy
+is one in which the phase-space density is constant in every connected region (Kandrup
+1998). An example of a connected region is the invariant torus of a regular orbit, or the
+Arnold web corresponding to the chaotic parts of phase space at a given energy (Tabor 1989;
+Rasband 1990). Howevever Jeans’s theorem says nothing about how this special state is to
+                                             –4–
+
+
+be achieved, and stochastic orbits are often observed to remain confined to subsets of the
+full allowed region for long periods (e.g. Habib, Kandrup & Mahon 1997), making it unlikely
+that they would achieve a uniform phase-space population even in a Hubble time.
+     In the current work, we use the method introduced in 1979 by Schwarzschild for the
+numerical construction of stationary galaxy models. Schwarzschild’s method was tested on a
+modified Hubble profile (Schwarzschild 1979) and on a Plummer model (Siopis 1999). Later,
+it was used by Statler (1987) to demonstrate the self-consistency of model galaxies made
+of stars distributed according a triaxial density profile with a central core. Subsequently,
+high resolution observations of HST (Crane et al. 1993; Ferrarese et al. 1994; Lauer et
+al. 1995) showed that almost all the ellipticals have densities that rise toward the centre
+approximately as power laws ρ ∼ r −γ , with γ = 2 for fainter galaxies and γ = 1 for
+brighter ones. Merritt & Fridman (1996; hereafter MF96) used Schwarzschild’s method to
+construct self-consistent solutions galaxy models with both weak and strong cusps. In the
+case of strong cusps, the large number of stochastic orbits made it more difficult to obtain
+equilibrium models. Subsequent studies by Merritt (1997), Siopis (1999) and Terzic (2002)
+confirmed and extended the MF96 results. In these studies, attempts were made to represent
+the stochastic orbits via fully-mixed, steady-state distributions at each energy.
+     All the works just cited dealt with galaxies containing a single (luminous) component
+only. Here, we introduce a second component, the dark matter, presumably consisting of
+long-lived, “cold,” and collisionless particles, e.g. supersymmetric neutralinos (Bertone,
+Hooper & Silk 2004).
+     In the following Section we explain the method – a generalization of Schwarzschild’s – for
+constructing self-consistent equilibrium models. The details of these models are discussed in
+Section 3 while in Section 4 we describe their orbital characteristics. In Section 5 our results
+are analyzed and compared to those of models without dark matter. Finally in S ection 6
+we discuss the consequences of stochasticity for the long-term stability of the models.
+
+
+
+                                        2.   Method
+
+    In the absence of analytic expressions for the orbital integrals, one must resort to nu-
+merical methods to construct self-consistent models of galaxies or dark-matter haloes. To
+obtain a numerical solution to the problem we follow the Schwarzschild (1979) scheme. The
+procedure can be summarized as follows:
+     (1) A smooth, three-dimensional mass distribution resembling observed galaxies is pos-
+tulated and the corresponding gravitational potential calculated by means of Poisson’s equa-
+                                                    –5–
+
+
+tion.
+    (2) A library of orbits is realized by integration of the equations of motion in this
+potential starting from a large set of different initial conditions.
+      (3) The configuration space is divided into cells and the time each orbit spends in any
+cell is recorded.
+     (4) A linear combination of these orbits (with non-negative weights) is sought which
+gives the best discrete approximation to the known masses of the cells.
+     We generalized Schwarzschild’s method to the construction of two-component (luminous
+and dark matter), self-consistent models as follows. First, we constructed a catalog of orbits
+integrating the equations of motion for a particle moving in the potential generated by the
+sum of the luminous and dark matter density distributions. Then, two different grids of cells,
+one for the luminous and one for the dark matter components, were built. The technique
+used to realize each grid is the same described in MF96: the space was first divided by 21
+concentric ellipsoidal shells in zones containing an equal amount of one of the two matter
+components. Then, each octant was divided into three sectors corresponding to
+
+  (i) the volume with ax > by and ax > cz,
+
+ (ii) the volume with by > ax and by > cz,
+
+(iii) the volume with cz > ax and cz > by.
+
+Finally, we used a set of six planes to divide each sector in 16 regions. In this way, we
+obtained a total of 1008 cells per octant for each grid. The fraction of time spent by each
+orbit of this catalog in both sets of cells was recorded. We then used the data for the
+luminous-matter grid (called Luminous) to reproduce, by means of a linear superposition
+of orbits with non-negative occupation numbers, the given mass of the luminous component
+in each cell of that grid. The same procedure was followed to reproduce the dark matter
+distribution on the Dark matter grid.
+        In practice, our optimization problem consisted of minimizing, separately, the quantities
+                                        N lum               norb
+                                    1   X                    X                       2
+                         χ2lum =                  Mj;lum −          Ck;lumBk,j;lum            (1)
+                                   Nlum j=1                  k=1
+
+and
+                                        Ndm          norb
+                                     1 X              X                  2
+                           χ2dm =             Mj;dm −      Ck;dm Bk,j;dm                      (2)
+                                    Ndm j=1           k=1
+                                               –6–
+
+
+where Bk,j;lum is the fraction of time that the k th orbit spends in the j th cell of the Luminous
+grid and Bk,j;dm is the same quantity in the j th cell of the Dark matter grid; Mj;lum is the
+mass which the model places in the j th cell of the Luminous grid and Mj;dm that placed in
+the j th cell of the Dark matter one; Ck;lum and Ck;dm are the quantities to be determined by
+the minimization procedure. The latter represent the total mass of stars and dark matter
+particles, respectively, spread along the k th orbit (1 ≤ k ≤ norb ).
+    To guarantee non-negative orbital weights, we imposed the constraints Ck;lum ≥ 0 and
+Ck;dm ≥ 0. The NAG routine E04NCF (Stoer 1971; Gill et al. 1984) was used to solve these
+constrained least-squares problems.
+
+
+
+                                       3.    Mass models
+
+                                3.1.   Density and potential
+
+     We considered three different mass models for the galaxy+halo system. In each of the
+three cases, we adopted triaxial shapes for both components but with a different radial
+distribution for the dark and luminous matter. In the first model the dark matter was
+assumed to have the same axial ratios as the luminous matter, while the second and third
+models were characterized by haloes that were more prolate and more oblate, respectively,
+than the luminous matter.
+       As in MF96, we adopted the following mass distribution for the luminous component:
+                                               M            1
+                                  ρl (m) =                                                    (3)
+                                             2πal bl cl m(1 + m)3
+
+with
+                                  x2 y 2 z 2
+                           m2 =       + 2 + 2          0 < cl < bl < al                       (4)
+                                  a2l  bl  cl
+and M the total luminous mass (see Fig. 1) .
+       For the dark matter component we adopted
+                                                     ρdm,0
+                                 ρdm (m′ ) =                                                  (5)
+                                               (1 + m′ ) (1 + m′2 )
+
+where
+                               x2   y2   z2
+                      m′2 =       +    +              0 < cdm < bdm < adm ,                   (6)
+                              a2dm b2dm c2dm
+and ρdm,0 is the central dark matter density (see Fig. 1).
+                                                  –7–
+
+
+     The density profile in equation (5) was first proposed by Burkert (1995) for the dark
+matter haloes of dwarf galaxies, and later extended to the whole family of spiral (Salucci &
+Burkert 2000) and to massive elliptical (Borriello, Salucci & Danese 2003, hereafter BSD)
+galaxies. By adopting the Burkert profile – which has a large, low-density core – we are
+favoring data over theory, since N-body simulations of gravitational clustering imply dark-
+matter densities that increase roughly as a power law inside of the halo virial radius (Navarro,
+Frenk & White 1996; Moore et al. 1998; Merritt et al. 2005b). Rotation curve studies, on
+the other hand, are generally interpreted as implying low (∼ (1 − 5) × 10−2 M⊙ pc−3 ) dark
+matter densities within the region (r < 102 pc) where the rotation curves are sampled (e.g.
+Burkert 1995; Salucci & Burkert 2000; de Blok & Bosma 2002; Gentile et al. 2005). It was to
+model these low observed dark matter densities that the Burkert model (5) was postulated.
+     At large radii, the Burkert profile is similar to the NFW and Moore profiles that are
+commonly fit to N-body haloes, i.e. ρdm ∝ r −3 . In the central regions where the two sorts of
+profile (core vs. power law) differ, the gravitational potential is dominated by the luminous
+galaxy. Thus, our conclusions about the constraints that a central galaxy places on the shape
+of the halo are probably applicable also to halo models without cores.
+    The gravitational potential at a point x = (x, y, z) due to a mass distribution ρ = ρ(w),
+where w 2 = x2 /a2 + y 2 /b2 + z 2 /c2 may be written (Chandrasekhar 1969)
+
+                                          Z ∞
+                                                     [Ψ(∞) − Ψ(w)]dτ
+                       Φ(x) = −πGabc              p                                         (7)
+                                          0        (τ + a2 )(τ + b2 )(τ + c2 )
+with                                              Z w
+                                   Ψ(w) = 2                w ′ρ(w ′ )dw ′                   (8)
+                                                   0
+and
+                                       x2       y2       z2
+                             w 2 (τ ) =     +        +        .                             (9)
+                                     a2 + τ   b2 + τ   c2 + τ
+Consequently, we find, for the luminous and dark matter potentials, respectively,
+
+                                                    Z ∞
+                                         GM                  dτ    1
+                              Φl (x) = −                                ,                  (10)
+                                          2            0     ∆ (1 + m)2
+
+                     Φdm (x) = −πGadm bdm cdm ρdm,0
+                       Z ∞                                       
+                            dτ π           ′        ′ 1       ′2
+                                                                
+                      ×       ′
+                                 −arctan m +log(1+m )− log 1+m ,                           (11)
+                         0 ∆ 2                        2
+with                                      q
+                                  ∆=          (τ + a2l )(τ + b2l )(τ + c2l )               (12)
+                                                   –8–
+
+
+and                                      q
+                                  ∆′ =       (τ + a2dm )(τ + b2dm )(τ + c2dm ).                (13)
+The components of the gravitational forces are
+                                            Z ∞
+                           ∂Φl                           dτ
+                   Fli = −      = −GMxi            2
+                                                                                               (14)
+                            ∂xi              0  ∆(ai + τ )(1 + m)3 m
+
+                                      ∂Φdm
+                           Fdmi = −        = −2πGadm bdm cdm ρdm,0 xi
+                                       ∂x
+                                      Z ∞i
+                                                      dτ
+                                     ×     ′ ′ 2          ′        ′2
+                                                                                               (15)
+                                       0 ∆ (ai + τ )(1 + m )(1 + m )
+
+with a1 = al , a2 = bl , a3 = cl ,a′1 = adm , a′2 = bdm , a′3 = cdm and i = 1, 2, 3. These integrals
+were rewritten using an appropriate change of variables (see Appendix A) in order to reduce
+the complexity of their numerical treatment.
+      The mass contained in the ellipsoid of semi-axes wa, wb and wc is
+                                               Z w
+                              M(w) = 4πabc         ρ(w ′)w ′2 dw ′ ;                           (16)
+                                                       0
+
+this implies that the total mass is Mtot = limw→∞ M(w). In the case of luminous and dark
+matter, respectively, equation (16) gives (see Fig. 1):
+                                                       2
+                                                    m
+                                  Ml (m) = M               ,                        (17)
+                                                 1+m
+                                Mdm (m′ ) = πadm bdm cdm ρdm,0 B(m′ ),                         (18)
+where B is the function
+
+                     B(m′ ) = −2atan (m′ ) + 2 log (1 + m′ ) + log 1 + m′2 .
+                                                                          
+                                                                                               (19)
+
+We note that the total mass of the dark matter model is infinite. We cut off the dark matter
+grid at m = m′max , where m′max ≈ 19 was determined by the requirement that the mass in
+dark matter was ten times greater than the luminous total mass.
+
+
+
+                         3.2.    Model parameters and constraints
+
+      The free parameters of our models are:
+
+      - al , bl , cl and M for the luminous component;
+                                             –9–
+
+
+    - adm , bdm , cdm and ρdm,0 for the dark matter.
+
+With regard to the axis ratios of the luminous component, there exist some constraints in
+the form of the observed distribution of galaxy isophotal shapes (Ryden 1992; Tremblay
+& Merritt 1995, 1996; Alam & Ryden 2002; Plionis, Basilakos & Ragone-Figueroa 2006).
+Intrinsic, short-to-long axis ratios of bright (MB < −20) elliptical galaxies appear to be
+narrowly clustered around 3/4 (Tremblay & Merritt 1996); the constraints on the second axis
+ratio are less strong, but most studies (e.g. Tremblay & Merritt 1995) find that axisymmetric
+shapes can be securely ruled out. We accordingly fixed the short-to-long axis ratio of the
+luminous component to be 0.7 in all of the models and assumed “maximal triaxiality,” i.e.
+
+                               cl                  al 2 − bl 2  1
+                                  = 0.7,     T ≡               = .                         (20)
+                               al                  al − cl
+                                                      2      2  2
+
+     For the dark matter, we investigated three choices for the axis ratios: equal to those
+of the luminous matter (MOD1); a more prolate shape (T = 0.75) with cdm /adm = 0.5
+(MOD2); and a more oblate shape (T = 0.25) with cdm /adm = 0.7 (MOD3) The parameters
+of the models are summarized in Table 1.
+    If the unit of length is taken to be al , there remain two parameters: the ratio of luminous
+to dark-matter scale lengths and the normalization of the dark matter density.
+    We applied the results of the fundamental plane study of Borriello, Salucci & Danese
+(2003) to the triaxial case, yielding adm /al = 3.64 and the value of ρdm,0 corresponding to
+
+                                           Mdm (m′e )
+                                    Γe ≡              ≃ 0.3                                (21)
+                                           Ml (me )
+
+which is obtained by the evaluation of the luminous matter within the ellipsoid delimited by
+me , that characterizes the ‘luminous’ ellipsoid having the x-semiaxis equal to the effective
+
+                                           TABLE 1
+                         MODEL      Luminous matter      Dark matter
+                                    cl /al   Tl         cdm /adm Tdm
+                         MOD1        0.7     0.5           0.7    0.5
+                         MOD2        0.7     0.5           0.5   0.75
+                         MOD3        0.7     0.5           0.7   0.25
+
+Table 1: Axial ratios and triaxial parameter of the density distributions of the 3 galactic
+models.
+                                             – 10 –
+
+
+radius Re = 1.81al (me is the triaxial generalization of the effective radius Re ), and that
+of the dark matter contained in the m′e = 0.5 ellipsoid having the same long-axis extension
+as the luminous one. According to BSD this (adm /al , Γe ) pair of values gives the best fit of
+theoretical data to the FP. From this constraint it follows that ρdm,0 = 1.26 × 10−2 Ml,T /al 3
+for MOD1, ρdm,0 = 2.26 × 10−2 Ml,T /al 3 for MOD2 and ρdm,0 = 1.14 × 10−2 Ml,T /al 3 for
+MOD3.
+    Hereafter we express all quantities in units such that G, al and M are equal to unity.
+The implied unit of time is
+                                                               M −1/2  al 3/2
+               Tu = G−1/2 al 3/2 M −1/2 = 1.49 × 106 yr                                     (22)
+                                                              1011 M⊙    1kpc
+           p
+and Vu =    GM/al is the unit of velocity; the, derived, energy unit is Eu = (GM 2 /al ).
+
+
+
+                                    4.   Orbital catalogs
+
+                                  4.1.   Initial conditions
+
+     The orbital catalogs were built as in Schwarzschild (1993). Initial conditions consisted
+either of zero initial velocity
+                          p (“stationary” start-space), or points in the X − Z plane with
+vx = vz = 0 and vy = 2(E − Φ) 6= 0 (X − Z start-space). As argued by Schwarzschild
+(1993), these choices cover most of the orbital types in the full phase space of a nonrotating
+triaxial model; in particular, orbits starting in the X − Z plane are mostly tubes and avoid a
+region around the center of the model, while orbits starting on an equipotential surface are
+either stochastic or regular boxlets, that approach the origin after a sufficiently long time.
+For each galactic model we fixed 32 energy values and for each value we selected a set of
+150 initial conditions from the X − Z start-space and a set of 192 initial conditions from the
+stationary start-space, thus obtaining a catalog of 10944 orbits. Each orbit was integrated
+in time using a 7/8 order Runge-Kutta-Fehlberg algorithm with a variable step size so as to
+have a relative error in energy less than 10−6 per time step.
+
+
+
+                                  4.2.   Integration times
+
+    Particular care must be given to the choice of the orbital integration time. Because
+our aim is to construct a stationary model of a galaxy, all orbits must be integrated over
+a time interval long enough to guarantee a steady-state galaxy model. This means that
+the occupation numbers Bk,j of each orbit in the grid cells must be time-invariant. The
+                                             – 11 –
+
+
+time required by the Bk,j to converge to stationary values varies from one orbit to another,
+whether the orbit is regular or stochastic. In fact, a regular orbit can fill its invariant torus
+in a short time or, in the case of a nearly resonant orbit, it can take much longer to fill it
+(Merritt & Valluri 1999). In the same way, some chaotic orbits diffuse rapidly in the entire
+phase-space permitted by their energy, while others remain confined between regular tori for
+a very long time (Valluri & Merritt 2000) (we will call ergodic the orbits with convergent
+Bk,j ).
+     To select the integration time for the orbits we followed an iterative procedure, proposed
+by Pfenniger (1984), that stops the integration when the relative variations of Bk,j;lum and
+Bk,j;dm, in a time step go below 0.5%. In detail, we proceeded as follows:
+
+  1) Integrate and store the Bk,j;lum and Bk,j;dm over a time τ = Td /2 where Td is the
+     “dynamical time,” defined for each given energy as the period of the 1 : 1 resonant
+     orbit in the X − Y plane (see MF96);
+
+  2) Restart the integration for another time τ , and store the new Bk,j;lum and Bk,j;dm at
+     the end;
+
+  3) Compare the new and old Bk,j;lum and Bk,j;dm. If the maximum relative difference
+     is greater than 0.005 then average the two sets of Bk,j;lum and Bk,j;dm, double τ and
+     repeat step 2, otherwise stop the computation.
+
+As argued by Pfenniger, this method does not converge for all orbits (e.g. “sticky” chaotic
+orbits), so it is needed to fix a maximum time of integration, tmax .
+    We set this value at tmax = 2TH , where TH is the Hubble time; the choice TH = 15Gyr
+means tmax = 10, 000Tu, where Tu is the time unit in eq. 22 once assumed M = 1011 M⊙
+and al = 1kpc.
+    Most of the CPU time was associated with the integration of the orbit libraries. Since
+each orbit is independent, this task is efficiently parallelized. We used the Plexus cluster at
+the Rochester Institute of Technology to carry out the integrations. The construction of the
+complete library of 10944 orbits for MOD1 required approximately 6 hours using in parallel
+16 nodes of the cluster.
+                                               – 12 –
+
+
+                                          5.    Results
+
+                                   5.1.   Self-consistency
+
+     The main result of this work is that we were able to succesfully construct self-consistent
+models in all of the cases considered for the shape of the DM halo. To obtain the model with
+the prolate shape of the dark matter distribution (MOD3) we needed to enlarge the catalog
+of orbits to 11970. For each matter component, a parameter, δ, indicating the departure
+from self-consistency may be defined as
+                                                p
+                                                  χ2
+                                           δ=                                              (23)
+                                                 M
+where M represents the average mass contained in the grid cells and χ2 is the quantity
+defined in Section 2. The dependence of δ on the choice of the number of orbits in the
+catalog is shown in Fig. 2 for MOD2; Fig. 3 gives the distribution of the relative error in
+mass, ǫ, defined as ǫ = |Mj − nk=1
+                               P orb
+                                     Ck Bk,j |/Mj for each j’th grid cell in each of the three
+self-consistent models.
+     If we analyze the orbits that contribute significantly to the self-consistent solutions, we
+find that a large fraction consist of orbits that do not conserve the sign of the components
+of the angular momentum (corresponding to regular box orbits and boxlets or to chaotic
+orbits). Regarding orbits that conserve the z− component (named short-axis tubes) or the
+x− component (outer tubes) of the angular momentum, it is noted that, to guarantee the
+prolate structure of the dark matter in MOD2, the fraction of outer orbits was greater than
+that of the short tubes, while the opposite was true in MOD3, the more oblate model.
+     To give a finer detail on the self-consistent model orbital structure, Fig. 4 and 5 show
+the cumulative contribution, by mass, of the various orbital families in our self-consistent
+solutions. Chaotic orbits are of increasing importance at higher energies, especially for the
+dark matter component. This is partly explained by the initial abundance of high energy
+chaotic orbits in the full MOD1 catalog (see Fig. 6). Fig. 6 indicates, also, how the low-
+energy back-bone of the self consistent model is mostly constituted by short-axis tube orbits;
+in the ”more” evolved MOD1bis model (described in more detail below), chaotic orbits of
+the luminous matter component are important on the whole energy range. All this suggests
+to investigate more deeply the role of orbital stochasticity, as we do in Sect. 6.
+                                              – 13 –
+
+
+                              5.2.   Velocity dispersion tensors
+
+     To gain a more complete picture of the model kinematics, we also evaluated the first
+and second velocity moments in each of the self-consistent solutions. Using the properties of
+symmetry with respect to the coordinate planes in the cartesian frame, it was sufficient to
+store data for any given orbit in only one of the eight octants.
+     We stored the velocities along an orbit symmetrizing them respect to the principal axes
+in order to insert the point in which one velocity is evaluated in a precise cell of the positive
+octant. In this way an orbit, starting with a fixed direction, correspond to a trajectory
+covered equally (or similar) in two opposite directions. It results a mean motions in each cell
+near to the zero value. Then we weighted these data with the occupation number (mass) of
+the luminous orbits in each cell obtaining:
+                                      Pnorbit
+                                              Ck;lumBk,j;lum < vi >lum
+                         < Vi >lum = k=1Pnorbit
+                                              k=1 Ck;lum Bk,j;lum
+
+and                                  Pnorbit
+                                             Ck;lum Bk,j;lum < vi vh >lum
+                       < Vi Vh >lum = k=1 Pnorbit                         .
+                                              k=1 Ck;lum Bk,j;lum
+                                                                 2
+Finally, we obtain the velocity dispersion tensor of the stars, σlum,ih in each cell l, as:
+                       2
+                      σlum,l;ih =< Vi Vh >lum,l − < Vi >lum,l < Vh >lum,l .
+
+     The diagonalization of the velocity dispersion tensor, leads to the three principal velocity
+              2
+dispersions, σlum,l;i (i = 1, 2, 3) having the profiles shown in the left column of Fig. 7 (we
+                                   2        2          2
+order the dispersions to have σlum,l;1   > σlum,l;2 > σlum,l;3 ). In the right column of the figure
+we show, for comparison, the corresponding principal dispersions evaluated in a model with
+only the luminous component. As expected, the velocity dispersion in the model with both
+luminous and dark matter have a flatter profile. The difference in the external region is
+mainly due to insufficient orbital sampling and the (necessary) cut-off in the dark matter
+distribution.
+
+
+
+                         6.    Importance of orbital stochasticity
+
+     The Schwarzschild method for building self-consistent models uses orbits as “templates”,
+with supposedly time-invariant properties, so a requirement for a stationary solution is that
+a large fraction of the orbits (whether regular or chaotic) have nearly time-independent
+occupation numbers. Using the method of Pfenniger discussed above, we found that, at
+                                             – 14 –
+
+
+the time 2TH , roughly 20% of the occupation numbers of the orbits used to represent the
+luminous component were not yet fixed in time, while for the dark matter this percentage
+was as high as ∼ 50%. For MOD1, we attempted to obtain a more “stationary” solution by
+integrating the orbits up to 5TH . In this way, using a total of 2851 orbits for the luminous
+component and 2796 for the dark matter, we achieved a solution (MOD1bis) with a relative
+error in the mass of each cell < 10−9 (see Fig. 8). In this new model, the number of
+orbits with non-steady Bk,j values was reduced to ∼ 15%, which would seem to indicate the
+presence in the initial solution of quite a few “sticky” chaotic orbits.
+     Evaluating stochasticity based on orbital occupation numbers is prone to error, since
+even regular orbits can take long times to fill their invariant tori. To more accurately identify
+stochastic orbits, we used the Smaller Alignment Index (SALI) introduced by Skokos (2001),
+and later applied successfully to different dynamical systems (Skokos et al. 2003; Skokos et
+al. 2004; Manos & Athanassoula 2006). It is defined as (Skokos 2001)
+                                                                             
+                                    w1 (t)       w2 (t)     w1 (t)     w2 (t)
+                  SALI(t) = min             +            ,          −
+                                   kw1 (t)k kw2 (t)k kw1 (t)k kw2 (t)k
+
+where w1 (t) and w2 (t) are two deviation vectors in phase space, centered in the initial
+condition of one orbit and pointing in two different arbitrary directions. In the case of
+Hamiltonian flows, SALI fluctuates around a non-zero value for regular orbits, while it tends
+(in time) to zero for chaotic orbits.
+     By studying the evolution of this quantity for all the orbits of the catalog used to seek
+for the self-consistent solution of MOD1 we found that 68% of them are chaotic, especially at
+high energies (see Fig. 9). Regarding the orbits of the subsample giving the self-consistent
+solution MOD1bis, we found that more than 90% of non ergodic orbits are chaotic.
+     To evaluate the degree to which the stochastic orbits in MOD1bis would cause this model
+to evolve over long periods, we recorded the position and velocity of every chaotic orbit at
+the end (t = 5TH ) of the integration and used these values as initial conditions for a new
+
+                                           TABLE 2
+                          Set    Luminous matter         Dark matter
+                                   hwi      σhwi        hwi     σhwi
+                          X     0.000872 0.00138      0.00388 0.00137
+                          Y     −0.00845 0.00150       −0.01 0.00165
+                          Z      0.00929  0.00177     0.00771 0.00157
+
+Table 2: The mean values of the ”evolution” parameter w and their standard deviations.
+                                            – 15 –
+
+
+integration over another TH . We then again recorded the occupation numbers and compared
+them with the old ones. As shown in Fig. 10, more than 90% of these “reintegrated” orbits
+have fluctuations in Bi,j greater than the canonical value of 0.005. Operating in a similar way
+for dark matter, we reached the conclusion that our self-consistent model contains ∼ 10%
+and ∼ 23% of still-evolving stellar and dark matter orbits, respectively.
+     In order to study the cell density change as a result of orbital evolution, and so the
+role of evolution on the overall shape of the model galaxy, we studied the variation of the
+occupation numbers of the chaotic-non ergodic orbits on a TH − 5TH time basis, of three set
+of cells (named X, Y, Z), sampling the volumes around the three coordinate axes. At this
+scope we defined, in each cell (i), an ”evolution” parameter
+                                  P                   P
+                                     k∈K1 Bi,k |5th −   k∈K1 Bi,k |1th
+                           wi =            P                                           (24)
+                                              k∈K2 Bi,k |5th
+
+where in the numerator summation is extended over all the chaotic-non ergodic orbits in the
+self-consistent solutions and, to normalize, we divide for the sum over the whole set of orbits
+in the self-consistent solution at t = 5TH . The average value of w on the X, Y, Z volumes gives
+an indication of the shape evolution: a globally unchanged shape would correspond to hwiX =
+hwiY = hwiZ = 0. We found that for luminous matter < w >X is compatible with being = 0,
+while hwiY < 0 and, hwiZ > 0. This corresponds to a slight evolution toward a more prolate
+shape. The dark matter component shows a, statistically significant, increase in time of
+the chaotic orbit population of both the X and Z volumes, and a (smaller) depopulation of
+the Y volume. This should corresponds, too, toward a more prolate configuration. In view
+of future astrophysical applications (e.g. to the study of orbital the evolution of massive
+black holes or globular clusters subjected to dynamical friction), it is relevant to check how
+much the kinematical structure of the galactic models depend on the presence of a fraction
+of evolving orbits. To do this, we compared the principal velocity dispersions in MOD1bis
+with those of MOD1. As we can see by comparing Fig. 11 with Fig. 7, the behaviours are
+similar, with a relative difference that is almost always below 10%. We checked that the
+largest relative differences refer to the outermost shell.
+
+
+
+                                     Acknowledgments
+
+     D.M. acknowledges support from grants AST-0206031, AST-0420920 and AST-0437519
+from the NSF, grant NNG04GJ48G from NASA, and grant HST-AR-09519.01-A from STScI.
+This work was supported in part by the Center for Advancing the Study of Cyberinfrastruc-
+ture at the Rochester Institute of Technology.
+                                                     – 16 –
+
+
+                                           A.   Potential and forces
+
+      Using the substitution s = (1 + τ )−1/2 in Eq. 10 and 11, they transforms into:
+                                              Z 1             
+                                                  ds      1
+                              Φl (x) = −GM          ′ (1 + m)2
+                                                                                               (A1)
+                                                0 ∆
+
+
+
+
+                           Φdm (x) = −2πGadm bdm cdm ρdm,0
+                             Z 1                                   
+                                 ds π        ′             ′ 1   ′2
+                                                                   
+                            ×      ′ 2
+                                       −atanm +log(1+m )− log 1+m     ,                        (A2)
+                               0 ∆                           2
+
+where
+                               x2                y2                z2
+                                                                            
+                  2          2
+                m (s)=s                  +                 +
+                        1 + s2 (al 2 − 1) 1 + s2 (bl 2 − 1) 1 + s2 (cl 2 − 1)
+                                                                                               (A3)
+                       q
+                ˜=
+                ∆          [1 + s2 (al 2 − 1)][1 + s2 (bl 2 − 1)][1 + s2 (cl 2 − 1)]
+and
+                              x2              y2              z2
+                                                                      
+                      ′2         2
+                 m (s)=s               +               +
+                         1+s2(adm 2 −1) 1+s2(bdm 2 − 1) 1+s2(cdm 2 − 1)
+                                                                                               (A4)
+                     q
+                 ˜
+                 ∆ = [1 + s2(adm 2 − 1)][1 + s2(bdm 2 − 1)][1 + s2(cdm 2 − 1)].
+                   ′
+
+
+
+     With the substitutions s = al;i (a2l;i + τ )−1/2 for the luminous forces and s = adm;i (a2dm;i +
+τ )−1/2 for that of dark matter we transform Eq. 14 and 15 in:
+
+                                                           Z 1
+                                           ∂Φl                         s2 ds
+                                 Fli = −GM     = −2xi                                          (A5)
+                                           ∂xi                0   ∆i mi (1 + mi )3
+
+
+                                                 ∂Φ
+                                         Fdmi = −    = −4πGadm bdm cdm ρdm,0 xi
+                                                 ∂xi
+                                                 Z 1
+                                                            s2 ds
+                                                ×     ′      ′        ′2
+                                                                                               (A6)
+                                                  0 ∆i (1 + mi )(1 + mi )
+                                                     – 17 –
+
+
+    where x1 = x, x2 = y, x3 = z and:
+                              h                                                 i
+                    2       2      x2                y2                z2
+                 mi (s) = s al;i 2 +Cl;1 s2 + al;i 2 +Cl;2 s2 + al;i 2 +Cl;3 s2
+
+                                   h                                                     i
+                                           x2                  y2                z2
+                     m′i 2 (s) = s2 adm;i 2+C dm;1s
+                                                    2 +      2
+                                                        adm;i +Cdm;2s 2 +      2
+                                                                          adm;i +Cdm;3s 2
+                                                                                             (A7)
+                         p
+                     ∆i = (al;i 2 + Al;1 s2 )(al;i 2 + Al;2 s2 )(al;i 2 + Al;3 s2 )
+                          p
+                     ∆′i = (adm;i 2 +Adm;1s2)(adm;i 2 +Adm;2s2)(adm;i 2 +Adm;3s2).
+
+    The costants in Eq. A7 are
+
+                       i=1:
+                        Aj;1 = bj 2 − 1     Aj;2 = cj 2 − 1     Aj;3 = aj 2
+                                               2
+                        Cj;1 = 0      Cj;2 = bj − 1       Cj;3 = cj 2 − 1
+                       i=2:
+                        Aj;1 = cj 2 − bj 2   Aj;2 = 1 − bj 2      Aj;3 = bj 2                (A8)
+                        Cj;1 = 1 − bj 2     Cj;2 = 0      Cj;3 = cj 2 − bj 2
+                       i=3:
+                        Aj;1 = 1 − cj 2     Aj;2 = bj 2 − cj 2    Aj;3 = cj 2
+                        Cj;1 = 1 − cj 2     Cj;2 = bj 2 − cj 2   Cj;3 = 0.
+
+with j = l or j = dm if we deal with luminous or dark matter, respectively.
+
+
+
+                                             REFERENCES
+
+Alam, S. M. K., & Ryden, B. S. 2002, ApJ, 570, 610
+
+Allgood, B., Flores, R. A., Primack, J. R., Kravtsov, A. V., Wechsler, R. H., Faltenbacher,
+      A., & Bullock, J. S. 2006, MNRAS, 367, 1781
+
+Bertone, G., Hooper, D., & Silk, J. 2004, Physics Reports, 405, 279
+
+Bett, P., Eke, V., Frenk, C. S., Jenkins, A., Helly, J., & Navarro, J. 2006, ArXiv Astrophysics
+       e-prints, arXiv:astro-ph/0608607
+
+Borriello A., Salucci P., Danese L. 2003, MNRAS, 341, 1109
+
+Burkert A. 1995, ApJ, 447, L25
+                                           – 18 –
+
+
+Chandrasekhar S. 1969, Ellipsoidal Figures of Equilibrium (New York:Dover)
+
+Cole S., Lacey C. 1996, MNRAS, 281, 716
+
+Crane, P. et al. 1993, AJ, 106, 1371
+
+de Blok, W. J. G., & Bosma, A. 2002, A&A, 385, 816
+
+Dekel F., Stoehr F., Mamon G.A., Cox T.J., Novak G.S., Primack J.R. 2005, Nature, 437,
+      707
+
+Diemand, J., Moore, B., & Stadel, J. 2004, MNRAS, 353, 624
+
+Faber S.M., Tremaine S., Ajhar E.A., Byun Y.-I., Dressler A., Gebhardt K., Grillmair C.,
+      Kormendy J., Lauer T.R., Richstone D. 1997, AJ, 114, 1771
+
+Franx, M., Illingworth, G., & de Zeeuw, T. 1991, ApJ, 383, 112
+
+Ferrarese L., van den Bosch F.C., Ford H.C., Jaffe W., O’Connell R. W. 1994,AJ, 108, 1598
+
+Gentile, G., Burkert, A., Salucci, P., Klein, U., & Walter, F. 2005, ApJl, 634, L145
+
+Gill P. E. et al. 1984, ACM Trans. Math. Software, 10, 282
+
+Habib, S., Kandrup, H. E., & Mahon, M. E. 1997, ApJ, 480, 155
+
+Jeans, J. H. 1915, MNRAS, 76, 70
+
+Kandrup, H. E. 1998, MNRAS, 299, 1139
+
+Kazantzidis, S., Kravtsov, A. V., Zentner, A. R., Allgood, B., Nagai, D., & Moore, B. 2004,
+      ApJl, 611, L73
+
+Keeton C.R. 2001, ApJ, 561, 46
+
+Kronawitter, A., Saglia, R. P., Gerhard, O., & Bender, R. 2000, A & Ap. Suppl., 144, 53
+
+Lauer T.R., Ajhar E.A., Byun Y.-I., Dressler A., Faber S.M., Grillmair C., Kormendy J.,
+      Richstone D., Tremaine, S 1995, AJ, 110, 2622
+
+Maccio’, A. V., Dutton, A. A., van den Bosch, F. C., Moore, B., Potter, D., & Stadel, J.
+      2006, ArXiv Astrophysics e-prints, arXiv:astro-ph/0608157
+
+Manos T., Athanassoula E. 2006, astro-ph/0601331 v1
+
+Mathews W.G., Brighenti F. 2003, Ann. Rev. Astron. Astrophys., 41, 191
+                                           – 19 –
+
+
+Merritt, D. 1980, ApJ Suppl., 43, 435
+
+Merritt, D. 1997, Apj, 486, 102
+
+Merritt D., Fridman T. 1996, ApJ, 460, 136
+
+Merritt, D., Graham, A. W., Moore, B., Diemand, J., & Terzic, B. 2005b, ArXiv Astrophysics
+       e-prints, arXiv:astro-ph/0509417
+
+Merritt, D., Navarro, J. F., Ludlow, A., & Jenkins, A. 2005a, ApJl, 624, L85
+
+Merritt, D., & Valluri, M. 1999, AJ, 118, 1177
+
+Moore, B., Governato, F., Quinn, T., Stadel, J., & Lake, G. 1998, ApJl, 499, L5
+
+Moore B., Kazantzidis S., Diemand J., Stadel J. 2004, MNRAS, 354, 522
+
+Navarro, J. F., Frenk, C. S., & White, S. D. M. 1996, ApJ, 462, 563
+
+Ostriker J.P., Steinhardt P. 2003, Science, 300
+
+Papaphilippou, Y., & Laskar, J. 1998, A & A, 329, 451
+
+Pfenniger D. 1984, ApJ, 141, 171
+
+Plionis, M., Basilakos, S., & Ragone-Figueroa, C. 2006, ArXiv Astrophysics e-prints,
+       arXiv:astro-ph/0608457
+
+Rasband S. N. 1990, “Arnold diffusion” in Chaotic Dynamics of Nonlinear Systems (New
+      York, Whiley)
+
+Rubin, V. C. 1991, AIP Conf. Proc. 222: After the first three minutes, 222, 371
+
+Ryden, B. 1992, ApJ, 396, 445
+
+Ryden, B. S. 1996, ApJ, 461, 146
+
+Ryden, B. S., Lauer, T. R., & Postman, M. 1993, ApJ, 410, 515
+
+Salucci P., Burkert A. 2000, Apj, 537, 9
+
+Schwarzschild M. 1979, ApJ, 232, 236
+
+Schwarzschild M. 1993, ApJ, 409, 563
+
+Siopis Ch. 1999, ASPC, 182, 176
+                                              – 20 –
+
+
+Skokos Ch. 2001, J. Phys. A: Math. Gen., 34, 10029
+
+Skokos Ch., Antonoupolos C., Bountis T., Vrahatis M. 2003, Prog. Theor. Phys. Suppl., 150,
+      439
+
+Skokos Ch., Antonoupolos C., Bountis T., Vrahatis M. 2004, J. Phys. A, 37, 6269
+
+Springel, V., White, S. D. M., & Hernquist, L. 2004, IAU Symposium, 220, 421
+
+Statler Thomas S. 1987, Apj, 321, 113
+
+Statler, T. S., Emsellem, E., Peletier, R. F., & Bacon, R. 2004, MNRAS, 353, 1
+
+Stiavelli M., Miller B.W., Ferguson H.C., Mack J., Whitmore B.C., Lotz J.M. 2001, AJ, 121,
+       1385
+
+Stoer J. 1971, SIAM Numer. Anal., 8, 382
+
+Tabor M. 1989, Chaos and integrability in nonlinear dynamics. An introduction. (New York,
+      Whiley)
+
+Tasitsiomi, A. 2003, International Journal of Modern Physics D, 12, 1157
+
+Terzić, B. 2002, Ph.D. Thesis, University of Florida
+
+Tremblay, B. & Merritt, D. 1995, AJ, 110, 1039
+
+Tremblay B. & Merritt, D. 1996, AJ, 111, 2243
+
+Valluri, M., & Merritt, D. 1998, ApJ, 506, 686
+
+Valluri, M., & Merritt, D. 2000, The Chaotic Universe, Proceedings of the Second ICRA
+       Network Workshop, Advanced Series in Astrophysics and Cosmology, vol.10, Edited
+       by V. G. Gurzadyan and R. Ruffini, World Scientific, 2000, p.229, 229
+
+Vincent, R. A., & Ryden, B. S. 2005, ApJ, 623, 137
+
+Warren, M. S., Quinn, P. J., Salmon, J. K., & Zurek, W. H. 1992, ApJ, 399, 405
+
+
+
+
+   This preprint was prepared with the AAS LATEX macros v5.2.
+                                          – 21 –
+
+
+
+
+Fig. 1.— Top: long-axis density profiles of the luminous and dark matter components.
+Middle: mass enclosed within spheres of radius r in the case a = b = c. Bottom: circular
+velocity profiles in the spherical model, including both components (dashed line), and in a
+                                          – 22 –
+
+
+
+
+Fig. 2.— The rms deviation δ (equation 23) as a function of the number of orbits supplied to
+                                          – 23 –
+
+
+
+
+Fig. 3.— Histograms of the relative errors ǫr (see text). They refer to both the components
+grids of the three models analyzed and are calculated using the Ck quantities of the self-
+consistent solutions.
+                                         – 24 –
+
+
+
+
+Fig. 4.— Cumulative, by mass, energy distributions of the various orbital families in the
+self-consistent solution of MOD1 (left column) and MOD1bis (right column). The symbols
+”B,” ”X,” ”Z,” and ”C” denote the mass contributed by box, x-tube, z-tube, and chaotic
+orbits, respectively.
+                                         – 25 –
+
+
+
+
+Fig. 5.— Cumulative, by mass, energy distributions of the various orbital families in the
+self-consistent solution of MOD2 (left column) and MOD3 (right column). The symbols ”B,”
+”X,” ”Z,” and ”C” denote the mass contributed by box, x-tube, z-tube, and chaotic orbits,
+respectively.
+                                        – 26 –
+
+
+
+
+Fig. 6.— Cumulative, by number, energy distribution of the whole MOD1 orbital catalog.
+Symbols as in Fig. 4
+                                           – 27 –
+
+
+
+
+                                                     2
+Fig. 7.— The stellar principal velocity dispersions σlum,l;i , i = 1, 2, 3 as functions of the
+distance from the centre in model MOD1 (left column) and in a model with the same
+luminous mass but without dark matter (right column).
+                                         – 28 –
+
+
+
+
+Fig. 8.— Histograms of the relative errors ǫr for MOD1bis, referring to the luminous and
+dark matter component, respectively.
+                                             – 29 –
+
+
+
+
+Fig. 9.— Fraction of different types of orbits in the full MOD1 orbital catalog vs energy.
+Full circles represent stochastic orbits; open circles are box-like orbits; open and full squares
+correspond to short and outer tube orbits respectively.
+                                        – 30 –
+
+
+
+
+Fig. 10.— Histograms of the maximum |∆Bj,k | for the stochastic orbits used in MOD1bis
+integrated once up to 5TH and once up to 6TH .
+                                           – 31 –
+
+
+
+
+Fig. 11.— Left column: principal velocity dispersions for the luminous component, obtained
+with the self-consistent solution realized after having integrated orbits over 5TH (MOD1bis).
+Right column: relative change in this quantity with respect to that obtained with the self-
+

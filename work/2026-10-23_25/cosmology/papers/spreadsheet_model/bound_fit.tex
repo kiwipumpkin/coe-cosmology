@@ -1,0 +1,53 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath,graphicx,booktabs,float,caption}
+\captionsetup{font=small,labelfont=bf}
+\makeatletter\renewcommand\section{\@startsection{section}{1}{0pt}{-8pt}{3pt}{\normalfont\large\bfseries}}\makeatother
+\setlength{\parskip}{3pt}
+\title{\vspace{-1.2cm}Can your model A stop expanding and still fit? A bound-expansion fit}
+\author{Addendum to the integrated model at $R=14.3$ Gpc}
+\date{September 26, 2026}
+\begin{document}
+\maketitle\vspace{-0.9cm}
+
+\section{Constraints}
+We use the integrated fixed-profile model of the previous addendum, with its geometry, $e^{-r/L}$ profile, sine term and start at $0.01\,t_0$. The CoE mass and an optional uniform background of mass $M_b$ act on every particle through
+\begin{equation}\label{eq:eom}
+\ddot{\mathbf x}=-\frac{G\,[M(<r)+M_b(<r)]}{r^3}\,\mathbf x,\qquad M_b(<r)=M_b\,\min\!\left(1,\,r^3/D^3\right),
+\end{equation}
+and Earth's specific energy today uses the exact potential of both,
+\begin{equation}\label{eq:E}
+E=\tfrac12 v_E^2+\Phi(r_E),\qquad
+\Phi(r)=-\frac{G M_{\rm tot}}{L}\left[\frac{f(u)}{u}+\frac{(1+u)e^{-u}}{2}\right]+\Phi_b(r),\qquad u=\frac rL,\quad M_{\rm tot}=\frac{M}{f(D/L)},
+\end{equation}
+with $f(u)=1-e^{-u}(1+u+u^2/2)$ and $\Phi_b=-GM_b(3D^2-r^2)/2D^3$ inside $D$, $-GM_b/r$ outside. A fit is accepted only if $E\le0$, so that Earth eventually turns around, and if every particle's radial velocity stays positive up to today. We quote the bound fraction as $(v_E/v_{\rm esc})^2=v_E^2/[-2\Phi(r_E)]$, which is at most 1 for a bound Earth. The turnaround time comes from continuing Earth's radial motion past today. The background is a uniform sphere of radius $D$ centred on the CoE and fixed in space. We did not let it expand with the flow, because comoving uniform matter in a flow with $H=1/t$ has a density parameter that grows as $t_0/t$ toward early times. At $\Omega_b=0.3$ that is 30 at the start, so everything recollapses long before today, which is the same ill-posedness that ruled out the comoving CoE profile. Truncating it at $D$ adds its mass to the mass inside $D$ and keeps its potential finite.
+
+Migkas plot $A/A_{\rm all}$, the ratio to the all-sky mean. Your sheet instead divides by the unperturbed $kR$, which is harmless when gravity is weak but not when it is strong enough to bind. We therefore fit both forms,
+\begin{equation}\label{eq:norm}
+A_{\rm literal}(\theta)=\left[1-{\rm Amp}\sin(\theta+\varphi)\right]\frac{|\Delta\dot{\mathbf x}|}{kR},\qquad
+A_{\rm sky}(\theta)=\left[1-{\rm Amp}\sin(\theta+\varphi)\right]\frac{|\Delta\dot{\mathbf x}|}{\langle|\Delta\dot{\mathbf x}|\rangle_{\rm sky}} .
+\end{equation}
+Only the combination $\mu=GMt_0^2/D^3$ enters the dynamics, so the age and the mass are degenerate. With $H_0=70$ km\,s$^{-1}$\,Mpc$^{-1}$ fixed as Earth's expansion rate today, each solution sets its own age and mass,
+\begin{equation}\label{eq:age}
+t_0=\frac{(Ht)_E}{H_0},\qquad (Ht)_E=\frac{v_E\,t_0}{r_E},\qquad M=\frac{\mu D^3}{G t_0^2},\qquad \frac{M}{M_{\rm crit}}=\frac{2\mu}{(Ht)_E^2}.
+\end{equation}
+
+\section{Results}
+With your literal normalisation, no bound solution fits. Binding Earth requires deceleration of order the expansion itself, and that lowers every relative velocity together. The mean of your model A then drops well below the Migkas mean of 1, which ruins $R^2$ (dotted curve in Fig.~\ref{fig:r2}). The only way to be bound without that deceleration is to spread the mass far beyond $D$ ($L/D\approx2.5$), so that the potential is deep while the tidal pull on the shell is weak. That leaves almost no anisotropy, and $R^2$ falls to the level of the sine term alone (Table~\ref{tab:fit}). Adding the uniform background makes this worse.
+
+Normalised to the sky mean, as Migkas's $A/A_{\rm all}$ is, the uniform part of the deceleration drops out. Bound solutions then fit as well as the unbound one, and slightly better (Table~\ref{tab:fit}). In fact the unconstrained sky-normalised optimum is already bound, so constraint (a) costs nothing. These solutions have about one critical mass inside $D$ with $L/D\approx0.52$--0.64 and $D/R\approx1.4$--1.6, and Earth turns around at 2.8--3.8 $t_0$. A background of $\Omega_b=0.3$ today takes over part of the binding, lowers the CoE mass to 0.63--0.83 critical, delays turnaround to 3.7--5.6 $t_0$ and costs less than 0.01 in $R^2$. Freeing $\Omega_b$ with $\ell_0$ also finds a branch with a large background and almost no CoE mass. Its anisotropy comes from the artificial edge of the background at $r=D$, so we do not regard it as physical.
+
+The age is the tighter limit. Under attraction alone the expansion only slows, so $(Ht)_E<1$ always and $t_0<1/H_0=14.0$ Gyr. That also rules out any age of order $r/c=46.6$ Gyr without a repulsive term. The unrestricted bound optima have $(Ht)_E\approx0.79$--0.83, so they are 11.1--11.6 Gyr old and fall below the 12 Gyr oldest-star limit. They are flagged in Table~\ref{tab:fit}. Requiring an age of at least 12 Gyr as well, which means $(Ht)_E\ge0.859$, costs almost nothing. The fit moves to a lighter, more extended mass of about 0.66 critical ($L/D\approx0.44$) that is still bound, keeps $R^2=0.898$ with $\ell_0$, and turns around after about 8 ages, near 100 Gyr. With $\Omega_b\approx0.3$ the same holds at 0.44 critical, with turnaround after about 20 ages. Asking for 13 Gyr is too much: the best solution then sits exactly on the bound edge ($E=0$, turnaround only at infinity), and $R^2$ falls to 0.72. A bound universe with $H_0=70$ that fits the dipole can therefore just meet the oldest stars at 12 Gyr, but not 13 Gyr. This is the classic age problem of a decelerating universe.
+
+\begin{table}[H]\centering\scriptsize\setlength{\tabcolsep}{2.6pt}
+\caption{Constrained best fits, vs the Migkas points unless marked. All rows keep every particle moving outward today; ``bound'' adds $E\le0$ for Earth. $M/M_{\rm crit}$ and $\Omega_b$ are fractions of the critical mass inside $D$ at $H_0=70$ today. Age is $t_0$ from Eq.~(\ref{eq:age}), with a dagger for ages below 12 Gyr; the last block adds the age limit to the bound fit; turnaround is in units of that age. Rows with $(v/v_{\rm esc})^2=1$ sit on the bound edge and turn around only at infinity. The sky-normalised fits without the bound constraint are identical to the bound rows.}\label{tab:fit}
+\begin{tabular}{lcccccccccccc}\toprule
+Case & $D/R$ & $L/D$ & $M/M_{\rm crit}$ & $\Omega_b$ & $\ell_0$ [$^\circ$] & Amp & $\varphi$ & $R^2_{\rm Migkas}$ & $R^2_{A_F}$ & $(v/v_{\rm esc})^2$ & Age [Gyr] & Turnaround [$t_0$]\\\midrule
+\input{bound_table.tex}
+\bottomrule\end{tabular}\end{table}
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.92\textwidth]{bound_fit_R2.png}
+\caption{Best $R^2$ with $D/R$, $L/D$, Amp and $\varphi$ (and $\ell_0$ where marked) re-fitted at each CoE mass, sky-normalised except the dotted curve. Filled points have a bound Earth. The green curves add a uniform background of 0.3 critical at the unperturbed rate, which is about 0.45 at today's rate. The right panel gives the age at $H_0=70$; the shaded band is younger than the oldest stars. Curves end where particles turn around before today.}\label{fig:r2}
+\end{figure}
+\end{document}

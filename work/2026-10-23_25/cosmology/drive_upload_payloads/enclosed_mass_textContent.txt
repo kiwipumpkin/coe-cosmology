@@ -1,0 +1,228 @@
+# Enclosed-mass reinterpretation + multipole structure
+
+**Sedov–Taylor anisotropic Hubble / Cosmology agent**  
+**Date:** 2026-09-17 (CT)  
+**Parent:** Absurdity check (Drive `12dvsMEytDCo4r8S3fh1ou7z8pcrLohXpPIJ-G4MzmU4`; local `absurdity_check.md`)  
+**Chris clarifications (binding):**
+1. Gravity is **time-integrated** from the blast (not instantaneous bolt-on). Integration remains **O(1)** in α_eff — unchanged from prior.
+2. **NEW:** Central mass is **not** a tiny point mass; it is the **enclosed cosmic mass** toward / out to the CoE — mass of everything between the observer and the center. Under that definition, **κ = GM/(D³H²) ∼ O(0.1–1) is natural** (mean-density scale), not absurd.
+
+**Scope:** Redefine M → M_enc; compute κ_natural; deepen dipole vs quadrupole for spherical enclosed-mass potentials; revise Migkas / CP smoking-gun verdict. Skeptical; no cheerleading.
+
+---
+
+## 0. Executive verdict (REVISED)
+
+### Amplitude: **GO (natural)** · Morphology as Migkas dipole: **NO-GO** (spherical) · Overall smoking CP via Migkas: **NO-GO / CONDITIONAL-NO**
+
+**One paragraph:** With Chris’s enclosed-mass definition,  
+**κ_natural = G M_enc(<D) / (D³ H²) = Ω_m / 2 = 0.15** for Ω_m = 0.3 (uniform mean density). Required κ ∼ 0.09–0.10 for ∼10% half-peak-to-peak sky variation (drag / ODE, d/D = 0.1) is then **∼0.6 × κ_natural** — **fully natural**, not an absurd point mass. Time integration still only rescales α by **O(1)** and does not create a new small-κ window. However, a **spherically symmetric** M_enc cannot produce a Migkas-like **dipole** on the full sky when the CoE is beyond the horizon (d ≪ D): (i) a **uniform ball** (true enclosed mass with g ∝ −r) yields only an **isotropic monopole** H → H(1 − α κ); (ii) an **effective central point-mass** proxy with M = M_enc yields a leading **quadrupole** C₂ = 2 α κ, with **analytic dipole C₁ = 0 at O(d/D)** and next odd term an **octupole** C₃ ≈ −3 α κ (d/D). A dipole of Migkas size appears in this spherical setup only via **selection / incomplete sky** (e.g. CoE-facing hemisphere fit returns A ∼ 0.11 at κ_natural), a **wrong frame**, **non-spherical mass**, or pushing **d/D ≳ 1** (CoE not beyond survey depth — conflicts with beyond-horizon ontology). **Revised gate:** amplitude absurdity is **withdrawn** under enclosed-mass; **(l,b,A) Migkas-dipole MCMC on spherical M_enc remains NO-GO**; smoking CP with Migkas via this gravity channel remains **NO-GO** unless the template is quadrupole or the mass/selection model is upgraded.
+
+| Question | Revised answer |
+|----------|----------------|
+| Is κ ∼ 0.1 absurd? | **No** — κ_natural = Ω_m/2 = **0.15** (Ω_m=0.3) |
+| Does time integration change that? | **O(1) only** — still true |
+| Uniform spherical M_enc anisotropy? | **None** (monopole only) |
+| Point-mass M_enc, d ≪ D? | **Quadrupole leading**; dipole analytically absent at O(ε) |
+| Migkas dipole from spherical M_enc? | **No** (full sky); only via selection / non-spherical / d∼D |
+| (l,b,A) dipole MCMC? | **Still no** on this spherical forward model |
+| Smoking CP via Migkas? | **NO-GO** with spherical enclosed mass |
+
+---
+
+## 1. Natural κ for enclosed cosmic mass
+
+### 1.1 Definition
+
+Observer at distance D from CoE.  
+**M ≡ M_enc(<D)** = mass of mean-density matter in the ball of radius D (everything “between us and the center” in the spherical sense):
+
+\[
+M_\mathrm{enc}(<D) = \frac{4\pi}{3}\, \Omega_m\, \rho_c\, D^3 = \Omega_m\, M_\mathrm{crit}(<D).
+\]
+
+Dimensionless coupling used throughout prior work:
+
+\[
+\kappa \equiv \frac{G M}{D^3 H^2}.
+\]
+
+### 1.2 Analytic result
+
+Critical density ρ_c = 3 H² / (8 π G) implies
+
+\[
+\frac{G M_\mathrm{crit}(<D)}{D^3 H^2} = \frac{1}{2},
+\]
+
+hence
+
+\[
+\boxed{\kappa_\mathrm{natural} = \frac{G M_\mathrm{enc}(<D)}{D^3 H^2} = \frac{\Omega_m}{2}}.
+\]
+
+For **Ω_m = 0.3**:
+
+\[
+\kappa_\mathrm{natural} = 0.15.
+\]
+
+Equivalently M_enc / M_crit = Ω_m = 0.3, and 2κ_natural = Ω_m — the O(Ω_m) ∼ 0.3 scale Chris quoted. Both statements are the same physics; κ itself is Ω_m/2.
+
+### 1.3 Required κ vs natural (10% amplitude)
+
+From prior integrated analysis (d/D = 0.1, half peak-to-peak of H_obs/H − 1 ≈ 10%):
+
+| Model | κ_required | κ_req / κ_natural |
+|-------|------------|-------------------|
+| Bolt-on α=1 | ≈ 0.060 | ≈ 0.40 |
+| Frozen ∫g dt | ≈ 0.040 | ≈ 0.27 |
+| Drag du/dt+Hu=g | ≈ 0.092 | ≈ 0.61 |
+| Nonlinear ODE | ≈ 0.100 | ≈ 0.67 |
+
+**Conclusion:** κ ∼ 0.1 for 10% A is **natural** under enclosed-mass — revise all “absurd mass / huge vs M_crit” language that treated M as a tiny extra point mass. At D ∼ 1–3 Gpc the mass is simply ∼ Ω_m of the critical ball, i.e. ordinary cosmic mean density integrated to D.
+
+**Honest remainder:** time integration still only gives α_eff ∼ 0.66 (drag) or ∼ 1.5 (frozen) vs bolt-on α=1 — **O(1)**, not a rescue to tiny κ.
+
+### 1.4 Language to retire vs keep
+
+| Retire | Keep |
+|--------|------|
+| “κ∼0.1 needs absurd central point mass” | “κ∼0.1 ≡ mean-density M_enc — natural” |
+| “M ∼ 10⁴–10⁸ × cluster ⇒ absurd” as a veto | Cluster comparison is expected for cosmic M_enc; not a veto |
+| Hope that integration ⇒ tiny κ | Integration = O(1) only |
+
+---
+
+## 2. Spherical enclosed-mass potentials — two interpretations
+
+### 2.1 Uniform ball (literal M_enc with ρ = const)
+
+Inside a uniform sphere (or infinite uniform medium with IR cutoff at ∼D), Newton:
+
+\[
+\mathbf{g}(r) = -\frac{4\pi G\rho}{3}\,\mathbf{r}, \qquad
+\mathbf{u} = -\alpha\frac{\mathbf{g}}{H} = -\alpha\,\kappa\, H\, \mathbf{r}
+\]
+
+(with κ = (4π G ρ)/(3 H²) = Ω_m/2).
+
+Observer at D, source at D + d n̂:
+
+\[
+[\mathbf{u}(r_s)-\mathbf{u}(D)]\cdot\hat{n} = -\alpha\,\kappa\, H\, d
+\quad\Rightarrow\quad
+H_\mathrm{obs} = H(1 - \alpha\kappa)
+\]
+
+**independent of n̂.** Numerical check (α=1, κ=0.15): monopole = −0.15; dipole A ∼ 10⁻¹⁷; half-ptp ∼ 0.
+
+**Implication:** True spherical enclosed mass at mean density produces **zero sky anisotropy** — only a global H renormalization. It cannot be a Migkas dipole *or* quadrupole source by itself.
+
+### 2.2 Effective central point mass with M = M_enc (prior forward model, reinterpreted)
+
+Keep g = −G M_enc / r² r̂ with M_enc = κ_natural D³ H² / G. This is the Phase A / absurdity-check force law with mass **rescaled to natural**. Spatial structure unchanged:
+
+- **Tidal limit** ε = d/D → 0:
+  \[
+  \frac{H_\mathrm{obs}}{H}-1 = \alpha\kappa\,(3\mu^2-1) = 2\alpha\kappa\, P_2(\mu),
+  \]
+  pure **quadrupole**, C₂ → 2 α κ, C₁ → 0.
+- Analytic series in ε (μ = n̂·D̂):
+  \[
+  \mathrm{frac} = \alpha\kappa(3\mu^2-1) + \alpha\kappa\,\varepsilon\,(4.5\,\mu - 7.5\,\mu^3) + O(\varepsilon^2).
+  \]
+  The O(ε) odd piece projects **purely onto P₃** (octupole): C₃ ≈ −3 α κ ε; **dipole Legendre C₁ = 0 at this order**.
+
+Numerical Legendre coefficients at κ_natural = 0.15, α = 1:
+
+| d/D | C₀ | C₁ (dipole) | C₂ (quad) | C₃ (oct) | C₄ |
+|-----|-----|-------------|-----------|----------|-----|
+| 0.01 | ∼7e-5 | ∼−3e-6 | **0.300** | −0.0045 | ∼7e-4 |
+| 0.05 | ∼8e-5 | ∼−2e-5 | **0.300** | −0.0225 | ∼2e-3 |
+| 0.10 | ∼8e-5 | ∼−3e-5 | **0.300** | −0.0450 | ∼7e-3 |
+| 0.20 | ∼8e-5 | ∼−7e-5 | **0.300** | −0.0900 | ∼2e-2 |
+| 0.50 | ∼1e-4 | ∼−3e-4 | **0.300** | −0.225 | ∼0.15 |
+
+At κ_natural, d/D = 0.1: **half-ptp ≈ 0.25** (quad-dominated, Migkas-*scale variation* natural); **dipole A ∼ 9×10⁻⁸** (useless for Migkas A ∼ 0.05–0.15). Forcing dipole A = 0.1 would need κ ∼ 10⁵ — absurd even with enclosed-mass language.
+
+### 2.3 When does a large dipole appear with point-mass M_enc?
+
+Only when **d/D ≳ 1** (sources reach toward / past the CoE scale):
+
+| d/D | A (dipole) | Q (P₂) | half-ptp |
+|-----|------------|--------|----------|
+| 0.1 | 8.7e-8 | 0.300 | 0.25 |
+| 1.0 | 0.22 | −0.07 | 0.87† |
+| 1.5 | 0.16 | −0.06 | 0.29 |
+| 2.0 | 0.094 | −0.014 | 0.11 |
+
+†Near-CoE singularity of point-mass law — unphysical for smooth M_enc.  
+**Ontology conflict:** Migkas clusters at hundreds of Mpc with CoE beyond the horizon ⇒ d/D ∼ 0.01–0.1, **not** ≳ 1.
+
+---
+
+## 3. Can a Migkas-like dipole be recovered at all?
+
+| Mechanism | Full-sky spherical M_enc? | Verdict |
+|-----------|---------------------------|---------|
+| Uniform ball g∝−r | Monopole only | **No** |
+| Point-mass M_enc, d≪D | Quadrupole + octupole; C₁≈0 | **No** |
+| Point-mass M_enc, d/D≳1 | Dipole O(0.1) possible | Conflicts with beyond-horizon CoE; singular |
+| **Sky selection** (e.g. fit only CoE-facing hemisphere) | At κ_nat, d/D=0.1: fake A ≈ **0.11** with Q still ∼0.27 | **Yes, but artifact** |
+| Random 30% sky subsample | Fake A ∼ 10⁻³ | Mild leak |
+| Non-spherical mass (lopsided blast, filaments, dipole mass moment) | Not computed here | **Open** — would need new forward model |
+| Wrong frame / kinematic dipole leftover | External to this gravity model | Possible contaminant |
+
+**Bottom line:** A Migkas-like **dipole cannot emerge from spherical enclosed mass + off-center observer on the full sky** at beyond-horizon D. Recovery requires **selection effects**, **non-spherical mass**, or **abandoning beyond-horizon CoE**.
+
+---
+
+## 4. Revised verdict for smoking CP via Migkas
+
+Prior absurdity check: **CONDITIONAL amp / NO-GO as Migkas dipole**.
+
+**Revision under enclosed-mass:**
+
+1. **Amplitude absurdity — WITHDRAWN.** κ_natural = 0.15; required κ ∼ 0.1 is natural. Do not block the program on “absurd M.”
+2. **Morphology vs Migkas dipole — STILL NO-GO** for spherical M_enc + beyond-horizon CoE (quadrupole / monopole, not dipole).
+3. **Smoking CP with Migkas (l,b,A) dipole — NO-GO** on this mechanism as formulated. Matching a reported *dipole* would require either (a) admitting selection/frame systematics as the dipole source (not a clean CP probe), or (b) a non-spherical mass model not yet built.
+4. **Time integration — unchanged:** O(1) only; does not alter (1)–(3).
+5. **CMB adversary / Gate E — still open** and unaddressed.
+
+**Program implication:** Do **not** run 3-parameter Migkas dipole MCMC on spherical M_enc. Optional honest paths: (i) **quadrupole template** fit to cluster H_obs with κ ∼ κ_natural; (ii) build **non-spherical / dipolar mass** forward model; (iii) quantify how much Migkas “dipole” could be quadrupole leakage under their footprint.
+
+---
+
+## 5. Recommended next technical step
+
+**Primary recommendation:** Implement a **quadrupole (P₂) forward template** at κ ∼ κ_natural = Ω_m/2 with time-integrated α_eff (drag), predict the H_obs sky for Migkas depths (d/D ∼ 0.05–0.2), and compare to published Migkas maps / residuals **without** forcing a dipole. Separately, one short study: **footprint-induced dipole leakage** from a pure P₂ sky (selection-effect upper bound on fake A).
+
+**Do not:** (l,b,A) dipole MCMC on spherical gravity; claim κ absurdity; claim integration solves morphology.
+
+**Later:** non-spherical M_enc (l=1 mass moment); CMB adversary with natural κ.
+
+---
+
+## 6. Code / data artifacts
+
+| Path | Role |
+|------|------|
+| `/workspace/cosmology/enclosed_mass_multipoles.md` | This note |
+| `/workspace/cosmology/enclosed_mass_results.json` | κ_natural + multipole scan dump |
+| `/workspace/cosmology/absurdity_check.md` | Prior check (amp language superseded for M_enc) |
+| `/workspace/cosmology/forward_model.py` | Bolt-on / multipole fitter |
+| `/workspace/cosmology/integrated_gravity.py` | Time-integrated α_eff + ODE |
+
+---
+
+## 7. Bottom line
+
+- **Natural κ (Ω_m=0.3) = 0.15 = Ω_m/2.** Required κ∼0.1 for 10% A is natural.
+- **Migkas dipole from spherical enclosed mass: no** (full sky, d≪D).
+- **Smoking CP via Migkas with this channel: NO-GO**; amplitude gate cleared; morphology gate closed for dipole.
+- **Next:** quadrupole template @ κ_natural + footprint leakage test.
+
+---
+
+*End of enclosed-mass reinterpretation.*

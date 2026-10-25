@@ -1,0 +1,21 @@
+Because the CoE is a fixed direction on the sky in our geometry, it is a place one can point to. From Central
+Texas (where this work was done), that direction rises in the northeast and sets in the northwest on a sidereal
+schedule fixed by the fitted CoE coordinates. Figure A2 compares CoE rise, culmination, and set with the Sun
+through 2026. Table A1 lists the nine Sun–CoE event crossings for 2027; the highlighted diagonal is rise with
+rise, highest with highest, and set with set.
+
+
+
+
+    Figure A2: CoE and Sun timing from Plano through 2026: rise, culmination, and set compared with the Sun.
+
+
+
+
+                          Table A1: Sun/CoE event crossings for Central Texas in 2027.
+
+
+
+
+                                                      15
+

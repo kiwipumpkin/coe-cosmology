@@ -1,0 +1,410 @@
+                                                                                                How isotropic is the Universe?
+
+                                                          Daniela Saadeh,1, ∗ Stephen M. Feeney,2 Andrew Pontzen,1 Hiranya V. Peiris,1 and Jason D. McEwen3
+                                                                       1
+                                                                         Department of Physics and Astronomy, University College London, London WC1E 6BT, U.K.
+                                                         2
+                                                             Astrophysics Group, Imperial College London, Blackett Laboratory, Prince Consort Road, London, SW7 2AZ, U.K.
+                                                                     3
+                                                                       Mullard Space Science Laboratory (MSSL), University College London, Surrey RH5 6NT, U.K.
+                                                                                                       (Dated: September 8, 2016)
+                                                                  A fundamental assumption in the standard model of cosmology is that the Universe is isotropic on large
+                                                               scales. Breaking this assumption leads to a set of solutions to Einstein’s field equations, known as Bianchi
+                                                               cosmologies, only a subset of which have ever been tested against data. For the first time, we consider all
+                                                               degrees of freedom in these solutions to conduct a general test of isotropy using cosmic microwave background
+                                                               temperature and polarization data from Planck. For the vector mode (associated with vorticity), we obtain
+                                                               a limit on the anisotropic expansion of (σV /H)0 < 4.7 × 10−11 (95% CI), which is an order of magnitude
+arXiv:1605.07178v2 [astro-ph.CO] 7 Sep 2016
+
+
+
+
+                                                               tighter than previous Planck results that used CMB temperature only. We also place upper limits on other
+                                                               modes of anisotropic expansion, with the weakest limit arising from the regular tensor mode, (σT,reg /H)0 <
+                                                               1.0 × 10−6 (95% CI). Including all degrees of freedom simultaneously for the first time, anisotropic expansion
+                                                               of the Universe is strongly disfavoured, with odds of 121,000:1 against.
+
+
+                                                 The standard ΛCDM model of cosmology assumes the                          Anisotropic models: Departures from isotropy that pre-
+                                              Copernican principle, which states that the Universe is                   serve homogeneity are described by Bianchi models, which
+                                              isotropic and homogeneous on large scales. In this work, we               can be subdivided into a number of “types” describing the
+                                              test whether the expansion of the universe is indeed isotropic,           overall geometry of space. One may show [16] that only cer-
+                                              using cosmic microwave background (CMB) data from the                     tain types allow for an isotropic limit (specifically, types I and
+                                              Planck satellite.                                                         VII0 , V and VIIh , and IX contain flat, open and closed FLRW
+                                                 Assuming homogeneity and isotropy, the solutions to Ein-               universes, respectively). Among these, all but the closed mod-
+                                              stein’s field equations are given by the Friedmann-Lemaı̂tre-             els can be obtained from limits of the Bianchi VIIh case [4].
+                                              Robertson-Walker (FLRW) metric. Relaxing the isotropy re-                 The closed case induces only a quadrupole in the CMB tem-
+                                              quirement while continuing to demand homogeneity leads in-                perature and polarization and, consequently, is difficult to con-
+                                              stead to Bianchi metrics [1, 2]. The anisotropic expansion in             strain. In this work, we therefore consider the most general
+                                              these models imprints a signal in the CMB since photons red-              Bianchi VIIh freedom — including its sub-types VII0 , V and
+                                              shift at different rates depending on their direction of travel           I — allowing us to test for the most general departure from
+                                              [3, 4], an effect known as shear. The CMB can therefore be                isotropy that retains homogeneity within a flat or open Uni-
+                                              used to place limits on anisotropic expansion, although to do             verse.
+                                              so the geometric signal must be disentangled from the stochas-               In all Bianchi types, anisotropy is quantified in terms of the
+                                              tic fluctuations responsible for structure formation.                     shear tensor σµν , which describes the deformation that a fluid
+                                                 Before the temperature fluctuations of the CMB had been                element in the Universe undergoes as a result of anisotropic
+                                              characterized, it was possible to place preliminary upper lim-            expansion. For small deviations from isotropy, the full shear
+                                              its on the magnitude of anisotropy [5, 6]. Later tests for                freedom can be expressed as a set of five non-interacting
+                                              anisotropic expansion (see, e.g., Refs. [7–13]) focussed on               modes that behave like scalars (S), vectors (V) or tensors
+                                              vorticity (i.e., universal rotation) and thus tested only some            (T) under rotations around a preferred axis of the Bianchi
+                                              of the ways in which the Universe can be anisotropic. In this             model [17, 18]. Only vector modes, which generate vorticity,
+                                              Letter, we carry out the first general test using all shear de-           have previously been confronted with Planck data [12, 13].
+                                              grees of freedom and the widest possible range of geometric                  We model the energy content of the Universe as the sum of
+                                              configurations that describe anisotropy. We incorporate polar-            perfect fluids corresponding to matter, radiation and dark en-
+                                              ization data (as well as temperature) in the statistical analysis         ergy. The Einstein equations then dictate the evolution of the
+                                              for the first time. This enables us to obtain order-of-magnitude          scalar, vector and tensor shear components. We consistently
+                                              tighter constraints on vorticity than previously obtained using           include the fluid motion relative to the comoving frame1 .
+                                              Planck data. The large number of physical and nuisance pa-                Scalar and vector modes decay steeply (∝ a−3 , where a is
+                                              rameters necessary for a full exploration requires us to develop          the direction-averaged scale factor) as the Universe expands,
+                                              a new sampling package, ANICOSMO2 , based on PolyChord                    whereas tensor modes can be characterized as the linear com-
+                                              [14, 15]. Together, these developments allow us to perform                bination of modes that initially grow or decay, labelled ‘regu-
+                                              the first general test of isotropic expansion by constraining
+                                              the full set of Bianchi degrees of freedom with CMB data.
+                                                                                                                         1 We do assume, however, that all sources are perfect fluids:  this will be
+                                                                                                                          accurate despite anisotropic stresses in the radiation component since the
+                                              ∗ daniela.saadeh.13@ucl.ac.uk                                               calculations start long after matter-radiation equality.
+                                                                                                                                                                                     2
+
+lar’ (Treg ) or ‘irregular’ (Tirr ) following Ref. [19]. This initial                                 Anisotropic expansion
+behavior leads in both cases to an oscillatory solution, with                  S                    V                                      ×   2                   E-pol
+                                                                                                                                        mp                               ×     60
+a phase difference between the two modes. For a given shear                                     +                                     Te
+amplitude today, initially-decaying modes are larger at recom-
+                                                                               Temp × 5 Pol × 150 Temp × 5 Pol × 150             =
+bination than initially-growing modes, and therefore imprint
+                                                                           +                    +                                                                               60
+greater polarization anisotropy [20–22]; furthermore, in all                                                                                                              l×
+                                                                               Treg                 Tirr                                                       B-po
+but the scalar modes, E-mode polarization is efficiently con-
+                                                                                                                                                           Rotate
+verted into similar levels of B-mode polarization [22]. As a                       Stochastic fluctuations
+                                                                                                        E-pol                                                      E-pol
+                                                                                        ature                 ×                           ×    2
+                                                                                     per                                                                                 ×
+consequence, CMB polarization data are the ideal probe to                                                           10                 mp                                    60
+constrain all but the regular tensor modes [23], and are ex-                       em                                 0              Te
+
+
+
+
+                                                                           T
+pected to give rise to even stronger limits than temperature                                                                 +
+anisotropy or nucleosynthesis constraints [2].
+                                                                                                                        10                                                     60
+
+
+
+
+                                                                                                                    0
+                                                                                                                   l×                                                     l×
+   Figure 1 summarizes the origin of CMB fluctuations. In                                                  B-p o                                                   B-po
+the limit that the deviation from isotropy is small, the geo-
+                                                                                                                                     E polar
+                                                                                                 ure                                        izat                   +0.25 mK
+                                                                                             erat                                               ion
+metric and stochastic fluctuations can be added linearly. To
+compute the signal imprinted by the background anisotropy                                 emp                                                       ×
+                                                                                         T
+
+
+
+
+                                                                                                                                                           30
+                                                                                   =
+(shaded region of Fig. 1), we have developed the Boltzmann-
+hierarchy code ABSolve [23]. ABSolve can predict tempera-
+ture and polarization maps and power spectra for all the shear
+
+
+
+
+                                                                                                                                                           30
+modes in Bianchi I, V, VII0 and VIIh and is designed to ac-                                                                                                    ×
+                                                                                                                                                    ati   on
+                                                                                                                                            la ri z
+curately characterize the deterministic Bianchi pattern across
+the whole parameter space considered [23]. To naturally al-                        Total CMB sky                                     B po                          –0.25 mK
+
+low types I, V and VII0 within our parameter space we allow
+the rotation scale of the shear principal axes relative to the          FIG. 1. The CMB sky in the near-isotropic limit is formed from
+present-day horizon scale (denoted x by convention) to be-              the addition of a standard, stochastic background for the inhomo-
+come sufficiently large. Strictly, type V is obtained as x → ∞;         geneities to a pattern arising from small anisotropic expansion. In
+to accommodate this possibility in our prior space we found             this work, for the first time, we constrain all modes of the anisotropic
+                                                                        expansion (scalar, vector, regular tensor, irregular tensor). Here we
+that xmax = 105 is sufficient for convergence. Similarly, the           have depicted anisotropic expansion that is large compared to our
+flat Bianchi VII0 limit is obtained by allowing ΩK → 0; we              limits (though still small compared to the isotropic mean) for illus-
+consider values down to ΩK,min = 10−5 . Bianchi type I is ob-           trative purposes; specifically, (σS /H)0 = 4.2 × 10−10 , (σV /H)0 =
+tained as the x and ΩK limits are approached simultaneously.            3.2 × 10−10 , (σT,reg /H)0 = 1.1 × 10−6 , (σT,irr /H)0 = 1.8 × 10−8 , with
+   Data: To confront the model for anisotropic expansion                Bianchi scale parameter x = 0.62. Each map shows temperature
+described above with data, we redeveloped the ANICOSMO                  (left), E-mode polarization (upper right) and B-mode polarization
+                                                                        (lower right). The overall temperature color scale for the bottom, fi-
+package [11]; our remodeled code, ANICOSMO2 , calculates
+                                                                        nal map is −0.25 mK < T < 0.25 mK, with polarization amplitudes
+the CMB contributions from anisotropic expansion using                  exaggerated by a factor 30 relative to this. Other panels have been
+ABSolve (described above) and from inhomogeneities using                rescaled as indicated, for clarity.
+CAMB [25]. The new statistical approach combines a cus-
+tom low-` likelihood based on the Planck T +P low-` likeli-
+hood with the standard Planck temperature-only high-` likeli-
+hood [24]. The high dimensionality of the resulting parameter           temperature map is generated by the Commander component-
+space, alongside high computational costs for a full likelihood         separation algorithm operating on data from the Planck 30–
+evaluation, made it necessary to redesign ANICOSMO around               857 GHz channels [27], nine-year WMAP 23–94 GHz chan-
+the slice-sampling nested sampler PolyChord [14, 15]. We                nels [28] and 408 MHz observations [29]. The polarization
+will now describe each of these developments briefly in turn;           data are derived from Planck’s 70 GHz maps, cleaned using
+further detail is given in the Supplemental Materials.                  its 30 GHz and 353 GHz channels as templates for low- and
+   The low-` likelihood, providing constraints on large an-             high-frequency contamination. Note that this represents only
+gular scales from temperature and polarization, is applied              a small fraction of Planck’s large-scale polarization data: the
+to multipoles in the range 2 < ` < 29.2 It is based on                  constraining power of Planck data will increase with future
+foreground-cleaned maps, downgraded to HEALPix [26] reso-               releases.
+lution Nside = 16 and masked using the LM93 mask [24]. The                 We modified the low-` code described in Ref. [24] to accept
+                                                                        maps of the Bianchi temperature and polarization anisotropies
+                                                                        as inputs. These maps, which include the Planck beam, are
+                                                                        computed (as described above) by ABSolve, then masked and
+2 2015 CMB spectra and likelihood code section 2.2.1: https:            concatenated into a single vector retaining only the unmasked
+  //wiki.cosmos.esa.int/planckpla2015/index.php/CMB_                    T , Q and U pixels, where T , Q and U are Stokes parame-
+  spectrum_%26_Likelihood_Code#Low-.E2.84.93_likelihoods                ters describing the CMB intensity and linear polarization. The
+                                                                                                                                                       3
+
+                                                                          hood [24] for multipoles 29 < ` ≤ 2508.3 This uses tempera-
+TABLE I. Parameter priors. The first seven parameters are the
+ΛCDM baryon (Ωb h2 ) and cold dark matter (Ωc h2 ) physical densi-
+                                                                          ture data from various combinations of the 100–217 GHz de-
+ties, dark energy (ΩΛ ) and curvature (ΩK ) densities, scalar spectral    tectors, masked to remove the Galactic plane, regions of high
+index (ns ) and amplitude (As ) and optical depth to reionization (τ).    CO emission and point sources. The remaining astrophysi-
+The following ten parameters are Bianchi degrees of freedom: the          cal foregrounds are modeled within the Planck code using 14
+rotation scale of the shear principal axes (x); the normalized shear      parameters. To take into account the imprint of anisotropic
+scalar today (σ/H)0 for scalar, vector, regular tensor and irregular      expansion on small scales, we sum the ABSolve and CAMB
+tensor modes; the vector-to-tensor angular offset (γVT ); three Euler     power spectra within ANICOSMO2 before passing to the high-`
+angles defining the principal axis orientation ({α, β, γ}) and the pat-
+tern’s handedness (p). The remaining parameters (ycal , Planck’s ab-
+                                                                          likelihood. For anisotropic models the power spectrum does
+solute map calibration, and Θhigh , a list of 14 parameters describing    not provide lossless data compression, but in the expected
+foreground and instrumental contaminants) are nuisance parameters         limit that the geometric signal is subdominant to the stochas-
+used by the low- and high-` likelihood functions, respectively.           tic component, one may show that the approach gives a good
+            Parameter       Prior Range Prior Type Speed                  approximation4 to the correct likelihood (see Ref. [23]).
+               Ωb h2       [0.005, 0.05]       uniform   1                   In total, there are 32 parameters describing the cosmol-
+               Ωc h2         [0.05, 0.3]       uniform   1                ogy, calibration and foregrounds (Table I). To sample this
+               ΩΛ              [0, 0.99]       uniform   1                high-dimensional space efficiently, we have redesigned our
+               ΩK            [10−5 , 0.5]      uniform   1
+                                                                          approach around the PolyChord package [14, 15], which sub-
+                                                                          stitutes slice sampling for the rejection sampling [31–33] em-
+                 ns          [0.9, 1.05]       uniform   1
+                                                                          ployed in our previous work which sampled a maximum of 13
+                As          [1, 5] × 10−9 log-uniform    1
+                                                                          parameters [11, 23]. Rejection sampling scales exponentially
+                 τ           [0.01, 0.2]       uniform   1
+                                                                          with dimensionality, whereas PolyChord scales at worst as
+     x (vector-only search) [0.05, 2]          uniform   2
+                                                                          O(D3 ) with the further advantage of an algorithm which paral-
+      x (all-mode search)    [0.05, 105 ] log-uniform    2
+                                                                          lelizes nearly linearly. PolyChord is also capable of exploit-
+             (σS /H)0      [−10−8 , 10−8 ] uniform       2                ing likelihood optimizations arising from fixing some param-
+             (σV /H)0      [10−12 , 10−8 ] log-uniform   2                eters. Recalculating the CAMB power spectra, ABSolve maps
+           (σT,reg /H)0     [10−12 ,10−4 ] log-uniform   2                and spectra, low-` likelihood, and high-` likelihood take ap-
+           (σT,irr /H)0     [10−12 ,10−4 ] log-uniform   2                proximately 40, 3, 0.5 and 0.006 seconds respectively, on a
+               γVT            [0◦ , 180◦ ]     uniform   2                single core. PolyChord efficiently explores the parameter
+                 α            [0◦ , 360◦ ]     uniform   2                space by oversampling the faster foreground parameters with
+                 β            [0◦ , 180◦ ] sine-uniform 2                 respect to the slower cosmological parameters.5 We marginal-
+                 γ            [0◦ , 360◦ ]     uniform   2                ize over the handedness, p, of the Bianchi models by sampling
+                 p             left/right      discrete N/A               the left- and right-handed posteriors individually and combin-
+                ycal                 see Ref. [24]       3                ing the results as described in the Supplemental Materials.
+               Θhigh                 see Ref. [24]       4                The priors applied have been motivated in Ref. [23].
+                                                                             Results: As a test of the information carried by the po-
+                                                                          larization, we first apply our search to vector modes only, as
+                                                                          vorticity has been the focus of all previous work constrain-
+                                                                          ing anisotropic expansion with Planck [12, 13]. We obtain a
+vector is divided by the Planck map calibration ycal since the
+                                                                          limit of (σV /H)0 < 4.9 × 10−11 (95% CI). This can be recast
+absolute normalization is uncertain [24] (similarly, the CAMB-
+                                                                          in terms of the vorticity parameter (ω/H)0 , which expresses
+computed power spectra required by the low-` likelihood are
+                                                                          the rotation rate of the universe, giving (ω/H)0 < 5.2 × 10−11
+divided by y2cal ). Our final Bianchi vector is subtracted from
+                                                                          (95% CI). Although constraints are slightly prior-dependent
+the vector of Planck data to correct for the anisotropic expan-
+                                                                          (see Ref. [23] for a discussion), previous analyses [12, 13] re-
+sion corresponding to the input parameters.
+                                                                          port limits on the vorticity of (ω/H)0 < 7.6 × 10−10 (95% CI).
+   A direct calculation of the likelihood from the resulting              Our new limit is therefore tightened relative to earlier con-
+corrected data vector is computationally prohibitive, even at             straints by an order of magnitude.
+modest resolution, due to the inversion of a large pixel covari-             For the first full test of isotropy, our second analysis simul-
+ance matrix that changes in response to the cosmological and              taneously constrains all degrees of freedom in the cosmologi-
+calibration parameters. The original Planck likelihood code
+optimizes the inversion for the case that the data vector does
+not change between evaluations. However, the anisotropic-                 3 2015    CMB spectra and likelihood code section 2.2.2:                 http:
+expansion correction to the maps is parameter-dependent. We                 //wiki.cosmos.esa.int/planckpla2015/index.php/CMB_
+have therefore generalized the code to retain similar efficiency            spectrum_%26_Likelihood_Code#High-.E2.84.93_likelihoods
+                                                                          4 Even for anisotropic theories one may estimate the full-sky power accu-
+when all inputs are changing. For more information, see Sup-
+                                                                            rately from cut-sky data [30].
+plemental Materials.
+                                                                                                              live = 500, nrepeats = 8, and it spends 70,
+                                                                          5 We set up PolyChord such that n
+
+  We employ the Planck T T high-` power-spectrum likeli-                    20, 5, and 5% of its time sampling parameters of each speed (see Table I).
+                                                                                                                                          4
+
+
+TABLE II. 95% credible intervals for the anisotropy modes and log-evidence ratios for the overall anisotropic models compared to homoge-
+neous and isotropic flat ΛCDM. Negative values of the log-evidence ratio favor isotropy.
+                           Mode                             Planck                               WMAP
+                           Scalar          −6.7 × 10−11 < (σS /H)0 < 9.6 × 10−11 −3.5 × 10−10 < (σS /H)0 < 4.0 × 10−10
+                           Vector                 (σV /H)0 < 4.7 × 10−11                (σV /H)0 < 1.7 × 10−10
+                         Tensor, reg             (σT,reg /H)0 < 1.0 × 10 −6
+                                                                                       (σT,reg /H)0 < 1.3 × 10−6
+                        Tensor, irreg            (σT,irr /H)0 < 3.4 × 10−10
+                                                                                       (σT,irr /H)0 < 6.7 × 10−10
+                   Vector (vorticity) only                −5.6 ± 0.3                            −3.3 ± 0.1
+                   All anisotropic modes                  −11.7 ± 0.3                           −8.0 ± 0.2
+
+
+
+cal shear tensor. The resulting limits are presented in Table II.      in an open or flat universe, without restricting to specific de-
+We also present the constraints calculated using our older like-       grees of freedom. We have remodeled existing frameworks
+lihood [11, 23], based on temperature data from the Wilkinson          to analyze CMB polarization data in addition to temperature,
+Microwave Anisotropy Probe (WMAP) internal linear combi-               allowing us to place the tightest constraints possible with the
+nation maps [34], as a baseline for comparison. Note that the          current CMB data. We find overwhelming evidence against
+WMAP setting in Ref. [23] already contained some method-               deviations from isotropy, placing simultaneous upper limits
+ological improvements (specifically the treatment of high-`            on all modes for the first time, and improving Planck con-
+Bianchi power) that enhanced the constraints over standard             straints on vorticity by an order of magnitude.
+analyses. However, because we also widen the prior range
+on x (Table I) to include the Type V limit, the all-mode con-             DS thanks Franz Elsner, Boris Leistedt, Sabino Matarrese,
+straints are not directly comparable to results from these older       Alessandro Renzi for useful discussions. SMF thanks Will
+single-mode searches.                                                  Handley for assistance with the PolyChord package. DS is
+                                                                       supported by the Perren Fund and the IMPACT fund and par-
+   We recover upper limits for all modes, showing that the
+                                                                       tially supported by the RAS Small Grant Scheme. SMF is
+Universe is consistent with isotropic expansion. The tight-
+                                                                       supported by the Science and Technology Facilities Council
+est constraints are placed on the fastest-decaying modes: the
+                                                                       in the UK. AP is supported by the Royal Society. HVP is
+scalar, vector and irregular tensor modes. The limits on the
+                                                                       partially supported by the European Research Council under
+regular tensor modes are much less stringent as a result of the
+                                                                       the European Community’s Seventh Framework Programme
+dynamics. For most modes, the shear at last scattering is am-
+                                                                       (FP7/2007-2013) / ERC grant agreement number 306478-
+plified by a factor a−3 relative to the present-day value; for the
+                                                                       CosmicDawn. JDM is partially supported by the Engineer-
+regular tensors, this enhancement factor can be vastly smaller.
+                                                                       ing and Physical Sciences Research Council (grant number
+The temperature and, especially, polarization anisotropies cor-
+                                                                       EP/M011852/1). We acknowledge use of the Legacy Archive
+responding to a fixed present-day shear are therefore also
+                                                                       for Microwave Background Data Analysis (LAMBDA). Sup-
+smaller. The effect on polarization is pronounced, making
+                                                                       port for LAMBDA is provided by the NASA Office of Space
+such data particularly effective at discriminating between the
+                                                                       Science. Based on observations obtained with Planck (http:
+two tensor modes, for which the temperature pattern is gener-
+                                                                       //www.esa.int/Planck), an ESA science mission with in-
+ally similar.
+                                                                       struments and contributions directly funded by ESA Member
+   The consistency of the data with statistical isotropy is            States, NASA, and Canada.
+also borne out by comparing the model-averaged likelihoods
+(known as evidences) for the Bianchi cosmology and flat
+ΛCDM. The ratio of the model-averaged likelihoods tells us
+whether the Universe is most likely anisotropic or isotropic,
+given our CMB observations. The bottom two rows of Table II             [1] L. Bianchi, Memorie di Matematica e di Fisica della Società
+contain the ratios calculated for our vector-only and all-modes             Italiana delle Scienze, Serie Terza XI, 267-352 (1898) 11, 267
+                                                                            (1898).
+analyses. Upgrading from WMAP temperature data to Planck
+                                                                        [2] A. Pontzen, Scholarpedia 11, 32340 (2016), revision #153016.
+data with polarization, the preference against anisotropic ex-          [3] S. Hawking, MNRAS 142, 129 (1969).
+pansion becomes significantly stronger, with odds of 270:1              [4] J. D. Barrow, R. Juszkiewicz, and D. H. Sonoda, MNRAS 213,
+against anisotropy in the vector-only case. In the all-modes                917 (1985).
+analysis, the larger parameter space leads to overwhelming              [5] A. G. Doroshkevich, V. N. Lukash, and I. D. Novikov, So-
+odds against anisotropic expansion: 121,000:1.                              viet Journal of Experimental and Theoretical Physics 37, 739
+                                                                            (1973).
+   Conclusions: In this work, we put the assumption that the            [6] C. B. Collins and S. W. Hawking, MNRAS 162, 307 (1973).
+Universe expands isotropically to its most stringent test to-           [7] E. F. Bunn, P. G. Ferreira, and J. Silk, 77, 2883 (1996), astro-
+date. For the first time, we searched for signatures of the most            ph/9605123.
+general departure from isotropy that preserves homogeneity              [8] A. Kogut, G. Hinshaw, and A. J. Banday, Phys. Rev. D 55,
+                                                                                                                                         5
+
+     1901 (1997), astro-ph/9701090.                                      case, a vector containing only the unmasked T , Q and U pix-
+ [9] T. R. Jaffe, A. J. Banday, H. K. Eriksen, K. M. Górski, and        els) can be decomposed into a deterministic Bianchi template
+     F. K. Hansen, ApJ 629, L1 (2005), astro-ph/0503213.                 b, stochastic ΛCDM fluctuations s and Gaussian instrumental
+[10] M. Bridges, J. D. McEwen, A. N. Lasenby, and M. P. Hobson,          noise n
+     MNRAS 377, 1473 (2007), astro-ph/0605325.
+[11] J. D. McEwen, T. Josset, S. M. Feeney, H. V. Peiris, and A. N.
+     Lasenby, MNRAS 436, 3680 (2013), arXiv:1303.3409 [astro-                             m = b(ΘB ) + s(ΘΛCDM ) + n,                  (1)
+     ph.CO].
+[12] Planck     Collaboration,      A&A      571,     A26      (2014),   where ΘB and ΘΛCDM are the Bianchi and ΛCDM parame-
+     arXiv:1303.5086.                                                    ters, respectively. The likelihood function then takes the form
+[13] Planck     Collaboration,     A&A      submitted          (2015),   of a Gaussian with mean set by the Bianchi template and co-
+     arXiv:1502.01593.                                                   variance matrix M defined by the stochastic fluctuations and
+[14] W. J. Handley, M. P. Hobson, and A. N. Lasenby, MNRAS               instrumental noise properties:
+     450, L61 (2015), arXiv:1502.01856.
+[15] W. J. Handley, M. P. Hobson, and A. N. Lasenby, MNRAS                                             h                         i
+     453, 4384 (2015), arXiv:1506.00171 [astro-ph.IM].                                             exp − 12 (m − b)T M−1 (m − b)
+                                                                             P(m|ΘB , ΘΛCDM ) =                                    . (2)
+[16] G. F. R. Ellis and M. A. H. MacCallum, Communications in                                                 |2πM|1/2
+     Mathematical Physics 12, 108 (1969).
+[17] V. N. Lukash, Il Nuovo Cimento B (1971-1996) 35, 268 (1976).           Calculating this likelihood is computationally intensive,
+[18] A. Pontzen and A. Challinor, Classical and Quantum Gravity          even at modest resolution, due to the inversion of the large
+     28, 185007 (2011), arXiv:1009.3935 [gr-qc].
+                                                                         pixel covariance matrix M. The Planck Collaboration there-
+[19] A. Pontzen, Phys. Rev. D 79, 103518 (2009), arXiv:0901.2122
+     [astro-ph.CO].                                                      fore decompose the covariance matrix in order to make the
+[20] M. J. Rees, ApJL 153, L1 (1968).                                    computation more convenient [24]. The matrix M is first split
+[21] R. A. Matzner and B. W. Tolman, Phys. Rev. D 26, 2951 (1982).       (at `cut ) into a varying low-` cosmology-dependent matrix and
+[22] A. Pontzen and A. Challinor, MNRAS 380, 1387 (2007),                a fixed high-` correlated noise matrix M0 . The low-` matrix,
+     arXiv:0706.2075.                                                    whose rank (Nλ = 3[(`cut + 1)2 − 4]) can be much smaller than
+[23] D. Saadeh, S. M. Feeney, A. Pontzen, H. V. Peiris, and J. D.        that of the full pixel covariance (Npix ), is then further decom-
+     McEwen, MNRAS accepted (2016), arXiv:1604.01024.
+                                                                         posed to allow the use of the Woodbury identities
+[24] Planck     Collaboration,     A&A      submitted          (2015),
+     arXiv:1507.02704.                                                                                        −1
+[25] A. Lewis, A. Challinor, and A. Lasenby, Astrophys. J. 538, 473            M−1 = M−1   −1 T
+                                                                                      0 − M0 V A
+                                                                                                  −1
+                                                                                                     + VM−1
+                                                                                                         0 V
+                                                                                                             T
+                                                                                                                   VM−1
+                                                                                                                     0
+     (2000), astro-ph/9911177.                                                           |M| = |M0 ||A||A−1 + VM−1 T
+[26] K. M. Gòrski, E. Hivon, A. J. Banday, B. D. Wandelt, F. K.                                                0 V |                  (3)
+     Hansen, M. Reinecke, and M. Bartelmann, ApJ 622, 759
+     (2005), arXiv:astro-ph/0409513.
+[27] Planck     Collaboration,     A&A      submitted          (2015),   to rapidly recalculate the inverse and determinant of M. Here,
+     arXiv:1502.05956.                                                   A(ΘΛCDM ) is a block-diagonal Nλ × Nλ matrix encoding the
+[28] C. L. Bennett et al., ApJS 208, 20 (2013), arXiv:1212.5225.         cosmology dependence, and V is an Nλ × Npix projection ma-
+[29] C. G. T. Haslam, C. J. Salter, H. Stoffel, and W. E. Wilson,        trix. The unmodified (b = 0) Planck low-` likelihood code
+     A&AS 47, 1 (1982).                                                  precomputes mT M−1               −1            −1 T
+                                                                                               0 m, VM0 m and VM0 V to save time,
+[30] A. Pontzen and H. V. Peiris, Phys. Rev. D 81, 103008 (2010),        then discards the data, covariance and projection matrix. We
+     arXiv:1004.2706.
+                                                                         have modified the likelihood code to retain these quantities,
+[31] F. Feroz and M. P. Hobson, MNRAS 384, 449 (2008),
+     arXiv:0704.3704.                                                    as they are needed to calculate the likelihood (2) using the
+[32] F. Feroz, M. P. Hobson, and M. Bridges, MNRAS 398, 1601             decomposed covariance (3) in the presence of a Bianchi com-
+     (2009), arXiv:0809.3437.                                            ponent.
+[33] F. Feroz, M. P. Hobson, E. Cameron, and A. N. Pettitt, ArXiv           Even after speeding up the inverse covariance matrix com-
+     e-prints (2013), arXiv:1306.2144 [astro-ph.IM].                     putation, this pixel-based approach is only feasible at the
+[34] C. L. Bennett, D. Larson, J. L. Weiland, N. Jarosik, G. Hinshaw,    largest scales; however, neglecting the small scales discards
+     N. Odegard, K. M. Smith, R. S. Hill, B. Gold, M. Halpern,
+                                                                         cosmological information that is highly constraining not only
+     E. Komatsu, M. R. Nolta, L. Page, D. N. Spergel, E. Wollack,
+     J. Dunkley, A. Kogut, M. Limon, S. S. Meyer, G. S. Tucker,          for the ΛCDM component, but also the anisotropic back-
+     and E. L. Wright, ApJS 208, 20 (2013), arXiv:1212.5225.             ground [23]. For this reason, we add high-` information in the
+                                                                         form of the Planck T T high-` power-spectrum likelihood [24]
+                                                                         for `cut < ` ≤ `max . In this case, the only modification required
+                                                                         by the presence of a Bianchi component is to pass as input the
+                SUPPLEMENTAL MATERIALS                                   summed Bianchi and ΛCDM power spectra, calculated using
+                                                                         ABSolve and CAMB respectively. For anisotropic models the
+  In this Section we further describe the modifications we               power spectrum does not provide lossless data compression,
+have made to the Planck likelihood for this study, and our               but in the limit where the Bianchi signal is subdominant to
+method for marginalizing over the handedness of the Bianchi              ΛCDM, this gives a good approximation to the exact likeli-
+models. In our model, the observed CMB maps m (in this                   hood in Eq. 2 (see Ref. [23], Appendix A).
+                                                                                                                                 6
+
+   To present conclusions marginalized over the handedness       and the joint posterior on this model’s parameters is
+of the Bianchi models, we sample the posterior for each hand-
+edness separately. Denoting the evidence for, e.g., left hand-                 Eleft P(Θ|m, p = left) + Eright P(Θ|m, p = right)
+                                                                  P(Θ|m) =                                                       .
+edness as Eleft = P(m|p = left), Bayes’ theorem implies that                                     Eleft + Eright
+the evidence for a model allowing both handednesses is                                                                          (5)
+                                                                 All limits and evidence values (Table II) have been quoted as
+                    E = (Eleft + Eright )/2,               (4)   a joint posterior in this way.
+

@@ -1,0 +1,290 @@
+[
+  {
+    "file": "Fig01_geometry.png",
+    "label": "Fig1 Geometry CoE/shell/vision",
+    "gold": "gold-000.png",
+    "gold_md5": "ef40ce3d854574591d09d1edb96a38cc",
+    "delivered_md5": "d9fd6acd60b35a72f61515b87e18ee95",
+    "pixel_match": true,
+    "bitwise_match_gold": false,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "rerun:universe_thin.py",
+    "status": "PASS",
+    "notes": "Pixel-identical to PDF embed; bitwise-identical to spreadsheet_model/universe_thin_drawing.png",
+    "size": 138940,
+    "dims": [
+      1460,
+      488
+    ]
+  },
+  {
+    "file": "Fig02_Achart.png",
+    "label": "Fig2 Migkas A/A_all + model curves",
+    "gold": "gold-002.png",
+    "gold_md5": "5178d14e2707186ad6926d3a92ef20f7",
+    "delivered_md5": "6dac4950b3b907e5b421cd1a256df2f2",
+    "pixel_match": true,
+    "bitwise_match_gold": false,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "rerun:universe_thin.py",
+    "status": "PASS",
+    "notes": "Pixel-identical to PDF embed; bitwise-identical to spreadsheet_model/universe_thin_Achart.png",
+    "size": 206551,
+    "dims": [
+      1182,
+      1287
+    ]
+  },
+  {
+    "file": "Fig03_migkas_slices.png",
+    "label": "Fig3 Migkas redshift slices + D\u2013m_cc degeneracy",
+    "gold": "gold-004.png",
+    "gold_md5": "aee1382160adba01ab10ec5cc9c37323",
+    "delivered_md5": "6e97e4c31d507d3921aa8b702adefae6",
+    "pixel_match": true,
+    "bitwise_match_gold": false,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "copy:exact_on_disk_asset",
+    "status": "PASS",
+    "notes": "Original one-off plot script not found; migkas_slices_degeneracy_clean.png pixel-identical to PDF embed. Prior figs_regenerated_from_code Fig3 was WRONG.",
+    "size": 245357,
+    "dims": [
+      1123,
+      1014
+    ]
+  },
+  {
+    "file": "Fig04_amp_full.png",
+    "label": "Fig4 Full amp + residual",
+    "gold": "gold-006.png",
+    "gold_md5": "771d0afc75dd3aa8a128de519df58216",
+    "delivered_md5": "8ecabb7ddbd69a9c605cd45c459b9c6c",
+    "pixel_match": true,
+    "bitwise_match_gold": false,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "copy:exact_on_disk_asset",
+    "status": "PASS",
+    "notes": "money_shot_amp_full.png pixel-identical; NOT SINE_BAD. One-off script not found.",
+    "size": 554781,
+    "dims": [
+      1800,
+      1385
+    ]
+  },
+  {
+    "file": "Fig05_sky_orientation_four_row.jpg",
+    "label": "Fig5 Four-row sky orientation",
+    "gold": "gold-007.jpg",
+    "gold_md5": "ed41b905e2563efb4df2c92b1e13e3b4",
+    "delivered_md5": "ed41b905e2563efb4df2c92b1e13e3b4",
+    "pixel_match": true,
+    "bitwise_match_gold": true,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "copy:bitwise_match_asset",
+    "status": "PASS",
+    "notes": "money_shot_four_row_only.jpg bitwise-identical to PDF JPEG embed.",
+    "size": 404512,
+    "dims": [
+      1370,
+      1420
+    ]
+  },
+  {
+    "file": "Fig06_overlay_stack.png",
+    "label": "Fig6 Migkas Fig.8 overlay stack",
+    "gold": "gold-008.png",
+    "gold_md5": "fd9f1c1c95194a3fb7864de08698704f",
+    "delivered_md5": "fd9f1c1c95194a3fb7864de08698704f",
+    "pixel_match": true,
+    "bitwise_match_gold": true,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "copy:bitwise_match_asset",
+    "status": "PASS",
+    "notes": "att14_overlay_stack.png bitwise-identical to PDF embed.",
+    "size": 2664167,
+    "dims": [
+      2164,
+      3222
+    ]
+  },
+  {
+    "file": "Fig07_storyboard.png",
+    "label": "Fig7 Donut-universe storyboard A\u2013D",
+    "gold": "gold-009.png",
+    "gold_md5": "05a980ff995d5a43f75de00c14fc750e",
+    "delivered_md5": "f2b0d04b62f80b9cb32c41a1e0d397ac",
+    "pixel_match": true,
+    "bitwise_match_gold": false,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "copy:exact_on_disk_asset",
+    "status": "PASS",
+    "notes": "att14_storyboard.png pixel-identical. Current donut script output differs \u2014 not used.",
+    "size": 211403,
+    "dims": [
+      1045,
+      1795
+    ]
+  },
+  {
+    "file": "Fig08_two_emitters.png",
+    "label": "Fig8 Two-emitter baseline",
+    "gold": "gold-011.png",
+    "gold_md5": "6953c5ae7902824f2fa24c854884cef2",
+    "delivered_md5": "41ddd33dbefce0695c7e225c72f26b58",
+    "pixel_match": true,
+    "bitwise_match_gold": false,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "copy:exact_on_disk_asset",
+    "status": "PASS",
+    "notes": "att14_two_emitters.png pixel-identical. Current two_emitters script output differs \u2014 not used.",
+    "size": 129240,
+    "dims": [
+      1181,
+      1908
+    ]
+  },
+  {
+    "file": "Fig09_kill.jpg",
+    "label": "Fig9 Kill function vs plate/shell/shear",
+    "gold": "gold-013.jpg",
+    "gold_md5": "15818532df3ff7b9bde79a200e779402",
+    "delivered_md5": "15818532df3ff7b9bde79a200e779402",
+    "pixel_match": true,
+    "bitwise_match_gold": true,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "copy:bitwise_match_asset",
+    "status": "PASS",
+    "notes": "kill_vs_cycle6_shapes.jpg bitwise-identical to PDF JPEG embed.",
+    "size": 199281,
+    "dims": [
+      1206,
+      1280
+    ]
+  },
+  {
+    "file": "Fig10_cancel_partner.png",
+    "label": "Fig10 Cancel partner residuals",
+    "gold": "gold-014.png",
+    "gold_md5": "7f6701fcf63d81511470aea0c3626dc0",
+    "delivered_md5": "e8de308591d54d8c6de1b5481729b658",
+    "pixel_match": true,
+    "bitwise_match_gold": false,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "copy:exact_on_disk_asset",
+    "status": "PASS",
+    "notes": "cancel_partner_residual.png pixel-identical (= simple_cmb_two_quad_cancel.png).",
+    "size": 652876,
+    "dims": [
+      2084,
+      2212
+    ]
+  },
+  {
+    "file": "FigA1_ltb_shell.png",
+    "label": "FigA1 LTB shell evolution",
+    "gold": "gold-016.png",
+    "gold_md5": "717250da18b391623eb4618f233969fe",
+    "delivered_md5": "09462730cede0bb8dbb0052aef3eda1a",
+    "pixel_match": true,
+    "bitwise_match_gold": false,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "copy:exact_on_disk_asset",
+    "status": "PASS",
+    "notes": "ltb_a_vs_t_all.png pixel-identical.",
+    "size": 161023,
+    "dims": [
+      1444,
+      969
+    ]
+  },
+  {
+    "file": "FigA2_coe_sun.jpg",
+    "label": "FigA2 CoE/Sun timing 2026",
+    "gold": "gold-018.jpg",
+    "gold_md5": "9cb249b71dbb3ea478495deb47837921",
+    "delivered_md5": "9cb249b71dbb3ea478495deb47837921",
+    "pixel_match": true,
+    "bitwise_match_gold": true,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "copy:bitwise_match_asset",
+    "status": "PASS",
+    "notes": "appendix_coe_sun_timing_2026.jpg bitwise-identical to PDF JPEG embed.",
+    "size": 89336,
+    "dims": [
+      1280,
+      636
+    ]
+  },
+  {
+    "file": "FigA2b_sun_coe_crossings.jpg",
+    "label": "TableA1 Sun/CoE crossings 2027",
+    "gold": "gold-019.jpg",
+    "gold_md5": "6cf8f10855878c559c54e97ea06cb029",
+    "delivered_md5": "6cf8f10855878c559c54e97ea06cb029",
+    "pixel_match": true,
+    "bitwise_match_gold": true,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "copy:bitwise_match_asset",
+    "status": "PASS",
+    "notes": "appendix_sun_coe_crossings_2027.jpg bitwise-identical to PDF JPEG embed.",
+    "size": 62616,
+    "dims": [
+      1239,
+      570
+    ]
+  },
+  {
+    "file": "FigA3_coe_sky.png",
+    "label": "FigA3 Annual CoE sky path from Plano",
+    "gold": "gold-020.png",
+    "gold_md5": "1c0042622ee084daa22f2dfaf7f4a086",
+    "delivered_md5": "6d68e94d82d64d87d409f67620259ce4",
+    "pixel_match": true,
+    "bitwise_match_gold": false,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "rerun:_make_coe_sky_path_dates.py",
+    "status": "PASS",
+    "notes": "Re-ran _make_coe_sky_path_dates.py; pixel-identical to gold.",
+    "size": 222910,
+    "dims": [
+      2415,
+      1432
+    ]
+  },
+  {
+    "file": "FigA_comic_HANDDRAWN_from_PDF.jpg",
+    "label": "p.14 hand-drawn comic",
+    "gold": "gold-022.jpg",
+    "gold_md5": "262874d6412bd4b1d38b7905e237e72b",
+    "delivered_md5": "262874d6412bd4b1d38b7905e237e72b",
+    "pixel_match": true,
+    "bitwise_match_gold": true,
+    "pixel_info": "maxd=0 mean=0.0000",
+    "method": "extract/copy:handdrawn_not_from_code",
+    "status": "PASS",
+    "notes": "HAND-DRAWN \u2014 cannot invent from code. Bitwise-identical to PDF JPEG embed.",
+    "size": 237379,
+    "dims": [
+      2080,
+      944
+    ]
+  },
+  {
+    "file": "eclipse_inner_shell.png",
+    "label": "Inner-shell eclipse geometry (supplemental; not a letter-page embed)",
+    "gold": null,
+    "gold_md5": null,
+    "delivered_md5": "f76d8526ed668a5df5855f9cb66314cc",
+    "pixel_match": true,
+    "bitwise_match_gold": null,
+    "pixel_info": "maxd=0 mean=0.0000 vs letter_brief/figs/inner_shell_eclipse_sketch.png",
+    "method": "rerun:attachment 7ef6f478\u2026py",
+    "status": "PASS",
+    "notes": "Ran provided attachment eclipse script; bitwise-identical to letter_brief/figs/inner_shell_eclipse_sketch.png.",
+    "size": 110236,
+    "dims": [
+      883,
+      945
+    ]
+  }
+]

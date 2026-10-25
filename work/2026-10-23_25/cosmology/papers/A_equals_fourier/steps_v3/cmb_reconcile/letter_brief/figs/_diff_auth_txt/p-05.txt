@@ -1,0 +1,28 @@
+The interior mass uses a background density scale ν and a radial mass multiplier β(r) (not a scale factor),
+                                                      4π 3
+                                             M (r) =     R ν β(r),                                          (4)
+                                                       3
+so β = 1 recovers critical-density normalisation. In the CoE+shell geometry β(r) is small in the cavity, rises
+through the thick shell, and returns toward the exterior background beyond Rout .
+    Including radiation on the same radial scaffolding,
+                                            νm βm (r) νr βr (r) k(r)
+                                         Ha2 ∝        +        − 2 ,                                   (5)
+                                                 a3       a4      a
+with Ha = ȧ/a and a(t, r) the local expansion factor of each shell. Early times are radiation-dominated
+(a ∼ t1/2 ); late times are dust-dominated (a ∼ t2/3 ). Curvature k(r) follows from E(r) and introduces no
+angular dependence into the metric coefficients.
+   For the Newtonian Ωs = 0.049 CoE+shell fit in Table 1, the solved geometry matching Migkas A(ℓ) is
+              D ≈ 49.17 Gpc,      Rin ≈ 34.48 Gpc,      Rout ≈ 70.27 Gpc,      Ωs = 0.049,     ℓ0 = 13◦ .
+The shell rule with vision radius R ≈ 14.3 Gpc requires D ≳ 14.7 Gpc; the fitted D lies above that bound with
+the observer mid-shell between Rin and Rout .
+
+
+
+
+            Figure 4: Full Migkas A/Aall profile and residual panel for the Newtonian and relativistic fits.
+
+
+
+
+                                                           5
+

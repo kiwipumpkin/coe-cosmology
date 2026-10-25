@@ -1,0 +1,30 @@
+The untilted-to-tilted-to-rolled sequence
+places the CoE axis on the Galactic sky.
+With a +15◦ tilt alone, the model
+MAX/MIN bands already track the
+large-scale extrema of Migkas Fig. 8.
+Adding a radial gradient sharpens the
+contrast between near-axis and mid-latitude
+bands without changing the CoE tilt. The
+final +80.8◦ roll about the CoE axis then
+rotates the MAX/MIN pattern into
+agreement with the Migkas Fig. 8
+orientation.
+Fit parameters for D, Ωs , and ℓ0 are held
+fixed through this sequence; only the sky
+placement of the already-fitted geometry is
+varied. The colour scale is the Migkas
+A/Aall field; coloured bands are the
+predicted MAX/MIN loci at the listed θ
+centres, with point markers for the CoE,
+anti-CoE, and measured extrema.
+Figure 6: Model MAX/MIN bands over-
+laid on Migkas Fig. 8 for +15◦ tilt; tilt
+with gradient; and tilt, gradient, and
++80.8◦ roll (one intact three-panel stack).
+
+
+
+
+                                              7
+

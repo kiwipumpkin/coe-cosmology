@@ -1,0 +1,53 @@
+logical agreement is unexpected if gravity and the photon bath are unrelated, and it suggests a geometric route
+to CMB flatness that does not discard the Migkas fit. The open light-cone problem is whether the match can
+be driven to the 10−5 amplitude required by Planck.
+    Apparent late-time accelerated expansion is an illusion in this geometry: no dark energy and no actual out-
+ward acceleration of the shell are required. Off-centre sampling of the expansion field produces the appearance.
+A contracting universe under analogous sampling would also show, on average, the appearance of accelerated
+expansion, but with a different angular signature—a natural observational distinguisher.
+
+
+8     What we do next
+    1. Evolve D(t), Rin (t), and Rout (t) from the present back through recombination, with the observer mid-
+       shell.
+    2. Integrate null geodesics on that history to obtain T (θ) on our sky, including gravitational and kinematic
+       contributions together.
+    3. Ask whether a shared bulk velocity of the emitting surfaces, plus the gravitational multipole, can keep
+       ℓ ≥ 2 below ∼ 10−5 while the low-redshift A(ℓ) pattern remains Migkas-compatible.
+    4. If a residual remains, identify the smallest additional degree of freedom (timing of recombination, shell
+       thickness history, or a mild partner multipole) that removes it without reintroducing a fixed-curve conflict
+       across redshift slices.
+
+
+9     Bottom line
+Migkas fixes an off-centre CoE+shell—the donut-universe geometry with US at r = D—that fits directional
+Hubble across slices. Gravity on that geometry predicts a last-scattering multipole whose kill function—an
+electromagnetic temperature multipole opposite in sign and matching in angular shape—tracks the kinematic
+Doppler pattern from the same radii. Apparent late-time acceleration is an illusion of off-centre sampling; a
+contracting geometry would share the average appearance but differ in angular signature. The open problem
+is no longer whether the gravitational and electromagnetic shapes talk to each other—they do—but whether a
+full time-dependent light-cone calculation can make them cancel at the 10−5 level without spoiling the Migkas
+anisotropy. The goal is coexistence of both datasets under one off-centre shell geometry.
+
+
+References
+ [1] K. Migkas, G. Schellenberger, T. H. Reiprich, F. Pacaud, M. E. Ramos-Ceja, and L. Lovisari, Astron.
+     Astrophys. 636, A15 (2020); arXiv:2004.03305.
+
+ [2] L. I. Sedov, J. Appl. Math. Mech. 10, 241 (1946).
+
+ [3] G. I. Taylor, Proc. R. Soc. Lond. A 201, 159 (1950).
+
+ [4] G. Lemaı̂tre, Ann. Soc. Sci. Bruxelles A53, 51 (1933).
+
+ [5] R. C. Tolman, Proc. Natl. Acad. Sci. USA 20, 169 (1934).
+
+ [6] H. Bondi, Mon. Not. R. Astron. Soc. 107, 410 (1947).
+
+ [7] Planck Collaboration, Astron. Astrophys. 641, A7 (2020).
+
+
+
+
+                                                        12
+

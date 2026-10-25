@@ -1,0 +1,27 @@
+LIGHT-CONE MIGKAS + BACKWARD + UNIFORM-SURFACE CMB (GR = exact Schwarzschild; Newton in [])
+law mode: chi2 (old today-pos same params) R2 sig | M kg | D Gpc | v/c | H||/Hperp | age | grav/kin | rs/D
+exp fwd: 10.45 (52.4) 0.70 4.4s | 4.2e+44 | 0.615 | 0.139 | 74/68 | 14.0 | 0.017 | 3.3e-04
+soft fwd: 18.89 (38.2) 0.49 3.3s | 2.9e+46 | 0.226 | 0.052 | 71/70 | 13.8 | 0.009 | 2.5e-05
+eta fwd: 12.62 (718.6) 0.66 4.0s | 4.5e+47 | 0.59 | 0.131 | 77/67 | 14.6 | 0.002 | 3.8e-05
+pl fwd: 11.58 (36.2) 0.67 4.1s | 7.8e+47 | 0.672 | 0.156 | 70/70 | 13.9 | 0.002 | 5.6e-05
+exp back: 10.85 (1642.0) 0.70 4.4s | 1e+49 | 1.51 | 0.184 | 137/37 | 26.2 | 0.010 | 3.5e-04 origin=True bang-spread 88.41Gyr
+soft back: 10.95 (1567.3) 0.69 4.2s | 2.8e+44 | 1.8 | 0.214 | 139/36 | 27.5 | 0.001 | 2.4e-05 origin=True bang-spread 1581.22Gyr
+eta back: 11.06 (329.3) 0.67 4.1s | 9.1e+49 | 1.49 | 0.263 | 104/53 | 17.4 | 0.043 | 3.0e-03 origin=True bang-spread 21.01Gyr
+pl back: 11.10 (1516.2) 0.70 4.1s | 7.6e+47 | 1.44 | 0.183 | 134/38 | 24.7 | 0.021 | 7.1e-04 origin=True bang-spread 138.24Gyr
+CMB cancel% vs Migkas curve (phi=l0 / phi free), raw | m=1 removed.  GR [Newton]
+exp fwd localSR q.23: 6.6/6.7 | 6.1/6.2 [6.8|6.3]
+   uniform a=1/1100 (z~1.7e+04, inside 360/360): -4.9/3.3 | -3.7/3.6 [-4242.7|-1610.3]  dipole 0.00615 quad 0.00305
+soft fwd localSR q.23: -2.4/3.4 | -2.8/3.6 [-2.7|-2.8]
+   uniform a=1/1100 (z~1.31e+04, inside 360/360): -0.2/0.5 | -0.4/0.5 [nan|nan]  dipole 0.00131 quad 0.000393
+eta fwd localSR q.23: 3.9/3.9 | 3.5/3.5 [4.0|3.6]
+   uniform a=1/1100 (z~7.14e+03, inside 360/360): -3.1/2.7 | -2.8/2.7 [-3.1|-2.8]  dipole 0.00177 quad 0.00229
+pl fwd localSR q.23: 4.7/4.7 | 4.2/4.3 [4.8|4.3]
+   uniform a=1/1100 (z~7.2e+03, inside 360/360): -4.5/3.9 | -4.1/3.9 [-4.5|-4.1]  dipole 0.00259 quad 0.00332
+exp back localSR q.23: -5165.3/-4975.8 | -2877.2/-2583.7 [nan|nan]
+   uniform a=1/1100 (z~nan, inside 0/360): n/a/n/a | n/a/n/a [n/a|n/a]  dipole nan quad nan
+soft back localSR q.23: -4740.8/-4542.3 | -2485.6/-2212.2 [nan|nan]
+   uniform a=1/1100 (z~nan, inside 0/360): n/a/n/a | n/a/n/a [n/a|n/a]  dipole nan quad nan
+eta back localSR q.23: -6855.5/-6634.6 | -4439.7/-4272.0 [nan|nan]
+   uniform a=1/1100 (z~nan, inside 0/360): n/a/n/a | n/a/n/a [n/a|n/a]  dipole nan quad nan
+pl back localSR q.23: -5444.1/-5259.1 | -3123.9/-2818.7 [nan|nan]
+   uniform a=1/1100 (z~nan, inside 0/360): n/a/n/a | n/a/n/a [n/a|n/a]  dipole nan quad nan

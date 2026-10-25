@@ -1,0 +1,4 @@
+ulimit -v 5000000; python3 scan1.py eta fwd gtc 256 7 > gr2/v4/s1_eta_fwd_gtc.log 2>&1
+ulimit -v 5000000; python3 scan1.py eta fwd le 256 7 > gr2/v4/s1_eta_fwd_le.log 2>&1
+ulimit -v 5000000; python3 scan1.py exp fwd gtc 256 7 > gr2/v4/s1_exp_fwd_gtc.log 2>&1
+ulimit -v 5000000; python3 scan1.py exp fwd le 256 7 > gr2/v4/s1_exp_fwd_le.log 2>&1

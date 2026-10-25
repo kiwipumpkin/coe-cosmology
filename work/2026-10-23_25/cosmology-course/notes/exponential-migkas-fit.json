@@ -1,0 +1,45 @@
+{
+ "formula": "A/A_all(ell)=a_f(ell-l0)/<a_f>, a_f=|V_source-V_Earth|/(R/D); pure rho\u221dexp(-r/L), Ob=0, bubble_core.run analytic Fx",
+ "R_Gpc": 14.30048287260589,
+ "profile": "exp",
+ "free_params": [
+  "D",
+  "LD",
+  "mc",
+  "l0"
+ ],
+ "fixed": {
+  "Ob": 0.0,
+  "fac": 1.5,
+  "taui": 0.01
+ },
+ "wls_fit": {
+  "D_Gpc": 27.95388837552518,
+  "DR": 1.9547513622126602,
+  "LD": 0.21724045875248016,
+  "L_Gpc": 6.072715534614713,
+  "mc": 0.18950799877396307,
+  "Ob": 0.0,
+  "l0": 18.639039297744542,
+  "chi2": 8.47533016653482,
+  "chi2_red": 0.12649746517216148,
+  "R2_unweighted": 0.7589233227942257,
+  "R2_weighted": 0.8104470315993394,
+  "A_min": 0.9058127739351544,
+  "A_max": 1.1010166577384306,
+  "vrmin": 0.34487096315605414,
+  "Ht": 0.9297558870210808,
+  "contrast_Rvis": 10.441900843207762,
+  "contrast_analytic_R3": 1.028706859974531,
+  "contrast_analytic_R14p3": 10.441900843207764,
+  "age_Gyr": 12.986364931110579
+ },
+ "ptshell_wls_geometry_only": {
+  "D": 58.19699837268826,
+  "R2_unweighted": 0.5456268309812682,
+  "R2_weighted": 0.5807290671992491,
+  "chi2": 18.7465256529584,
+  "l0": 15.1629523788697
+ },
+ "note": "Amp and phi were not fitted (geometry only, same as migkas-geometry-fit). sigma=(A_err_low+A_err_high)/2. Contrast delta=2 sinh(R/L) for pure exp. mc = M(<D)/M_crit(D) today."
+}

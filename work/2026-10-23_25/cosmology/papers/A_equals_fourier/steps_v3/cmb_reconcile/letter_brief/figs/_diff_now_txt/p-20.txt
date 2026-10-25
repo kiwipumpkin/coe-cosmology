@@ -1,0 +1,17 @@
+Figure A3 gives the annual track of the Centre of Expansion (CoE) on the local sky as seen from Plano at 12:00
+local mean time on each day of 2026. The month labels make the calendar progression explicit: as the Earth
+moves through its orbit, one fixed celestial direction traces a large oval in local horizon coordinates. This is a
+locus on the sky, not the Sun’s familiar figure-eight (analemma).
+
+
+
+
+Figure A3: Annual local-sky path of the Centre of Expansion (CoE) from Plano, Texas, evaluated at 12:00 local mean
+time on each day of 2026. The colour gradient and labelled dates mark the progression through the year; the large oval
+is the locus of the fixed celestial direction in local horizon coordinates, not a solar figure-eight.
+
+
+
+
+                                                         20
+

@@ -1,0 +1,251 @@
+                                                         A note on Pathria’s model of the universe as a black hole
+
+                                                                                        S. Khakshournia ∗
+
+                                                    Nuclear Science and Technology Research Institute (NSTRI), Tehran, Iran
+arXiv:1412.0105v1 [gr-qc] 29 Nov 2014
+
+
+
+
+                                                                                        October 1, 2018
+
+
+
+
+                                                                                            Abstract
+                                                      Pathria has shown that for the certain values of the cosmological constant, a pressureless
+                                                  closed Friedmann-Robertson-Walker universe can be the interior of a Schwarzschild black
+                                                  hole. We examine the Pathria’s model from the point of view of the matching of the two
+                                                  different spacetimes through a null hypersurface. We first regard the event horizon of the
+                                                  black hole, which in the Pathria’s model is identified with the radius of the universe at the
+                                                  point of its maximum expansion, as a null hypersurface separating the FRW interior from
+                                                  the vacuum Schwarzschild exterior, and then use the null shell formalism for it. It turns out
+                                                  that the matching is not smooth, and in fact, the null hypersurface is the history of a null
+                                                  shell admitting a surface pressure.
+
+                                                  PACS numbers: 98.80.-k; 04.20.Jb
+
+
+                                        1        Introduction
+                                        Pathria [1] published a paper showing that a pressureless closed Friedmann-Robertson-Walker
+                                        (FRW) universe can lie inside a Schwarzschild black hole existing in a bigger universe (see also
+                                        [2]). He has first considered a FRW universe with positive 3D curvature, consisting of the dust
+                                        matter, in a phase of decelerating expansion, with the value of the cosmological constant Λ such
+                                        that 0 ≤ Λ ≤ Λc , where Λc = (2πρR3 )−2 , with ρ(t) and R(t) are the energy density and the
+                                        radius of curvature of the universe, respectively. In this case, the solution for the function R(t)
+                                        shows that in a later epoch it reaches its maximum value Rmax increasing monotonically from
+                                        the value Rmax = C (C = 8π          3              3
+                                                                       3 ρR ) to Rmax = 2 C, as Λ increases from 0 to Λc . Pathria then
+                                        compared this behavior with that of a 4D Schwarzschild black hole modified by the presence of
+                                        the cosmological constant Λ and noted that the solutions for the radius of the event horizon Rs
+                                        of the black hole are identically the same as for Rmax , irrespective of the values of the parameters
+                                        C and Λ, except that for Λ > Λc neither Rs nor Rmax exists [1]. He therefore suggested that
+                                        the identity Rmax ≡ Rs is fundamental to the structure of the universe and concluded that at
+                                            ∗
+                                                Email address: skhakshour@aeoi.org.ir
+
+
+                                                                                                1
+any epoch R(t) ≤ Rs , meaning that the universe is indeed inside a black hole.
+We note that this identification implies that the separating surface of the FRW interior from the
+vacuum exterior, while the universe reaches its maximum expansion, turns out to be (instan-
+taneously) a null hypersurface. So what if we study the Pathria’s cosmological model from the
+matching conditions point of view for the two different spacetimes through a null hypersurface?
+Hence, in this note, we formulate the general problem of gluing a FRW metric to a vacuum
+schwarzschild one along a null hypersurface. For this purpose, we use Barrabès-Israel null shell
+formalism [3] to investigate the matching conditions.
+Conventions. Natural geometrized units, in which G = c = 1, are used throughout the paper.
+The null hypersurface is denoted by Σ. The symbol |Σ means ”evaluated on the null hypersur-
+face ”. We use square brackets [F] to denote the jump of any quantity F across Σ. Latin indices
+range over the intrinsic coordinates of Σ denoted by ξ a , and Greek indices over the coordinates
+of the 4-manifolds.
+
+
+2    Matching Conditions
+We consider a pressureless closed FRW expanding universe which can be described, in retarded
+time coordinates, by the following metric
+
+                     ds2− = −a2 dv(2dχ + dv) + a2 sin2 χ(dθ 2 + sin2 θdϕ2 ),                  (1)
+
+where a(v, χ) is the scale factor, v is a null coordinate , and χ a spacelike coordinate which is
+constant along the comoving worldlines. The retarded time v is related to the cosmological time
+t− by
+                                                dt−
+                                          dv =      − dχ.                                     (2)
+                                                 a
+The governing Friedmann equations are written as
+
+                                     ȧ2   1 Λ  8πρ
+                                       2
+                                         + 2− =     ,                                         (3)
+                                     a    a  3   3
+                                       ä Λ        4πρ
+                                         − =−           ,                                   (4)
+                                       a    3        3
+where the dots denote the derivative with respect to t− ; Λ and ρ are the cosmological constant
+and the energy density, respectively.
+Considering an external view of the universe, we assume the exterior of the FRW universe may
+be described by a Schwarzschild metric modified by the presence of the cosmological constant
+as follows
+                         ds2+ = −du(f du + 2dr) + r 2 (dθ 2 + sin2 θdϕ2 ),                  (5)
+where
+                                              2M   Λr 2
+                                      f =1−      −      ,                                     (6)
+                                               r    3
+with the Schwarzschild mass M = 4π 0r ρr 2 dr = 4π   3
+                                        R
+                                                 3 ρr |Σ , being a constant for a dust-filled
+universe.
+
+
+
+                                                2
+To match the FRW interior with the Schwarzschild exterior along the null hypersurface Σ situ-
+ated at the maximum radius of the FRW expanding universe, we note that the requirement of
+the continuity of the induced metric on Σ yields the following matching conditions
+                                                            Σ
+                                                     r = a sin χ,
+                                                            Σ
+                                                  2dχ = −dv,                                                          (7)
+                                                            Σ
+                                                  f du = −2dr,
+       Σ
+where = means that we should compute both sides of the equality at Σ. Taking ξ a = (u, θ, ϕ)
+with a = 1, 2, 3 as the intrinsic coordinates on Σ, and u a parameter on the null generators of
+the hypersurface, we now calculate the tangent basis vectors ea = ∂/∂ξ a on both sides of Σ as
+
+                                 −1
+                            du
+                        
+           eµu |−   =                  (−2, 1, 0, 0) |Σ ,               eµθ |− = δθµ ,              eµϕ |− = δϕµ ,    (8)
+                            dχ
+                            f
+                                         
+           eµu |+ =     1, − , 0, 0 |Σ ,                                eµθ |+ = δθµ ,              eµϕ |+ = δϕµ .    (9)
+                            2
+For further applications, using Eq. (7) together with (2) and (3), we can compute
+                                   du  du dr
+                                             ,=
+                                   dχ  dr dχ
+                                       −2      ∂a
+                                                                
+                                   =        −     sin χ + a cos χ |Σ ,                     (10)
+                                        f      ∂χ
+                                       −2
+                                   =      (−aȧ sin χ + a cos χ) |Σ .
+                                        f
+Recalling that u is a parameter on the null geodesic generators of Σ, we choose the tangent-
+normal vector nµ coinciding with the tangent basis vector associated with the parameter u, so
+that nµ = eµu [4]. We may then complete the basis by a transverse null vector N µ uniquely
+defined by the four conditions nµ N µ = −1, Nµ eµA = 0 (A = θ, ϕ), and Nµ N µ = 0. We find
+                                                    1 du
+                                                                   
+                                        Nµ |− =               (1, 0, 0, 0) |Σ ,                                      (11)
+                                                    2 dχ
+                                        Nµ |+     = (−1, 0, 0, 0)| Σ .                                               (12)
+Furthermore, the induced         metric on Σ, given by gab = gµν eµa eνb |± , is computed to be
+               2  2      2
+                            
+gab =diag 0, r , r sin θ |Σ , which is the same on both sides of the hypersurface. Defining a
+                                                          ac         a        a    µ        a   a
+pseudo-inverse of the induced      metric gab on Σ as g∗ gbc = δb + n Nµ eb , with n = δu [5], one
+                              1
+gets g∗ab = diag 0, r12 , r2 sin2θ  |Σ .
+The final junction conditions are formulated in terms of the jump in the transverse extrinsic
+curvature tensor across Σ. Using the definition Kab = eµa eνb ∇µ Nν , we may therefore compute
+the transverse extrinsic curvature [5] on both sides of Σ. Its nonvanishing components on the
+minus side are found as
+                                 Kθθ |− = sin−2 θKϕϕ |−                                                              (13)
+                                                                                         !
+                                                                cos2 χ − ȧ2 sin2 χ
+                                            = a sin χ                                        |Σ ,
+                                                                          f
+                                            = a sin χ|Σ ,
+
+                                                                3
+                                                             −2
+                                      −1                dr
+                                                       
+                         Kuu |− =        f,r − 2πρa3 f             sin χ|Σ ,                 (14)
+                                      2                 dχ
+                                      −1
+                                  =      f,r + 2πρa|Σ ,
+                                      2
+                                                                    dr
+where we have used Eqs. (3), (4), (6), (7) and (10), and the term dχ    in Eq. (14) has been
+                 π
+evaluated at χ = 2 , corresponding to the maximum expansion of the FRW universe. The
+nonvanishing components of the transverse curvature on the plus side are
+
+                                  Kθθ |+ = sin−2 θKϕϕ |+ = r|Σ ,                             (15)
+
+                                               −1
+                                       Kuu |+ =    f,r |Σ .                               (16)
+                                                2
+Now Eqs. (13) and (15) show that the angular components of the transverse curvature are
+continuous across Σ. But from Eqs. (14) and (16) we infer the discontinuity of the ”uu”
+component of extrinsic curvature across Σ, signaling the presence of a null shell of matter on
+the hypersurface Σ, with vanishing energy density, but a surface pressure which is computed as
+[5]
+                                             1 a b
+                                      p = −    n n [Kab ],
+                                            8π
+                                             1
+                                        = − [Kuu ],                                          (17)
+                                            8π
+                                          ρa
+                                        =    | .
+                                           4 Σ
+The surface energy-momentum tensor of a lightlike shell is then written as S ab = pg∗ab , where
+the surface pressure p is measured by the observers comoving with the cosmological dust fluid
+and intersecting the hypersurface.
+Therefore, the null hypersurface Σ, separating the closed FRW interior at the point of its max-
+imum expansion from the vacuum Schwarzschild exterior, is the history of a null shell charac-
+terized by its surface pressure (17).
+
+
+
+3    Conclusion
+Applying the Barrabès-Israel null shell formalism, we have studied Pathria’s cosmological model
+in which a pressureless closed FRW universe is entrapped within a Schwarzschild black hole, from
+the point of view of the matching conditions for the two different spacetimes glued together along
+a null hypersurface. As a result of the matching conditions, we see that the transition from the
+expansion to contraction in the FRW universe located on the event horizon of the Schwarzschild
+black hole can only be done through a null shell which is simply characterized by a surface
+pressure.
+  Note added in the published version: Very recently, Knutsen [6] critically examined Pathria’s
+model from the point of view of smooth matching of a FRW interior region to the vacuum
+
+                                                4
+Schwarzschild exterior spacetime along a timelike hypersurface. He points out that with the ill-
+employed notations in the Pathria’s work, the matching conditions yield the unexpected results
+suggesting that Pathria’s idea of the Universe as a black hole is untenable. However, it is worth
+addressing that in the limit when the timelike hypersurface separating the two spacetimes as
+studied in [6], is moved to the Schwarzschild horizon, it becomes a null hypersurface through
+which we have investigated the matching of the two spacetimes in the present work.
+
+Acknowledgment
+The author would like to thank the referee for helpful comments.
+
+
+References
+ [1] R. K. Pathria, Nature 240, 298 (1972).
+
+ [2] W. M. Stuckey, Am. J. Phys. 62, 788 (1994); M. S. Berman, Astrophys. Space Sci. 311,
+     359 (2007); N. J. Poplawski ; gr-qc/0901.0215.
+
+ [3] C. Barrabes and P. A. Hogan, Singular Null Hypersurfaces in General Relativity, (World
+     Scientific, 2004).
+
+ [4] E. Poisson; gr-qc/0207101.
+
+ [5] C. Barrabès and W. Israel, Phys, Rev. D 43, 1129 (1991).
+
+ [6] H. knutsen, Grav. Cosmol. 15, 3, 273 (2009).
+
+
+
+
+                                               5
+

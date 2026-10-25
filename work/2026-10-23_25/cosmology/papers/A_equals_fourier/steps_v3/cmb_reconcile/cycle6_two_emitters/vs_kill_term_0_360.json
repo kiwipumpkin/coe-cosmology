@@ -1,0 +1,150 @@
+{
+  "beta0_cycle6": 0.02,
+  "note": "cycle6 toy \u03b2; cycle4 from full CoE model",
+  "comparisons": [
+    {
+      "D_Gpc": 14.7,
+      "case": "A\u2032 radial same-speed",
+      "shape_corr": 0.7063202118377405,
+      "kill_a2": 0.038769570541454454,
+      "case_a2": 0.0077414763393175694,
+      "a2_ratio_case_over_kill": 0.1996791873420413,
+      "amp_scale_case_to_match_kill": 10.16602328246024,
+      "case_peak_abs": 0.03542144344279651,
+      "kill_peak_abs": 0.3888189961669064,
+      "peak_ratio_case_over_kill": 0.09110008459461
+    },
+    {
+      "D_Gpc": 14.7,
+      "case": "B V\u221dr",
+      "shape_corr": 0.5749686650318158,
+      "kill_a2": 0.038769570541454454,
+      "case_a2": 0.007938856623594248,
+      "a2_ratio_case_over_kill": 0.20477030084987935,
+      "amp_scale_case_to_match_kill": 7.953193221781992,
+      "case_peak_abs": 0.047981904770593636,
+      "kill_peak_abs": 0.3888189961669064,
+      "peak_ratio_case_over_kill": 0.12340421955617796
+    },
+    {
+      "D_Gpc": 14.7,
+      "case": "C V\u221d1/r",
+      "shape_corr": 0.6032017218191058,
+      "kill_a2": 0.038769570541454454,
+      "case_a2": 0.010005578060880331,
+      "a2_ratio_case_over_kill": 0.2580781247030282,
+      "amp_scale_case_to_match_kill": 7.719650185425033,
+      "case_peak_abs": 0.027885166646118238,
+      "kill_peak_abs": 0.3888189961669064,
+      "peak_ratio_case_over_kill": 0.07171760361766921
+    },
+    {
+      "D_Gpc": 14.7,
+      "case": "D mild \u03ba",
+      "shape_corr": 0.6939417054668304,
+      "kill_a2": 0.038769570541454454,
+      "case_a2": 0.007761214367745222,
+      "a2_ratio_case_over_kill": 0.2001882986928247,
+      "amp_scale_case_to_match_kill": 9.96526621791507,
+      "case_peak_abs": 0.03667748957557622,
+      "kill_peak_abs": 0.3888189961669064,
+      "peak_ratio_case_over_kill": 0.09433049809076678
+    },
+    {
+      "D_Gpc": 22.275859553182602,
+      "case": "A\u2032 radial same-speed",
+      "shape_corr": 0.5504256932239584,
+      "kill_a2": 0.4268698803953225,
+      "case_a2": 0.0077414763393175694,
+      "a2_ratio_case_over_kill": 0.01813544757982976,
+      "amp_scale_case_to_match_kill": 25.339879915403422,
+      "case_peak_abs": 0.03542144344279651,
+      "kill_peak_abs": 2.6342496845379406,
+      "peak_ratio_case_over_kill": 0.013446501920720394
+    },
+    {
+      "D_Gpc": 22.275859553182602,
+      "case": "B V\u221dr",
+      "shape_corr": 0.6014117604121271,
+      "kill_a2": 0.4268698803953225,
+      "case_a2": 0.007938856623594248,
+      "a2_ratio_case_over_kill": 0.018597837393076563,
+      "amp_scale_case_to_match_kill": 26.608822813751907,
+      "case_peak_abs": 0.047981904770593636,
+      "kill_peak_abs": 2.6342496845379406,
+      "peak_ratio_case_over_kill": 0.018214638138605254
+    },
+    {
+      "D_Gpc": 22.275859553182602,
+      "case": "C V\u221d1/r",
+      "shape_corr": 0.6840489146016541,
+      "kill_a2": 0.4268698803953225,
+      "case_a2": 0.010005578060880331,
+      "a2_ratio_case_over_kill": 0.02343940980706862,
+      "amp_scale_case_to_match_kill": 28.00132580950124,
+      "case_peak_abs": 0.027885166646118238,
+      "kill_peak_abs": 2.6342496845379406,
+      "peak_ratio_case_over_kill": 0.010585620189989478
+    },
+    {
+      "D_Gpc": 22.275859553182602,
+      "case": "D mild \u03ba",
+      "shape_corr": 0.5566992724459677,
+      "kill_a2": 0.4268698803953225,
+      "case_a2": 0.007761214367745222,
+      "a2_ratio_case_over_kill": 0.018181686561154403,
+      "amp_scale_case_to_match_kill": 25.57072009116664,
+      "case_peak_abs": 0.03667748957557622,
+      "kill_peak_abs": 2.6342496845379406,
+      "peak_ratio_case_over_kill": 0.013923315542508878
+    },
+    {
+      "D_Gpc": 49.0,
+      "case": "A\u2032 radial same-speed",
+      "shape_corr": 0.6284954789123722,
+      "kill_a2": 0.3842775949518029,
+      "case_a2": 0.0077414763393175694,
+      "a2_ratio_case_over_kill": 0.020145531358102015,
+      "amp_scale_case_to_match_kill": 13.070294141412681,
+      "case_peak_abs": 0.03542144344279651,
+      "kill_peak_abs": 0.49028820295051156,
+      "peak_ratio_case_over_kill": 0.07224616711075926
+    },
+    {
+      "D_Gpc": 49.0,
+      "case": "B V\u221dr",
+      "shape_corr": 0.6673972460596855,
+      "kill_a2": 0.3842775949518029,
+      "case_a2": 0.007938856623594248,
+      "a2_ratio_case_over_kill": 0.020659171203020462,
+      "amp_scale_case_to_match_kill": 13.33876141248759,
+      "case_peak_abs": 0.047981904770593636,
+      "kill_peak_abs": 0.49028820295051156,
+      "peak_ratio_case_over_kill": 0.09786469362681526
+    },
+    {
+      "D_Gpc": 49.0,
+      "case": "C V\u221d1/r",
+      "shape_corr": 0.7323952369296692,
+      "kill_a2": 0.3842775949518029,
+      "case_a2": 0.010005578060880331,
+      "a2_ratio_case_over_kill": 0.02603737036018261,
+      "amp_scale_case_to_match_kill": 13.542981865760101,
+      "case_peak_abs": 0.027885166646118238,
+      "kill_peak_abs": 0.49028820295051156,
+      "peak_ratio_case_over_kill": 0.05687505120112567
+    },
+    {
+      "D_Gpc": 49.0,
+      "case": "D mild \u03ba",
+      "shape_corr": 0.6336535514220378,
+      "kill_a2": 0.3842775949518029,
+      "case_a2": 0.007761214367745222,
+      "a2_ratio_case_over_kill": 0.020196895342593817,
+      "amp_scale_case_to_match_kill": 13.147752702963608,
+      "case_peak_abs": 0.03667748957557622,
+      "kill_peak_abs": 0.49028820295051156,
+      "peak_ratio_case_over_kill": 0.07480801976236486
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.55in,paperwidth=8.5in,paperheight=11in]{geometry}
+\usepackage{amsmath,amssymb}
+\pagestyle{empty}\setlength{\parindent}{0pt}
+\begin{document}
+\textbf{\large CoE model $A(\ell)$ vs Migkas+2020 Fig.\,6: harmonic amplitudes, tilt done properly (v2)}
+
+\medskip\textbf{Step 0. Chris's variables and the model written in them}\\[2pt]
+$r$ = vision-shell radius $\approx14.3$ Gpc (sources on the shell, $d=r$); \ $D$ = our distance from the CoE; \ $L$ = density scale length;
+$M$ = mass enclosed toward the CoE (spreadsheet: $M/M_0$); \ $(\ell_0,b_0)$ = Galactic longitude and tilt of the CoE anti-axis $\hat D$;
+$\varphi$ = rotation phase in $\mathrm{Amp}\,\sin(\ell\cdot2\pi/360+\varphi)$; \ $\varphi_{2}$ = phase of the $2\ell$ transform $\mathrm{Amp}_2\sin(2\ell\cdot2\pi/360+\varphi_2)$; \ $N$ = overall normalisation.
+With $\mu=\hat n\cdot\hat D=\cos b\cos b_0\cos(\ell-\ell_0)+\sin b\sin b_0$:
+\[
+\frac{A}{A_{\rm all}}=N\Big[1+\alpha\,\frac{G\,M(<D)}{H_0^2D^3}\,(3\mu^2-1)+\alpha\,\frac{G\,M(<D)}{H_0^2D^3}\,\frac{r}{D}\Big(\tfrac92\mu-\tfrac{15}{2}\mu^3\Big)\Big]
+\]
+\[
+M(<D)=4\pi\rho_0L^3\big[2-e^{-D/L}\big((D/L)^2+2D/L+2\big)\big]\qquad\text{(exponential core, }\rho=\rho_0e^{-R/L})
+\]
+
+\medskip\textbf{Step 1. Define parameters} (built from Chris's variables; only these compact ones are used below)
+\begin{align*}
+&\varepsilon\equiv r/D\ (=d/D), \qquad x\equiv D/L, \qquad M(<D)=4\pi\rho_0L^3\big[2-e^{-x}(x^2+2x+2)\big]\\
+&M_{\rm crit}(<D)=\tfrac{4\pi}{3}\rho_cD^3=\frac{H_0^2D^3}{2G}\quad(\rho_c=3H_0^2/8\pi G)\\
+&\kappa\equiv\frac{G\,M(<D)}{H_0^2D^3}=\frac{M(<D)}{2M_{\rm crit}(<D)}=\frac32\,\frac{\rho_0}{\rho_c}\,g(x),\qquad g(x)=\frac{2-e^{-x}(x^2+2x+2)}{x^3}\ \ \big(g\to\tfrac13\text{ as }x\to0\big)\\
+&\alpha=O(1)\ \text{time-integration factor},\qquad K\equiv\alpha\kappa
+\end{align*}
+\[
+\frac{A}{A_{\rm all}}=N\big[1+K(3\mu^2-1)+K\varepsilon\big(\tfrac92\mu-\tfrac{15}{2}\mu^3\big)\big]\qquad\text{(unknowns: }N,\ K,\ \varepsilon,\ b_0;\ \ \ell_0\text{ fixed below)}
+\]
+
+\medskip\textbf{Step 2. How the tilt enters: average over each Migkas sector} (assumptions: $90^\circ$ longitude sectors centred every $5^\circ$,
+full latitude range minus the $|b|\le20^\circ$ plane cut of the cluster sample, area weight $\cos b\,db\,d\ell$, clusters treated as uniform on the sky)\\[2pt]
+Write $a=\cos b_0,\ s_0=\sin b_0,\ \psi=\ell_c-\ell_0$. The cut is symmetric in $b$, so odd powers of $\sin b$ average to zero and the averages factorise:
+\[
+\langle\mu\rangle=a\langle c\rangle\langle C\rangle,\qquad
+\langle\mu^2\rangle=a^2\langle c^2\rangle\langle C^2\rangle+s_0^2\langle s^2\rangle,\qquad
+\langle\mu^3\rangle=a^3\langle c^3\rangle\langle C^3\rangle+3as_0^2\langle cs^2\rangle\langle C\rangle
+\]
+($c=\cos b,\ s=\sin b,\ C=\cos(\ell-\ell_0)$). Latitude moments, $20^\circ<|b|<90^\circ$, weight $\cos b$:\\
+$\langle c\rangle=0.68417,\ \langle c^2\rangle=0.51367,\ \langle c^3\rangle=0.40530,\ \langle s^2\rangle=0.48633,\ \langle cs^2\rangle=0.27887$.\\
+Sector (longitude) average: $\langle\cos m(\ell-\ell_0)\rangle=W_m\cos m\psi$, $W_m=\frac{\sin(m\pi/4)}{m\pi/4}$:\\
+$W_1=0.90032,\ W_2=0.63662,\ W_3=0.30011$;\quad
+$\langle C^2\rangle=\tfrac12+\tfrac12W_2\cos2\psi$, \ $\langle C^3\rangle=\tfrac34W_1\cos\psi+\tfrac14W_3\cos3\psi$. Result:
+\[
+\Big\langle\frac{A}{N}\Big\rangle(\psi)=1+Kq_0+K\varepsilon\,o_1\cos\psi+Kq_2\cos2\psi+K\varepsilon\,o_3\cos3\psi
+\]
+\begin{align*}
+q_0&=\tfrac32a^2\langle c^2\rangle+3s_0^2\langle s^2\rangle-1=0.45900-0.68850\,a^2, &
+q_2&=\tfrac32a^2\langle c^2\rangle W_2=0.49052\,a^2,\\
+o_1&=aW_1\big(\tfrac92\langle c\rangle-\tfrac{45}{8}a^2\langle c^3\rangle-\tfrac{45}{2}s_0^2\langle cs^2\rangle\big)=0.90032\,a\,(-3.1958+3.9948\,a^2), &
+o_3&=-\tfrac{15}{8}a^3\langle c^3\rangle W_3=-0.22806\,a^3.
+\end{align*}
+Checked against a brute-force 2-D sector average (grid $0.25^\circ\times0.5^\circ$) at $b_0=30^\circ$: agreement to $<10^{-6}$; all $\sin m\psi$ terms vanish.
+\begin{center}\small
+\begin{tabular}{r|rrrr|r|r}
+$b_0$ & $q_0$ & $q_2$ & $o_1$ & $o_3$ & $|o_1/o_3|$ & old shortcut $o_1$ ($\mu=a\cos\psi$, $\times W_1$)\\\hline
+$0^\circ$ & $-0.2295$ & $0.4905$ & $+0.7193$ & $-0.2281$ & 3.154 & $-1.0129$\\
+$10^\circ$ & $-0.2087$ & $0.4757$ & $+0.6016$ & $-0.2178$ & 2.762 & $-0.8471$\\
+$\mathbf{19.10^\circ}$ & $-0.1558$ & $0.4380$ & $+0.3159$ & $-0.1924$ & \textbf{1.642} & $-0.4448$\\
+$26.57^\circ$ & $-0.0918$ & $0.3924$ & $0.0000$ & $-0.1632$ & 0 & $0.0000$\\
+$\mathbf{31.66^\circ}$ & $-0.0399$ & $0.3554$ & $-0.2309$ & $-0.1407$ & \textbf{1.642} & $+0.3252$\\
+$40^\circ$ & $+0.0550$ & $0.2878$ & $-0.5873$ & $-0.1025$ & 5.729 & $+0.8270$
+\end{tabular}\end{center}
+The latitude spread flips the sign of $o_1$ relative to the old shortcut at every $b_0\ne26.57^\circ$ (both vanish at $\cos^2b_0=0.8$).
+
+\medskip\textbf{Step 3. Chris's transforms, written as equations}\\[2pt]
+Each model harmonic is given its own phase; only its amplitude is kept from the physics. Model harmonic $m$ with signed coefficient $M_m$ has natural peak at
+$\ell_0$ (if $M_m>0$) or $\ell_0+180^\circ/m$ (if $M_m<0$):
+\[
+|M_1|\cos(\ell-\ell_0^{(1)})\ \to\ |M_1|\cos(\ell-\ell_0^{(1)}-\phi_1)=|M_1|\sin(\ell+\varphi),\quad \varphi=90^\circ-\ell_0^{(1)}-\phi_1\qquad\text{(rotation)}
+\]
+\[
+|M_2|\cos2(\ell-\ell_0)\ \to\ |M_2|\cos2(\ell-\ell_0-\phi_2)=|M_2|\sin(2\ell+\varphi_2),\quad \varphi_2=90^\circ-2(\ell_0+\phi_2)\qquad\text{($2\ell$ transform)}
+\]
+The octupole is not given its own phase; its offset from the data is reported as a mismatch $\delta_3$.
+
+\medskip\textbf{Step 4. Data amplitudes and phases} \ ($A_{\rm fit}=0.9965+0.0296\cos\ell+0.0434\sin\ell+0.0636\cos2\ell+0.0366\sin2\ell-0.0299\cos3\ell-0.0114\sin3\ell$;
+refit to the 71 digitised points reproduces these, $R^2=0.9150$)
+\begin{align*}
+m=0:&\quad A_0=0.99650\\
+m=1:&\quad |A_1|=\sqrt{0.0296^2+0.0434^2}=0.05253,\  \ell_1=\operatorname{atan2}(0.0434,\,0.0296)=55.71^\circ\\
+m=2:&\quad |A_2|=\sqrt{0.0636^2+0.0366^2}=0.07338,\  2\ell_2=\operatorname{atan2}(0.0366,\,0.0636)=29.92^\circ\Rightarrow\ell_2=14.96^\circ\\
+m=3:&\quad |A_3|=\sqrt{0.0299^2+0.0114^2}=0.03200,\  3\ell_3=\operatorname{atan2}(-0.0114,\,-0.0299)=200.87^\circ\Rightarrow\ell_3=66.96^\circ
+\end{align*}
+Axis: $\ell_0\equiv\ell_2=14.96^\circ$ ($\equiv194.96^\circ$ for $m{=}2$; with $K>0$, $q_2>0$ the model quadrupole peaks at $\ell_0$). In Chris's form: $0.05253\sin(\ell+34.30^\circ)$, \ $0.07338\sin(2\ell+60.08^\circ)$. ($\ell_3$ is defined mod $120^\circ$.)
+
+\medskip\textbf{Step 5. Set amplitudes equal}
+\[
+0.99650=N(1+Kq_0),\qquad 0.05253=NK\varepsilon\,|o_1|,\qquad 0.07338=NK\,q_2,\qquad 0.03200=NK\varepsilon\,|o_3|
+\]
+
+\medskip\textbf{Step 6. Solve} (4 equations, 4 unknowns $N,K,\varepsilon,b_0$)\\[2pt]
+\emph{(a) $m{=}1\div m{=}3$ removes $NK\varepsilon$ and leaves $b_0$ alone} ($u\equiv a^2=\cos^2b_0$):
+\[
+\frac{0.05253}{0.03200}=1.6417=\frac{0.90032\,|{-3.1958}+3.9948u|}{0.22806\,u}
+\;\Rightarrow\;|{-3.1958}+3.9948u|=0.41585\,u
+\]
+\[
+\Rightarrow\;u=\frac{3.1958}{3.9948\mp0.41585}=\begin{cases}0.89296 & b_0=19.10^\circ\ \ (o_1>0)\\ 0.72457 & b_0=31.66^\circ\ \ (o_1<0)\end{cases}
+\]
+Two exact roots ($|o_1/o_3|$ falls from 3.15 at $b_0=0$ to 0 at $26.57^\circ$, then rises), none else in $0<b_0<90^\circ$.
+
+\emph{(b)--(d) Branch A, $b_0=19.10^\circ$} ($a=0.94496$, $a^3=0.84381$; $q_0=-0.15580$, $q_2=0.43801$, $o_1=+0.31592$, $o_3=-0.19244$):
+\[
+NK=\frac{0.07338}{0.43801}=0.16753,\qquad
+\varepsilon=\frac{0.03200}{0.16753\times0.19244}=\frac{0.03200}{0.032240}=0.99257,
+\]
+\[
+N=0.99650+0.16753\times0.15580=1.02260,\qquad K=\frac{0.16753}{1.02260}=0.16383
+\]
+\emph{Branch B, $b_0=31.66^\circ$} ($a=0.85122$; $q_0=-0.03987$, $q_2=0.35542$, $o_1=-0.23092$, $o_3=-0.14066$):
+\ $NK=0.20646$, \ $\varepsilon=1.10188$, \ $N=1.00473$, \ $K=0.20549$.
+
+\emph{Plug-back (branch A):} \
+$m0$: $1.02260(1-0.16383\times0.15580)=0.99650$; \
+$m1$: $0.16753\times0.99257\times0.31592=0.05253$; \
+$m2$: $0.16753\times0.43801=0.07338$; \
+$m3$: $0.16753\times0.99257\times0.19244=0.03200$ \ $\checkmark$ (residuals $<10^{-12}$; same for B).
+
+\medskip\textbf{Step 7. Phases (the transforms)}\\[2pt]
+Branch A: $M_1>0$, natural dipole peak $14.96^\circ$ ($\sin(\ell+75.04^\circ)$) $\to$ data $55.71^\circ$ ($\sin(\ell+34.30^\circ)$):
+\ $\phi_1=55.71-14.96=+40.75^\circ$ ($0.711$ rad), i.e.\ $\varphi$: $75.04^\circ\to34.30^\circ$ ($1.310\to0.599$ rad).\\
+Branch B: $M_1<0$, natural dipole peak $194.96^\circ$, \ $\phi_1=-139.25^\circ$ (a sign flip plus $40.75^\circ$).\\
+$2\ell$: $\phi_2=\ell_2-\ell_0=0^\circ$ by construction; $\varphi_2=60.08^\circ$ ($1.049$ rad), unchanged from the model.\\
+Octupole: $M_3<0$ in both branches, natural peak $\ell_0+60^\circ=74.96^\circ$; data $66.96^\circ$ \ $\Rightarrow\ \delta_3=-8.00^\circ$ in $\ell$ ($-24.0^\circ$ in $3\ell$ phase).\\[2pt]
+$R^2$ against the 71 points: \ no transforms: $0.764$ (A), $-0.069$ (B); \ rotation + $2\ell$ (octupole at natural phase): $0.897$ (both);
+\ octupole also given its own phase: $0.915$ (identical to the Fourier fit, by construction).
+
+\medskip\textbf{Step 8. Back to Chris's variables}\\[2pt]
+\begin{tabular}{l|l|l}
+ & Branch A ($b_0=19.10^\circ$) & Branch B ($b_0=31.66^\circ$)\\\hline
+$D/r=1/\varepsilon$ & $1.0075$ & $0.9075$\\
+$D=14.3\,\text{Gpc}\times D/r$ & $14.41$ Gpc $=47.0$ Gly & $12.98$ Gpc $=42.3$ Gly\\
+$K=\alpha\kappa$; \ $M(<D)/M_{\rm crit}=2K/\alpha$ & $0.1638$; \ $0.328/\alpha$ & $0.2055$; \ $0.411/\alpha$\\
+$N$ & $1.0226$ & $1.0047$\\
+$\ell_0$ & $14.96^\circ$ & $14.96^\circ$\\
+rotation $\phi_1$ & $+40.75^\circ=0.711$ rad & $-139.25^\circ=-2.430$ rad\\
+Chris's $\varphi$ (model $\to$ data) & $75.04^\circ\to34.30^\circ$ ($1.310\to0.599$ rad) & $-104.96^\circ\to34.30^\circ$\\
+$2\ell$ phase $\phi_2$; $\varphi_2$ & $0^\circ$; $60.08^\circ$ ($1.049$ rad) & $0^\circ$; $60.08^\circ$\\
+octupole mismatch $\delta_3$ & $-8.0^\circ$ & $-8.0^\circ$
+\end{tabular}\\[3pt]
+$D/L$ is not determined: only $\kappa=\tfrac32(\rho_0/\rho_c)g(x)$ enters, so $x$ is degenerate with $\rho_0$. Branch A, $\alpha=1$:
+$\rho_0/\rho_c=2K/(3g(x))=0.353,\ 0.474,\ 0.680,\ 1.351,\ 2.556$ for $x=D/L=0.1,\ 0.5,\ 1,\ 2,\ 3$.
+
+\medskip\textbf{Caveats.} An exact solution exists (two branches) because there are four amplitude equations and four unknowns; matching is automatic and is not a test.
+$\ell_0$, the rotation $\phi_1$ and the $2\ell$ phase are extra free parameters not predicted by the axisymmetric physics (which has only $\cos m\psi$ terms, one axis);
+the $41^\circ$ rotation is the size of the model's failure to put the dipole on the quadrupole axis. The 71 points come from overlapping $90^\circ$ sectors stepped by $5^\circ$,
+so there are only $\sim$16 independent values; $R^2$ overstates the evidence. The analytic tidal form is a small-$r/D$ expansion, but both roots have $r/D\approx1$
+(branch B has $D<r$, $r/D=1.10$), where it is not reliable. Sector weighting assumes clusters uniform on the sky outside $|b|\le20^\circ$; the real cluster distribution will shift the $q,o$ coefficients.
+\end{document}

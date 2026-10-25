@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "binding_ontology_applied": {
+    "density": "NOT uniform; \u03c1(r) decreasing outward (centrally concentrated)",
+    "profile": "Phase A eq. 3.13 \u03c1\u221de^{-r/r_s} (or similar ST-motivated decreasing)",
+    "gravity": "Gauss/shell: g=-GM(<r)/r\u00b2",
+    "uniform_rejected": "\u03c1=const \u21d2 M\u221dr\u00b3 \u21d2 g\u221d-r \u21d2 monopole only",
+    "why_decreasing_restores_anisotropy": "M(<r) grows slower than r\u00b3 \u2192 tidal ~1/r\u00b2 \u2192 leading quadrupole at d\u226aD; uniform fills radii equally so differential peculiar \u221dd \u2192 direction-independent H renormalization only"
+  },
+  "canonical_full_text": {
+    "local": "/workspace/cosmology/new_draft.md",
+    "words": 5442,
+    "pages_thesis_est": 18,
+    "pages_dense_est": 11,
+    "drive_md_fileId": "1rR2zftvurz8Nev-DPKOxSTEaw0XJWYC0",
+    "drive_md_url": "https://drive.google.com/file/d/1rR2zftvurz8Nev-DPKOxSTEaw0XJWYC0/view?usp=drivesdk"
+  },
+  "google_docs_split": [
+    {
+      "part": "Abstract\u2013\u00a72",
+      "fileId": "1VHtppU5oW415-oGFtbDjHkzZVxkMwPc1o-Upa338zNI",
+      "url": "https://docs.google.com/document/d/1VHtppU5oW415-oGFtbDjHkzZVxkMwPc1o-Upa338zNI/edit?usp=drivesdk"
+    },
+    {
+      "part": "\u00a73 Mathematical framework",
+      "fileId": "1c-wtTvx5vof6RsPYI1Gma-aQwIeZcgbGTTgpazPEMGg",
+      "url": "https://docs.google.com/document/d/1c-wtTvx5vof6RsPYI1Gma-aQwIeZcgbGTTgpazPEMGg/edit?usp=drivesdk"
+    },
+    {
+      "part": "\u00a7\u00a74\u20135 Predicted sky & Migkas",
+      "fileId": "1AAlPNE1bq19RoLZCMDA4ce1N5q95iomBQg8uut3ho2s",
+      "url": "https://docs.google.com/document/d/1AAlPNE1bq19RoLZCMDA4ce1N5q95iomBQg8uut3ho2s/edit?usp=drivesdk"
+    },
+    {
+      "part": "\u00a7\u00a76\u20139 + References",
+      "fileId": "11J8rO5LoPwTMg7mGtd_FQryzkJQb24A2J5YoBH3xcC0",
+      "url": "https://docs.google.com/document/d/11J8rO5LoPwTMg7mGtd_FQryzkJQb24A2J5YoBH3xcC0/edit?usp=drivesdk"
+    }
+  ],
+  "folderId": "1wZYStJhpdowbcjTkkS9TOImAtt9_GvzD",
+  "old_draft_untouched": "/workspace/cosmology/draft.txt",
+  "top5_diffs_vs_old_draft": [
+    "Homology \u21d2 isotropy: pure ST gives H_obs=H for any offset; old draft wrongly claimed D alone anisotropizes",
+    "Corrected eqs 3.11\u20133.12 (differential peculiar, 1/H, gravity on CoE-radius r)",
+    "Baseline ontology: decreasing \u03c1 (3.13) + Gauss g=-GM(<r)/r\u00b2; uniform ball rejected; explicit why decreasing restores anisotropy",
+    "\u03ba_natural=\u03a9_m/2=0.15; multipole honesty (quad leading, C1\u22480; selection can fake Migkas A); CONDITIONAL-NO for (l,b,A) dipole MCMC",
+    "Time-integrated gravity O(1); CMB main adversary; full skeptical \u00a7\u00a71\u20139 vs unfinished visual-match outline"
+  ],
+  "note": "Google Docs split due to MCP create_file payload size; full continuous prose is new_draft.md (+ Drive .md)."
+}

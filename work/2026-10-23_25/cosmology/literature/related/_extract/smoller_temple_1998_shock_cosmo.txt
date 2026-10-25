@@ -1,0 +1,2472 @@
+                                                       COSMOLOGY WITH A SHOCK-WAVE
+                                                                       November 9, 1998
+
+                                                                Joel Smoller 1 Blake T emple2
+arXiv:astro-ph/9812063v1 2 Dec 1998
+
+
+
+
+                                                                            Abstract
+                                                  We construct the simplest solution of the Einstein equations that
+                                              incorporates a shock–wave into a standard Friedmann–Robertson–
+                                              Walker metric whose equation of state accounts for the Hubble con-
+                                              stant and the microwave background radiation temperature. This
+                                              produces a new solution of the Einstein equations from which we are
+                                              able to derive estimates for the shock position at present time. We
+                                              show that the distance from the shock–wave to the center of the ex-
+                                              plosion at present time is comparable to the Hubble distance. We are
+                                              motivated by the idea that the expansion of the universe as measured
+                                              by the Hubble constant might be accounted for by an event more sim-
+                                              ilar to a classical explosion than by the well-accepted scenario of the
+                                              Big Bang.
+
+
+                                      1       Introduction
+                                      In the standard model for cosmology it is assumed that, on the
+                                      largest scale, the entire universe is expanding at a rate measured
+                                      by the Hubble law, [1, 8, 9, 11, 18, 19]. Hubble’s Law correlates
+                                      recessional velocities of galaxies with red-shifts. However, this
+                                      correlation has only been verified for nearby galaxies, and it is an
+                                          1
+                                           Department of Mathematics, University of Michigan, Ann Arbor, MI 48109
+                                      smoller@umich.edu; Supported in part by NSF Applied Mathematics Grant No. DMS-
+                                      980-2370, and in part by the Institute of Theoretical Dynamics (ITD), UC-Davis.
+                                         2
+                                           Institute of Theoretical Dynamics (Mathematical Physics) and Department of Mathe-
+                                      matics, UC-Davis, Davis, CA 95616 temple@math.ucdavi.edu; Supported in part by NSF
+                                      Applied Mathematics Grant No. DMS-980-2473, and in part by the Institute of Theoret-
+                                      ical Dynamics (ITD).
+
+
+
+                                                                                1
+extrapolation to apply this law to the entire universe. Moreover,
+it follows from the Einstein equations, [4, 5, 18], that if the uni-
+verse is everywhere expanding, then every spacetime point can
+be traced back to a singularity in the past, a singularity from
+which the entire universe burst in an event referred to as the Big
+Bang. The assumption that the Hubble Law applies to the entire
+universe is referred to as the Cosmological Principle, [11]. The
+Cosmolgical Principle is the starting assumption in the modern
+theory of cosmology, and it is precisely this principle that forces
+the singularity into the standard Big Bang interpretation of the
+origin of the universe. In this paper we explore the possibility
+that Hubble’s Law actually only measures a localized expansion
+of the universe, and not the expansion of the entire universe. We
+demonstrate the consistency of this possibility by constructing
+the simplest possible solution of the Einstein equations that ac-
+counts for the observed Hubble expansion rate and the correct
+microwave background radiation temperature, such that there
+is a shock–wave present at the leading edge of the expansion.
+    Our motivation is the idea that the expansion of the universe,
+as measured by the Hubble constant, might be the result of a
+large scale localized explosion that generated a shock–wave at
+the leading edge, not unlike a classical explosion into a static
+background, except on an enormously large scale. If this were
+true, then it would place our solar system in a special posi-
+tion relative to the center of the explosion, and this would vi-
+olate the so-called Copernican Principle, at least on the scale
+at which the Hubble Law applies. The Copernican Principle
+is the statement that the earth is not in a “special place” in
+the universe. This principle justifies the standard cosmology
+based on the Friedmann– Robertson–Walker (FRW) metric be-
+
+                                 2
+cause the FRW metric is the unique metric that is consistent
+with the Einstein equations, and is homogeneous and isotropic
+about every point. The high degree of uniformity of the back-
+ground microwave radiation in all directions, together with the
+directional independence of the redshifting of galaxies, provides
+the strongest support for the Copernican Principle. The idea
+that there is a shock–wave present at the leading edge of that
+portion of the universe where the Hubble constant applies, also
+violates another basic tenet of modern cosmology; namely, that
+we can meaningfully time reverse the continuum model all the
+way back to microseconds after the Big Bang. (For example,
+the theory of inflation applies to the regime 10−34 to 10−32 sec-
+onds after the Big Bang in the continuum model, [8].) Indeed,
+it follows from the mathematical theory that shock–waves intro-
+duce a fundamental increase of entropy and consequent loss of
+information, [7, 17]. Thus, when a shock–wave is incorporated
+into cosmology, it becomes impossible to reconstruct the details
+of the early explosion from present data, at least at the level of
+the continuum model.
+    The simplest shock–wave model for cosmology is one in which
+the “expanding universe”, inside the shock–wave, is modeled
+by the standard FRW metric of cosmology, and the spacetime
+on the outside is modeled by a Tolman–Oppenheimer–Volkoff
+(TOV) metric, (the general relativistic version of a static fluid
+sphere), such that the interface in between is an exact, spheri-
+cally symmetric shock–wave solution of the Einstein equations,
+that propagates outward. The assumption that outside the
+shock–wave is a time-independent spherically symmetric solu-
+tion is not unreasonable if one imagines that the spacetime be-
+fore the explosion occured took a long time getting into the pre-
+
+                                3
+explosion configuration; and the assumption that an expand-
+ing FRW metric describes the spacetime behind the shock–wave
+is consistent with the fact that the galaxies appear to be uni-
+formly expanding. In this paper we construct such a model
+assuming critical expansion, (k = 0), for the FRW metric, and
+what emerges is a new, essentially exact solution of the Einstein
+equations. We show that reasonable physical requirements on
+the TOV equation of state put an interesting constraint on the
+possible position of the shock–wave relative to the center of the
+explosion. Using this constraint, we derive precise estimates for
+the shock position at present time, as predicted by this model;
+that is, at the time in this model at which the Hubble constant
+and the value of the background radiation temperature agree
+with observed values. The constraint on the shock position can
+be interpreted as a new length scale that is derived from the
+model, and this length scale is not determined by any adjustable
+parameters in the problem other than the experimentally deter-
+mined values of the Hubble constant and the background radi-
+ation temperature. The constraint on the position of the inter-
+face arises because the interface is a true shock–wave. There
+is no similar constraint on the position of the interface in the
+well-known Oppenheimer–Snyder model, where the interface is
+a contact discontinuity, [10, 13].
+   In this paper we start with a critically expanding, (k = 0),
+FRW metric under the assumption that the equation of state
+agrees with the equation of state that applies in the standard
+model of cosmology after the time of the thermal uncoupling of
+matter from radiation. This uncoupling occured at a tempera-
+ture of approximately 4000oK, at about 300, 000 years after the
+Big Bang in the standard model, [1, 19]. In Section 3, we derive
+
+                               4
+a system of ODE’s that determine the TOV metrics that match
+the given FRW metric across a shock–wave interface, (equations
+(5.4), (5.5) below). In fact, we derive the shock equations in the
+case of a general FRW metric, allowing for k 6= 0 and for general
+equations of state, (equations (3.41), (3.42) below). In Section
+4 we give a derivation of the FRW equation of state in terms of
+the cosmological scale factor. This includes a discussion of the
+FRW metric in the presence of both matter and radiation fields,
+assuming that the pressure due to matter is negligible, and that
+there is no thermal coupling between the fields. The results in
+Section 4 also apply for arbitrary k.
+   To obtain the ODE’s for the TOV metric, we must rework the
+theory in [13, 15] where a given outer TOV metric is the starting
+point, instead of a given inner FRW metric which we require
+here. These ODE’s, which are non-autonomous, simultaneously
+describe the TOV pressure p̄ and the FRW shock position r,
+assuming conservation of energy and momentum and no delta
+function sources at the shock. (We let barred quantities refer to
+TOV variables and unbarred quantities to FRW variables, c.f.
+[13].) We then derive a formula for the TOV energy density ρ̄,
+(the only remaining undetermined variable in the TOV metric),
+which, together with solutions of the ODE’s, determine the TOV
+solutions that match the given FRW metric across a shock–wave
+interface. The ODE’s take a particularly simple form when the
+cosmological scale factor R of the FRW metric is taken to be
+the independent variable instead of the TOV radial variable r̄,
+the independent variable in the usual formulation of the TOV
+system, [18, 19]. In Section 5 we present a rather complete phase
+plane analysis of these equations and we prove that there exists
+a unique bounded orbit. This orbit describes the TOV pressure,
+
+                                5
+but does not constrain either the initial shock position or the
+TOV energy density. We show that along this orbit, the pressure
+jump across the shock–wave has the property that the ratio of
+the TOV pressure to the FRW pressure at the shock is equal to
+a slowly varying
+          √       function that is bounded between 1/9 ≈ .1111
+and σ̄ = 17 − 4 ≈ .1231, where the FRW pressure is supplied
+by the background radiation. Using this bound on the TOV
+pressure along the orbit, we obtain the following sharp upper
+and lower bounds for the (squared) distance that the shock–
+wave can propogate over and above the (geodesic) motion of
+the galaxies, as a function of “starting time”, R∗ . (Here R = 1
+denotes present time in the model, and we view the starting time
+R∗ < 1 as the earliest time at which the shock–wave solution
+has settled down to the point where our model applies; that is,
+as entropy increases, we expect shock–wave solutions to settle
+down to simple time asymptotic configurations, and we assume
+here that this time asymptotic solution agrees with our model
+from R∗ onward.) The inequality reads, (see 7.31) below),
+
+(2.62 × 10−7)T04      1               (2.65 × 10−7)T04     1
+                          !                                   !
+                              2    2
+       2  2      ln       ≤ r − r∗ ≤         2  2      ln    .
+      h0 H0          R∗                     h0 H0         R∗
+Here the distance r is given in terms of the Hubble length
+                          .98
+                 H0−1 ≈       × 1010 lightyears,
+                           h0
+where
+
+                 H0 = 100h0 km sec−1 mpc−1 ,
+and it is generally agreed that h0 lies in the interval .5 ≤ h0 ≤
+.85, [11]. For example, if we take T0 = 2.736 ≈ 2.7oK, R∗ =
+
+                                6
+2.7/4000, and h0 = .55, (a recently quoted value), the above
+estimate reduces to
+
+                                     .019 2
+                                        !
+                           2    2
+                          r − r∗ ≈          .
+                                      H0
+We conclude that the distance the shock–wave has traveled,
+(over and above the motion of the galaxies), between R = R∗ =
+2.7/4000 and present time R = 1, as predicted by this model, is
+approximately .019 times the Hubble length.
+    In the standard interpretation of the FRW metric in Cosmol-
+ogy, the galaxies are in freefall, and traverse geodesics r = const.
+Thus we can interpret r2 − r∗2 above as the (squared) distance
+that the shock–wave travels over and above the motion due to
+freefall, a result of the fact that mass and momentum are driven
+across the shock–wave as it evolves outward. From this point of
+view it is a bit surprising that the quantity r2 −r∗2 is independent
+of the starting position r∗ .
+    Using the formula for the TOV energy density, we next prove
+that the minimal physical requirement ρ > ρ̄ > p̄ > 0, then
+places an additional contraint on the initial shock position r∗
+that depends on the starting time R∗. We prove that once this
+constraint is met at one time, it is met at all succeeding times
+in the solution, and the density and pressure profiles are phys-
+ically reasonable. Putting these results together, we obtain the
+following upper and lower bounds on the shock position at the
+present time as a function of background radiation temperature
+T0, the Hubble constant H0 , and the value of the scale factor R∗
+at which we start the shock–wave, (c.f. (7.37) and (7.38) below):
+
+
+
+                                 7
+                                   v
+                       2u
+                                            !
+       −1          −4 T0 u 1 
+              
+  r ≥ H0 (5.1 × 10 ) tln       ,
+                      h0   R∗ 
+             v
+                         .76                               T4      1
+             u                                                       !
+          −1 u                                         −7 ) 0 ln
+             u
+  r ≤    H0 u                           R∗ + (2.6 × 10                .
+                                                           h20
+                                     
+                              −7 )T 4
+                  1 + (4.6×10      0                               R∗
+             t
+                           2  2
+                          h0 R∗
+
+The maximum shock position is plotted in Figure 2 for the case
+T0 = 2.7oK, and h0 = .55. In Section 8 we compare these bounds
+to the analagous bounds one obtains in the case of pure radia-
+tion, thus making contact with the exact solution discussed in
+[14]. For example, at T0 = 2.7oK we obtain
+                                    √
+                   36h0         36h0 1 + 2.5R∗
+                         ≤r≤                   ,
+                    H0                H0
+c.f. (8.7) below. (Of course, since we are neglecting the matter
+field, we do not have Ṙ/R = H0 at the same time when T = T0
+in the pure radiation model.) We note that in this case the
+distance from the shock position to the center of the explosion
+is significantly beyond the Hubble length.
+    In summary, starting with the idea that there might be a
+shock–wave that marks the outer boundary of the expansion
+that we measure by the Hubble constant, one’s first reaction is
+that nothing quantitative could be said about the position of
+the shock without knowing details concerning the nature of the
+spacetime beyond the shock–wave, or details about the mecha-
+nism that might have created such an explosion in the first place.
+And to a large extent this must be true. But what we find inter-
+esting here is that this simplest shock–wave cosmological model,
+consistent with both the observed values of the Hubble constant
+
+                                     8
+and the background radiation temperature, contains within it
+unexpected constraints on the possible position of such a shock–
+wave, and the shock position is comparable to the Hubble length.
+That is, we find it intriguing that this length scale comes out
+of the model, and provides an answer that apriori needn’t have
+been so reasonable.
+   In conclusion, we ask whether our expanding universe could
+have evolved from the center of a great explosion that gener-
+ated a shock–wave at its leading edge. If so it makes sense to
+wonder whether some of the far away objects that we observe
+in the nightime sky are possibly due to similar explosions that
+originated at other locations in spacetime. We now know that
+the scale of supernovae is not the largest scale on which classical
+explosions have occured in the universe. Indeed, it was reported
+in a recent issue of Nature, that on May 7, 1998, a gamma ray
+explosion emanating from a faint galaxy known as GRB971214
+erupted, and for two seconds the burst was more luminous than
+the rest of the universe combined. This is the largest explosion
+ever recorded, and redshifts place it at about 12 billion lightyears
+away. Moreover, conditions at the explosion were equivalent to
+those one millisecond after the Big Bang in the standard model.
+Thus we pose the question: could explosions such as this, or
+even greater than this, have given rise to our own “expanding
+universe”? Indeed, could we then observe other similar explo-
+sions in distant regions of spacetime beyond the expansion of
+our own universe, (that is, beyond the shock–wave that marks
+the edge of the expansion we measure by the Hubble constant)?
+We propose the shock–wave model presented in this paper as a
+natural and simple starting point for a futher investigation of
+these issues. But independently of this, the model provides a
+
+                                 9
+new, essentially exact solution of the Einstein equations that we
+feel is interesting in its own right.
+
+
+2    Preliminaries
+According to Einstein’s theory of general relativity, [3], the grav-
+itational field is described by a Lorenzian metric g that satisfies
+the Einstein equations
+                                  8πG
+                                G=    T,                       (2.1)
+                                   c4
+on 4-dimensional spacetime. Here G is the Einstein curvature
+tensor, G denotes Newton’s gravitational constant, c denotes the
+speed of light, and T is the stress energy tensor, the source of the
+gravitational field. In this paper we are concerned with FRW
+and TOV metrics, two spherically symmetric metrics which are
+exact solutions of (2.1) when T takes the form of a stress tensor
+for a perfect fluid, namely
+
+                     Tij = (p + ρc2 )uiuj + pgij ,            (2.2)
+where ρ denotes the mass-energy density, p the pressure and
+i, j = 0, ..., 3 denote indices of spacetime coordinates. The FRW
+metric is given by
+
+                              1
+                                 (                     )
+         2            2     2
+       ds = −d(ct) + R (t)        2
+                                    dr2 + r2dΩ2 ,             (2.3)
+                           1 − kr
+and the TOV metric is given by
+
+             ds̄2 = −B(r̄)d(ct̄)2 + A(r̄)−1dr̄2 + r̄2 dΩ2,    (2.4)
+
+                                     10
+where dΩ2 denotes the standard metric on the unit two-sphere.
+We write the TOV metric in barred coordinates so that it can be
+distinguished from the unbarred FRW coordinates when we do
+the matching of these two metrics below, c.f. [13]. Assuming co-
+moving coordinates and substituting (2.3) into the (2.1) yields
+the following FRW equations, [9, 11, 18, 19]:
+
+                              8πG 2
+                      Ṙ2 =       ρR − k,                    (2.5)
+                              3c4
+and
+                                    Rρ̇
+                        p = −ρ −        .                  (2.6)
+                                    3Ṙ
+The unknowns R, ρ and p in the FRW equations are assumed
+to functions of the FRW time t alone, and “dot” denotes dif-
+ferentiation with respect to t. Assuming co-moving coordinates
+and substituting (2.4) into the (2.1) yields the following TOV
+equations,
+
+                         dM
+                              = 4πr̄2 ρ̄,                    (2.7)
+                          dr̄
+                                            4πr̄3 p̄  −1
+                                     !           
+                dp̄          p̄
+           − r̄2 = GM ρ̄ 1 +           1 +           A ,    (2.8)
+                dr̄          ρ̄              M
+and
+
+                        B′         p̄′
+                           = −2         ,                    (2.9)
+                        B       p̄ + ρ̄
+where
+                                     2GM
+                        A=1−                .               (2.10)
+                                      c2 r̄
+
+                                11
+Here the unknown functions are the density ρ̄, the pressure p̄,
+and the total mass M, [12], which are assumed to be functions
+of r̄ alone, and prime denotes differentiation with respect to r̄.
+In the next section we fix an FRW metric and derive equations
+for the TOV metrics that match the given FRW metric across a
+shock–wave interface at which the metric is only Lipschitz con-
+tinuous, and across which conservation of mass and momentum
+hold, and at which there are no delta function sources. In [13]
+it is shown that the shock surface is given implicitly by
+                                 4π
+                        M(r̄) =     ρ(t)r̄3,                 (2.11)
+                                  3
+and the metrics (2.3), (2.4) are identified via a coordinate trans-
+formation in which
+
+                             r̄ = Rr.                       (2.12)
+
+
+3    Derivation of Equations
+In this section we derive equations that describe the time evo-
+lution of an outgoing spherical shock–wave interface together
+with an outer TOV metric, such that the shock surface matches
+a given FRW metric on the inside, and such that conservation
+of energy and momentum hold across the interface. The main
+point here is that we are assuming a given inner FRW metric,
+rather than assuming a given outer TOV metric as in [13, 15].
+Thus we seek a pair of equations that determine an outer TOV
+metric that matches a given FRW across a shock–wave interface.
+Rather than deriving the shock equations, we shall write them
+down and prove that solutions of these equations determine a
+
+                                  12
+shock–wave solution of the Einstein equations. (The reader can
+obtain a formal derivation of these equations by reversing the
+steps in the arguments below.)
+   Equation (3.10) in our first theorem below is the first equation
+in the pair of ODE’s that we will work with.
+
+Theorem 1 Assume that ρ(t), p(t), and R(t) solve the FRW
+system
+                            v
+                            u 8πG
+                            u
+                       Ṙ = t 4 R2 ρ − k,                    (3.1)
+                              3c
+                               Ṙ
+                        ρ̇ = −3 (ρ + p),                     (3.2)
+                               R
+over some interval
+
+                           I = (t1 , t2).                    (3.3)
+Assume that
+
+                            R(t) > 0,                        (3.4)
+and that
+
+                             Ṙ 6= 0,                        (3.5)
+on I. We assume WLOG, (by the choice of positive square root
+in (3.1)), that
+
+                             Ṙ > 0.                         (3.6)
+Assume further that r(t) is a positive invertible function defined
+on I, and define r̄(t) on I by
+
+                                13
+                             r̄ = Rr.                        (3.7)
+Define functions M(r̄) and ρ̄(r̄)) by
+                                  4π
+                     M(r̄(t)) =      ρ(t)r̄(t)3,             (3.8)
+                                   3
+and
+
+                                     M ′ (r̄)
+                            ρ̄(r̄) =          ,            (3.9)
+                                     4πr̄2
+where prime denotes differentiation with respect to r̄. Assume,
+finally, that r(t) satisfies
+
+                         1 p − p̄ 1 − kr2
+                                       !
+                    ṙ =                    ,               (3.10)
+                         R ρ + p̄     Ṙr
+for some function p̄, and that ρ, p, M, ρ̄, and p̄ are all positive
+valued functions on I. Then for all t ∈ I we have,
+
+                               γθρ̄ − ρ
+                          p=            ,                   (3.11)
+                               1 − γθ
+where, [15],
+
+                                  A
+                          θ=           ,                    (3.12)
+                               1 − kr2
+                                       2GM
+                         A=1−                 ,             (3.13)
+                                        c4 r̄
+and
+                                  ρ + p̄
+                           γ=             .                 (3.14)
+                                  ρ̄ + p̄
+
+                                  14
+That is, Theorem 1 implies that for a given FRW solution, (3.10)
+implies the conservation condition (3.11) when M and ρ̄ are
+defined by (3.8), and (3.9), (these latter two equations being the
+shock surface matching condition and the second TOV equation,
+respectively, [13, 15]). Here dot denotes ctd , and we assume c = 1.
+Proof: Differentiating (3.8) with respect to ct and using (3.9)
+gives
+
+                              dM
+                       Ṁ =        r̄˙ = 4π ρ̄r̄2 r̄˙ .           (3.15)
+                               dr̄
+But (3.8) gives
+                          4π 3
+                       Ṁ =  ρ̇r̄ + 4πρr̄2 r̄˙ ,                  (3.16)
+                           3
+so from (3.15) and (3.16) we get
+
+                                      Rr
+                           r̄˙ =             ρ̇.                  (3.17)
+                                   3(ρ̄ − ρ)
+Using (3.2) in (3.17) gives
+                                p+ρ
+                           r̄˙ = −rṘ  .                          (3.18)
+                                ρ̄ − ρ
+Using (3.7) and simplifying we have
+                                      ρ+p
+                                                          !
+                   ṙR + rṘ = −Ṙr          .                    (3.19)
+                                      ρ̄ − ρ
+Using (3.10) to eliminate ṙ from (3.19) gives
+
+               1 − kr2      p + ρ̄                 ρ + p̄
+                                             !                !
+                        = −                               .       (3.20)
+                Ṙ2 r2      ρ̄ − ρ                 p − p̄
+We now use the identity
+
+                                     15
+                       1 − kr2      1
+                                =      ,                    (3.21)
+                         Ṙ2 r2   1−θ
+which follows from (3.1) and (3.8). Indeed,
+
+                                 2G M 2
+                         Ṙ2 =          R − k.
+                                 c4 r̄3
+But (3.13) implies that
+                          2GM
+                              = (1 − A)r̄,
+                           c4
+and using this gives
+
+                                  1−A
+                          Ṙ2 =       − k,
+                                   r2
+or, (c.f. [13, 15]),
+
+                       r2Ṙ2 = −A + (1 − kr2).              (3.22)
+Using (3.12) in (3.22) gives (3.21), as claimed.
+  Now using (3.21) in (3.20) yields
+                     1          p + ρ̄ ρ + p̄
+                                        !        !
+                         =−                     .
+                   1−θ          ρ̄ − ρ p − p̄
+Solving this for p gives (3.11), where we have used (3.14). This
+completes the proof of Theorem 1.
+   For a given FRW metric, Theorem 1 tells us that the ODE
+(3.10) can be taken in place of the conservation constraint (3.11),
+and the reversal of the steps in the above proof can be regarded
+as a formal derivation of the ODE (3.10). For later convenience,
+we now record the following additional equations that follow
+from the hypotheses of Theorem 3.1.
+
+                                   16
+Corollary 1 Assume that the hypotheses (3.1) through (3.10)
+of Theorem 3.1 hold. Then the following equations are valid:
+
+                               ρ+p      γθ
+                                     =       ,                   (3.23)
+                               ρ − ρ̄ γθ − 1
+                              √                θ
+                                                      !
+            r̄˙ (ρ̄ + p̄) =       1 − kr2    √    (p − p̄),      (3.24)
+                                              1−θ
+                      θ    ρ+p                   ρ̄ + p̄
+                                             !         !
+                         =                               ,       (3.25)
+                     1−θ   ρ̄ − ρ                p − p̄
+                             γθ √        √
+                   r̄˙ =          1 − kr2 1 − θ,                 (3.26)
+                           γθ − 1
+
+                      r2Ṙ2 = −A + 1 − kr2 ,
+                                                     
+                                                                 (3.27)
+
+                              1 − kr2    1
+                                      =     .                    (3.28)
+                               r2 Ṙ2   1−θ
+
+Proof: By Theorem 4.1, we know that (3.11) holds, and using
+this in the LHS of (3.23) gives the RHS of (3.23). Also, from
+(3.22),
+                                  √          √
+                       rṘ =          1 − kr2 1 − θ,             (3.29)
+and using this in (3.19) gives
+                           √             √
+                                         ρ+p
+                                                             !
+                r̄˙ = −        1 − kr2
+                                  1−θ           .                (3.30)
+                                         ρ̄ − ρ
+Using (3.23) in (3.30) gives (3.26). From (3.11) we get
+
+
+
+                                        17
+                 γθρ̄ − ρ p̄(1 − γθ) (ρ + p̄)θ) − (ρ + p̄)
+      p − p̄ =           −          =                      ,
+                 1 − γθ     1 − γθ          1 − γθ
+so
+
+                        p − p̄   θ−1
+                               =       .                  (3.31)
+                        ρ + p̄ 1 − γθ
+To verify (3.24), we use (3.26) which we write in the form
+                        √           1    1−θ
+                     r̄˙ 1 − kr2 √              θ,
+                                   1 − θ γθ − 1
+and so from (3.31) we have
+                             √
+                              1 − kr2 p − p̄
+                                                 !
+                        r̄˙ = √      θ             .          (3.32)
+                                1−θ      ρ̄ − p̄
+Solving for (ρ̄ + p̄)r̄˙ in (3.32) gives (3.24). Finally, to obtain
+(3.25), equate the RHS’s of (3.30) and (3.32). Equations (3.27)
+and (3.28) have already been derived as (3.22) and (3.21) within
+the proof of Theorem 1. This completes the proof of the Corol-
+lary.
+    Now assume that ρ(t), p(t), and R(t) solve the FRW system
+(3.1) and (3.2) for t ∈ I, and assume that the hypotheses (3.3)
+to (3.10) of Theorem 1 hold. We know from Theorem 1 that
+the conservation condition (3.11) also holds. We now find an
+equation for p̄(r̄), (equation (3.36) below), which guarantees that
+p̄ solves the TOV equation (2.8), since then, in light of (3.9), the
+functions ρ̄(r̄), p̄(r̄), and M(r̄) will then solve the TOV system
+as well. Defining A(r̄) by (3.13), we can define the function B(r̄)
+as a solution of the ODE, [13, 15],
+
+                                  18
+                    B ′ (r̄)        2p̄′(r̄)
+                             =−                 ,            (3.33)
+                    B(r̄)       ρ̄(r̄) + p̄(r̄)
+thus determining a TOV metric of the form
+
+              ds2 = −B(r̄)dt̄2 + A−1(r̄)dr̄2 + r̄2dΩ2,       (3.34)
+that solves the Einstein equation G = κT for a perfect fluid with
+stress tensor
+
+                       Tij = p̄gij + (ρ̄ + p̄)uiuj .
+For this metric, co-moving coordinates are assumed, [19], and
+thus the 4-velocity u is given by
+
+                   0
+                         √
+                  u =        B,   ui = 0, i = 1, 2, 3.
+Note that we are free to choose any positive initial value for B
+by suitable rescaling of the time coordinate t̄. The next lemma
+demonstrates that if p̄ satisfies equation (3.36) below, then as a
+consequence it also satisfies
+
+                      GM r̄˙          4π p̄r̄3  −1
+                                                 
+                             ¯
+               p̄˙ = − 4 2 ρ + p̄ 1 +
+                                               A ,          (3.35)
+                      c r̄             M
+which is equivalent to the TOV equation (2.8).
+Lemma 1 The hypotheses (3.1) to (3.10) of Theorem 3.1, to-
+gether with the equation
+
+          GM  1 − kr2 
+                        
+                            A                    p̄
+                                      !                  !
+  ˙p̄ = −
+           4   2                2
+                                  (p − p̄) 1 + 3    A−1, (3.36)
+          c r̄   Ṙr     1 − kr                  ρ
+imply that p̄(r̄) also solves the TOV equation (2.8).
+
+                                    19
+Proof: By (3.28) we have
+                      √
+                        1 − kr2      1
+                                =√        ,
+                         Ṙr        1−θ
+and substituting this together with (3.12) into (3.36) gives
+
+        GM √            θ                p̄
+                                 !                           !
+  ṗ = − 4 2 1 − kr2 √     (p − p̄) 1 + 3 A−1.                   (3.37)
+        c r̄           1−θ               ρ
+But using (3.24) and (3.8) in (3.37) we obtain
+
+                                            4π p̄r̄3
+                                                
+                    GM
+             p̄˙ = − 4 2 r̄˙ (ρ̄ + p̄) 1 + 4π 3  A−1,          (3.38)
+                    c r̄                     3 ρr̄
+which directly implies the TOV equation (2.8). This completes
+the proof of the Lemma 1.
+   Our results now imply the following theorem which intro-
+duces the system of ODE’s whose solutions we analyze in sub-
+sequent sections:
+
+Theorem 2 Assume that ρ(t), p(t), and R(t) satisfy the FRW
+equations (3.1) and (3.2) for t ∈ I, and that the other hypotheses
+(3.3) through (3.10) of Theorem 3.1 hold. Assume further that
+(r(t), p̄(t)) solves the system of ODE’s
+
+                      1 p − p̄ 1 − kr2
+                                  !
+                 ṙ =                  ,                         (3.39)
+                      R ρ + p̄   Ṙr
+                                                    
+                        GM (p − p̄)      1 + 3 ρp̄
+                 p̄˙ = − 4 2                             ,       (3.40)
+                        c r̄       Ṙr
+
+
+                                20
+for t ∈ I, where r̄, M(r̄), and ρ̄(r̄) are defined for r̄(t1 ) < r̄ <
+r̄(t2) by (3.7), (3.8) and (3.9). Then ρ̄(r̄), p̄(r̄), M(r̄), solve the
+TOV system (2.7), (2.8), and the conservation condition (3.11)
+holds for all t ∈ I. Furthermore, under these assumptions, the
+system (3.39), (3.40) is equivalent to the system
+
+                            P − P̄   1 − kr2 
+                                                     
+           dr       1
+              =                                 ,              (3.41)
+           dR   R(QR2 − k) Q + P̄         r
+           dP̄    1 (Q + 3P̄ )(P − P̄ )
+               = − R                    ,                       (3.42)
+           dR     2     QR2 − k
+for R(t1) < R < R(t2), where
+
+                                8πG
+                     (Q, P, P̄ ) =  (ρ, p, p̄),                 (3.43)
+                                3c4
+has the dimensions of inverse length squared.
+
+   Note that the equivalence of system (3.39), (3.40) with (3.41),
+(3.42) follows because of the assumption Ṙ 6= 0. This also implies
+that P and Q can be considered as functions of R, in which
+case equations (3.41) and (3.42) closes to form a well-defined
+nonlinear system of two ODE’s in the unknowns r and P̄ . After
+solving (3.41), (3.42) the dependence of R on t can be recovered
+from (3.1). Thus for a given FRW metric and a given solution
+of (3.41), (3.42), the only variable remaining to be determined
+is the TOV energy density Q̄ on the outside of the (outgoing)
+shock–wave. To obtain a closed form expression for Q̄, write the
+shock surface equation (3.8) in the form
+
+                            2GM = Qr̄3 .                        (3.44)
+
+                                  21
+But the second TOV equation for M is
+
+                         dM
+                              = 4π ρ̄r̄2,                   (3.45)
+                          dr̄
+which we can rewrite in the form
+
+                         d
+                            (2GM) = 3Q̄r̄2 .                (3.46)
+                        dr̄
+Differentiating (3.44), substituting into (3.46) and solving for Q̄
+yields the formula
+
+                       1 d                 Rr d
+                Q̄ =     2
+                              (Qr̄3) = Q +       Q.          (3.47)
+                      3r̄ dr̄              3 dr̄
+Note that if Q decreases as the shock moves outward, (that is,
+the r̄ position of the shock increases), then the second term
+in (3.47) is negative, and so Q̄ < Q, (the density behind the
+shock is greater than the density in front of the shock), as is
+the case for classical shock–waves in fluids, [17]. Note, however
+that the physically necessary condition Q̄ > 0, or the physically
+reasonable condition Q̄ > P̄ , is not guaranteed, and depends on
+the particular solution.
+   The final theorem of this section tells us that solutions of the
+ODE’s (3.40), (3.41) do indeed determine exact shock–wave so-
+lutions of the Einstein equations when a (suitable) FRW metric
+is given.
+
+Theorem 3 Assume that ρ(t), p(t), and R(t) satisfy the FRW
+equations (3.1) and (3.2) for t ∈ I, and that the hypotheses
+(3.3) through (3.9) of Theorem 3.1 hold. Assume further that
+(r(R), P̄ (R)) solve the system of ODE’s (3.41), (3.42) for R(t1) <
+R < R(t2). Assume that Q, P, M, Q̄, P̄ , and A are all positive
+
+                                22
+and that the shock speed in FRW coordinates is less than the
+speed of light throughout the interval I. Then there exists a C 1,1
+invertible coordinate transformation mapping (t, r) → (t̄, r̄) of
+the form
+
+                       t̄ = t̄(t, r),                        (3.48)
+                      r̄ = r̄(t, r) ≡ R(t)r,                 (3.49)
+such that, under this identification, the resulting TOV metric
+matches the given FRW metric Lipschitz continuously across the
+shock surface r = r(t). (The angular coordinates θ and φ are
+implicitly identified.) Moreover, the Lipschitz continuous metric
+defined by taking the FRW metric for r < r(t) and the TOV
+metric for r > r(t) defines a shock–wave solution of the Einstein
+equations ([6, 9]), c.f. [13, 15]. In particular, the Rankine-
+Hugoniot jump conditions
+
+                     [Tij ]ni = 0, j = 0, ..., 3,            (3.50)
+hold across the shock surface; there are no “delta function sources”
+on the surface; there exists a regular C 1,1 coordinate transfor-
+mation defined in a neighborhood of each point on the shock
+such that the metric components in the transformed coordinates,
+(which can be taken to be Gaussian normal coordinates), have
+smoothness level C 1,1; and the matched metric determines a weak
+solution of the Einstein equations in the sense of the theory of
+distributions, c.f. [13].
+
+Proof: The existence of the coordinate transformation is proved
+in [13] pages 278-280 under the assumption that the shock sur-
+face is nowhere characteristic in the sense of (4.43) of that paper.
+
+                                 23
+Using (4.55) of the same reference, the non-characteristic con-
+dition can be re-written as
+
+                                    A
+                              r̄˙ 6= − ,                          (3.51)
+                                   Ṙr
+which holds here because we assume that A > 0, r > 0, Ṙ > 0
+and r̄˙ > 0. Since the normal vector n to the shock surface is
+non-null, (because we assume that the shock speed is less than
+the speed of light), and the functions c(t, r) and c̄(t̄, r̄) in Lemma
+9 of [13] are here equal to R(t)r and r̄, respectively, it follows
+that the conclusions of Lemma 9, [13] are valid. Moreover, the
+conservation condition (3.11) is valid, and thus the argument
+in [13] that leads to (3.9) in this latter reference, implies that,
+under our hypotheses, condition (5.5) of Lemma 9, [13], follows
+from the conservation condition (3.11) above. (Note that the
+condition (2.20) of [13], assumed in that paper, is not needed
+here.) Since the conclusions of Theorem 3 are just a re-statement
+of the conclusions of Lemma 9, [13], the proof of Theorem 3 is
+now complete.
+   A remarkable aspect of the formulation of the shock equations
+given in (3.41) and (3.42) is that, if Q and P are given functions
+of R, (which can be obtained from the FRW equations once an
+equation of state is specified), then the equation (3.42) for P̄
+uncouples from the r̄ equation (3.41). Thus, in principle, one
+can solve system (3.41) and (3.42) by first solving the scalar
+non-autonomous equation (3.42) for P̄ , and then plugging the
+solution P̄ (R) into (3.41) to obtain a scalar non-autonomous
+ODE for the shock position r.
+   As an application, and to clarify the way system (3.41) and
+
+
+                                   24
+(3.42) works, we now demonstrate that the set of shock–wave
+solutions of the Einstein equations determined by system (3.41),
+(3.42) includes, as a special case, the exact solutions first pre-
+sented in [14]. To verify this, set k = 0 in (3.41) and (3.42) to
+obtain the system
+
+                                           
+                 dr    1  P − P̄  1
+                                                !
+                    =                 ,                    (3.52)
+                 dR   QR3 Q + P̄    r
+                 dP̄     1 (Q + 3P̄ )(P − P̄ )
+                     = −                       .           (3.53)
+                 dR      2       QR
+Now it is easy to verify that the solution in [14], (as given in
+equations (5.1) through (5.14) of that paper), satisfies the fol-
+lowing equations:
+                           P = σQ,                        (3.54)
+
+                                 σ̄
+                            P̄ =    Q̄,                    (3.55)
+                                 3
+for some constants 0 < σ, σ̄ < 1, and
+
+                       Q    R −3(1+σ)
+                                    !
+                          =           ,                    (3.56)
+                       Q0   R0
+                         r 2     R 1+3σ
+                           !            !
+                             =            ,                (3.57)
+                        r0       R0
+where the subscript zero denotes values at some particular time,
+say present time in the FRW solution. For our purposes here,
+we now take (3.54) to (3.57) as an ansatz, and show that this
+ansatz is consistent with system (3.52), (3.53), and that system
+(3.52) and (3.53) then determines the other relations in (5.1) to
+
+                                25
+(5.14) of [14], (including the relation between σ and σ̄). To this
+end, set R0 = 13 and c = 1, and substitute (3.54)-(3.56) into
+equation (3.53) to obtain
+
+                           R dQ    3 (1 + σ̄)(σ − σ̄)
+                                =−                    .                                (3.58)
+                           Q dR    2        σ̄
+But from (3.56),
+
+                         R dQ d ln(Q)
+                              =         = −3(1 + σ),                                   (3.59)
+                         Q dR   d ln(R)
+and putting this into the left hand side of (3.58) and solving for
+σ gives
+
+                                            σ̄(7 + σ̄)
+                                     σ=                ,                               (3.60)
+                                            3(1 − σ̄)
+which is the relation between σ and σ̄ given in (4.2)-(4.3) of [14].
+   Substituting (3.54) and (3.55) into equation (3.52) and sim-
+plifying gives
+
+                   1 dr2      1    3σ − σ̄
+                                                              !
+                         =      2
+                                            ,               (3.61)
+                   2 dR    QR       3 + σ̄
+and using (3.56) and (3.57) in (3.61) gives, after simplification,
+                                              3σ − σ̄
+                            Q0r02 = 2                      .                           (3.62)
+                                          (1 + 3σ)(3 + σ̄)
+   3
+     Note that we are free to fix the initial condition R0 = 1 because the FRW metric
+is invariant under rescalings of R when k = 0. Indeed, under the scaling R → aR, the
+variables Q, P, P̄ and r̄ are invariant, so the shock position r = r̄/R rescales like r → a−1 r.
+It is easy to see that system (3.52), (3.53) is invariant under this rescaling.
+
+
+
+
+                                              26
+Equation (3.62) determines the constant r0 from the constants
+Q0 and σ or σ̄. To connect this with the formulas in [14], note
+that (3.56) and (3.57) together with the matching condition
+
+                             r̄ = Rr,                     (3.63)
+yeild the formula
+
+                                      r̄ 2
+                                        !
+                         Q = Q0            .              (3.64)
+                                     r̄0
+Since we take R0 = 1,
+
+                               Q0r02
+                          Q= 2 .                          (3.65)
+                                 r̄0
+But (3.65) checks with [14] because (3.2)-(3.4) there imply that
+                          8πG        8πGγ
+                        Q=     ρ=         ,               (3.66)
+                            3         r̄2
+where, (using the notation of [14]),
+                         1           σ̄
+                                               !
+                   γ=                      .              (3.67)
+                        2πG 1 + 6σ̄ + σ̄ 2
+A calculation using (3.60) verifies that
+                        3σ − σ̄
+                    2                = 8πGγ,          (3.68)
+                   (1 + 3σ)(3 + σ̄)
+and thus (3.62) implies (3.66) as claimed.
+  We can now solve for the density Q̄ using the TOV equation
+                        dM
+                             = 4π ρ̄r̄2,                  (3.69)
+                         dr̄
+together with the shock matching condition
+
+                                27
+                                4πG 3
+                            M=      ρr̄ .                 (3.70)
+                                 3
+That is, using (3.65) in (3.70) gives
+
+                            M(r̄) = 4πγ r̄,               (3.71)
+and thus (3.69) implies
+                                            γ
+                                    ρ̄ =       ,          (3.72)
+                                           r̄2
+which implies that
+                                    1
+                                Q̄ = Q,                   (3.73)
+                                    3
+and
+
+                                 P̄ = σ̄ Q̄,              (3.74)
+also agreeing with the formulas arrived at in [14]. Finally, sub-
+stituting (3.56) into the FRW equation
+
+                             Ṙ2 = QR2,                   (3.75)
+and integrating gives the time dependence of R as
+                                    √     2
+                            (2 + 3σ)  Q 0 
+                                            2+3σ
+
+                R(t) = R0               t       ,        (3.76)
+                                  2
+where we have used the initial condition R(0) = 0.
+   For our construction below, the case σ = 13 is relevant, (the
+case of pure radiation). In this case,
+                            √
+                     σ̄ =       17 − 4 ≈ .1231...,        (3.77)
+
+                                       28
+as follows from the formula
+                    1√ 2                  3     7
+               σ̄ =     9σ + 54σ + 49 − σ − .              (3.78)
+                    2                     2     2
+Since this is the only case relevant to the discussion√below, we
+will from here on let σ̄ denote the special value σ̄ ≡ 17 − 4.
+
+
+4   The Equation of State
+In this section we derive the FRW equation of state that we use
+to close the system (3.35) and (3.36). In this paper we consider
+the case when the equation of state for the FRW metric agrees
+with the equation of state in the standard model of cosmology
+after the time that the radiation in the universe uncoupled from
+thermal equilibrium with matter. This is an effort to account for
+the observed microwave backgound radiation level in our shock–
+wave model. Our idea is that if the expanding universe arose
+from a great explosion, then one might conjecture that the ex-
+pansion would have settled down to a uniform expansion by the
+time that this decoupling occured. In the standard model of cos-
+mology, the thermal uncoupling of radiation and matter occured
+at about 300, 000 years after the Big Bang, at a temperature of
+about 4000 degrees Kelvin, [1, 19, 11]. Thus, we analyze our
+shock–wave model in the case that there is an energy density
+ρr for the radiation, (which supplies a pressure pr = (1/3)ρr
+via the Stefan-Boltzmann law), and a separate energy density
+ρm for the matter, which is assumed to exert a zero pressure
+pm = 0. Since the scale factor R is the independent variable in
+our shock equations (3.35) and (3.36), we now obtain formulas
+for the FRW energy density and pressure as functions of R.
+
+                               29
+   We start with the FRW equations in the form, [19],
+                                8πG 2
+                        Ṙ2 =       ρR − k,                  (4.1)
+                                3c4
+and
+
+                      d
+                        (ρR3) = −3pR2.                  (4.2)
+                     dR
+(Again, we assume that “dot” denotes d/d(ct).) We can rewrite
+(4.1) as
+
+                         Ṙ2 = QR2 − k,                      (4.3)
+and equation (4.2) as
+
+                         d
+                           (QR3) = −3P R2 ,                   (4.4)
+                        dR
+where Q = 8πG               8πG
+             3c4 ρ and P = 3c4 p have dimensions of inverse length
+squared, c.f. (3.21). Now assume that the energy in the FRW
+system is in the form of pure radiation and matter alone, so that
+
+                          Q = Qr + Qm                        (4.5)
+where Qr , Qm denote the (appropriatly scaled) energy density
+of radiation and matter, respectively. Further, assume that the
+pressure of radiation is given by the Stefan-Boltzmann Law, [19],
+
+                          Pr = (1/3)Qr ,                     (4.6)
+and that
+
+                                Pm = 0,                      (4.7)
+
+                                  30
+so that the uncoupling implies that
+
+                P = Pr + Pm = Pr = (1/3)Qr.                (4.8)
+Finally, assume that
+
+                                  β
+                            Qm =     ,                     (4.9)
+                                  R3
+for some positive constant β, so that the total energy of matter
+within a (geodesically) expanding volume in the FRW metric
+remains constant. Substituting (4.6) through (4.9) into (4.4)
+gives
+                         d        3
+                         R (Qr R )      1
+                                    = −   ,               (4.10)
+                           Qr R 3       R
+which has the solution
+                                3α
+                            Qr =   ,                  (4.11)
+                                R4
+for some positive constant α. Then the FRW pressure is given
+by
+                                   α
+                          P = Pr =    .                   (4.12)
+                                   R4
+We conclude that the equation of state that applies to the FRW
+system under the assumption that radiation is uncoupled from
+matter is given by
+
+                               3α   β
+                         Q=       +   ,                   (4.13)
+                               R4 R3
+                                   α
+                             P =      .                   (4.14)
+                                   R4
+                                31
+Putting (4.13), (4.14) into equations (3.41), (3.42) gives the sys-
+tem of ODE’s
+
+                           α − P̄ R4      (1 − kr2 )
+                                                   
+   dr          R
+      =                                         (4.15)
+                                                     ,
+   dR   (3α + βR − kR2) 3α + βR + P̄ R4       r
+   dP̄     1 (3α + βR + 3P̄ R4 )(α − P̄ R4 )
+       = − 5                                 ,              (4.16)
+   dR     2R       3α + βR − kR2
+Observe, again, that a nice feature of the formulation (4.15),
+(4.16) is that, in this formulation, the second equation (4.16) for
+the TOV pressure P̄ uncouples from the first equation (4.15) for
+the shock position r.
+   Equations (4.13) and (4.14) together with the Stefan-Boltzmann
+law imply that the temperature of radiation is proportional to
+1/R. Indeed, let T ≡ T (R) denote the temperature of radiation.
+The Stefan-Bolzmann law relates the energy density of radiation
+ρr to the temperature through the relation
+
+                            ρr = aT 4 ,                     (4.17)
+where
+                                    erg
+                  a ≈ 7.664 × 10−15    3
+                                         (K o)4 .           (4.18)
+                                    cm
+           8πG
+Since Qr = 3c4 ρr , we can write this as
+
+
+                            Qr = âT 4 ,                    (4.19)
+where, [19],
+                                   8πGa
+                            â =                            (4.20)
+                                    3c4
+                                   32
+defines the constant â. Now by (4.11)
+             3α          8πG  8πG
+               4
+                 = Qr = 4 ρr = 4 aT 4 = âT 4,
+             R           3c   3c
+we have the following lemma:
+Lemma 2 The Stefan-Boltzmann law implies that
+
+                             3α 1/4 1
+                                      !
+                         T =          .                   (4.21)
+                              â    R
+
+5   Restriction to k = 0—Phase Plane Analysis
+We now analyze system (4.15), (4.16) in the case of critical ex-
+pansion when k = 0. The case k 6= 0 will be considered in a
+subsequent paper. To start, recall that in the case k = 0, sys-
+tem (3.41), (3.42) reduces to the (non-autonomous) system
+
+                                          
+                dr     1  P − P̄  1
+                                               !
+                   =                  ,                    (5.1)
+                dR   (QR3) Q + P̄   r
+                dP̄     1 (Q + 3P̄ )(P − P̄ )
+                    = −                       ,            (5.2)
+                dR      2       QR
+where again
+                               8πG
+                 (Q, P, Q̄, P̄ ) = (ρ, p, ρ̄, p̄),     (5.3)
+                               3c4
+all have the dimensions of inverse length squared. Assuming
+now that Q and P are given by (4.13), (4.14),
+                                3α    β
+                         Q=       4
+                                    + 3,
+                                R    R
+                                 33
+                                α
+                            P =    ,
+                                R4
+(which models a universe of matter and radiation assuming no
+thermal coupling), and substituting this into (5.1), (5.2) yields
+the system
+
+                           α − P̄ R4
+                                                
+         dr       R                      1
+            =          
+                                      4
+                                         ,                  (5.4)
+         dR   (3α + βR) 3α + βR + P̄ R r
+         dP̄     1 (3α + βR + 3P̄ R4 )(α − P̄ R4)
+             = − 5                                ,          (5.5)
+         dR     2R          3α + βR
+which is just system (4.15), (4.16) in the case k = 0. Solutions
+of system (5.4) and (5.5) determine the shock position r(R),
+(the position as measured by the radial coordinate of the FRW
+metric that is behind the shock–wave), together with the TOV
+pressure P̄ (R) in front of the shock. The TOV pressure p̄(r̄) is
+then recovered from the solution (r(R), P̄ (R)) by inverting the
+equation r̄ = Rr(R) and using P̄ = 8πG 3c4 p̄. The function R(t) is
+obtained by solving the FRW equation (3.1) with k = 0, and
+due to the scaling law for this equation, we are free to choose
+the scale factor R0 such that R0 = 1 at present time in the
+universe. The constants α and β that determine Q rescale with
+choice of R0 , and are determined from initial conditions for the
+FRW metric. For an FRW metric that models the expanding
+universe, we can take one of the two initial conditions as
+
+                       Q0 = 3α + β = H02 ,                   (5.6)
+where H0 is the present value of the Hubble constant, c.f. ([11]).
+Finally, the TOV energy density Q̄ is given by the formula in
+(3.47):
+
+                                  34
+                     1 d          3         Rr d
+                Q̄ =         (Qr̄   ) = Q +       Q.     (5.7)
+                    3r̄2 dr̄                3 dr̄
+This simplifies under our special assumption (4.13) for Q. In-
+deed, by (4.13),
+
+        dQ dQ dR        d 3α   β               dr −1
+                                       !            !
+            =        =       +             r+R       .         (5.8)
+        dr̄   dR dr̄   dR R4 R3                dR
+Since
+
+                    dr̄   d(Rr)            dr
+                        =         =r+R ,                     (5.9)
+                    dR      dR             dR
+        dr
+where dR   is given by equation (5.1). Putting (5.1) and (5.8)
+into (5.7) and simplifying yields the following expression for the
+TOV energy density Q̄ :
+
+             (4α + βR)(3 + αβ R + w)(3 + αβ R)αr2
+ Q̄ = Q − 4 n 2                                    o , (5.10)
+         R αr (3 + αβ R + w)(3 + αβ R) + (1 − w)R2
+where
+
+                                   P̄ R4
+                              w=         .                     (5.11)
+                                     α
+We conclude that each choice of constants α and β and each
+choice of initial conditions for (5.4) and (5.5) determines a shock–
+wave solution of the Einstein equations, at each point where all
+the variables are positive. We now analyze solutions of system
+(5.4) and (5.5) in detail.
+   Substituting w for P̄ in (5.4), (5.5) yields the equivalent sys-
+tem
+
+                                 35
+                                          
+          dr       R        1−w  1
+             =                          ,                 (5.12)
+          dR   (3 + α R) 3 + αβ R + w αr
+                    β
+
+
+                      (1 − w)(3 + αβ R + 3w) 
+                                                  
+          dw   4w 
+             =     1−                          .           (5.13)
+          dR   R           8(3 + αβ R)w
+
+Now (5.13) is a non-autonomous scalar equation for P̄ that un-
+couples from equation (5.12). In order to do a phase plane anal-
+ysis of equation (5.13), and to analyze the behavior of solutions
+as R → ∞, we now rewrite (5.13) as an autonomous system. To
+this end, set
+                                    1
+                               S=     R,                   (5.14)
+                                    α
+and
+                                  1
+                               u=   .                      (5.15)
+                                  S
+Substituting these into (5.13) and letting “dot” denote d/dS, we
+obtain the following autonomous system of two ODE’s that is
+equivalent to equation (5.13):
+
+               du
+        u̇ ≡      = −u2 ,                                  (5.16)
+               dS
+                                                      
+            dw            (1 − w)(β + 3(1 + w)u) 
+       ẇ ≡    = 4wu 1 −                          . (5.17)
+            dS                  8(β + 3u)w
+We now analyze the phase plane associated with system (5.16),
+(5.17).
+
+                                   36
+  System (5.16), (5.17) has a line of rest points at u = 0, and
+an isocline where ẇ = 0. Setting the RHS of equation (5.17)
+equal to zero gives
+                                                     
+                 1 −
+                      (1 − w)(β + 3(1 + w)u) 
+                                               = 0,              (5.18)
+                            8(β + 3u)w
+and solving this for w gives
+
+                             v                           
+        (3β + 8u)                 4      (β + 3u) 
+                              u
+                             u                      
+   w=                    −1 + t1 +                 u   ≡ φ(u).   (5.19)
+                              u
+            2u       
+                                      3 (3β + 8u)2 
+
+
+Thus the isocline is defined for 0 < u < ∞ by
+
+                               w = φ(u).                         (5.20)
+Note first that when β = 0, (the case of pure radiation), the
+isocline degenerates to
+                                   √
+                          φ(u) ≡       17 − 4 = σ̄.              (5.21)
+It is straightforward to verify that when β = 0, the isocline is
+also a solution orbit of system (5.16), (5.17), and the special
+solution in [13], discussed above starting with (3.54)-(3.57),
+                                                  √            cor-
+responds to this orbit. The special value σ̄ = 17 − 4 also is
+important in the case β 6= 0. The next theorem gives the quali-
+tative behavior of the solution orbits of system (5.16), (5.17) in
+the (u, w)-plane when β 6= 0.
+
+Theorem 4 Assume that β 6= 0. Then the following statements
+are true regarding the phase plane of system (5.16), (5.17)).
+(Here we define an orbit of system (5.16), (5.17) to be a function
+
+                                   37
+w = w(u) such that (u(S), w(1/S)), (u = 1/S), is a solution of
+system (5.16), (5.17)):
+(i) The isocline w = φ(u) defined by (5.19) is monotone increas-
+ing for 0 < u < ∞, and satisfies
+                             √
+            lim
+           u→∞
+                 φ(u) = σ̄ ≡   17 − 4 ≈ .1231...,         (5.22)
+                        1
+             lim φ(u) =    ≈ .1111...,                    (5.23)
+            u→0         9  
+                                2
+                  ′     1 − 19 − 98      .01097...
+           lim φ (u) =                 ≈           > 0.   (5.24)
+           u→0                9β             β
+
+(ii) Orbits can only cross the isocline w = φ(u) once, from right
+to left in the (u, w)-plane, as S increases, (see Fig 1.).
+(iii) Along any orbit w = w(u) we have
+                          lim w(u) = σ̄.
+                          u→∞
+                                                           (5.25)
+
+
+(iv) There exists a unique orbit wcrit (u) satisfying
+                                      1
+                       lim wcrit (u) = .                  (5.26)
+                       u→0            9
+Moreover, all orbits w = w(u) starting from initial conditions
+(u0, w0) such that w0 > φ(u0), (that is, starting above the iso-
+cline), satisfy
+                        lim w(u) = ∞;                     (5.27)
+                          u→0
+and all orbits starting from initial conditions (u0, w0) such that
+w0 < φ(u0), (starting below the isocline), satisfy
+                         lim w(u) = −∞.                    (5.28)
+                         u→0
+
+
+                                38
+Proof: To verify (5.22), we have
+
+                                           v                    
+                        (3β + 8u)               4   (β + 3u) 
+                                            u
+                                           u                  
+   lim φ(u) = u→∞
+               lim                     −1 + t1 +              u
+                                            u
+   u→∞                      2u    
+                                                 3 (3β + 8u)2 
+                                                               
+                                          v       
+                        (3β + 8u)                1
+                                           u
+                                          u       
+               = u→∞
+                  lim                  −1 + 1 +
+                                           t
+                            2u     
+                                                 16 
+                                                     
+                        √
+               = −1 +       17 ≡ σ̄.
+
+   We next show that φ(u) tends to σ̄ monotonically from below
+as u → ∞. Note that by (5.19), w = φ(u) is equivalent to
+                                                    
+                        (1 − w)(β + 3(1 + w)u) 
+               0 = 1 −                          ,              (5.29)
+                              8(β + 3u)w
+which we rewrite as
+
+         0 = 8(β + 3u)w − (1 − w) [β + 3(1 + w)u] .             (5.30)
+
+Now differentiating (5.30) implicitly with respect to u gives
+                 dw                           dw
+     8(β + 3u)      + 24w = − [β + 3(1 + w)u]
+                 du                           du
+                                                      dw
+                                     "                      #
+                                 +(1 − w) 3 + 3w + 3u    .(5.31)
+                                                      du
+Simplifying (5.31) we obtain
+
+                              dw
+          (9β + 24u + 6uw)       = −3(w2 + 8w − 1).             (5.32)
+                              du
+Now the roots of w2 + 8w − 1 are
+
+                                  39
+                √                                √
+         σ̄ ≡       17 − 4 ≈ .1231,        σ̃ ≡ − 17 − 4,       (5.33)
+and thus we conclude that, along the isocline w = φ(u),
+
+                      dw
+                          > 0 if w < σ̄,                     (5.34)
+                      du
+                      dw
+                          < 0 if w > σ̄,                     (5.35)
+                      du
+where we use the fact that φ(u) > 0 for all u. Thus, it suffices to
+show that φ(u) 6= σ̄ for any u in order to conclude that φ′ (u) 6= 0
+for 0 < u < ∞. So assume for contradiction that φ(u) = σ̄. But
+solving for u in (5.30) gives
+
+                               β(9w − 1)
+                       u=−                      ,            (5.36)
+                            (w − σ̄)(w + |σ̃|)
+and thus w = σ̄ leads to a contradiction unless β = 0. We
+conclude that if β 6= 0, then φ(u) monotonically increases to σ̄
+as u → ∞, thus proving (5.22). Statement (5.23) follows from
+(5.30), and (5.23) follows from (5.32). Thus the proof of (i) is
+complete.
+    Statement (ii) follows because ẇ = 0 only on w = φ(u),
+ẇ > 0 if w > φ(u), and since we have shown that φ′ (u) > 0, it
+follows that orbits can only cross the isocline from right to left
+in forward S-time.
+    To verify (iii), we show that all orbits tend in backward time,
+(increasing u), to w = σ̄. To see this note that
+
+                                (1 − w)(3 + βu + 3w) 
+                                                           
+                                
+         lim ẇ = u→∞
+                   lim 4wu 1 −
+        u→∞                          8(3 + βu w)     
+
+
+                                      40
+                           1 − w2 
+                                        
+                        
+                ≈ 4wu 1 −                                 (5.37)
+                             8w 
+where approximately means to leading order as u → ∞. Now
+each orbit that starts above w = φ(u) decreases as u increases
+unless the orbit crosses the isocline, in which case the orbit in-
+creases from there on out as u → ∞. It follows that orbits start-
+ing below w = φ(u) can never cross w = φ(u) at any value of u
+larger than the initial value. Thus, since limu→∞ φ(u) = σ̄, all
+orbits must be bounded above in w by the maximum of {σ̄, w0} ,
+and bounded below by the minimum of {1/9, w0} . But from
+(5.37), we must have that
+
+                               1 − w2 
+                                         
+                            
+                      lim
+                     u→∞ 
+                           1 −          = 0.                (5.38)
+                                 8w 
+Indeed, if not, then (5.37) implies that |ẇ| tends to infinity as
+u → ∞, which implies that w is not bounded as u → ∞, and
+this contradicts
+                the
+                   above bounds. Since σ̄ is the only positive
+             1−w2
+root of 1 − 8w , we conclude from (5.38) that
+
+                            u→∞
+                                lim w = σ̄.
+This completes the proof of (iii).
+   We now give the proof of (iv). Our approach for this is to
+write the ODE for w as a function of u along orbits, and study
+the limit u → 0. From (5.16) and (5.17),
+                                                     
+           dw   4w     (1 − w)(β + 3(1 + w)u) 
+         −    =      1−                          .
+           du    u            8(β + 3u)w
+                4w      1−w
+                   "          #
+              ≈     1−          ,                          (5.39)
+                 u       8w
+                                    41
+where approximate equality means to leading order as u → 0.
+Now assume for contradiction that there exists an orbit w =
+f (u) that is bounded in a neighborhood of u = 0, but such
+that limu→0 f (u) 6= 1/9. The boundedness condition implies that
+(5.39) applies with errors that are bounded as u → 0. That is,
+
+                dw   4w       1−w
+                                           !
+              −    =       1−        + O(1)                (5.40)
+                du    u        8w
+                     9w − 1
+                   =         + O(1),                       (5.41)
+                        2u
+where O(1) denotes a constant that depends on the bounds for
+w but is independent of u as u → 0. Integrating (5.41) leads to
+the estimate
+
+
+             9w − 1           u0 9/2
+                                !
+           −         =               + O(1)eO(1)|u−u0| ,   (5.42)
+             9w0 − 1          u
+where (u0, w0) are taken as initial data, u0 > 0. But (5.42) im-
+plies that if limu→0 w 6= 1/9, then w = f (u) is unbounded near
+u = 0. From this we conclude that every orbit that is bounded
+as u → 0 satisfies
+
+
+                        lim w = 1/9.                       (5.43)
+                        u→0
+
+   We now show that there exists at least one orbit such that
+limu→0 w = 1/9. Note first that any orbit starting from initial
+data (u0, w0) that lies on the isocline, w0 = φ(u0), u0 > 0,
+must lie above the isocline for all 0 < u < u0 because we know
+that dw                               ′
+     du < 0 on this interval, and φ (u) > 0. Since the isocline
+
+                                42
+decreases to σ̄ ≈ .1231 > 1/9 as u → 0, it follows that w0 > 1/9
+for initial data lying above the isocline, and hence limu→0 w >
+1/9 along an orbit starting from such initial data. But our
+argument above shows that when this happens, we must have
+limu→0 w = +∞. We conclude that limu→0 w = +∞ for any
+orbit starting from initial data above the isocline, w0 > φ(u0).
+Similarly, if the initial data (u0, w0) lies below the line w = 1/9,
+that is, w0 < 1/9, then also w0 < φ(u0) because we have that
+φ(u) > 1/9. Thus from (5.39), dw    du
+                                        > 0, and so it follows that
+limu→0 < 1/9, and our argument above implies that limu→0 w =
+−∞. We conclude that limu→0 w = −∞ for any orbit starting
+from initial data below the line w = 1/9; and limu→0 w = +∞
+for any orbit starting from initial data above the isocline, w0 >
+φ(u0). Now consider all orbits emanating from initial data on
+some fixed vertical line u = ǫ > 0. Then if w0 > φ(ǫ), we have
+limu→0 = +∞; and if w0 < 1/9, we have limu→0 = −∞. So
+define
+                                               
+                 w+ = Inf w0 : lim w = +∞ ,                  (5.44)
+                                  u→0
+where the limit is taken along the orbit emanating from the
+point (ǫ, w0). We now claim that the critical orbit emanating
+from initial condition (ǫ, w0) satisfies limu→0 w = 1/9. To see
+this note first that w+ ≥ 1/9 because orbits below w = 1/9 tend
+to −∞ as u → 0. We show next that the orbit emanating from
+(ǫ, w+) cannot tend to w = +∞ as u → 0. To see this, note that
+if limu→0 w = +∞ along the crititcal orbit, then this must be
+true for all orbits starting in a neighborhood of (ǫ, w0) as well.
+Indeed, if limu→0 w = +∞, then at some positive value of u we
+must have w > φ(u) along the critical orbit; and so by conti-
+
+                                43
+nuity, nearby orbits must also rise above the isocline at some
+u > 0, and hence by above we know that limu→0 w = +∞ along
+orbits sufficiently close to the critical orbit. But this contradicts
+the fact that w− is a greatest lower bound. We conclude that we
+cannot have limu→0 w = +∞ along the critical orbit. Similarly,
+we cannot have limu→0 w = −∞ along the critical orbit because
+then nearby orbits would also satisfy limu→0 w = −∞ since they
+would cross w = 1/9 before u = 0, and again this would con-
+tradict the fact that w+ is a greatest lower bound. Since we
+cannot have limu→0 w = −∞ or limu→0 w = +∞, it follows from
+(5.43) that the only alternative is that limu→0 w = 1/9 along the
+critical orbit, as claimed.
+   We now show that the critical orbit is unique. To this end,
+rewrite equation (5.17) as
+
+                                            
+                 (1 − w)(β + 3(1 + w)u) 
+   ẇ = 4wu 1 −                          ≡ F (u, w).         (5.45)
+                       8(β + 3u)w
+Differentiating (5.45) with respect to w gives
+                                                
+             dẇ   ∂F            6w + β/u 
+                 ≡    = 4u 1 +             > 0.              (5.46)
+             dw    ∂w           8 (3 + β/u)
+But (5.46) implies that the distance between orbits is increasing
+in forward time S, (that is, increasing as u = 1/S decreases.
+Indeed,
+
+
+     ˙ w1) = F (u, w2) − F (u, w1) = ∂F (u, w∗)(w2 − w1) > 0
+ (w2 −
+                                     ∂w
+                                                        (5.47)
+
+
+                                  44
+if w2 − w1 > 0. This implies that there cannot be two orbits that
+satisfy limu→0 w = 1/9 since the distance between them would
+then tend to zero as u → 0, contradicting (5.47). This finishes
+the proof of (iv), and thus the proof of the theorem is complete.
+
+   The salient properties of the phase plane for system (5.16),
+(5.17) are sketched in Figure 1. Note that as β → 0, the iso-
+cline moves up to the line w = σ̄, (continuously, except for a
+jump from 1/9 to σ̄ at u = 0, β = 0). The isocline is a curve
+of absolute minima of orbits that cross the isocline, and the
+isocline, together with all orbits, tend to w = σ̄ as u → ∞,
+R → ∞. Moreover, all orbits except the critical orbit tend to
+infinity as u → 0, (R → ∞), and so the critical orbit is the only
+orbit bounded for all values of R > 0. Along both the critical
+orbit and the isocline, the following apriori bounds hold for all
+0<R<∞:
+
+                 1/9 ≈ .1111 < w < σ̄ ≈ .1231.            (5.48)
+Note, however, that the critical orbit and the isocline do not
+coincide except in the limiting case β = 0, in which case both
+reduce to the line w = σ̄, which also can be indentified with
+the special solution constructed in [13]. In particular, Figure
+1 describes how this special solution is imbedded in the larger
+class of solutions that allow for general initial data.
+
+
+6   Conditions for Q̄ > 0 and Q̄ > P̄
+In this section we obtain conditions which guarantee that Q̄ > 0
+and Q̄ > P̄ , physically reasonable conditions on the TOV energy
+
+                               45
+density and pressure, (Q̄ ≡ 8πG c4 ρ̄ where ρ̄ is true TOV energy
+density.) In particular, Q̄ > P̄ guarantees that Q̄ > 0 whenever
+the solution orbits of system (5.16), (5.17) satisfy w ≡ P̄ R4 /α >
+0. We begin with the formula (5.10) for Q̄ :
+
+              (4α + βR)(3 + αβ R + w)(3 + αβ R)αr2
+  Q̄ = Q − 4 n 2                                    o . (6.1)
+          R αr (3 + αβ R + w)(3 + αβ R) + (1 − w)R2
+Asking that the RHS of (5.10) be positive, and using the formula
+
+                               3α   β
+                            Q=    +
+                               R4 R3
+we see that Q̄ > 0 is equivalent to
+
+                     β              β
+          (                                           )
+              2
+        α αr (3 + R + w)(3 + R) + (1 − w)R2                    (6.2)
+                     α              α
+                                      β
+                    −(4α + βR)(3 + R + w)αr2 > 0.
+                                      α
+                   2
+Solving (6.2) for r leads to the following inequality that is equiv-
+alent to Q̄ > 0 :
+
+                        2  (1 − w)R2
+                     αr <              .                      (6.3)
+                          3 + αβ R + w
+Equation (6.3) implies that the condition Q̄ > 0 puts a contraint
+on the maximum possible shock position at a given value of R.
+The following theorem implies that if the condition holds at
+some value R = R∗ in a solution of (5.16), (5.17), then it holds
+for all R ≥ R∗ in that solution, so long as 0 < w < 1 and
+dw/dR < 0. Both of these conditions are satisfied along the
+critical orbit where 1/9 < w < σ̄ ≈ .1231.
+
+                                 46
+Lemma 3 Define the quantity {}I by
+                         (1 − w)R2
+                                             
+
+                                      − αr2  .
+                                              
+                 {}I ≡        β                             (6.4)
+                           3 + αR + w        I
+Then for any solution of (5.12), (5.13) we have
+
+                            d
+                              {}I > 0                        (6.5)
+                           dR
+at each point where
+
+
+                         0 < w < σ̄,                         (6.6)
+and
+
+                            dw
+                               < 0.                          (6.7)
+                            dR
+Lemma 3 implies that {}I is monotone increasing along any
+solution of (5.16), (5.17) that satisfies (6.7), and thus if (6.3)
+holds at a value R = R∗ in such a solution, then it must hold at
+all R > R∗ .
+Proof: Starting with (6.4) we have
+
+                             dr2
+                                                       
+   d         2(1 − w)R                2 d
+                                              1−w 
+     {}I =               − α      + R                        (6.8)
+  dR        3 + αβ R + w     dR        dR  3 + αβ R + w II
+        2(1 − w)R             2(1 − w)R               d
+     =      β        −      β             β    + R2 {}II
+       3 + α R + w (3 + α R + w)(3 + α R)            dR
+where we have used (5.12). This simplifies to
+
+                                47
+                 2(1 − w)R  2 + αβ R 
+                                                      
+        d                                    d
+          {}I =      β            β     + R2 {}II .              (6.9)
+       dR       3 + αR + w 3 + αR           dR
+Moreover,
+
+                                              
+       d         d  1−w 
+         {}II =
+      dR        dR  3 + αβ R + w II
+                  (3 + αβ R + w) − dR
+                                   dw
+                                         − (1 − w)( αβ + dR
+                                                         dw
+                                                  
+                                                            )
+                =
+                               (3 + αβ R + w)2
+                    (3 + αβ R + 1) − dR
+                                     dw
+                                        − (1 − w) αβ
+                                                  
+
+                =                                      2
+                                3 + αβ R + w
+                            
+
+
+                        (1 − w) αβ
+                ≥ −                         2 > 0.            (6.10)
+                       3 + αβ R + w
+where we have used (6.6) and (6.7). Using (6.10) in (6.9) and
+simplifying gives
+
+                        (1 − w) 4 + αβ R R
+                                                      
+             d
+               {}I ≥                          > 0.             (6.11)
+                      3 + αβ R + w) 3 + αβ R
+                                  
+            dR
+This completes the proof of Lemma 3.
+   We now obtain a corresponding condition for Q̄ > P̄ . Using
+(5.11) and (6.6) we know
+                                   ασ̄
+                             P̄ ≤      .                     (6.12)
+                                   R4
+Using this together with the formula (5.10) for Q̄, it follows that
+the condition Q̄ > P̄ will hold if
+
+                                     48
+             R4Q̄           3 + αβ R
+                  =                  R2 (1−w)
+                                              {}I ≥ σ̄.   (6.13)
+              α     αr2 (3 + αβ R) + 3+ β
+                                          R+w
+                                          α
+                        2
+Solving (6.13) for αr gives the equivalent condition
+                          1 + σ̄   2
+                              σ̄ αr ≤ {}III ,             (6.14)
+                        1 − 3+ β R
+                                α
+
+where
+
+                                R2(1 − w)
+                        {}III =             .             (6.15)
+                               3 + αβ R + w
+Thus to get (6.14) it suffices to have
+                 1 + σ̄ 2             2
+                     σ̄ αr = (1 + ǫ)αr ≤ {}III ,          (6.16)
+                 1− 3
+where
+                                4σ̄
+                                ǫ=   .                    (6.17)
+                              3 − σ̄
+We conclude that Q̄ ≥ P̄ holds so long as
+
+                     {}III − (1 + ǫ)αr2 ≥ 0.
+                    n                     o
+                                                          (6.18)
+
+Lemma 4 Define the quantity {}IV by
+
+                  {}IV ≡ {}III − (1 + ǫ)αr2 .
+                            n                   o
+                                                          (6.19)
+Then for any solution of (5.12), (5.13) we have
+
+                             d
+                               {}IV > 0                   (6.20)
+                            dR
+                                     49
+at each point where (6.6) and (6.7) hold.
+
+   In particular, Lemma 4 implies that if (6.18) holds at a point
+R∗ in a solution of (5.12), (5.13) such that (6.6) and (6.7) hold
+for all R ≥ R∗ , then we conclude that (6.20) holds at all points
+R ≥ R∗ , and thus that Q̄ ≥ P̄ for all R ≥ R∗ .
+Proof: Differentiating we obtain
+
+                                   dr2
+                                                              
+ d         2(1 − w)R                        2 d
+                                                      1−w 
+   {}IV =              − (1 + ǫ)α      +  R
+dR        3 + αβ R + w             dR        dR  3 + αβ R + w II
+           2(1 − w)R                    2(1 − w)R              2 d
+        =              − (1 + ǫ)                           + R     {}II
+          3 + αβ R + w           (3 + αβ R + w)(3 + αβ R)       dR
+                                 α
+                                    
+           2(1 − w)R  2 − ǫ + β R         2 d
+        =                              +  R     {}II .           (6.21)
+          3 + αβ R + w    3 + αβ R           dR
+                                    
+
+
+
+Now using (6.10) in (6.21) and simplfying yields
+
+      d         (1 − w)R        β       β
+        {}IV ≥              3 +   R(4 +   R − 2ǫ) > 0.    (6.22)
+     dR        3 + αβ R + w     α       α
+
+since 2ǫ < 4 and w < 1. This concludes the proof of Lemma 4.
+We have proven the following theorem:
+
+Theorem 5 Assume that (6.6) and (6.7) hold for all R > R∗
+on a solution of (5.12), (5.13). Then {}I > 0 at R = R∗ is
+equivalent to Q̄ > 0 at R = R∗ , and implies that Q̄ > 0 for all
+R > R∗ ; and if {}IV > 0 at R = R∗ , then we must have Q̄ > P̄
+for all R > R∗. The condition {}I > 0 is equivalent to
+
+
+                               50
+                           2(1 − w)R2
+                      αr <              ,                 (6.23)
+                           3 + αβ R + w
+and the condition {}IV > 0 simplifies to
+
+                       1 − σ̄/3  (1 − w)R2
+                                
+                  2
+                αr <                       .             (6.24)
+                        1 + σ̄ 3 + αβ R + w
+
+7   Estimates for the Shock Position
+In this section we take system (5.12), (5.13) as a simple cos-
+mological model in which the FRW metric behind the shock–
+wave at position r is assumed to model the expanding universe.
+Given this, we now estimate the position of the shock–wave in
+the present universe as determined by this model. In this model,
+the expanding universe is modeled by an FRW, (k = 0,) met-
+ric in which the energy density Q and pressure P are given by
+(4.13), (4.14), that is, the same as that assumed in the standard
+cosmological model after the time of thermal decoupling of mat-
+ter with radiation, (approximately 300,000 years after the Big
+Bang in the standard model, [19]). The FRW metric is assumed
+to have been created behind a radially expanding shock–wave
+due to a great explosion into a static, spherically symmetric
+universe modeled by a TOV metric. Given these assumptions,
+we have shown that conservation of energy at the shock then
+implies that the position r of the shock–wave is determined by
+equation (5.12), where r is the radial coordinate in the FRW
+universe behind the shock. Equation (5.12) is coupled to equa-
+tion (5.13) for the TOV pressure P̄ , and the TOV energy density
+Q̄ is then given by the formula (5.10). In this section we assume
+
+                               51
+that w = R4 P̄ /α lies on the critical orbit w = wcrit (S), (S = Rα ).
+(This is justified by the fact that, according to Theorem 4, this
+is the only orbit bounded for all R, and all orbits are asymp-
+totic to this one as R → 0.) By Theorem 4, w ranges between
+σ̄ and 1/9 along the critical orbit, and thus we have the apriori
+estimate
+
+                  1/9 ≈ .1111 < w < σ̄ ≈ .1231.                 (7.1)
+The only remaining piece of information missing is the initial
+condition for the shock–wave. At first one might think that this
+initial condition can be chosen arbitrarily, but as we have shown
+in the last section, the condition that the energy density be
+positive in front of the shock–wave, or that it be larger than the
+pressure in front of the shock, puts a constraint on the maximum
+shock position at a given time. That is, assuming that w lies
+on the critical orbit implies that the hypotheses of Theorem 5
+hold, and thus condition (6.23),
+
+                             2(1 − w)R2
+                        αr <              ,                     (7.2)
+                             3 + αβ R + w
+is equivalent to Q̄ > 0, and the condition (6.24),
+
+                         1 − σ̄/3  (1 − w)R2
+                                  
+                    2
+                  αr <                       ,                 (7.3)
+                          1 + σ̄ 3 + αβ R + w
+is sufficient to guarantee that Q̄ > P̄ , at any given value of
+R. Moreover, if (6.23) or (6.24) hold at a given value R = R∗,
+Theorem 5 tells us that they continue to hold for all R > R∗ .
+   Under the above assumptions, we now obtain estimates for
+the shock position. To start, rewrite (5.12) as
+
+                                 52
+              dr2          2(1 − w)R
+                  =
+                    α 3 + α R 3 + αβ R + w
+                          β
+                                        
+              dR
+                          2(1 − w) βα2 R
+                  =                      .                         (7.4)
+                         α                α
+                     R + β (3 + w) R + 3 β
+
+Using (7.1) in (7.4) gives the estimate
+
+       (1 − w+) 2α
+                β2 R        dr2        (1 − w− ) 2α
+                                                 β2 R
+                      ≤     ≤                      
+ R + (3 + w+) α
+                  R+3 α     dR    R + (3 + w−) α
+                                                    R+3 α
+               β              β                                    β        β
+                                                                                (7.5)
+
+where w− = 1/9 ≈ .1111 < w+ = σ̄ ≈ .1231. That is,
+
+α         2(1 − σ̄)R           dr2   α        (16/9)R
+                         ≤     ≤                    .
+β 2 R + (3 + σ̄) α R + 3 α     dR    β 2 R + ( 28α R + 3 α
+                   β              β                       9β            β
+                                                                            (7.6)
+
+Now by direct calculation, the solution to the ODE
+
+                       dr2          R
+                           =C                ,                         (7.7)
+                       dR     (R + A)(R + B)
+for positive constants A, B, and C, is given by
+
+                                      ! AC
+                                                             
+                                                      ! −BC
+                             R+A       A−B   R+B       A−B
+        r2 = r∗2 + ln                                       ,
+                                                              
+                                                                       (7.8)
+                             R∗ + A          R∗ + B
+
+                                      53
+where inequalities can be substituted for equalities in (7.7),
+(7.8). Applying this to (7.5) gives the inequalities
+
+
+                      R + A + a+ R + B+ b + 
+                               !            !   
+         2   2
+        r − r∗ ≥ ln                          ,           (7.9)
+                      R∗ + A+    R∗ + B+
+
+
+                      R + A − a− R + B− b − 
+                               !            !   
+         2   2
+        r − r∗ ≤ ln                          ,          (7.10)
+                      R∗ + A−    R∗ + B−
+where
+
+                               α
+                  A = (3 + w) ,
+                               β
+                        α
+                  B = 3 ,
+                        β
+                       2(3 + w)(1 − w) α
+                  a =                    ,
+                               w      β2
+                         6(1 − w) α
+                   b = −            ,
+                             w   β2
+                                                         (7.11)
+
+and A−, A+, are obtained by substituting w− , w+ for w, respec-
+tively, in the above expressions, etc.
+   We now evaluate α and β in terms of the present value of the
+Hubble constant H0 and the observed microwave background ra-
+diation temperature T0. Here we let subscript zero denote value
+at present time in the FRW metric, and WLOG we assume that
+R0 = 1. Recall that the FRW equation (2.5) for k = 0 can be
+written as
+
+                              54
+                                   2
+                               Ṙ
+                        H 2 =   = QR2 ,
+                               R
+so that
+                                     q
+                            H0 = Q 0 ,
+where Q0 denotes the present value of the (scaled) energy density
+in the universe at present time. By (4.13),
+
+                           Q0 = 3α + β,
+where 3α is the energy density of radiation at present time, and
+β is the energy density of matter at present time. Let T ≡ T (R)
+denote the temperature of radiation. Then (4.21) is
+
+                              3α 1/4 1
+                                         !
+                          T =          ,                    (7.12)
+                               â    R
+where (4.20) gives
+
+                              8πGa
+                             â =   .
+                               3c4
+Setting R0 = 1 and solving (4.21) for α gives
+
+                               â
+                            α = T04 ,                       (7.13)
+                               3
+and using this in (4.13) gives
+
+                     β = Q0 − 3α = H02 − âT04 .            (7.14)
+We evaluate the above constants using the values, ([19]),
+
+
+                                    55
+               G
+               c2 = 7.425 × 10−29 cm g −1 ,                  (7.15)
+               c = 2.997925 × 1010 cm sec−1 ,                (7.16)
+              lty = 9.4605 × 1017 cm,                        (7.17)
+              mpc = 106 pc = 3.2615 × 106 lty.               (7.18)
+               a = 7.5641 × 10−15 erg cm−3 K −4,             (7.19)
+              H0 = 100h0 km sec−1 mpc−1 ,                    (7.20)
+              T0 = 2.736 o K,                                (7.21)
+
+Here, G is Newton’s gravitational constant, c the speed of light,
+lty is lightyear, mpc is megaparcec, o K is degrees Kelvin, a is the
+Stefan-Boltzmann constant, T0 is the observed microwave back-
+ground radiation temperature [11], and H0 is Hubble’s constant,
+where h0 is generally accepted to be between .5 and unity. (We
+take h0 ≈ .55 as a recently quoted value.) Using these values we
+calculate
+
+                    â = 4.6852 × 10−27 lty −2 K −4,         (7.22)
+
+                     H0 = 1.023h0 × 10−10 lty −1.            (7.23)
+   Using the above values we obtain from (7.13) and (7.14) that
+
+       α       1/3      â 4 1.492T04
+         =  H2     ≈    2 T0 =  2   × 10−7,                (7.24)
+       β       0
+                  +1   3H0       h0
+            âT 4
+                0
+
+
+and
+
+
+
+                                  56
+           α           âT 4          â  T04
+                                                !
+              =         02      ≈                           (7.25)
+                                     3H02 H02
+                 
+           β2            H0
+                3 âT04 âT 4 −1
+                              0
+
+                               T04−7 8.34 × 10−6
+               = (1.492 × 10 ) 2 2 =             ,             (7.26)
+                              h0 H0     h20 H02
+                    4
+where we used âT
+                H02 << 1 at the approximate equality. Using
+                  0
+
+
+these values we can evaluate:
+
+                                            4
+                       α               −7 T0
+   A+ =    (3 + .1231) = (4.66 × 10 ) 2 ,                       (7.27)
+                       β                  h0
+                                 4
+            α               −7 T0
+   B+ =    3 = (4.48 × 10 ) 2 ,
+            β                   h0
+           2(3 + .1231)(1 − .1231) α                      −6  T04
+   a+ =                                 = (6.639 × 10 ) 2 2 .
+                     .1231          β2                       h0 H0
+             6(1 − .1231) α                  −6    T04
+   b+ =    −                  = (6.377  × 10    )        ,
+                 .1231     β2                     h20H02
+                                          4
+                       α             −7 T0
+     A− = (3 + 1/9) = (4.64 × 10 ) 2 ,                          (7.28)
+                       β                h0
+                                  4
+              α              −7 T0
+     B− = 3 = (4.48 × 10 ) 2 ,
+              β                 h0
+             2(3 + 1/9)(1 − 1/9) α                  −6     T04
+     a− =                           = (7.427  × 10     )         ,
+                     1/9         β2                      h20 H02
+               6(1 − 1/9) α                −6   T04
+     b− = −                 = (7.162 × 10 ) 2 2 .
+                   1/9   β2                   h0H0
+    Now, assuming that the uncoupling of matter and radiation
+occured at a temperature less than 4000 degrees Kelvin, [19], it
+follows from (4.21) that
+
+                                   57
+                  R∗ ≥ 2.2/4000 = 6.75 × 10−4,               (7.29)
+and so it follows that we can essentially neglect the A’s and B’s
+in estimates (7.9) and (7.10), given their small values in (7.27)
+and (7.28), and assuming this, estimates (7.9) and (7.10) reduce
+to,
+
+   (a+ + b+) ln(1/R∗) ≤ r2 − r∗2 ≤ (a− + b− ) ln(1/R∗).      (7.30)
+
+Using (7.27) and (7.28) to estimate (7.30) gives the following
+estimate for the distance the shock–wave must have traveled
+between r = R∗ and R = 1 as predicted by our model:
+
+(2.62 × 10−7)T04      1                 (2.65 × 10−7)T04     1
+                         !                                       !
+                              2     2
+                 ln       ≤ r   − r ∗ ≤                  ln      .
+      h20 H02        R∗                       h20 H02        R∗
+                                                            (7.31)
+Here the distance r is given in terms of the Hubble length
+                                  .98
+                       H0−1 ≈         × 1010.                 (7.32)
+                                   h0
+In particular, (7.31) shows that, in this shock–wave model, the
+quantity r2 −r∗2 is essentially independent of the starting position
+r∗ .
+     As an example, if we take h0 = .55, T0 = 2.736oK and R∗ =
+2.7/4000 in (7.31), we obtain the estimate
+
+                                   .019 2
+                                        !
+                         2
+                       r     − r∗2 ≈      .               (7.33)
+                                    H0
+In the standard interpretation of the FRW metric in Cosmology,
+the galaxies are in freefall, and traverse geodesics r = Const.
+
+                                   58
+Thus we can interpret r2 − r∗2 in (7.31) as the (squared) dis-
+tance that the shock–wave travels over and above the motion
+due to freefall, a result of the fact that mass and momentum
+are driven across the shock–wave as it evolves outward. We
+conclude that the distance the shock–wave has traveled, (over
+and above freefall), between R = R∗ = 2.7/4000 and R = 1,
+as predicted by this model, is approximately .019 of the Hubble
+length. (Recall that r̄ = R(t)r measures distance in lightyears
+for the three dimensional space at fixed time t in the k = 0 FRW
+metric.)
+   We now discuss the initial condition r = r∗ at R = R∗ . We
+saw in (6.24) that the condition Q̄ > P̄ put constraints on the
+maximal shock position at each value of R. Using the value
+σ̄ = .1231 in (6.24) gives the inequality
+
+                   .759R2         .759             R∗
+       r∗2 <               =                           .   (7.34)
+                                                   H02
+                                                
+                                         −7 )T 4
+               (3.11)α + βR 1 + (4.64×10
+                                      2 2
+                                              0
+                                          h0 R∗
+
+Estimate (7.34) is the bound on the initial shock position, im-
+posed by Q̄ > P̄ , in terms of the Hubble length. Putting (7.34)
+together with (7.31), we conclude that the maximal distance
+rmax from the shock–wave to the center of the explosion r = 0
+at present time R = 1, given as a function of starting time R∗,
+2.7/4000 ≤ R∗1, (assuming the shock–wave started at position
+r = r∗ at R∗ ≥ 2.7/4000, and such that r∗ is restricted by (7.34)
+so that Q̄ > P̄ for all R > R∗ ), is predicted by this model to be
+
+
+
+
+                                  59
+               v
+                              .76                          T4              1
+               u                                                             !
+            −1 u                                        −7) 0 ln
+               u
+    rmax ≈ H0 u                          R∗ + (2.6 × 10                       .
+                                                           h20
+                                      
+                               −7 )T 4
+                   1 + (4.6×10      0                                      R∗
+               t
+                            2  2
+                           h0 R∗
+                                                       (7.35)
+                                                                       o
+For example, taking the value h0 = .55 and T0 = 2.736 K gives
+the formula
+
+               v
+                            .76                                     1
+               u                                                      !
+            −1 u
+               u
+    rmax ≈ H0 u                          R∗   + (4.9 × 10−5) ln      . (7.36)
+               t
+                   1+       (8.5×10−5)                              R∗
+                                R∗2
+
+This function is plotted in Figure 2. Putting (7.35) together
+with (7.31) we obtain the following upper and lower bounds for
+the shock position r at present time R = 1 assuming that it
+starts at R = R∗ , and such that Q̄ > P̄ holds for all R ≥ R∗ :
+
+                                          v
+                         2u
+                                                    !
+         −1          −4 T0 u 1 
+              
+    r ≥ H0 (5.1 × 10 ) tln       ,                                        (7.37)
+                        h0   R∗ 
+              v
+                             .76                            T04    1
+              u                                                              !
+           −1 u
+              u
+    r ≤   H0 u                          R  + (2.6 × 10 −7 )     ln    .
+                                         ∗
+                                                            h20
+                                     
+                              −7 )T 4
+                  1 + (4.6×10      0                               R∗
+              t
+                           2 2 h0 R∗
+                                                                           (7.38)
+
+
+8     The Case of Pure Radiation, β = 0
+As a point of comparison, in this section we redo the calculation
+of the shock position under the assumption β = 0 in (4.13);
+that is, under the assumption that the energy density Q is due
+entirely to radiation. (See [14] and the solution discussed at the
+
+                                           60
+end Section 3.) Thus assume that α = âT04/3 is as given in
+(7.13), but that β = 0. We estimate the position of the shock–
+wave in this model at the time R = 1, where T = T0 . Now of
+course, since β is determined in (7.14) from H0 in the above
+                        Ṙ
+analysis, the value of R   in the pure radiation model will not
+coincide with H0 at the time when T = T0. Nevertheless, for
+comparison purposes, we shall estimate the radial position of
+the shock–wave in the pure radiation model at time R = 1 in
+terms of the Hubble length H0−1 given in (7.32).
+   In the case β = 0, the constraint (6.24) that guarantees Q̄ >
+P̄ reduces to
+                                          
+                          (1 − σ̄/3)(1 − w)  2
+                 αr∗2 <                     R∗ ,            (8.1)
+                           (1 + σ̄)(3 + w)
+and the critical orbit becomes w ≡ σ̄. Using w = σ̄ ≈ .1231 in
+(8.1) gives
+                                .49
+                           r∗ < √ R∗.                        (8.2)
+                                  α
+(Note that in the alternative case α = 0, the case of pure matter,
+the RHS of (6.24) tends to infinity, and thus (6.24) places no
+constraint on the shock position. This is consistent with the
+fact that when α = 0, the pressure is zero, and the shock–wave
+reduces to a contact discontinuity. For example, Q̄ = 0, P̄ = 0,
+solves the shock equations (3.41), (3.42) and it is not difficult
+to show that the solution of the shock equations in this case
+reduces to the k = 0 version of the Oppenheimer–Snyder model,
+first presented in [14]. In these Oppenheimer–Snyder models,
+there are no constraints on the shock position corresponding to
+(6.24).)
+
+                               61
+   Setting β = 0 and w = σ̄ in (5.12) gives
+
+                        dr2    2(1 − σ̄) R
+                            =                              (8.3)
+                        dR     3(3 + σ̄) α
+as the differential equation for the shock position. Integrating
+gives
+
+                      2  (1 − σ̄) R2
+                     r =             + r∗2.                  (8.4)
+                         3(3 + σ̄) α
+Using (8.2) for the maximum value of r∗ yields the following
+bounds on the shock position r at the time R = 1 when T = T0
+that are analagous to (7.37) and (7.38) and apply when β = 0 :
+
+           v                      v
+          u (1 − σ̄)
+        1 u                 u (1 − σ̄)
+                          1 u
+           u                      u
+       √  t          ≤r≤ √ t           + .24R∗.              (8.5)
+         α 3(3 + σ̄)       α 3(3 + σ̄)
+
+¿From (7.13) and (5.33) it follows that
+                           1
+                          √ = 118h0H0−1.                     (8.6)
+                            α
+Using this value together with the value σ̄ = .1231 in (8.5) yields
+                                   √
+                   36h0       36h0 1 + 2.5R∗
+                        ≤r≤                     .             (8.7)
+                    H0                H0
+Note that the shock position at R = 1 that applies to the exact
+solution given in [14], which was discussed in detail at the end
+of Section 3, is the case R∗ = 0 in (8.7).
+
+
+
+
+                                62
+Figure 1:
+
+
+
+
+   63
+         1.0
+
+         0.9
+
+         0.8
+
+         0.7
+
+         0.6
+
+rmax     0.5
+
+         0.4
+
+         0.3
+
+         0.2
+
+         0.1
+
+         0.0
+            0.0   0.1   0.2   0.3   0.4 0.5     0.6   0.7   0.8 0.9    1.0
+                                           R*
+       Figure 2: rmax is in units of H0−1 , H0 = 100h0 seckm
+                                                           mpc
+                                                               , h0 = .55
+
+
+
+
+                                      64
+References
+[1] S.K. Blau and A.H. Guth, Inflationary cosmology. In: Three
+    Hundred Years of Gravitation, ed. by S.W. Hawking and
+    W. Israel, Cambridge University Press, 1987, pp. 524-603.
+[2] R. Courant and K. Friedrichs, Supersonic Flow and Shock–
+    Waves, Wiley-Interscience, 1948. 1972.
+[3] A. Einstein, Der feldgleichungen der gravitation, Preuss.
+    Akad. Wiss., Berlin, Sitzber. 1915b, pp. 844-847.
+    314(1970), pp. 529-548.
+[4] S.W. Hawking and G.F.R. Ellis, The Large Scale Structure
+    of Spacetime, Cambridge University Press, 1973.
+[5] S.W. Hawking and R. Penrose, The singularities of gravi-
+    tational collapse and cosmology, Proc. Roy. Soc. Lond. A,
+    314(1970), pp. 529-548.
+[6] W. Israel, Singular hypersurfaces and thin shells in general
+    relativity, Il. Nuovo Cimento, 54B(1966), pp. 1-14.
+[7] P.D. Lax, Shock–waves and entropy. In: Contributions to
+    Nonlinear Functional Analysis, ed. by E. Zarantonello, Aca-
+    demic Press, 1971, pp. 603-634.
+[8] M.S. Longair Our Evolving Universe, Cambridge University
+    Press, (1996).
+[9] C. Misner, K. Thorne, and J. Wheeler, Gravitation, Free-
+    man, 1973.
+
+
+
+                              65
+[10] J.R. Oppenheimer and J.R. Snyder, On continued gravita-
+     tional contraction, Phys. Rev., 56 1939, pp. 455-459.
+[11] P.J.E. Peebles, Principles of Physical Cosmology, Princeton
+     University Press, 1993.
+[12] R. Schoen and S.T. Yau, Proof of the positive mass theorem
+     II, Commun. Math. Phys, 79 1981, pp. 231-260.
+[13] J. Smoller and B. Temple, Shock–wave solutions of the Ein-
+     stein equations: the Oppenheimer-Snyder model of gravi-
+     tational collapse extended to the case of non-zero pressure,
+     Arch. Rat. Mech. Anal., 128 (1994), pp 249-297.
+[14] J. Smoller and B. Temple, Astrophysical shock–wave solu-
+     tions of the Einstein equations, Phys. Rev. D, 51, No. 6
+     (1995).
+[15] J. Smoller and B. Temple, General relativistic shock–waves
+     that extend the Oppenheimer–Snyder model, Arch. Rat.
+     Mech. Anal. 138(1997), pp. 239-277.
+[16] J. Smoller and B. Temple, Shock–waves near the
+     Schwarzschild radius and the stability limit for stars, Phys.
+     Rev. D, 55(1997), pp. 7518-7528.
+[17] J. Smoller, Shock–Waves and Reaction-Diffusion Equations,
+     2nd ed., Springer-Verlag, 1994.
+[18] R.M. Wald, General Relativity, University of Chicago Press,
+     1984.
+[19] S. Weinberg, Gravitation and Cosmology: Principles and
+     Applications of the General Theory of Relativity, Wiley,
+     1972.
+
+                               66
+

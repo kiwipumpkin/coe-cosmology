@@ -1,0 +1,43 @@
+{
+  "small_circle_max_dot_residual": 2.220446049250313e-16,
+  "small_circle_max_unit_norm_residual": 2.220446049250313e-16,
+  "validation_case_segment_counts": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2
+  ],
+  "max_mollweide_normalized_ellipse_r2": 1.0000000000000002,
+  "overlay_mollweide_implicit_eq_max_residual": 8.881784197001252e-16,
+  "theta_reductions": {
+    "30": {
+      "mu": 0.8660254037844387,
+      "r_from_plus_x_deg": 29.999999999999993,
+      "r_from_CoE_deg": 150.0
+    },
+    "185": {
+      "mu": -0.9961946980917455,
+      "r_from_plus_x_deg": 175.0,
+      "r_from_CoE_deg": 4.999999999999992
+    },
+    "115": {
+      "mu": -0.42261826174069933,
+      "r_from_plus_x_deg": 115.0,
+      "r_from_CoE_deg": 65.0
+    },
+    "265": {
+      "mu": -0.08715574274765825,
+      "r_from_plus_x_deg": 95.0,
+      "r_from_CoE_deg": 85.0
+    }
+  },
+  "written_paths": [
+    "/workspace/cosmology/figures/mollweide_small_circle_validation.png",
+    "/workspace/cosmology/figures/coe_ring_angle_diagnostic.png",
+    "/workspace/cosmology/figures/migkas_fig8_theta75_with_coe_rings.png"
+  ]
+}

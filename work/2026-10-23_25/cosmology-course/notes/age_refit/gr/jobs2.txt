@@ -1,0 +1,15 @@
+python3 fit_gr.py exp fwd gtc > gr/rep_exp_fwd_gtc.log 2>&1; python3 fanmap.py exp fwd gtc > gr/fan_exp_fwd_gtc.log 2>&1
+python3 fit_gr.py exp fwd le > gr/rep_exp_fwd_le.log 2>&1; python3 fanmap.py exp fwd le > gr/fan_exp_fwd_le.log 2>&1
+python3 fit_gr.py exp back gtc > gr/rep_exp_back_gtc.log 2>&1; python3 fanmap.py exp back gtc > gr/fan_exp_back_gtc.log 2>&1
+python3 fit_gr.py exp back le > gr/rep_exp_back_le.log 2>&1; python3 fanmap.py exp back le > gr/fan_exp_back_le.log 2>&1
+python3 fit_gr.py soft fwd gtc > gr/rep_soft_fwd_gtc.log 2>&1; python3 fanmap.py soft fwd gtc > gr/fan_soft_fwd_gtc.log 2>&1
+python3 fit_gr.py soft back gtc > gr/rep_soft_back_gtc.log 2>&1; python3 fanmap.py soft back gtc > gr/fan_soft_back_gtc.log 2>&1
+python3 fit_gr.py soft back le > gr/rep_soft_back_le.log 2>&1; python3 fanmap.py soft back le > gr/fan_soft_back_le.log 2>&1
+python3 fit_gr.py eta fwd gtc > gr/rep_eta_fwd_gtc.log 2>&1; python3 fanmap.py eta fwd gtc > gr/fan_eta_fwd_gtc.log 2>&1
+python3 fit_gr.py eta fwd le > gr/rep_eta_fwd_le.log 2>&1; python3 fanmap.py eta fwd le > gr/fan_eta_fwd_le.log 2>&1
+python3 fit_gr.py eta back gtc > gr/rep_eta_back_gtc.log 2>&1; python3 fanmap.py eta back gtc > gr/fan_eta_back_gtc.log 2>&1
+python3 fit_gr.py eta back le > gr/rep_eta_back_le.log 2>&1; python3 fanmap.py eta back le > gr/fan_eta_back_le.log 2>&1
+python3 fit_gr.py pl fwd gtc > gr/rep_pl_fwd_gtc.log 2>&1; python3 fanmap.py pl fwd gtc > gr/fan_pl_fwd_gtc.log 2>&1
+python3 fit_gr.py pl fwd le > gr/rep_pl_fwd_le.log 2>&1; python3 fanmap.py pl fwd le > gr/fan_pl_fwd_le.log 2>&1
+python3 fit_gr.py pl back gtc > gr/rep_pl_back_gtc.log 2>&1; python3 fanmap.py pl back gtc > gr/fan_pl_back_gtc.log 2>&1
+python3 fit_gr.py pl back le > gr/rep_pl_back_le.log 2>&1; python3 fanmap.py pl back le > gr/fan_pl_back_le.log 2>&1
