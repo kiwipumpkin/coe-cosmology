@@ -1,0 +1,1 @@
+eta<0.03: the delta=0.031 L-lock has no root (eta=0.025 gives L=3.2e-5 Gpc, eta=0.02 no root). chi2 at eta=0.03001: 9.4782. The 0.03 bound is the physical edge of the lock, not an arbitrary limit.

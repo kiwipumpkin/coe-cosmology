@@ -1,0 +1,42 @@
+{
+  "sheet_tab": "Copy of Copy of Copy of density",
+  "method": "Simple Amp\u00d7sin((2\u03c0/360)\u00b7\u2113+\u03c6) phase alignment on sheet ST series; Model A=(1\u2212BA)*AF, Model B=(1\u2212BE)*AN with BE=\u2212BA Amp. NOT a free A cos \u03c6 dipole; NOT claiming first-principles ST quadrupole alone matches B.",
+  "amp_A": -0.06,
+  "amp_B": 0.06,
+  "phi_rad_chris": 0.35,
+  "phi_deg_chris": 20.05352282957881,
+  "omega": 0.017453292519943295,
+  "phase_table_deg_chris": [
+    -20.05,
+    69.95,
+    159.95,
+    249.95,
+    339.95
+  ],
+  "R2_sheet_1deg_VLOOKUP": {
+    "A_without_rotation": 0.500650625977981,
+    "A_with_rotation": 0.7389388418111408,
+    "B_without_rotation": 0.3715856055896455,
+    "B_with_rotation": 0.7330571523463625,
+    "improvement_A": 1.47595709156996,
+    "improvement_B": 1.972781349221321,
+    "note": "Matches cached BH58\u22480.739, BL58\u22480.733, AF51\u22480.50, AM51\u22480.37, D3\u22481.48, D4\u22481.98"
+  },
+  "R2_vs_digitised_fig6_csv": {
+    "n_points": 71,
+    "A_without_rotation": 0.4462758018354763,
+    "A_with_rotation_chris_phi": 0.7115262205508991,
+    "B_without_rotation": 0.4834351193439666,
+    "B_with_rotation_chris_phi": 0.7847895555514788,
+    "best_shared_phi_rad": 0.522148363477528,
+    "best_shared_phi_deg": 29.916897506925213,
+    "A_with_best_phi": 0.7303105940190585,
+    "B_with_best_phi": 0.7761934764586638
+  },
+  "outputs": {
+    "overlay_png": "/workspace/coepdf/fig7/migkas_bars_rotation_overlay.png",
+    "overlay_pdf": "/workspace/coepdf/fig7/migkas_bars_rotation_overlay.pdf",
+    "scatter_png": "/workspace/coepdf/fig7/migkas_bars_rotation_scatter.png"
+  },
+  "honest_note": "Both A and B match well under Chris\u2019s sheet-style sine phase rotation (R\u00b2\u22480.74/0.73 on sheet; ~0.7 ballpark vs digitised bars). Forcing the same ST+Gauss H_obs quadrupole shape onto B without this Amp\u00d7sin phase factor yields near-null R\u00b2 for B \u2014 that is a different (and weaker) claim than this diagnostic panel."
+}
