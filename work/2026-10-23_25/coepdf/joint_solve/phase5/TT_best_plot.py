@@ -1,0 +1,21 @@
+# Phase5 (NEW): TT spectrum for the best d (lowest ensemble TT chi2), linear l axis (argv[1]='log' for log l). Planck 2018 data.
+import sys,json,numpy as np,matplotlib;matplotlib.use('Agg');import matplotlib.pyplot as plt
+O='/workspace/coepdf/joint_solve/phase5/';LOG=len(sys.argv)>1 and sys.argv[1]=='log'
+b_=json.load(open(O+'best_d.json'));T=b_['tag'];z=np.load(O+f'p6_{T}.npz');l=np.arange(len(z['D']))
+b=np.loadtxt('/workspace/planck/COM_PowerSpect_CMB-TT-binned_R3.01.txt');f=np.loadtxt('/workspace/planck/COM_PowerSpect_CMB-TT-full_R3.01.txt')
+fig,ax=plt.subplots(2,1,figsize=(11,8),sharex=True,gridspec_kw={'height_ratios':[3,1]})
+ax[0].errorbar(f[:,0],f[:,1],yerr=[f[:,2],f[:,3]],fmt='.',ms=1.5,color='0.7',elinewidth=0.3,label='Planck 2018 unbinned')
+ax[0].errorbar(b[:,0],b[:,1],yerr=[b[:,2],b[:,3]],fmt='o',ms=3,color='k',label='Planck 2018 binned')
+ax[0].plot(l[2:],z['Lt'][2:],'b-',lw=1.2,label=r'$\Lambda$CDM best fit')
+ax[0].plot(l[2:],z['D'][2:],'r-',lw=1.5,label=r'CoE ensemble mean ($\chi^2$=%.0f)'%b_['TT_mean'])
+ax[0].plot(l[2:],z['Drc'][2:],color='orange',lw=0.6,alpha=0.8,label=r'CoE seed-42 sky, compensated ($\chi^2$=%.0f)'%b_['TT_comp'])
+ax[0].set_ylabel(r'$D_\ell$ [$\mu$K$^2$]');ax[0].set_ylim(0,7000);ax[0].legend(fontsize=9,loc='upper right' if LOG else 'upper right')
+ax[0].set_title(r'Phase 5 TT: best d=%g Gpc, D=%.2f Gpc, $R_{ls}$=%.2f Gpc, $\langle H_0\rangle$=68.64, age %.2f Gyr'%(b_['d'],b_['D'],b_['R_ls'],b_['age']))
+lb=b[:,0].astype(int);err=0.5*(b[:,2]+b[:,3]);lf=f[:,0].astype(int);ef=0.5*(f[:,2]+f[:,3])
+X,Y,E=(lf,f[:,1],ef) if LOG else (lb,b[:,1],err)
+ax[1].plot(X,(np.interp(X,l,z['D'])-Y)/E,'r.',ms=2 if LOG else 4,label='CoE')
+ax[1].plot(X,(np.interp(X,l,z['Lt'])-Y)/E,'b.',ms=2 if LOG else 4,label=r'$\Lambda$CDM')
+ax[1].axhline(0,color='k',lw=0.5);ax[1].set_ylabel(r'(model$-$data)/$\sigma$');ax[1].set_xlabel(r'$\ell$');ax[1].legend(fontsize=8)
+ax[1].set_xlim(2,2500)
+if LOG:ax[1].set_xscale('log')
+plt.tight_layout();plt.savefig(O+('TT_best_plot_log.png' if LOG else 'TT_best_plot.png'),dpi=140)
