@@ -1,0 +1,33 @@
+# Equal-distance arc: points as far from the CoE as the observer. Observer at origin, R=1 sphere,
+# CoE at (-D,0) (Galactic l=180 along -X), D=2.5. Arc = circle radius D about CoE through observer.
+import os,numpy as np,matplotlib;matplotlib.use('Agg');import matplotlib.pyplot as plt
+H=os.path.dirname(os.path.abspath(__file__));D=2.5
+# intersection of |p|=1 and |p-(-D,0)|=D: x=-1/(2D)
+x=-1/(2*D);y=np.sqrt(1-x*x);P1,P2=(x,y),(x,-y)
+lP1=np.degrees(np.arctan2(y,x))%360;lP2=np.degrees(np.arctan2(-y,x))%360
+t=np.linspace(0,2*np.pi,400);ph=np.radians(np.linspace(-40,40,200))
+ax_,ay_=-D+D*np.cos(ph),D*np.sin(ph)
+fig=plt.figure(figsize=(15,7))
+a=fig.add_subplot(121)
+a.plot(np.cos(t),np.sin(t),'b',lw=2,label='unit sphere R=1')
+a.plot(ax_,ay_,color='orange',lw=3,label=f'arc: equal distance D={D} from CoE')
+a.plot([P1[0],P2[0]],[P1[1],P2[1]],'r--',lw=1.5,label='chord P1–P2')
+a.plot(*zip(P1,P2),'ro',ms=10)
+for p,n,l in [(P1,'P1',lP1),(P2,'P2',lP2)]:a.annotate(f'{n}  l={l:.1f}°',p,xytext=(10,10 if p[1]>0 else -20),textcoords='offset points',color='r',fontsize=12)
+a.plot(0,0,'k*',ms=16,label='observer');a.annotate('-X → l=180° (CoE)',(-1.45,0.05),fontsize=10)
+a.plot([-1.6,0],[0,0],'k:',lw=1)
+a.set_aspect('equal');a.set_xlim(-1.7,1.4);a.set_ylim(-1.4,1.4);a.set_xlabel('X');a.set_ylabel('Y');a.grid(alpha=.3)
+a.set_title(f'Top-down XY plane (CoE at (−{D},0), off panel)');a.legend(loc='lower right',fontsize=9)
+b=fig.add_subplot(122,projection='3d')
+u,v=np.meshgrid(np.linspace(0,2*np.pi,40),np.linspace(0,np.pi,20))
+b.plot_surface(np.cos(u)*np.sin(v),np.sin(u)*np.sin(v),np.cos(v),color='b',alpha=.12,linewidth=0)
+g=np.linspace(-1.5,1.5,7)
+for c in g:b.plot([c,c],[-1.5,1.5],0,color='0.7',lw=.6);b.plot([-1.5,1.5],[c,c],0,color='0.7',lw=.6)
+b.plot(np.cos(t),np.sin(t),0,'b',lw=2);b.plot(ax_,ay_,0,color='orange',lw=3)
+b.plot([P1[0],P2[0]],[P1[1],P2[1]],[0,0],'r--');b.scatter(*zip(P1,P2),[0,0],c='r',s=50,depthshade=False)
+for p,n in [(P1,'P1'),(P2,'P2')]:b.text(p[0],p[1],0.1,n,color='r')
+b.scatter([0],[0],[0],c='k',marker='*',s=150)
+b.set_xlim(-1.5,1.5);b.set_ylim(-1.5,1.5);b.set_zlim(-1.5,1.5);b.set_box_aspect((1,1,1))
+b.set_xlabel('X');b.set_ylabel('Y');b.set_zlabel('Z');b.view_init(25,-60);b.set_title('3D view, Z=0 grid')
+fig.suptitle('Same fixed XY coordinates in both panels — only camera viewpoint changes',fontsize=14)
+fig.tight_layout();fig.savefig(H+'/chris_equal_distance_arc.png',dpi=120,facecolor='white');print(lP1,lP2)

@@ -1,0 +1,15 @@
+# (c) Power share (dipole removed, m=2..35 normalised) before/after vs Planck, residuals; and log 2..2000. Data from A_required_web_solve.py.
+import numpy as np,matplotlib;matplotlib.use("Agg");import matplotlib.pyplot as plt
+R=np.load("A_required_web_results.npz",allow_pickle=True)
+m,pl=R["m"],R["pl"];fig,ax=plt.subplots(1,3,figsize=(18,5))
+ax[0].semilogy(m,pl,"rs-",ms=4,label="Planck 2018 TT share");ax[0].semilogy(m,R["a0"],"k.-",label="Migkas before");ax[0].semilogy(m,R["a"],"b.-",label="after, delta(l)");ax[0].semilogy(m,R["af"],"g--",label="after, clusters/voids")
+ax[0].set(xlabel="m = l",ylabel="share of m=2..35 power",title="Shares m=2..35");ax[0].legend(fontsize=8);ax[0].grid(alpha=.3,which="both")
+rms=lambda r:np.sqrt((r**2).mean())
+for k,c,lb in [("a0","k","before"),("a","b","after delta(l)"),("af","g","after clusters/voids")]:ax[1].plot(m,R[k]-pl,c+".-",label=f"{lb}: rms {rms(R[k]-pl):.4f}")
+for mm in range(4,36,4):ax[1].axvline(mm,color="gray",lw=.5,ls=":")
+ax[1].axhline(0,color="k",lw=.6);ax[1].set(xlabel="m = l",ylabel="Migkas share - Planck share",title="Residuals (dotted: m=4k, H(m)=0)");ax[1].legend(fontsize=8);ax[1].grid(alpha=.3)
+L,Pl=R["L"],R["Pl"];k=(L>=2)&(L<=2000);ms=np.arange(2,2001)
+for P,c,lb in [(R["P0"],"k","before"),(R["Pnew"],"b","after delta(l)")]:q=P[2:2001];ax[2].loglog(ms,q/q.sum(),c+"-",lw=.8,label=lb)
+ax[2].loglog(L[k],Pl[k]/Pl[k].sum(),"r-",lw=.8,label="Planck");ax[2].set(xlabel="m or l",ylabel="share of 2..2000 power",title="2..2000 (only m<=35 was targeted)",ylim=(1e-14,1));ax[2].legend(fontsize=8);ax[2].grid(alpha=.3,which="both")
+fig.text(.5,.01,"Dipole removed. m azimuthal ring harmonic, l spherical multipole: not the same quantity.",ha="center",fontsize=9)
+plt.tight_layout(rect=(0,.04,1,1));plt.savefig("A_required_web_spectrum.png",dpi=140)

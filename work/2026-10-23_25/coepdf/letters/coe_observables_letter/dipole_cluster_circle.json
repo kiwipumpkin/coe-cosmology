@@ -1,0 +1,32 @@
+{
+ "members": [
+  "CMB dipole",
+  "CatWISE dipole",
+  "NVSS dipole",
+  "Bulk flow",
+  "Axis of Evil"
+ ],
+ "mean_dir": [
+  251.8,
+  42.7
+ ],
+ "mean_dir_cover_radius": 46.4,
+ "min_circle_centre": [
+  251.5,
+  35.4
+ ],
+ "min_circle_radius": 42.5,
+ "antipode_centre": [
+  71.5,
+  -35.4
+ ],
+ "seps_from_centre": {
+  "CMB dipole": 15.9,
+  "CatWISE dipole": 13.0,
+  "NVSS dipole": 42.5,
+  "Bulk flow": 42.5,
+  "Axis of Evil": 25.2
+ },
+ "CoE_sep_from_centre": 84.2,
+ "AoE_sep": 25.2
+}

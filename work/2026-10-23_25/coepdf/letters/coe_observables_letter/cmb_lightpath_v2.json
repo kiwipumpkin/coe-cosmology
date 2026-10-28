@@ -1,0 +1,54 @@
+{
+ "sources": {
+  "fit": "p1_migkas_D34.96.json",
+  "integrator": "prof_core.py (acc/integrate scheme, eta law, phi_coe)",
+  "lock": "catwise-eta-density-migkas.py L_from_delta_eta",
+  "T_rule": "cycle4/dtt_rec_track/README.md l.9-11: T \u221d 1/a \u221d 1/t for each shell; T_rec=3000 K, T0=2.725 K (also cycle7_recombination/README.md l.3)",
+  "not_found": "no explicit T-rho relation, no rho(r,t) formula and no per-shell t_rec code exist in his notes; the spreadsheet exponential is the same shape family as prof_core exp/eta"
+ },
+ "params": {
+  "D": 34.96,
+  "eta": 0.03000000183169086,
+  "mc": 4.337085666299921,
+  "L_Gpc": 0.11022547322055358,
+  "Ht": 0.19885497825469098,
+  "t0_Gyr": 2.7775068187601843,
+  "mu": 2.010783195131577,
+  "c_code": 0.02435873211813407,
+  "taui": 0.01,
+  "nsteps": 200,
+  "r_obs_now_code": 0.688104006394643,
+  "v_obs_now_code": 0.13683287295136773,
+  "rho_rec_over_rho_obs_now": 1334333053.5455194,
+  "shell_crossing": false,
+  "n_shells": 3000,
+  "n_shells_recombined": 3000
+ },
+ "trec": {
+  "t_rec_over_t0_min": 0.00139429771156681,
+  "t_rec_over_t0_max": 0.0014627030469195569,
+  "t_rec_obs_shell": 0.0014598472916324656,
+  "t_rec_Myr_range": [
+   3.8726714012585357,
+   4.062667686640367
+  ],
+  "x_rec_Gpc_range": [
+   4.874464799637568e-05,
+   0.15339514940015553
+  ]
+ },
+ "light_cone": {
+  "c_t0_Gpc": 0.851581274849967,
+  "our_distance_from_CoE_Gpc": 24.05611606355672,
+  "min_over_directions_of_min_mismatch_Gpc": 23.052385143090753,
+  "max_over_directions_Gpc": 24.75305668522238,
+  "n_directions_with_solution": 0
+ },
+ "doppler": {
+  "beta_emitter_range": [
+   0.04105303983599135,
+   123.15911950797405
+  ],
+  "beta_observer": 5.617405384145643
+ }
+}

@@ -1,0 +1,157 @@
+{
+ "real": {
+  "score12": 11,
+  "scoreA": 4,
+  "scoreB": 7,
+  "paired7": 6,
+  "vals": {
+   "CMB dipole cold": 0.024,
+   "Bulk flow away": -2.272,
+   "CMB Cold Spot": -2.331,
+   "CMB dipole hot": 1.538,
+   "Bulk flow toward": 1.903,
+   "NVSS cold": -4.872,
+   "Hemi. asym. cold": -2.11,
+   "CatWISE cold": -4.873,
+   "NVSS hot": 2.028,
+   "Hemi. asym. hot": 1.621,
+   "CatWISE hot": 1.388,
+   "Loop I / NPS": 1.598
+  }
+ },
+ "N": 200000,
+ "mc": {
+  "isotropic": {
+   "score_hist": [
+    0,
+    205,
+    2762,
+    8827,
+    19079,
+    32991,
+    48582,
+    43600,
+    24554,
+    10691,
+    5439,
+    2571,
+    699
+   ],
+   "p_score>=real": 0.01635,
+   "p_paired>=real": 0.01792,
+   "paired_hist": [
+    5455,
+    28630,
+    58071,
+    60359,
+    34040,
+    9861,
+    2885,
+    699
+   ],
+   "aoe": {
+    "phase4b joint D=27.34/R_ls=21.74": {
+     "DR": 1.2575896964121436,
+     "real_offset_deg": 21.15970838727411,
+     "p_aoe<=real": 0.134365,
+     "p_joint_score": 0.00295,
+     "p_joint_paired": 0.003205
+    },
+    "phase4 joint D=27.92/21.77": {
+     "DR": 1.2824988516306846,
+     "real_offset_deg": 20.827478288131758,
+     "p_aoe<=real": 0.13031,
+     "p_joint_score": 0.002915,
+     "p_joint_paired": 0.00317
+    },
+    "D=42/21.74": {
+     "DR": 1.9319227230910765,
+     "real_offset_deg": 16.39763655040642,
+     "p_aoe<=real": 0.08007,
+     "p_joint_score": 0.002355,
+     "p_joint_paired": 0.00254
+    },
+    "D=58.2/21.74": {
+     "DR": 2.677092916283349,
+     "real_offset_deg": 15.211579910253636,
+     "p_aoe<=real": 0.063785,
+     "p_joint_score": 0.002025,
+     "p_joint_paired": 0.00214
+    },
+    "figure D/R=5": {
+     "DR": 5.0,
+     "real_offset_deg": 15.243684856335312,
+     "p_aoe<=real": 0.05134,
+     "p_joint_score": 0.001625,
+     "p_joint_paired": 0.00171
+    }
+   }
+  },
+  "fixedCoE_roll": {
+   "score_hist": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    23784,
+    67661,
+    83172,
+    25383
+   ],
+   "p_score>=real": 0.542775,
+   "p_paired>=real": 0.542775,
+   "paired_hist": [
+    0,
+    0,
+    0,
+    0,
+    23784,
+    67661,
+    83172,
+    25383
+   ],
+   "aoe": {
+    "phase4b joint D=27.34/R_ls=21.74": {
+     "DR": 1.2575896964121436,
+     "real_offset_deg": 21.15970838727411,
+     "p_aoe<=real": 0.16861,
+     "p_joint_score": 0.06785,
+     "p_joint_paired": 0.06785
+    },
+    "phase4 joint D=27.92/21.77": {
+     "DR": 1.2824988516306846,
+     "real_offset_deg": 20.827478288131758,
+     "p_aoe<=real": 0.16861,
+     "p_joint_score": 0.06785,
+     "p_joint_paired": 0.06785
+    },
+    "D=42/21.74": {
+     "DR": 1.9319227230910765,
+     "real_offset_deg": 16.39763655040642,
+     "p_aoe<=real": 0.16861,
+     "p_joint_score": 0.06785,
+     "p_joint_paired": 0.06785
+    },
+    "D=58.2/21.74": {
+     "DR": 2.677092916283349,
+     "real_offset_deg": 15.211579910253636,
+     "p_aoe<=real": 0.16861,
+     "p_joint_score": 0.06785,
+     "p_joint_paired": 0.06785
+    },
+    "figure D/R=5": {
+     "DR": 5.0,
+     "real_offset_deg": 15.243684856335312,
+     "p_aoe<=real": 0.16861,
+     "p_joint_score": 0.06785,
+     "p_joint_paired": 0.06785
+    }
+   }
+  }
+ }
+}
