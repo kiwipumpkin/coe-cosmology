@@ -1,0 +1,126 @@
+HOW A AND B ARE CALCULATED IN CHRIS'S SPREADSHEET MODEL
+=======================================================
+Traced from the cell formulas with openpyxl. Values in [brackets] are the
+values Excel last saved in the file; I did not recalculate anything.
+
+1. SOURCE FILE
+--------------
+Chris's attachment of 2026-10-28 (01M62BVHCRKDYJT7ZRM61Y6BB2.xlsx), copied to
+/workspace/cosmology/papers/spreadsheet_model/chris_original_2026-10-28.xlsx
+It is byte-identical (MD5 3ff4c8ad47c4425b6184c46b0accf940) to the box copy
+/workspace/cosmology/papers/spreadsheet_model/chris_model.xlsx, so every formula
+and value below was re-confirmed against the original file.
+Sheet used: "density w rotation" (note in C2: "distributed mass density with
+added error ie rotation?"). This is the first sheet that has both
+"Model A/A_all" (column BH) and "Model B/B_all" (column BL). The four
+"Copy of ..." sheets use the same BH/BL/D3 formulas. Earlier sheets: "point"
+(point mass at 0,0) and "density" (distributed density, A path only).
+The per-angle table runs over rows 66-426, one row per degree (A66=0 ... 360).
+
+2. INPUTS / PARAMETERS ("density w rotation")
+---------------------------------------------
+B25 k  = 1    Taylor-Sedov constant, V = kD
+B26 G  = 1    gravity
+B27 M  = 50   mass
+B28 D  = 10   Earth-to-CoE distance (CoE sits at the origin, Earth at (D,0))
+B29 R  = 3    Earth-to-P distance (radius of the circle of observed points P)
+B30 L  = 1.5  scale length of the density distribution
+B33 dt = 1    time step
+B7  c  = 100; B8 v/c = B32/B7 [0.1]; B10 = SQRT(1-B9) [0.99499] -- computed but
+              not used by the A or B columns (as far as I could trace).
+E39  = 0.09   constant offset subtracted from Migkas B data
+BA57 = -0.055 amplitude for the A "rotation/error" sine;  BE57 = -BA57 = +0.055
+BA58 = BB58 = 2*PI()/360 (degrees -> radians);  BE58 = BA58
+BA59 = 0.15   phase (radians) of the sine;  BE59 = BA59
+Derived:
+B32 Vo = B25*B28 = kD [10]                observer velocity (all in x)
+B34 Ax_obs = -B26*B27/(B28*B28) = -GM/D^2 [-0.5]   observer acceleration
+B55 = 1-exp(-D/L)*(1+D/L+D^2/(2L^2))  [0.96196]  fraction of mass inside D
+B56 = B27/B55  [51.977]                total mass, so that m(<D) = M
+
+Density law (A21/B59 text): m(R)/M = 1 - exp(-X)*(1 + X + X^2/2),  X = R/L
+(this is the enclosed mass of an exponential density rho ~ exp(-r/L)).
+
+3. FORMULA CHAIN FOR A  (row 66 shown; every row identical unless noted)
+-----------------------------------------------------------------------
+Angle theta_obs (deg) = A66, B66 = RADIANS(A66)
+Point P on circle of radius R around Earth:
+  C  px = D + R cos(theta_obs)            =B$28+B$29*COS(B66)
+  D  py = R sin(theta_obs)                =B$29*SIN(B66)
+  E  r  = sqrt(px^2+py^2)  (CoE-to-P)     =(C66*C66+D66*D66)^0.5
+Hubble-like flow from the CoE:
+  F  V = k r                              =B$25*E66
+  G  theta = atan(py/px)                  =ATAN(D67/C67)
+     (row 66 only: =ATAN(D66/C66)+RADIANS(B58); B58 is empty so adds 0)
+  H  Vx = V cos(theta);  I  Vy = V sin(theta)
+  J  dVx = Vx - Vo   (=H66-B$32);  K dVy = Vy
+  L  v_rec(no accel) = sqrt(dVx^2+dVy^2)        -> always = kR [3]
+Gravity of the mass enclosed inside r:
+  AO m(<r) = (1-exp(-r/L)(1+r/L+r^2/(2L^2))) * B56
+           =(1 - exp(-E66/B$30) * (1 + E66/B$30 + E66*E66/B$30/B$30/2)) *B$56
+  N  a = -G m(<r)/r^2                     =-B$26*AO66/(E66*E66)
+  O  ax = a cos(theta);  P ay = a sin(theta)
+  Q  dAx = ax - Ax_obs  (=O66-B$34);  R dAy = ay
+Velocity after one time step with relative acceleration:
+  S  dVx* = dVx + dAx*dt                  =J66+Q66*B$33
+  T  dVy* = dAy + dVy*dt                  =R66+K66*B$33
+     (AMBIGUITY: dt multiplies the velocity K, not the acceleration R, in y.
+      With dt = 1 it makes no numerical difference.)
+  U  v_rec* = sqrt(dVx*^2 + dVy*^2)
+Model A ratio (the "A/A_all"-type quantity before the rotation term):
+  AB = L66 ;  AF  A_model = v_rec*/v_rec = U/L     =$U66/AB66   [row 66: 1.06498]
+  Meaning: how much the CoE's gravity boosts or reduces the apparent recession
+  speed in each direction, relative to no gravity.
+Migkas data for comparison:
+  AG  =VLOOKUP(AD76,migkas!E$3:H$1002,3,1)  -> Migkas A (migkas!G) at the angle
+      in AD ten rows below, i.e. the Migkas curve is shifted by +10 degrees.
+      migkas!E is an evenly spaced grid E3=360/E1, step 360/E1, E1=COUNT(F:F)
+      [315]; migkas!F holds the original angle (46, 47, ...). So the 315 Migkas
+      points are re-spaced evenly over 0-360 (AMBIGUITY: this re-spacing and the
+      10-row shift are what the cells do; the intent is not written anywhere).
+  AI  fractional residual = -(AG-AF)/AF = (AF-AG)/AF
+Rotation/"error" term and final A:
+  AR = degrees ;  BA  s_A = BA57 * sin(BA58*deg + BA59) = -0.055 sin(deg*pi/180 + 0.15)
+  BH  Model A/A_all = (1 - s_A) * A_model          =(1-BA66)*AF66  [1.07373]
+  BI  = AG (Migkas A);  BJ = (BH-BI)/BH
+  Fit: BH56:BI60 =LINEST(BI66:BI426, BH66:BH426,1,1)  -> R^2 in BH58 [0.6863]
+  Without rotation: AF49:AG53 =LINEST(AG68:AG426, AF68:AF426,1,1), R^2 AF51 [0.4722]
+  D3 "R2w/R2wo a" = BH58/AF51 [1.4536]
+
+4. FORMULA CHAIN FOR B
+----------------------
+B is NOT built from velocities. It is the enclosed mass along the line of sight:
+  AO m(<r) as above (same r = column E for each angle)
+  AN  B_model = m(<r)/M                    =AO66/B$27   [row 66: 1.03109]
+      (B27 = M = 50 is the mass inside D, B56 the total; so B_model = 1 at r = D)
+  Meaning: the relative amount of mass between the CoE and P in that direction.
+Migkas data:
+  AM  =VLOOKUP(AL76,migkas!E$3:H$1002,4,1)-E$39  -> Migkas B (migkas!H), same
+      +10-row shift, minus 0.09
+  AQ  residual = (AN-AM)/AN
+Rotation term and final B:
+  BE  s_B = BE57 * sin(BE58*deg + BE59) = +0.055 sin(deg*pi/180 + 0.15)
+      (opposite sign to the A term)
+  BL  Model B/B_all = (1 - s_B) * B_model          =(1-BE66)*AN66  [1.02261]
+  BM = AM (Migkas B);  BN = (BL-BM)/BL
+  Fit: BL56:BM60 =LINEST(BM66:BM426, BL66:BL426,1,1) -> R^2 BL58 [0.7290]
+  Without rotation: AM49:AN53 =LINEST(AN68:AN426, AM68:AM426,1,1), R^2 AM51 [0.3780]
+     (note: this one regresses model on data, the reverse of the others)
+  D4 "R2w/R2wo b" = BL58/AM51 [1.9288]
+
+5. PLAIN-MATH SUMMARY
+---------------------
+r(th)  = sqrt((D + R cos th)^2 + (R sin th)^2)
+m(<r)  = M_tot [1 - e^{-r/L}(1 + r/L + r^2/2L^2)],  M_tot = M / m_frac(D)
+A(th)  = |(kr cos phi - kD) + (-G m/r^2 cos phi + G M/D^2) dt ,
+          kr sin phi - G m/r^2 sin phi| / (kR),        phi = atan(py/px)
+A/A_all(th) = [1 + 0.055 sin(th + 0.15)] * A(th)
+B/B_all(th) = [1 - 0.055 sin(th + 0.15)] * m(<r)/M
+
+6. OTHER AMBIGUITIES / NOTES
+----------------------------
+- B53 is empty, so B54 "avg density" = M/(D^0 * 4/3 pi) and AW column use ^0;
+  these are not used by A or B.
+- Rows 66-67 are used in BH/BL LINEST but rows 66-67 are skipped (68 start) in
+  the no-rotation LINESTs.
+- AN63 sums AN68:AN931 while the others stop at row 426.
