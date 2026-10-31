@@ -8,7 +8,7 @@
 \newcommand{\why}[1]{\par\noindent\textit{Validity.} #1\par}
 \newcommand{\flag}[1]{\textsf{[unverified: #1]}}
 \title{Off-centre CoE cosmology: the mathematical workflow from geometry to the Planck $TT$ spectrum}
-\author{Working notes for C.\,A. \quad (revision 3, compiled 23 October 2026)}
+\author{Working notes for C.\,A. \quad (revision 4, compiled 24 October 2026)}
 \date{}
 \begin{document}
 \maketitle
@@ -257,6 +257,10 @@ Right: peak $\ell$ ($D_\ell$ in $\mu$K$^2$).
 \begin{multicols}{2}
 \paragraph{Remaining structure.} The odd/even alternation is absent from the new residual. What remains: a slow wave with $\Delta\ell\approx1{,}384$ ($\pm8$--$11\sigma$), and $\ell=2$--3 raised to $\approx3{,}300\,\mu$K$^2$, which dominates $\chi^2_{2-30}=137$; part of the $\ell=3$ level is $D^{\rm fix}_3=1506$. \flag{the $\Delta\ell\approx1384$ amplitude and the 3300\,$\mu$K$^2$ level were read from the earlier figures}.
 \FIG{f01.png}{0.38}{Final model: acoustic field + damped half-scale term ($r_2$ free), exact/Limber-corrected projection, $R\approx4$\,Gpc, plus $D^{\rm fix}_\ell$. Top: low $\ell$ (linear). Bottom: full spectrum. ΛCDM black, Planck grey, CoE one-sky realisation red in its $\pm1\sigma$ band. $\chi^2_{2-2500}=3{,}787$, Pearson $r^2=0.976$.}{fig:final}
+
+\section{Residual harmonics against independent sky anomalies}
+The A and B residuals after removing the $n=1$--3 harmonics are drawn on the sky. The model map is lifted $15^\circ$ (anti-CoE up) and rotated $45^\circ$ counterclockwise about the CoE axis; observed anomalies stay at their published $(\ell,b)$. Regions already used in the Migkas fit are excluded. Each spot is tied to A or B by a qualitative physical assignment and scored by sign only: a hot spot needs residual $>0$, a cold spot $<0$. Result: A 4/5, B 7/7, total 11/12; the CMB dipole cold pole sits on the zero line ($+0.02\%$) and is marked ``?''. Bootstrap $1\sigma$ per spot is 3--6 percentage points (2000 resamples of the 313 clusters).
+\FIG{sky_spots.png}{0.92}{Top: A and B running-mean residuals vs model-frame angle ($\pm15/25/35^\circ$). Middle: rotated residual maps with spots. Bottom: score table and the qualitative A/B assignment.}{fig:skyspots}
 
 \section{Parameters and status}
 \begin{center}\small\begin{tabular}{@{}p{0.27\columnwidth}p{0.63\columnwidth}@{}}\toprule
